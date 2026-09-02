@@ -18,7 +18,7 @@ try:
 except ImportError:
     LOCATIONS = {}
 
-GITHUB_REPO = "USERNAME/weatherbot"  # TODO: USERNAME را با نام کاربری گیت‌هاب خودتان جایگزین کنید
+GITHUB_REPO = "ericlamar008/weatherbot"  # TODO: USERNAME را با نام کاربری گیت‌هاب خودتان جایگزین کنید
 MARKETS_DIR = Path("data/markets")
 LOCKS_FILE = Path("data/locked_signals.json")
 OUTPUT_FILE = Path("simple.html")
