@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>WeatherBet -- ساده</title>
+<style>
+body{background:#0f1115;color:#e6e6e6;font-family:Tahoma,Vazir,sans-serif;padding:24px}
+h1{font-size:20px}
+h2{font-size:16px;margin-top:34px;border-bottom:1px solid #2a2e37;padding-bottom:8px}
+.meta{color:#9aa0a6;font-size:13px;margin-bottom:20px}
+details.market-block{background:#14161b;border:1px solid #2a2e37;border-radius:10px;padding:10px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-size:14px;color:#c7ccd1;list-style:none;padding:4px 0}
+summary::-webkit-details-marker{display:none}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:10px}
+th,td{padding:6px 8px;text-align:center;border-bottom:1px solid #23262d}
+th{color:#9aa0a6;font-weight:normal}
+.lock-btn{background:#2563eb;color:#fff;border:none;border-radius:6px;padding:5px 12px;font-size:11.5px;cursor:pointer}
+.lock-btn:hover{background:#1d4ed8}
+.unlock-btn{background:#dc2626;color:#fff;border:none;border-radius:6px;padding:5px 12px;font-size:11.5px;cursor:pointer}
+.unlock-btn:hover{background:#b91c1c}
+.locked-badge{color:#4ade80;font-size:11px}
+.empty{color:#6b7280;font-style:italic;padding:12px 0}
+.win{color:#4ade80}
+.loss{color:#f87171}
+.download-btn{display:inline-block;margin:10px 0;background:#374151;color:#e6e6e6;border:1px solid #4b5563;border-radius:6px;padding:8px 16px;font-size:12.5px;text-decoration:none}
+.download-btn:hover{background:#4b5563}
+</style>
+</head>
+<body>
+<h1>WeatherBet -- داشبورد ساده</h1>
+<div class="meta">آخرین به‌روزرسانی: 2026-09-02 20:20 UTC &nbsp;|&nbsp; فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
+<div class="empty">هیچ بازار بازی برای نمایش وجود ندارد.</div>
+
+<h2>تاریخچهٔ معاملات</h2>
+<a class="download-btn" href="lock_history.csv" download>⬇ دانلود CSV کامل</a>
+<div class="empty">هنوز هیچ معامله‌ای بسته نشده.</div>
+
+<script>
+function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
+  const repo = "ericlamar008/weatherbot";
+  const payload = {
+    action: "lock", city: city, date: date,
+    market_id: marketId + "|" + tokenId, side: side,
+    price: price, locked_at: new Date().toISOString()
+  };
+  const title = encodeURIComponent("LOCK " + cityName + " " + date + " " + label + " " + side + " @ " + price);
+  const body = encodeURIComponent(JSON.stringify(payload, null, 2));
+  const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=lock-request";
+  window.open(url, "_blank");
+}
+function unlockBucket(city, cityName, date, marketId, label) {
+  const repo = "ericlamar008/weatherbot";
+  const payload = { action: "unlock", city: city, date: date, market_id: marketId };
+  const title = encodeURIComponent("UNLOCK " + cityName + " " + date + " " + label);
+  const body = encodeURIComponent(JSON.stringify(payload, null, 2));
+  const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=unlock-request";
+  window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
