@@ -1,0 +1,47 @@
+# محل قرارگیری: .github/workflows/monitor_locks.yml (نسخهٔ نهایی)
+
+name: WeatherBet - اسکن دوساعتهٔ قفل‌ها
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"   # هر ۲ ساعت
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: دریافت کد پروژه
+        uses: actions/checkout@v4
+
+      - name: نصب پایتون
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: نصب پیش‌نیازها
+        run: pip install requests
+
+      - name: بررسی قفل‌ها، بستن قفل‌های resolve‌شده، ارسال تلگرام در صورت نیاز
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python price_monitor.py
+
+      - name: بازسازی داشبورد ساده با وضعیت تازه
+        run: python dashboard_simple.py
+
+      - name: انتشار داشبورد ساده و CSV در GitHub Pages
+        run: |
+          mkdir -p docs
+          cp simple.html docs/simple.html
+          cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+          git config user.name "weatherbot-ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add docs data/locked_signals.json data/lock_history.csv
+          git commit -m "بروزرسانی اسکن دوساعته" || echo "چیزی برای کامیت نبود"
+          git pull --rebase origin ${{ github.ref_name }} || true
+          git push
