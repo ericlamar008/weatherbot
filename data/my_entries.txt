@@ -1,0 +1,16 @@
+# ============================================================================
+# my_entries.txt -- WeatherBet v3 manual entry log
+# ============================================================================
+#
+# HOW TO USE (no coding needed):
+#
+# Every time the bot locks in a new signal, it adds a line like:
+#   nyc_2026-07-10_1=no
+# to this file. The number at the end (1, 2, 3...) matches the "#" column
+# shown in dashboard.html for that market's picks (main signal, ladder
+# hedges, scenario hedges).
+#
+# If you ACTUALLY placed that trade for real, change "no" to "yes" on
+# that line and save the file. The bot re-reads it every run.
+# ============================================================================
+
