@@ -1,0 +1,40 @@
+# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (جدید)
+#
+# قابلیت جدیدی که در نکتهٔ ۱ خواسته شد: کاملاً مستقل از اسکن دوساعتهٔ هشدار
+# قیمت (monitor_locks.yml). این یکی هیچ شرطی ندارد -- هر ۶ ساعت، بدون
+# استثنا، فقط لینک داشبورد تعاملی را در تلگرام می‌فرستد تا همیشه دم دست
+# باشد، حتی اگر آن روز هیچ هشدار قیمتی رخ نداده باشد.
+
+name: WeatherBet - یادآوری ۶ساعتهٔ لینک داشبورد تعاملی
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # هر ۶ ساعت
+  workflow_dispatch: {}
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ارسال لینک داشبورد تعاملی در تلگرام
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 - <<'PY'
+          import os, urllib.request, json
+          token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+          chat = os.environ.get("TELEGRAM_CHAT_ID", "")
+          link = "https://USERNAME.github.io/weatherbot/simple.html"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          text = f"\U0001F504 یادآوری ۶ساعته -- داشبورد تعاملی:\n{link}"
+          if token and chat:
+              data = json.dumps({"chat_id": chat, "text": text}).encode("utf-8")
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data=data,
+                  headers={"Content-Type": "application/json"},
+              )
+              urllib.request.urlopen(req, timeout=15)
+          else:
+              print("توکن یا چت آیدی تلگرام تنظیم نشده:", text)
+          PY
