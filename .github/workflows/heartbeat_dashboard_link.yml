@@ -25,7 +25,7 @@ jobs:
           import os, urllib.request, json
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          link = "https://USERNAME.github.io/weatherbot/simple.html"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          link = "https://ericlamar008.github.io/weatherbot/simple.html"  # این خط را با آدرس واقعی خودتان جایگزین کنید
           text = f"\U0001F504 یادآوری ۶ساعته -- داشبورد تعاملی:\n{link}"
           if token and chat:
               data = json.dumps({"chat_id": chat, "text": text}).encode("utf-8")
