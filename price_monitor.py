@@ -1,9 +1,18 @@
 """
 price_monitor.py -- اسکنر دوساعتهٔ مستقل برای قفل‌های باز + پیام تلگرام.
 =====================================================================================
-نسخهٔ نهایی. قبل از بررسی قیمت‌ها، اول قفل‌های resolve‌شده را خودکار می‌بندد
-(از history_manager)، بعد فقط روی قفل‌های واقعاً باز، منطق هشدار قیمتی را
-اجرا می‌کند.
+نسخهٔ اصلاح‌شده (رفع باگ واقعی + تمیزکردن پیام):
+
+باگ واقعی که رفع شد: قیمت قبلاً از "بهترین bid در CLOB order book" گرفته
+می‌شد. نزدیک resolve، عمق order book خیلی کم می‌شود و می‌تواند قیمتی کاملاً
+متفاوت از آن‌چه در خود سایت پلی‌مارکت می‌بینید نشان دهد -- دقیقاً همین باعث
+شد یک باکت که در نهایت با ۱۰۰ سنت برنده شد، در گزارش‌های میانی به‌اشتباه رو
+به افت نشان داده شود. الان قیمت از همان فیلدی گرفته می‌شود که خود سایت
+پلی‌مارکت نشان می‌دهد (outcomePrices از gamma-api) -- همان منبعی که ربات
+اصلی هم برای yes_price استفاده می‌کند.
+
+تمیزکردن پیام: اسم شهر حالا خودش لینک است (با فرمت HTML تلگرام) -- دیگر
+لینک جدا در پیام نیست. ساختار پیام هم مرتب‌تر و با فاصله‌گذاری واضح‌تر شد.
 """
 import json
 import os
@@ -12,7 +21,7 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_clob_book_bid
+from clob_utils import get_gamma_event_prices
 import history_manager
 
 try:
@@ -103,14 +112,19 @@ def send_telegram(text):
     try:
         requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-            json={"chat_id": TELEGRAM_CHAT_ID, "text": text},
+            json={
+                "chat_id": TELEGRAM_CHAT_ID,
+                "text": text,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": True,
+            },
             timeout=15,
         )
     except Exception as e:
         print(f"[price_monitor] هشدار: ارسال تلگرام ناموفق بود: {e}")
 
 
-def build_message(now, get_price_fn, locks):
+def build_message(now, locks):
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return None
@@ -124,6 +138,7 @@ def build_message(now, get_price_fn, locks):
 
     for (city, date), group in sorted(by_city.items(), key=lambda kv: (kv[0][0], kv[0][1])):
         market = _load_market(city, date)
+
         hours_left = None
         if market and market.get("event_end_date"):
             try:
@@ -132,15 +147,21 @@ def build_message(now, get_price_fn, locks):
             except Exception:
                 hours_left = None
 
+        try:
+            dt = datetime.strptime(date, "%Y-%m-%d")
+            gamma_prices = get_gamma_event_prices(city, MONTHS[dt.month - 1], dt.day, dt.year)
+        except Exception:
+            gamma_prices = {}
+
         near_resolve = hours_left is not None and hours_left <= NEAR_RESOLVE_HOURS
         star = False
         lines = []
 
         for l in group:
-            current = get_price_fn(l.get("token_id"))
+            current = gamma_prices.get(str(l["market_id"]))
             l["last_price"] = current
             if current is None:
-                lines.append("\u26AA باکت نامشخص: قیمت فعلی در دسترس نیست")
+                lines.append("   \u26AA قیمت فعلی در دسترس نیست")
                 continue
 
             entry = l["entry_price"]
@@ -161,27 +182,29 @@ def build_message(now, get_price_fn, locks):
             label = _label_for_range(rng, unit_sym)
 
             lines.append(
-                f"{color} باکت {label}: {int(round(entry * 100))} سنت \u2190 "
-                f"{int(round(current * 100))} سنت ({pct:+.0f}%) {arrow}"
+                f"   {color} <b>{label}</b>: {int(round(entry * 100))}\u00a2 \u2192 "
+                f"{int(round(current * 100))}\u00a2  ({pct:+.0f}% {arrow})"
             )
 
         if near_resolve:
             any_trigger = True
 
-        marks = ("\u2B50" if star else "") + ("\u23F0" if near_resolve else "")
+        marks = ("\u2B50" if star else "") + (" \u23F0" if near_resolve else "")
         name = LOCATIONS.get(city, {}).get("name", city)
         link = _build_polymarket_url(city, date)
-        header = f"{marks + ' ' if marks else ''}{name} \u2014 {date}  [{link}]"
+        title = f"<a href=\"{link}\">{name}</a> \u2014 {date}"
+        if marks:
+            title = f"{marks} {title}"
         if near_resolve:
-            header += f"  ({_hours_left_str(hours_left)} تا resolve)"
+            title += f" ({_hours_left_str(hours_left)} تا resolve)"
 
-        city_blocks.append(header + "\n" + "\n".join(lines))
+        city_blocks.append(title + "\n" + "\n".join(lines))
 
     if not any_trigger:
         return None
 
-    header_line = f"\U0001F4CA وضعیت قفل‌ها \u2014 {now.strftime('%Y-%m-%d %H:%M')} UTC\n"
-    return header_line + "\n\n".join(city_blocks)
+    header_line = f"\U0001F4CA <b>وضعیت قفل‌ها</b> \u2014 {now.strftime('%Y-%m-%d %H:%M')} UTC"
+    return header_line + "\n\n" + "\n\n".join(city_blocks)
 
 
 def check_all():
@@ -192,7 +215,7 @@ def check_all():
     if n_resolved:
         print(f"[price_monitor] {n_resolved} قفل به‌طور خودکار با resolve شدن بازار بسته شد")
 
-    message = build_message(now, get_clob_book_bid, locks)
+    message = build_message(now, locks)
 
     _save_locks(locks)
     history_manager.write_history_csv(locks)
