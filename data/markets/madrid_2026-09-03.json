@@ -1,0 +1,302 @@
+{
+  "city": "madrid",
+  "city_name": "Madrid",
+  "date": "2026-09-03",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-03T00:43:08.839237+00:00",
+  "committed_allocation": null,
+  "hours_left": 11.1,
+  "event_end_date": "2026-09-03T12:00:00Z",
+  "last_scan": "2026-09-03T00:43:08.839237+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 36.89,
+  "sigma": 1.178,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Madrid be 33°C or below on September 3?",
+      "market_id": "4051955",
+      "range": [
+        -999.0,
+        33.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 192.0,
+      "spread": 0.0,
+      "yes_token_id": "38739248983525790833565890044981950955026882748785209872660841755829423817865",
+      "no_token_id": "7729497271473096128380624890628835831259478567505322796069996861869010914000",
+      "model_prob": 0.0173,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0114,
+      "ev": 21.8,
+      "kelly": 0.0027,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 34°C on September 3?",
+      "market_id": "4051956",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 224.0,
+      "spread": 0.0,
+      "yes_token_id": "1552878506673752422305492307159245779764603392581371345062037014109621845664",
+      "no_token_id": "14704137014268505843423124644399851943455367229782942372509314262051341200691",
+      "model_prob": 0.0318,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0208,
+      "ev": 40.6,
+      "kelly": 0.0051,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 35°C on September 3?",
+      "market_id": "4051957",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 992.0,
+      "spread": 0.0,
+      "yes_token_id": "22160116477896209802296882479743029602890199809867904701645278405054224491285",
+      "no_token_id": "63055421245928678379363892740432604566186068550392275028416870343530857291319",
+      "model_prob": 0.0964,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0639,
+      "ev": 17.2571,
+      "kelly": 0.0152,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 36°C on September 3?",
+      "market_id": "4051958",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 948.0,
+      "spread": 0.0,
+      "yes_token_id": "27622804967089314265995243769319405236161448350239505424029327438061937529986",
+      "no_token_id": "90443597956841371822779259575476411966210852750236588321369102581854018113149",
+      "model_prob": 0.2315,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.1557,
+      "ev": 9.38,
+      "kelly": 0.0357,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 37°C on September 3?",
+      "market_id": "4051959",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.085,
+      "no_price": 0.915,
+      "volume": 4820.0,
+      "spread": 0.0,
+      "yes_token_id": "25720528894269567934456652141052530255253485973757214222855918716277259383719",
+      "no_token_id": "66406408627299241467367126717166811183104626491884823232508557185111437803497",
+      "model_prob": 0.3097,
+      "side": "YES",
+      "ask": 0.085,
+      "market_prob": 0.085,
+      "belief_prob": 0.2311,
+      "ev": 1.7188,
+      "kelly": 0.0399,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 38°C on September 3?",
+      "market_id": "4051960",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.735,
+      "no_price": 0.265,
+      "volume": 3665.0,
+      "spread": 0.0,
+      "yes_token_id": "97804025804009590500611472600745717847061809783955672195688075814947249652245",
+      "no_token_id": "115713821194824323407882587827607409445888173593419533578348094832207636651274",
+      "model_prob": 0.1984,
+      "side": "YES",
+      "ask": 0.735,
+      "market_prob": 0.735,
+      "belief_prob": 0.3862,
+      "ev": -0.4746,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 39°C on September 3?",
+      "market_id": "4051961",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 3093.0,
+      "spread": 0.0,
+      "yes_token_id": "73144617968096269456810522011676565841810929254770732783071400832010332202674",
+      "no_token_id": "77569738046466478063776597822186819204096180177323346530715142225309173520870",
+      "model_prob": 0.0762,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.1178,
+      "ev": -0.3959,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 40°C on September 3?",
+      "market_id": "4051962",
+      "range": [
+        40.0,
+        40.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 1028.0,
+      "spread": 0.0,
+      "yes_token_id": "62217956207284574490752321564614149775259763778466823533997458122183103992760",
+      "no_token_id": "103399525979882640662478801543832898344524933177821201556912013478794231120864",
+      "model_prob": 0.0248,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0214,
+      "ev": 0.4267,
+      "kelly": 0.0016,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 41°C on September 3?",
+      "market_id": "4051963",
+      "range": [
+        41.0,
+        41.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 583.0,
+      "spread": 0.0,
+      "yes_token_id": "83885089029191745755665073213831169670175411766170103149048610744878514783352",
+      "no_token_id": "113238189966885567953452602645526903074904985742226512333015668201361219411508",
+      "model_prob": 0.0084,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.006,
+      "ev": 3.0,
+      "kelly": 0.0011,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 42°C on September 3?",
+      "market_id": "4051964",
+      "range": [
+        42.0,
+        42.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 531.0,
+      "spread": 0.0,
+      "yes_token_id": "33300834054944413826232438110102006280261198458633442361149402710152871924207",
+      "no_token_id": "70976514835368969661411243063968270509488059157595030777914287009161384610866",
+      "model_prob": 0.0031,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0025,
+      "ev": 0.6667,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 43°C or higher on September 3?",
+      "market_id": "4051965",
+      "range": [
+        43.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 306.0,
+      "spread": 0.0,
+      "yes_token_id": "73916690950383166391178351934768723786807520486762065855345883664558808051949",
+      "no_token_id": "48915915271218569106927859760061041807687112563279468866025552327419772571927",
+      "model_prob": 0.0025,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0018,
+      "ev": 2.6,
+      "kelly": 0.0003,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4051960",
+      "question": "Will the highest temperature in Madrid be 38°C on September 3?",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "YES",
+      "price": 0.735,
+      "model_prob": 0.1984,
+      "ev": -0.4746,
+      "market_prob": 0.735,
+      "role": "main_signal",
+      "units": 29.1,
+      "sell_value": 0.72
+    },
+    {
+      "market_id": "4051960",
+      "question": "Will the highest temperature in Madrid be 38°C on September 3? (NO)",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "NO",
+      "price": 0.265,
+      "model_prob": 0.8016,
+      "ev": 1.3162,
+      "market_prob": 0.265,
+      "role": "scenario_hedge",
+      "units": 6.89,
+      "sell_value": 0.25
+    }
+  ],
+  "total_allocated_units": 36.0,
+  "portfolio_score": -0.041333,
+  "worst_case_loss_frac": 0.0999,
+  "best_case_pnl_units": 3.6,
+  "worst_case_pnl_units": -9.99,
+  "success_probability": 0.4545,
+  "confidence": 0.1141,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

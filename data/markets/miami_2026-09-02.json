@@ -1,0 +1,353 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-09-02",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-09-03T00:43:08.839237+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-09-02T12:00:00Z",
+  "last_scan": "2026-09-03T00:43:08.839237+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 90.03,
+  "sigma": 1.622,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be 81°F or below on September 2?",
+      "market_id": "4020673",
+      "range": [
+        -999.0,
+        81.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 4379.0,
+      "spread": 0.0,
+      "yes_token_id": "88687157190616449160416468115514432644978814242130596464239290749861417783050",
+      "no_token_id": "36150636535174259068960559067894014002631356666509777986985924490199853681783",
+      "model_prob": 0.0033,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0023,
+      "ev": 3.6,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 82-83°F on September 2?",
+      "market_id": "4020674",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2641.0,
+      "spread": 0.0,
+      "yes_token_id": "103956686193490094534611758861056361642175091921508757266346525166648502482446",
+      "no_token_id": "79574841439419154537152631726091194953686228989614265157691682963106334213077",
+      "model_prob": 0.0032,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0023,
+      "ev": 3.6,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 84-85°F on September 2?",
+      "market_id": "4020675",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2366.0,
+      "spread": 0.0,
+      "yes_token_id": "47386639595010605324725624734092086353630916190646266995799798462932302542180",
+      "no_token_id": "9122435828034766035880647693871166742751936035505575382217557416906049530639",
+      "model_prob": 0.013,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0086,
+      "ev": 16.2,
+      "kelly": 0.002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 86-87°F on September 2?",
+      "market_id": "4020676",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 5551.0,
+      "spread": 0.0,
+      "yes_token_id": "100324447892813885082931821936463863887190021166812437433075698646444848529641",
+      "no_token_id": "48237267376000510158125354746875832150700617134606581855781342984695817458656",
+      "model_prob": 0.065,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0424,
+      "ev": 83.8,
+      "kelly": 0.0105,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on September 2?",
+      "market_id": "4020677",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 80524.0,
+      "spread": 0.0,
+      "yes_token_id": "52077498290681818281516140460283334191122389243600773925080106139969852235806",
+      "no_token_id": "14841406474085443212975621250817262157813548123512558480543037079712528376935",
+      "model_prob": 0.2864,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.1876,
+      "ev": 45.9,
+      "kelly": 0.0461,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 2?",
+      "market_id": "4020678",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.9965,
+      "no_price": 0.0035,
+      "volume": 26862.0,
+      "spread": 0.0,
+      "yes_token_id": "72280192414253505384103731294379355191568454857835327486520435902217493212009",
+      "no_token_id": "8271127570466796568560668112268219287406012176007585040728554934780226835379",
+      "model_prob": 0.4369,
+      "side": "YES",
+      "ask": 0.9965,
+      "market_prob": 0.9965,
+      "belief_prob": 0.6328,
+      "ev": -0.365,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on September 2?",
+      "market_id": "4020679",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15798.0,
+      "spread": 0.0,
+      "yes_token_id": "21820891448680838180048199022846906140902394921553448586151816408380451044543",
+      "no_token_id": "71956954487154468286424712773674698940516858029986211855160700857183640031864",
+      "model_prob": 0.1517,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0988,
+      "ev": 196.6,
+      "kelly": 0.0246,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 94-95°F on September 2?",
+      "market_id": "4020680",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 6487.0,
+      "spread": 0.0,
+      "yes_token_id": "90238307781252451899122632326755005038830236277882848036095660966023716264788",
+      "no_token_id": "58416912318184915471526827580853371118519248047236953963965794686845926355479",
+      "model_prob": 0.0301,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0197,
+      "ev": 38.4,
+      "kelly": 0.0048,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 96-97°F on September 2?",
+      "market_id": "4020681",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2735.0,
+      "spread": 0.0,
+      "yes_token_id": "56159703909617346520109772381922185700871542704038578068902647849998300589836",
+      "no_token_id": "57994506020956017892046875394117587095264214917311882233074276158377822236145",
+      "model_prob": 0.0065,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0044,
+      "ev": 7.8,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 98-99°F on September 2?",
+      "market_id": "4020682",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1168.0,
+      "spread": 0.0,
+      "yes_token_id": "73366371547991117190151704626527497105598376045496189025300987376625464971537",
+      "no_token_id": "9021295953670659063437698806806311156178573264278412502765418339481729567371",
+      "model_prob": 0.0018,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0013,
+      "ev": 1.6,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be 100°F or higher on September 2?",
+      "market_id": "4020683",
+      "range": [
+        100.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 491.0,
+      "spread": 0.0,
+      "yes_token_id": "8986726984217063141500820466120124938764685578738535882615539966898311867640",
+      "no_token_id": "59708773540211825090575661065824551297330973725602381094080671730466931166414",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4020678",
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 2?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.9965,
+      "model_prob": 0.4369,
+      "ev": -0.365,
+      "market_prob": 0.9965,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.995,
+      "won": true,
+      "pnl_units": 0.11,
+      "user_entered": false
+    },
+    {
+      "market_id": "4020678",
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 2? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.0035,
+      "model_prob": 0.5631,
+      "ev": 103.9143,
+      "market_prob": 0.0035,
+      "role": "scenario_hedge",
+      "units": 0.07,
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -0.07,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.1,
+  "portfolio_score": -0.041185,
+  "worst_case_loss_frac": 0.1007,
+  "best_case_pnl_units": 0.04,
+  "worst_case_pnl_units": -10.07,
+  "success_probability": 0.6099,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 90.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.04,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4020678",
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 2?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.9965,
+      "model_prob": 0.4369,
+      "ev": -0.365,
+      "market_prob": 0.9965,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.995,
+      "won": true,
+      "pnl_units": 0.11,
+      "user_entered": false
+    },
+    {
+      "market_id": "4020678",
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 2? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.0035,
+      "model_prob": 0.5631,
+      "ev": 103.9143,
+      "market_prob": 0.0035,
+      "role": "scenario_hedge",
+      "units": 0.07,
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -0.07,
+      "user_entered": false
+    }
+  ]
+}

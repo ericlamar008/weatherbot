@@ -1,0 +1,353 @@
+{
+  "city": "nyc",
+  "city_name": "New York",
+  "date": "2026-09-02",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-09-03T00:43:08.839237+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-09-02T12:00:00Z",
+  "last_scan": "2026-09-03T00:43:08.839237+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 74.41,
+  "sigma": 1.633,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in New York City be 69°F or below on September 2?",
+      "market_id": "4021605",
+      "range": [
+        -999.0,
+        69.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10326.0,
+      "spread": 0.0,
+      "yes_token_id": "40283925040694990005411643318338180135290375166231126967145532008151730133442",
+      "no_token_id": "4963212406125781019208566459690408840513689798813593301810685854108082546437",
+      "model_prob": 0.0294,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0193,
+      "ev": 37.6,
+      "kelly": 0.0047,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 70-71°F on September 2?",
+      "market_id": "4021606",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 13676.0,
+      "spread": 0.0,
+      "yes_token_id": "66379813423812590356870174222281109466599404528687270978014372046222499921892",
+      "no_token_id": "47747656284743382629964521183867305183243634373799266025173231478315037963074",
+      "model_prob": 0.0476,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0311,
+      "ev": 61.2,
+      "kelly": 0.0077,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 72-73°F on September 2?",
+      "market_id": "4021607",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 11882.0,
+      "spread": 0.0,
+      "yes_token_id": "107867170377322451325622715210254621847974752799808961574043211086020901329446",
+      "no_token_id": "75061857611431751581571043998322658326129434639563056651849846737858136912633",
+      "model_prob": 0.2236,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1455,
+      "ev": 290.0,
+      "kelly": 0.0363,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 2?",
+      "market_id": "4021608",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.9955,
+      "no_price": 0.0045,
+      "volume": 10832.0,
+      "spread": 0.0,
+      "yes_token_id": "43349632520285161523679875608091818205500361952454956560339452611454386884381",
+      "no_token_id": "50135533600801091135522990961037461820929157818339551187301948716461333478546",
+      "model_prob": 0.4481,
+      "side": "YES",
+      "ask": 0.9955,
+      "market_prob": 0.9955,
+      "belief_prob": 0.6397,
+      "ev": -0.3574,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 76-77°F on September 2?",
+      "market_id": "4021609",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 8801.0,
+      "spread": 0.0,
+      "yes_token_id": "72266412511961315789429288466215295534660446394012465229718440182683179615267",
+      "no_token_id": "7168374799665298935820820928893753708305492799868887072830806310196922033383",
+      "model_prob": 0.198,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.1298,
+      "ev": 42.2667,
+      "kelly": 0.0318,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 78-79°F on September 2?",
+      "market_id": "4021610",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 7813.0,
+      "spread": 0.0,
+      "yes_token_id": "89586522280793160143366482409708676539979324446739260750033317255344710323998",
+      "no_token_id": "79487477597989773307865299571304602468122133078921188118211754747040755181087",
+      "model_prob": 0.041,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0272,
+      "ev": 17.1333,
+      "kelly": 0.0064,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 80-81°F on September 2?",
+      "market_id": "4021611",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3726.0,
+      "spread": 0.0,
+      "yes_token_id": "76501273204500850496460867590588146819407295074684124899178525658456342637578",
+      "no_token_id": "76568556618993895026716644614868393038858508555598675093008090245511273281634",
+      "model_prob": 0.0087,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0058,
+      "ev": 10.6,
+      "kelly": 0.0013,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 82-83°F on September 2?",
+      "market_id": "4021612",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1552.0,
+      "spread": 0.0,
+      "yes_token_id": "102772103751769756556680907942796307541866987554979986936076245419542493816102",
+      "no_token_id": "91179367101428996108365678046521888504164185875305075667808244753180111461552",
+      "model_prob": 0.0023,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0017,
+      "ev": 2.4,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 84-85°F on September 2?",
+      "market_id": "4021613",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2493.0,
+      "spread": 0.0,
+      "yes_token_id": "113800592567913965964561039192114701005556869791290720621791153853522674078502",
+      "no_token_id": "89836351159134337676619917268396542346214983840550728867089430931173476842738",
+      "model_prob": 0.0007,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0006,
+      "ev": 0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 86-87°F on September 2?",
+      "market_id": "4021614",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 541.0,
+      "spread": 0.0,
+      "yes_token_id": "29186857711016337503456538805894928891348484786216273160632878411569904313580",
+      "no_token_id": "51659432427499008806316830179086957433353067739061446104026895417984490861114",
+      "model_prob": 0.0003,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0004,
+      "ev": -0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be 88°F or higher on September 2?",
+      "market_id": "4021615",
+      "range": [
+        88.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 359.0,
+      "spread": 0.0,
+      "yes_token_id": "9742186359039998917335626414272061099576505324228072537253585678280181483176",
+      "no_token_id": "16882946593144716080858029029371835962210864020823741868608207016024321088397",
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0005,
+      "ev": 0.0,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4021608",
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 2?",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "YES",
+      "price": 0.9955,
+      "model_prob": 0.4481,
+      "ev": -0.3574,
+      "market_prob": 0.9955,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.991,
+      "won": true,
+      "pnl_units": 0.14,
+      "user_entered": false
+    },
+    {
+      "market_id": "4021608",
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 2? (NO)",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "NO",
+      "price": 0.0045,
+      "model_prob": 0.5519,
+      "ev": 79.0667,
+      "market_prob": 0.0045,
+      "role": "scenario_hedge",
+      "units": 0.09,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.09,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.1,
+  "portfolio_score": -0.041229,
+  "worst_case_loss_frac": 0.1009,
+  "best_case_pnl_units": 0.05,
+  "worst_case_pnl_units": -10.09,
+  "success_probability": 0.6098,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 74.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.05,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4021608",
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 2?",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "YES",
+      "price": 0.9955,
+      "model_prob": 0.4481,
+      "ev": -0.3574,
+      "market_prob": 0.9955,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.991,
+      "won": true,
+      "pnl_units": 0.14,
+      "user_entered": false
+    },
+    {
+      "market_id": "4021608",
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 2? (NO)",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "NO",
+      "price": 0.0045,
+      "model_prob": 0.5519,
+      "ev": 79.0667,
+      "market_prob": 0.0045,
+      "role": "scenario_hedge",
+      "units": 0.09,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.09,
+      "user_entered": false
+    }
+  ]
+}
