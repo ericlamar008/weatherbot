@@ -1,40 +1,74 @@
-# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (جدید)
+# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (نسخهٔ اصلاح‌شده)
 #
-# قابلیت جدیدی که در نکتهٔ ۱ خواسته شد: کاملاً مستقل از اسکن دوساعتهٔ هشدار
-# قیمت (monitor_locks.yml). این یکی هیچ شرطی ندارد -- هر ۶ ساعت، بدون
-# استثنا، فقط لینک داشبورد تعاملی را در تلگرام می‌فرستد تا همیشه دم دست
-# باشد، حتی اگر آن روز هیچ هشدار قیمتی رخ نداده باشد.
+# اصلاح واقعی نسبت به نسخهٔ قبلی: قبلاً این فایل فقط پیام را می‌فرستاد و
+# خودش صفحه را دوباره نمی‌ساخت -- بر همین اساس بود که با اجرای این
+# Workflow اطلاعات "به‌روز" نمی‌شد. الان دقیقاً مثل monitor_locks.yml خودش
+# هم داشبورد تعاملی را دوباره می‌سازد و منتشر می‌کند، بعد لینک را می‌فرستد --
+# یعنی هر ۶ ساعت واقعاً یک نسخهٔ تازه‌ساخته‌شده دریافت می‌کنید، نه فقط یادآوری.
 
-name: WeatherBet - یادآوری ۶ساعتهٔ لینک داشبورد تعاملی
+name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
 on:
   schedule:
     - cron: "0 */6 * * *"   # هر ۶ ساعت
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   heartbeat:
     runs-on: ubuntu-latest
     steps:
+      - name: دریافت کد پروژه
+        uses: actions/checkout@v4
+
+      - name: نصب پایتون
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: نصب پیش‌نیازها
+        run: pip install requests
+
+      - name: ساخت دوبارهٔ داشبورد تعاملی با آخرین داده‌های موجود
+        run: python dashboard_simple.py
+
+      - name: کپی فایل‌ها به پوشه‌ی انتشار
+        run: |
+          mkdir -p docs
+          cp simple.html docs/simple.html
+          cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
+      - name: کامیت و انتشار (با ایمنی در برابر برخورد هم‌زمان)
+        run: |
+          git config user.name "weatherbot-ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add -A
+          git commit -m "بروزرسانی ۶ساعتهٔ داشبورد تعاملی" || echo "چیزی برای کامیت نبود"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
+            sleep 5
+          done
+
       - name: ارسال لینک داشبورد تعاملی در تلگرام
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python3 - <<'PY'
-          import os, urllib.request, json
+          import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          link = "https://ericlamar008.github.io/weatherbot/simple.html"  # این خط را با آدرس واقعی خودتان جایگزین کنید
-          text = f"\U0001F504 یادآوری ۶ساعته -- داشبورد تعاملی:\n{link}"
+          link = "https://ericlamar008.github.io/weatherbot/simple.html"
+          text = f"\U0001F504 بروزرسانی ۶ساعته -- داشبورد تعاملی تازه‌سازی شد:\n{link}"
           if token and chat:
-              data = json.dumps({"chat_id": chat, "text": text}).encode("utf-8")
-              req = urllib.request.Request(
+              requests.post(
                   f"https://api.telegram.org/bot{token}/sendMessage",
-                  data=data,
-                  headers={"Content-Type": "application/json"},
+                  json={"chat_id": chat, "text": text},
+                  timeout=15,
               )
-              urllib.request.urlopen(req, timeout=15)
           else:
               print("توکن یا چت آیدی تلگرام تنظیم نشده:", text)
           PY
