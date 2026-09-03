@@ -1,11 +1,20 @@
 """
 dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تعاملی داشبورد.
 =====================================================================================
-نسخهٔ نهایی. شامل: نمایش شهر/باکت/احتمال‌ها + دکمهٔ قفل/حذف قفل + بخش
-تاریخچهٔ معاملات + لینک دانلود CSV.
+نسخهٔ اصلاح‌شده (بازخورد واقعی کاربر):
 
->>> قبل از استفاده، مقدار GITHUB_REPO پایین را با نام کاربری واقعی گیت‌هابتان
-    جایگزین کنید. <<<
+۱) رفع باگ موبایل: تگ <meta name="viewport"> اصلاً وجود نداشت -- بدون آن،
+   مرورگر گوشی صفحه را با زوم دسکتاپ (خیلی کوچک) نشان می‌دهد. اضافه شد،
+   به‌همراه چند اصلاح CSS دیگر (جدول قابل اسکرول افقی، دکمه‌های بزرگ‌تر
+   برای انگشت، فونت واکنش‌گرا) -- طراحی کلی (رنگ/تم) دست نخورده، فقط
+   بهینه برای موبایل شده.
+
+۲) نمایش «سیگنال اصلی»: مثل داشبورد اصلی، حالا باکتی که موتور استراتژی
+   به‌عنوان سیگنال اصلی انتخاب کرده (فیلد role == "main_signal" در
+   allocation ذخیره‌شده توسط weatherbot_v3.py) با یک نشان مشخص می‌شود --
+   بدون نمایش هیچ عدد سایزینگ/واحدی، فقط برچسب.
+
+بقیهٔ رفتار (دکمهٔ قفل/حذف قفل، بخش تاریخچه، دانلود CSV) بدون تغییر.
 """
 import json
 from datetime import datetime, timezone
@@ -18,7 +27,7 @@ try:
 except ImportError:
     LOCATIONS = {}
 
-GITHUB_REPO = "ericlamar008/weatherbot"  # TODO: USERNAME را با نام کاربری گیت‌هاب خودتان جایگزین کنید
+GITHUB_REPO = "USERNAME/weatherbot"  # TODO: USERNAME را با نام کاربری گیت‌هاب خودتان جایگزین کنید
 MARKETS_DIR = Path("data/markets")
 LOCKS_FILE = Path("data/locked_signals.json")
 OUTPUT_FILE = Path("simple.html")
@@ -27,38 +36,46 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>WeatherBet -- ساده</title>
 <style>
-body{background:#0f1115;color:#e6e6e6;font-family:Tahoma,Vazir,sans-serif;padding:24px}
-h1{font-size:20px}
-h2{font-size:16px;margin-top:34px;border-bottom:1px solid #2a2e37;padding-bottom:8px}
-.meta{color:#9aa0a6;font-size:13px;margin-bottom:20px}
-details.market-block{background:#14161b;border:1px solid #2a2e37;border-radius:10px;padding:10px 16px;margin-bottom:10px}
-summary{cursor:pointer;font-size:14px;color:#c7ccd1;list-style:none;padding:4px 0}
+* { box-sizing: border-box; }
+body{background:#0f1115;color:#e6e6e6;font-family:Tahoma,Vazir,sans-serif;padding:12px;margin:0;font-size:15px}
+h1{font-size:18px;margin:8px 0}
+h2{font-size:15px;margin-top:28px;border-bottom:1px solid #2a2e37;padding-bottom:6px}
+.meta{color:#9aa0a6;font-size:12px;margin-bottom:16px;line-height:1.6}
+details.market-block{background:#14161b;border:1px solid #2a2e37;border-radius:10px;padding:8px 10px;margin-bottom:8px}
+summary{cursor:pointer;font-size:13.5px;color:#c7ccd1;list-style:none;padding:6px 2px}
 summary::-webkit-details-marker{display:none}
-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:10px}
-th,td{padding:6px 8px;text-align:center;border-bottom:1px solid #23262d}
-th{color:#9aa0a6;font-weight:normal}
-.lock-btn{background:#2563eb;color:#fff;border:none;border-radius:6px;padding:5px 12px;font-size:11.5px;cursor:pointer}
-.lock-btn:hover{background:#1d4ed8}
-.unlock-btn{background:#dc2626;color:#fff;border:none;border-radius:6px;padding:5px 12px;font-size:11.5px;cursor:pointer}
-.unlock-btn:hover{background:#b91c1c}
-.locked-badge{color:#4ade80;font-size:11px}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+table{width:100%;min-width:480px;border-collapse:collapse;font-size:12.5px}
+th,td{padding:8px 6px;text-align:center;border-bottom:1px solid #23262d;white-space:nowrap}
+th{color:#9aa0a6;font-weight:normal;font-size:11.5px}
+.lock-btn,.unlock-btn{border:none;border-radius:8px;padding:9px 14px;font-size:12.5px;cursor:pointer;min-height:38px}
+.lock-btn{background:#2563eb;color:#fff}
+.unlock-btn{background:#dc2626;color:#fff}
+.locked-badge{color:#4ade80;font-size:11px;display:block;margin-bottom:4px}
+.main-badge{background:#16a34a33;color:#4ade80;border:1px solid #16a34a;border-radius:6px;padding:2px 6px;font-size:10.5px;white-space:nowrap}
 .empty{color:#6b7280;font-style:italic;padding:12px 0}
 .win{color:#4ade80}
 .loss{color:#f87171}
-.download-btn{display:inline-block;margin:10px 0;background:#374151;color:#e6e6e6;border:1px solid #4b5563;border-radius:6px;padding:8px 16px;font-size:12.5px;text-decoration:none}
-.download-btn:hover{background:#4b5563}
+.download-btn{display:inline-block;margin:10px 0;background:#374151;color:#e6e6e6;border:1px solid #4b5563;border-radius:8px;padding:10px 16px;font-size:12.5px;text-decoration:none}
+@media (max-width: 480px){
+  body{padding:8px;font-size:14px}
+  th,td{padding:7px 5px;font-size:11.5px}
+}
 </style>
 </head>
 <body>
 <h1>WeatherBet -- داشبورد ساده</h1>
-<div class="meta">آخرین به‌روزرسانی: LASTUPDATE UTC &nbsp;|&nbsp; فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
+<div class="meta">آخرین به‌روزرسانی: LASTUPDATE UTC<br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 BODYHTML
 
 <h2>تاریخچهٔ معاملات</h2>
 <a class="download-btn" href="lock_history.csv" download>\u2b07 دانلود CSV کامل</a>
+<div class="table-scroll">
 HISTORYHTML
+</div>
 
 <script>
 function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
@@ -116,6 +133,15 @@ def _load_locked_keys(locks):
     }
 
 
+def _main_signal_market_id(market):
+    """پیدا کردن market_id باکتی که موتور استراتژی سیگنال اصلی انتخاب کرده."""
+    allocation = market.get("committed_allocation") or market.get("live_allocation") or []
+    for a in allocation:
+        if a.get("role") == "main_signal":
+            return str(a.get("market_id"))
+    return None
+
+
 def _label_for_range(low, high, unit_sym):
     if low <= -998 and high >= 998:
         return f"?{unit_sym}"
@@ -128,7 +154,7 @@ def _label_for_range(low, high, unit_sym):
     return f"{low}-{high}{unit_sym}"
 
 
-def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locked_keys):
+def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locked_keys, main_signal_id):
     if not full_distribution:
         return '<div class="empty">داده‌ای موجود نیست.</div>'
     rows = [
@@ -146,12 +172,15 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         market_id = str(b.get("market_id", ""))
         yes_token = b.get("yes_token_id", "")
 
+        is_main = main_signal_id is not None and market_id == main_signal_id
+        label_html = f"{label} " + ('<span class="main-badge">سیگنال اصلی</span>' if is_main else "")
+
         is_locked = (city_slug, date, market_id) in locked_keys
         action_html = ""
         if yes_price is not None and market_id:
             if is_locked:
                 action_html = (
-                    f'<span class="locked-badge">قفل \u2714</span> '
+                    f'<span class="locked-badge">قفل \u2714</span>'
                     f'<button class="unlock-btn" onclick="unlockBucket(\'{city_slug}\',\'{city_name}\','
                     f"'{date}','{market_id}','{label}')\">حذف قفل</button>"
                 )
@@ -162,7 +191,7 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
                 )
 
         rows.append(
-            f"<tr><td>{label}</td><td>{model_str}</td><td>{market_str}</td>"
+            f"<tr><td>{label_html}</td><td>{model_str}</td><td>{market_str}</td>"
             f"<td>{price_str}</td><td>{action_html}</td></tr>"
         )
     rows.append("</table>")
@@ -209,12 +238,16 @@ def build_simple_dashboard():
         loc = LOCATIONS.get(city_slug, {})
         city_name = loc.get("name", city_slug)
         unit_sym = m.get("unit", loc.get("unit", ""))
+        main_signal_id = _main_signal_market_id(m)
         table = _bucket_table(
             city_slug, city_name, m.get("date", ""), unit_sym,
-            m.get("full_distribution"), locked_keys,
+            m.get("full_distribution"), locked_keys, main_signal_id,
         )
         summary = f"<b>{city_name}</b> {m.get('date','')} &nbsp; {m.get('hours_left','?')} ساعت باقی‌مانده"
-        parts.append(f"<details class='market-block' open><summary>{summary}</summary>{table}</details>")
+        parts.append(
+            f"<details class='market-block' open><summary>{summary}</summary>"
+            f"<div class='table-scroll'>{table}</div></details>"
+        )
 
     body_html = "".join(parts)
     history_html = _history_table_html(locks)
