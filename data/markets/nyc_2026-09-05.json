@@ -6,8 +6,275 @@
   "status": "open",
   "created_at": "2026-09-03T18:36:24.107594+00:00",
   "committed_allocation": null,
-  "hours_left": 40.3,
+  "hours_left": 35.2,
   "event_end_date": "2026-09-05T12:00:00Z",
-  "last_scan": "2026-09-03T19:33:47.537705+00:00",
-  "skipped_reason": "event volume 451 < min_volume 500"
+  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 80.17,
+  "sigma": 2.422,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in New York City be 69°F or below on September 5?",
+      "market_id": "4183729",
+      "range": [
+        -999.0,
+        69.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "43588171894489826192745252025271374010245935202248946829864782669981739076635",
+      "no_token_id": "5022049244650659375860652385024409403753042867858317292831756229608240325141",
+      "model_prob": 0.0069,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0061,
+      "ev": 0.3556,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 70-71°F on September 5?",
+      "market_id": "4183730",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "104112119678622859446877854126050283856084924931122588479034705256862811056701",
+      "no_token_id": "90822204759293237205378573181091891043978500519116509871090223799675963043449",
+      "model_prob": 0.0042,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0036,
+      "ev": 0.44,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 72-73°F on September 5?",
+      "market_id": "4183731",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "20141424503329741612566906967873517893555570096265888361514990927468139756961",
+      "no_token_id": "43061160843494565908739322687460273909083682750771797882289662244582818598547",
+      "model_prob": 0.0115,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0096,
+      "ev": 0.6,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 74-75°F on September 5?",
+      "market_id": "4183732",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 69.0,
+      "spread": 0.0,
+      "yes_token_id": "30203192415656868468426049924201896480604854377779552799650031213713598152863",
+      "no_token_id": "103626895849139565139241309107259759544438981753173010858520171490175020711401",
+      "model_prob": 0.0338,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0272,
+      "ev": 0.8133,
+      "kelly": 0.0031,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 76-77°F on September 5?",
+      "market_id": "4183733",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 109.0,
+      "spread": 0.0,
+      "yes_token_id": "26113933926154869097435288533073136931573144868561529118247880958060951773832",
+      "no_token_id": "35286191085008832813430550696707708505929616500051191161190608716758732954313",
+      "model_prob": 0.0999,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0842,
+      "ev": 0.5309,
+      "kelly": 0.0077,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 78-79°F on September 5?",
+      "market_id": "4183734",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.225,
+      "no_price": 0.775,
+      "volume": 316.0,
+      "spread": 0.0,
+      "yes_token_id": "49687106200225603347343738257125791838837951311441146090348470521601198253016",
+      "no_token_id": "70084862027391556869689597966143405381253544611843655986864525241030000965025",
+      "model_prob": 0.2338,
+      "side": "YES",
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.2307,
+      "ev": 0.0253,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 80-81°F on September 5?",
+      "market_id": "4183735",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 587.0,
+      "spread": 0.0,
+      "yes_token_id": "3039879964793395858710999611025069714890316876797650357076732522269467118475",
+      "no_token_id": "25569942141784503050013990099755099456354300173300476783081176216675815903878",
+      "model_prob": 0.3019,
+      "side": "YES",
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.366,
+      "ev": -0.2454,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 82-83°F on September 5?",
+      "market_id": "4183736",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.18,
+      "no_price": 0.82,
+      "volume": 304.0,
+      "spread": 0.0,
+      "yes_token_id": "62886717848630589457222485226720271752995500532092023085905454575255012152185",
+      "no_token_id": "79529421768884625582249167291525477055129378501093639226816506790035658224543",
+      "model_prob": 0.1852,
+      "side": "YES",
+      "ask": 0.18,
+      "market_prob": 0.18,
+      "belief_prob": 0.1834,
+      "ev": 0.0189,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 84-85°F on September 5?",
+      "market_id": "4183737",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 163.0,
+      "spread": 0.0,
+      "yes_token_id": "114876106208975559042497586277342384618542959778920560828472633897373817216943",
+      "no_token_id": "23857406325639444101139626857190874469840166283758061552059085679361588821544",
+      "model_prob": 0.0706,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.0634,
+      "ev": 0.268,
+      "kelly": 0.0035,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 86-87°F on September 5?",
+      "market_id": "4183738",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "15364871495779300641869046211295335338296952155605127737573106962671213470583",
+      "no_token_id": "88152647102855480579754189839388046170290112503613860439554507101984693782710",
+      "model_prob": 0.0235,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0174,
+      "ev": 1.9,
+      "kelly": 0.0029,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4183735",
+      "question": "Will the highest temperature in New York City be between 80-81°F on September 5?",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "YES",
+      "price": 0.485,
+      "model_prob": 0.3019,
+      "ev": -0.2454,
+      "market_prob": 0.485,
+      "role": "main_signal",
+      "units": 27.9,
+      "sell_value": 0.48
+    },
+    {
+      "market_id": "4183735",
+      "question": "Will the highest temperature in New York City be between 80-81°F on September 5? (NO)",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "NO",
+      "price": 0.515,
+      "model_prob": 0.6981,
+      "ev": 0.2311,
+      "market_prob": 0.515,
+      "role": "scenario_hedge",
+      "units": 19.01,
+      "sell_value": 0.5
+    }
+  ],
+  "total_allocated_units": 46.9,
+  "portfolio_score": -0.041059,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 10.62,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3117,
+  "confidence": 0.0577,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

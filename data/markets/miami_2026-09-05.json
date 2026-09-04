@@ -6,8 +6,110 @@
   "status": "open",
   "created_at": "2026-09-03T18:36:24.107594+00:00",
   "committed_allocation": null,
-  "hours_left": 40.3,
+  "hours_left": 35.2,
   "event_end_date": "2026-09-05T12:00:00Z",
-  "last_scan": "2026-09-03T19:33:47.537705+00:00",
-  "skipped_reason": "event volume 306 < min_volume 500"
+  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 88.59,
+  "sigma": 2.406,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be between 86-87°F on September 5?",
+      "market_id": "4183766",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.04,
+      "no_price": 0.96,
+      "volume": 33.0,
+      "spread": 0.0,
+      "yes_token_id": "20155973709714290121724491506339516988315624289990089874224471355210359512024",
+      "no_token_id": "56615447419228871760131769981609199627707246028125731001333690189015065486288",
+      "model_prob": 0.2042,
+      "side": "YES",
+      "ask": 0.04,
+      "market_prob": 0.04,
+      "belief_prob": 0.1467,
+      "ev": 2.6675,
+      "kelly": 0.0278,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on September 5?",
+      "market_id": "4183767",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.225,
+      "no_price": 0.775,
+      "volume": 328.0,
+      "spread": 0.0,
+      "yes_token_id": "88744052357562565658912659875038753072267276445631467341338432599022006042023",
+      "no_token_id": "46013765037136546424956192293414703868997567107053834729562444516723505988643",
+      "model_prob": 0.3083,
+      "side": "YES",
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.2791,
+      "ev": 0.2404,
+      "kelly": 0.0175,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on September 5?",
+      "market_id": "4183768",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 106.0,
+      "spread": 0.0,
+      "yes_token_id": "18177656871795854032663480796937524436192056860239337883660190355995189728",
+      "no_token_id": "38641063639666257085039319604723308494948438033969576951446180881911567274048",
+      "model_prob": 0.2178,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.2991,
+      "ev": -0.3353,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on September 5?",
+      "market_id": "4183769",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.165,
+      "no_price": 0.835,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "33309362306228741323455121471680981832126618942483520804639985817304673676646",
+      "no_token_id": "34501509882946400409925583724081086483652677466538766725648017344575190808424",
+      "model_prob": 0.0881,
+      "side": "YES",
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.115,
+      "ev": -0.303,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [],
+  "total_allocated_units": 0,
+  "portfolio_score": null,
+  "worst_case_loss_frac": null,
+  "best_case_pnl_units": null,
+  "worst_case_pnl_units": null,
+  "success_probability": null,
+  "confidence": null,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
