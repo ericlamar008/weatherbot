@@ -167,8 +167,8 @@
     "entry_price": 0.42,
     "locked_at": "2026-09-05T11:36:29.294Z",
     "status": "open",
-    "last_price": 0.335,
-    "last_pct": -20.2,
+    "last_price": 0.385,
+    "last_pct": -8.3,
     "exit_price": null,
     "closed_at": null,
     "close_reason": null,
@@ -183,12 +183,12 @@
     "side": "YES",
     "entry_price": 0.625,
     "locked_at": "2026-09-05T11:36:47.855Z",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.62,
     "last_pct": -0.8,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
-    "actual_temp": null
+    "exit_price": 1.0,
+    "closed_at": "2026-09-05T18:05:10.624363+00:00",
+    "close_reason": "auto_resolved",
+    "actual_temp": 24.0
   }
 ]
