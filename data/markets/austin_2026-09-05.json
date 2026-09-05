@@ -6,9 +6,9 @@
   "status": "open",
   "created_at": "2026-09-03T18:36:24.107594+00:00",
   "committed_allocation": null,
-  "hours_left": 35.2,
+  "hours_left": 11.2,
   "event_end_date": "2026-09-05T12:00:00Z",
-  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
   "horizon_days": 2,
   "forecast_mean": 95.15,
   "sigma": 3.656,
@@ -111,5 +111,6 @@
   "success_probability": null,
   "confidence": null,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "skipped_reason": "ensemble forecast unavailable (mean is None)"
 }

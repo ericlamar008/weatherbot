@@ -3,12 +3,12 @@
   "city_name": "Istanbul",
   "date": "2026-09-04",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T00:43:08.839237+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-04T12:00:00Z",
-  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
   "horizon_days": 0,
   "forecast_mean": 25.46,
   "sigma": 0.884,
@@ -271,7 +271,10 @@
       "market_prob": 0.675,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.66
+      "sell_value": 0.66,
+      "won": true,
+      "pnl_units": 14.44,
+      "user_entered": false
     },
     {
       "market_id": "4107304",
@@ -287,7 +290,10 @@
       "market_prob": 0.325,
       "role": "scenario_hedge",
       "units": 9.63,
-      "sell_value": 0.31
+      "sell_value": 0.31,
+      "won": false,
+      "pnl_units": -9.63,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 39.6,
@@ -298,5 +304,50 @@
   "success_probability": 0.4724,
   "confidence": 0.088,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 26.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 4.81,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4107304",
+      "question": "Will the highest temperature in Istanbul be 26°C on September 4?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.675,
+      "model_prob": 0.3366,
+      "ev": -0.3259,
+      "market_prob": 0.675,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.66,
+      "won": true,
+      "pnl_units": 14.44,
+      "user_entered": false
+    },
+    {
+      "market_id": "4107304",
+      "question": "Will the highest temperature in Istanbul be 26°C on September 4? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.325,
+      "model_prob": 0.6634,
+      "ev": 0.6769,
+      "market_prob": 0.325,
+      "role": "scenario_hedge",
+      "units": 9.63,
+      "sell_value": 0.31,
+      "won": false,
+      "pnl_units": -9.63,
+      "user_entered": false
+    }
+  ]
 }

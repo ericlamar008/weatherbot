@@ -3,12 +3,12 @@
   "city_name": "Houston",
   "date": "2026-09-04",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T00:43:08.839237+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-04T12:00:00Z",
-  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
   "horizon_days": 1,
   "forecast_mean": 87.91,
   "sigma": 1.591,
@@ -271,7 +271,10 @@
       "market_prob": 0.195,
       "role": "main_signal",
       "units": 26.8,
-      "sell_value": 0.18
+      "sell_value": 0.18,
+      "won": false,
+      "pnl_units": -26.8,
+      "user_entered": false
     },
     {
       "market_id": "4113749",
@@ -287,7 +290,10 @@
       "market_prob": 0.805,
       "role": "scenario_hedge",
       "units": 69.35,
-      "sell_value": 0.81
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 16.8,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 96.1,
@@ -298,5 +304,50 @@
   "success_probability": 0.2055,
   "confidence": 0.0059,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 90.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4113749",
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 4?",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "YES",
+      "price": 0.195,
+      "model_prob": 0.431,
+      "ev": 0.7867,
+      "market_prob": 0.195,
+      "role": "main_signal",
+      "units": 26.8,
+      "sell_value": 0.18,
+      "won": false,
+      "pnl_units": -26.8,
+      "user_entered": false
+    },
+    {
+      "market_id": "4113749",
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 4? (NO)",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "NO",
+      "price": 0.805,
+      "model_prob": 0.569,
+      "ev": -0.1906,
+      "market_prob": 0.805,
+      "role": "scenario_hedge",
+      "units": 69.35,
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 16.8,
+      "user_entered": false
+    }
+  ]
 }

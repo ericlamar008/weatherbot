@@ -3,12 +3,12 @@
   "city_name": "Madrid",
   "date": "2026-09-04",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T00:43:08.839237+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-04T12:00:00Z",
-  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
   "horizon_days": 0,
   "forecast_mean": 38.15,
   "sigma": 0.903,
@@ -271,7 +271,10 @@
       "market_prob": 0.72,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.71
+      "sell_value": 0.71,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "4107196",
@@ -287,7 +290,10 @@
       "market_prob": 0.28,
       "role": "scenario_hedge",
       "units": 7.78,
-      "sell_value": 0.27
+      "sell_value": 0.27,
+      "won": true,
+      "pnl_units": 20.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 37.8,
@@ -298,5 +304,50 @@
   "success_probability": 0.5069,
   "confidence": 0.0262,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 38.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -9.99,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4107196",
+      "question": "Will the highest temperature in Madrid be 39°C on September 4?",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "side": "YES",
+      "price": 0.72,
+      "model_prob": 0.2596,
+      "ev": -0.4157,
+      "market_prob": 0.72,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.71,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4107196",
+      "question": "Will the highest temperature in Madrid be 39°C on September 4? (NO)",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "side": "NO",
+      "price": 0.28,
+      "model_prob": 0.7404,
+      "ev": 1.0689,
+      "market_prob": 0.28,
+      "role": "scenario_hedge",
+      "units": 7.78,
+      "sell_value": 0.27,
+      "won": true,
+      "pnl_units": 20.01,
+      "user_entered": false
+    }
+  ]
 }

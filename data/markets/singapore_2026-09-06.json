@@ -1,0 +1,302 @@
+{
+  "city": "singapore",
+  "city_name": "Singapore",
+  "date": "2026-09-06",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-05T00:42:11.825873+00:00",
+  "committed_allocation": null,
+  "hours_left": 35.2,
+  "event_end_date": "2026-09-06T12:00:00Z",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 32.31,
+  "sigma": 1.117,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Singapore be 28°C or below on September 6?",
+      "market_id": "4207383",
+      "range": [
+        -999.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 255.0,
+      "spread": 0.0,
+      "yes_token_id": "17159031857697727498834656321670602637830416502649871026319752348121793719724",
+      "no_token_id": "33021066517409074860960561926802207916805915955986515697563354458182328158303",
+      "model_prob": 0.0095,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0063,
+      "ev": 11.6,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 29°C on September 6?",
+      "market_id": "4207384",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 183.0,
+      "spread": 0.0,
+      "yes_token_id": "22273747672168209654780641330699152430161018826600878658647136186894093838097",
+      "no_token_id": "27264823696085500047697061897017104701745234504432365771193885715929518849305",
+      "model_prob": 0.0172,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0121,
+      "ev": 3.84,
+      "kelly": 0.0024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 30°C on September 6?",
+      "market_id": "4207385",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 402.0,
+      "spread": 0.0,
+      "yes_token_id": "34520799821143211711914215320470204624524389812489594214455061890825346899569",
+      "no_token_id": "18713655538515611957181400168986931903384665791096656381680270310100077917417",
+      "model_prob": 0.0563,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0418,
+      "ev": 1.7867,
+      "kelly": 0.0068,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 31°C on September 6?",
+      "market_id": "4207386",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.013,
+      "no_price": 0.987,
+      "volume": 779.0,
+      "spread": 0.0,
+      "yes_token_id": "98850895808781495290301390252772611031528386216853000332802202676557263547057",
+      "no_token_id": "29101039498227156274251431228636685920178844069986575295024785286284632456930",
+      "model_prob": 0.1674,
+      "side": "YES",
+      "ask": 0.013,
+      "market_prob": 0.013,
+      "belief_prob": 0.1134,
+      "ev": 7.7231,
+      "kelly": 0.0254,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 32°C on September 6?",
+      "market_id": "4207387",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.155,
+      "no_price": 0.845,
+      "volume": 574.0,
+      "spread": 0.0,
+      "yes_token_id": "38163172278176086854269387190818708064706662541221407924206508589626403855303",
+      "no_token_id": "9396009587165362936444535005197488475219108531729843495197515871041823605726",
+      "model_prob": 0.3138,
+      "side": "YES",
+      "ask": 0.155,
+      "market_prob": 0.155,
+      "belief_prob": 0.2582,
+      "ev": 0.6658,
+      "kelly": 0.0305,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 33°C on September 6?",
+      "market_id": "4207388",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.695,
+      "no_price": 0.305,
+      "volume": 683.0,
+      "spread": 0.0,
+      "yes_token_id": "81027551705489112989591513131267248431550846777979995092358540661832773022500",
+      "no_token_id": "67604231491119924638410389260472695499553905974780468965003256228076076211578",
+      "model_prob": 0.2681,
+      "side": "YES",
+      "ask": 0.695,
+      "market_prob": 0.695,
+      "belief_prob": 0.4175,
+      "ev": -0.3993,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 34°C on September 6?",
+      "market_id": "4207390",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 1564.0,
+      "spread": 0.0,
+      "yes_token_id": "59226895176312405607775750538404846358586067719523434716440418848649438241304",
+      "no_token_id": "30580170819804655437913295426473102623648773283078681776245989792832125863392",
+      "model_prob": 0.1141,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0969,
+      "ev": 0.4908,
+      "kelly": 0.0085,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 35°C on September 6?",
+      "market_id": "4207393",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0135,
+      "no_price": 0.9865,
+      "volume": 162.0,
+      "spread": 0.0,
+      "yes_token_id": "7771013132212506683725941279602472054292939683253967796626753195674738296682",
+      "no_token_id": "114942772782754389911475244116627028869758571108194035107979546446528219703704",
+      "model_prob": 0.0358,
+      "side": "YES",
+      "ask": 0.0135,
+      "market_prob": 0.0135,
+      "belief_prob": 0.028,
+      "ev": 1.0741,
+      "kelly": 0.0037,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 36°C on September 6?",
+      "market_id": "4207394",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 16.0,
+      "spread": 0.0,
+      "yes_token_id": "60293486125285694604218966779508712727106419437843245493336125699580856101596",
+      "no_token_id": "38419769628354772636764438915824425054075890561864958781236496247221774384081",
+      "model_prob": 0.0111,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0093,
+      "ev": 0.55,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 37°C on September 6?",
+      "market_id": "4207395",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 15694.0,
+      "spread": 0.0,
+      "yes_token_id": "13333416851401456213126873372952616534444887974830862345532401511092313012780",
+      "no_token_id": "68408279346514689654976095200281347377201866967598234408336515509978126718152",
+      "model_prob": 0.0038,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0037,
+      "ev": 0.0571,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 38°C or higher on September 6?",
+      "market_id": "4207396",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 222.0,
+      "spread": 0.0,
+      "yes_token_id": "31361317166004403800479189098946953410411916719056897933729144151628329358261",
+      "no_token_id": "32495598445467494132880461570040900484257619104634318097543137015318077293192",
+      "model_prob": 0.0028,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0023,
+      "ev": 0.5333,
+      "kelly": 0.0002,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4207388",
+      "question": "Will the highest temperature in Singapore be 33°C on September 6?",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "YES",
+      "price": 0.695,
+      "model_prob": 0.2681,
+      "ev": -0.3993,
+      "market_prob": 0.695,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.69
+    },
+    {
+      "market_id": "4207388",
+      "question": "Will the highest temperature in Singapore be 33°C on September 6? (NO)",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "NO",
+      "price": 0.305,
+      "model_prob": 0.7319,
+      "ev": 0.9098,
+      "market_prob": 0.305,
+      "role": "scenario_hedge",
+      "units": 8.78,
+      "sell_value": 0.3
+    }
+  ],
+  "total_allocated_units": 38.8,
+  "portfolio_score": -0.033253,
+  "worst_case_loss_frac": 0.0999,
+  "best_case_pnl_units": 4.39,
+  "worst_case_pnl_units": -9.99,
+  "success_probability": 0.486,
+  "confidence": 0.078,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

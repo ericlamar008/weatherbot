@@ -3,12 +3,12 @@
   "city_name": "Milan",
   "date": "2026-09-04",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T00:43:08.839237+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-04T12:00:00Z",
-  "last_scan": "2026-09-04T00:41:09.018799+00:00",
+  "last_scan": "2026-09-05T00:42:11.825873+00:00",
   "horizon_days": 0,
   "forecast_mean": 31.66,
   "sigma": 1.173,
@@ -271,7 +271,10 @@
       "market_prob": 0.56,
       "role": "main_signal",
       "units": 29.4,
-      "sell_value": 0.55
+      "sell_value": 0.55,
+      "won": false,
+      "pnl_units": -29.4,
+      "user_entered": false
     },
     {
       "market_id": "4107161",
@@ -287,7 +290,10 @@
       "market_prob": 0.44,
       "role": "scenario_hedge",
       "units": 15.24,
-      "sell_value": 0.43
+      "sell_value": 0.43,
+      "won": true,
+      "pnl_units": 19.4,
+      "user_entered": false
     },
     {
       "market_id": "4107169",
@@ -303,7 +309,10 @@
       "market_prob": 0.9995,
       "role": "scenario_hedge",
       "units": 7.27,
-      "sell_value": 0.999
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 51.9,
@@ -314,5 +323,69 @@
   "success_probability": 0.412,
   "confidence": 0.1794,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 33.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4107161",
+      "question": "Will the highest temperature in Milan be 32°C on September 4?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.56,
+      "model_prob": 0.2986,
+      "ev": -0.3034,
+      "market_prob": 0.56,
+      "role": "main_signal",
+      "units": 29.4,
+      "sell_value": 0.55,
+      "won": false,
+      "pnl_units": -29.4,
+      "user_entered": false
+    },
+    {
+      "market_id": "4107161",
+      "question": "Will the highest temperature in Milan be 32°C on September 4? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.44,
+      "model_prob": 0.7014,
+      "ev": 0.3861,
+      "market_prob": 0.44,
+      "role": "scenario_hedge",
+      "units": 15.24,
+      "sell_value": 0.43,
+      "won": true,
+      "pnl_units": 19.4,
+      "user_entered": false
+    },
+    {
+      "market_id": "4107169",
+      "question": "Will the highest temperature in Milan be 37°C or higher on September 4? (NO)",
+      "range": [
+        37.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9954,
+      "ev": -0.0027,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 7.27,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
 }
