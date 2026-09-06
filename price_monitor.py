@@ -1,11 +1,18 @@
 """
-price_monitor.py -- اسکنر دوساعتهٔ مستقل برای قفل‌های باز + پیام تلگرام.
+price_monitor.py -- اسکنر نیم‌ساعتهٔ مستقل برای قفل‌های باز + پیام تلگرام.
 =====================================================================================
 تغییر این نسخه:
   ۱) زمان باقی‌مانده تا resolve حالا کنار همهٔ بازارها نشان داده می‌شود
      (نه فقط وقتی کمتر از ۳ ساعت مانده -- آن حالت فقط ⭐/⏰ را کنترل می‌کند).
   ۲) متن زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m to resolve")
      تا با فارسی قاطی نشود و به‌هم‌ریختگی راست‌به‌چپ/چپ‌به‌راست پیش نیاید.
+  ۳) (فاز ۲ نقشه‌راه) آستانهٔ هشدار سود/ضرر از سنت مطلق به درصد تغییر کرد --
+     TAKE_PROFIT_PCT=20.0 / STOP_LOSS_PCT=10.0 (همان اعداد قبلی، فقط
+     واحدشان عوض شد). محتوای نمایشی پیام (سنت، درصد، رنگ، فلش) کاملاً
+     بدون تغییر ماند. نکتهٔ فنی مهم: pct پیش از مقایسه با آستانه رند شد
+     (round(...,1))، دقیقاً مثل diff_cents قبلی -- چون بدون این رند، خطای
+     اعشاری شناور (مثلاً 19.999999999999996 به‌جای 20.0) می‌توانست باعث
+     نرسیدن به آستانه شود؛ این در تست فاز ۲ کشف و اصلاح شد.
 """
 import json
 import os
@@ -31,8 +38,8 @@ MARKETS_DIR = Path("data/markets")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
-TAKE_PROFIT_CENTS = 20
-STOP_LOSS_CENTS = 10
+TAKE_PROFIT_PCT = 20.0
+STOP_LOSS_PCT = 10.0
 NEAR_RESOLVE_HOURS = 3.0
 
 
@@ -160,10 +167,10 @@ def build_message(now, locks):
 
             entry = l["entry_price"]
             diff_cents = round((current - entry) * 100, 1)
-            pct = (current - entry) / entry * 100 if entry else 0.0
-            l["last_pct"] = round(pct, 1)
+            pct = round((current - entry) / entry * 100, 1) if entry else 0.0
+            l["last_pct"] = pct
 
-            triggered = diff_cents >= TAKE_PROFIT_CENTS or diff_cents <= -STOP_LOSS_CENTS
+            triggered = pct >= TAKE_PROFIT_PCT or pct <= -STOP_LOSS_PCT
             if triggered:
                 star = True
                 any_trigger = True
