@@ -14,6 +14,15 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
      فارسی قاطی نشود و به‌هم‌ریختگی جهت متن پیش نیاید (طبق بازخورد کاربر).
   ۸) ستون جدید "باور نهایی" (b["belief_prob"]) به جدول باکت‌ها اضافه شد --
      فقط نمایشی، از داده‌ای که strategy.py از قبل تولید می‌کرد.
+  ۹) (فاز ۳ نقشه‌راه) «آخرین به‌روزرسانی: X ساعت پیش -- اسکن کامل/سبک» از
+     data/last_scan.json.
+  ۱۰) (فاز ۴ نقشه‌راه) رفع باگ «قفل ثبت نمی‌شود / مطمئن نیستم» -- وضعیت
+      موقت فوری کنار دکمه + payload کوتاه‌تر در URL.
+  ۱۱) (فاز ۵ نقشه‌راه) سکشن جدید و مجزا در بالای صفحه: «سیگنال‌های
+      قفل‌شدهٔ فعال».
+  ۱۲) (فاز ۶ نقشه‌راه -- فقط ظاهر) بازطراحی کامل بصری: خروج از حالت تیره
+      به یک پالت روشن غیرخالص، فونت فارسی خواناتر (Vazirmatn)، و بهبود
+      واکنش‌گرایی موبایل. هیچ محتوا/منطق/ساختار HTML معنایی تغییر نکرده.
 """
 import json
 from collections import defaultdict
@@ -43,45 +52,77 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <title>WeatherBet -- ساده</title>
 <style>
 * { box-sizing: border-box; }
-body{background:#0f1115;color:#e6e6e6;font-family:Tahoma,Vazir,sans-serif;padding:12px;margin:0;font-size:15px}
-h1{font-size:18px;margin:8px 0}
-h2{font-size:15px;margin-top:28px;border-bottom:1px solid #2a2e37;padding-bottom:6px;scroll-margin-top:16px}
-.meta{color:#9aa0a6;font-size:12px;margin-bottom:12px;line-height:1.6}
+:root{
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --surface-2: #f6f8fb;
+  --border: #dde3ec;
+  --text: #1f2430;
+  --text-dim: #6b7684;
+  --accent: #2563eb;
+  --accent-dim: #eaf1ff;
+  --green: #16a34a;
+  --green-bg: #e8f8ee;
+  --red: #dc2626;
+  --red-bg: #fdeceb;
+  --amber: #b45309;
+  --amber-bg: #fef3e0;
+}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,Arial,sans-serif;
+  padding:14px;margin:0;font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+h1{font-size:19px;margin:6px 0 10px;font-weight:700;color:var(--text)}
+h2{font-size:15.5px;margin-top:30px;border-bottom:1px solid var(--border);padding-bottom:8px;scroll-margin-top:16px;font-weight:700}
+.meta{color:var(--text-dim);font-size:12.5px;margin-bottom:14px;line-height:1.7}
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
-.toolbar input[type=text]{flex:1;min-width:140px;background:#181b21;border:1px solid #2a2e37;color:#e6e6e6;border-radius:8px;padding:9px 12px;font-size:13px}
-.jump-btn{display:inline-block;background:#2563eb;color:#fff;border-radius:8px;padding:9px 14px;font-size:12.5px;text-decoration:none;white-space:nowrap}
-a{color:#60a5fa}
-details.city-block{background:#14161b;border:1px solid #2a2e37;border-radius:10px;padding:6px 10px;margin-bottom:8px}
-details.date-block{background:#101216;border:1px solid #23262d;border-radius:8px;padding:6px 10px;margin:6px 0}
-summary{cursor:pointer;font-size:13.5px;color:#c7ccd1;list-style:none;padding:6px 2px}
+.toolbar input[type=text]{flex:1;min-width:140px;background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:11px 14px;font-size:13.5px;box-shadow:0 1px 2px rgba(20,30,60,0.04)}
+.toolbar input[type=text]:focus{outline:2px solid var(--accent);outline-offset:1px}
+.jump-btn{display:inline-block;background:var(--accent);color:#fff;border-radius:10px;padding:11px 16px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;box-shadow:0 2px 6px rgba(37,99,235,0.25)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+details.city-block{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:8px 12px;margin-bottom:10px;box-shadow:0 1px 3px rgba(20,30,60,0.05)}
+details.date-block{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:8px 0}
+summary{cursor:pointer;font-size:14px;color:var(--text);list-style:none;padding:8px 4px;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"\u25B8";color:#6b7280;font-size:11px;margin-left:6px}
+summary::before{content:"\u25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
 details[open]>summary::before{content:"\u25BE"}
-.main-badge{background:#16a34a33;color:#4ade80;border:1px solid #16a34a;border-radius:6px;padding:2px 6px;font-size:10.5px;white-space:nowrap;margin-right:6px}
-.time-note{color:#9aa0a6;font-size:11px;direction:ltr;unicode-bidi:embed;display:inline-block}
-.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
-table{width:100%;min-width:480px;border-collapse:collapse;font-size:12.5px}
-th,td{padding:8px 6px;text-align:center;border-bottom:1px solid #23262d;white-space:nowrap}
-th{color:#9aa0a6;font-weight:normal;font-size:11.5px}
-.lock-btn,.unlock-btn{border:none;border-radius:8px;padding:9px 14px;font-size:12.5px;cursor:pointer;min-height:38px}
-.lock-btn{background:#2563eb;color:#fff}
-.unlock-btn{background:#dc2626;color:#fff}
-.locked-badge{color:#4ade80;font-size:11px;display:block;margin-bottom:4px}
-.empty{color:#6b7280;font-style:italic;padding:12px 0}
-.win{color:#4ade80}
-.loss{color:#f87171}
+.main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
+.time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
+.locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px;border-radius:8px}
+table{width:100%;min-width:480px;border-collapse:collapse;font-size:13px;background:var(--surface);font-variant-numeric:tabular-nums}
+th,td{padding:10px 8px;text-align:center;border-bottom:1px solid var(--border);white-space:nowrap}
+th{color:var(--text-dim);font-weight:600;font-size:11.5px;background:var(--surface-2)}
+tr:last-child td{border-bottom:none}
+.lock-btn,.unlock-btn{border:none;border-radius:9px;padding:10px 16px;font-size:12.5px;font-weight:600;cursor:pointer;min-height:40px}
+.lock-btn{background:var(--accent);color:#fff}
+.lock-btn:hover{background:#1d4ed8}
+.unlock-btn{background:var(--red);color:#fff}
+.unlock-btn:hover{background:#b91c1c}
+.locked-badge{color:var(--green);font-size:11.5px;font-weight:600;display:block;margin-bottom:4px}
+.lock-status{display:block;font-size:10.5px;margin-top:5px;line-height:1.4;max-width:170px}
+.empty{color:var(--text-dim);font-style:italic;padding:14px 2px}
+.win{color:var(--green);font-weight:600}
+.loss{color:var(--red);font-weight:600}
 .history-filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.history-filters select{background:#181b21;border:1px solid #2a2e37;color:#e6e6e6;border-radius:8px;padding:8px 10px;font-size:12.5px}
-.download-btn{display:inline-block;margin:10px 0;background:#374151;color:#e6e6e6;border:1px solid #4b5563;border-radius:8px;padding:10px 16px;font-size:12.5px;text-decoration:none}
+.history-filters select{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:9px 12px;font-size:12.5px}
+.download-btn{display:inline-block;margin:10px 0;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:11px 18px;font-size:12.5px;font-weight:600;text-decoration:none;box-shadow:0 1px 2px rgba(20,30,60,0.04)}
+.download-btn:hover{border-color:var(--accent);text-decoration:none}
 @media (max-width: 480px){
-  body{padding:8px;font-size:14px}
-  th,td{padding:7px 5px;font-size:11.5px}
+  body{padding:10px;font-size:14.5px}
+  h1{font-size:18px}
+  th,td{padding:9px 6px;font-size:12px}
+  .lock-btn,.unlock-btn{padding:11px 14px;min-height:44px}
+  .toolbar input[type=text]{padding:12px 14px}
 }
 </style>
 </head>
 <body>
 <h1>WeatherBet -- داشبورد ساده</h1>
-<div class="meta">آخرین به‌روزرسانی: LASTUPDATE UTC<br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
+<div class="meta">آخرین به‌روزرسانی: LASTUPDATE UTC <span class="time-note">(LASTSCANRELATIVE)</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 <div class="toolbar">
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
   <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
@@ -115,25 +156,37 @@ function filterHistory() {
     row.style.display = (okCity && okDate) ? '' : 'none';
   });
 }
+function setLockStatus(marketId, text, color) {
+  const el = document.getElementById("lockstatus-" + marketId);
+  if (el) { el.textContent = text; el.style.color = color || "#9aa0a6"; }
+}
 function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
+  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
-  const payload = {
-    action: "lock", city: city, date: date,
-    market_id: marketId + "|" + tokenId, side: side,
-    price: price, locked_at: new Date().toISOString()
-  };
+  const payload = { city: city, date: date, market_id: marketId + "|" + tokenId, side: side, price: price };
   const title = encodeURIComponent("LOCK " + cityName + " " + date + " " + label + " " + side + " @ " + price);
-  const body = encodeURIComponent(JSON.stringify(payload, null, 2));
+  const body = encodeURIComponent(JSON.stringify(payload));
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=lock-request";
-  window.open(url, "_blank");
+  const win = window.open(url, "_blank");
+  if (win) {
+    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا قفل ثبت شود!", "#f59e0b");
+  } else {
+    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+  }
 }
 function unlockBucket(city, cityName, date, marketId, label) {
+  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
-  const payload = { action: "unlock", city: city, date: date, market_id: marketId };
+  const payload = { city: city, date: date, market_id: marketId };
   const title = encodeURIComponent("UNLOCK " + cityName + " " + date + " " + label);
-  const body = encodeURIComponent(JSON.stringify(payload, null, 2));
+  const body = encodeURIComponent(JSON.stringify(payload));
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=unlock-request";
-  window.open(url, "_blank");
+  const win = window.open(url, "_blank");
+  if (win) {
+    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا حذف شود!", "#f59e0b");
+  } else {
+    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+  }
 }
 </script>
 </body>
@@ -199,6 +252,37 @@ def _hours_left_str(hours):
     return f"{h}h {m}m remaining"
 
 
+LAST_SCAN_FILE = Path("data/last_scan.json")
+
+
+def _last_scan_relative_str():
+    if not LAST_SCAN_FILE.exists():
+        return ""
+    try:
+        data = json.loads(LAST_SCAN_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return ""
+    timestamps = []
+    for kind in ("full", "lite"):
+        ts = data.get(kind)
+        if not ts:
+            continue
+        try:
+            timestamps.append((kind, datetime.fromisoformat(ts)))
+        except Exception:
+            continue
+    if not timestamps:
+        return ""
+    kind, latest = max(timestamps, key=lambda kv: kv[1])
+    now = datetime.now(timezone.utc)
+    if latest.tzinfo is None:
+        latest = latest.replace(tzinfo=timezone.utc)
+    minutes = max(0, int((now - latest).total_seconds() // 60))
+    h, m = divmod(minutes, 60)
+    kind_label = "اسکن کامل" if kind == "full" else "اسکن سبک"
+    return f"{h}h {m}m ago -- {kind_label}"
+
+
 def _build_polymarket_url(city, date_str):
     try:
         dt = datetime.strptime(date_str, "%Y-%m-%d")
@@ -233,17 +317,20 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
 
         is_locked = (city_slug, date, market_id) in locked_keys
         action_html = ""
+        status_span = f'<span class="lock-status" id="lockstatus-{market_id}"></span>' if market_id else ""
         if yes_price is not None and market_id:
             if is_locked:
                 action_html = (
                     f'<span class="locked-badge">قفل \u2714</span>'
                     f'<button class="unlock-btn" onclick="unlockBucket(\'{city_slug}\',\'{city_name}\','
                     f"'{date}','{market_id}','{label}')\">حذف قفل</button>"
+                    f'{status_span}'
                 )
             else:
                 action_html = (
                     f'<button class="lock-btn" onclick="lockBucket(\'{city_slug}\',\'{city_name}\','
                     f"'{date}','{market_id}','{yes_token}','YES',{yes_price},'{label}')\">قفل کن</button>"
+                    f'{status_span}'
                 )
 
         rows.append(
@@ -252,6 +339,65 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         )
     rows.append("</table>")
     return "".join(rows)
+
+
+def _load_market_by_key(city, date):
+    p = MARKETS_DIR / f"{city}_{date}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def _locked_signals_section_html(locks):
+    """فاز ۵ نقشه‌راه: سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های
+    قفل‌شدهٔ فعال (status == "open") را با قیمت قفل، قیمت فعلی، درصد تغییر،
+    و ساعت باقی‌مانده تا resolve نشان می‌دهد."""
+    open_locks = [l for l in locks if l.get("status") == "open"]
+    if not open_locks:
+        return ""
+    now = datetime.now(timezone.utc)
+    rows = [
+        "<table><tr><th>شهر</th><th>تاریخ</th><th>قیمت قفل‌شده</th>"
+        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>باقی‌مانده تا resolve</th></tr>"
+    ]
+    for l in sorted(open_locks, key=lambda x: (x.get("city", ""), x.get("date", ""))):
+        city = l.get("city", "")
+        date = l.get("date", "")
+        name = LOCATIONS.get(city, {}).get("name", city)
+        entry = l.get("entry_price")
+        entry_str = f"{entry:.3f}" if entry is not None else "-"
+        last = l.get("last_price")
+        last_str = f"{last:.3f}" if last is not None else "-"
+        pct = l.get("last_pct")
+        if pct is None:
+            pct_html = "-"
+        else:
+            css = "win" if pct >= 0 else "loss"
+            pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
+        mkt = _load_market_by_key(city, date)
+        hours_left = None
+        if mkt and mkt.get("event_end_date"):
+            try:
+                end = datetime.fromisoformat(mkt["event_end_date"])
+                hours_left = max(0.0, (end - now).total_seconds() / 3600)
+            except Exception:
+                hours_left = None
+        time_str = _hours_left_str(hours_left) if hours_left is not None else "-"
+        rows.append(
+            f"<tr><td>{name}</td><td>{date}</td><td>{entry_str}</td>"
+            f"<td>{last_str}</td><td>{pct_html}</td><td>{time_str}</td></tr>"
+        )
+    rows.append("</table>")
+    table_html = "".join(rows)
+    return (
+        "<details class='city-block locked-section' open>"
+        f"<summary><b>\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(open_locks)})</summary>"
+        f"<div class='table-scroll'>{table_html}</div>"
+        "</details>"
+    )
 
 
 def _date_block_html(m, city_slug, city_name, locked_keys):
@@ -346,11 +492,12 @@ def build_simple_dashboard():
             f"<summary>{summary}</summary>{inner}</details>"
         )
 
-    body_html = "".join(parts)
+    body_html = _locked_signals_section_html(locks) + "".join(parts)
     history_html, history_city_options, history_date_options = _history_table_html(locks)
 
     html = HTML_TEMPLATE
     html = html.replace("LASTUPDATE", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"))
+    html = html.replace("LASTSCANRELATIVE", _last_scan_relative_str() or "بدون سابقهٔ اسکن")
     html = html.replace("BODYHTML", body_html)
     html = html.replace("HISTORYHTML", history_html)
     html = html.replace("HISTORYCITYOPTIONS", history_city_options)
