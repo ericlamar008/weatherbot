@@ -22,8 +22,8 @@ UNCHANGED from the previous version.
 
 --- WEATHERBET INTERACTIVE-LOCK FEATURE (added, per user directive) ---------
 get_clob_book_bid() moved out of this file into clob_utils.py so that the
-new, independent 2-hour lock-price scanner (price_monitor.py) can share the
-exact same implementation instead of duplicating it. Nothing else about this
+new, independent lock-price scanner (price_monitor.py) can share the exact
+same implementation instead of duplicating it. Nothing else about this
 file's behavior changed -- same function, same signature, same retry-free
 best-effort semantics, just imported instead of defined locally.
 -----------------------------------------------------------------------------
@@ -34,35 +34,34 @@ date list from a single shared `datetime.now(timezone.utc)`. Near UTC
 midnight this is WRONG for any city far from UTC: e.g. at 22:30 UTC, Seoul
 (UTC+9) and Tel Aviv (UTC+2/+3) already consider it a NEW local calendar
 day, but the bot still labeled that new day as "tomorrow" (horizon_days=1)
-instead of "today" (horizon_days=0) -- confirmed directly with a reproduction
-at 2026-08-26 22:30 UTC: old logic said "today" = 2026-08-26 for Seoul, but
-Seoul's real local date was already 2026-08-27. Since `horizon_days` is fed
-straight into forecasting.get_sigma()/get_bias(), this silently applied the
-WRONG per-horizon calibration to the market.
+instead of "today" (horizon_days=0).
 
 FIX: a new helper `_local_dates_for_city(now, loc, count)` converts the
 single shared UTC `now` into each city's own local calendar via its `tz`
 field before building the date list. Falls back to the old UTC-based date
 list (with a one-time printed warning per timezone) if the local `zoneinfo`
-database isn't available on this machine (e.g. Windows without the
-`tzdata` pip package) -- this NEVER crashes the bot. If you see a
-`[TZ-WARN]` line in the console, run:
-pip install tzdata
-
-Only `discover_new_signals()` changed (both places it built a `dates` list).
-No other function in this file changed.
+database isn't available on this machine -- this NEVER crashes the bot.
 
 --- ACCURACY REPORT AUTO-EXPORT (added) -------------------------------------
 run_once() now also calls export_accuracy_report.build_accuracy_report()
 after the dashboard is built, so data/accuracy_report.csv stays up to date
-on every scan cycle without any manual step. Wrapped in try/except so a
-failure here (e.g. empty data/markets/ folder) can never crash the bot --
-same defensive style as the rest of this file.
+on every scan cycle without any manual step.
+
+--- روادراه: فاز ۳ -- اسکن سبک واقعی (heartbeat) ------------------------------
+دو تابع جدید: refresh_open_market_info(now) که فقط قیمت/پیش‌بینی بازارهای
+باز را از صفر تازه می‌کند (بدون فراخوانی strat.build_portfolio، یعنی بدون
+سایزینگ و بدون دست‌زدن به live_allocation/committed_allocation)، و
+run_lite_scan() که این تازه‌سازی + resolve_expired_markets +
+fc.update_calibration_from_live را با هم صدا می‌زند -- دستور CLI جدید:
+python weatherbot_v3.py lite_scan
+زمان هر اسکن (سنگین/سبک) در data/last_scan.json ثبت می‌شود تا داشبورد
+بتواند «آخرین به‌روزرسانی: X ساعت پیش» نشان دهد.
 =====================================================================================
 Usage:
 python weatherbot_v3.py backfill   # one-time: calibrate sigma+bias from history
 python weatherbot_v3.py serve      # runs the scan loop AND serves dashboard.html
 python weatherbot_v3.py once       # single scan cycle, then exit (no server)
+python weatherbot_v3.py lite_scan  # light refresh: prices/forecasts + resolve, NO sizing
 python weatherbot_v3.py run        # main loop, no server
 =====================================================================================
 """
@@ -357,9 +356,9 @@ def get_polymarket_event_for_market_date(city_slug, date_str):
 
 
 # NOTE: get_clob_book_bid() used to be defined here. It now lives in
-# clob_utils.py (imported above) so that price_monitor.py -- the new,
-# independent 2-hour lock-price scanner -- can reuse the exact same
-# implementation instead of duplicating it. Behavior is 100% unchanged.
+# clob_utils.py (imported above) so that price_monitor.py can reuse the
+# exact same implementation instead of duplicating it. Behavior is 100%
+# unchanged.
 
 
 def parse_temp_range(question):
@@ -496,14 +495,7 @@ _tz_warned = set()
 
 def _local_dates_for_city(now, loc, count=4):
     """Returns `count` date strings (YYYY-MM-DD) starting from "today" in
-    THIS CITY'S OWN local timezone (loc["tz"]), not global UTC.
-
-    FIX (Phase 3 / F3, WEATHERBOT_ROADMAP.md): see module docstring for the
-    full before/after reproduction. Falls back to the old UTC-based date
-    list (printing a one-time warning per timezone) if `zoneinfo` can't
-    resolve the timezone on this machine (e.g. Windows without the
-    `tzdata` package) -- this must never crash the bot.
-    """
+    THIS CITY'S OWN local timezone (loc["tz"]), not global UTC."""
     if ZoneInfo is not None:
         try:
             local_now = now.astimezone(ZoneInfo(loc["tz"]))
@@ -522,7 +514,6 @@ def discover_new_signals(now, state):
     fetch_jobs = []
     for city_slug in LOCATIONS:
         loc = LOCATIONS[city_slug]
-        # FIX (Phase 3): was dates = [(now + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(4)]
         dates = _local_dates_for_city(now, loc, 4)
         for i, date in enumerate(dates):
             dt = datetime.strptime(date, "%Y-%m-%d")
@@ -544,7 +535,6 @@ def discover_new_signals(now, state):
 
     for city_slug, loc in LOCATIONS.items():
         print(f"  -> {loc['name']}...", end=" ", flush=True)
-        # FIX (Phase 3): was dates = [(now + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(4)]
         dates = _local_dates_for_city(now, loc, 4)
 
         for i, date in enumerate(dates):
@@ -679,6 +669,110 @@ def refresh_all_locked_markets(now):
         save_market(mkt)
 
 
+def refresh_open_market_info(now):
+    """Phase 3 (نقشه‌راه heartbeat سبک): بازخوانی قیمت/پیش‌بینی بازارهای باز
+    از صفر -- بدون هیچ فراخوانی strat.build_portfolio، یعنی بدون سایزینگ و
+    بدون دست‌زدن به live_allocation/committed_allocation. فقط داده‌های
+    نمایشی (forecast_mean, sigma, full_distribution) تازه می‌شوند.
+
+    full_distribution همچنان با strat.build_candidate_set ساخته می‌شود
+    (نه fc.full_bucket_distribution خام) چون این تابع همان belief_prob/ev
+    را هم اضافه می‌کند -- بدون این کار، ستون «باور نهایی» بعد از هر
+    اسکن سبک خالی می‌ماند. باید پارامترها با strat.get_merged_params()
+    کامل شوند (نه STRATEGY_PARAMS خام)، چون build_candidate_set به
+    کلیدهایی مثل belief_model_weight نیاز دارد که فقط در DEFAULT_PARAMS
+    داخل strategy.py تعریف شده‌اند.
+    """
+    open_markets = [m for m in load_all_markets() if m.get("status") == "open"]
+    if not open_markets:
+        return 0
+
+    merged_params = strat.get_merged_params(STRATEGY_PARAMS)
+
+    with ThreadPoolExecutor(max_workers=EVENT_FETCH_WORKERS) as pool:
+        future_to_mkt = {
+            pool.submit(get_polymarket_event_for_market_date, m["city"], m["date"]): m
+            for m in open_markets
+        }
+        events_by_key = {}
+        for future in as_completed(future_to_mkt):
+            mkt = future_to_mkt[future]
+            key = (mkt["city"], mkt["date"])
+            try:
+                events_by_key[key] = future.result()
+            except Exception:
+                events_by_key[key] = None
+
+    refreshed = 0
+    for mkt in open_markets:
+        loc = LOCATIONS.get(mkt["city"])
+        if not loc:
+            continue
+
+        local_dates = _local_dates_for_city(now, loc, 4)
+        try:
+            horizon_days = local_dates.index(mkt["date"])
+        except ValueError:
+            continue
+
+        event = events_by_key.get((mkt["city"], mkt["date"]))
+        if not event:
+            continue
+
+        outcomes = fetch_outcomes(event)
+        if not outcomes:
+            continue
+
+        tradable_outcomes = [d for d in outcomes if d["volume"] > 0]
+        if not tradable_outcomes:
+            continue
+
+        try:
+            members = fc.build_combined_distribution(mkt["city"], loc, mkt["date"])
+            mean, sigma = fc.build_calibrated_distribution(members, mkt["city"], horizon_days, loc["unit"])
+        except Exception:
+            continue
+
+        if mean is None:
+            continue
+
+        dist = fc.full_bucket_distribution(mean, sigma, tradable_outcomes)
+        tradable_dist = [d for d in dist if d["volume"] > 0]
+        if not tradable_dist:
+            continue
+
+        candidates = strat.build_candidate_set(tradable_dist, merged_params)
+        full_distribution = sorted(
+            [c for c in candidates if c["side"] == "YES"], key=lambda x: x["range"][0]
+        )
+        if not full_distribution:
+            continue
+
+        mkt["forecast_mean"] = mean
+        mkt["sigma"] = sigma
+        mkt["full_distribution"] = full_distribution
+        mkt["last_lite_refresh"] = now.isoformat()
+        save_market(mkt)
+        refreshed += 1
+
+    return refreshed
+
+
+LAST_SCAN_FILE = DATA_DIR / "last_scan.json"
+
+
+def _record_scan_timestamp(kind):
+    """ثبت زمان آخرین اسکن سنگین/سبک برای نمایش «آخرین به‌روزرسانی: X ساعت پیش» در داشبورد."""
+    data = {}
+    if LAST_SCAN_FILE.exists():
+        try:
+            data = json.loads(LAST_SCAN_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            data = {}
+    data[kind] = datetime.now(timezone.utc).isoformat()
+    LAST_SCAN_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 # =============================================================================
 # PHASE 3 -- RESOLUTION (unchanged)
 # =============================================================================
@@ -792,9 +886,33 @@ def run_once():
         print(f"  [accuracy-report] {n_rows} رکورد در data/accuracy_report.csv به‌روزرسانی شد")
     except Exception as e:
         print(f"  [accuracy-report] هشدار: گزارش دقت ساخته نشد ({e}) -- بات ادامه می‌دهد")
+    _record_scan_timestamp("full")
     print(f"  new signals: {new_pos} | committed: {committed} | resolved: {resolved}")
     print(f"  dashboard updated: {dash_path}")
     print(f"  mark your real trades in: {ENTRIES_FILE}")
+
+
+def run_lite_scan():
+    """فاز ۳ نقشه‌راه: اسکن سبک (heartbeat) -- فقط تازه‌سازی اطلاعات نمایشی
+    بازارهای باز، resolve بازارهای منقضی، و به‌روزرسانی کالیبراسیون زنده.
+    هیچ سیگنال جدیدی ساخته نمی‌شود و هیچ پوزیشنی سایز/تغییر نمی‌کند."""
+    t_start = time.perf_counter()
+    now = datetime.now(timezone.utc)
+    print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] اسکن سبک -- تازه‌سازی اطلاعات {len(LOCATIONS)} شهر...")
+
+    refreshed = refresh_open_market_info(now)
+    state = load_state()
+    resolved_count = resolve_expired_markets(state)
+    save_state(state)
+
+    try:
+        fc.update_calibration_from_live(load_all_markets(), LOCATIONS)
+    except Exception as e:
+        print(f"  هشدار: به‌روزرسانی کالیبراسیون زنده ناموفق بود: {e}")
+
+    _record_scan_timestamp("lite")
+    print(f"  بازارهای تازه‌سازی‌شده: {refreshed} | resolve‌شده: {resolved_count}")
+    print(f"  توجه: هیچ سیگنال/پوزیشن جدیدی در این مسیر ساخته نمی‌شود.")
 
 
 def run_loop():
@@ -831,9 +949,11 @@ if __name__ == "__main__":
         print("Backfill complete. You can now run: python weatherbot_v3.py serve")
     elif cmd == "once":
         run_once()
+    elif cmd == "lite_scan":
+        run_lite_scan()
     elif cmd == "serve":
         run_serve()
     elif cmd == "run":
         run_loop()
     else:
-        print("Usage: python weatherbot_v3.py [backfill|once|serve|run]")
+        print("Usage: python weatherbot_v3.py [backfill|once|lite_scan|serve|run]")
