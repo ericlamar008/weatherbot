@@ -73,7 +73,7 @@ jobs:
           import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          base = "https://USERNAME.github.io/weatherbot"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          base = "https://ericlamar008.github.io/weatherbot"  # این خط را با آدرس واقعی خودتان جایگزین کنید
           stale = os.environ.get("DEADMAN_STALE", "false") == "true"
           hours_since = os.environ.get("DEADMAN_HOURS", "?")
           warning = (
