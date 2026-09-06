@@ -51,6 +51,13 @@ pip install tzdata
 
 Only `discover_new_signals()` changed (both places it built a `dates` list).
 No other function in this file changed.
+
+--- ACCURACY REPORT AUTO-EXPORT (added) -------------------------------------
+run_once() now also calls export_accuracy_report.build_accuracy_report()
+after the dashboard is built, so data/accuracy_report.csv stays up to date
+on every scan cycle without any manual step. Wrapped in try/except so a
+failure here (e.g. empty data/markets/ folder) can never crash the bot --
+same defensive style as the rest of this file.
 =====================================================================================
 Usage:
 python weatherbot_v3.py backfill   # one-time: calibrate sigma+bias from history
@@ -84,6 +91,7 @@ import strategy as strat
 import resolution as res
 import dashboard as dash
 from clob_utils import get_clob_book_bid
+import export_accuracy_report as accuracy_report
 
 # =============================================================================
 # CONFIG
@@ -779,6 +787,11 @@ def run_once():
     new_pos, resolved, committed = scan_and_update()
     state = load_state()
     dash_path = dash.build_dashboard(state, load_all_markets(), LOCATIONS)
+    try:
+        n_rows = accuracy_report.build_accuracy_report()
+        print(f"  [accuracy-report] {n_rows} رکورد در data/accuracy_report.csv به‌روزرسانی شد")
+    except Exception as e:
+        print(f"  [accuracy-report] هشدار: گزارش دقت ساخته نشد ({e}) -- بات ادامه می‌دهد")
     print(f"  new signals: {new_pos} | committed: {committed} | resolved: {resolved}")
     print(f"  dashboard updated: {dash_path}")
     print(f"  mark your real trades in: {ENTRIES_FILE}")
