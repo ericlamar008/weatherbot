@@ -12,6 +12,8 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
   ۶) دکمهٔ پرش سریع به بخش تاریخچه، بالای صفحه.
   ۷) زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m remaining") تا با
      فارسی قاطی نشود و به‌هم‌ریختگی جهت متن پیش نیاید (طبق بازخورد کاربر).
+  ۸) ستون جدید "باور نهایی" (b["belief_prob"]) به جدول باکت‌ها اضافه شد --
+     فقط نمایشی، از داده‌ای که strategy.py از قبل تولید می‌کرد.
 """
 import json
 from collections import defaultdict
@@ -211,7 +213,7 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         return '<div class="empty">داده‌ای موجود نیست.</div>'
     rows = [
         "<table><tr><th>باکت</th><th>احتمال مدل</th><th>احتمال بازار (YES)</th>"
-        "<th>قیمت YES</th><th></th></tr>"
+        "<th>قیمت YES</th><th>باور نهایی</th><th></th></tr>"
     ]
     for b in full_distribution:
         low, high = b.get("range", [None, None])
@@ -221,6 +223,8 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         model_str = f"{model_prob * 100:.1f}%" if model_prob is not None else "-"
         market_str = f"{yes_price * 100:.1f}%" if yes_price is not None else "-"
         price_str = f"{yes_price:.3f}" if yes_price is not None else "-"
+        belief_val = b.get("belief_prob")
+        belief_str = f"{belief_val * 100:.1f}%" if belief_val is not None else "-"
         market_id = str(b.get("market_id", ""))
         yes_token = b.get("yes_token_id", "")
 
@@ -244,7 +248,7 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
 
         rows.append(
             f"<tr><td>{label_html}</td><td>{model_str}</td><td>{market_str}</td>"
-            f"<td>{price_str}</td><td>{action_html}</td></tr>"
+            f"<td>{price_str}</td><td>{belief_str}</td><td>{action_html}</td></tr>"
         )
     rows.append("</table>")
     return "".join(rows)
