@@ -3,12 +3,12 @@
   "city_name": "Tokyo",
   "date": "2026-09-06",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-05T00:42:11.825873+00:00",
   "committed_allocation": null,
-  "hours_left": 6.9,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-06T12:00:00Z",
-  "last_scan": "2026-09-06T04:55:46.844344+00:00",
+  "last_scan": "2026-09-06T19:47:12.692744+00:00",
   "horizon_days": 0,
   "forecast_mean": 22.25,
   "sigma": 1.178,
@@ -271,7 +271,10 @@
       "market_prob": 0.825,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.81
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 6.36,
+      "user_entered": false
     },
     {
       "market_id": "4207354",
@@ -287,7 +290,10 @@
       "market_prob": 0.175,
       "role": "scenario_hedge",
       "units": 4.24,
-      "sell_value": 0.13
+      "sell_value": 0.13,
+      "won": false,
+      "pnl_units": -4.24,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 34.2,
@@ -298,5 +304,50 @@
   "success_probability": 0.5554,
   "confidence": 0.526,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 23.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 2.12,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4207354",
+      "question": "Will the highest temperature in Tokyo be 23°C on September 6?",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "YES",
+      "price": 0.825,
+      "model_prob": 0.2516,
+      "ev": -0.4518,
+      "market_prob": 0.825,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 6.36,
+      "user_entered": false
+    },
+    {
+      "market_id": "4207354",
+      "question": "Will the highest temperature in Tokyo be 23°C on September 6? (NO)",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "NO",
+      "price": 0.175,
+      "model_prob": 0.7484,
+      "ev": 2.1297,
+      "market_prob": 0.175,
+      "role": "scenario_hedge",
+      "units": 4.24,
+      "sell_value": 0.13,
+      "won": false,
+      "pnl_units": -4.24,
+      "user_entered": false
+    }
+  ]
 }

@@ -3,12 +3,12 @@
   "city_name": "Singapore",
   "date": "2026-09-06",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-05T00:42:11.825873+00:00",
   "committed_allocation": null,
-  "hours_left": 6.9,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-06T12:00:00Z",
-  "last_scan": "2026-09-06T04:55:46.844344+00:00",
+  "last_scan": "2026-09-06T19:47:12.692744+00:00",
   "horizon_days": 1,
   "forecast_mean": 32.31,
   "sigma": 1.117,
@@ -271,7 +271,10 @@
       "market_prob": 0.695,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.69
+      "sell_value": 0.69,
+      "won": true,
+      "pnl_units": 13.17,
+      "user_entered": false
     },
     {
       "market_id": "4207388",
@@ -287,7 +290,10 @@
       "market_prob": 0.305,
       "role": "scenario_hedge",
       "units": 8.78,
-      "sell_value": 0.3
+      "sell_value": 0.3,
+      "won": false,
+      "pnl_units": -8.78,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 38.8,
@@ -299,5 +305,50 @@
   "confidence": 0.078,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "skipped_reason": "ensemble forecast unavailable (mean is None)"
+  "skipped_reason": "ensemble forecast unavailable (mean is None)",
+  "actual_temp": 33.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 4.39,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4207388",
+      "question": "Will the highest temperature in Singapore be 33°C on September 6?",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "YES",
+      "price": 0.695,
+      "model_prob": 0.2681,
+      "ev": -0.3993,
+      "market_prob": 0.695,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.69,
+      "won": true,
+      "pnl_units": 13.17,
+      "user_entered": false
+    },
+    {
+      "market_id": "4207388",
+      "question": "Will the highest temperature in Singapore be 33°C on September 6? (NO)",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "NO",
+      "price": 0.305,
+      "model_prob": 0.7319,
+      "ev": 0.9098,
+      "market_prob": 0.305,
+      "role": "scenario_hedge",
+      "units": 8.78,
+      "sell_value": 0.3,
+      "won": false,
+      "pnl_units": -8.78,
+      "user_entered": false
+    }
+  ]
 }

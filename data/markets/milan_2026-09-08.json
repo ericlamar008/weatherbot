@@ -1,0 +1,236 @@
+{
+  "city": "milan",
+  "city_name": "Milan",
+  "date": "2026-09-08",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-06T19:47:12.692744+00:00",
+  "committed_allocation": null,
+  "hours_left": 40.1,
+  "event_end_date": "2026-09-08T12:00:00Z",
+  "last_scan": "2026-09-06T19:47:12.692744+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 32.1,
+  "sigma": 0.875,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Milan be 28°C or below on September 8?",
+      "market_id": "4275744",
+      "range": [
+        -999.0,
+        28.0
+      ],
+      "yes_price": 0.007,
+      "no_price": 0.993,
+      "volume": 63.0,
+      "spread": 0.0,
+      "yes_token_id": "127035330723470296599809100443945444247076531882215176209233402092686332142",
+      "no_token_id": "87701377604519853581249781799962665628536967447435694106825759504905432856821",
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.0054,
+      "ev": -0.2286,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 29°C on September 8?",
+      "market_id": "4275745",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0305,
+      "no_price": 0.9695,
+      "volume": 62.0,
+      "spread": 0.0,
+      "yes_token_id": "113615633244921944628831505213511329029224782811027399709242782690666690276020",
+      "no_token_id": "67949981995938168117838550938108896407201838749649333223769264662672191734863",
+      "model_prob": 0.0109,
+      "side": "YES",
+      "ask": 0.0305,
+      "market_prob": 0.0305,
+      "belief_prob": 0.0178,
+      "ev": -0.4164,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 30°C on September 8?",
+      "market_id": "4275746",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 38.0,
+      "spread": 0.0,
+      "yes_token_id": "105809605487603451578856456567418512360974963493539900259536570140188425651937",
+      "no_token_id": "83310645983982150180020070251698037322908488840628779081545008591116605708524",
+      "model_prob": 0.0479,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0574,
+      "ev": -0.2347,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 31°C on September 8?",
+      "market_id": "4275747",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.315,
+      "no_price": 0.685,
+      "volume": 519.0,
+      "spread": 0.0,
+      "yes_token_id": "9092586441864065391281338394752999062264598423377972225547928836370957188913",
+      "no_token_id": "94646343061423020048012982090492555539312278230471567063053194417707950415961",
+      "model_prob": 0.1982,
+      "side": "YES",
+      "ask": 0.315,
+      "market_prob": 0.315,
+      "belief_prob": 0.2391,
+      "ev": -0.241,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 32°C on September 8?",
+      "market_id": "4275748",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.445,
+      "no_price": 0.555,
+      "volume": 342.0,
+      "spread": 0.0,
+      "yes_token_id": "101652110147263886672065938784643152208629991673350726811093288150951771474339",
+      "no_token_id": "38645927484701857570414908811276881683207306731567458467774406956605728564219",
+      "model_prob": 0.4049,
+      "side": "YES",
+      "ask": 0.445,
+      "market_prob": 0.445,
+      "belief_prob": 0.4189,
+      "ev": -0.0587,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 33°C on September 8?",
+      "market_id": "4275749",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.15,
+      "no_price": 0.85,
+      "volume": 34.0,
+      "spread": 0.0,
+      "yes_token_id": "111660113321741807873443701060453868409813313275220834926783857456935861206539",
+      "no_token_id": "16689428524690912231755251825816103515293779732791611880557112572842531078762",
+      "model_prob": 0.2481,
+      "side": "YES",
+      "ask": 0.15,
+      "market_prob": 0.15,
+      "belief_prob": 0.2138,
+      "ev": 0.4253,
+      "kelly": 0.0188,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 34°C on September 8?",
+      "market_id": "4275750",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "91651667748866030789721980233281469646538357949888546978756628180369350554875",
+      "no_token_id": "43060350804116034407861606296900506927737072927228410747748025060010458694857",
+      "model_prob": 0.0649,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0544,
+      "ev": 0.5543,
+      "kelly": 0.005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 38°C or higher on September 8?",
+      "market_id": "4275754",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 115.0,
+      "spread": 0.0,
+      "yes_token_id": "92584087873283543169035106131512579746696615408053117908600450784875152255530",
+      "no_token_id": "7445875120003718102608459337666837417100937968245007596663555690699509172474",
+      "model_prob": 0.0008,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0012,
+      "ev": -0.4,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4275748",
+      "question": "Will the highest temperature in Milan be 32°C on September 8?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.445,
+      "model_prob": 0.4049,
+      "ev": -0.0587,
+      "market_prob": 0.445,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.43
+    },
+    {
+      "market_id": "4275748",
+      "question": "Will the highest temperature in Milan be 32°C on September 8? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.555,
+      "model_prob": 0.5951,
+      "ev": 0.047,
+      "market_prob": 0.555,
+      "role": "scenario_hedge",
+      "units": 24.94,
+      "sell_value": 0.54
+    }
+  ],
+  "total_allocated_units": 54.9,
+  "portfolio_score": -0.014587,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 12.48,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4073,
+  "confidence": 0.168,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
