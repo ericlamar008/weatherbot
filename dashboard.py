@@ -25,6 +25,14 @@ exactly one "not-signal" row as before. Header/row column counts remain
 identical in every mode (verified across (is_committed, show_result)
 combinations).
 
+--- BELIEF COLUMN (added) ----------------------------------------------------
+Added one new read-only column ("باور نهایی") showing b["belief_prob"] --
+the model+market-blended belief that strategy.py already computes for every
+bucket in full_distribution, but never surfaced in the UI before. Purely
+additive: no scoring, sizing, hedge-selection, or gating logic touched.
+Verified header <th> count == row <td> count in both is_committed and
+show_result modes before shipping.
+
 Everything else (all CSS, the sell-info column, resolved/no-signal/
 city-stats sections, the "Lock this moment" JS workflow) is UNCHANGED.
 ================================================================================
@@ -286,7 +294,9 @@ def _render_leg_row(b, alloc, unit_sym, is_committed, live_by_key, show_result):
 
     row = f'<tr class="{rclass}">'
     row += f"<td>{label}</td><td>{side_display}</td>"
-    row += f"<td>{model_prob*100:.1f}%</td><td>{market_prob_pct:.1f}%</td>"
+    belief_val = b.get("belief_prob")
+    belief_str = f"{belief_val*100:.1f}%" if belief_val is not None else "-"
+    row += f"<td>{model_prob*100:.1f}%</td><td>{market_prob_pct:.1f}%</td><td>{belief_str}</td>"
     row += f"<td>{yes_price:.3f}</td><td>{no_price:.3f}</td><td>{edge_str}</td>"
     row += f"<td>{idx}</td><td class='key-cell'>{entry_key}</td>"
     row += f"<td>{role_badge(role)}</td><td>{pct_capital}</td>"
@@ -353,6 +363,7 @@ def unified_bucket_table(distribution, committed_allocation, live_allocation, un
         a["_pct_capital_precomputed"] = f"{a['units'] / display_total_units * 100:.1f}" if display_total_units > 0 else "-"
 
     header = ("<tr><th>محدوده</th><th>سمت</th><th>احتمال مدل</th><th>احتمال بازار</th>"
+              "<th>باور نهایی</th>"
               "<th>قیمت YES</th><th>قیمت NO</th><th>Edge</th><th>#</th><th>کلید my_entries.txt</th>"
               "<th>نقش</th><th>٪ سرمایه</th>")
     if is_committed:
