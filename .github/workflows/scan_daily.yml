@@ -1,4 +1,4 @@
-# محل قرارگیری: .github/workflows/scan_daily.yml (نسخهٔ نهایی)
+# محل قرارگیری واقعی: .github/workflows/scan_daily.yml
 
 name: WeatherBet - اسکن روزانه
 
@@ -41,23 +41,50 @@ jobs:
           git config user.email "ci@users.noreply.github.com"
           git add docs data
           git commit -m "بروزرسانی خودکار روزانه" || echo "چیزی برای کامیت نبود"
-          git pull --rebase origin ${{ github.ref_name }} || true
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
+            sleep 5
+          done
+
+      - name: بررسی سلامت اسکن نیم‌ساعتهٔ قفل‌ها (dead man's switch)
+        id: deadman
+        run: |
+          LAST_TS=$(git log -1 --format=%ct -- data/locked_signals.json 2>/dev/null || echo 0)
+          NOW_TS=$(date +%s)
+          DIFF_H=$(( (NOW_TS - LAST_TS) / 3600 ))
+          echo "hours_since_last_lock_update=$DIFF_H" >> "$GITHUB_OUTPUT"
+          if [ "$LAST_TS" = "0" ]; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          elif [ "$DIFF_H" -ge 4 ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: ارسال لینک هر دو داشبورد در تلگرام
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DEADMAN_STALE: ${{ steps.deadman.outputs.stale }}
+          DEADMAN_HOURS: ${{ steps.deadman.outputs.hours_since_last_lock_update }}
         run: |
           python - <<'PY'
           import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          base = "https://ericlamar008.github.io/weatherbot"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          base = "https://USERNAME.github.io/weatherbot"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          stale = os.environ.get("DEADMAN_STALE", "false") == "true"
+          hours_since = os.environ.get("DEADMAN_HOURS", "?")
+          warning = (
+              f"\n\n⚠️ هشدار: اسکن نیم‌ساعتهٔ قفل‌ها حدود {hours_since} ساعت است commit تازه نداشته -- "
+              f"احتمالاً monitor_locks.yml اجرا نشده."
+          ) if stale else ""
           text = (
               "داشبوردهای امروز آماده‌اند:\n"
               f"داشبورد کامل: {base}/dashboard.html\n"
               f"داشبورد ساده (قفل تعاملی): {base}/simple.html"
+              f"{warning}"
           )
           if token and chat:
               requests.post(
