@@ -1,16 +1,10 @@
-# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (نسخهٔ اصلاح‌شده)
-#
-# اصلاح واقعی نسبت به نسخهٔ قبلی: قبلاً این فایل فقط پیام را می‌فرستاد و
-# خودش صفحه را دوباره نمی‌ساخت -- بر همین اساس بود که با اجرای این
-# Workflow اطلاعات "به‌روز" نمی‌شد. الان دقیقاً مثل monitor_locks.yml خودش
-# هم داشبورد تعاملی را دوباره می‌سازد و منتشر می‌کند، بعد لینک را می‌فرستد --
-# یعنی هر ۶ ساعت واقعاً یک نسخهٔ تازه‌ساخته‌شده دریافت می‌کنید، نه فقط یادآوری.
+# محل قرارگیری واقعی: .github/workflows/heartbeat_dashboard_link.yml
 
 name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # هر ۶ ساعت
+    - cron: "30 6,12,18 * * *"   # ۰۶:۳۰، ۱۲:۳۰، ۱۸:۳۰ UTC -- هم‌راستا با سیکل‌های مدل، دور از اسکن سنگین ۰۰:۳۰
   workflow_dispatch: {}
 
 permissions:
@@ -29,7 +23,10 @@ jobs:
           python-version: "3.11"
 
       - name: نصب پیش‌نیازها
-        run: pip install requests
+        run: pip install -r requirements.txt
+
+      - name: اسکن سبک -- تازه‌سازی قیمت/پیش‌بینی + resolve + کالیبراسیون (بدون سایزینگ)
+        run: python weatherbot_v3.py lite_scan
 
       - name: ساخت دوبارهٔ داشبورد تعاملی با آخرین داده‌های موجود
         run: python dashboard_simple.py
