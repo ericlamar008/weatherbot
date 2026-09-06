@@ -3,12 +3,12 @@
   "city_name": "Los Angeles",
   "date": "2026-09-05",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T18:36:24.107594+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-05T12:00:00Z",
-  "last_scan": "2026-09-05T00:42:11.825873+00:00",
+  "last_scan": "2026-09-06T04:55:46.844344+00:00",
   "horizon_days": 1,
   "forecast_mean": 82.59,
   "sigma": 9.353,
@@ -271,7 +271,10 @@
       "market_prob": 0.0025,
       "role": "main_signal",
       "units": 26.3,
-      "sell_value": 0.002
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -26.3,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 26.3,
@@ -282,5 +285,31 @@
   "success_probability": 0.1942,
   "confidence": 0.275,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 80.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -26.3,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4187134",
+      "question": "Will the highest temperature in Los Angeles be 86°F or higher on September 5?",
+      "range": [
+        86.0,
+        999.0
+      ],
+      "side": "YES",
+      "price": 0.0025,
+      "model_prob": 0.5232,
+      "ev": 135.4,
+      "market_prob": 0.0025,
+      "role": "main_signal",
+      "units": 26.3,
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -26.3,
+      "user_entered": false
+    }
+  ]
 }

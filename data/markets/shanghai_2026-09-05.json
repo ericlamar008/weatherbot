@@ -3,12 +3,12 @@
   "city_name": "Shanghai",
   "date": "2026-09-05",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-03T18:36:24.107594+00:00",
   "committed_allocation": null,
-  "hours_left": 11.2,
+  "hours_left": 0.0,
   "event_end_date": "2026-09-05T12:00:00Z",
-  "last_scan": "2026-09-05T00:42:11.825873+00:00",
+  "last_scan": "2026-09-06T04:55:46.844344+00:00",
   "horizon_days": 0,
   "forecast_mean": 29.98,
   "sigma": 0.701,
@@ -271,7 +271,10 @@
       "market_prob": 0.605,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.6
+      "sell_value": 0.6,
+      "won": true,
+      "pnl_units": 19.59,
+      "user_entered": false
     },
     {
       "market_id": "4182153",
@@ -287,7 +290,10 @@
       "market_prob": 0.395,
       "role": "scenario_hedge",
       "units": 13.06,
-      "sell_value": 0.39
+      "sell_value": 0.39,
+      "won": false,
+      "pnl_units": -13.06,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 43.1,
@@ -298,5 +304,50 @@
   "success_probability": 0.5378,
   "confidence": 0.3782,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 30.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 6.53,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4182153",
+      "question": "Will the highest temperature in Shanghai be 30°C on September 5?",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "YES",
+      "price": 0.605,
+      "model_prob": 0.4922,
+      "ev": -0.1212,
+      "market_prob": 0.605,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.6,
+      "won": true,
+      "pnl_units": 19.59,
+      "user_entered": false
+    },
+    {
+      "market_id": "4182153",
+      "question": "Will the highest temperature in Shanghai be 30°C on September 5? (NO)",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "NO",
+      "price": 0.395,
+      "model_prob": 0.5078,
+      "ev": 0.1856,
+      "market_prob": 0.395,
+      "role": "scenario_hedge",
+      "units": 13.06,
+      "sell_value": 0.39,
+      "won": false,
+      "pnl_units": -13.06,
+      "user_entered": false
+    }
+  ]
 }

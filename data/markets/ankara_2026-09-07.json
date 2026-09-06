@@ -1,0 +1,318 @@
+{
+  "city": "ankara",
+  "city_name": "Ankara",
+  "date": "2026-09-07",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-06T04:55:46.844344+00:00",
+  "committed_allocation": null,
+  "hours_left": 30.9,
+  "event_end_date": "2026-09-07T12:00:00Z",
+  "last_scan": "2026-09-06T04:55:46.844344+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 24.44,
+  "sigma": 1.039,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Ankara be 21°C or below on September 7?",
+      "market_id": "4239096",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 537.0,
+      "spread": 0.0,
+      "yes_token_id": "23590573796136819048614589815954655049755752653100212848480445498605076073396",
+      "no_token_id": "54327260369495938826718899780517043858446682256415966760299308811529209780756",
+      "model_prob": 0.0183,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0126,
+      "ev": 5.3,
+      "kelly": 0.0027,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 22°C on September 7?",
+      "market_id": "4239097",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 329.0,
+      "spread": 0.0,
+      "yes_token_id": "252167215480866500838258653946105798252533477010091929030557924297206000902",
+      "no_token_id": "109390587588184036178236517381535321290913287455119091810374043938582626209240",
+      "model_prob": 0.0421,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0288,
+      "ev": 6.2,
+      "kelly": 0.0062,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 23°C on September 7?",
+      "market_id": "4239098",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 228.0,
+      "spread": 0.0,
+      "yes_token_id": "8582432766534592812334257315674208941678110611253350386340924590853963138341",
+      "no_token_id": "110141491585667677218507477269240693746195116278449801140307320261250729573106",
+      "model_prob": 0.1431,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0939,
+      "ev": 36.56,
+      "kelly": 0.0229,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 24°C on September 7?",
+      "market_id": "4239099",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.16,
+      "no_price": 0.84,
+      "volume": 718.0,
+      "spread": 0.0,
+      "yes_token_id": "71619293857400974432797178932133411003341476476990184449105497618849502650592",
+      "no_token_id": "31665819544372864187592052822812063220980449265809817370018423990021161089187",
+      "model_prob": 0.3184,
+      "side": "YES",
+      "ask": 0.16,
+      "market_prob": 0.16,
+      "belief_prob": 0.263,
+      "ev": 0.6438,
+      "kelly": 0.0307,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 25°C on September 7?",
+      "market_id": "4239100",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.575,
+      "no_price": 0.425,
+      "volume": 2354.0,
+      "spread": 0.0,
+      "yes_token_id": "64898717156811308477539378389397475678173868988073092360291559566427677050133",
+      "no_token_id": "92489336213038518699471217010387370113688186413399331121872443649455065593279",
+      "model_prob": 0.3009,
+      "side": "YES",
+      "ask": 0.575,
+      "market_prob": 0.575,
+      "belief_prob": 0.3968,
+      "ev": -0.3099,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 26°C on September 7?",
+      "market_id": "4239101",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 3925.0,
+      "spread": 0.0,
+      "yes_token_id": "60039021417412071829461552844875360008985996220377614798230273284891887308984",
+      "no_token_id": "50757599454469070345998791014670387102943118031851889607694605802248865535284",
+      "model_prob": 0.1251,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.1513,
+      "ev": -0.2435,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 27°C on September 7?",
+      "market_id": "4239102",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 572.0,
+      "spread": 0.0,
+      "yes_token_id": "12132544802382689962756252897436338200805986091912328081688444240818646106476",
+      "no_token_id": "37842855582958666913640745773319156926523143185257618861926698317759693570606",
+      "model_prob": 0.0361,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.034,
+      "ev": 0.1333,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 28°C on September 7?",
+      "market_id": "4239103",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 209.0,
+      "spread": 0.0,
+      "yes_token_id": "15522230372504854660517765703791361731107549548549143305049538599636510434707",
+      "no_token_id": "66070212397430962283158244185944893161418029395713687738536495716828075480533",
+      "model_prob": 0.0104,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0078,
+      "ev": 1.6,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 29°C on September 7?",
+      "market_id": "4239104",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 346.0,
+      "spread": 0.0,
+      "yes_token_id": "79835595328261765743954890176718475495505511764373984658862965682508684298778",
+      "no_token_id": "25656681374044863963440502139846328682124370218116543151816356481784690616551",
+      "model_prob": 0.0034,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0024,
+      "ev": 3.8,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 30°C on September 7?",
+      "market_id": "4239105",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 388.0,
+      "spread": 0.0,
+      "yes_token_id": "105669372560303318225276686865211944904354753685100258545161813928163088352661",
+      "no_token_id": "23942903443404433983555176057137112344392276477924462934867864902129158746662",
+      "model_prob": 0.0012,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0015,
+      "ev": -0.25,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 31°C or higher on September 7?",
+      "market_id": "4239106",
+      "range": [
+        31.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 276.0,
+      "spread": 0.0,
+      "yes_token_id": "41152129512415780140358214261191255676018136090389901328639006251445647187941",
+      "no_token_id": "1526119388344797911705214567639544927438389670969241648747962001182075800126",
+      "model_prob": 0.001,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0008,
+      "ev": 0.6,
+      "kelly": 0.0001,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4239100",
+      "question": "Will the highest temperature in Ankara be 25°C on September 7?",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "YES",
+      "price": 0.575,
+      "model_prob": 0.3009,
+      "ev": -0.3099,
+      "market_prob": 0.575,
+      "role": "main_signal",
+      "units": 29.8,
+      "sell_value": 0.57
+    },
+    {
+      "market_id": "4239100",
+      "question": "Will the highest temperature in Ankara be 25°C on September 7? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.425,
+      "model_prob": 0.6991,
+      "ev": 0.4193,
+      "market_prob": 0.425,
+      "role": "scenario_hedge",
+      "units": 14.63,
+      "sell_value": 0.42
+    },
+    {
+      "market_id": "4239105",
+      "question": "Will the highest temperature in Ankara be 30°C on September 7? (NO)",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "NO",
+      "price": 0.998,
+      "model_prob": 0.9988,
+      "ev": 0.0005,
+      "market_prob": 0.998,
+      "role": "scenario_hedge",
+      "units": 3.23,
+      "sell_value": 0.996
+    }
+  ],
+  "total_allocated_units": 47.7,
+  "portfolio_score": -0.027202,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 7.4,
+  "worst_case_pnl_units": -13.24,
+  "success_probability": 0.4424,
+  "confidence": 0.0058,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
