@@ -9,5 +9,252 @@
   "hours_left": 40.1,
   "event_end_date": "2026-09-08T12:00:00Z",
   "last_scan": "2026-09-06T19:47:12.692744+00:00",
-  "skipped_reason": "event volume 297 < min_volume 500"
+  "skipped_reason": "event volume 297 < min_volume 500",
+  "forecast_mean": 87.87,
+  "sigma": 2.03,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Atlanta be 77°F or below on September 8?",
+      "market_id": "4279674",
+      "range": [
+        -999.0,
+        77.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 347.0,
+      "spread": 0.0,
+      "yes_token_id": "100507628042326384400021398710552870066006306635886967604366143177025021163582",
+      "no_token_id": "103683289646586865833288593034447702556736716498797067051017464676547846331633",
+      "model_prob": 0.0037,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0029,
+      "ev": 0.9333,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 78-79°F on September 8?",
+      "market_id": "4279675",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 220.0,
+      "spread": 0.0,
+      "yes_token_id": "11635390118579485653819908687332545936621627546334364712921033487744500738567",
+      "no_token_id": "104906157003325396283908334128492998197525212030733488805727445807273840576791",
+      "model_prob": 0.0026,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0019,
+      "ev": 2.8,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 80-81°F on September 8?",
+      "market_id": "4279676",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 315.0,
+      "spread": 0.0,
+      "yes_token_id": "38555060996057486595122572410444395821655934201476270119557431401057190660841",
+      "no_token_id": "19302522758997063199400773947897667902655734727812303831347176485504168588191",
+      "model_prob": 0.0078,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0068,
+      "ev": 0.36,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 82-83°F on September 8?",
+      "market_id": "4279677",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 309.0,
+      "spread": 0.0,
+      "yes_token_id": "63894219881152510295335590416957671250991777197444453827494872636169149799370",
+      "no_token_id": "18620156703981592691844478618645017092278018533247194424354870090786483834644",
+      "model_prob": 0.0273,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.023,
+      "ev": 0.5333,
+      "kelly": 0.002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 84-85°F on September 8?",
+      "market_id": "4279678",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 587.0,
+      "spread": 0.0,
+      "yes_token_id": "10365044763174372604148387901341649071462672206692898602338199029775853776577",
+      "no_token_id": "57464341263635419778755456973218927649191519578802931707146147650749620465129",
+      "model_prob": 0.1008,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.0988,
+      "ev": 0.04,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 86-87°F on September 8?",
+      "market_id": "4279679",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.49,
+      "no_price": 0.51,
+      "volume": 1872.0,
+      "spread": 0.0,
+      "yes_token_id": "20987487040452014359074494303897041305840662919852892217804927159583101860794",
+      "no_token_id": "100118956707222664604347802324640746904395634039153451786964326793981062189805",
+      "model_prob": 0.2844,
+      "side": "YES",
+      "ask": 0.49,
+      "market_prob": 0.49,
+      "belief_prob": 0.3564,
+      "ev": -0.2727,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 88-89°F on September 8?",
+      "market_id": "4279680",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.32,
+      "no_price": 0.68,
+      "volume": 824.0,
+      "spread": 0.0,
+      "yes_token_id": "42241531043802172160638835789969765339087334643703286649994275466816577983668",
+      "no_token_id": "50230502535843755980113954094219670655555736536061343693560484007994868488322",
+      "model_prob": 0.3466,
+      "side": "YES",
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.3373,
+      "ev": 0.0541,
+      "kelly": 0.0064,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 90-91°F on September 8?",
+      "market_id": "4279681",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 598.0,
+      "spread": 0.0,
+      "yes_token_id": "53034280908805725851367173856555541175498905589182849798676022625589184592570",
+      "no_token_id": "72512622405688975243863575354471643904687220840595281875673602958072239787311",
+      "model_prob": 0.157,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.1248,
+      "ev": 0.92,
+      "kelly": 0.016,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 92-93°F on September 8?",
+      "market_id": "4279682",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 262.0,
+      "spread": 0.0,
+      "yes_token_id": "79705034835086635136920124326001965613122070693133526808885880106307334167588",
+      "no_token_id": "99510549942045772998892207717015013792829591118287597717843744784513242178531",
+      "model_prob": 0.0444,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0341,
+      "ev": 1.2733,
+      "kelly": 0.0048,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be between 94-95°F on September 8?",
+      "market_id": "4279683",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 170.0,
+      "spread": 0.0,
+      "yes_token_id": "73035368683008922292186213477581684295377346483277935273083828316733088202473",
+      "no_token_id": "8576410963224218759175192129409211891719179050598389047110576705734235366045",
+      "model_prob": 0.0123,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0096,
+      "ev": 1.1333,
+      "kelly": 0.0013,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Atlanta be 96°F or higher on September 8?",
+      "market_id": "4279684",
+      "range": [
+        96.0,
+        999.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 206.0,
+      "spread": 0.0,
+      "yes_token_id": "104508125109960467901825579046492514150179895226440604681498231852547563491162",
+      "no_token_id": "37395915555547939736574421641111958873049307586033643736099711826690565792546",
+      "model_prob": 0.0131,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0092,
+      "ev": 3.6,
+      "kelly": 0.0018,
+      "sell_value": null
+    }
+  ],
+  "last_lite_refresh": "2026-09-07T09:23:59.362655+00:00"
 }
