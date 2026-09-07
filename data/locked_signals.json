@@ -218,12 +218,13 @@
     "entry_price": 0.575,
     "locked_at": "2026-09-06T09:37:38.632Z",
     "status": "open",
-    "last_price": 0.61,
-    "last_pct": 6.1,
+    "last_price": 0.38,
+    "last_pct": -33.9,
     "exit_price": null,
     "closed_at": null,
     "close_reason": null,
-    "actual_temp": null
+    "actual_temp": null,
+    "last_checked_at": "2026-09-07T13:12:45.142098+00:00"
   },
   {
     "issue_number": 39,
@@ -235,12 +236,13 @@
     "entry_price": 0.53,
     "locked_at": "2026-09-06T09:38:55.501Z",
     "status": "open",
-    "last_price": 0.695,
-    "last_pct": 31.1,
+    "last_price": 0.83,
+    "last_pct": 56.6,
     "exit_price": null,
     "closed_at": null,
     "close_reason": null,
-    "actual_temp": null
+    "actual_temp": null,
+    "last_checked_at": "2026-09-07T13:12:45.142098+00:00"
   },
   {
     "issue_number": 40,
@@ -268,13 +270,13 @@
     "side": "YES",
     "entry_price": 0.535,
     "locked_at": "2026-09-06T09:42:16.129Z",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.53,
     "last_pct": -0.9,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
-    "actual_temp": null
+    "exit_price": 1.0,
+    "closed_at": "2026-09-07T13:12:45.142098+00:00",
+    "close_reason": "auto_resolved",
+    "actual_temp": 28.0
   },
   {
     "issue_number": 43,
