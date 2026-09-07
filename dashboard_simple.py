@@ -10,19 +10,30 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
   ۴) باکس جستجوی شهر + دو فیلتر (شهر/تاریخ) مخصوص بخش تاریخچه.
   ۵) اسم شهر در هر بازار حالا لینک مستقیم به پلی‌مارکت است.
   ۶) دکمهٔ پرش سریع به بخش تاریخچه، بالای صفحه.
-  ۷) زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m remaining") تا با
-     فارسی قاطی نشود و به‌هم‌ریختگی جهت متن پیش نیاید (طبق بازخورد کاربر).
-  ۸) ستون جدید "باور نهایی" (b["belief_prob"]) به جدول باکت‌ها اضافه شد --
-     فقط نمایشی، از داده‌ای که strategy.py از قبل تولید می‌کرد.
-  ۹) (فاز ۳ نقشه‌راه) «آخرین به‌روزرسانی: X ساعت پیش -- اسکن کامل/سبک» از
-     data/last_scan.json.
-  ۱۰) (فاز ۴ نقشه‌راه) رفع باگ «قفل ثبت نمی‌شود / مطمئن نیستم» -- وضعیت
-      موقت فوری کنار دکمه + payload کوتاه‌تر در URL.
-  ۱۱) (فاز ۵ نقشه‌راه) سکشن جدید و مجزا در بالای صفحه: «سیگنال‌های
-      قفل‌شدهٔ فعال».
-  ۱۲) (فاز ۶ نقشه‌راه -- فقط ظاهر) بازطراحی کامل بصری: خروج از حالت تیره
-      به یک پالت روشن غیرخالص، فونت فارسی خواناتر (Vazirmatn)، و بهبود
-      واکنش‌گرایی موبایل. هیچ محتوا/منطق/ساختار HTML معنایی تغییر نکرده.
+  ۷) زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m remaining").
+  ۸) ستون "باور نهایی" در جدول باکت‌ها.
+  ۹) سکشن «سیگنال‌های قفل‌شدهٔ فعال» بالای صفحه.
+  ۱۰) رفع باگ ثبت‌نشدن قفل (وضعیت موقت + payload کوتاه‌تر).
+  ۱۱) بازطراحی بصری کامل (پالت روشن، فونت Vazirmatn).
+  ۱۲) (اصلاح جدید -- دور رفع باگ) چند اصلاح مهم:
+      الف) «آخرین به‌روزرسانی» بالای صفحه دیگر یک رشتهٔ ثابت («X ساعت
+          پیش») که در لحظهٔ ساخت صفحه محاسبه می‌شد نیست -- چون آن رشته
+          تا وقتی کاربر صفحه را ببیند (که می‌تواند دقیقه‌ها/ساعت‌ها بعد
+          از build باشد، به‌خاطر کش CDN/مرورگر) هیچ‌وقت خودش را به‌روز
+          نمی‌کرد. حالا زمان مطلق (ISO) در data-attribute جاسازی می‌شود و
+          خود مرورگر با جاوااسکریپت، در لحظهٔ نمایش، «X ساعت Y دقیقه پیش»
+          را واقعی حساب می‌کند.
+      ب) ساعت «آخرین به‌روزرسانی» به وقت ایران (Asia/Tehran) نمایش داده
+          می‌شود، نه UTC -- تاریخ همچنان میلادی می‌ماند.
+      ج) در سکشن «سیگنال‌های قفل‌شدهٔ فعال»: اسم شهر حالا لینک مستقیم به
+          صفحهٔ بازار در پلی‌مارکت است (دقیقاً مثل لیست شهرها).
+      د) در همان سکشن، ستون جدید «آخرین به‌روزرسانی» اضافه شد -- از فیلد
+          last_checked_at که price_monitor.py حالا روی هر قفل ثبت
+          می‌کند؛ این هم با همان مکانیزم جاوااسکریپت لحظه‌ای محاسبه می‌شود.
+      ه) قفل‌هایی که بازار زیرینشان دیگر resolve/expire شده (بر اساس
+          وضعیت واقعی در data/markets/*.json، نه فقط فیلد status خود
+          قفل که ممکن است هنوز به‌روز نشده باشد) از این سکشن حذف می‌شوند
+          -- رفع باگ نمایش قفل‌های منقضی (مثل نمونهٔ Seoul).
 """
 import json
 from collections import defaultdict
@@ -30,6 +41,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import history_manager
+
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    ZoneInfo = None
 
 try:
     from locations import LOCATIONS, MONTHS
@@ -43,6 +59,9 @@ GITHUB_REPO = "ericlamar008/weatherbot"
 MARKETS_DIR = Path("data/markets")
 LOCKS_FILE = Path("data/locked_signals.json")
 OUTPUT_FILE = Path("simple.html")
+IRAN_TZ_NAME = "Asia/Tehran"
+
+RESOLVED_LIKE_STATUSES = {"resolved", "resolved_no_signal", "expired_no_signal"}
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -122,7 +141,7 @@ tr:last-child td{border-bottom:none}
 </head>
 <body>
 <h1>WeatherBet -- داشبورد ساده</h1>
-<div class="meta">آخرین به‌روزرسانی: LASTUPDATE UTC <span class="time-note">(LASTSCANRELATIVE)</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
+<div class="meta">آخرین به‌روزرسانی: LASTUPDATE (به وقت ایران) <span class="time-note relative-time" data-ts="LASTSCANISO" data-kind="LASTSCANKIND">LASTSCANFALLBACK</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 <div class="toolbar">
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
   <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
@@ -188,6 +207,22 @@ function unlockBucket(city, cityName, date, marketId, label) {
     setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
   }
 }
+function computeRelativeTimes() {
+  const now = new Date();
+  document.querySelectorAll('.relative-time').forEach(function(el) {
+    const ts = el.getAttribute('data-ts');
+    if (!ts) { return; }
+    const then = new Date(ts);
+    if (isNaN(then.getTime())) { return; }
+    let diffMin = Math.round((now - then) / 60000);
+    if (diffMin < 0) { diffMin = 0; }
+    const h = Math.floor(diffMin / 60);
+    const m = diffMin % 60;
+    const kind = el.getAttribute('data-kind') || '';
+    el.textContent = h + 'h ' + m + 'm ago' + (kind ? (' -- ' + kind) : '');
+  });
+}
+window.addEventListener('DOMContentLoaded', computeRelativeTimes);
 </script>
 </body>
 </html>
@@ -255,13 +290,17 @@ def _hours_left_str(hours):
 LAST_SCAN_FILE = Path("data/last_scan.json")
 
 
-def _last_scan_relative_str():
+def _latest_scan_info():
+    """برمی‌گرداند (iso_timestamp, kind_label) آخرین اسکن (کامل یا سبک)،
+    یا (None, None) اگر هیچ سابقه‌ای نبود. محاسبهٔ «X ساعت پیش» دیگر اینجا
+    (سمت پایتون/build-time) انجام نمی‌شود -- به جاوااسکریپت سمت مرورگر
+    سپرده شده تا همیشه، حتی با تأخیر کش، درست باشد."""
     if not LAST_SCAN_FILE.exists():
-        return ""
+        return None, None
     try:
         data = json.loads(LAST_SCAN_FILE.read_text(encoding="utf-8"))
     except Exception:
-        return ""
+        return None, None
     timestamps = []
     for kind in ("full", "lite"):
         ts = data.get(kind)
@@ -272,15 +311,23 @@ def _last_scan_relative_str():
         except Exception:
             continue
     if not timestamps:
-        return ""
+        return None, None
     kind, latest = max(timestamps, key=lambda kv: kv[1])
-    now = datetime.now(timezone.utc)
-    if latest.tzinfo is None:
-        latest = latest.replace(tzinfo=timezone.utc)
-    minutes = max(0, int((now - latest).total_seconds() // 60))
-    h, m = divmod(minutes, 60)
     kind_label = "اسکن کامل" if kind == "full" else "اسکن سبک"
-    return f"{h}h {m}m ago -- {kind_label}"
+    return latest.isoformat(), kind_label
+
+
+def _iran_time_str(dt_utc):
+    """تبدیل یک datetime آگاه از UTC به رشتهٔ زمان محلی ایران، با همان
+    فرمت میلادی قبلی (YYYY-MM-DD HH:MM). اگر zoneinfo/tzdata در دسترس
+    نبود، بی‌صدا به UTC برمی‌گردد -- هرگز نباید ساخت داشبورد را متوقف کند."""
+    if ZoneInfo is not None:
+        try:
+            local_dt = dt_utc.astimezone(ZoneInfo(IRAN_TZ_NAME))
+            return local_dt.strftime("%Y-%m-%d %H:%M")
+        except Exception:
+            pass
+    return dt_utc.strftime("%Y-%m-%d %H:%M") + " UTC"
 
 
 def _build_polymarket_url(city, date_str):
@@ -352,32 +399,30 @@ def _load_market_by_key(city, date):
 
 
 def _locked_signals_section_html(locks):
-    """فاز ۵ نقشه‌راه: سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های
-    قفل‌شدهٔ فعال (status == "open") را با قیمت قفل، قیمت فعلی، درصد تغییر،
-    و ساعت باقی‌مانده تا resolve نشان می‌دهد."""
+    """سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های قفل‌شدهٔ فعال
+    را با قیمت قفل، قیمت فعلی، درصد تغییر، ساعت باقی‌مانده، و آخرین
+    به‌روزرسانی نشان می‌دهد. قفل‌هایی که بازار زیرینشان طبق داده‌های
+    واقعی resolve/expire شده، حتی اگر status خود قفل هنوز به‌روز نشده
+    باشد، از این لیست حذف می‌شوند."""
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return ""
+
     now = datetime.now(timezone.utc)
-    rows = [
-        "<table><tr><th>شهر</th><th>تاریخ</th><th>قیمت قفل‌شده</th>"
-        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>باقی‌مانده تا resolve</th></tr>"
-    ]
+    visible_rows = []
+
     for l in sorted(open_locks, key=lambda x: (x.get("city", ""), x.get("date", ""))):
         city = l.get("city", "")
         date = l.get("date", "")
-        name = LOCATIONS.get(city, {}).get("name", city)
-        entry = l.get("entry_price")
-        entry_str = f"{entry:.3f}" if entry is not None else "-"
-        last = l.get("last_price")
-        last_str = f"{last:.3f}" if last is not None else "-"
-        pct = l.get("last_pct")
-        if pct is None:
-            pct_html = "-"
-        else:
-            css = "win" if pct >= 0 else "loss"
-            pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
+
         mkt = _load_market_by_key(city, date)
+
+        # رفع باگ: قفلی که بازار زیرینش واقعاً resolve/expire شده را نادیده بگیر،
+        # حتی اگر status خود قفل هنوز "open" باشد (ممکن است price_monitor.py
+        # هنوز فرصت نکرده باشد آن را ببندد).
+        if mkt is not None and mkt.get("status") in RESOLVED_LIKE_STATUSES:
+            continue
+
         hours_left = None
         if mkt and mkt.get("event_end_date"):
             try:
@@ -385,16 +430,53 @@ def _locked_signals_section_html(locks):
                 hours_left = max(0.0, (end - now).total_seconds() / 3600)
             except Exception:
                 hours_left = None
+        if hours_left is not None and hours_left <= 0:
+            continue
+
+        name = LOCATIONS.get(city, {}).get("name", city)
+        link = _build_polymarket_url(city, date)
+        name_html = f'<a href="{link}" target="_blank" rel="noopener">{name}</a>'
+
+        entry = l.get("entry_price")
+        entry_str = f"{entry:.3f}" if entry is not None else "-"
+        last = l.get("last_price")
+        last_str = f"{last:.3f}" if last is not None else "-"
+
+        pct = l.get("last_pct")
+        if pct is None:
+            pct_html = "-"
+        else:
+            css = "win" if pct >= 0 else "loss"
+            pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
+
         time_str = _hours_left_str(hours_left) if hours_left is not None else "-"
-        rows.append(
-            f"<tr><td>{name}</td><td>{date}</td><td>{entry_str}</td>"
-            f"<td>{last_str}</td><td>{pct_html}</td><td>{time_str}</td></tr>"
+
+        last_checked = l.get("last_checked_at")
+        if last_checked:
+            updated_html = f'<span class="relative-time" data-ts="{last_checked}"></span>'
+        else:
+            updated_html = "-"
+
+        visible_rows.append(
+            f"<tr><td>{name_html}</td><td>{date}</td><td>{entry_str}</td>"
+            f"<td>{last_str}</td><td>{pct_html}</td><td>{time_str}</td>"
+            f"<td>{updated_html}</td></tr>"
         )
+
+    if not visible_rows:
+        return ""
+
+    rows = [
+        "<table><tr><th>شهر</th><th>تاریخ</th><th>قیمت قفل‌شده</th>"
+        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>باقی‌مانده تا resolve</th>"
+        "<th>آخرین به‌روزرسانی</th></tr>"
+    ] + visible_rows
     rows.append("</table>")
     table_html = "".join(rows)
+
     return (
         "<details class='city-block locked-section' open>"
-        f"<summary><b>\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(open_locks)})</summary>"
+        f"<summary><b>\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(visible_rows)})</summary>"
         f"<div class='table-scroll'>{table_html}</div>"
         "</details>"
     )
@@ -495,9 +577,14 @@ def build_simple_dashboard():
     body_html = _locked_signals_section_html(locks) + "".join(parts)
     history_html, history_city_options, history_date_options = _history_table_html(locks)
 
+    now_utc = datetime.now(timezone.utc)
+    scan_iso, scan_kind = _latest_scan_info()
+
     html = HTML_TEMPLATE
-    html = html.replace("LASTUPDATE", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"))
-    html = html.replace("LASTSCANRELATIVE", _last_scan_relative_str() or "بدون سابقهٔ اسکن")
+    html = html.replace("LASTUPDATE", _iran_time_str(now_utc))
+    html = html.replace("LASTSCANISO", scan_iso or "")
+    html = html.replace("LASTSCANKIND", scan_kind or "")
+    html = html.replace("LASTSCANFALLBACK", "بدون سابقهٔ اسکن" if not scan_iso else "")
     html = html.replace("BODYHTML", body_html)
     html = html.replace("HISTORYHTML", history_html)
     html = html.replace("HISTORYCITYOPTIONS", history_city_options)
