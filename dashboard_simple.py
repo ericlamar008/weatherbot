@@ -35,18 +35,26 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
           قفل که ممکن است هنوز به‌روز نشده باشد) از این سکشن حذف می‌شوند
           -- رفع باگ نمایش قفل‌های منقضی (مثل نمونهٔ Seoul).
 
---- روادراه: فاز D -- زمان محلی به‌جای event_end_date خام (این نسخه) --------
+--- روادراه: فاز D -- زمان محلی به‌جای event_end_date خام -------------------
 مشکل ریشه‌ای پیدا شده: در _locked_signals_section_html این خط وجود داشت:
     if hours_left is not None and hours_left <= 0: continue
 یعنی به‌محض گذشتن event_end_date خام Gamma (نه پایان واقعی روز محلی)،
 قفل باز به‌طور کامل از سکشن حذف می‌شد -- حتی اگر بازار زیرین هنوز واقعاً
-"open" بود (نمونهٔ Ankara/Dallas).
+"open" بود (نمونهٔ Ankara/Dallas). آن خط کاملاً حذف شد. تنها معیار حذف از
+سکشن فعال، همان بررسی درست قبلی روی RESOLVED_LIKE_STATUSES (وضعیت واقعی
+بازار) است. زمان از ماژول مشترک market_time.py گرفته می‌شود.
 
-اصلاح: آن خط کاملاً حذف شد. تنها معیار حذف از سکشن فعال، همان بررسی
-درست قبلی روی RESOLVED_LIKE_STATUSES (وضعیت واقعی بازار) است. زمان از
-ماژول مشترک market_time.py گرفته می‌شود: پیش از پایان روز محلی شمارش
-معکوس واقعی نشان داده می‌شود؛ پس از آن و پیش از settlement رسمی، عبارت
-"awaiting official settlement" نمایش داده می‌شود -- هرگز حذف زودهنگام.
+--- اصلاحات جدید (این نسخه) --------------------------------------------------
+  ۱) ستون جدید «دمای سیگنال قفل‌شده» در سکشن قفل‌های فعال -- برچسب باکتی
+     که واقعاً قفل شده (مثل "78.0-79.0F") از full_distribution بازار
+     خوانده و نمایش داده می‌شود.
+  ۲) متاتگ‌های Cache-Control/Pragma/Expires در <head> اضافه شدند تا
+     مرورگر صفحهٔ بازشده از لینک را کمتر از کش قدیمی سرو کند. توجه: چون
+     سایت روی GitHub Pages (پشت CDN) میزبانی می‌شود، برای رفع کامل مشکل
+     "لینک آپدیت نمی‌شود"، Workflow ارسال لینک تلگرام هم باید به هر
+     لینک یک پارامتر ضدکش (مثل ?t=زمان) اضافه کند -- این تغییر در
+     heartbeat_dashboard_link.yml / monitor_locks.yml انجام می‌شود، نه
+     در این فایل.
 """
 import json
 from collections import defaultdict
@@ -83,6 +91,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>WeatherBet -- ساده</title>
 <style>
 * { box-sizing: border-box; }
@@ -121,8 +132,8 @@ details.city-block{background:var(--surface);border:1px solid var(--border);bord
 details.date-block{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:8px 0}
 summary{cursor:pointer;font-size:14px;color:var(--text);list-style:none;padding:8px 4px;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
-details[open]>summary::before{content:"\25BE"}
+summary::before{content:"\\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
+details[open]>summary::before{content:"\\25BE"}
 .main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
 .time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
 .locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
@@ -159,12 +170,12 @@ tr:last-child td{border-bottom:none}
 <div class="meta">آخرین به‌روزرسانی: LASTUPDATE (به وقت ایران) <span class="time-note relative-time" data-ts="LASTSCANISO" data-kind="LASTSCANKIND">LASTSCANFALLBACK</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 <div class="toolbar">
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
-  <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
+  <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \\u2193</a>
 </div>
 BODYHTML
 
 <h2 id="history-section">تاریخچهٔ معاملات</h2>
-<a class="download-btn" href="lock_history.csv" download>\u2b07 دانلود CSV کامل</a>
+<a class="download-btn" href="lock_history.csv" download>\\u2b07 دانلود CSV کامل</a>
 <div class="history-filters">
   <select id="historyCityFilter" onchange="filterHistory()"><option value="">همهٔ شهرها</option>HISTORYCITYOPTIONS</select>
   <select id="historyDateFilter" onchange="filterHistory()"><option value="">همهٔ تاریخ‌ها</option>HISTORYDATEOPTIONS</select>
@@ -195,7 +206,7 @@ function setLockStatus(marketId, text, color) {
   if (el) { el.textContent = text; el.style.color = color || "#9aa0a6"; }
 }
 function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
-  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
+  setLockStatus(marketId, "\\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
   const payload = { city: city, date: date, market_id: marketId + "|" + tokenId, side: side, price: price };
   const title = encodeURIComponent("LOCK " + cityName + " " + date + " " + label + " " + side + " @ " + price);
@@ -203,13 +214,13 @@ function lockBucket(city, cityName, date, marketId, tokenId, side, price, label)
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=lock-request";
   const win = window.open(url, "_blank");
   if (win) {
-    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا قفل ثبت شود!", "#f59e0b");
+    setLockStatus(marketId, "\\u26A0\\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا قفل ثبت شود!", "#f59e0b");
   } else {
-    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+    setLockStatus(marketId, "\\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
   }
 }
 function unlockBucket(city, cityName, date, marketId, label) {
-  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
+  setLockStatus(marketId, "\\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
   const payload = { city: city, date: date, market_id: marketId };
   const title = encodeURIComponent("UNLOCK " + cityName + " " + date + " " + label);
@@ -217,9 +228,9 @@ function unlockBucket(city, cityName, date, marketId, label) {
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=unlock-request";
   const win = window.open(url, "_blank");
   if (win) {
-    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا حذف شود!", "#f59e0b");
+    setLockStatus(marketId, "\\u26A0\\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا حذف شود!", "#f59e0b");
   } else {
-    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+    setLockStatus(marketId, "\\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
   }
 }
 function computeRelativeTimes() {
@@ -285,9 +296,9 @@ def _label_for_range(low, high, unit_sym):
     if low <= -998 and high >= 998:
         return f"?{unit_sym}"
     if low <= -998:
-        return f"\u2264{high}{unit_sym}"
+        return f"\\u2264{high}{unit_sym}"
     if high >= 998:
-        return f"\u2265{low}{unit_sym}"
+        return f"\\u2265{low}{unit_sym}"
     if low == high:
         return f"{low}{unit_sym}"
     return f"{low}-{high}{unit_sym}"
@@ -310,6 +321,22 @@ def _local_day_time_label(city, date, now):
     if timing["kind"] == "local_day_open":
         return _hours_left_str(timing["remaining_seconds"] / 3600.0), False
     return "awaiting official settlement", True
+
+
+def _find_locked_bucket_label(mkt, market_id, unit_sym):
+    """پیدا کردن برچسب دمای باکتی که قفل شده، از full_distribution بازار.
+    اگر بازار دیگر full_distribution نداشته باشد (مثلاً بعد از resolve)،
+    به‌جای کرش، فقط "-" برمی‌گرداند."""
+    if not mkt:
+        return "-"
+    for b in mkt.get("full_distribution", []) or []:
+        if str(b.get("market_id")) == str(market_id):
+            rng = b.get("range")
+            if not rng:
+                return "-"
+            low, high = rng
+            return _label_for_range(low, high, unit_sym)
+    return "-"
 
 
 LAST_SCAN_FILE = Path("data/last_scan.json")
@@ -393,15 +420,15 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         if yes_price is not None and market_id:
             if is_locked:
                 action_html = (
-                    f'<span class="locked-badge">قفل \u2714</span>'
-                    f'<button class="unlock-btn" onclick="unlockBucket(\'{city_slug}\',\'{city_name}\','
-                    f"'{date}','{market_id}','{label}')\">حذف قفل</button>"
+                    f'<span class="locked-badge">قفل \\u2714</span>'
+                    f'<button class="unlock-btn" onclick="unlockBucket(\\'{city_slug}\\',\\'{city_name}\\','
+                    f"'{date}','{market_id}','{label}')\\">حذف قفل</button>"
                     f'{status_span}'
                 )
             else:
                 action_html = (
-                    f'<button class="lock-btn" onclick="lockBucket(\'{city_slug}\',\'{city_name}\','
-                    f"'{date}','{market_id}','{yes_token}','YES',{yes_price},'{label}')\">قفل کن</button>"
+                    f'<button class="lock-btn" onclick="lockBucket(\\'{city_slug}\\',\\'{city_name}\\','
+                    f"'{date}','{market_id}','{yes_token}','YES',{yes_price},'{label}')\\">قفل کن</button>"
                     f'{status_span}'
                 )
 
@@ -425,10 +452,10 @@ def _load_market_by_key(city, date):
 
 def _locked_signals_section_html(locks):
     """سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های قفل‌شدهٔ فعال
-    را با قیمت قفل، قیمت فعلی، درصد تغییر، ساعت باقی‌مانده، و آخرین
-    به‌روزرسانی نشان می‌دهد. قفل‌هایی که بازار زیرینشان طبق داده‌های
-    واقعی resolve/expire شده، حتی اگر status خود قفل هنوز به‌روز نشده
-    باشد، از این لیست حذف می‌شوند."""
+    را با دمای قفل‌شده، قیمت قفل، قیمت فعلی، درصد تغییر، زمان تا پایان
+    روز محلی، و آخرین به‌روزرسانی نشان می‌دهد. قفل‌هایی که بازار زیرینشان
+    طبق داده‌های واقعی resolve/expire شده، حتی اگر status خود قفل هنوز
+    به‌روز نشده باشد، از این لیست حذف می‌شوند."""
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return ""
@@ -453,6 +480,9 @@ def _locked_signals_section_html(locks):
         # می‌کند. این‌جا فقط برچسب زمان/وضعیت را می‌سازیم.
         time_str, awaiting_settlement = _local_day_time_label(city, date, now)
 
+        unit_sym = mkt.get("unit", "") if mkt else ""
+        bucket_label = _find_locked_bucket_label(mkt, l.get("market_id"), unit_sym)
+
         name = LOCATIONS.get(city, {}).get("name", city)
         link = _build_polymarket_url(city, date)
         name_html = f'<a href="{link}" target="_blank" rel="noopener">{name}</a>'
@@ -476,25 +506,25 @@ def _locked_signals_section_html(locks):
             updated_html = "-"
 
         visible_rows.append(
-            f"<tr><td>{name_html}</td><td>{date}</td><td>{entry_str}</td>"
-            f"<td>{last_str}</td><td>{pct_html}</td><td>{time_str}</td>"
-            f"<td>{updated_html}</td></tr>"
+            f"<tr><td>{name_html}</td><td>{date}</td><td>{bucket_label}</td>"
+            f"<td>{entry_str}</td><td>{last_str}</td><td>{pct_html}</td>"
+            f"<td>{time_str}</td><td>{updated_html}</td></tr>"
         )
 
     if not visible_rows:
         return ""
 
     rows = [
-        "<table><tr><th>شهر</th><th>تاریخ</th><th>قیمت قفل‌شده</th>"
-        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>تا پایان روز محلی</th>"
-        "<th>آخرین به‌روزرسانی</th></tr>"
+        "<table><tr><th>شهر</th><th>تاریخ</th><th>دمای سیگنال قفل‌شده</th>"
+        "<th>قیمت قفل‌شده</th><th>قیمت فعلی</th><th>درصد تغییر</th>"
+        "<th>تا پایان روز محلی</th><th>آخرین به‌روزرسانی</th></tr>"
     ] + visible_rows
     rows.append("</table>")
     table_html = "".join(rows)
 
     return (
         "<details class='city-block locked-section' open>"
-        f"<summary><b>\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(visible_rows)})</summary>"
+        f"<summary><b>\\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(visible_rows)})</summary>"
         f"<div class='table-scroll'>{table_html}</div>"
         "</details>"
     )
@@ -510,7 +540,7 @@ def _date_block_html(m, city_slug, city_name, locked_keys):
     else:
         time_note = _hours_left_str(m.get("hours_left"))
     summary = (
-        f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \u2014 {date}'
+        f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \\u2014 {date}'
         f'  <span class="time-note">{time_note}</span>'
     )
     table = _bucket_table(
@@ -543,7 +573,7 @@ def _history_table_html(locks):
                 pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
             sell = r["sell_cents"] if r["sell_cents"] is not None else "-"
             parts.append(
-                f"<tr data-city=\"{r['city_name']}\" data-date=\"{r['date']}\">"
+                f"<tr data-city=\\"{r['city_name']}\\" data-date=\\"{r['date']}\\">"
                 f"<td>{r['date']}</td><td>{r['city_name']}</td><td>{r['signal_label']}</td>"
                 f"<td>{r['final_temp']}</td><td>{r['buy_cents']}</td><td>{sell}</td><td>{pct_html}</td></tr>"
             )
