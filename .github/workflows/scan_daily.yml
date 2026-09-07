@@ -39,9 +39,14 @@ jobs:
       - name: انتشار هر دو داشبورد در GitHub Pages
         run: |
           mkdir -p docs
+          DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
           cp dashboard.html docs/dashboard.html
+          cp simple.html "docs/${DASHBOARD_FILE}"
+          # مسیر ثابت برای bookmarkهای قدیمی نگه داشته می‌شود؛ لینک تلگرام
+          # فقط به نسخهٔ یکتای بالا اشاره خواهد کرد.
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+          echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
 
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
@@ -82,6 +87,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
           DEADMAN_STALE: ${{ steps.deadman.outputs.stale }}
           DEADMAN_HOURS: ${{ steps.deadman.outputs.hours_since_last_lock_update }}
         run: |
@@ -99,7 +105,7 @@ jobs:
           text = (
               "داشبوردهای امروز آماده‌اند:\n"
               f"داشبورد کامل: {base}/dashboard.html\n"
-              f"داشبورد ساده (قفل تعاملی): {base}/simple.html"
+              f"داشبورد ساده (قفل تعاملی): {base}/{os.environ.get('DASHBOARD_FILE', 'simple.html')}"
               f"{warning}"
           )
           if token and chat:
