@@ -1,30 +1,8 @@
-# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (نسخهٔ اصلاح‌شده)
-#
-# اصلاح واقعی نسبت به نسخهٔ قبلی: قبلاً این فایل فقط پیام را می‌فرستاد و
-# خودش صفحه را دوباره نمی‌ساخت -- بر همین اساس بود که با اجرای این
-# Workflow اطلاعات "به‌روز" نمی‌شد. الان دقیقاً مثل monitor_locks.yml خودش
-# هم داشبورد تعاملی را دوباره می‌سازد و منتشر می‌کند، بعد لینک را می‌فرستد --
-# یعنی هر ۶ ساعت واقعاً یک نسخهٔ تازه‌ساخته‌شده دریافت می‌کنید، نه فقط یادآوری.
-#
-# --- اصلاح این نسخه (مهم) -----------------------------------------------------
-# مشخص شد که این Workflow با اینکه هر ۶ ساعت اجرا می‌شد، هرگز خود دادهٔ
-# بازارها (قیمت/پیش‌بینی) را تازه نمی‌کرد -- فقط از روی همان دادهٔ قدیمی،
-# یک HTML جدید می‌ساخت. به همین دلیل «آخرین اسکن» در داشبورد هیچ‌وقت
-# جلو نمی‌رفت. اصلاح شد: قبل از ساخت داشبورد، حالا واقعاً دستور
-#   python weatherbot_v3.py lite_scan
-# اجرا می‌شود -- این دقیقاً همان اسکن سبک (بدون سایزینگ) است که قرار بود
-# هر ۶ ساعت، هم‌زمان با چرخهٔ به‌روزرسانی مدل‌های هواشناسی، قیمت‌ها و
-# پیش‌بینی‌ها را تازه کند و data/last_scan.json را واقعاً به‌روز بنویسد.
-# نصب پیش‌نیازها هم از "pip install requests" به "pip install -r
-# requirements.txt" تغییر کرد، چون weatherbot_v3.py به کتابخانه‌های بیشتری
-# (numpy, forecasting و غیره) نیاز دارد، نه فقط requests.
-#
-# --- اصلاح قبلی (رفع مشکل "لینک آپدیت نمی‌شود") -------------------------------
-# سایت روی GitHub Pages میزبانی می‌شود که پشت CDN (Fastly) است؛ حتی وقتی
-# simple.html واقعاً به‌روز شده باشد، مرورگر/CDN ممکن است نسخهٔ قدیمیِ
-# کش‌شده را نشان دهد چون آدرس همیشه دقیقاً یکسان است. اصلاح: به لینکی که
-# در تلگرام فرستاده می‌شود یک پارامتر زمان یکتا (?t=...) اضافه شده تا هر
-# اعلان، آدرسی کاملاً متفاوت از قبلی باشد.
+# مسیر واقعی: .github/workflows/heartbeat_dashboard_link.yml
+# انتشار ۶ساعته با اسکن سبک، لینک نسخه‌ای ضدکش، و نگه‌داری فقط ۲۰ نسخهٔ آخر.
+# پاک‌سازی فقط روی docs/simple-*.html اعمال می‌شود؛ هرگز هیچ فایل در data/
+# (از جمله locked_signals.json، lock_history.csv، state.json، calibration.json
+# یا data/markets/) را حذف یا تغییر نمی‌دهد.
 
 name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
@@ -57,11 +35,25 @@ jobs:
       - name: ساخت دوبارهٔ داشبورد تعاملی با آخرین داده‌های موجود
         run: python dashboard_simple.py
 
-      - name: کپی فایل‌ها به پوشه‌ی انتشار
+      - name: انتشار نسخهٔ یکتای داشبورد و پاک‌سازی نسخه‌های قدیمی
         run: |
           mkdir -p docs
+          DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
+          cp simple.html "docs/${DASHBOARD_FILE}"
+          # مسیر ثابت فقط برای bookmarkهای قدیمی باقی می‌ماند؛ لینک تلگرام
+          # به نسخهٔ یکتا اشاره می‌کند تا کش نتواند خروجی قبلی را برگرداند.
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+          echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
+
+          # فقط فایل‌های نسخه‌ای simple-*.html را مرتب کن و فقط ۲۰ فایل تازه
+          # را نگه‌دار. این دستور هرگز docs/simple.html، dashboard.html، CSV
+          # یا هیچ فایل/دایرکتوری داخل data/ را حذف نمی‌کند.
+          mapfile -t OLD_DASHBOARDS < <(ls -1t docs/simple-*.html 2>/dev/null | tail -n +21 || true)
+          if [ "${#OLD_DASHBOARDS[@]}" -gt 0 ]; then
+            printf 'حذف نسخه‌های قدیمی داشبورد:\n%s\n' "${OLD_DASHBOARDS[@]}"
+            rm -- "${OLD_DASHBOARDS[@]}"
+          fi
 
       - name: کامیت و انتشار (با ایمنی در برابر برخورد هم‌زمان)
         run: |
@@ -75,18 +67,19 @@ jobs:
             sleep 5
           done
 
-      - name: ارسال لینک داشبورد تعاملی در تلگرام
+      - name: ارسال لینک نسخه‌ای داشبورد در تلگرام
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
         run: |
           python3 - <<'PY'
-          import os, time, requests
+          import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          cache_bust = int(time.time())
-          link = f"https://ericlamar008.github.io/weatherbot/simple.html?t={cache_bust}"
-          text = f"\U0001F504 بروزرسانی ۶ساعته -- داشبورد تعاملی تازه‌سازی شد:\n{link}"
+          dashboard_file = os.environ["DASHBOARD_FILE"]
+          link = f"https://ericlamar008.github.io/weatherbot/{dashboard_file}"
+          text = f"🔄 بروزرسانی ۶ساعته -- داشبورد تعاملی تازه‌سازی شد:\n{link}"
           if token and chat:
               requests.post(
                   f"https://api.telegram.org/bot{token}/sendMessage",
