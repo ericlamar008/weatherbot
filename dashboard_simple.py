@@ -49,13 +49,16 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
   ۳) رفع SyntaxError واقعی در _bucket_table (ساخت رشتهٔ onclick با
      .format() به‌جای f-string تودرتو -- خروجی HTML حرف‌به‌حرف یکسان
      با قبل است، فقط دیگر به backslash-escape نیاز ندارد).
-  ۴) (این نسخه) رفع باگ ناهماهنگی زمان «آخرین به‌روزرسانی»: قبلاً عدد
-     ساعت بالای صفحه از "الان" (لحظهٔ build) ساخته می‌شد، ولی شمارش
-     معکوس «X دقیقه پیش» کنارش از زمان واقعی آخرین اسکن -- یعنی دو منبع
-     زمانی متفاوت زیر یک برچسب، که باعث می‌شد ساعت درست باشد ولی شمارش
-     معکوس نادرست/قدیمی به‌نظر برسد (مثلاً ۴۰ دقیقه به‌جای ۴ دقیقهٔ واقعی).
-     حالا هر دو از همان مرجع (آخرین اسکن واقعی، در صورت وجود) ساخته
-     می‌شوند تا کاملاً هماهنگ باشند.
+  ۴) رفع باگ ناهماهنگی زمان «آخرین به‌روزرسانی»: هر دو بخش (ساعت بالا و
+     شمارش معکوس کنارش) اکنون از یک منبع واحد (آخرین اسکن واقعی، در
+     صورت وجود) ساخته می‌شوند تا هماهنگ باشند.
+  ۵) (این نسخه) رفع کاراکترهای عجیب "□B8"/"□BE" کنار اسم شهرها: علت،
+     مارکر باز/بسته‌شدن هر <summary> بود که با کاراکتر یونیکد "▸"/"▾"
+     (U+25B8 / U+25BE) ساخته می‌شد. فونت Vazirmatn این دو گلیف را ندارد،
+     پس مرورگر یک جعبهٔ خالی (tofu) نشان می‌داد که کد هگزادسیمال گلیف
+     گم‌شده را داخلش می‌نویسد -- دقیقاً همان "B8"/"BE" که دیده می‌شد.
+     اصلاح: این دو کاراکتر با یک مثلث خالص CSS (بدون وابستگی به هیچ
+     فونتی؛ ساخته‌شده با border) جایگزین شدند که هرگز این مشکل را ندارد.
 """
 import json
 from collections import defaultdict
@@ -133,8 +136,8 @@ details.city-block{background:var(--surface);border:1px solid var(--border);bord
 details.date-block{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:8px 0}
 summary{cursor:pointer;font-size:14px;color:var(--text);list-style:none;padding:8px 4px;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
-details[open]>summary::before{content:"\25BE"}
+summary::before{content:"";display:inline-block;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid var(--text-dim);margin-left:8px;vertical-align:middle;transition:transform .12s ease}
+details[open]>summary::before{transform:rotate(90deg)}
 .main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
 .time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
 .locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
