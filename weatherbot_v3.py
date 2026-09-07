@@ -85,6 +85,7 @@ except ImportError:
     ZoneInfo = None
 
 from locations import LOCATIONS, MONTHS
+from market_time import local_day_status
 import forecasting as fc
 import strategy as strat
 import resolution as res
@@ -404,6 +405,20 @@ def hours_to_resolution(end_date_str):
     except Exception:
         return 999.0
 
+def _refresh_local_day_timing(mkt, loc, now, event_end_date=None):
+    """Persists countdown data derived from the city's local target day.
+
+    `event_end_date` is retained only as Gamma metadata.  It never decides
+    whether the target local day has ended and must not close a market.
+    """
+    timing = local_day_status(mkt["date"], loc, now)
+    mkt["hours_left"] = round(timing["remaining_seconds"] / 3600.0, 1)
+    mkt["time_status"] = timing["kind"]
+    mkt["local_day_end_utc"] = timing["local_day_end_utc"].isoformat()
+    if event_end_date:
+        mkt["event_end_date"] = event_end_date
+    return timing
+
 
 def fetch_outcomes(event):
     """Fast market extraction.
@@ -544,7 +559,6 @@ def discover_new_signals(now, state):
                 continue
 
             end_date = event.get("endDate", "")
-            hours = hours_to_resolution(end_date) if end_date else 0
 
             mkt = load_market(city_slug, date) or {
                 "city": city_slug, "city_name": loc["name"], "date": date,
@@ -555,8 +569,8 @@ def discover_new_signals(now, state):
             if mkt["status"] == "resolved":
                 continue
 
-            mkt["hours_left"] = round(hours, 1)
-            mkt["event_end_date"] = end_date
+            timing = _refresh_local_day_timing(mkt, loc, now, end_date)
+            hours = timing["remaining_seconds"] / 3600.0
             mkt["last_scan"] = now.isoformat()
 
             needs_version_refresh = mkt.get("strategy_version") != STRATEGY_VERSION
@@ -637,6 +651,8 @@ def discover_new_signals(now, state):
 # =============================================================================
 
 def refresh_all_locked_markets(now):
+    """Refreshes raw Gamma metadata but derives all operational time from the
+    city-local target day, including when Gamma is temporarily unavailable."""
     open_markets = [m for m in load_all_markets() if m.get("status") != "resolved"]
     if not open_markets:
         return
@@ -654,17 +670,12 @@ def refresh_all_locked_markets(now):
             except Exception:
                 events_by_mkt_key[key] = None
     for mkt in open_markets:
-        event = events_by_mkt_key.get((mkt["city"], mkt["date"]))
-        if event:
-            end_date = event.get("endDate", mkt.get("event_end_date", ""))
-            hours = hours_to_resolution(end_date) if end_date else mkt.get("hours_left", 999)
-            mkt["hours_left"] = round(hours, 1)
-            mkt["event_end_date"] = end_date
-        elif mkt.get("event_end_date"):
-            hours = hours_to_resolution(mkt["event_end_date"])
-            mkt["hours_left"] = round(hours, 1)
-        else:
+        loc = LOCATIONS.get(mkt.get("city"))
+        if not loc:
             continue
+        event = events_by_mkt_key.get((mkt["city"], mkt["date"]))
+        end_date = event.get("endDate", "") if event else None
+        _refresh_local_day_timing(mkt, loc, now, end_date)
         mkt["last_scan"] = now.isoformat()
         save_market(mkt)
 
@@ -709,13 +720,18 @@ def refresh_open_market_info(now):
         if not loc:
             continue
 
+        event = events_by_key.get((mkt["city"], mkt["date"]))
+        end_date = event.get("endDate", "") if event else None
+        _refresh_local_day_timing(mkt, loc, now, end_date)
+        mkt["last_lite_refresh"] = now.isoformat()
+        save_market(mkt)
+
         local_dates = _local_dates_for_city(now, loc, 4)
         try:
             horizon_days = local_dates.index(mkt["date"])
         except ValueError:
             continue
 
-        event = events_by_key.get((mkt["city"], mkt["date"]))
         if not event:
             continue
 
