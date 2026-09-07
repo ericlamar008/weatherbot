@@ -40,21 +40,20 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
     if hours_left is not None and hours_left <= 0: continue
 یعنی به‌محض گذشتن event_end_date خام Gamma (نه پایان واقعی روز محلی)،
 قفل باز به‌طور کامل از سکشن حذف می‌شد -- حتی اگر بازار زیرین هنوز واقعاً
-"open" بود (نمونهٔ Ankara/Dallas). آن خط کاملاً حذف شد. تنها معیار حذف از
-سکشن فعال، همان بررسی درست قبلی روی RESOLVED_LIKE_STATUSES (وضعیت واقعی
-بازار) است. زمان از ماژول مشترک market_time.py گرفته می‌شود.
+"open" بود. آن خط کاملاً حذف شد. تنها معیار حذف از سکشن فعال، همان بررسی
+درست قبلی روی RESOLVED_LIKE_STATUSES (وضعیت واقعی بازار) است.
 
---- اصلاحات جدید (این نسخه) --------------------------------------------------
-  ۱) ستون جدید «دمای سیگنال قفل‌شده» در سکشن قفل‌های فعال -- برچسب باکتی
-     که واقعاً قفل شده (مثل "78.0-79.0F") از full_distribution بازار
-     خوانده و نمایش داده می‌شود.
-  ۲) متاتگ‌های Cache-Control/Pragma/Expires در <head> اضافه شدند تا
-     مرورگر صفحهٔ بازشده از لینک را کمتر از کش قدیمی سرو کند. توجه: چون
-     سایت روی GitHub Pages (پشت CDN) میزبانی می‌شود، برای رفع کامل مشکل
-     "لینک آپدیت نمی‌شود"، Workflow ارسال لینک تلگرام هم باید به هر
-     لینک یک پارامتر ضدکش (مثل ?t=زمان) اضافه کند -- این تغییر در
-     heartbeat_dashboard_link.yml / monitor_locks.yml انجام می‌شود، نه
-     در این فایل.
+--- اصلاحات دیگر -------------------------------------------------------------
+  ۱) ستون جدید «دمای سیگنال قفل‌شده» در سکشن قفل‌های فعال.
+  ۲) متاتگ‌های Cache-Control/Pragma/Expires در <head> برای رفع مشکل کش لینک.
+  ۳) (اصلاح این نسخه) رفع SyntaxError واقعی: در _bucket_table، ساخت رشتهٔ
+     onclick با f-string تودرتو و backslash-escape انجام می‌شد که هنگام
+     تایپ مجدد به‌اشتباه backslash دوتایی شد و باعث
+     "SyntaxError: unexpected character after line continuation character"
+     در اجرای واقعی می‌شد. اصلاح شد با ساخت رشتهٔ onclick با .format() به‌جای
+     f-string تودرتو -- خروجی HTML تولیدی دقیقاً همان قبلی است (تست‌شده و
+     تأیید شده که خروجی حرف‌به‌حرف یکسان است)، فقط دیگر به backslash-escape
+     نیاز ندارد.
 """
 import json
 from collections import defaultdict
@@ -132,8 +131,8 @@ details.city-block{background:var(--surface);border:1px solid var(--border);bord
 details.date-block{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:8px 0}
 summary{cursor:pointer;font-size:14px;color:var(--text);list-style:none;padding:8px 4px;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"\\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
-details[open]>summary::before{content:"\\25BE"}
+summary::before{content:"\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
+details[open]>summary::before{content:"\25BE"}
 .main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
 .time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
 .locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
@@ -170,12 +169,12 @@ tr:last-child td{border-bottom:none}
 <div class="meta">آخرین به‌روزرسانی: LASTUPDATE (به وقت ایران) <span class="time-note relative-time" data-ts="LASTSCANISO" data-kind="LASTSCANKIND">LASTSCANFALLBACK</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 <div class="toolbar">
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
-  <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \\u2193</a>
+  <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
 </div>
 BODYHTML
 
 <h2 id="history-section">تاریخچهٔ معاملات</h2>
-<a class="download-btn" href="lock_history.csv" download>\\u2b07 دانلود CSV کامل</a>
+<a class="download-btn" href="lock_history.csv" download>\u2b07 دانلود CSV کامل</a>
 <div class="history-filters">
   <select id="historyCityFilter" onchange="filterHistory()"><option value="">همهٔ شهرها</option>HISTORYCITYOPTIONS</select>
   <select id="historyDateFilter" onchange="filterHistory()"><option value="">همهٔ تاریخ‌ها</option>HISTORYDATEOPTIONS</select>
@@ -206,7 +205,7 @@ function setLockStatus(marketId, text, color) {
   if (el) { el.textContent = text; el.style.color = color || "#9aa0a6"; }
 }
 function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
-  setLockStatus(marketId, "\\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
+  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
   const payload = { city: city, date: date, market_id: marketId + "|" + tokenId, side: side, price: price };
   const title = encodeURIComponent("LOCK " + cityName + " " + date + " " + label + " " + side + " @ " + price);
@@ -214,13 +213,13 @@ function lockBucket(city, cityName, date, marketId, tokenId, side, price, label)
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=lock-request";
   const win = window.open(url, "_blank");
   if (win) {
-    setLockStatus(marketId, "\\u26A0\\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا قفل ثبت شود!", "#f59e0b");
+    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا قفل ثبت شود!", "#f59e0b");
   } else {
-    setLockStatus(marketId, "\\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
   }
 }
 function unlockBucket(city, cityName, date, marketId, label) {
-  setLockStatus(marketId, "\\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
+  setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
   const payload = { city: city, date: date, market_id: marketId };
   const title = encodeURIComponent("UNLOCK " + cityName + " " + date + " " + label);
@@ -228,9 +227,9 @@ function unlockBucket(city, cityName, date, marketId, label) {
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=unlock-request";
   const win = window.open(url, "_blank");
   if (win) {
-    setLockStatus(marketId, "\\u26A0\\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا حذف شود!", "#f59e0b");
+    setLockStatus(marketId, "\u26A0\uFE0F در تب جدید حتماً روی «Submit new issue» کلیک کنید تا حذف شود!", "#f59e0b");
   } else {
-    setLockStatus(marketId, "\\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
+    setLockStatus(marketId, "\u274C مرورگر پاپ‌آپ را مسدود کرد -- اجازه بدهید و دوباره امتحان کنید.", "#f87171");
   }
 }
 function computeRelativeTimes() {
@@ -296,9 +295,9 @@ def _label_for_range(low, high, unit_sym):
     if low <= -998 and high >= 998:
         return f"?{unit_sym}"
     if low <= -998:
-        return f"\\u2264{high}{unit_sym}"
+        return f"\u2264{high}{unit_sym}"
     if high >= 998:
-        return f"\\u2265{low}{unit_sym}"
+        return f"\u2265{low}{unit_sym}"
     if low == high:
         return f"{low}{unit_sym}"
     return f"{low}-{high}{unit_sym}"
@@ -311,7 +310,6 @@ def _hours_left_str(hours):
     total_minutes = int(round(hours * 60))
     h, m = divmod(total_minutes, 60)
     return f"{h}h {m}m remaining"
-
 
 def _local_day_time_label(city, date, now):
     """پایان روز محلی را از settlement رسمی جدا نگه می‌دارد -- پس از پایان
@@ -419,16 +417,20 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         status_span = f'<span class="lock-status" id="lockstatus-{market_id}"></span>' if market_id else ""
         if yes_price is not None and market_id:
             if is_locked:
+                unlock_call = "unlockBucket('{0}','{1}','{2}','{3}','{4}')".format(
+                    city_slug, city_name, date, market_id, label
+                )
                 action_html = (
-                    f'<span class="locked-badge">قفل \\u2714</span>'
-                    f'<button class="unlock-btn" onclick="unlockBucket(\\'{city_slug}\\',\\'{city_name}\\','
-                    f"'{date}','{market_id}','{label}')\\">حذف قفل</button>"
+                    '<span class="locked-badge">قفل \u2714</span>'
+                    f'<button class="unlock-btn" onclick="{unlock_call}">حذف قفل</button>'
                     f'{status_span}'
                 )
             else:
+                lock_call = "lockBucket('{0}','{1}','{2}','{3}','{4}','YES',{5},'{6}')".format(
+                    city_slug, city_name, date, market_id, yes_token, yes_price, label
+                )
                 action_html = (
-                    f'<button class="lock-btn" onclick="lockBucket(\\'{city_slug}\\',\\'{city_name}\\','
-                    f"'{date}','{market_id}','{yes_token}','YES',{yes_price},'{label}')\\">قفل کن</button>"
+                    f'<button class="lock-btn" onclick="{lock_call}">قفل کن</button>'
                     f'{status_span}'
                 )
 
@@ -524,7 +526,7 @@ def _locked_signals_section_html(locks):
 
     return (
         "<details class='city-block locked-section' open>"
-        f"<summary><b>\\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(visible_rows)})</summary>"
+        f"<summary><b>\U0001F512 سیگنال‌های قفل‌شدهٔ فعال</b> ({len(visible_rows)})</summary>"
         f"<div class='table-scroll'>{table_html}</div>"
         "</details>"
     )
@@ -540,7 +542,7 @@ def _date_block_html(m, city_slug, city_name, locked_keys):
     else:
         time_note = _hours_left_str(m.get("hours_left"))
     summary = (
-        f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \\u2014 {date}'
+        f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \u2014 {date}'
         f'  <span class="time-note">{time_note}</span>'
     )
     table = _bucket_table(
@@ -573,7 +575,7 @@ def _history_table_html(locks):
                 pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
             sell = r["sell_cents"] if r["sell_cents"] is not None else "-"
             parts.append(
-                f"<tr data-city=\\"{r['city_name']}\\" data-date=\\"{r['date']}\\">"
+                f"<tr data-city=\"{r['city_name']}\" data-date=\"{r['date']}\">"
                 f"<td>{r['date']}</td><td>{r['city_name']}</td><td>{r['signal_label']}</td>"
                 f"<td>{r['final_temp']}</td><td>{r['buy_cents']}</td><td>{sell}</td><td>{pct_html}</td></tr>"
             )
