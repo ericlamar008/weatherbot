@@ -46,14 +46,16 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
 --- اصلاحات دیگر -------------------------------------------------------------
   ۱) ستون جدید «دمای سیگنال قفل‌شده» در سکشن قفل‌های فعال.
   ۲) متاتگ‌های Cache-Control/Pragma/Expires در <head> برای رفع مشکل کش لینک.
-  ۳) (اصلاح این نسخه) رفع SyntaxError واقعی: در _bucket_table، ساخت رشتهٔ
-     onclick با f-string تودرتو و backslash-escape انجام می‌شد که هنگام
-     تایپ مجدد به‌اشتباه backslash دوتایی شد و باعث
-     "SyntaxError: unexpected character after line continuation character"
-     در اجرای واقعی می‌شد. اصلاح شد با ساخت رشتهٔ onclick با .format() به‌جای
-     f-string تودرتو -- خروجی HTML تولیدی دقیقاً همان قبلی است (تست‌شده و
-     تأیید شده که خروجی حرف‌به‌حرف یکسان است)، فقط دیگر به backslash-escape
-     نیاز ندارد.
+  ۳) رفع SyntaxError واقعی در _bucket_table (ساخت رشتهٔ onclick با
+     .format() به‌جای f-string تودرتو -- خروجی HTML حرف‌به‌حرف یکسان
+     با قبل است، فقط دیگر به backslash-escape نیاز ندارد).
+  ۴) (این نسخه) رفع باگ ناهماهنگی زمان «آخرین به‌روزرسانی»: قبلاً عدد
+     ساعت بالای صفحه از "الان" (لحظهٔ build) ساخته می‌شد، ولی شمارش
+     معکوس «X دقیقه پیش» کنارش از زمان واقعی آخرین اسکن -- یعنی دو منبع
+     زمانی متفاوت زیر یک برچسب، که باعث می‌شد ساعت درست باشد ولی شمارش
+     معکوس نادرست/قدیمی به‌نظر برسد (مثلاً ۴۰ دقیقه به‌جای ۴ دقیقهٔ واقعی).
+     حالا هر دو از همان مرجع (آخرین اسکن واقعی، در صورت وجود) ساخته
+     می‌شوند تا کاملاً هماهنگ باشند.
 """
 import json
 from collections import defaultdict
@@ -630,11 +632,16 @@ def build_simple_dashboard():
     body_html = _locked_signals_section_html(locks) + "".join(parts)
     history_html, history_city_options, history_date_options = _history_table_html(locks)
 
-    now_utc = datetime.now(timezone.utc)
     scan_iso, scan_kind = _latest_scan_info()
+    # رفع باگ: قبلاً عدد ساعت از "الان" (زمان ساخت صفحه) ساخته می‌شد ولی
+    # شمارش معکوس کنارش از "آخرین اسکن واقعی" -- یعنی دو منبع زمانی متفاوت
+    # زیر یک برچسب واحد "آخرین به‌روزرسانی"، که گیج‌کننده بود (ساعت درست،
+    # شمارش معکوس نادرست/قدیمی به‌نظر می‌رسید). حالا هر دو از همان منبع
+    # (آخرین اسکن واقعی، در صورت وجود) ساخته می‌شوند تا هماهنگ باشند.
+    reference_dt = datetime.fromisoformat(scan_iso) if scan_iso else datetime.now(timezone.utc)
 
     html = HTML_TEMPLATE
-    html = html.replace("LASTUPDATE", _iran_time_str(now_utc))
+    html = html.replace("LASTUPDATE", _iran_time_str(reference_dt))
     html = html.replace("LASTSCANISO", scan_iso or "")
     html = html.replace("LASTSCANKIND", scan_kind or "")
     html = html.replace("LASTSCANFALLBACK", "بدون سابقهٔ اسکن" if not scan_iso else "")
