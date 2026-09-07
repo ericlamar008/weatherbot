@@ -34,6 +34,19 @@ dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تع�
           وضعیت واقعی در data/markets/*.json، نه فقط فیلد status خود
           قفل که ممکن است هنوز به‌روز نشده باشد) از این سکشن حذف می‌شوند
           -- رفع باگ نمایش قفل‌های منقضی (مثل نمونهٔ Seoul).
+
+--- روادراه: فاز D -- زمان محلی به‌جای event_end_date خام (این نسخه) --------
+مشکل ریشه‌ای پیدا شده: در _locked_signals_section_html این خط وجود داشت:
+    if hours_left is not None and hours_left <= 0: continue
+یعنی به‌محض گذشتن event_end_date خام Gamma (نه پایان واقعی روز محلی)،
+قفل باز به‌طور کامل از سکشن حذف می‌شد -- حتی اگر بازار زیرین هنوز واقعاً
+"open" بود (نمونهٔ Ankara/Dallas).
+
+اصلاح: آن خط کاملاً حذف شد. تنها معیار حذف از سکشن فعال، همان بررسی
+درست قبلی روی RESOLVED_LIKE_STATUSES (وضعیت واقعی بازار) است. زمان از
+ماژول مشترک market_time.py گرفته می‌شود: پیش از پایان روز محلی شمارش
+معکوس واقعی نشان داده می‌شود؛ پس از آن و پیش از settlement رسمی، عبارت
+"awaiting official settlement" نمایش داده می‌شود -- هرگز حذف زودهنگام.
 """
 import json
 from collections import defaultdict
@@ -46,6 +59,8 @@ try:
     from zoneinfo import ZoneInfo
 except ImportError:
     ZoneInfo = None
+
+from market_time import local_day_status
 
 try:
     from locations import LOCATIONS, MONTHS
@@ -106,8 +121,8 @@ details.city-block{background:var(--surface);border:1px solid var(--border);bord
 details.date-block{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;margin:8px 0}
 summary{cursor:pointer;font-size:14px;color:var(--text);list-style:none;padding:8px 4px;font-weight:500}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"\u25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
-details[open]>summary::before{content:"\u25BE"}
+summary::before{content:"\25B8";color:var(--text-dim);font-size:11px;margin-left:8px}
+details[open]>summary::before{content:"\25BE"}
 .main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
 .time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
 .locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
@@ -287,6 +302,16 @@ def _hours_left_str(hours):
     return f"{h}h {m}m remaining"
 
 
+def _local_day_time_label(city, date, now):
+    """پایان روز محلی را از settlement رسمی جدا نگه می‌دارد -- پس از پایان
+    روز، به‌جای صفرشدن جعلی زمان، عبارت واقعی وضعیت را نشان می‌دهد."""
+    loc = LOCATIONS.get(city, {})
+    timing = local_day_status(date, loc, now)
+    if timing["kind"] == "local_day_open":
+        return _hours_left_str(timing["remaining_seconds"] / 3600.0), False
+    return "awaiting official settlement", True
+
+
 LAST_SCAN_FILE = Path("data/last_scan.json")
 
 
@@ -423,15 +448,10 @@ def _locked_signals_section_html(locks):
         if mkt is not None and mkt.get("status") in RESOLVED_LIKE_STATUSES:
             continue
 
-        hours_left = None
-        if mkt and mkt.get("event_end_date"):
-            try:
-                end = datetime.fromisoformat(mkt["event_end_date"])
-                hours_left = max(0.0, (end - now).total_seconds() / 3600)
-            except Exception:
-                hours_left = None
-        if hours_left is not None and hours_left <= 0:
-            continue
+        # پایان روز محلی هرگز به‌تنهایی باعث حذف قفل باز نمی‌شود؛ فقط
+        # وضعیت resolved/expired واقعی بازار (بالاتر بررسی شد) این کار را
+        # می‌کند. این‌جا فقط برچسب زمان/وضعیت را می‌سازیم.
+        time_str, awaiting_settlement = _local_day_time_label(city, date, now)
 
         name = LOCATIONS.get(city, {}).get("name", city)
         link = _build_polymarket_url(city, date)
@@ -448,8 +468,6 @@ def _locked_signals_section_html(locks):
         else:
             css = "win" if pct >= 0 else "loss"
             pct_html = f'<span class="{css}">{pct:+.1f}%</span>'
-
-        time_str = _hours_left_str(hours_left) if hours_left is not None else "-"
 
         last_checked = l.get("last_checked_at")
         if last_checked:
@@ -468,7 +486,7 @@ def _locked_signals_section_html(locks):
 
     rows = [
         "<table><tr><th>شهر</th><th>تاریخ</th><th>قیمت قفل‌شده</th>"
-        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>باقی‌مانده تا resolve</th>"
+        "<th>قیمت فعلی</th><th>درصد تغییر</th><th>تا پایان روز محلی</th>"
         "<th>آخرین به‌روزرسانی</th></tr>"
     ] + visible_rows
     rows.append("</table>")
@@ -487,7 +505,10 @@ def _date_block_html(m, city_slug, city_name, locked_keys):
     unit_sym = m.get("unit", "")
     main_signal_id = _main_signal_market_id(m)
     link = _build_polymarket_url(city_slug, date)
-    time_note = _hours_left_str(m.get("hours_left"))
+    if m.get("time_status") == "awaiting_settlement":
+        time_note = "awaiting official settlement"
+    else:
+        time_note = _hours_left_str(m.get("hours_left"))
     summary = (
         f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \u2014 {date}'
         f'  <span class="time-note">{time_note}</span>'
