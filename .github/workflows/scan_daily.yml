@@ -1,14 +1,19 @@
-# محل قرارگیری واقعی: .github/workflows/scan_daily.yml
+# مسیر واقعی: .github/workflows/scan_daily.yml
+# FIX2: انتشار امن + dead man's switch.
 
 name: WeatherBet - اسکن روزانه
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # هر روز ساعت 00:30 UTC
+    - cron: "30 0 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  group: weatherbot-data-writer
+  cancel-in-progress: false
 
 jobs:
   daily-scan:
@@ -25,7 +30,7 @@ jobs:
       - name: نصب پیش‌نیازها
         run: pip install -r requirements.txt
 
-      - name: اجرای یک دور کامل ربات (همان رفتار همیشگی)
+      - name: اجرای یک دور کامل ربات
         run: python weatherbot_v3.py once
 
       - name: ساخت داشبورد سادهٔ تعاملی
@@ -37,15 +42,26 @@ jobs:
           cp dashboard.html docs/dashboard.html
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
-          git add docs data
+          git add -A
           git commit -m "بروزرسانی خودکار روزانه" || echo "چیزی برای کامیت نبود"
+
+          PUSHED=false
           for i in 1 2 3 4 5; do
-            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+              PUSHED=true
+              break
+            fi
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
+
+          if [ "$PUSHED" != "true" ]; then
+            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
+            exit 1
+          fi
 
       - name: بررسی سلامت اسکن نیم‌ساعتهٔ قفل‌ها (dead man's switch)
         id: deadman
@@ -73,7 +89,7 @@ jobs:
           import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          base = "https://ericlamar008.github.io/weatherbot"  # این خط را با آدرس واقعی خودتان جایگزین کنید
+          base = "https://ericlamar008.github.io/weatherbot"
           stale = os.environ.get("DEADMAN_STALE", "false") == "true"
           hours_since = os.environ.get("DEADMAN_HOURS", "?")
           warning = (
