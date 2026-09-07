@@ -1,4 +1,5 @@
-# محل قرارگیری واقعی: .github/workflows/process_lock_events.yml
+# مسیر واقعی: .github/workflows/process_lock_events.yml
+# FIX2: همان لایهٔ انتشار امن برای ثبت قفل/حذف قفل.
 
 name: WeatherBet - پردازش فوری قفل و حذف قفل
 
@@ -9,6 +10,10 @@ on:
 permissions:
   contents: write
   issues: write
+
+concurrency:
+  group: weatherbot-data-writer
+  cancel-in-progress: false
 
 jobs:
   process:
@@ -39,12 +44,23 @@ jobs:
           mkdir -p docs
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
-          git add docs data/locked_signals.json data/lock_history.csv
+          git add -A
           git commit -m "بروزرسانی قفل‌ها" || echo "چیزی برای کامیت نبود"
+
+          PUSHED=false
           for i in 1 2 3 4 5; do
-            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+              PUSHED=true
+              break
+            fi
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
+
+          if [ "$PUSHED" != "true" ]; then
+            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
+            exit 1
+          fi
