@@ -1,14 +1,24 @@
-# محل قرارگیری واقعی: .github/workflows/monitor_locks.yml
+# مسیر واقعی: .github/workflows/monitor_locks.yml
+# FIX2: رفع قطعی خطای «cannot pull with rebase: You have unstaged changes»
+# - git add -A تمام خروجی‌های تولیدشده (از جمله simple.html ریشه) را stage می‌کند.
+# - concurrency تمام workflowهای نویسنده را در یک صف قرار می‌دهد تا هم‌زمان
+#   locked_signals.json/docs را بازنویسی نکنند.
+# - اگر هر پنج تلاش push ناموفق باشد، job واقعاً با exit 1 شکست می‌خورد؛
+#   پس دیگر تیک سبز کاذب دیده نمی‌شود.
 
 name: WeatherBet - اسکن نیم‌ساعتهٔ قفل‌ها
 
 on:
   schedule:
-    - cron: "5,35 * * * *"   # هر نیم‌ساعت (دقیقهٔ ۵ و ۳۵، دور از دقیقهٔ صفر/سی)
+    - cron: "5,35 * * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  group: weatherbot-data-writer
+  cancel-in-progress: false
 
 jobs:
   monitor:
@@ -39,12 +49,23 @@ jobs:
           mkdir -p docs
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
-          git add docs data/locked_signals.json data/lock_history.csv
+          git add -A
           git commit -m "بروزرسانی اسکن نیم‌ساعتهٔ قفل‌ها" || echo "چیزی برای کامیت نبود"
+
+          PUSHED=false
           for i in 1 2 3 4 5; do
-            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+              PUSHED=true
+              break
+            fi
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
+
+          if [ "$PUSHED" != "true" ]; then
+            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
+            exit 1
+          fi
