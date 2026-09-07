@@ -1,14 +1,20 @@
-# محل قرارگیری واقعی: .github/workflows/heartbeat_dashboard_link.yml
+# مسیر واقعی: .github/workflows/heartbeat_dashboard_link.yml
+# FIX2: قرارگرفتن در همان صف نویسندهٔ مشترک. این فایل از قبل git add -A
+# و retry دارد؛ تنها تغییر عملی این نسخه concurrency است.
 
 name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
 on:
   schedule:
-    - cron: "30 6,12,18 * * *"   # ۰۶:۳۰، ۱۲:۳۰، ۱۸:۳۰ UTC -- هم‌راستا با سیکل‌های مدل، دور از اسکن سنگین ۰۰:۳۰
+    - cron: "30 6,12,18 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  group: weatherbot-data-writer
+  cancel-in-progress: false
 
 jobs:
   heartbeat:
@@ -37,17 +43,27 @@ jobs:
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
 
-      - name: کامیت و انتشار (با ایمنی در برابر برخورد هم‌زمان)
+      - name: کامیت و انتشار امن
         run: |
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
           git add -A
           git commit -m "بروزرسانی ۶ساعتهٔ داشبورد تعاملی" || echo "چیزی برای کامیت نبود"
+
+          PUSHED=false
           for i in 1 2 3 4 5; do
-            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+              PUSHED=true
+              break
+            fi
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
+
+          if [ "$PUSHED" != "true" ]; then
+            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
+            exit 1
+          fi
 
       - name: ارسال لینک داشبورد تعاملی در تلگرام
         env:
