@@ -12,6 +12,18 @@ price_monitor.py -- اسکنر نیم‌ساعتهٔ مستقل برای قفل�
      "last_checked_at" (زمان ISO این بررسی) هم روی همان قفل ثبت می‌شود --
      این برای نمایش ستون «آخرین به‌روزرسانی» در سکشن قفل‌های داشبورد
      تعاملی لازم است (dashboard_simple.py آن را می‌خواند).
+
+--- روادراه: فاز C -- زمان محلی به‌جای event_end_date خام (این نسخه) --------
+مشکل قبلی: hours_left از تفاضل event_end_date منهای now محاسبه می‌شد که
+بعد از گذشتنش صفر می‌ماند و باعث هشدار تکراری "0h 0m to resolve" می‌شد،
+حتی وقتی بازار هنوز واقعاً باز بود (مثل Ankara/Dallas).
+
+اصلاح: از ماژول مشترک market_time.py استفاده می‌شود تا:
+  - hours_left از «پایان روز هدف در timezone شهر» محاسبه شود، نه از
+    event_end_date خام.
+  - هشدار ⏰ فقط در بازهٔ باز (0 < remaining <= NEAR_RESOLVE_HOURS) فعال شود.
+  - بعد از پایان روز محلی، به‌جای "0h 0m to resolve"، عبارت واقعی
+    "awaiting official settlement" نمایش داده شود.
 """
 import json
 import os
@@ -22,6 +34,7 @@ import requests
 
 from clob_utils import get_gamma_event_prices
 import history_manager
+from market_time import local_day_status, is_near_local_day_end
 
 try:
     from locations import LOCATIONS, MONTHS
@@ -96,6 +109,13 @@ def _hours_left_str(hours):
     return f"{h}h {m}m to resolve"
 
 
+def _local_day_label(hours_left, awaiting_settlement):
+    """پس از پایان روز محلی هرگز 0h 0m نمایش نمی‌دهد؛ به‌جایش وضعیت واقعی."""
+    if awaiting_settlement:
+        return "awaiting official settlement"
+    return _hours_left_str(hours_left)
+
+
 def _build_polymarket_url(city, date_str):
     try:
         dt = datetime.strptime(date_str, "%Y-%m-%d")
@@ -138,14 +158,11 @@ def build_message(now, locks):
 
     for (city, date), group in sorted(by_city.items(), key=lambda kv: (kv[0][0], kv[0][1])):
         market = _load_market(city, date)
+        loc = LOCATIONS.get(city, {})
 
-        hours_left = None
-        if market and market.get("event_end_date"):
-            try:
-                end = datetime.fromisoformat(market["event_end_date"])
-                hours_left = max(0.0, (end - now).total_seconds() / 3600)
-            except Exception:
-                hours_left = None
+        timing = local_day_status(date, loc, now)
+        awaiting_settlement = timing["kind"] == "awaiting_settlement"
+        hours_left = timing["remaining_seconds"] / 3600.0
 
         try:
             dt = datetime.strptime(date, "%Y-%m-%d")
@@ -153,7 +170,7 @@ def build_message(now, locks):
         except Exception:
             gamma_prices = {}
 
-        near_resolve = hours_left is not None and hours_left <= NEAR_RESOLVE_HOURS
+        near_resolve = is_near_local_day_end(date, loc, now, hours=NEAR_RESOLVE_HOURS)
         star = False
         lines = []
 
@@ -197,8 +214,7 @@ def build_message(now, locks):
         title = f"<a href=\"{link}\">{name}</a> \u2014 {date}"
         if marks:
             title = f"{marks} {title}"
-        if hours_left is not None:
-            title += f"  ({_hours_left_str(hours_left)})"
+        title += f"  ({_local_day_label(hours_left, awaiting_settlement)})"
 
         city_blocks.append(title + "\n" + "\n".join(lines))
 
