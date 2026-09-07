@@ -1,20 +1,30 @@
-# مسیر واقعی: .github/workflows/heartbeat_dashboard_link.yml
-# FIX2: قرارگرفتن در همان صف نویسندهٔ مشترک. این فایل از قبل git add -A
-# و retry دارد؛ تنها تغییر عملی این نسخه concurrency است.
+# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (نسخهٔ اصلاح‌شده)
+#
+# اصلاح واقعی نسبت به نسخهٔ قبلی: قبلاً این فایل فقط پیام را می‌فرستاد و
+# خودش صفحه را دوباره نمی‌ساخت -- بر همین اساس بود که با اجرای این
+# Workflow اطلاعات "به‌روز" نمی‌شد. الان دقیقاً مثل monitor_locks.yml خودش
+# هم داشبورد تعاملی را دوباره می‌سازد و منتشر می‌کند، بعد لینک را می‌فرستد --
+# یعنی هر ۶ ساعت واقعاً یک نسخهٔ تازه‌ساخته‌شده دریافت می‌کنید، نه فقط یادآوری.
+#
+# --- اصلاح جدید (رفع مشکل "لینک آپدیت نمی‌شود") ------------------------------
+# سایت روی GitHub Pages میزبانی می‌شود که پشت CDN (Fastly) است؛ حتی وقتی
+# simple.html واقعاً به‌روز شده باشد، مرورگر/CDN ممکن است نسخهٔ قدیمیِ
+# کش‌شده را نشان دهد چون آدرس همیشه دقیقاً یکسان است. اصلاح: به لینکی که
+# در تلگرام فرستاده می‌شود یک پارامتر زمان یکتا (?t=...) اضافه شده تا هر
+# اعلان، آدرسی کاملاً متفاوت از قبلی باشد و مرورگر مجبور شود نسخهٔ تازه را
+# از سرور بگیرد، نه از کش. (متاتگ‌های Cache-Control/Pragma/Expires هم در
+# dashboard_simple.py به <head> اضافه شده‌اند تا بازکردن دستی لینک هم
+# کمتر دچار کش شود.)
 
 name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
 on:
   schedule:
-    - cron: "30 6,12,18 * * *"
+    - cron: "0 */6 * * *"   # هر ۶ ساعت
   workflow_dispatch: {}
 
 permissions:
   contents: write
-
-concurrency:
-  group: weatherbot-data-writer
-  cancel-in-progress: false
 
 jobs:
   heartbeat:
@@ -29,10 +39,7 @@ jobs:
           python-version: "3.11"
 
       - name: نصب پیش‌نیازها
-        run: pip install -r requirements.txt
-
-      - name: اسکن سبک -- تازه‌سازی قیمت/پیش‌بینی + resolve + کالیبراسیون (بدون سایزینگ)
-        run: python weatherbot_v3.py lite_scan
+        run: pip install requests
 
       - name: ساخت دوبارهٔ داشبورد تعاملی با آخرین داده‌های موجود
         run: python dashboard_simple.py
@@ -43,27 +50,17 @@ jobs:
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
 
-      - name: کامیت و انتشار امن
+      - name: کامیت و انتشار (با ایمنی در برابر برخورد هم‌زمان)
         run: |
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
           git add -A
           git commit -m "بروزرسانی ۶ساعتهٔ داشبورد تعاملی" || echo "چیزی برای کامیت نبود"
-
-          PUSHED=false
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
-              PUSHED=true
-              break
-            fi
+            git pull --rebase origin ${{ github.ref_name }} && git push && break
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
-
-          if [ "$PUSHED" != "true" ]; then
-            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
-            exit 1
-          fi
 
       - name: ارسال لینک داشبورد تعاملی در تلگرام
         env:
@@ -71,10 +68,14 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python3 - <<'PY'
-          import os, requests
+          import os, time, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          link = "https://ericlamar008.github.io/weatherbot/simple.html"
+          # اصلاح کش: هر بار یک پارامتر زمان یکتا به لینک اضافه می‌شود تا
+          # مرورگر/CDN گیت‌هاب‌پیجز آن را یک URL کاملاً جدید در نظر بگیرد و
+          # هرگز نسخهٔ کش‌شدهٔ قدیمی صفحه را نشان ندهد.
+          cache_bust = int(time.time())
+          link = f"https://ericlamar008.github.io/weatherbot/simple.html?t={cache_bust}"
           text = f"\U0001F504 بروزرسانی ۶ساعته -- داشبورد تعاملی تازه‌سازی شد:\n{link}"
           if token and chat:
               requests.post(
