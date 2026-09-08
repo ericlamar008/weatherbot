@@ -6,10 +6,37 @@
   "status": "open",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 66.8,
+  "hours_left": 62.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-11T05:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-08T10:10:40.984793+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_lite_refresh": "2026-09-08T14:20:44.400117+00:00",
+  "forecast_mean": 90.14,
+  "sigma": 3.812,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 10?",
+      "market_id": "4359171",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "95494972257628018540631277226574894999410765125277769658302713329897346639172",
+      "no_token_id": "73064654040917664519757273901466502266180423880278335872074856174295248069782",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.7358,
+      "ev": 2.0033,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

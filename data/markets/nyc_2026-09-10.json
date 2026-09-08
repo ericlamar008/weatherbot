@@ -6,10 +6,81 @@
   "status": "open",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 65.8,
+  "hours_left": 61.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-11T04:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-08T10:10:40.984793+00:00",
-  "skipped_reason": "event volume 85 < min_volume 500"
+  "skipped_reason": "event volume 85 < min_volume 500",
+  "last_lite_refresh": "2026-09-08T14:20:44.400117+00:00",
+  "forecast_mean": 86.39,
+  "sigma": 3.569,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in New York City be between 84-85°F on September 10?",
+      "market_id": "4358651",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 863.0,
+      "spread": 0.0,
+      "yes_token_id": "65171811345723150156396566640260304917924379154055915005329345169377785680418",
+      "no_token_id": "31102178618744251290416711996190931400400267546861385599427371402009153705940",
+      "model_prob": 0.3188,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.321,
+      "ev": -0.0123,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 86-87°F on September 10?",
+      "market_id": "4358652",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.275,
+      "no_price": 0.725,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "60610156014832583057800002316538420364716260641461028750135166341032933569498",
+      "no_token_id": "94939596486237506908289346270148302199081160882966514520233306122038288004264",
+      "model_prob": 0.3746,
+      "side": "YES",
+      "ask": 0.275,
+      "market_prob": 0.275,
+      "belief_prob": 0.3397,
+      "ev": 0.2353,
+      "kelly": 0.0223,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 88-89°F on September 10?",
+      "market_id": "4358653",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 335.0,
+      "spread": 0.0,
+      "yes_token_id": "75195890453994770768629544597827063155235591508189718265682732283585192312467",
+      "no_token_id": "11683076406260673687531530450021434345816807871385305804183367505765769246887",
+      "model_prob": 0.3067,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.2641,
+      "ev": 0.4276,
+      "kelly": 0.0243,
+      "sell_value": null
+    }
+  ]
 }
