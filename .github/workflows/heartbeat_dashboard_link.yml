@@ -1,11 +1,13 @@
 # مسیر واقعی: .github/workflows/heartbeat_dashboard_link.yml
 #
-# PATCH نهایی: کرون داخلی گیت‌هاب (schedule) حذف شد چون زمان‌بندی این
-# Workflow از این به بعد کاملاً بر عهدهٔ زمان‌بند خارجی (cron-job.org) است
-# که سه بار در روز (۰۸:۲۰، ۱۴:۲۰ و ۲۰:۲۰ به‌وقت UTC) با فراخوانی
-# workflow_dispatch این Workflow را اجرا می‌کند. اگر کرون داخلی همزمان
-# فعال می‌ماند، این Workflow دوبار در بازه‌های نزدیک به هم اجرا می‌شد.
-#
+# PATCH (این نسخه): اضافه‌شدن بند concurrency که در سه Workflow نوشتاری
+# دیگر (monitor_locks.yml، scan_daily.yml، process_lock_events.yml) از قبل
+# وجود داشت اما در این فایل هرگز اضافه نشده بود. نبود آن باعث می‌شد اگر
+# این Workflow دقیقاً هم‌زمان با یکی از آن سه اجرا شود (مثلاً هر دو با
+# فاصلهٔ چند ثانیه از cron-job.org یا تست دستی)، هر دو هم‌زمان روی
+# simple.html / docs/simple.html بنویسند و در rebase به‌هم بخورند --
+# دقیقاً همان CONFLICT و اجراهای طولانی/ناموفقی که مشاهده شد.
+
 # بقیهٔ منطق (اسکن سبک، انتشار نسخهٔ یکتا، پاک‌سازی نسخه‌های قدیمی، ارسال
 # لینک در تلگرام) نسبت به نسخهٔ قبلی تغییری نکرده است.
 
@@ -16,6 +18,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: weatherbot-data-writer
+  cancel-in-progress: false
 
 jobs:
   heartbeat:
@@ -64,11 +70,21 @@ jobs:
           git config user.email "ci@users.noreply.github.com"
           git add -A
           git commit -m "اسکن سبک ۶ساعته + بروزرسانی داشبورد تعاملی" || echo "چیزی برای کامیت نبود"
+
+          PUSHED=false
           for i in 1 2 3 4 5; do
-            git pull --rebase origin ${{ github.ref_name }} && git push && break
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+              PUSHED=true
+              break
+            fi
             echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
             sleep 5
           done
+
+          if [ "$PUSHED" != "true" ]; then
+            echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
+            exit 1
+          fi
 
       - name: ارسال لینک نسخه‌ای داشبورد در تلگرام
         env:
