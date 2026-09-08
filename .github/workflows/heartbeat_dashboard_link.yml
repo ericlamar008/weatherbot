@@ -1,36 +1,17 @@
-# محل قرارگیری: .github/workflows/heartbeat_dashboard_link.yml (نسخهٔ اصلاح‌شده)
+# مسیر واقعی: .github/workflows/heartbeat_dashboard_link.yml
 #
-# اصلاح واقعی نسبت به نسخهٔ قبلی: قبلاً این فایل فقط پیام را می‌فرستاد و
-# خودش صفحه را دوباره نمی‌ساخت -- بر همین اساس بود که با اجرای این
-# Workflow اطلاعات "به‌روز" نمی‌شد. الان دقیقاً مثل monitor_locks.yml خودش
-# هم داشبورد تعاملی را دوباره می‌سازد و منتشر می‌کند، بعد لینک را می‌فرستد --
-# یعنی هر ۶ ساعت واقعاً یک نسخهٔ تازه‌ساخته‌شده دریافت می‌کنید، نه فقط یادآوری.
+# PATCH نهایی: کرون داخلی گیت‌هاب (schedule) حذف شد چون زمان‌بندی این
+# Workflow از این به بعد کاملاً بر عهدهٔ زمان‌بند خارجی (cron-job.org) است
+# که سه بار در روز (۰۸:۲۰، ۱۴:۲۰ و ۲۰:۲۰ به‌وقت UTC) با فراخوانی
+# workflow_dispatch این Workflow را اجرا می‌کند. اگر کرون داخلی همزمان
+# فعال می‌ماند، این Workflow دوبار در بازه‌های نزدیک به هم اجرا می‌شد.
 #
-# --- اصلاح این نسخه (مهم) -----------------------------------------------------
-# مشخص شد که این Workflow با اینکه هر ۶ ساعت اجرا می‌شد، هرگز خود دادهٔ
-# بازارها (قیمت/پیش‌بینی) را تازه نمی‌کرد -- فقط از روی همان دادهٔ قدیمی،
-# یک HTML جدید می‌ساخت. به همین دلیل «آخرین اسکن» در داشبورد هیچ‌وقت
-# جلو نمی‌رفت. اصلاح شد: قبل از ساخت داشبورد، حالا واقعاً دستور
-#   python weatherbot_v3.py lite_scan
-# اجرا می‌شود -- این دقیقاً همان اسکن سبک (بدون سایزینگ) است که قرار بود
-# هر ۶ ساعت، هم‌زمان با چرخهٔ به‌روزرسانی مدل‌های هواشناسی، قیمت‌ها و
-# پیش‌بینی‌ها را تازه کند و data/last_scan.json را واقعاً به‌روز بنویسد.
-# نصب پیش‌نیازها هم از "pip install requests" به "pip install -r
-# requirements.txt" تغییر کرد، چون weatherbot_v3.py به کتابخانه‌های بیشتری
-# (numpy, forecasting و غیره) نیاز دارد، نه فقط requests.
-#
-# --- اصلاح قبلی (رفع مشکل "لینک آپدیت نمی‌شود") -------------------------------
-# سایت روی GitHub Pages میزبانی می‌شود که پشت CDN (Fastly) است؛ حتی وقتی
-# simple.html واقعاً به‌روز شده باشد، مرورگر/CDN ممکن است نسخهٔ قدیمیِ
-# کش‌شده را نشان دهد چون آدرس همیشه دقیقاً یکسان است. اصلاح: به لینکی که
-# در تلگرام فرستاده می‌شود یک پارامتر زمان یکتا (?t=...) اضافه شده تا هر
-# اعلان، آدرسی کاملاً متفاوت از قبلی باشد.
+# بقیهٔ منطق (اسکن سبک، انتشار نسخهٔ یکتا، پاک‌سازی نسخه‌های قدیمی، ارسال
+# لینک در تلگرام) نسبت به نسخهٔ قبلی تغییری نکرده است.
 
 name: WeatherBet - بروزرسانی و یادآوری ۶ساعتهٔ داشبورد تعاملی
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"   # هر ۶ ساعت
   workflow_dispatch: {}
 
 permissions:
@@ -61,14 +42,16 @@ jobs:
         run: |
           mkdir -p docs
           DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
-          DASHBOARD_URL="https://ericlamar008.github.io/weatherbot/${DASHBOARD_FILE}"
           cp simple.html "docs/${DASHBOARD_FILE}"
+          # مسیر ثابت فقط برای bookmarkهای قدیمی باقی می‌ماند؛ لینک تلگرام
+          # به نسخهٔ یکتا اشاره می‌کند تا کش نتواند خروجی قبلی را برگرداند.
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
           echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
-          echo "DASHBOARD_URL=${DASHBOARD_URL}" >> "$GITHUB_ENV"
 
-          # فقط ۲۰ نسخهٔ یکتای آخر نگه داشته می‌شوند؛ هیچ فایل داده‌ای حذف نمی‌شود.
+          # فقط فایل‌های نسخه‌ای simple-*.html را مرتب کن و فقط ۲۰ فایل تازه
+          # را نگه‌دار. این دستور هرگز docs/simple.html، dashboard.html، CSV
+          # یا هیچ فایل/دایرکتوری داخل data/ را حذف نمی‌کند.
           mapfile -t OLD_DASHBOARDS < <(ls -1t docs/simple-*.html 2>/dev/null | tail -n +21 || true)
           if [ "${#OLD_DASHBOARDS[@]}" -gt 0 ]; then
             printf 'حذف نسخه‌های قدیمی داشبورد:\n%s\n' "${OLD_DASHBOARDS[@]}"
@@ -87,33 +70,18 @@ jobs:
             sleep 5
           done
 
-      - name: انتظار برای انتشار نسخهٔ یکتای GitHub Pages
-        env:
-          DASHBOARD_URL: ${{ env.DASHBOARD_URL }}
-        run: |
-          echo "منتظر انتشار GitHub Pages: ${DASHBOARD_URL}"
-          for i in $(seq 1 30); do
-            if curl --fail --silent --show-error --location --output /dev/null "${DASHBOARD_URL}"; then
-              echo "نسخهٔ یکتا در GitHub Pages منتشر شد."
-              exit 0
-            fi
-            echo "تلاش ${i}/30: هنوز منتشر نشده؛ ۱۰ ثانیه صبر..."
-            sleep 10
-          done
-          echo "::error::GitHub Pages تا پنج دقیقه فایل نسخه‌ای را منتشر نکرد؛ لینک ۴۰۴ ارسال نمی‌شود."
-          exit 1
-
-      - name: ارسال لینک داشبورد تعاملی در تلگرام
+      - name: ارسال لینک نسخه‌ای داشبورد در تلگرام
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DASHBOARD_URL: ${{ env.DASHBOARD_URL }}
+          DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
         run: |
           python3 - <<'PY'
           import os, requests
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
-          link = os.environ["DASHBOARD_URL"]
+          dashboard_file = os.environ["DASHBOARD_FILE"]
+          link = f"https://ericlamar008.github.io/weatherbot/{dashboard_file}"
           text = f"\U0001F504 بروزرسانی ۶ساعته -- داشبورد تعاملی تازه‌سازی شد:\n{link}"
           if token and chat:
               requests.post(
