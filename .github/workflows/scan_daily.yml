@@ -1,11 +1,17 @@
 # مسیر واقعی: .github/workflows/scan_daily.yml
-# FIX2: انتشار امن + dead man's switch.
+#
+# PATCH نهایی: کرون داخلی گیت‌هاب (schedule) حذف شد چون زمان‌بندی این
+# Workflow از این به بعد کاملاً بر عهدهٔ زمان‌بند خارجی (cron-job.org) است
+# که هر روز یک بار (ساعت ۰۲:۲۰ به‌وقت UTC) با فراخوانی workflow_dispatch
+# این Workflow را اجرا می‌کند. اگر کرون داخلی همزمان فعال می‌ماند، این
+# Workflow دوبار در بازه‌های نزدیک به هم اجرا می‌شد.
+#
+# بقیهٔ منطق (اسکن کامل با سایزینگ، انتشار امن، dead man's switch) نسبت
+# به نسخهٔ قبلی تغییری نکرده است.
 
 name: WeatherBet - اسکن روزانه
 
 on:
-  schedule:
-    - cron: "30 0 * * *"
   workflow_dispatch: {}
 
 permissions:
