@@ -1,11 +1,26 @@
 # مسیر واقعی: .github/workflows/process_lock_events.yml
-# FIX2: همان لایهٔ انتشار امن برای ثبت قفل/حذف قفل.
+#
+# نسخهٔ نهایی برای این مرحله:
+# - workflow_dispatch اضافه شده تا دکمهٔ «Run workflow» در تب Actions باشد
+#   (برای پردازش دستیِ issueهای قدیمیِ گیرکرده یا تست).
+# - بر خلاف تلاش قبلی، اینجا دیگر بعد از هر قفل/حذف‌قفل، یک لینک یکتا
+#   ساخته و در تلگرام فرستاده نمی‌شود -- چون وقتی چند شهر پشت‌سرهم قفل شوند
+#   (هر issue = یک اجرای جدا)، همان تعداد پیام/لینک جداگانه در تلگرام
+#   ایجاد می‌شد. به‌جای آن، هر بار فقط مسیر ثابت docs/simple.html به‌روز
+#   می‌شود؛ کاربر همیشه از همان یک آدرس ثابت (با یک رفرش سخت) آخرین وضعیت
+#   قفل‌ها را می‌بیند. لینک‌های یکتا و پیام تلگرام همچنان فقط در
+#   scan_daily.yml و heartbeat_dashboard_link.yml (اسکن‌های زمان‌بندی‌شده)
+#   باقی می‌مانند.
+#
+# منطق lock_manager.py، دستور اجرای آن، concurrency و retry پوش نسبت به
+# نسخهٔ قبلی تغییری نکرده است.
 
 name: WeatherBet - پردازش فوری قفل و حذف قفل
 
 on:
   issues:
     types: [opened]
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -39,7 +54,7 @@ jobs:
       - name: بازسازی داشبورد ساده با وضعیت تازه
         run: python dashboard_simple.py
 
-      - name: انتشار داشبورد ساده و CSV در GitHub Pages
+      - name: انتشار داشبورد ساده و CSV در GitHub Pages (فقط مسیر ثابت)
         run: |
           mkdir -p docs
           cp simple.html docs/simple.html
