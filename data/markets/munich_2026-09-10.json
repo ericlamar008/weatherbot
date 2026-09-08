@@ -6,11 +6,256 @@
   "status": "open",
   "created_at": "2026-09-08T04:57:29.460796+00:00",
   "committed_allocation": null,
-  "hours_left": 63.2,
+  "hours_left": 59.8,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-10T22:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
-  "last_scan": "2026-09-08T04:57:29.460796+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-08T06:45:10.564270+00:00"
+  "last_scan": "2026-09-08T10:10:40.984793+00:00",
+  "last_lite_refresh": "2026-09-08T06:45:10.564270+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 18.91,
+  "sigma": 1.319,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Munich be 13°C or below on September 10?",
+      "market_id": "4356286",
+      "range": [
+        -999.0,
+        13.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 185.0,
+      "spread": 0.0,
+      "yes_token_id": "72829655442736193362045251196808737255211013657698233351350982003044559668576",
+      "no_token_id": "61915521824479569582601158170484133943538551029396084207799949138530443233114",
+      "model_prob": 0.0047,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0036,
+      "ev": 1.4,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 14°C on September 10?",
+      "market_id": "4356287",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 285.0,
+      "spread": 0.0,
+      "yes_token_id": "97879359184453766210407405206609478024564463635494069448942294464162189850824",
+      "no_token_id": "63839178735295731020855993514167034836757600328796896246488346845172724634263",
+      "model_prob": 0.0056,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.005,
+      "ev": 0.25,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 15°C on September 10?",
+      "market_id": "4356288",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "58173922717021521005776833120574595230240164403178861613644917445547713573223",
+      "no_token_id": "45362024837246535133726178966713339108702823546343391095963577565203371193595",
+      "model_prob": 0.0143,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0163,
+      "ev": -0.185,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 17°C on September 10?",
+      "market_id": "4356290",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "8697789602665613205294253830841944518466762225482695555157650420676763543604",
+      "no_token_id": "101101685097000217924314235305578794033413763245915835056505651145021773876644",
+      "model_prob": 0.1034,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0935,
+      "ev": 0.2467,
+      "kelly": 0.005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 18°C on September 10?",
+      "market_id": "4356291",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 64.0,
+      "spread": 0.0,
+      "yes_token_id": "106141478656719675836000796884298328646946929221610474305391822786688346469552",
+      "no_token_id": "100630745187154291499474887545249916173162004162261078921149366717215721958594",
+      "model_prob": 0.2173,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.2095,
+      "ev": 0.0744,
+      "kelly": 0.0045,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 19°C on September 10?",
+      "market_id": "4356292",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.39,
+      "no_price": 0.61,
+      "volume": 84.0,
+      "spread": 0.0,
+      "yes_token_id": "66032564443247719070916727653652936998108095726098426858234744183134083731189",
+      "no_token_id": "37552607018115931968302508196135116701868816993085645977994892617084774304025",
+      "model_prob": 0.2791,
+      "side": "YES",
+      "ask": 0.39,
+      "market_prob": 0.39,
+      "belief_prob": 0.3179,
+      "ev": -0.1849,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 20°C on September 10?",
+      "market_id": "4356293",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.21,
+      "no_price": 0.79,
+      "volume": 153.0,
+      "spread": 0.0,
+      "yes_token_id": "72828913906422486488190556994735791773515415431166624085598611451818305311555",
+      "no_token_id": "42984489355135067790354805449818635000226391575609705942571340817328231742727",
+      "model_prob": 0.1957,
+      "side": "YES",
+      "ask": 0.21,
+      "market_prob": 0.21,
+      "belief_prob": 0.2007,
+      "ev": -0.0443,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 21°C on September 10?",
+      "market_id": "4356294",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 401.0,
+      "spread": 0.0,
+      "yes_token_id": "44809879986637955836244401631209731009750630564746189075010601698592516118092",
+      "no_token_id": "106076715929834594724365770099867955301934589406519230761366482955452301788126",
+      "model_prob": 0.0876,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.0954,
+      "ev": -0.1327,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Munich be 23°C or higher on September 10?",
+      "market_id": "4356296",
+      "range": [
+        23.0,
+        999.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 43.0,
+      "spread": 0.0,
+      "yes_token_id": "78843719499789708385487400113121780604266837290085791749582069607609129648812",
+      "no_token_id": "35473447031915866042385033481892126585320149292866752035292051787964658991139",
+      "model_prob": 0.0208,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0188,
+      "ev": 0.2533,
+      "kelly": 0.001,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4356292",
+      "question": "Will the highest temperature in Munich be 19°C on September 10?",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "YES",
+      "price": 0.39,
+      "model_prob": 0.2791,
+      "ev": -0.1849,
+      "market_prob": 0.39,
+      "role": "main_signal",
+      "units": 24.9,
+      "sell_value": 0.38
+    },
+    {
+      "market_id": "4356292",
+      "question": "Will the highest temperature in Munich be 19°C on September 10? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.61,
+      "model_prob": 0.7209,
+      "ev": 0.1182,
+      "market_prob": 0.61,
+      "role": "scenario_hedge",
+      "units": 23.31,
+      "sell_value": 0.6
+    }
+  ],
+  "total_allocated_units": 48.2,
+  "portfolio_score": -0.022078,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 15.64,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3322,
+  "confidence": 0.0116,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

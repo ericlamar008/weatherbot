@@ -1,0 +1,238 @@
+{
+  "city": "kuala-lumpur",
+  "city_name": "Kuala Lumpur",
+  "date": "2026-09-10",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-08T10:10:40.984793+00:00",
+  "committed_allocation": null,
+  "hours_left": 53.8,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-10T16:00:00+00:00",
+  "event_end_date": "2026-09-10T12:00:00Z",
+  "last_scan": "2026-09-08T10:10:40.984793+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 31.33,
+  "sigma": 1.077,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 27°C or below on September 10?",
+      "market_id": "4356514",
+      "range": [
+        -999.0,
+        27.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 217.0,
+      "spread": 0.0,
+      "yes_token_id": "14785690377101893190813702244161238229135502445222782982576963514363607411997",
+      "no_token_id": "621806615521942293675336904477441530515714281621740637693143523465249547549",
+      "model_prob": 0.0081,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.006,
+      "ev": 2.0,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 28°C on September 10?",
+      "market_id": "4356515",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "70386076269481301500393498666656326901244150046008056738507078599179366943380",
+      "no_token_id": "3812348084710042072489046853538468480658565686570072741026909749618597554458",
+      "model_prob": 0.0152,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0169,
+      "ev": -0.155,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 30°C on September 10?",
+      "market_id": "4356517",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "93632039102567721031635358199217405225342977680546838198873138431890267319266",
+      "no_token_id": "32741489191745125571327216250797875119705090484913112517652655370602272368404",
+      "model_prob": 0.1628,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.1286,
+      "ev": 0.9785,
+      "kelly": 0.017,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 32°C on September 10?",
+      "market_id": "4356519",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.295,
+      "no_price": 0.705,
+      "volume": 49.0,
+      "spread": 0.0,
+      "yes_token_id": "109699682932172580782926169869667000167097003518607685147844925690487328047834",
+      "no_token_id": "40346306038088190884661504192915272034444984163637254251082861179677338221365",
+      "model_prob": 0.2769,
+      "side": "YES",
+      "ask": 0.295,
+      "market_prob": 0.295,
+      "belief_prob": 0.2832,
+      "ev": -0.04,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 33°C on September 10?",
+      "market_id": "4356520",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 109.0,
+      "spread": 0.0,
+      "yes_token_id": "64348772449153259313176605869269905405589369697882035552509021050051652214690",
+      "no_token_id": "78633013603409497605933327082572241877627667009417113967703950836895325235516",
+      "model_prob": 0.1134,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.1612,
+      "ev": -0.3552,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 34°C on September 10?",
+      "market_id": "4356521",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "114877476229359876362525478292146310562196930942470748316414440600940398780091",
+      "no_token_id": "96205125894422452054720800551033984451742034731131675409886843650460338726496",
+      "model_prob": 0.0339,
+      "side": "YES",
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.071,
+      "ev": -0.4929,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 36°C on September 10?",
+      "market_id": "4356523",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 9.0,
+      "spread": 0.0,
+      "yes_token_id": "15005663282056789121083616752608396315577340179427761846061115757490575561437",
+      "no_token_id": "108960004177401375377624978489713666616841413173317399740272139422679847876054",
+      "model_prob": 0.0034,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.004,
+      "ev": -0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 37°C or higher on September 10?",
+      "market_id": "4356524",
+      "range": [
+        37.0,
+        999.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 177.0,
+      "spread": 0.0,
+      "yes_token_id": "32576312314918672058912041226590084650690891068028067378776902198693305035581",
+      "no_token_id": "102950548663462307490266917616152805764782652160415300379512045727497713372259",
+      "model_prob": 0.0024,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0031,
+      "ev": -0.3111,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4356519",
+      "question": "Will the highest temperature in Kuala Lumpur be 32°C on September 10?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.295,
+      "model_prob": 0.2769,
+      "ev": -0.04,
+      "market_prob": 0.295,
+      "role": "main_signal",
+      "units": 22.7,
+      "sell_value": 0.27
+    },
+    {
+      "market_id": "4356519",
+      "question": "Will the highest temperature in Kuala Lumpur be 32°C on September 10? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.705,
+      "model_prob": 0.7231,
+      "ev": 0.0167,
+      "market_prob": 0.705,
+      "role": "scenario_hedge",
+      "units": 30.35,
+      "sell_value": 0.68
+    }
+  ],
+  "total_allocated_units": 53.0,
+  "portfolio_score": 0.004876,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 23.9,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3449,
+  "confidence": 0.1712,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
