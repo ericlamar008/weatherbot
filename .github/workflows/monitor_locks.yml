@@ -1,10 +1,22 @@
 # مسیر واقعی: .github/workflows/monitor_locks.yml
-# FIX2: رفع قطعی خطای «cannot pull with rebase: You have unstaged changes»
-# - git add -A تمام خروجی‌های تولیدشده (از جمله simple.html ریشه) را stage می‌کند.
-# - concurrency تمام workflowهای نویسنده را در یک صف قرار می‌دهد تا هم‌زمان
-#   locked_signals.json/docs را بازنویسی نکنند.
-# - اگر هر پنج تلاش push ناموفق باشد، job واقعاً با exit 1 شکست می‌خورد؛
-#   پس دیگر تیک سبز کاذب دیده نمی‌شود.
+#
+# PATCH (این نسخه): اضافه‌شدن «اعلان دسته‌ای قفل‌ها».
+# قبلاً این Workflow فقط قیمت قفل‌های باز را چک می‌کرد و مسیر ثابت
+# docs/simple.html را به‌روز می‌کرد، بدون فرستادن هیچ پیامی به تلگرام.
+# حالا اضافه شده: هر بار که این اسکن (هر نیم‌ساعت) اجرا می‌شود، چک می‌کند
+# که آیا از آخرین باری که پیام تلگرام فرستاده، قفل یا حذف‌قفل تازه‌ای در
+# data/locked_signals.json ثبت شده یا نه (بر اساس شمارهٔ issueهای لاک/آنلاک،
+# نه با شمارش زمان -- ساده و قطعی). اگر بله، یک لینک یکتا از داشبورد
+# می‌سازد، منتظر انتشار واقعی آن در GitHub Pages می‌ماند، و فقط یک پیام
+# واحد می‌فرستد که همهٔ قفل‌های تازهٔ آن بازه را پوشش می‌دهد. اگر از آخرین
+# اعلام هیچ قفل جدیدی نبوده، این اسکن کاملاً ساکت رد می‌شود (مثل قبل).
+#
+# نکته: مسیر ثابت docs/simple.html همچنان در هر اجرای این Workflow (چه
+# قفل تازه باشد چه نباشد) به‌روز می‌شود -- این رفتار فوری/بی‌صدا که در
+# process_lock_events.yml هست، دست‌نخورده و مستقل باقی می‌ماند.
+#
+# بقیهٔ رفتار (price_monitor.py، dashboard_simple.py، concurrency، retry
+# پوش) نسبت به نسخهٔ قبلی تغییری نکرده است.
 
 name: WeatherBet - اسکن نیم‌ساعتهٔ قفل‌ها
 
@@ -35,7 +47,7 @@ jobs:
       - name: نصب پیش‌نیازها
         run: pip install requests
 
-      - name: بررسی قفل‌ها، بستن قفل‌های resolve‌شده، ارسال تلگرام در صورت نیاز
+      - name: بررسی قفل‌ها، بستن قفل‌های resolve‌شده، ارسال هشدار قیمت در صورت نیاز
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -44,11 +56,62 @@ jobs:
       - name: بازسازی داشبورد ساده با وضعیت تازه
         run: python dashboard_simple.py
 
+      - name: بررسی وجود قفل/حذف‌قفل تازه از آخرین اعلام
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          locks_file = Path("data/locked_signals.json")
+          notify_file = Path("data/last_lock_notify.json")
+
+          locks = []
+          if locks_file.exists():
+              try:
+                  locks = json.loads(locks_file.read_text(encoding="utf-8"))
+              except Exception:
+                  locks = []
+
+          max_id = 0
+          for l in locks:
+              for key in ("issue_number", "unlock_issue_number"):
+                  v = l.get(key)
+                  if isinstance(v, int) and v > max_id:
+                      max_id = v
+
+          last_notified = 0
+          if notify_file.exists():
+              try:
+                  last_notified = json.loads(notify_file.read_text(encoding="utf-8")).get("last_notified_issue_number", 0)
+              except Exception:
+                  last_notified = 0
+
+          need_notify = max_id > last_notified
+
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
+              f.write(f"NEED_LOCK_NOTIFY={'true' if need_notify else 'false'}\n")
+
+          if need_notify:
+              notify_file.write_text(
+                  json.dumps({"last_notified_issue_number": max_id}, indent=2, ensure_ascii=False),
+                  encoding="utf-8",
+              )
+              print(f"قفل/حذف‌قفل تازه شناسایی شد (تا issue #{max_id}) -- اعلان تلگرام ارسال می‌شود.")
+          else:
+              print("چیز تازه‌ای از آخرین اعلام قفل‌ها وجود ندارد -- این اسکن ساکت رد می‌شود.")
+          PY
+
       - name: انتشار داشبورد ساده و CSV در GitHub Pages
         run: |
           mkdir -p docs
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
+          if [ "$NEED_LOCK_NOTIFY" = "true" ]; then
+            DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
+            cp simple.html "docs/${DASHBOARD_FILE}"
+            echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
+          fi
 
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
@@ -69,3 +132,43 @@ jobs:
             echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
             exit 1
           fi
+
+      - name: انتظار برای انتشار واقعی نسخهٔ یکتا در GitHub Pages
+        if: env.NEED_LOCK_NOTIFY == 'true'
+        run: |
+          URL="https://ericlamar008.github.io/weatherbot/${{ env.DASHBOARD_FILE }}"
+          for i in $(seq 1 30); do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
+            if [ "$CODE" = "200" ]; then
+              echo "منتشر شد: $URL"
+              exit 0
+            fi
+            echo "هنوز منتشر نشده (کد $CODE) -- تلاش $i از ۳۰، ۱۰ ثانیه صبر..."
+            sleep 10
+          done
+          echo "::error::نسخهٔ یکتا تا ۵ دقیقه منتشر نشد -- لینک ۴۰۴ به تلگرام فرستاده نمی‌شود."
+          exit 1
+
+      - name: ارسال یک پیام واحد برای همهٔ قفل‌های تازهٔ این بازه
+        if: env.NEED_LOCK_NOTIFY == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
+        run: |
+          python3 - <<'PY'
+          import os, requests
+          token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+          chat = os.environ.get("TELEGRAM_CHAT_ID", "")
+          dashboard_file = os.environ["DASHBOARD_FILE"]
+          link = f"https://ericlamar008.github.io/weatherbot/{dashboard_file}"
+          text = f"\U0001F512 قفل/حذف‌قفل‌های تازه ثبت شدند -- داشبورد به‌روز:\n{link}"
+          if token and chat:
+              requests.post(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  json={"chat_id": chat, "text": text},
+                  timeout=15,
+              )
+          else:
+              print("توکن یا چت آیدی تلگرام تنظیم نشده:", text)
+          PY
