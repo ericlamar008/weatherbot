@@ -2,6 +2,22 @@
 lock_manager.py -- خواندن درخواست‌های قفل/حذف قفل از GitHub Issues و ثبت‌شان.
 =====================================================================================
 نسخهٔ نهایی (شامل رفع باگ قفل تکراری از فاز ۶).
+
+--- PATCH (این نسخه) ------------------------------------------------------------
+مشخص شد که لینک «ایجاد Issue جدید» در simple.html با پارامتر URL از نوع
+`?labels=lock-request` ساخته می‌شود، اما GitHub همیشه این لیبل را واقعاً روی
+issue تازه‌ساخته‌شده نمی‌نشاند (حتی وقتی لیبل از قبل در ریپو وجود دارد) --
+این با بررسی مستقیم چند issue واقعی (بدنهٔ JSON صحیح، ولی «No labels» در
+سایدبار) تأیید شد. نتیجه: `_fetch_open_issues(label=...)` قبلی هرگز این
+issueها را پیدا نمی‌کرد، پس هیچ قفلی ثبت نمی‌شد و خود issue هم بسته نمی‌شد.
+
+راه‌حل: دیگر هیچ فیلتر لیبلی روی GitHub API اعمال نمی‌شود. همهٔ issueهای باز
+خوانده می‌شوند و تشخیص لاک/آنلاک صرفاً بر اساس پیشوند عنوان (issue titleهایی
+که خود simple.html می‌سازد: "LOCK ..." / "UNLOCK ...") به‌علاوهٔ اعتبارسنجی
+بدنهٔ JSON انجام می‌شود. بستن issue و اضافه‌کردن لیبل "processed" در انتها
+دست‌نخورده می‌ماند چون آن از طریق فراخوانی مستقیم API انجام می‌شود، نه از
+طریق URL prefill (که همان بخش غیرقابل‌اتکا بود).
+-----------------------------------------------------------------------------
 """
 import json
 import os
@@ -38,15 +54,26 @@ def _save_locks(locks):
     LOCKS_FILE.write_text(json.dumps(locks, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def _fetch_open_issues(label):
-    r = requests.get(
-        f"{API_BASE}/issues",
-        headers=HEADERS,
-        params={"state": "open", "labels": label, "per_page": 100},
-        timeout=15,
-    )
-    r.raise_for_status()
-    return [i for i in r.json() if "pull_request" not in i]
+def _fetch_open_issues():
+    """همهٔ Issueهای باز ریپو را برمی‌گرداند (بدون فیلتر لیبل -- به دلیل
+    غیرقابل‌اتکا بودن پارامتر labels= در لینک ایجاد issue، دیگر روی آن
+    تکیه نمی‌کنیم). تشخیص نوع درخواست بر عهدهٔ توابع فراخواننده است."""
+    issues = []
+    page = 1
+    while True:
+        r = requests.get(
+            f"{API_BASE}/issues",
+            headers=HEADERS,
+            params={"state": "open", "per_page": 100, "page": page},
+            timeout=15,
+        )
+        r.raise_for_status()
+        batch = r.json()
+        issues.extend(i for i in batch if "pull_request" not in i)
+        if len(batch) < 100:
+            break
+        page += 1
+    return issues
 
 
 def _close_issue(number, comment=None, extra_label="processed"):
@@ -87,10 +114,17 @@ def process_lock_issues():
     existing_numbers = {l.get("issue_number") for l in locks}
     new_count = 0
 
-    for issue in _fetch_open_issues("lock-request"):
+    for issue in _fetch_open_issues():
         number = issue["number"]
         if number in existing_numbers:
             continue
+
+        title = issue.get("title") or ""
+        if not title.startswith("LOCK "):
+            # این issue مربوط به قفل نیست (مثلاً یک باگ‌ریپورت دستی) --
+            # نادیده گرفته می‌شود، بسته هم نمی‌شود.
+            continue
+
         try:
             data = json.loads(issue["body"])
             market_id_raw = str(data["market_id"])
@@ -137,10 +171,15 @@ def process_unlock_issues():
     already_unlocked_issue_numbers = {l.get("unlock_issue_number") for l in locks if l.get("unlock_issue_number")}
     closed_count = 0
 
-    for issue in _fetch_open_issues("unlock-request"):
+    for issue in _fetch_open_issues():
         number = issue["number"]
         if number in already_unlocked_issue_numbers:
             continue
+
+        title = issue.get("title") or ""
+        if not title.startswith("UNLOCK "):
+            continue
+
         try:
             data = json.loads(issue["body"])
             city = data["city"]
