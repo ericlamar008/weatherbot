@@ -690,14 +690,15 @@
     "side": "YES",
     "entry_price": 0.475,
     "locked_at": "2026-09-09T07:14:48.780958+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.675,
     "last_pct": 42.1,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.67,
+    "closed_at": "2026-09-09T22:35:55.687435+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-09T22:33:22.971946+00:00"
+    "last_checked_at": "2026-09-09T22:33:22.971946+00:00",
+    "unlock_issue_number": 80
   },
   {
     "issue_number": 59,
