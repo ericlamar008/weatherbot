@@ -710,14 +710,15 @@
     "side": "YES",
     "entry_price": 0.465,
     "locked_at": "2026-09-09T07:14:51.107163+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.535,
     "last_pct": 15.1,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.53,
+    "closed_at": "2026-09-09T22:38:06.431460+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-09T22:33:22.971946+00:00"
+    "last_checked_at": "2026-09-09T22:33:22.971946+00:00",
+    "unlock_issue_number": 83
   },
   {
     "issue_number": 64,
@@ -848,5 +849,22 @@
     "close_reason": "auto_resolved",
     "actual_temp": 100.5,
     "last_checked_at": "2026-09-09T21:37:23.511696+00:00"
+  },
+  {
+    "issue_number": 84,
+    "city": "istanbul",
+    "date": "2026-09-10",
+    "market_id": "4356473",
+    "token_id": "69078808729097281373312356080519298766293743689258794875318592291542308798483",
+    "side": "YES",
+    "entry_price": 0.7,
+    "locked_at": "2026-09-09T22:38:04.403570+00:00",
+    "status": "open",
+    "last_price": null,
+    "last_pct": null,
+    "exit_price": null,
+    "closed_at": null,
+    "close_reason": null,
+    "actual_temp": null
   }
 ]
