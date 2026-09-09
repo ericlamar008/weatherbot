@@ -1,41 +1,56 @@
 """
 price_monitor.py -- اسکنر نیم‌ساعتهٔ مستقل برای قفل‌های باز + پیام تلگرام.
 =====================================================================================
-تغییر این نسخه:
+تغییرات این نسخه:
 ۱) زمان باقی‌مانده تا resolve حالا کنار همهٔ بازارها نشان داده می‌شود
    (نه فقط وقتی کمتر از ۳ ساعت مانده -- آن حالت فقط ⭐/⏰ را کنترل می‌کند).
 ۲) متن زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m to resolve")
    تا با فارسی قاطی نشود و به‌هم‌ریختگی راست‌به‌چپ/چپ‌به‌راست پیش نیاید.
-۳) (فاز ۲ نقشه‌راه) آستانهٔ هشدار سود/ضرر از سنت مطلق به درصد تغییر کرد --
-   TAKE_PROFIT_PCT=20.0 / STOP_LOSS_PCT=10.0.
-۴) (اصلاح جدید) هر بار که قیمت یک قفل با موفقیت گرفته می‌شود، فیلد
-   "last_checked_at" (زمان ISO این بررسی) هم روی همان قفل ثبت می‌شود --
-   این برای نمایش ستون «آخرین به‌روزرسانی» در سکشن قفل‌های داشبورد
-   تعاملی لازم است (dashboard_simple.py آن را می‌خواند).
+۳) (فاز ۲ نقشه‌راه قدیمی) آستانهٔ هشدار سود/ضرر از سنت مطلق به درصد تغییر
+   کرد -- TAKE_PROFIT_PCT=20.0 / STOP_LOSS_PCT=10.0.
+۴) هر بار که قیمت یک قفل با موفقیت گرفته می‌شود، فیلد "last_checked_at"
+   (زمان ISO این بررسی) هم روی همان قفل ثبت می‌شود -- این برای نمایش ستون
+   «آخرین به‌روزرسانی» در سکشن قفل‌های داشبورد تعاملی لازم است.
 
---- روادراه: فاز C -- زمان محلی به‌جای event_end_date خام (این نسخه) --------
+--- روادراه: فاز C -- زمان محلی به‌جای event_end_date خام --------
 مشکل قبلی: hours_left از تفاضل event_end_date منهای now محاسبه می‌شد که
 بعد از گذشتنش صفر می‌ماند و باعث هشدار تکراری "0h 0m to resolve" می‌شد،
-حتی وقتی بازار هنوز واقعاً باز بود (مثل Ankara/Dallas).
+حتی وقتی بازار هنوز واقعاً باز بود. اصلاح: از ماژول مشترک market_time.py
+استفاده می‌شود تا hours_left از «پایان روز هدف در timezone شهر» محاسبه
+شود، هشدار ⏰ فقط در بازهٔ باز فعال شود، و بعد از پایان روز محلی عبارت
+واقعی "awaiting official settlement" نمایش داده شود.
 
-اصلاح: از ماژول مشترک market_time.py استفاده می‌شود تا:
-- hours_left از «پایان روز هدف در timezone شهر» محاسبه شود، نه از
-  event_end_date خام.
-- هشدار ⏰ فقط در بازهٔ باز (0 < remaining <= NEAR_RESOLVE_HOURS) فعال شود.
-- بعد از پایان روز محلی، به‌جای "0h 0m to resolve"، عبارت واقعی
-  "awaiting official settlement" نمایش داده شود.
-
---- HARDENING PATCH (نسخهٔ قبلی، به درخواست صریح کاربر) ---------------------
+--- HARDENING PATCH (قبلی) ---------------------
 last_price و last_checked_at فقط وقتی به‌روزرسانی می‌شوند که current واقعاً
 یک مقدار معتبر باشد؛ در غیر این صورت آخرین مقدار معتبر قبلی دست‌نخورده
-باقی می‌ماند (یک قطعی لحظه‌ای شبکه دیگر آن را با None پاک نمی‌کند).
+باقی می‌ماند.
 
---- FIX (این نسخه): لینک شهر در پیام تلگرام گم شده بود ----------------------
-متغیر `link` محاسبه می‌شد ولی هرگز داخل متن پیام استفاده نمی‌شد -- یعنی
-روی اسم شهر در تلگرام هیچ لینکی نبود، با اینکه send_telegram() از قبل
-parse_mode="HTML" تنظیم کرده بود (دقیقاً برای همین منظور). اصلاح شد: اسم
-شهر حالا با تگ HTML لنگر <a href="...">...</a> واقعاً به صفحهٔ Polymarket
-همان بازار لینک می‌شود -- دقیقاً همان رفتاری که قبلاً وجود داشت.
+--- FIX (قبلی): لینک شهر در پیام تلگرام گم شده بود ----------------------
+اسم شهر حالا با تگ HTML لنگر <a href="...">...</a> واقعاً به صفحهٔ Polymarket
+همان بازار لینک می‌شود.
+
+--- PATCH این نسخه (فاز ۳ نقشه‌راه، زیرگام ۳-ب) ------------------------------
+درخواست کاربر: در اسکن نیم‌ساعته، صرف‌نظر از فعال‌بودن محرک سود/زیان یا
+نزدیک‌شدن به resolve، همیشه یک پیام وضعیت ساخته شود (با همان ایموجی‌های
+⭐/⏰ روی آیتم‌هایی که واقعاً واجد شرایطند) تا لایهٔ Workflow آن را با یک
+لینک یکتای تازه ترکیب و یک‌جا در تلگرام بفرستد.
+
+تغییرات دقیق:
+۱) build_message() دیگر در نبود محرک `None` برنمی‌گرداند -- فقط زمانی
+   `None` برمی‌گرداند که اصلاً هیچ قفل بازی وجود نداشته باشد (چیزی برای
+   گزارش نیست). شرط `if not any_trigger: return None` قبلی حذف شد؛
+   متغیر `any_trigger` دیگر رفتار بازگشتی تابع را کنترل نمی‌کند (فقط
+   برای مشخص‌کردن ⭐/⏰ روی هر آیتم همچنان محاسبه می‌شود).
+۲) check_all() دیگر مستقیماً send_telegram() را صدا نمی‌زند. متن وضعیت
+   (در صورت وجود قفل باز) در data/last_price_status.txt نوشته می‌شود --
+   Workflow (monitor_locks.yml) این فایل را می‌خواند، لینک یکتای تازه را
+   به انتهای آن اضافه می‌کند و یک پیام واحد می‌فرستد. اگر هیچ قفل بازی
+   نباشد، این فایل (در صورت وجود از قبل) پاک می‌شود تا سیگنال قدیمی
+   دوباره فرستاده نشود.
+
+منطق محاسبهٔ pct، TAKE_PROFIT_PCT، STOP_LOSS_PCT، last_price/last_checked_at
+(با اصلاح محکم‌کاری قبلی)، و بستن قفل‌های resolve‌شده (history_manager)
+هیچ‌کدام تغییر نکرده‌اند.
 """
 import json
 import os
@@ -58,6 +73,7 @@ except ImportError:
 
 LOCKS_FILE = Path("data/locked_signals.json")
 MARKETS_DIR = Path("data/markets")
+STATUS_FILE = Path("data/last_price_status.txt")
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
@@ -129,6 +145,8 @@ def _build_polymarket_url(city, date_str):
         return "https://polymarket.com"
 
 def send_telegram(text):
+    """نگه‌داشته شده برای استفادهٔ مستقل/تستی -- از این به بعد check_all()
+    دیگر خودش این تابع را صدا نمی‌زند (طبق PATCH فاز ۳-ب)."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("[price_monitor] توکن یا چت آیدی تلگرام تنظیم نشده -- پیام فقط چاپ می‌شود:\n", text)
         return
@@ -147,6 +165,11 @@ def send_telegram(text):
         print(f"[price_monitor] هشدار: ارسال تلگرام ناموفق بود: {e}")
 
 def build_message(now, locks):
+    """PATCH فاز ۳-ب: دیگر فقط زمانی None برمی‌گرداند که اصلاً هیچ قفل
+    بازی وجود نداشته باشد. اگر حداقل یک قفل باز وجود داشته باشد، همیشه
+    متن وضعیت کامل ساخته و برگردانده می‌شود -- صرف‌نظر از فعال‌بودن
+    محرک سود/زیان یا نزدیک‌شدن به resolve. علامت‌های ⭐/⏰ همچنان فقط
+    روی آیتم‌هایی که واقعاً واجد شرایطند نمایش داده می‌شوند."""
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return None
@@ -155,7 +178,6 @@ def build_message(now, locks):
     for l in open_locks:
         by_city.setdefault((l["city"], l["date"]), []).append(l)
 
-    any_trigger = False
     city_blocks = []
 
     for (city, date), group in sorted(by_city.items(), key=lambda kv: (kv[0][0], kv[0][1])):
@@ -195,7 +217,6 @@ def build_message(now, locks):
             triggered = pct >= TAKE_PROFIT_PCT or pct <= -STOP_LOSS_PCT
             if triggered:
                 star = True
-                any_trigger = True
 
             arrow = "\u2191" if diff_cents >= 0 else "\u2193"
             color = "\U0001F7E2" if diff_cents >= 0 else "\U0001F534"
@@ -209,14 +230,9 @@ def build_message(now, locks):
                 f"{int(round(current * 100))}\u00a2 ({pct:+.0f}% {arrow})"
             )
 
-        if near_resolve:
-            any_trigger = True
-
         marks = ("\u2B50" if star else "") + (" \u23F0" if near_resolve else "")
         name = LOCATIONS.get(city, {}).get("name", city)
         link = _build_polymarket_url(city, date)
-        # FIX: اسم شهر حالا واقعاً به لینک HTML تبدیل می‌شود (parse_mode
-        # پیام از قبل روی HTML تنظیم شده بود، فقط این تگ گم شده بود).
         title = f'<a href="{link}">{name}</a> \u2014 {date}'
         if marks:
             title = f"{marks} {title}"
@@ -224,13 +240,15 @@ def build_message(now, locks):
 
         city_blocks.append(title + "\n" + "\n".join(lines))
 
-    if not any_trigger:
-        return None
-
     header_line = f"\U0001F4CA وضعیت قفل‌ها \u2014 {now.strftime('%Y-%m-%d %H:%M')} UTC"
     return header_line + "\n\n" + "\n\n".join(city_blocks)
 
 def check_all():
+    """PATCH فاز ۳-ب: دیگر مستقیماً به تلگرام پیام نمی‌فرستد. متن وضعیت
+    (در صورت وجود حداقل یک قفل باز) در data/last_price_status.txt نوشته
+    می‌شود تا لایهٔ Workflow آن را با لینک یکتای تازهٔ داشبورد ترکیب و
+    یک‌جا ارسال کند. اگر هیچ قفل بازی نباشد، این فایل (در صورت وجود از
+    قبل) پاک می‌شود تا وضعیت قدیمی دوباره فرستاده نشود."""
     now = datetime.now(timezone.utc)
     locks = _load_locks()
 
@@ -244,9 +262,15 @@ def check_all():
     history_manager.write_history_csv(locks)
 
     if message:
-        send_telegram(message)
+        STATUS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        STATUS_FILE.write_text(message, encoding="utf-8")
+        print("[price_monitor] وضعیت قیمت‌ها در data/last_price_status.txt نوشته شد.")
     else:
-        print("[price_monitor] هیچ محرکی فعال نشد -- طبق قانون، سکوت کامل.")
+        if STATUS_FILE.exists():
+            STATUS_FILE.unlink()
+        print("[price_monitor] هیچ قفل بازی وجود ندارد -- چیزی برای گزارش نیست.")
+
+    return message
 
 if __name__ == "__main__":
     check_all()
