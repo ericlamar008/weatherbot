@@ -3,7 +3,7 @@ lock_manager.py -- خواندن درخواست‌های قفل/حذف قفل ا�
 =====================================================================================
 نسخهٔ نهایی (شامل رفع باگ قفل تکراری از فاز ۶).
 
---- PATCH (این نسخه) ------------------------------------------------------------
+--- PATCH قبلی ------------------------------------------------------------------
 مشخص شد که لینک «ایجاد Issue جدید» در simple.html با پارامتر URL از نوع
 `?labels=lock-request` ساخته می‌شود، اما GitHub همیشه این لیبل را واقعاً روی
 issue تازه‌ساخته‌شده نمی‌نشاند (حتی وقتی لیبل از قبل در ریپو وجود دارد) --
@@ -17,6 +17,28 @@ issueها را پیدا نمی‌کرد، پس هیچ قفلی ثبت نمی‌�
 بدنهٔ JSON انجام می‌شود. بستن issue و اضافه‌کردن لیبل "processed" در انتها
 دست‌نخورده می‌ماند چون آن از طریق فراخوانی مستقیم API انجام می‌شود، نه از
 طریق URL prefill (که همان بخش غیرقابل‌اتکا بود).
+
+--- PATCH این نسخه (فاز ۱ نقشه‌راه) -----------------------------------------------
+مشکل: قیمتی که در دکمهٔ «قفل کن» simple.html ساخته می‌شود، از آخرین اسکن
+(که می‌تواند تا ۶ ساعت قدیمی باشد) گرفته شده -- یعنی entry_price ثبت‌شده
+می‌توانست با قیمت واقعی لحظهٔ کلیک کاربر فرق زیادی داشته باشد و باعث
+می‌شد درصد سود/زیان بعدی (در price_monitor.py) نسبت به یک مبنای غلط
+حساب شود.
+
+راه‌حل: process_lock_issues() دیگر مستقیماً به data["price"] (قیمت دکمهٔ
+داشبورد) اعتماد نمی‌کند. به‌جای آن، در همان لحظهٔ پردازش issue (که طبق
+مشاهدهٔ واقعی فقط ۱۵ تا ۴۰ ثانیه بعد از کلیک کاربر است)، یک بار قیمت زندهٔ
+واقعی این market_id را از Gamma API می‌گیرد (get_gamma_event_prices -- همان
+تابعی که price_monitor.py هم استفاده می‌کند) و همان را entry_price ثبت
+می‌کند. اگر بنا به هر دلیلی (قطعی شبکه، عدم وجود market_id در پاسخ) قیمت
+زنده در دسترس نبود، به‌صورت ایمن به همان قیمت دکمهٔ داشبورد برمی‌گردد --
+این مسیر هرگز ثبت قفل را کاملاً مسدود نمی‌کند. کامنت تاییدیهٔ روی issue هم
+حالا نشان می‌دهد قیمت واقعاً ثبت‌شده از کدام منبع آمده و اگر با قیمت دکمهٔ
+داشبورد فرق محسوسی داشت، هر دو عدد را کنار هم نشان می‌دهد.
+
+هیچ‌چیز دیگری (process_unlock_issues، _close_issue، _has_open_lock، فرمت
+داده‌ی locked_signals.json، مکانیزم لیبل/عنوان) نسبت به نسخهٔ قبلی تغییر
+نکرده است.
 -----------------------------------------------------------------------------
 """
 import json
@@ -26,8 +48,16 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_clob_book_bid
+from clob_utils import get_clob_book_bid, get_gamma_event_prices
 import history_manager
+
+try:
+    from locations import MONTHS
+except ImportError:
+    MONTHS = [
+        "january", "february", "march", "april", "may", "june",
+        "july", "august", "september", "october", "november", "december",
+    ]
 
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "USERNAME/weatherbot")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -74,6 +104,25 @@ def _fetch_open_issues():
             break
         page += 1
     return issues
+
+
+def _fetch_live_entry_price(city, date, market_id, side):
+    """قیمت زندهٔ واقعی این market_id را در همین لحظه از Gamma API می‌گیرد
+    و بر اساس side (YES/NO) قیمت ورود درست را برمی‌گرداند. در هر شکستی
+    (شبکه، نبودن market_id در پاسخ) None برمی‌گرداند تا فراخواننده به‌صورت
+    ایمن به قیمت دکمهٔ داشبورد برگردد -- این تابع هرگز استثنا پرتاب نمی‌کند."""
+    try:
+        dt = datetime.strptime(date, "%Y-%m-%d")
+        month = MONTHS[dt.month - 1]
+        prices = get_gamma_event_prices(city, month, dt.day, dt.year)
+        live_yes_price = prices.get(str(market_id))
+        if live_yes_price is None:
+            return None
+        if side == "NO":
+            return round(1.0 - live_yes_price, 4)
+        return round(live_yes_price, 4)
+    except Exception:
+        return None
 
 
 def _close_issue(number, comment=None, extra_label="processed"):
@@ -130,6 +179,7 @@ def process_lock_issues():
             market_id_raw = str(data["market_id"])
             market_id, _, token_id = market_id_raw.partition("|")
             city, date = data["city"], data["date"]
+            dashboard_price = float(data["price"])
         except Exception as e:
             _close_issue(
                 number,
@@ -141,14 +191,28 @@ def process_lock_issues():
             _close_issue(number, "\u2139\ufe0f این باکت از قبل قفل باز دارد -- درخواست تکراری نادیده گرفته شد.")
             continue
 
+        side = data.get("side", "YES")
+
+        # قیمت واقعی لحظهٔ پردازش را می‌گیریم -- نه قیمت (احتمالاً قدیمیِ)
+        # دکمهٔ داشبورد. اگر گرفتن قیمت زنده شکست خورد، به‌صورت ایمن به
+        # همان قیمت دکمهٔ داشبورد برمی‌گردیم؛ ثبت قفل هرگز کاملاً مسدود
+        # نمی‌شود.
+        live_price = _fetch_live_entry_price(city, date, market_id, side)
+        if live_price is not None:
+            entry_price = live_price
+            price_source = "live"
+        else:
+            entry_price = dashboard_price
+            price_source = "dashboard_fallback"
+
         entry = {
             "issue_number": number,
             "city": city,
             "date": date,
             "market_id": market_id,
             "token_id": token_id or None,
-            "side": data.get("side", "YES"),
-            "entry_price": float(data["price"]),
+            "side": side,
+            "entry_price": entry_price,
             "locked_at": data.get("locked_at", datetime.now(timezone.utc).isoformat()),
             "status": "open",
             "last_price": None,
@@ -159,7 +223,17 @@ def process_lock_issues():
             "actual_temp": None,
         }
         locks.append(entry)
-        _close_issue(number, f"\u2705 قفل ثبت شد: {entry['city']} {entry['date']} ({entry['side']}) @ {entry['entry_price']}")
+
+        diff_note = ""
+        if price_source == "dashboard_fallback":
+            diff_note = " (قیمت زنده در دسترس نبود -- از قیمت داشبورد استفاده شد)"
+        elif abs(entry_price - dashboard_price) > 0.001:
+            diff_note = f" (قیمت داشبورد لحظهٔ کلیک: {dashboard_price:.3f})"
+
+        _close_issue(
+            number,
+            f"\u2705 قفل ثبت شد: {entry['city']} {entry['date']} ({entry['side']}) @ {entry['entry_price']:.3f}{diff_note}",
+        )
         new_count += 1
 
     _save_locks(locks)
