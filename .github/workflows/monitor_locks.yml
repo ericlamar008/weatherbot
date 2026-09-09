@@ -1,13 +1,35 @@
 # مسیر واقعی: .github/workflows/monitor_locks.yml
 #
-# PATCH نهایی: کرون داخلی گیت‌هاب (schedule) حذف شد چون زمان‌بندی این
-# Workflow از این به بعد کاملاً بر عهدهٔ زمان‌بند خارجی (cron-job.org) است
-# که هر ساعت در دقیقهٔ ۰۷ و ۳۷ (به‌وقت UTC) با فراخوانی workflow_dispatch
-# این Workflow را اجرا می‌کند. اگر کرون داخلی همزمان فعال می‌ماند، این
-# Workflow دوبار در بازه‌های نزدیک به هم اجرا می‌شد.
+# PATCH این نسخه (فاز ۳ نقشه‌راه، زیرگام ۳-ج -- آخرین تیکهٔ نقشه‌راه):
 #
-# بقیهٔ منطق (منطق اعلان دسته‌ای قفل‌ها، price_monitor.py، dashboard_simple.py،
-# concurrency، retry پوش) نسبت به نسخهٔ قبلی تغییری نکرده است.
+# درخواست کاربر: در اسکن نیم‌ساعته، علاوه بر قیمت قفل‌های فعال، قیمت کل
+# پنل (همهٔ باکت‌های open) هم تازه شود (بدون فراخوانی هواشناسی)، و در پایان
+# هر اجرا -- صرف‌نظر از فعال‌بودن محرک -- همیشه یک پیام تلگرام (وضعیت +
+# لینک یکتای تازهٔ داشبورد) فرستاده شود.
+#
+# تغییرات دقیق نسبت به نسخهٔ قبلی:
+# ۱) نصب پیش‌نیازها از "pip install requests" به "pip install -r
+#    requirements.txt" تغییر کرد -- چون فراخوانی weatherbot_v3.py حالا به
+#    کتابخانه‌های بیشتری (همان‌هایی که scan_daily/heartbeat استفاده می‌کنند)
+#    نیاز دارد.
+# ۲) مرحلهٔ تازهٔ "python weatherbot_v3.py price_refresh" بعد از
+#    price_monitor.py و قبل از dashboard_simple.py اضافه شد.
+# ۳) کل منطق قبلی تشخیص "قفل تازه از آخرین اعلام" (فایل
+#    data/last_lock_notify.json و متغیر NEED_LOCK_NOTIFY) حذف شد -- دیگر
+#    لازم نیست، چون همیشه لینک یکتا و پیام ساخته می‌شود.
+# ۴) ظرفیت نگه‌داری فایل‌های نسخه‌ای از (تلویحاً نامحدود) به «فقط ۶۰ فایل
+#    آخر» محدود شد -- چون این Workflow حالا هر ۳۰ دقیقه (۴۸ بار در روز)
+#    فایل یکتای جدید می‌سازد و بدون این پاک‌سازی، docs/ بی‌رویه رشد می‌کرد.
+#    این پاک‌سازی هرگز docs/simple.html، dashboard.html یا هر فایل/پوشهٔ
+#    داخل data/ را حذف نمی‌کند.
+# ۵) مرحلهٔ ارسال تلگرام حالا متن وضعیت را از data/last_price_status.txt
+#    (نوشته‌شده توسط price_monitor.py) می‌خواند و لینک یکتای تازه را به
+#    انتهایش اضافه می‌کند؛ اگر آن فایل نبود (یعنی هیچ قفل بازی وجود ندارد)،
+#    یک متن پیش‌فرض «هیچ قفل باز فعالی وجود ندارد» به‌جایش استفاده می‌شود --
+#    یعنی طبق درخواست کاربر، در هر صورت یک پیام فرستاده می‌شود.
+#
+# concurrency، الگوی retry پوش، و بند permissions نسبت به نسخهٔ قبلی
+# تغییری نکرده‌اند.
 
 name: WeatherBet - اسکن نیم‌ساعتهٔ قفل‌ها
 
@@ -34,72 +56,36 @@ jobs:
           python-version: "3.11"
 
       - name: نصب پیش‌نیازها
-        run: pip install requests
+        run: pip install -r requirements.txt
 
-      - name: بررسی قفل‌ها، بستن قفل‌های resolve‌شده، ارسال هشدار قیمت در صورت نیاز
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: بررسی قفل‌ها و آماده‌سازی متن وضعیت (بدون ارسال مستقیم تلگرام)
         run: python price_monitor.py
 
-      - name: بازسازی داشبورد ساده با وضعیت تازه
+      - name: آپدیت سبک قیمت کل پنل (همهٔ باکت‌های باز، بدون فراخوانی هواشناسی)
+        run: python weatherbot_v3.py price_refresh
+
+      - name: بازسازی داشبورد ساده با قیمت‌های تازه
         run: python dashboard_simple.py
 
-      - name: بررسی وجود قفل/حذف‌قفل تازه از آخرین اعلام
-        run: |
-          python3 - <<'PY'
-          import json, os
-          from pathlib import Path
-
-          locks_file = Path("data/locked_signals.json")
-          notify_file = Path("data/last_lock_notify.json")
-
-          locks = []
-          if locks_file.exists():
-              try:
-                  locks = json.loads(locks_file.read_text(encoding="utf-8"))
-              except Exception:
-                  locks = []
-
-          max_id = 0
-          for l in locks:
-              for key in ("issue_number", "unlock_issue_number"):
-                  v = l.get(key)
-                  if isinstance(v, int) and v > max_id:
-                      max_id = v
-
-          last_notified = 0
-          if notify_file.exists():
-              try:
-                  last_notified = json.loads(notify_file.read_text(encoding="utf-8")).get("last_notified_issue_number", 0)
-              except Exception:
-                  last_notified = 0
-
-          need_notify = max_id > last_notified
-
-          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
-              f.write(f"NEED_LOCK_NOTIFY={'true' if need_notify else 'false'}\n")
-
-          if need_notify:
-              notify_file.write_text(
-                  json.dumps({"last_notified_issue_number": max_id}, indent=2, ensure_ascii=False),
-                  encoding="utf-8",
-              )
-              print(f"قفل/حذف‌قفل تازه شناسایی شد (تا issue #{max_id}) -- اعلان تلگرام ارسال می‌شود.")
-          else:
-              print("چیز تازه‌ای از آخرین اعلام قفل‌ها وجود ندارد -- این اسکن ساکت رد می‌شود.")
-          PY
-
-      - name: انتشار داشبورد ساده و CSV در GitHub Pages
+      - name: انتشار نسخهٔ یکتای داشبورد (همیشه) و پاک‌سازی نسخه‌های قدیمی
         run: |
           mkdir -p docs
+          DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
+          cp simple.html "docs/${DASHBOARD_FILE}"
+          # مسیر ثابت فقط برای bookmarkهای قدیمی باقی می‌ماند؛ لینک تلگرام
+          # همیشه به نسخهٔ یکتای بالا اشاره می‌کند.
           cp simple.html docs/simple.html
           cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+          echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
 
-          if [ "$NEED_LOCK_NOTIFY" = "true" ]; then
-            DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
-            cp simple.html "docs/${DASHBOARD_FILE}"
-            echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
+          # فقط فایل‌های نسخه‌ای simple-*.html را مرتب کن و فقط ۶۰ فایل تازه
+          # (حدود ۱ تا ۲ روز، با احتساب اجرای هر ۳۰ دقیقه) را نگه‌دار. این
+          # دستور هرگز docs/simple.html، dashboard.html، CSV یا هیچ فایل/
+          # دایرکتوری داخل data/ را حذف نمی‌کند.
+          mapfile -t OLD_DASHBOARDS < <(ls -1t docs/simple-*.html 2>/dev/null | tail -n +61 || true)
+          if [ "${#OLD_DASHBOARDS[@]}" -gt 0 ]; then
+            printf 'حذف نسخه‌های قدیمی داشبورد:\n%s\n' "${OLD_DASHBOARDS[@]}"
+            rm -- "${OLD_DASHBOARDS[@]}"
           fi
 
           git config user.name "weatherbot-ci"
@@ -123,7 +109,6 @@ jobs:
           fi
 
       - name: انتظار برای انتشار واقعی نسخهٔ یکتا در GitHub Pages
-        if: env.NEED_LOCK_NOTIFY == 'true'
         run: |
           URL="https://ericlamar008.github.io/weatherbot/${{ env.DASHBOARD_FILE }}"
           for i in $(seq 1 30); do
@@ -138,24 +123,41 @@ jobs:
           echo "::error::نسخهٔ یکتا تا ۵ دقیقه منتشر نشد -- لینک ۴۰۴ به تلگرام فرستاده نمی‌شود."
           exit 1
 
-      - name: ارسال یک پیام واحد برای همهٔ قفل‌های تازهٔ این بازه
-        if: env.NEED_LOCK_NOTIFY == 'true'
+      - name: ارسال یک پیام واحد (وضعیت + لینک تازه) -- همیشه، بدون قید و شرط
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
         run: |
           python3 - <<'PY'
-          import os, requests
+          import os
+          import requests
+          from pathlib import Path
+          from datetime import datetime, timezone
+
           token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
           chat = os.environ.get("TELEGRAM_CHAT_ID", "")
           dashboard_file = os.environ["DASHBOARD_FILE"]
           link = f"https://ericlamar008.github.io/weatherbot/{dashboard_file}"
-          text = f"\U0001F512 قفل/حذف‌قفل‌های تازه ثبت شدند -- داشبورد به‌روز:\n{link}"
+
+          status_file = Path("data/last_price_status.txt")
+          if status_file.exists():
+              body = status_file.read_text(encoding="utf-8")
+          else:
+              now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
+              body = f"\U0001F4CA \u0648\u0636\u0639\u06CC\u062A \u0642\u0641\u0644\u200C\u0647\u0627 \u2014 {now_str} UTC\n\n\u0647\u06CC\u0686 \u0642\u0641\u0644 \u0628\u0627\u0632 \u0641\u0639\u0627\u0644\u06CC \u0648\u062C\u0648\u062F \u0646\u062F\u0627\u0631\u062F."
+
+          text = body + f"\n\n\U0001F517 \u062F\u0627\u0634\u0628\u0648\u0631\u062F \u0628\u0647-\u0631\u0648\u0632:\n{link}"
+
           if token and chat:
               requests.post(
                   f"https://api.telegram.org/bot{token}/sendMessage",
-                  json={"chat_id": chat, "text": text},
+                  json={
+                      "chat_id": chat,
+                      "text": text,
+                      "parse_mode": "HTML",
+                      "disable_web_page_preview": True,
+                  },
                   timeout=15,
               )
           else:
