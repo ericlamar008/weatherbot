@@ -3,6 +3,27 @@ history_manager.py -- بستن خودکار قفل‌های resolve‌شده + �
 =====================================================================================
 کاملاً جدید و مستقل. resolution.py فعلی را فقط می‌خواند، هیچ تغییری در آن
 نمی‌دهد و weatherbot_v3.py یا strategy.py را صدا نمی‌زند.
+
+--- PATCH این نسخه (رفع خطای واقعی "cannot pull with rebase: You have
+unstaged changes") -----------------------------------------------------------
+مشاهده شد که بعد از اولین UNLOCK واقعی (بعد از این‌که چند LOCK بدون مشکل کار
+کرده بودند)، Workflow ثبت قفل بلافاصله بعد از یک کامیت موفق با خطای
+"You have unstaged changes" روی git pull --rebase شکست می‌خورد.
+
+ریشهٔ علت: write_history_csv() فقط وقتی یک قفل واقعاً بسته می‌شود (یعنی فقط
+روی UNLOCK یا resolve خودکار، نه روی LOCK) یک ردیف جدید به data/lock_history.csv
+اضافه می‌کند. csv.writer پایتون به‌طور پیش‌فرض خطوط را با کاراکتر پایان خط
+ویندوزی ("\\r\\n") می‌نویسد، نه لینوکسی ("\\n"). وقتی این فایل commit می‌شود،
+عدم تطابق بین کاراکتر پایان خط واقعی روی دیسک و آنچه گیت هنگام نرمال‌سازی
+متن انتظار دارد، می‌تواند بلافاصله بعد از یک کامیت موفق، فایل را دوباره
+"تغییریافته" نشان دهد (یک پدیدهٔ شناخته‌شدهٔ گیت) -- که جلوی مرحلهٔ بعدی
+(pull --rebase) در Workflow را می‌گیرد. چون LOCK هیچ‌وقت ردیف جدیدی به این
+CSV اضافه نمی‌کند، این مشکل تا اولین UNLOCK واقعی خودش را نشان نمی‌داد.
+
+راه‌حل: csv.writer اکنون صریحاً با lineterminator="\\n" فراخوانی می‌شود تا
+فایل همیشه با کاراکتر پایان خط لینوکسی (همان چیزی که گیت انتظار دارد)
+نوشته شود -- این ناهماهنگی را کاملاً از ریشه حذف می‌کند. هیچ تغییر دیگری
+(محتوای ستون‌ها، ترتیب ردیف‌ها، انکودینگ utf-8-sig) اعمال نشده است.
 """
 import csv
 import json
@@ -27,7 +48,6 @@ CSV_HEADERS = [
     "قیمت خرید (سنت)", "قیمت فروش (سنت)", "برآیند (%)",
 ]
 
-
 def _load_market(city, date):
     p = MARKETS_DIR / f"{city}_{date}.json"
     if not p.exists():
@@ -37,7 +57,6 @@ def _load_market(city, date):
     except Exception:
         return None
 
-
 def _find_range(market, market_id):
     if not market:
         return None
@@ -45,7 +64,6 @@ def _find_range(market, market_id):
         if str(b.get("market_id")) == str(market_id):
             return b.get("range")
     return None
-
 
 def _label_for_range(rng, unit_sym):
     if not rng:
@@ -60,7 +78,6 @@ def _label_for_range(rng, unit_sym):
     if low == high:
         return f"{low}{unit_sym}"
     return f"{low}-{high}{unit_sym}"
-
 
 def check_and_close_resolved_locks(locks, now=None):
     """
@@ -107,9 +124,11 @@ def check_and_close_resolved_locks(locks, now=None):
 
     return closed_count
 
-
 def write_history_csv(locks):
-    """از همهٔ قفل‌های بسته‌شده (دستی یا خودکار) فایل CSV می‌سازد."""
+    """از همهٔ قفل‌های بسته‌شده (دستی یا خودکار) فایل CSV می‌سازد.
+    lineterminator="\\n" صریحاً تنظیم شده تا کاراکتر پایان خط همیشه لینوکسی
+    باشد -- رفع علت اصلی خطای "unstaged changes" بعد از commit (توضیح کامل
+    در docstring بالای فایل)."""
     rows = []
     for l in locks:
         if l.get("status") not in ("closed_manual", "closed_resolved"):
@@ -138,11 +157,10 @@ def write_history_csv(locks):
 
     CSV_FILE.parent.mkdir(parents=True, exist_ok=True)
     with CSV_FILE.open("w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, lineterminator="\n")
         writer.writerow(CSV_HEADERS)
         writer.writerows(rows)
     return len(rows)
-
 
 def get_history_rows(locks):
     """همان دادهٔ CSV را به‌شکل لیست دیکشنری برمی‌گرداند -- برای رندر در simple.html."""
