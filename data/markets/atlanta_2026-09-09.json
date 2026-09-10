@@ -3,11 +3,11 @@
   "city_name": "Atlanta",
   "date": "2026-09-09",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-08T04:57:29.460796+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-10T04:00:00+00:00",
   "event_end_date": "2026-09-09T12:00:00Z",
   "last_scan": "2026-09-10T02:20:38.740925+00:00",
@@ -273,7 +273,10 @@
       "market_prob": 0.535,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.54
+      "sell_value": 0.54,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "4324355",
@@ -289,7 +292,10 @@
       "market_prob": 0.465,
       "role": "scenario_hedge",
       "units": 17.38,
-      "sell_value": 0.45
+      "sell_value": 0.45,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
     },
     {
       "market_id": "4324351",
@@ -305,7 +311,10 @@
       "market_prob": 0.9955,
       "role": "scenario_hedge",
       "units": 0.81,
-      "sell_value": 0.992
+      "sell_value": 0.992,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 48.2,
@@ -317,6 +326,70 @@
   "confidence": 0.1911,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_lite_refresh": "2026-09-09T20:20:40.275387+00:00",
-  "last_price_refresh": "2026-09-10T08:07:23.665721+00:00"
+  "last_lite_refresh": "2026-09-10T08:20:43.050031+00:00",
+  "last_price_refresh": "2026-09-10T08:07:23.665721+00:00",
+  "actual_temp": 88.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4324355",
+      "question": "Will the highest temperature in Atlanta be between 90-91°F on September 9?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.535,
+      "model_prob": 0.352,
+      "ev": -0.2222,
+      "market_prob": 0.535,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.54,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4324355",
+      "question": "Will the highest temperature in Atlanta be between 90-91°F on September 9? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.465,
+      "model_prob": 0.648,
+      "ev": 0.2557,
+      "market_prob": 0.465,
+      "role": "scenario_hedge",
+      "units": 17.38,
+      "sell_value": 0.45,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4324351",
+      "question": "Will the highest temperature in Atlanta be between 82-83°F on September 9? (NO)",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "side": "NO",
+      "price": 0.9955,
+      "model_prob": 0.9975,
+      "ev": 0.0013,
+      "market_prob": 0.9955,
+      "role": "scenario_hedge",
+      "units": 0.81,
+      "sell_value": 0.992,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
 }
