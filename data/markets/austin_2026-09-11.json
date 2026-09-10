@@ -1,0 +1,216 @@
+{
+  "city": "austin",
+  "city_name": "Austin",
+  "date": "2026-09-11",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-09-10T02:20:38.740925+00:00",
+  "committed_allocation": null,
+  "hours_left": 50.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-12T05:00:00+00:00",
+  "event_end_date": "2026-09-11T12:00:00Z",
+  "last_scan": "2026-09-10T02:20:38.740925+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 97.98,
+  "sigma": 1.775,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Austin be 87°F or below on September 11?",
+      "market_id": "4402231",
+      "range": [
+        -999.0,
+        87.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 35.0,
+      "spread": 0.0,
+      "yes_token_id": "102423621817822923482246592292722698231801063823101381112913694816351184902947",
+      "no_token_id": "70001830708228734243582650584688689183366262629150928508786653592510957680751",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0018,
+      "ev": 0.2,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 92-93°F on September 11?",
+      "market_id": "4402234",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 85.0,
+      "spread": 0.0,
+      "yes_token_id": "81874917473615650058045936415148843599411529989285228106538925319855804516310",
+      "no_token_id": "87674269372495204254452338939567564314046239183683442410908601299536485246137",
+      "model_prob": 0.0177,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0133,
+      "ev": 1.66,
+      "kelly": 0.0021,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 96-97°F on September 11?",
+      "market_id": "4402236",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.135,
+      "no_price": 0.865,
+      "volume": 18.0,
+      "spread": 0.0,
+      "yes_token_id": "63996818749716244087795443210423135782107147557718786939722333859013416299793",
+      "no_token_id": "108597342491018937190450351577486738145948508833356415903538220144318303551909",
+      "model_prob": 0.2878,
+      "side": "YES",
+      "ask": 0.135,
+      "market_prob": 0.135,
+      "belief_prob": 0.2343,
+      "ev": 0.7356,
+      "kelly": 0.0287,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 98-99°F on September 11?",
+      "market_id": "4402237",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "yes_price": 0.415,
+      "no_price": 0.585,
+      "volume": 192.0,
+      "spread": 0.0,
+      "yes_token_id": "98449118518155531645675322027866336365705540995038381845607780614104432907221",
+      "no_token_id": "47544556049581693504797605195095534796369681032525527581619804441857379840815",
+      "model_prob": 0.3989,
+      "side": "YES",
+      "ask": 0.415,
+      "market_prob": 0.415,
+      "belief_prob": 0.4045,
+      "ev": -0.0253,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 100-101°F on September 11?",
+      "market_id": "4402238",
+      "range": [
+        100.0,
+        101.0
+      ],
+      "yes_price": 0.395,
+      "no_price": 0.605,
+      "volume": 1347.0,
+      "spread": 0.0,
+      "yes_token_id": "63315903179371090924028688759972606612828651917695821768299052346230575309326",
+      "no_token_id": "43834871490298869998994503056890951254899825943140268736851840050481113660446",
+      "model_prob": 0.1563,
+      "side": "YES",
+      "ask": 0.395,
+      "market_prob": 0.395,
+      "belief_prob": 0.2398,
+      "ev": -0.3929,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 102-103°F on September 11?",
+      "market_id": "4402239",
+      "range": [
+        102.0,
+        103.0
+      ],
+      "yes_price": 0.07,
+      "no_price": 0.93,
+      "volume": 71.0,
+      "spread": 0.0,
+      "yes_token_id": "58586366276696878120708278306307420259768859383699509862247043635863842703462",
+      "no_token_id": "13566337498423178878810395299318987786752133797828582571349499217587958007650",
+      "model_prob": 0.036,
+      "side": "YES",
+      "ask": 0.07,
+      "market_prob": 0.07,
+      "belief_prob": 0.0479,
+      "ev": -0.3157,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 104-105°F on September 11?",
+      "market_id": "4402240",
+      "range": [
+        104.0,
+        105.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "3972893581940055253967024769391779281766855686496389711797538980119478414911",
+      "no_token_id": "89732498295813576036975757856394104513817711730287432746121403113081083572269",
+      "model_prob": 0.0086,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0126,
+      "ev": -0.37,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4402237",
+      "question": "Will the highest temperature in Austin be between 98-99°F on September 11?",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "side": "YES",
+      "price": 0.415,
+      "model_prob": 0.3989,
+      "ev": -0.0253,
+      "market_prob": 0.415,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.41
+    },
+    {
+      "market_id": "4402237",
+      "question": "Will the highest temperature in Austin be between 98-99°F on September 11? (NO)",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "side": "NO",
+      "price": 0.585,
+      "model_prob": 0.6011,
+      "ev": 0.0179,
+      "market_prob": 0.585,
+      "role": "scenario_hedge",
+      "units": 28.19,
+      "sell_value": 0.58
+    }
+  ],
+  "total_allocated_units": 58.2,
+  "portfolio_score": -0.034733,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 14.1,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.2977,
+  "confidence": 0.1245,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

@@ -1,0 +1,282 @@
+{
+  "city": "jeddah",
+  "city_name": "Jeddah",
+  "date": "2026-09-11",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-10T02:20:38.740925+00:00",
+  "committed_allocation": null,
+  "hours_left": 42.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-11T21:00:00+00:00",
+  "event_end_date": "2026-09-11T12:00:00Z",
+  "last_scan": "2026-09-10T02:20:38.740925+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 37.76,
+  "sigma": 1.512,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Jeddah be 28°C or below on September 11?",
+      "market_id": "4400252",
+      "range": [
+        -999.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 345.0,
+      "spread": 0.0,
+      "yes_token_id": "108878649395953675609121431869174747538555683398786740759518939476955273818101",
+      "no_token_id": "49399216913779166853726620523674748570340908485806821505556156329516306377407",
+      "model_prob": 0.0008,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0007,
+      "ev": 0.4,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 29°C on September 11?",
+      "market_id": "4400253",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 265.0,
+      "spread": 0.0,
+      "yes_token_id": "92094623243898695291821806094809211247384444928318158409888096406218457766794",
+      "no_token_id": "358673993820060304254801512857902181135292802378883122200430512024725404449",
+      "model_prob": 0.0006,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0009,
+      "ev": -0.4,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 30°C on September 11?",
+      "market_id": "4400254",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 265.0,
+      "spread": 0.0,
+      "yes_token_id": "4901586164589343330432813763570607242021282265667627740000679444391342302882",
+      "no_token_id": "107546271236967644881051716189351476808564417566169084145653365038386914572055",
+      "model_prob": 0.001,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0012,
+      "ev": -0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 31°C on September 11?",
+      "market_id": "4400255",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 220.0,
+      "spread": 0.0,
+      "yes_token_id": "75440802549482342540555334970620607598827760581565524858790080132906019814247",
+      "no_token_id": "70053764526486885251333747529638650840729147310876191582616957912226989042852",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0019,
+      "ev": 0.2667,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 32°C on September 11?",
+      "market_id": "4400256",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 92.0,
+      "spread": 0.0,
+      "yes_token_id": "115487991930342719588494162839059954596599779726695268559421473595716300248666",
+      "no_token_id": "32294715656831146045141978261095917179455097474252948235092713675826113231940",
+      "model_prob": 0.0043,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0047,
+      "ev": -0.1455,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 34°C on September 11?",
+      "market_id": "4400258",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "71343386181012276782123003964410893062709192454473301312555607537639352308012",
+      "no_token_id": "19436973525849710040224895590385359001380254322213406337580139877040637195313",
+      "model_prob": 0.0232,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0238,
+      "ev": -0.048,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 35°C on September 11?",
+      "market_id": "4400259",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 54.0,
+      "spread": 0.0,
+      "yes_token_id": "48028941047158676876914651131809260705539058947436391165089144061604217207225",
+      "no_token_id": "54395764562147652132685622800729568022233126991055481958684231159955292540481",
+      "model_prob": 0.0558,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.052,
+      "ev": 0.1556,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 36°C on September 11?",
+      "market_id": "4400260",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 210.0,
+      "spread": 0.0,
+      "yes_token_id": "93877729341957339988920141914825351283576333608126223978919549752394089752285",
+      "no_token_id": "100362717558626712493442083116012550422782311156089479675723882287540502790485",
+      "model_prob": 0.1237,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.1679,
+      "ev": -0.3284,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 37°C on September 11?",
+      "market_id": "4400261",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.43,
+      "no_price": 0.57,
+      "volume": 441.0,
+      "spread": 0.0,
+      "yes_token_id": "65926788636101193604402667658997173210730507178263323444674453289585341593942",
+      "no_token_id": "24261971269813562550657233747444653088472831347073313385819261389147280905121",
+      "model_prob": 0.2138,
+      "side": "YES",
+      "ask": 0.43,
+      "market_prob": 0.43,
+      "belief_prob": 0.2895,
+      "ev": -0.3267,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 38°C or higher on September 11?",
+      "market_id": "4400262",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "yes_price": 0.275,
+      "no_price": 0.725,
+      "volume": 454.0,
+      "spread": 0.0,
+      "yes_token_id": "58951245218387695586683589642809573436649189925919564955809524849226787584617",
+      "no_token_id": "33886067960289142171146271244813140648418954482895079732533322254925153930698",
+      "model_prob": 0.5649,
+      "side": "YES",
+      "ask": 0.275,
+      "market_prob": 0.275,
+      "belief_prob": 0.4634,
+      "ev": 0.6851,
+      "kelly": 0.065,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4400262",
+      "question": "Will the highest temperature in Jeddah be 38°C or higher on September 11?",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "side": "YES",
+      "price": 0.275,
+      "model_prob": 0.5649,
+      "ev": 0.6851,
+      "market_prob": 0.275,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.26
+    },
+    {
+      "market_id": "4400262",
+      "question": "Will the highest temperature in Jeddah be 38°C or higher on September 11? (NO)",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.725,
+      "model_prob": 0.4351,
+      "ev": -0.2599,
+      "market_prob": 0.725,
+      "role": "scenario_hedge",
+      "units": 52.73,
+      "sell_value": 0.71
+    }
+  ],
+  "total_allocated_units": 82.7,
+  "portfolio_score": 0.037225,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 26.36,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4202,
+  "confidence": 0.0671,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
