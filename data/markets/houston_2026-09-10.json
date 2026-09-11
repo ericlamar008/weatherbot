@@ -3,15 +3,15 @@
   "city_name": "Houston",
   "date": "2026-09-10",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-11T05:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-11T02:20:41.700025+00:00",
-  "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
+  "last_lite_refresh": "2026-09-11T06:54:43.405342+00:00",
   "forecast_mean": 89.88,
   "sigma": 3.074,
   "full_distribution": [
@@ -275,7 +275,10 @@
       "market_prob": 0.9995,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.999
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
     },
     {
       "market_id": "4359171",
@@ -291,7 +294,10 @@
       "market_prob": 0.0005,
       "role": "scenario_hedge",
       "units": 0.01,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -302,5 +308,50 @@
   "success_probability": 0.5511,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 88.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.01,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4359171",
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 10?",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.2105,
+      "ev": -0.5131,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    },
+    {
+      "market_id": "4359171",
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 10? (NO)",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "NO",
+      "price": 0.0005,
+      "model_prob": 0.7895,
+      "ev": 1025.6,
+      "market_prob": 0.0005,
+      "role": "scenario_hedge",
+      "units": 0.01,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.01,
+      "user_entered": false
+    }
+  ]
 }

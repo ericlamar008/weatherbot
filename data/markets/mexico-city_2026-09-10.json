@@ -3,15 +3,15 @@
   "city_name": "Mexico City",
   "date": "2026-09-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-09T02:20:55.026776+00:00",
   "committed_allocation": null,
-  "hours_left": 3.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-11T06:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-11T02:20:41.700025+00:00",
-  "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
+  "last_lite_refresh": "2026-09-11T06:54:43.405342+00:00",
   "forecast_mean": 23.23,
   "sigma": 2.046,
   "full_distribution": [
@@ -275,7 +275,10 @@
       "market_prob": 0.9995,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.999
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -286,5 +289,31 @@
   "success_probability": 0.5645,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 25.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.02,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4363783",
+      "question": "Will the highest temperature in Mexico City be 25°C on September 10?",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.1221,
+      "ev": -0.5706,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    }
+  ]
 }

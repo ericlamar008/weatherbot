@@ -3,15 +3,15 @@
   "city_name": "Miami",
   "date": "2026-09-10",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-11T04:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-11T02:20:41.700025+00:00",
-  "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
+  "last_lite_refresh": "2026-09-11T06:54:43.405342+00:00",
   "forecast_mean": 87.91,
   "sigma": 2.008,
   "full_distribution": [
@@ -274,7 +274,10 @@
       "market_prob": 0.49,
       "role": "main_signal",
       "units": 29.3,
-      "sell_value": 0.47
+      "sell_value": 0.47,
+      "won": false,
+      "pnl_units": -29.3,
+      "user_entered": false
     },
     {
       "market_id": "4359138",
@@ -290,7 +293,10 @@
       "market_prob": 0.51,
       "role": "scenario_hedge",
       "units": 20.09,
-      "sell_value": 0.52
+      "sell_value": 0.52,
+      "won": true,
+      "pnl_units": 19.3,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 49.4,
@@ -302,5 +308,50 @@
   "confidence": 0.0673,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-09-11T06:37:20.598273+00:00"
+  "last_price_refresh": "2026-09-11T06:37:20.598273+00:00",
+  "actual_temp": 90.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4359138",
+      "question": "Will the highest temperature in Miami be between 88-89°F on September 10?",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "YES",
+      "price": 0.49,
+      "model_prob": 0.3354,
+      "ev": -0.2051,
+      "market_prob": 0.49,
+      "role": "main_signal",
+      "units": 29.3,
+      "sell_value": 0.47,
+      "won": false,
+      "pnl_units": -29.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "4359138",
+      "question": "Will the highest temperature in Miami be between 88-89°F on September 10? (NO)",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "side": "NO",
+      "price": 0.51,
+      "model_prob": 0.6646,
+      "ev": 0.1971,
+      "market_prob": 0.51,
+      "role": "scenario_hedge",
+      "units": 20.09,
+      "sell_value": 0.52,
+      "won": true,
+      "pnl_units": 19.3,
+      "user_entered": false
+    }
+  ]
 }

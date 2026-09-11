@@ -3,11 +3,11 @@
   "city_name": "Toronto",
   "date": "2026-09-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-09T02:20:55.026776+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-11T04:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
   "last_scan": "2026-09-11T02:20:41.700025+00:00",
@@ -273,7 +273,10 @@
       "market_prob": 0.415,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.41
+      "sell_value": 0.41,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "4363770",
@@ -289,7 +292,10 @@
       "market_prob": 0.585,
       "role": "scenario_hedge",
       "units": 28.19,
-      "sell_value": 0.58
+      "sell_value": 0.58,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
     },
     {
       "market_id": "4363765",
@@ -305,7 +311,10 @@
       "market_prob": 0.998,
       "role": "scenario_hedge",
       "units": 0.98,
-      "sell_value": 0.996
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 59.2,
@@ -317,6 +326,70 @@
   "confidence": 0.0239,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
-  "last_price_refresh": "2026-09-11T06:37:20.598273+00:00"
+  "last_lite_refresh": "2026-09-11T06:54:43.405342+00:00",
+  "last_price_refresh": "2026-09-11T06:37:20.598273+00:00",
+  "actual_temp": 25.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4363770",
+      "question": "Will the highest temperature in Toronto be 24°C on September 10?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.415,
+      "model_prob": 0.4468,
+      "ev": 0.0499,
+      "market_prob": 0.415,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.41,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4363770",
+      "question": "Will the highest temperature in Toronto be 24°C on September 10? (NO)",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.585,
+      "model_prob": 0.5532,
+      "ev": -0.0354,
+      "market_prob": 0.585,
+      "role": "scenario_hedge",
+      "units": 28.19,
+      "sell_value": 0.58,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4363765",
+      "question": "Will the highest temperature in Toronto be 19°C on September 10? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.998,
+      "model_prob": 0.9993,
+      "ev": 0.0008,
+      "market_prob": 0.998,
+      "role": "scenario_hedge",
+      "units": 0.98,
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
 }
