@@ -3,14 +3,14 @@
   "city_name": "Paris",
   "date": "2026-09-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-10T22:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
-  "last_scan": "2026-09-10T02:20:38.740925+00:00",
+  "last_scan": "2026-09-11T02:20:41.700025+00:00",
   "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
   "forecast_mean": 20.42,
   "sigma": 0.952,
@@ -274,7 +274,10 @@
       "market_prob": 0.525,
       "role": "main_signal",
       "units": 28.9,
-      "sell_value": 0.52
+      "sell_value": 0.52,
+      "won": false,
+      "pnl_units": -28.9,
+      "user_entered": false
     },
     {
       "market_id": "4356236",
@@ -290,7 +293,10 @@
       "market_prob": 0.475,
       "role": "scenario_hedge",
       "units": 17.1,
-      "sell_value": 0.47
+      "sell_value": 0.47,
+      "won": true,
+      "pnl_units": 18.9,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 46.0,
@@ -303,5 +309,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-11T02:07:20.333270+00:00",
-  "skipped_reason": "ensemble forecast unavailable (mean is None)"
+  "skipped_reason": "ensemble forecast unavailable (mean is None)",
+  "actual_temp": 21.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4356236",
+      "question": "Will the highest temperature in Paris be 22°C on September 10?",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "side": "YES",
+      "price": 0.525,
+      "model_prob": 0.3064,
+      "ev": -0.2707,
+      "market_prob": 0.525,
+      "role": "main_signal",
+      "units": 28.9,
+      "sell_value": 0.52,
+      "won": false,
+      "pnl_units": -28.9,
+      "user_entered": false
+    },
+    {
+      "market_id": "4356236",
+      "question": "Will the highest temperature in Paris be 22°C on September 10? (NO)",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "side": "NO",
+      "price": 0.475,
+      "model_prob": 0.6936,
+      "ev": 0.2992,
+      "market_prob": 0.475,
+      "role": "scenario_hedge",
+      "units": 17.1,
+      "sell_value": 0.47,
+      "won": true,
+      "pnl_units": 18.9,
+      "user_entered": false
+    }
+  ]
 }

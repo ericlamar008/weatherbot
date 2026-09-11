@@ -3,14 +3,14 @@
   "city_name": "Istanbul",
   "date": "2026-09-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-08T10:10:40.984793+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-10T21:00:00+00:00",
   "event_end_date": "2026-09-10T12:00:00Z",
-  "last_scan": "2026-09-10T02:20:38.740925+00:00",
+  "last_scan": "2026-09-11T02:20:41.700025+00:00",
   "horizon_days": 0,
   "forecast_mean": 25.48,
   "sigma": 0.55,
@@ -273,7 +273,10 @@
       "market_prob": 0.875,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.87
+      "sell_value": 0.87,
+      "won": true,
+      "pnl_units": 4.29,
+      "user_entered": false
     },
     {
       "market_id": "4356473",
@@ -289,7 +292,10 @@
       "market_prob": 0.125,
       "role": "scenario_hedge",
       "units": 2.86,
-      "sell_value": 0.12
+      "sell_value": 0.12,
+      "won": false,
+      "pnl_units": -2.86,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 32.9,
@@ -302,5 +308,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_lite_refresh": "2026-09-10T20:20:40.324872+00:00",
-  "last_price_refresh": "2026-09-11T02:07:20.333270+00:00"
+  "last_price_refresh": "2026-09-11T02:07:20.333270+00:00",
+  "actual_temp": 25.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 1.43,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4356473",
+      "question": "Will the highest temperature in Istanbul be 25°C on September 10?",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "YES",
+      "price": 0.875,
+      "model_prob": 0.3583,
+      "ev": -0.3839,
+      "market_prob": 0.875,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.87,
+      "won": true,
+      "pnl_units": 4.29,
+      "user_entered": false
+    },
+    {
+      "market_id": "4356473",
+      "question": "Will the highest temperature in Istanbul be 25°C on September 10? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.125,
+      "model_prob": 0.6417,
+      "ev": 2.6872,
+      "market_prob": 0.125,
+      "role": "scenario_hedge",
+      "units": 2.86,
+      "sell_value": 0.12,
+      "won": false,
+      "pnl_units": -2.86,
+      "user_entered": false
+    }
+  ]
 }
