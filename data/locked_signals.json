@@ -1214,13 +1214,14 @@
     "side": "YES",
     "entry_price": 0.255,
     "locked_at": "2026-09-10T21:28:05.622628+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.265,
     "last_pct": 3.9,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.25,
+    "closed_at": "2026-09-11T02:00:48.678494+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-11T01:37:22.713415+00:00"
+    "last_checked_at": "2026-09-11T01:37:22.713415+00:00",
+    "unlock_issue_number": 136
   }
 ]
