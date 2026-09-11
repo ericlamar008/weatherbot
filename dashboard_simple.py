@@ -56,16 +56,25 @@ CDN گیت‌هاب‌پیجز (Fastly) کافی نبودند. اصلاح قطع
 جاوااسکریپت جدیدی اضافه نشده و رفتار خود عملیات حذف قفل (باز شدن Issue در
 گیت‌هاب) دقیقاً همان چیزی است که در جدول اصلی هر شهر هم وجود دارد.
 
-نکتهٔ فنی: چون همین market_id ممکن است هم‌زمان در جدول اصلی شهر (وقتی آن
-بخش باز/expand شده) هم در این سکشن دیده شود، برای جلوگیری از id تکراری در
-صفحه، span وضعیت این دکمه با پسوند "-active" مجزا شده (id="lockstatus-
-{market_id}-active"). این یعنی خود عملیات حذف قفل (باز شدن تب گیت‌هاب)
-دقیقاً مثل قبل کار می‌کند؛ فقط متن موقت «⏳ در حال باز شدن...» ممکن است
-(در صورت وجود همان باکت در جدول اصلی) در آن جدول دیگر نمایش داده شود، نه
-اینجا -- این یک تفاوت کاملاً بصری و بی‌خطر است، نه یک نقص عملکردی.
+--- PATCH (درخواست کاربر: کاهش دیده‌شدن در جستجوها) -----------------
+یک تگ <meta name="robots" content="noindex, nofollow, noarchive, nosnippet,
+noimageindex"> به <head> اضافه شد.
 
-هیچ‌چیز دیگری (bucket_table، منطق is_locked، توابع JS، ساختار
-locked_signals.json) نسبت به نسخهٔ قبلی تغییر نکرده است.
+--- PATCH این نسخه (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار در
+اسکن لایت، داخل پرانتز، بدون سکشن جدید) --------------------------------------
+weatherbot_v3.py (تابع refresh_open_market_info، فقط در اسکن لایت هر ۶
+ساعته) روی هر باکت full_distribution دو فیلد اختیاری تازه می‌نویسد:
+model_prob_change و yes_price_change (تفاضل خام نسبت به آخرین اسکن لایت،
+درصد-امتیاز خام نه نسبی). در _bucket_table() -- و فقط همین‌جا -- این دو
+مقدار (اگر موجود باشند) به‌صورت پرانتزی به انتهای متن سه ستون موجود
+اضافه می‌شوند:
+  - «احتمال مدل» (model_str): از model_prob_change
+  - «احتمال بازار (YES)» (market_str) و «قیمت YES» (price_str): هر دو از
+    yes_price_change (هرکدام در واحد خودش: market_str با علامت درصد،
+    price_str خام)
+هیچ ستون/سکشن جدیدی اضافه نشده، ساختار جدول (تعداد <th>/<td>، ترتیب
+ستون‌ها) و بقیهٔ منطق فایل (لینک‌ها، دکمه‌های قفل/حذف قفل، تاریخچه، سکشن
+قفل‌های فعال) کاملاً دست‌نخورده مانده است.
 """
 import json
 from collections import defaultdict
@@ -102,6 +111,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -419,9 +429,25 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
         label = _label_for_range(low, high, unit_sym)
         model_prob = b.get("model_prob")
         yes_price = b.get("yes_price")
+
+        # PATCH: تغییر نسبت به آخرین اسکن لایت (فقط اگر refresh_open_market_info
+        # این دو فیلد را نوشته باشد -- در غیر این صورت None و پرانتز نشان
+        # داده نمی‌شود). درصد-امتیاز خام، طبق تصمیم مشترک با کاربر.
+        model_change = b.get("model_prob_change")
+        price_change = b.get("yes_price_change")
+
         model_str = f"{model_prob * 100:.1f}%" if model_prob is not None else "-"
+        if model_prob is not None and model_change is not None:
+            model_str += f" ({model_change * 100:+.1f}%)"
+
         market_str = f"{yes_price * 100:.1f}%" if yes_price is not None else "-"
+        if yes_price is not None and price_change is not None:
+            market_str += f" ({price_change * 100:+.1f}%)"
+
         price_str = f"{yes_price:.3f}" if yes_price is not None else "-"
+        if yes_price is not None and price_change is not None:
+            price_str += f" ({price_change:+.3f})"
+
         belief_val = b.get("belief_prob")
         belief_str = f"{belief_val * 100:.1f}%" if belief_val is not None else "-"
         market_id = str(b.get("market_id", ""))
@@ -473,10 +499,9 @@ def _load_market_by_key(city, date):
 def _locked_signals_section_html(locks):
     """سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های قفل‌شدهٔ فعال
     را با دمای قفل‌شده، قیمت قفل، قیمت فعلی، درصد تغییر، زمان تا پایان
-    روز محلی، آخرین به‌روزرسانی، و (PATCH فاز ۲) یک دکمهٔ میانبر حذف قفل
-    نشان می‌دهد. قفل‌هایی که بازار زیرینشان طبق داده‌های واقعی resolve/
-    expire شده، حتی اگر status خود قفل هنوز به‌روز نشده باشد، از این
-    لیست حذف می‌شوند."""
+    روز محلی، آخرین به‌روزرسانی، و یک دکمهٔ میانبر حذف قفل نشان می‌دهد.
+    قفل‌هایی که بازار زیرینشان طبق داده‌های واقعی resolve/expire شده، حتی
+    اگر status خود قفل هنوز به‌روز نشده باشد، از این لیست حذف می‌شوند."""
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return ""
@@ -520,10 +545,6 @@ def _locked_signals_section_html(locks):
         else:
             updated_html = "-"
 
-        # PATCH فاز ۲: میانبر حذف قفل مستقیم در همین ردیف -- از همان تابع
-        # جاوااسکریپت unlockBucket() موجود استفاده می‌کند، هیچ منطق جدیدی
-        # اضافه نشده. span وضعیت با پسوند "-active" مجزا شده تا با
-        # همان market_id در جدول اصلی شهر (اگر باز باشد) تداخل id نداشته باشد.
         market_id = str(l.get("market_id", ""))
         unlock_call = "unlockBucket('{0}','{1}','{2}','{3}','{4}')".format(
             city, name, date, market_id, bucket_label
