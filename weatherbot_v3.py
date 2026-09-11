@@ -73,6 +73,20 @@ resolve_expired_markets، run_once، run_lite_scan) دست نمی‌زند و ا
 خواهد شد. برای محاسبهٔ دوبارهٔ «باور نهایی» (belief_prob) با قیمت تازه، از
 همان strat.fuse_belief() موجود (بدون تغییر) استفاده می‌شود -- model_prob
 هر باکت دست‌نخورده از آخرین اسکن سنگین/سبک باقی می‌ماند.
+
+--- PATCH این نسخه (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار در
+اسکن لایت) --------------------------------------------------------------
+refresh_open_market_info() اکنون، درست قبل از جایگزینی full_distribution
+با نسخهٔ تازه، مقدار model_prob و yes_price *قبلی* هر باکت (بر اساس
+market_id) را نگه می‌دارد و دو فیلد تازه روی هر باکت ذخیره می‌کند:
+model_prob_change و yes_price_change (تفاضل خام: مقدار جدید منهای مقدار
+قبلی، هر دو در همان مقیاس ۰ تا ۱ خود model_prob/yes_price -- یعنی
+درصد-امتیاز خام، نه درصد نسبی). این دو فیلد فقط توسط همین تابع (اسکن
+لایت هر ۶ ساعته) نوشته می‌شوند؛ refresh_all_open_market_prices() (اسکن
+قیمت هر ۳۰ دقیقه) کاری با این دو فیلد ندارد و دست‌نخورده باقی‌شان
+می‌گذارد -- یعنی مقدار نمایش‌داده‌شده تا اسکن لایت بعدی ثابت می‌ماند.
+اگر برای یک market_id مقدار قبلی موجود نباشد (مثلاً باکت تازه کشف شده)،
+این دو فیلد اصلاً ست نمی‌شوند. هیچ تابع دیگری در این فایل تغییر نکرده است.
 =====================================================================================
 Usage:
 python weatherbot_v3.py backfill # one-time: calibrate sigma+bias from history
@@ -687,6 +701,15 @@ def refresh_open_market_info(now):
     کامل شوند (نه STRATEGY_PARAMS خام)، چون build_candidate_set به
     کلیدهایی مثل belief_model_weight نیاز دارد که فقط در DEFAULT_PARAMS
     داخل strategy.py تعریف شده‌اند.
+
+    PATCH (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار): درست قبل از
+    جایگزینی full_distribution با نسخهٔ تازه، مقدار model_prob و yes_price
+    *قبلی* هر باکت (بر اساس market_id) نگه داشته می‌شود و دو فیلد تازه
+    (model_prob_change, yes_price_change) با تفاضل خام (جدید منهای قدیم،
+    درصد-امتیاز خام نه نسبی) روی همان باکت ذخیره می‌شود. اگر مقدار قبلی
+    برای یک market_id موجود نباشد (باکت تازه)، این دو فیلد اصلاً ست
+    نمی‌شوند. این دو فیلد فقط اینجا نوشته می‌شوند -- هیچ تابع دیگری
+    (از جمله refresh_all_open_market_prices) به آن‌ها دست نمی‌زند.
     """
     open_markets = [m for m in load_all_markets() if m.get("status") == "open"]
     if not open_markets:
@@ -758,6 +781,24 @@ def refresh_open_market_info(now):
         if not full_distribution:
             continue
 
+        # PATCH: محاسبهٔ تغییر نسبت به آخرین اسکن لایت، قبل از overwrite شدن.
+        old_by_id = {
+            str(b.get("market_id")): b
+            for b in (mkt.get("full_distribution") or [])
+        }
+        for c in full_distribution:
+            old = old_by_id.get(str(c.get("market_id")))
+            if old is None:
+                continue
+            old_model = old.get("model_prob")
+            new_model = c.get("model_prob")
+            if old_model is not None and new_model is not None:
+                c["model_prob_change"] = round(new_model - old_model, 4)
+            old_price = old.get("yes_price")
+            new_price = c.get("yes_price")
+            if old_price is not None and new_price is not None:
+                c["yes_price_change"] = round(new_price - old_price, 4)
+
         mkt["forecast_mean"] = mean
         mkt["sigma"] = sigma
         mkt["full_distribution"] = full_distribution
@@ -782,6 +823,10 @@ def refresh_all_open_market_prices(now):
     باور نهایی (belief_prob) هر باکت با همان strat.fuse_belief() موجود و
     model_prob قبلی (دست‌نخورده از آخرین اسکن سنگین/سبک) دوباره محاسبه
     می‌شود تا ستون «باور نهایی» در داشبورد هم با قیمت تازه هماهنگ بماند.
+
+    توجه: این تابع عمداً به فیلدهای model_prob_change/yes_price_change
+    (که فقط توسط refresh_open_market_info در اسکن لایت نوشته می‌شوند)
+    دست نمی‌زند -- آن‌ها دست‌نخورده باقی می‌مانند تا اسکن لایت بعدی.
 
     این تابع کاملاً مستقل و افزودنی است -- هیچ‌کدام از توابع اسکن موجود
     (discover_new_signals، refresh_open_market_info، run_once،
