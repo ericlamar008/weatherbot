@@ -61,6 +61,26 @@ real backfill run.
 Output shape of `cal[key]` unchanged (still sigma/bias/base_mae/
 base_bias_raw/n/source/updated_at, plus the Phase-5
 `seasonal_half_life_days` field) -- get_sigma()/get_bias() need zero changes.
+
+--- PATCH این نسخه (موقتی -- فقط برای تشخیص) -----------------------------------
+درخواست کاربر: مکانیزم update_calibration_from_live از حدود ۱۰ روز پیش
+دیگر هیچ به‌روزرسانی جدیدی روی data/calibration.json ثبت نکرده، درحالی‌که
+هم scan_daily.yml هم heartbeat_dashboard_link.yml بدون هیچ خطایی اجرا
+می‌شوند. چون امکان اجرای مستقیم کد روی سرور واقعی وجود ندارد، این نسخه
+موقتاً چند خط print تشخیصی (با پیشوند "[CAL-DEBUG]") به
+update_calibration_from_live اضافه می‌کند تا در همان لاگ Workflow بعدی
+دقیقاً مشخص شود:
+  ۱) چند بازار resolve‌شده اصلاً پیدا شده،
+  ۲) برای هر شهر+افق، اندازهٔ گروه و وضعیت رد کردن آستانهٔ ۱۵ چقدر است،
+  ۳) اگر آستانه رد شد، دقیقاً چه مقداری محاسبه و قرار است ذخیره شود،
+  ۴) و یک try/except جدید دور خود مرحلهٔ save_calibration() که قبلاً هیچ
+     محافظتی نداشت -- اگر نوشتن فایل به هر دلیلی (مسیر، دسترسی) بی‌صدا
+     شکست می‌خورد، الان با یک پیام صریح دیده می‌شود.
+
+هیچ‌کدام از این تغییرات روی مقدار محاسبه‌شدهٔ نهایی (sigma/bias) اثر
+نمی‌گذارند -- فقط گزارش می‌دهند. بعد از پیدا شدن علت واقعی، این پرینت‌ها
+حذف و فایل به حالت تمیز برمی‌گردد. هیچ تابع دیگری در این فایل تغییر
+نکرده است.
 =====================================================================================
 """
 
@@ -108,14 +128,11 @@ BIAS_CAP_OVERRIDES = {
     "houston": 3.6,
 }
 
-
 def norm_cdf(x):
     return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
 
-
 def norm_pdf(x):
     return math.exp(-0.5 * x * x) / math.sqrt(2 * math.pi)
-
 
 def _betacf(a, b, x, maxit=200, eps=3e-7, fpmin=1e-30):
     qab = a + b
@@ -152,7 +169,6 @@ def _betacf(a, b, x, maxit=200, eps=3e-7, fpmin=1e-30):
             break
     return h
 
-
 def _betai(a, b, x):
     if x <= 0.0:
         return 0.0
@@ -167,12 +183,10 @@ def _betai(a, b, x):
     else:
         return 1.0 - bt * _betacf(b, a, 1.0 - x) / b
 
-
 def student_t_cdf(t, df=TAIL_DF):
     x = df / (df + t * t)
     p = 0.5 * _betai(df / 2.0, 0.5, x)
     return 1.0 - p if t > 0 else p
-
 
 def _bias_cap(unit, city_slug=None, observed_raw_bias=None):
     """(Phase 4 / F4: dynamic cap -- see module docstring.)"""
@@ -186,7 +200,6 @@ def _bias_cap(unit, city_slug=None, observed_raw_bias=None):
         floor = max(floor, dynamic)
     return round(floor, 3)
 
-
 def _day_of_year_distance(d1, d2):
     """(Phase 5 / F5.) Circular day-of-year distance, handles year wrap."""
     doy1 = d1.timetuple().tm_yday
@@ -194,17 +207,14 @@ def _day_of_year_distance(d1, d2):
     diff = abs(doy1 - doy2)
     return min(diff, 365 - diff)
 
-
 def _seasonal_weight(date_obj, reference_date, half_life_days=SEASONAL_HALF_LIFE_DAYS):
     """(Phase 5 / F5.) Weight decaying by day-of-year distance from "today"."""
     dist = _day_of_year_distance(date_obj, reference_date)
     return 0.5 ** (dist / half_life_days)
 
-
 def _weighted_mean(values, weights):
     total_w = sum(weights) or 1.0
     return sum(v * w for v, w in zip(values, weights)) / total_w
-
 
 # =============================================================================
 # ENSEMBLE FETCH (LIVE FORECASTING) -- unchanged
@@ -241,14 +251,11 @@ def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7):
                 return {}
     return {}
 
-
 def get_ecmwf_ensemble(lat, lon, tz, unit):
     return _fetch_ensemble(lat, lon, tz, unit, "ecmwf_ifs025", forecast_days=7)
 
-
 def get_gefs_ensemble(lat, lon, tz, unit):
     return _fetch_ensemble(lat, lon, tz, unit, "gfs_seamless", forecast_days=7)
-
 
 def build_combined_distribution(city_slug, loc, date_str):
     members = []
@@ -258,9 +265,8 @@ def build_combined_distribution(city_slug, loc, date_str):
     members.extend(gefs.get(date_str, []))
     return members
 
-
 # =============================================================================
-# CALIBRATION (HISTORICAL BACKFILL)
+# CALIBRATION (HISTORICAL BACKFILL) -- unchanged
 # =============================================================================
 
 def fetch_historical_forecast(lat, lon, tz, unit, start_date, end_date):
@@ -286,7 +292,6 @@ def fetch_historical_forecast(lat, lon, tz, unit, start_date, end_date):
                 return {}
     return {}
 
-
 def _daily_max_from_hourly_previous_day(hourly_data, var_key):
     """(Phase 6 / F6.) The Previous Runs API only exposes HOURLY variables
     (no daily-max variant), so we aggregate to a daily max ourselves."""
@@ -300,7 +305,6 @@ def _daily_max_from_hourly_previous_day(hourly_data, var_key):
         if date_part not in daily_max or v > daily_max[date_part]:
             daily_max[date_part] = v
     return daily_max
-
 
 def fetch_historical_forecast_by_horizon(lat, lon, tz, unit, start_date, end_date, horizon_days=(0, 1, 2, 3)):
     """
@@ -342,7 +346,6 @@ def fetch_historical_forecast_by_horizon(lat, lon, tz, unit, start_date, end_dat
                 return result
     return result
 
-
 def _load_actuals_cache():
     if ACTUALS_CACHE_FILE.exists():
         try:
@@ -351,10 +354,8 @@ def _load_actuals_cache():
             return {}
     return {}
 
-
 def _save_actuals_cache(cache):
     ACTUALS_CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
-
 
 def _fetch_metar_max_for_date(station, unit, date_str):
     url = (
@@ -378,7 +379,6 @@ def _fetch_metar_max_for_date(station, unit, date_str):
                 return None
     return None
 
-
 def _fetch_historical_actual_noaa_range(station, unit, start_date, end_date, cache):
     station_cache = cache.setdefault(station, {})
     results = {}
@@ -396,7 +396,6 @@ def _fetch_historical_actual_noaa_range(station, unit, start_date, end_date, cac
             results[date_str] = val
         d += timedelta(days=1)
     return results
-
 
 def _fetch_historical_actual_hko_range(start_date, end_date, cache):
     station_cache = cache.setdefault("HKO", {})
@@ -424,7 +423,6 @@ def _fetch_historical_actual_hko_range(start_date, end_date, cache):
 
     return {dt: station_cache[dt] for dt in needed_dates if dt in station_cache and station_cache[dt] is not None}
 
-
 def fetch_historical_actual(loc, start_date, end_date):
     """(Phase 2 / F2.) Ground truth from the SAME station feed used for live
     resolution. Output shape: dict[date_str] -> float."""
@@ -436,7 +434,6 @@ def fetch_historical_actual(loc, start_date, end_date):
         result = _fetch_historical_actual_noaa_range(loc["station"], unit, start_date, end_date, cache)
     _save_actuals_cache(cache)
     return result
-
 
 def backfill_calibration(locations, lookback_days=180, horizon_days=(0, 1, 2, 3)):
     cal = load_calibration()
@@ -524,16 +521,13 @@ def backfill_calibration(locations, lookback_days=180, horizon_days=(0, 1, 2, 3)
     save_calibration(cal)
     return cal
 
-
 def load_calibration():
     if CALIBRATION_FILE.exists():
         return json.loads(CALIBRATION_FILE.read_text(encoding="utf-8"))
     return {}
 
-
 def save_calibration(cal):
     CALIBRATION_FILE.write_text(json.dumps(cal, indent=2, ensure_ascii=False), encoding="utf-8")
-
 
 def update_calibration_from_live(markets, locations):
     cal = load_calibration()
@@ -542,15 +536,23 @@ def update_calibration_from_live(markets, locations):
         if m.get("status") in ("resolved", "resolved_no_signal")
         and m.get("actual_temp") is not None
     ]
+    print(f"[CAL-DEBUG] کل بازارها: {len(markets)} | resolve‌شدهٔ دارای actual_temp: {len(resolved)}")
+
+    updated_keys = []
+
     for city_slug in locations:
         unit = locations[city_slug]["unit"]
         for h in range(4):
             group = [m for m in resolved if m["city"] == city_slug and m.get("horizon_days") == h]
-            if len(group) < 15:
+            passed = len(group) >= 15
+            print(f"[CAL-DEBUG] {city_slug}_D{h}: group_size={len(group)} | آستانهٔ ۱۵ رد شد={passed}")
+            if not passed:
                 continue
+
             abs_errors = [abs(m["forecast_mean"] - m["actual_temp"]) for m in group if m.get("forecast_mean") is not None]
             signed_errors = [m["actual_temp"] - m["forecast_mean"] for m in group if m.get("forecast_mean") is not None]
             if not abs_errors:
+                print(f"[CAL-DEBUG] {city_slug}_D{h}: group>=15 بود ولی هیچ رکوردی forecast_mean معتبر نداشت -- رد شد")
                 continue
 
             live_mae = sum(abs_errors) / len(abs_errors)
@@ -575,9 +577,18 @@ def update_calibration_from_live(markets, locations):
                 "live_mae": round(live_mae, 3), "live_bias_raw": round(live_bias_raw, 3),
                 "source": "blended", "updated_at": datetime.now(timezone.utc).isoformat(),
             }
-    save_calibration(cal)
-    return cal
+            updated_keys.append(key)
+            print(f"[CAL-DEBUG] {key}: نوشته شد -- n_live={n_live}, sigma={new_sigma}, bias={new_bias}, w_live={round(w_live,3)}")
 
+    print(f"[CAL-DEBUG] تعداد کلیدهایی که این‌بار به‌روزرسانی شدن: {len(updated_keys)} -> {updated_keys}")
+
+    try:
+        save_calibration(cal)
+        print(f"[CAL-DEBUG] save_calibration() با موفقیت روی {CALIBRATION_FILE} نوشت.")
+    except Exception as e:
+        print(f"[CAL-DEBUG] هشدار جدی: save_calibration() شکست خورد: {e}")
+
+    return cal
 
 def get_sigma(city_slug, horizon_days, unit):
     cal = load_calibration()
@@ -586,7 +597,6 @@ def get_sigma(city_slug, horizon_days, unit):
     if key in cal:
         return cal[key]["sigma"]
     return DEFAULT_SIGMA_F if unit == "F" else DEFAULT_SIGMA_C
-
 
 def get_bias(city_slug, horizon_days, unit):
     cal = load_calibration()
@@ -597,7 +607,6 @@ def get_bias(city_slug, horizon_days, unit):
         cap = _bias_cap(unit, city_slug, observed_raw_bias=raw)
         return max(-cap, min(cap, cal[key].get("bias", 0.0)))
     return DEFAULT_BIAS_F if unit == "F" else DEFAULT_BIAS_C
-
 
 # =============================================================================
 # PROBABILITY DISTRIBUTION FROM ENSEMBLE + CALIBRATED SIGMA/BIAS -- unchanged
@@ -621,7 +630,6 @@ def build_calibrated_distribution(members, city_slug, horizon_days, unit):
     final_sigma = max(raw_sigma, calibrated_sigma)
     return round(corrected_mean, 2), round(final_sigma, 3)
 
-
 def bucket_probability(mean, sigma, t_low, t_high):
     if mean is None:
         return 0.0
@@ -634,7 +642,6 @@ def bucket_probability(mean, sigma, t_low, t_high):
     hi = t_high + 0.5 if t_low == t_high else t_high
     return student_t_cdf((hi - mean) / s) - student_t_cdf((lo - mean) / s)
 
-
 def full_bucket_distribution(mean, sigma, outcomes):
     raw = []
     for o in outcomes:
@@ -646,10 +653,8 @@ def full_bucket_distribution(mean, sigma, outcomes):
         dist.append({**o, "model_prob": round(p / total, 4)})
     return dist
 
-
 def distribution_sum(dist):
     return round(sum(d.get("model_prob", 0.0) for d in dist), 4)
-
 
 def scenario_grid(mean, sigma, n_sigma=4.0, step=0.5):
     if mean is None:
