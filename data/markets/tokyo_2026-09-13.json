@@ -1,0 +1,320 @@
+{
+  "city": "tokyo",
+  "city_name": "Tokyo",
+  "date": "2026-09-13",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-12T02:20:38.571271+00:00",
+  "committed_allocation": null,
+  "hours_left": 36.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-13T15:00:00+00:00",
+  "event_end_date": "2026-09-13T12:00:00Z",
+  "last_scan": "2026-09-12T02:20:38.571271+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 26.97,
+  "sigma": 1.297,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Tokyo be 21°C or below on September 13?",
+      "market_id": "4461711",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 1353.0,
+      "spread": 0.0,
+      "yes_token_id": "68359666936241564850780940335388595788334435659122205692959638049139343002423",
+      "no_token_id": "21356368091674229473210287455435817177891014120763214446080317396121316912763",
+      "model_prob": 0.0042,
+      "side": "YES",
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.0031,
+      "ev": 2.1,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 22°C on September 13?",
+      "market_id": "4461712",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 173.0,
+      "spread": 0.0,
+      "yes_token_id": "16256241036958440696955109616852707949566833662562243951685643779785412998565",
+      "no_token_id": "94844739811225455110478516347859962321097590753231503848763801512030973543861",
+      "model_prob": 0.005,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0038,
+      "ev": 1.5333,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 23°C on September 13?",
+      "market_id": "4461713",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 279.0,
+      "spread": 0.0,
+      "yes_token_id": "59615116758422316851023529284833784391832472077799141620092406960687155598005",
+      "no_token_id": "109824042091203490876504598420146082500720857858216715040064405114944873121766",
+      "model_prob": 0.0129,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0119,
+      "ev": 0.19,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 24°C on September 13?",
+      "market_id": "4461714",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 68.0,
+      "spread": 0.0,
+      "yes_token_id": "24766512242151437321493557308383036028551727550713571449970225701894068538162",
+      "no_token_id": "98189386886675726209368585630267906037253113495061940663924014430779848775981",
+      "model_prob": 0.0356,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0354,
+      "ev": 0.0114,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 25°C on September 13?",
+      "market_id": "4461715",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 275.0,
+      "spread": 0.0,
+      "yes_token_id": "49131099184702448845379832152742003319269469294856366721784883915693294690604",
+      "no_token_id": "10213561915047499713637216264600788498096703155172741717781157381689206111574",
+      "model_prob": 0.0966,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.096,
+      "ev": 0.0105,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 26°C on September 13?",
+      "market_id": "4461716",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 476.0,
+      "spread": 0.0,
+      "yes_token_id": "23269550948941044321322725270680533917402141845509584205774504605296922400401",
+      "no_token_id": "37810225152904095065901360251071489600469484025869584669691012727309726943981",
+      "model_prob": 0.2117,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.2199,
+      "ev": -0.0643,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 27°C on September 13?",
+      "market_id": "4461717",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.415,
+      "no_price": 0.585,
+      "volume": 1358.0,
+      "spread": 0.0,
+      "yes_token_id": "113186102149648538412787044021114381782510083187311764255037864743371324047375",
+      "no_token_id": "91212945455653015828567478330097905817225084153328696098154219594492255328498",
+      "model_prob": 0.2842,
+      "side": "YES",
+      "ask": 0.415,
+      "market_prob": 0.415,
+      "belief_prob": 0.33,
+      "ev": -0.2048,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 28°C on September 13?",
+      "market_id": "4461718",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.155,
+      "no_price": 0.845,
+      "volume": 1152.0,
+      "spread": 0.0,
+      "yes_token_id": "75573611651491321916584954452356100152843393955307836570059727051864403390330",
+      "no_token_id": "7505208404440911205172955150734057883642319807536667146036265088329500154107",
+      "model_prob": 0.2043,
+      "side": "YES",
+      "ask": 0.155,
+      "market_prob": 0.155,
+      "belief_prob": 0.187,
+      "ev": 0.2065,
+      "kelly": 0.0095,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 29°C on September 13?",
+      "market_id": "4461719",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 77.0,
+      "spread": 0.0,
+      "yes_token_id": "60641242743111519610625514807134494721384022229610096073063493901375673631924",
+      "no_token_id": "76329831497182200087341576784363403772070391839866849703584348127739300732421",
+      "model_prob": 0.0913,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0786,
+      "ev": 0.4291,
+      "kelly": 0.0062,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 30°C on September 13?",
+      "market_id": "4461720",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 86.0,
+      "spread": 0.0,
+      "yes_token_id": "105551744930596073247554402748453032443644663890791863025110093394546176208618",
+      "no_token_id": "102950984637304828973391754139858028989885807680338890965930062159181506305578",
+      "model_prob": 0.0334,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0287,
+      "ev": 0.435,
+      "kelly": 0.0022,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 31°C or higher on September 13?",
+      "market_id": "4461721",
+      "range": [
+        31.0,
+        999.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 157.0,
+      "spread": 0.0,
+      "yes_token_id": "76641109597644006820232227309332731033882274896562055395251909721433174395339",
+      "no_token_id": "44497452660108899727284295993933502759442371105147375952471965643223162379261",
+      "model_prob": 0.0208,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0188,
+      "ev": 0.2533,
+      "kelly": 0.001,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4461717",
+      "question": "Will the highest temperature in Tokyo be 27°C on September 13?",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "YES",
+      "price": 0.415,
+      "model_prob": 0.2842,
+      "ev": -0.2048,
+      "market_prob": 0.415,
+      "role": "main_signal",
+      "units": 25.6,
+      "sell_value": 0.41
+    },
+    {
+      "market_id": "4461717",
+      "question": "Will the highest temperature in Tokyo be 27°C on September 13? (NO)",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "NO",
+      "price": 0.585,
+      "model_prob": 0.7158,
+      "ev": 0.1453,
+      "market_prob": 0.585,
+      "role": "scenario_hedge",
+      "units": 21.99,
+      "sell_value": 0.58
+    },
+    {
+      "market_id": "4461711",
+      "question": "Will the highest temperature in Tokyo be 21°C or below on September 13? (NO)",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.999,
+      "model_prob": 0.9958,
+      "ev": -0.0021,
+      "market_prob": 0.999,
+      "role": "scenario_hedge",
+      "units": 0.26,
+      "sell_value": 0.998
+    }
+  ],
+  "total_allocated_units": 47.9,
+  "portfolio_score": -0.023957,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 14.1,
+  "worst_case_pnl_units": -10.26,
+  "success_probability": 0.3431,
+  "confidence": 0.0005,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
