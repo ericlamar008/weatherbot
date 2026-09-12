@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-11T02:20:41.700025+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 6.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-13T04:00:00+00:00",
   "event_end_date": "2026-09-12T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 8.4,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0055,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 5.6,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0037,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 17.8,
       "kelly": 0.0022,
       "sell_value": null,
-      "model_prob_change": -0.01,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 58.8,
       "kelly": 0.0074,
       "sell_value": null,
-      "model_prob_change": -0.0254,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 183.2,
       "kelly": 0.0229,
       "sell_value": null,
-      "model_prob_change": -0.0411,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 389.4,
       "kelly": 0.0487,
       "sell_value": null,
-      "model_prob_change": 0.0036,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 374.2,
       "kelly": 0.0468,
       "sell_value": null,
-      "model_prob_change": 0.0534,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -190,22 +190,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.998,
-      "no_price": 0.005,
-      "volume": 7774.0,
+      "yes_price": 0.9985,
+      "no_price": 0.0015,
+      "volume": 8063.0,
       "spread": 0.0,
       "yes_token_id": "21072622717083219498644011237967949184301122329124372437098887737914892765971",
       "no_token_id": "77252745189609008058505848747423375074395696256640785827462805868355209528697",
       "model_prob": 0.1289,
       "side": "YES",
-      "ask": 0.995,
-      "market_prob": 0.995,
-      "belief_prob": 0.4331,
-      "ev": -0.5658,
+      "ask": 0.9985,
+      "market_prob": 0.9985,
+      "belief_prob": 0.4333,
+      "ev": -0.566,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.025,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on September 12?",
@@ -215,20 +215,20 @@
         95.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.994,
-      "volume": 4268.0,
+      "no_price": 0.9985,
+      "volume": 4425.0,
       "spread": 0.0,
       "yes_token_id": "9812039920273156292836590086264440671674646707564570612663281797410798959553",
       "no_token_id": "98245236113001594924939860717618641097973456540318046142019086107803830471634",
       "model_prob": 0.041,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0272,
-      "ev": 3.8,
-      "kelly": 0.0057,
+      "ev": 17.1333,
+      "kelly": 0.0064,
       "sell_value": null,
-      "model_prob_change": 0.0049,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -238,22 +238,22 @@
         96.0,
         97.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.997,
+      "yes_price": 0.002,
+      "no_price": 0.998,
       "volume": 1783.0,
       "spread": 0.0,
       "yes_token_id": "105326162043191692592883756379565983124401450011232386897150405702938955910441",
       "no_token_id": "69379240195959568075559241910898270226061297001816062764256944256870332509465",
       "model_prob": 0.0128,
       "side": "YES",
-      "ask": 0.003,
-      "market_prob": 0.003,
-      "belief_prob": 0.0092,
-      "ev": 2.1333,
-      "kelly": 0.0016,
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.009,
+      "ev": 3.5,
+      "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": 0.0004,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Miami be 98°F or higher on September 12?",
@@ -276,7 +276,7 @@
       "ev": 19.6,
       "kelly": 0.0025,
       "sell_value": null,
-      "model_prob_change": -0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -324,5 +324,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-12T21:37:27.039933+00:00",
-  "last_lite_refresh": "2026-09-12T20:20:41.163514+00:00"
+  "last_lite_refresh": "2026-09-12T21:45:16.444674+00:00"
 }

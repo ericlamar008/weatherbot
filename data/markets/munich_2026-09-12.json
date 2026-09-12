@@ -3,10 +3,10 @@
   "city_name": "Munich",
   "date": "2026-09-12",
   "unit": "C",
-  "status": "open",
+  "status": "resolved_no_signal",
   "created_at": "2026-09-11T02:20:41.700025+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
+  "hours_left": 0.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-12T22:00:00+00:00",
   "event_end_date": "2026-09-12T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 5.6,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0066,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 50.0,
       "kelly": 0.0063,
       "sell_value": null,
-      "model_prob_change": -0.0147,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 506.6,
       "kelly": 0.0634,
       "sell_value": null,
-      "model_prob_change": 0.0932,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 646.2,
       "kelly": 0.0808,
       "sell_value": null,
-      "model_prob_change": 0.0278,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": -0.6099,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0793,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 6.8,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": -0.016,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 0.6,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0031,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -204,7 +204,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -228,7 +228,7 @@
       "ev": -0.6,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -252,7 +252,7 @@
       "ev": -0.6,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": -0.6,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +291,8 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-12T21:37:27.039933+00:00",
-  "last_lite_refresh": "2026-09-12T20:20:41.163514+00:00"
+  "last_lite_refresh": "2026-09-12T21:45:16.444674+00:00",
+  "actual_temp": 23.0,
+  "pnl_units": null,
+  "my_pnl_units": null
 }

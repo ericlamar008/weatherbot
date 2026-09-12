@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-11T02:20:41.700025+00:00",
   "committed_allocation": null,
-  "hours_left": 8.7,
+  "hours_left": 7.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-13T05:00:00+00:00",
   "event_end_date": "2026-09-12T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 8.8,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 4.2,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 10.6,
       "kelly": 0.0013,
       "sell_value": null,
-      "model_prob_change": -0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 28.0,
       "kelly": 0.0035,
       "sell_value": null,
-      "model_prob_change": -0.0022,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 74.0,
       "kelly": 0.0093,
       "sell_value": null,
-      "model_prob_change": -0.0046,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 176.6,
       "kelly": 0.0221,
       "sell_value": null,
-      "model_prob_change": -0.007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 308.0,
       "kelly": 0.0385,
       "sell_value": null,
-      "model_prob_change": -0.0022,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -192,7 +192,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 6681.0,
+      "volume": 7158.0,
       "spread": 0.0,
       "yes_token_id": "88410230808780780093631034961839773617279211571246421026468269600560250902673",
       "no_token_id": "111583858816688097952385414340554400621187376071562742396842251592957644445971",
@@ -204,7 +204,7 @@
       "ev": 313.6,
       "kelly": 0.0392,
       "sell_value": null,
-      "model_prob_change": 0.0069,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -215,21 +215,21 @@
         97.0
       ],
       "yes_price": 0.9775,
-      "no_price": 0.13,
-      "volume": 9398.0,
+      "no_price": 0.0225,
+      "volume": 10344.0,
       "spread": 0.0,
       "yes_token_id": "108278410848412800067782341084482862431497902317114801860277851852742778146901",
       "no_token_id": "10168013124197048567161815689972095452686071121962626309146669073344001824553",
       "model_prob": 0.1426,
       "side": "YES",
-      "ask": 0.87,
-      "market_prob": 0.87,
+      "ask": 0.9775,
+      "market_prob": 0.9775,
       "belief_prob": 0.4348,
-      "ev": -0.5434,
+      "ev": -0.5552,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0064,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 98-99°F on September 12?",
@@ -239,20 +239,20 @@
         99.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.891,
-      "volume": 5203.0,
+      "no_price": 0.9955,
+      "volume": 5776.0,
       "spread": 0.0,
       "yes_token_id": "2349798211680974675756798278692696863722218713240151960021359106535874010705",
       "no_token_id": "76476293749879037860787396571141167901823866385023587152125877812036990219866",
       "model_prob": 0.0607,
       "side": "YES",
-      "ask": 0.109,
-      "market_prob": 0.109,
+      "ask": 0.0045,
+      "market_prob": 0.0045,
       "belief_prob": 0.041,
-      "ev": -0.2881,
-      "kelly": 0.0,
+      "ev": 8.1111,
+      "kelly": 0.0092,
       "sell_value": null,
-      "model_prob_change": 0.0026,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -263,21 +263,21 @@
         999.0
       ],
       "yes_price": 0.0035,
-      "no_price": 0.99,
-      "volume": 1194.0,
+      "no_price": 0.9965,
+      "volume": 1451.0,
       "spread": 0.0,
       "yes_token_id": "104455252565952348799496838626027422473750669394733043754941883115318074413030",
       "no_token_id": "6165662154399208310935789600108744967606073104528462935788923008127743424913",
       "model_prob": 0.0823,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
+      "ask": 0.0035,
+      "market_prob": 0.0035,
       "belief_prob": 0.0547,
-      "ev": 4.7,
-      "kelly": 0.0119,
+      "ev": 14.6286,
+      "kelly": 0.0128,
       "sell_value": null,
-      "model_prob_change": 0.002,
-      "yes_price_change": -0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-12T21:37:27.039933+00:00",
-  "last_lite_refresh": "2026-09-12T20:20:41.163514+00:00"
+  "last_lite_refresh": "2026-09-12T21:45:16.444674+00:00"
 }
