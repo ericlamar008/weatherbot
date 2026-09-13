@@ -1,0 +1,238 @@
+{
+  "city": "paris",
+  "city_name": "Paris",
+  "date": "2026-08-03",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-03T00:56:11.384194+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-03T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 0,
+  "forecast_mean": 34.58,
+  "sigma": 1.134,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Paris be 32°C or below on August 3?",
+      "market_id": "3254122",
+      "range": [
+        -999.0,
+        32.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 7155.0,
+      "spread": 0.0,
+      "model_prob": 0.063,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0415,
+      "ev": 26.6667,
+      "kelly": 0.01
+    },
+    {
+      "question": "Will the highest temperature in Paris be 33°C on August 3?",
+      "market_id": "3254123",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 6330.0,
+      "spread": 0.0,
+      "model_prob": 0.1293,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0861,
+      "ev": 13.35,
+      "kelly": 0.0201
+    },
+    {
+      "question": "Will the highest temperature in Paris be 34°C on August 3?",
+      "market_id": "3254124",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 13204.0,
+      "spread": 0.0,
+      "model_prob": 0.2809,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.1913,
+      "ev": 6.652,
+      "kelly": 0.0426
+    },
+    {
+      "question": "Will the highest temperature in Paris be 35°C on August 3?",
+      "market_id": "3254125",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.08,
+      "no_price": 0.92,
+      "volume": 12689.0,
+      "spread": 0.0,
+      "model_prob": 0.2997,
+      "side": "YES",
+      "ask": 0.08,
+      "market_prob": 0.08,
+      "belief_prob": 0.2228,
+      "ev": 1.785,
+      "kelly": 0.0388
+    },
+    {
+      "question": "Will the highest temperature in Paris be 36°C on August 3?",
+      "market_id": "3254126",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 14484.0,
+      "spread": 0.0,
+      "model_prob": 0.1514,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.1999,
+      "ev": -0.3107,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Paris be 37°C on August 3?",
+      "market_id": "3254127",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.505,
+      "no_price": 0.495,
+      "volume": 19022.0,
+      "spread": 0.0,
+      "model_prob": 0.0507,
+      "side": "YES",
+      "ask": 0.505,
+      "market_prob": 0.505,
+      "belief_prob": 0.2097,
+      "ev": -0.5848,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Paris be 38°C on August 3?",
+      "market_id": "3254128",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 19850.0,
+      "spread": 0.0,
+      "model_prob": 0.0158,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0295,
+      "ev": -0.4636,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Paris be 39°C on August 3?",
+      "market_id": "3254129",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 7190.0,
+      "spread": 0.0,
+      "model_prob": 0.0053,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0043,
+      "ev": 0.72,
+      "kelly": 0.0005
+    },
+    {
+      "question": "Will the highest temperature in Paris be 40°C on August 3?",
+      "market_id": "3254130",
+      "range": [
+        40.0,
+        40.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1731.0,
+      "spread": 0.0,
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003
+    },
+    {
+      "question": "Will the highest temperature in Paris be 41°C on August 3?",
+      "market_id": "3254131",
+      "range": [
+        41.0,
+        41.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 348.0,
+      "spread": 0.0,
+      "model_prob": 0.0008,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0007,
+      "ev": 0.4,
+      "kelly": 0.0001
+    },
+    {
+      "question": "Will the highest temperature in Paris be 42°C or higher on August 3?",
+      "market_id": "3254132",
+      "range": [
+        42.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 499.0,
+      "spread": 0.0,
+      "model_prob": 0.0009,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0008,
+      "ev": 0.6,
+      "kelly": 0.0001
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.126082,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 201.12,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.7062,
+  "confidence": 0.4534,
+  "balance_units": 100,
+  "actual_temp": 36.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

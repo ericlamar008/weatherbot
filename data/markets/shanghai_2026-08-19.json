@@ -1,0 +1,238 @@
+{
+  "city": "shanghai",
+  "city_name": "Shanghai",
+  "date": "2026-08-19",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-17T20:15:00.077446+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-19T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 29.92,
+  "sigma": 0.886,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Shanghai be 25°C or below on August 19?",
+      "market_id": "3655321",
+      "range": [
+        -999.0,
+        25.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 221.0,
+      "spread": 0.0,
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 26°C on August 19?",
+      "market_id": "3655322",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 142.0,
+      "spread": 0.0,
+      "model_prob": 0.0039,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0027,
+      "ev": 4.4,
+      "kelly": 0.0006
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 27°C on August 19?",
+      "market_id": "3655323",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 473.0,
+      "spread": 0.0,
+      "model_prob": 0.0147,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0097,
+      "ev": 18.4,
+      "kelly": 0.0023
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 28°C on August 19?",
+      "market_id": "3655324",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3236.0,
+      "spread": 0.0,
+      "model_prob": 0.0643,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.042,
+      "ev": 83.0,
+      "kelly": 0.0104
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 29°C on August 19?",
+      "market_id": "3655325",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 2888.0,
+      "spread": 0.0,
+      "model_prob": 0.2428,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.1601,
+      "ev": 23.6308,
+      "kelly": 0.0387
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 30°C on August 19?",
+      "market_id": "3655326",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 6954.0,
+      "spread": 0.0,
+      "model_prob": 0.4015,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.2977,
+      "ev": 1.8352,
+      "kelly": 0.0538
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 31°C on August 19?",
+      "market_id": "3655327",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.56,
+      "no_price": 0.44,
+      "volume": 5347.0,
+      "spread": 0.0,
+      "model_prob": 0.2035,
+      "side": "YES",
+      "ask": 0.56,
+      "market_prob": 0.56,
+      "belief_prob": 0.3283,
+      "ev": -0.4138,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 32°C on August 19?",
+      "market_id": "3655328",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.295,
+      "no_price": 0.705,
+      "volume": 4399.0,
+      "spread": 0.0,
+      "model_prob": 0.0506,
+      "side": "YES",
+      "ask": 0.295,
+      "market_prob": 0.295,
+      "belief_prob": 0.1361,
+      "ev": -0.5386,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 33°C on August 19?",
+      "market_id": "3655329",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.08,
+      "no_price": 0.92,
+      "volume": 3725.0,
+      "spread": 0.0,
+      "model_prob": 0.0117,
+      "side": "YES",
+      "ask": 0.08,
+      "market_prob": 0.08,
+      "belief_prob": 0.0356,
+      "ev": -0.555,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 34°C on August 19?",
+      "market_id": "3655330",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4754.0,
+      "spread": 0.0,
+      "model_prob": 0.0032,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.004,
+      "ev": -0.2727,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 35°C or higher on August 19?",
+      "market_id": "3655331",
+      "range": [
+        35.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1273.0,
+      "spread": 0.0,
+      "model_prob": 0.0018,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0013,
+      "ev": 1.6,
+      "kelly": 0.0002
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.278545,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 771.87,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.6464,
+  "confidence": 0.4161,
+  "balance_units": 100,
+  "actual_temp": 31.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

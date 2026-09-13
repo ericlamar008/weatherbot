@@ -1,0 +1,238 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-08-19",
+  "unit": "F",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-18T19:57:02.972862+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-19T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 95.51,
+  "sigma": 2.052,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be 87°F or below on August 19?",
+      "market_id": "3687116",
+      "range": [
+        -999.0,
+        87.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 35.0,
+      "spread": 0.0,
+      "model_prob": 0.0113,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0075,
+      "ev": 14.0,
+      "kelly": 0.0018
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on August 19?",
+      "market_id": "3687117",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 352.0,
+      "spread": 0.0,
+      "model_prob": 0.0101,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0067,
+      "ev": 12.4,
+      "kelly": 0.0016
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 19?",
+      "market_id": "3687118",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 3477.0,
+      "spread": 0.0,
+      "model_prob": 0.0355,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0245,
+      "ev": 5.125,
+      "kelly": 0.0051
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 19?",
+      "market_id": "3687119",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 1080.0,
+      "spread": 0.0,
+      "model_prob": 0.1269,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0912,
+      "ev": 2.648,
+      "kelly": 0.017
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 94-95°F on August 19?",
+      "market_id": "3687120",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 2891.0,
+      "spread": 0.0,
+      "model_prob": 0.3162,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.2808,
+      "ev": 0.306,
+      "kelly": 0.021
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 96-97°F on August 19?",
+      "market_id": "3687121",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.585,
+      "no_price": 0.415,
+      "volume": 4285.0,
+      "spread": 0.0,
+      "model_prob": 0.3178,
+      "side": "YES",
+      "ask": 0.585,
+      "market_prob": 0.585,
+      "belief_prob": 0.4113,
+      "ev": -0.2969,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 98-99°F on August 19?",
+      "market_id": "3687122",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "yes_price": 0.18,
+      "no_price": 0.82,
+      "volume": 2029.0,
+      "spread": 0.0,
+      "model_prob": 0.1284,
+      "side": "YES",
+      "ask": 0.18,
+      "market_prob": 0.18,
+      "belief_prob": 0.1465,
+      "ev": -0.1861,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 100-101°F on August 19?",
+      "market_id": "3687123",
+      "range": [
+        100.0,
+        101.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 1950.0,
+      "spread": 0.0,
+      "model_prob": 0.0359,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0321,
+      "ev": 0.284,
+      "kelly": 0.0018
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 102-103°F on August 19?",
+      "market_id": "3687124",
+      "range": [
+        102.0,
+        103.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 150.0,
+      "spread": 0.0,
+      "model_prob": 0.0102,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0068,
+      "ev": 12.6,
+      "kelly": 0.0016
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 104-105°F on August 19?",
+      "market_id": "3687125",
+      "range": [
+        104.0,
+        105.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 312.0,
+      "spread": 0.0,
+      "model_prob": 0.0033,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0023,
+      "ev": 3.6,
+      "kelly": 0.0005
+    },
+    {
+      "question": "Will the highest temperature in Miami be 106°F or higher on August 19?",
+      "market_id": "3687126",
+      "range": [
+        106.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 150.0,
+      "spread": 0.0,
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0032,
+      "ev": 5.4,
+      "kelly": 0.0007
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.041156,
+  "worst_case_loss_frac": 0.0554,
+  "best_case_pnl_units": 12.3,
+  "worst_case_pnl_units": -5.54,
+  "success_probability": 0.6381,
+  "confidence": 0.765,
+  "balance_units": 100,
+  "actual_temp": 94.5,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

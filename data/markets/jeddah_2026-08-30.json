@@ -1,0 +1,353 @@
+{
+  "city": "jeddah",
+  "city_name": "Jeddah",
+  "date": "2026-08-30",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-30T18:26:13.771388+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-30T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 38.65,
+  "sigma": 1.377,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Jeddah be 30°C or below on August 30?",
+      "market_id": "3945754",
+      "range": [
+        -999.0,
+        30.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 276.0,
+      "spread": 0.0,
+      "yes_token_id": "26922581803244444190099472333328988455910101425018711369079578187245966039074",
+      "no_token_id": "14370464579176305517933571464464284433233914489205725465758636500818509387564",
+      "model_prob": 0.001,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0008,
+      "ev": 0.6,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 31°C on August 30?",
+      "market_id": "3945755",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 274.0,
+      "spread": 0.0,
+      "yes_token_id": "80577043626484316611600570986395464995504245238427146852576151593869767839160",
+      "no_token_id": "23204394262775208654662144452476745175801721763997662555990139270609767795230",
+      "model_prob": 0.0008,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0007,
+      "ev": 0.4,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 32°C on August 30?",
+      "market_id": "3945756",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 276.0,
+      "spread": 0.0,
+      "yes_token_id": "475869145712165703660706383089810356479351214826492547549980236688928397710",
+      "no_token_id": "35525757911898294631953468213461838591175273087855508599095173906946995620498",
+      "model_prob": 0.0016,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0012,
+      "ev": 1.4,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 33°C on August 30?",
+      "market_id": "3945757",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 276.0,
+      "spread": 0.0,
+      "yes_token_id": "109607866077189545835148726255231166947008974907179600109093998574105135126651",
+      "no_token_id": "102599127237387349349279462708136385889125442375633726789396240169323231836184",
+      "model_prob": 0.0034,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0024,
+      "ev": 3.8,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 34°C on August 30?",
+      "market_id": "3945758",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 321.0,
+      "spread": 0.0,
+      "yes_token_id": "54040773783138923290732189885244545388691308379781878045889425006857493002901",
+      "no_token_id": "18470499180458453603785355049463071701075563337299600663709110850139703383702",
+      "model_prob": 0.0081,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0054,
+      "ev": 9.8,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 35°C on August 30?",
+      "market_id": "3945759",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 490.0,
+      "spread": 0.0,
+      "yes_token_id": "79679202530647268850165251336342727512696810649393827259156465734040631312564",
+      "no_token_id": "103996115762169412997445152817316982903318749477652377286486796156998469478022",
+      "model_prob": 0.0206,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0136,
+      "ev": 26.2,
+      "kelly": 0.0033,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 36°C on August 30?",
+      "market_id": "3945760",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1864.0,
+      "spread": 0.0,
+      "yes_token_id": "25320110288850795153099371617160707330174927022714490879415550119313868419227",
+      "no_token_id": "41225386125948348312165218790544616712726949562811622566701257442610170731536",
+      "model_prob": 0.0542,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0354,
+      "ev": 69.8,
+      "kelly": 0.0087,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 37°C on August 30?",
+      "market_id": "3945761",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 4313.0,
+      "spread": 0.0,
+      "yes_token_id": "45927527229830023149364966841294891149481000826990976178235248781275802627937",
+      "no_token_id": "33431460228792827628127630002986082303877234163857075886926965439097296497973",
+      "model_prob": 0.1313,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0855,
+      "ev": 170.0,
+      "kelly": 0.0213,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 38°C on August 30?",
+      "market_id": "3945762",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.9995,
+      "no_price": 0.0005,
+      "volume": 6802.0,
+      "spread": 0.0,
+      "yes_token_id": "59721385925442084363060755351102403736739467074565637751731181921929497556720",
+      "no_token_id": "99673436802545147453052851277306500935794072860675099502953138009584744147379",
+      "model_prob": 0.2379,
+      "side": "YES",
+      "ask": 0.9995,
+      "market_prob": 0.9995,
+      "belief_prob": 0.5045,
+      "ev": -0.4952,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 39°C on August 30?",
+      "market_id": "3945763",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3754.0,
+      "spread": 0.0,
+      "yes_token_id": "45054435875114714694519728463115334315081967508252930897176341822533122811986",
+      "no_token_id": "99969879594599598746459344744373278882129749005088565656074304269090617334640",
+      "model_prob": 0.2592,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1687,
+      "ev": 336.4,
+      "kelly": 0.0421,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 40°C or higher on August 30?",
+      "market_id": "3945764",
+      "range": [
+        40.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7726.0,
+      "spread": 0.0,
+      "yes_token_id": "45833586342311707041683130018108745888796385104567181847086812804174202898113",
+      "no_token_id": "58931486383136687466330830828428655378777296027013101008085680076054783125785",
+      "model_prob": 0.282,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1835,
+      "ev": 366.0,
+      "kelly": 0.0458,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3945762",
+      "question": "Will the highest temperature in Jeddah be 38°C on August 30?",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.2379,
+      "ev": -0.4952,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945762",
+      "question": "Will the highest temperature in Jeddah be 38°C on August 30? (NO)",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "NO",
+      "price": 0.0005,
+      "model_prob": 0.7621,
+      "ev": 990.0,
+      "market_prob": 0.0005,
+      "role": "scenario_hedge",
+      "units": 0.01,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.01,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.0,
+  "portfolio_score": -0.040841,
+  "worst_case_loss_frac": 0.1001,
+  "best_case_pnl_units": 0.01,
+  "worst_case_pnl_units": -10.01,
+  "success_probability": 0.6125,
+  "confidence": 0.8329,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 38.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.01,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3945762",
+      "question": "Will the highest temperature in Jeddah be 38°C on August 30?",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.2379,
+      "ev": -0.4952,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945762",
+      "question": "Will the highest temperature in Jeddah be 38°C on August 30? (NO)",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "side": "NO",
+      "price": 0.0005,
+      "model_prob": 0.7621,
+      "ev": 990.0,
+      "market_prob": 0.0005,
+      "role": "scenario_hedge",
+      "units": 0.01,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.01,
+      "user_entered": false
+    }
+  ]
+}

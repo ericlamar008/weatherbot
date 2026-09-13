@@ -1,0 +1,391 @@
+{
+  "city": "milan",
+  "city_name": "Milan",
+  "date": "2026-08-27",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-26T19:18:37.072978+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-27T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 29.76,
+  "sigma": 1.006,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Milan be 24°C or below on August 27?",
+      "market_id": "3867661",
+      "range": [
+        -999.0,
+        24.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 843.0,
+      "spread": 0.0,
+      "yes_token_id": "89780404488962494111004881200705888792656111416680830140032376979817647066336",
+      "no_token_id": "86064590195054966169904977093987594507383012675978803872546389113689221618607",
+      "model_prob": 0.0017,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0018,
+      "ev": -0.1,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 25°C on August 27?",
+      "market_id": "3867662",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 361.0,
+      "spread": 0.0,
+      "yes_token_id": "96960620930233829140140585600728429387810652567555722101191911780079379467998",
+      "no_token_id": "30925376991370497591642296178918494612385746278847820409354310584832851885751",
+      "model_prob": 0.0024,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0017,
+      "ev": 2.4,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 26°C on August 27?",
+      "market_id": "3867663",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 440.0,
+      "spread": 0.0,
+      "yes_token_id": "45020681514897808985369593976981196111401023922371063649463000730144283841495",
+      "no_token_id": "26273706307235253253912566773911709785623401064740053283137139844670843244873",
+      "model_prob": 0.0074,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0057,
+      "ev": 1.28,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 27°C on August 27?",
+      "market_id": "3867664",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 690.0,
+      "spread": 0.0,
+      "yes_token_id": "26098738883305206733320072355881089204485482254757031743036252983330112738483",
+      "no_token_id": "96843784654836217635697376331709861470230084162144153965115187492505041025779",
+      "model_prob": 0.0258,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0182,
+      "ev": 3.55,
+      "kelly": 0.0036,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 28°C on August 27?",
+      "market_id": "3867665",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 725.0,
+      "spread": 0.0,
+      "yes_token_id": "73957345704627661726693596607022435218306924732932720555859520605539584051400",
+      "no_token_id": "24421880328486920221424018402414785774973497768181782588032861468643025934715",
+      "model_prob": 0.0956,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0691,
+      "ev": 2.455,
+      "kelly": 0.0125,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 29°C on August 27?",
+      "market_id": "3867666",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 929.0,
+      "spread": 0.0,
+      "yes_token_id": "94445003465672881040180435816556731724056901299590850163653791515596976952925",
+      "no_token_id": "59044917810629559925288890945913205390174533712973610322803179564716856006430",
+      "model_prob": 0.2703,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.2124,
+      "ev": 1.0229,
+      "kelly": 0.03,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 30°C on August 27?",
+      "market_id": "3867667",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.535,
+      "no_price": 0.465,
+      "volume": 9306.0,
+      "spread": 0.0,
+      "yes_token_id": "44694997261807923899829513125161039723633330687659874114792920213757000373346",
+      "no_token_id": "49806297328232141962799935591514871148053169151967785010601962916398621930144",
+      "model_prob": 0.3493,
+      "side": "YES",
+      "ask": 0.535,
+      "market_prob": 0.535,
+      "belief_prob": 0.4143,
+      "ev": -0.2256,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 31°C on August 27?",
+      "market_id": "3867668",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 2364.0,
+      "spread": 0.0,
+      "yes_token_id": "102217058238950690154370489535343079717216145086240881717970734839256066243908",
+      "no_token_id": "12202901840180122356078343076035171284129439865895567317354859329605990758925",
+      "model_prob": 0.1754,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.2313,
+      "ev": -0.3096,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 32°C on August 27?",
+      "market_id": "3867669",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 577.0,
+      "spread": 0.0,
+      "yes_token_id": "72943711072517136967067927456546834331501998719414580464989285233832266688665",
+      "no_token_id": "69032122490694077053082414956536795213524061832996356322892103880056552637854",
+      "model_prob": 0.0513,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0456,
+      "ev": 0.3029,
+      "kelly": 0.0027,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 33°C on August 27?",
+      "market_id": "3867670",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 154.0,
+      "spread": 0.0,
+      "yes_token_id": "33069324475323429019412008944163632580506059502903036299003095880153407983325",
+      "no_token_id": "71591741796749691237818066943122236336297837359036354575535235591977060936468",
+      "model_prob": 0.0139,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0125,
+      "ev": 0.25,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Milan be 34°C or higher on August 27?",
+      "market_id": "3867671",
+      "range": [
+        34.0,
+        999.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 373.0,
+      "spread": 0.0,
+      "yes_token_id": "55817876435454110363130272539664951688467881413299910685233377007496954757655",
+      "no_token_id": "16242149186932526253186206523296405749213222678041323968503867916449764478445",
+      "model_prob": 0.0069,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.005,
+      "ev": 2.3333,
+      "kelly": 0.0009,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3867667",
+      "question": "Will the highest temperature in Milan be 30°C on August 27?",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "YES",
+      "price": 0.535,
+      "model_prob": 0.3493,
+      "ev": -0.2256,
+      "market_prob": 0.535,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.53,
+      "won": true,
+      "pnl_units": 26.07,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867667",
+      "question": "Will the highest temperature in Milan be 30°C on August 27? (NO)",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "NO",
+      "price": 0.465,
+      "model_prob": 0.6507,
+      "ev": 0.2596,
+      "market_prob": 0.465,
+      "role": "scenario_hedge",
+      "units": 17.38,
+      "sell_value": 0.46,
+      "won": false,
+      "pnl_units": -17.38,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867661",
+      "question": "Will the highest temperature in Milan be 24°C or below on August 27? (NO)",
+      "range": [
+        -999.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.998,
+      "model_prob": 0.9983,
+      "ev": 0.0002,
+      "market_prob": 0.998,
+      "role": "scenario_hedge",
+      "units": 1.82,
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 49.2,
+  "portfolio_score": -0.023957,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 8.7,
+  "worst_case_pnl_units": -11.82,
+  "success_probability": 0.4313,
+  "confidence": 0.1941,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 30.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 8.7,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3867667",
+      "question": "Will the highest temperature in Milan be 30°C on August 27?",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "YES",
+      "price": 0.535,
+      "model_prob": 0.3493,
+      "ev": -0.2256,
+      "market_prob": 0.535,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.53,
+      "won": true,
+      "pnl_units": 26.07,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867667",
+      "question": "Will the highest temperature in Milan be 30°C on August 27? (NO)",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "NO",
+      "price": 0.465,
+      "model_prob": 0.6507,
+      "ev": 0.2596,
+      "market_prob": 0.465,
+      "role": "scenario_hedge",
+      "units": 17.38,
+      "sell_value": 0.46,
+      "won": false,
+      "pnl_units": -17.38,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867661",
+      "question": "Will the highest temperature in Milan be 24°C or below on August 27? (NO)",
+      "range": [
+        -999.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.998,
+      "model_prob": 0.9983,
+      "ev": 0.0002,
+      "market_prob": 0.998,
+      "role": "scenario_hedge",
+      "units": 1.82,
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
+}

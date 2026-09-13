@@ -1,0 +1,238 @@
+{
+  "city": "kuala-lumpur",
+  "city_name": "Kuala Lumpur",
+  "date": "2026-08-03",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-03T00:56:11.384194+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-03T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 0,
+  "forecast_mean": 31.8,
+  "sigma": 0.683,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 27°C or below on August 3?",
+      "market_id": "3254386",
+      "range": [
+        -999.0,
+        27.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 367.0,
+      "spread": 0.0,
+      "model_prob": 0.0007,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0006,
+      "ev": 0.2,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 28°C on August 3?",
+      "market_id": "3254387",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 499.0,
+      "spread": 0.0,
+      "model_prob": 0.0016,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0012,
+      "ev": 1.4,
+      "kelly": 0.0002
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 29°C on August 3?",
+      "market_id": "3254388",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 3121.0,
+      "spread": 0.0,
+      "model_prob": 0.0076,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0058,
+      "ev": 1.32,
+      "kelly": 0.0008
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 30°C on August 3?",
+      "market_id": "3254389",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 2651.0,
+      "spread": 0.0,
+      "model_prob": 0.0477,
+      "side": "YES",
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.0338,
+      "ev": 3.225,
+      "kelly": 0.0065
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 31°C on August 3?",
+      "market_id": "3254390",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 3495.0,
+      "spread": 0.0,
+      "model_prob": 0.2817,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.1936,
+      "ev": 5.4533,
+      "kelly": 0.0422
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 32°C on August 3?",
+      "market_id": "3254391",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 2352.0,
+      "spread": 0.0,
+      "model_prob": 0.4844,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.3481,
+      "ev": 2.6642,
+      "kelly": 0.0699
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 33°C on August 3?",
+      "market_id": "3254392",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 5897.0,
+      "spread": 0.0,
+      "model_prob": 0.1486,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.2541,
+      "ev": -0.4353,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 34°C on August 3?",
+      "market_id": "3254393",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.355,
+      "no_price": 0.645,
+      "volume": 5989.0,
+      "spread": 0.0,
+      "model_prob": 0.0222,
+      "side": "YES",
+      "ask": 0.355,
+      "market_prob": 0.355,
+      "belief_prob": 0.1387,
+      "ev": -0.6093,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 35°C on August 3?",
+      "market_id": "3254394",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.033,
+      "no_price": 0.967,
+      "volume": 7702.0,
+      "spread": 0.0,
+      "model_prob": 0.004,
+      "side": "YES",
+      "ask": 0.033,
+      "market_prob": 0.033,
+      "belief_prob": 0.0141,
+      "ev": -0.5727,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 36°C on August 3?",
+      "market_id": "3254395",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 2061.0,
+      "spread": 0.0,
+      "model_prob": 0.001,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.0029,
+      "ev": -0.5538,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Kuala Lumpur be 37°C or higher on August 3?",
+      "market_id": "3254396",
+      "range": [
+        37.0,
+        999.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 810.0,
+      "spread": 0.0,
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0009,
+      "ev": -0.4,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.113725,
+  "worst_case_loss_frac": 0.13,
+  "best_case_pnl_units": 69.99,
+  "worst_case_pnl_units": -13.0,
+  "success_probability": 0.3016,
+  "confidence": 0.5177,
+  "balance_units": 100,
+  "actual_temp": 34.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

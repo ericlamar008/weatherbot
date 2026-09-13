@@ -1,0 +1,238 @@
+{
+  "city": "jeddah",
+  "city_name": "Jeddah",
+  "date": "2026-08-05",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-03T22:05:01.720213+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-05T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 38.7,
+  "sigma": 1.742,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Jeddah be 30°C or below on August 5?",
+      "market_id": "3298923",
+      "range": [
+        -999.0,
+        30.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 527.0,
+      "spread": 0.0,
+      "model_prob": 0.0027,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0019,
+      "ev": 2.8,
+      "kelly": 0.0004
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 31°C on August 5?",
+      "market_id": "3298924",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 489.0,
+      "spread": 0.0,
+      "model_prob": 0.0019,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0014,
+      "ev": 1.8,
+      "kelly": 0.0002
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 32°C on August 5?",
+      "market_id": "3298925",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 333.0,
+      "spread": 0.0,
+      "model_prob": 0.0036,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0025,
+      "ev": 4.0,
+      "kelly": 0.0005
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 33°C on August 5?",
+      "market_id": "3298926",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 659.0,
+      "spread": 0.0,
+      "model_prob": 0.0072,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0049,
+      "ev": 8.8,
+      "kelly": 0.0011
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 34°C on August 5?",
+      "market_id": "3298927",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 1324.0,
+      "spread": 0.0,
+      "model_prob": 0.0151,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0105,
+      "ev": 4.25,
+      "kelly": 0.0021
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 35°C on August 5?",
+      "market_id": "3298928",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 781.0,
+      "spread": 0.0,
+      "model_prob": 0.0324,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0232,
+      "ev": 2.8667,
+      "kelly": 0.0043
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 36°C on August 5?",
+      "market_id": "3298929",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 519.0,
+      "spread": 0.0,
+      "model_prob": 0.0683,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0514,
+      "ev": 1.57,
+      "kelly": 0.008
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 37°C on August 5?",
+      "market_id": "3298930",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 658.0,
+      "spread": 0.0,
+      "model_prob": 0.1296,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.1017,
+      "ev": 1.034,
+      "kelly": 0.0136
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 38°C on August 5?",
+      "market_id": "3298931",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 1961.0,
+      "spread": 0.0,
+      "model_prob": 0.1958,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.2025,
+      "ev": -0.0581,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 39°C on August 5?",
+      "market_id": "3298932",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 642.0,
+      "spread": 0.0,
+      "model_prob": 0.2108,
+      "side": "YES",
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.2595,
+      "ev": -0.2586,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 40°C or higher on August 5?",
+      "market_id": "3298933",
+      "range": [
+        40.0,
+        999.0
+      ],
+      "yes_price": 0.38,
+      "no_price": 0.62,
+      "volume": 4432.0,
+      "spread": 0.0,
+      "model_prob": 0.3327,
+      "side": "YES",
+      "ask": 0.38,
+      "market_prob": 0.38,
+      "belief_prob": 0.3493,
+      "ev": -0.0808,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.017472,
+  "worst_case_loss_frac": 0.1089,
+  "best_case_pnl_units": 96.23,
+  "worst_case_pnl_units": -10.89,
+  "success_probability": 0.0891,
+  "confidence": 0.6315,
+  "balance_units": 100,
+  "actual_temp": 38.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

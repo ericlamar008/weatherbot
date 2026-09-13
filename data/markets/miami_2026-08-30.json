@@ -1,0 +1,353 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-08-30",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-08-30T18:26:13.771388+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-30T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 89.46,
+  "sigma": 1.961,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be 79°F or below on August 30?",
+      "market_id": "3952763",
+      "range": [
+        -999.0,
+        79.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 241.0,
+      "spread": 0.0,
+      "yes_token_id": "41673572054986835018423221401885012159020299646268645514548629062355592392030",
+      "no_token_id": "50773223562317660672782362885608305624637998321429243292227468037187622073295",
+      "model_prob": 0.0038,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0026,
+      "ev": 4.2,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 80-81°F on August 30?",
+      "market_id": "3952764",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 4695.0,
+      "spread": 0.0,
+      "yes_token_id": "2092578639286064278499925390735857609578392714804145034834025983770895918524",
+      "no_token_id": "476861154786430597797582919696277179633313461424320556918993209541812306189",
+      "model_prob": 0.0028,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.002,
+      "ev": 3.0,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 82-83°F on August 30?",
+      "market_id": "3952765",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 8739.0,
+      "spread": 0.0,
+      "yes_token_id": "42071415613991724705602302928346318483221131223817515459467140815496661525865",
+      "no_token_id": "22756054646020429717275669201525191360976701336884756161486476125763802079257",
+      "model_prob": 0.009,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.006,
+      "ev": 11.0,
+      "kelly": 0.0014,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 84-85°F on August 30?",
+      "market_id": "3952766",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 5758.0,
+      "spread": 0.0,
+      "yes_token_id": "46775099808550349082988294513950544223635976162390467056543897837070028877732",
+      "no_token_id": "88219093330080179348154959038166837438096834146052999570320375736385663039423",
+      "model_prob": 0.0331,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0217,
+      "ev": 42.4,
+      "kelly": 0.0053,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 86-87°F on August 30?",
+      "market_id": "3952767",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 11285.0,
+      "spread": 0.0,
+      "yes_token_id": "94993811987843804307398322259767288022865636826049188862105470991956649646357",
+      "no_token_id": "111449886524483362628986849063617269884897275986490860669341972708977122982653",
+      "model_prob": 0.1263,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0823,
+      "ev": 163.6,
+      "kelly": 0.0205,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on August 30?",
+      "market_id": "3952768",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 25492.0,
+      "spread": 0.0,
+      "yes_token_id": "93283754534616881072435575899693491102723408102742206772828755662140568536331",
+      "no_token_id": "17983193096522283736226035456675517792825206449945985486079350276406906877119",
+      "model_prob": 0.3316,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2157,
+      "ev": 430.4,
+      "kelly": 0.0538,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 30?",
+      "market_id": "3952769",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.895,
+      "no_price": 0.105,
+      "volume": 9532.0,
+      "spread": 0.0,
+      "yes_token_id": "85947347235496479475964102801857882384231086923659789062562023799795156600187",
+      "no_token_id": "41466114169163538280108720440421186300305893204620313834842307308707509362201",
+      "model_prob": 0.324,
+      "side": "YES",
+      "ask": 0.895,
+      "market_prob": 0.895,
+      "belief_prob": 0.5238,
+      "ev": -0.4147,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 30?",
+      "market_id": "3952770",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 9443.0,
+      "spread": 0.0,
+      "yes_token_id": "48627487751633399992024689920182665885477259076662153458339590883541319773777",
+      "no_token_id": "79154700947548392692590688536079608851098251318360192249115054730234665770241",
+      "model_prob": 0.1201,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.1113,
+      "ev": 0.1716,
+      "kelly": 0.0045,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 94-95°F on August 30?",
+      "market_id": "3952771",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.011,
+      "no_price": 0.989,
+      "volume": 5289.0,
+      "spread": 0.0,
+      "yes_token_id": "44821137336579492766887706677150986692137572469197167084639016102691887981678",
+      "no_token_id": "13690928418085100640171173576333915910032372077716515450069705870350735275214",
+      "model_prob": 0.0314,
+      "side": "YES",
+      "ask": 0.011,
+      "market_prob": 0.011,
+      "belief_prob": 0.0243,
+      "ev": 1.2091,
+      "kelly": 0.0034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 96-97°F on August 30?",
+      "market_id": "3952772",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 3490.0,
+      "spread": 0.0,
+      "yes_token_id": "93254673570233339476441095859887413637118927551403658936289086050712575646745",
+      "no_token_id": "4411910952502242148887775094596814622254562571606954520112440914103541406425",
+      "model_prob": 0.0085,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0066,
+      "ev": 1.2,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be 98°F or higher on August 30?",
+      "market_id": "3952773",
+      "range": [
+        98.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 224.0,
+      "spread": 0.0,
+      "yes_token_id": "37823887314100625760425952161284801428502389548228026455210661616175337990853",
+      "no_token_id": "73667311500293952176289295975320289191337310682741334536272450222029121484723",
+      "model_prob": 0.0093,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0062,
+      "ev": 11.4,
+      "kelly": 0.0014,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3952769",
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 30?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.895,
+      "model_prob": 0.324,
+      "ev": -0.4147,
+      "market_prob": 0.895,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.86,
+      "won": true,
+      "pnl_units": 3.52,
+      "user_entered": false
+    },
+    {
+      "market_id": "3952769",
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 30? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.105,
+      "model_prob": 0.676,
+      "ev": 3.5352,
+      "market_prob": 0.105,
+      "role": "scenario_hedge",
+      "units": 2.35,
+      "sell_value": 0.07,
+      "won": false,
+      "pnl_units": -2.35,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 32.4,
+  "portfolio_score": -0.043235,
+  "worst_case_loss_frac": 0.0997,
+  "best_case_pnl_units": 1.17,
+  "worst_case_pnl_units": -9.97,
+  "success_probability": 0.5297,
+  "confidence": 0.6189,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 90.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 1.17,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3952769",
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 30?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.895,
+      "model_prob": 0.324,
+      "ev": -0.4147,
+      "market_prob": 0.895,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.86,
+      "won": true,
+      "pnl_units": 3.52,
+      "user_entered": false
+    },
+    {
+      "market_id": "3952769",
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 30? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.105,
+      "model_prob": 0.676,
+      "ev": 3.5352,
+      "market_prob": 0.105,
+      "role": "scenario_hedge",
+      "units": 2.35,
+      "sell_value": 0.07,
+      "won": false,
+      "pnl_units": -2.35,
+      "user_entered": false
+    }
+  ]
+}

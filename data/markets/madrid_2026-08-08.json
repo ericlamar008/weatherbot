@@ -1,0 +1,238 @@
+{
+  "city": "madrid",
+  "city_name": "Madrid",
+  "date": "2026-08-08",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-06T08:12:27.968825+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-08T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 2,
+  "forecast_mean": 37.0,
+  "sigma": 0.873,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Madrid be 34°C or below on August 8?",
+      "market_id": "3375650",
+      "range": [
+        -999.0,
+        34.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 44.0,
+      "spread": 0.0,
+      "model_prob": 0.0176,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.012,
+      "ev": 7.0,
+      "kelly": 0.0026
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 35°C on August 8?",
+      "market_id": "3375651",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 30.0,
+      "spread": 0.0,
+      "model_prob": 0.0556,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0396,
+      "ev": 2.96,
+      "kelly": 0.0075
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 36°C on August 8?",
+      "market_id": "3375652",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 187.0,
+      "spread": 0.0,
+      "model_prob": 0.2226,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.1604,
+      "ev": 2.5644,
+      "kelly": 0.0302
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 37°C on August 8?",
+      "market_id": "3375653",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.3,
+      "no_price": 0.7,
+      "volume": 507.0,
+      "spread": 0.0,
+      "model_prob": 0.4084,
+      "side": "YES",
+      "ask": 0.3,
+      "market_prob": 0.3,
+      "belief_prob": 0.3705,
+      "ev": 0.235,
+      "kelly": 0.0252
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 38°C on August 8?",
+      "market_id": "3375654",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 389.0,
+      "spread": 0.0,
+      "model_prob": 0.2226,
+      "side": "YES",
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.3039,
+      "ev": -0.3321,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 39°C on August 8?",
+      "market_id": "3375655",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 868.0,
+      "spread": 0.0,
+      "model_prob": 0.0556,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.1114,
+      "ev": -0.4819,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 40°C on August 8?",
+      "market_id": "3375656",
+      "range": [
+        40.0,
+        40.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 207.0,
+      "spread": 0.0,
+      "model_prob": 0.0125,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0169,
+      "ev": -0.324,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 41°C on August 8?",
+      "market_id": "3375657",
+      "range": [
+        41.0,
+        41.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 89.0,
+      "spread": 0.0,
+      "model_prob": 0.0033,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0056,
+      "ev": -0.44,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 42°C on August 8?",
+      "market_id": "3375658",
+      "range": [
+        42.0,
+        42.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 135.0,
+      "spread": 0.0,
+      "model_prob": 0.0011,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0018,
+      "ev": -0.4,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 43°C on August 8?",
+      "market_id": "3375659",
+      "range": [
+        43.0,
+        43.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 113.0,
+      "spread": 0.0,
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0013,
+      "ev": -0.5667,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 44°C or higher on August 8?",
+      "market_id": "3375660",
+      "range": [
+        44.0,
+        999.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 113.0,
+      "spread": 0.0,
+      "model_prob": 0.0003,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0012,
+      "ev": -0.6,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.038059,
+  "worst_case_loss_frac": 0.0836,
+  "best_case_pnl_units": 106.82,
+  "worst_case_pnl_units": -8.36,
+  "success_probability": 0.4428,
+  "confidence": 0.5213,
+  "balance_units": 100,
+  "actual_temp": 38.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

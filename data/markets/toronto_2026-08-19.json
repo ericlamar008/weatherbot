@@ -1,0 +1,351 @@
+{
+  "city": "toronto",
+  "city_name": "Toronto",
+  "date": "2026-08-19",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-18T19:57:02.972862+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-19T12:00:00Z",
+  "last_scan": "2026-08-19T22:02:35.745665+00:00",
+  "global_budget_share_units": 13.03,
+  "horizon_days": 1,
+  "forecast_mean": 25.78,
+  "sigma": 0.95,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Toronto be 22°C or below on August 19?",
+      "market_id": "3687061",
+      "range": [
+        -999.0,
+        22.0
+      ],
+      "yes_price": 0.011,
+      "no_price": 0.989,
+      "volume": 138.0,
+      "spread": 0.0,
+      "model_prob": 0.0091,
+      "side": "YES",
+      "ask": 0.011,
+      "market_prob": 0.011,
+      "belief_prob": 0.0098,
+      "ev": -0.1091,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 23°C on August 19?",
+      "market_id": "3687062",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 268.0,
+      "spread": 0.0,
+      "model_prob": 0.0217,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0211,
+      "ev": 0.055,
+      "kelly": 0.0003
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 24°C on August 19?",
+      "market_id": "3687063",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 479.0,
+      "spread": 0.0,
+      "model_prob": 0.087,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0758,
+      "ev": 0.3782,
+      "kelly": 0.0055
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 25°C on August 19?",
+      "market_id": "3687064",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.225,
+      "no_price": 0.775,
+      "volume": 555.0,
+      "spread": 0.0,
+      "model_prob": 0.2722,
+      "side": "YES",
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.2557,
+      "ev": 0.1364,
+      "kelly": 0.0099
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 26°C on August 19?",
+      "market_id": "3687065",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.48,
+      "no_price": 0.52,
+      "volume": 405.0,
+      "spread": 0.0,
+      "model_prob": 0.3686,
+      "side": "YES",
+      "ask": 0.48,
+      "market_prob": 0.48,
+      "belief_prob": 0.4076,
+      "ev": -0.1508,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 27°C on August 19?",
+      "market_id": "3687066",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 1107.0,
+      "spread": 0.0,
+      "model_prob": 0.1764,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.1969,
+      "ev": -0.1621,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 28°C on August 19?",
+      "market_id": "3687067",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 57.0,
+      "spread": 0.0,
+      "model_prob": 0.0474,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0361,
+      "ev": 1.4067,
+      "kelly": 0.0054
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 29°C on August 19?",
+      "market_id": "3687068",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.007,
+      "no_price": 0.993,
+      "volume": 91.0,
+      "spread": 0.0,
+      "model_prob": 0.012,
+      "side": "YES",
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.0103,
+      "ev": 0.4714,
+      "kelly": 0.0008
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 30°C on August 19?",
+      "market_id": "3687069",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 271.0,
+      "spread": 0.0,
+      "model_prob": 0.0035,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0042,
+      "ev": -0.2364,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 31°C on August 19?",
+      "market_id": "3687070",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 115.0,
+      "spread": 0.0,
+      "model_prob": 0.0012,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.001,
+      "ev": 1.0,
+      "kelly": 0.0001
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 32°C or higher on August 19?",
+      "market_id": "3687071",
+      "range": [
+        32.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 125.0,
+      "spread": 0.0,
+      "model_prob": 0.0009,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0008,
+      "ev": 0.6,
+      "kelly": 0.0001
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3687066",
+      "question": "Will the highest temperature in Toronto be 27°C on August 19? (NO)",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "NO",
+      "price": 0.765,
+      "model_prob": 0.8236,
+      "ev": 0.0498,
+      "market_prob": 0.765,
+      "role": "main_signal",
+      "units": 5,
+      "won": false,
+      "pnl_units": -5,
+      "user_entered": false
+    },
+    {
+      "market_id": "3687064",
+      "question": "Will the highest temperature in Toronto be 25°C on August 19? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.775,
+      "model_prob": 0.7278,
+      "ev": -0.0396,
+      "market_prob": 0.775,
+      "role": "scenario_hedge",
+      "units": 2,
+      "won": true,
+      "pnl_units": 0.58,
+      "user_entered": false
+    },
+    {
+      "market_id": "3687065",
+      "question": "Will the highest temperature in Toronto be 26°C on August 19? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.52,
+      "model_prob": 0.6314,
+      "ev": 0.1392,
+      "market_prob": 0.52,
+      "role": "scenario_hedge",
+      "units": 4.0,
+      "won": true,
+      "pnl_units": 3.69,
+      "user_entered": false
+    }
+  ],
+  "portfolio_score": 0.043921,
+  "worst_case_loss_frac": 0.1445,
+  "best_case_pnl_units": 5.81,
+  "worst_case_pnl_units": -1.88,
+  "success_probability": 0.4228,
+  "confidence": 0.9573,
+  "balance_units": 13.03,
+  "actual_temp": 27.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -0.73,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3687066",
+      "question": "Will the highest temperature in Toronto be 27°C on August 19? (NO)",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "NO",
+      "price": 0.765,
+      "model_prob": 0.8236,
+      "ev": 0.0498,
+      "market_prob": 0.765,
+      "role": "main_signal",
+      "units": 5,
+      "won": false,
+      "pnl_units": -5,
+      "user_entered": false
+    },
+    {
+      "market_id": "3687064",
+      "question": "Will the highest temperature in Toronto be 25°C on August 19? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.775,
+      "model_prob": 0.7278,
+      "ev": -0.0396,
+      "market_prob": 0.775,
+      "role": "scenario_hedge",
+      "units": 2,
+      "won": true,
+      "pnl_units": 0.58,
+      "user_entered": false
+    },
+    {
+      "market_id": "3687065",
+      "question": "Will the highest temperature in Toronto be 26°C on August 19? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.52,
+      "model_prob": 0.6314,
+      "ev": 0.1392,
+      "market_prob": 0.52,
+      "role": "scenario_hedge",
+      "units": 4.0,
+      "won": true,
+      "pnl_units": 3.69,
+      "user_entered": false
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "city": "istanbul",
+  "city_name": "Istanbul",
+  "date": "2026-08-27",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-26T19:18:37.072978+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-27T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 26.69,
+  "sigma": 1.16,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Istanbul be 23°C or below on August 27?",
+      "market_id": "3867771",
+      "range": [
+        -999.0,
+        23.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 177.0,
+      "spread": 0.0,
+      "yes_token_id": "52436568251244882933417484556784408423136728875376700538252501404244519622696",
+      "no_token_id": "7516275355743389791198662111531462458527718133171835239364127122598348895009",
+      "model_prob": 0.0202,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0133,
+      "ev": 25.6,
+      "kelly": 0.0032,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 24°C on August 27?",
+      "market_id": "3867772",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 255.0,
+      "spread": 0.0,
+      "yes_token_id": "108429763872256545032132821060077375445620434528672495509404337251302963020802",
+      "no_token_id": "104321548175354617152935846110661029175044358910705538158126105360377849580444",
+      "model_prob": 0.0387,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0253,
+      "ev": 49.6,
+      "kelly": 0.0062,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 25°C on August 27?",
+      "market_id": "3867773",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 358.0,
+      "spread": 0.0,
+      "yes_token_id": "52390571491216910491625430060480909485423753167396655697777905152031752963240",
+      "no_token_id": "2840886929353833798993503838722870398533862823784260746499134236363389257268",
+      "model_prob": 0.1172,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0779,
+      "ev": 14.58,
+      "kelly": 0.0183,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 26°C on August 27?",
+      "market_id": "3867774",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 1576.0,
+      "spread": 0.0,
+      "yes_token_id": "74234739027681323787281770398868797279987898917330782121212007008325391399027",
+      "no_token_id": "8143413758727158877481846244811069103818424757092439023198199722074208686094",
+      "model_prob": 0.2622,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.2072,
+      "ev": 0.9733,
+      "kelly": 0.0285,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 27°C on August 27?",
+      "market_id": "3867775",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.605,
+      "no_price": 0.395,
+      "volume": 1864.0,
+      "spread": 0.0,
+      "yes_token_id": "101161901555211632205046243107501295364719691308751530645047442445565312564547",
+      "no_token_id": "89286656284997386791748067046936041299566502881472338605848044954208000213332",
+      "model_prob": 0.3038,
+      "side": "YES",
+      "ask": 0.605,
+      "market_prob": 0.605,
+      "belief_prob": 0.4092,
+      "ev": -0.3236,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 28°C on August 27?",
+      "market_id": "3867776",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 1163.0,
+      "spread": 0.0,
+      "yes_token_id": "13179686101501735195501894635851698931173670508826385455449041907572114004818",
+      "no_token_id": "106658977667696856279515416284228229625268527491260177690273216491549618184434",
+      "model_prob": 0.1684,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.211,
+      "ev": -0.2724,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 29°C on August 27?",
+      "market_id": "3867777",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 505.0,
+      "spread": 0.0,
+      "yes_token_id": "13944086963422949941878517041390941783423585117574519224809660907484523624554",
+      "no_token_id": "84011047531299524106919681277799499203706536227617950164644478404004793617271",
+      "model_prob": 0.0597,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0441,
+      "ev": 1.94,
+      "kelly": 0.0074,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 30°C on August 27?",
+      "market_id": "3867778",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 338.0,
+      "spread": 0.0,
+      "yes_token_id": "54945030858319459367481832478918137386875818196661284394083915854683228822590",
+      "no_token_id": "52613182364917809304610856574274992355930828171658251967770112797533891428516",
+      "model_prob": 0.019,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0129,
+      "ev": 7.6,
+      "kelly": 0.0029,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 31°C on August 27?",
+      "market_id": "3867779",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 355.0,
+      "spread": 0.0,
+      "yes_token_id": "51253899618398431594934541663372435968704781898805322038150478632282399960061",
+      "no_token_id": "43731194081153607187341691058898678401239286056887019734113394056785515470137",
+      "model_prob": 0.0065,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0047,
+      "ev": 2.1333,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 32°C on August 27?",
+      "market_id": "3867780",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 121.0,
+      "spread": 0.0,
+      "yes_token_id": "75063765060824967503456062767324242460684655902805750962654834353591644000534",
+      "no_token_id": "62266375922888505779601840454218001232219965065750523920033670083599508574827",
+      "model_prob": 0.0024,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0017,
+      "ev": 2.4,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 33°C or higher on August 27?",
+      "market_id": "3867781",
+      "range": [
+        33.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 131.0,
+      "spread": 0.0,
+      "yes_token_id": "113265059228735158252962617425056684563639548612910670939459911297142369068418",
+      "no_token_id": "115694587692364368497909867779140672963104788456175021313497739752761755941940",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3867775",
+      "question": "Will the highest temperature in Istanbul be 27°C on August 27?",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "YES",
+      "price": 0.605,
+      "model_prob": 0.3038,
+      "ev": -0.3236,
+      "market_prob": 0.605,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.6,
+      "won": true,
+      "pnl_units": 19.59,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867775",
+      "question": "Will the highest temperature in Istanbul be 27°C on August 27? (NO)",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "NO",
+      "price": 0.395,
+      "model_prob": 0.6962,
+      "ev": 0.4957,
+      "market_prob": 0.395,
+      "role": "scenario_hedge",
+      "units": 13.06,
+      "sell_value": 0.39,
+      "won": false,
+      "pnl_units": -13.06,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 43.1,
+  "portfolio_score": -0.028907,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 6.53,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4534,
+  "confidence": 0.2929,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 27.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 6.53,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3867775",
+      "question": "Will the highest temperature in Istanbul be 27°C on August 27?",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "YES",
+      "price": 0.605,
+      "model_prob": 0.3038,
+      "ev": -0.3236,
+      "market_prob": 0.605,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.6,
+      "won": true,
+      "pnl_units": 19.59,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867775",
+      "question": "Will the highest temperature in Istanbul be 27°C on August 27? (NO)",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "side": "NO",
+      "price": 0.395,
+      "model_prob": 0.6962,
+      "ev": 0.4957,
+      "market_prob": 0.395,
+      "role": "scenario_hedge",
+      "units": 13.06,
+      "sell_value": 0.39,
+      "won": false,
+      "pnl_units": -13.06,
+      "user_entered": false
+    }
+  ]
+}

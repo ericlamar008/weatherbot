@@ -1,0 +1,238 @@
+{
+  "city": "singapore",
+  "city_name": "Singapore",
+  "date": "2026-08-12",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-10T21:52:39.685501+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-12T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 2,
+  "forecast_mean": 31.87,
+  "sigma": 1.466,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Singapore be 27°C or below on August 12?",
+      "market_id": "3474714",
+      "range": [
+        -999.0,
+        27.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 374.0,
+      "spread": 0.0,
+      "model_prob": 0.0154,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0102,
+      "ev": 19.4,
+      "kelly": 0.0024
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 28°C on August 12?",
+      "market_id": "3474715",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 528.0,
+      "spread": 0.0,
+      "model_prob": 0.0196,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0133,
+      "ev": 7.8667,
+      "kelly": 0.003
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 29°C on August 12?",
+      "market_id": "3474716",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 419.0,
+      "spread": 0.0,
+      "model_prob": 0.0485,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0317,
+      "ev": 62.4,
+      "kelly": 0.0078
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 30°C on August 12?",
+      "market_id": "3474717",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 351.0,
+      "spread": 0.0,
+      "model_prob": 0.113,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0789,
+      "ev": 4.0903,
+      "kelly": 0.0161
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 31°C on August 12?",
+      "market_id": "3474718",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 762.0,
+      "spread": 0.0,
+      "model_prob": 0.2089,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.1533,
+      "ev": 2.066,
+      "kelly": 0.0272
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 32°C on August 12?",
+      "market_id": "3474719",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.585,
+      "no_price": 0.415,
+      "volume": 2176.0,
+      "spread": 0.0,
+      "model_prob": 0.252,
+      "side": "YES",
+      "ask": 0.585,
+      "market_prob": 0.585,
+      "belief_prob": 0.3685,
+      "ev": -0.3701,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 33°C on August 12?",
+      "market_id": "3474720",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.355,
+      "no_price": 0.645,
+      "volume": 636.0,
+      "spread": 0.0,
+      "model_prob": 0.1842,
+      "side": "YES",
+      "ask": 0.355,
+      "market_prob": 0.355,
+      "belief_prob": 0.244,
+      "ev": -0.3127,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 34°C on August 12?",
+      "market_id": "3474721",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 633.0,
+      "spread": 0.0,
+      "model_prob": 0.092,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0685,
+      "ev": 1.74,
+      "kelly": 0.0112
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 35°C on August 12?",
+      "market_id": "3474722",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 400.0,
+      "spread": 0.0,
+      "model_prob": 0.0383,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0268,
+      "ev": 3.8727,
+      "kelly": 0.0054
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 36°C on August 12?",
+      "market_id": "3474723",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 350.0,
+      "spread": 0.0,
+      "model_prob": 0.0155,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0108,
+      "ev": 4.4,
+      "kelly": 0.0022
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 37°C or higher on August 12?",
+      "market_id": "3474724",
+      "range": [
+        37.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 425.0,
+      "spread": 0.0,
+      "model_prob": 0.0126,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0084,
+      "ev": 15.8,
+      "kelly": 0.002
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.063589,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 10003.46,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.5917,
+  "confidence": 0.4062,
+  "balance_units": 100,
+  "actual_temp": 32.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

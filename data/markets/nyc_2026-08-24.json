@@ -1,0 +1,392 @@
+{
+  "city": "nyc",
+  "city_name": "New York",
+  "date": "2026-08-24",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-08-23T09:10:57.696233+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-24T12:00:00Z",
+  "last_scan": "2026-08-26T19:18:37.072978+00:00",
+  "global_budget_share_units": 0.01,
+  "horizon_days": 0,
+  "forecast_mean": 80.23,
+  "sigma": 2.589,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in New York City be 67°F or below on August 24?",
+      "market_id": "3790868",
+      "range": [
+        -999.0,
+        67.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "72729876794135747639443285240013162704395907721964766605955132705609778679658",
+      "no_token_id": "19163914933752228545559646672216723856985693294589218356611335216492599674539",
+      "model_prob": 0.0042,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0029,
+      "ev": 4.8,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 68-69°F on August 24?",
+      "market_id": "3790869",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "41505517671433943974888589600782754556680403527242676738152348377859770464187",
+      "no_token_id": "18383425957487311622129424573975089326008357261385277395945563118083660682127",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 70-71°F on August 24?",
+      "market_id": "3790870",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "33368428570654482349757804489561036997228924758308660788152105124699598900319",
+      "no_token_id": "103671294332833954335402874100178701430893087539145802996985280964896957031917",
+      "model_prob": 0.005,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0034,
+      "ev": 5.8,
+      "kelly": 0.0007,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 72-73°F on August 24?",
+      "market_id": "3790871",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 334.0,
+      "spread": 0.0,
+      "yes_token_id": "36852245070851497358303607184312158700598641275097186533724920427870472932983",
+      "no_token_id": "98823999871009674522136699624636511491801779054557790368408963214122691355973",
+      "model_prob": 0.0131,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0087,
+      "ev": 16.4,
+      "kelly": 0.0021,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 74-75°F on August 24?",
+      "market_id": "3790872",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3824.0,
+      "spread": 0.0,
+      "yes_token_id": "3721402518198055261833618063452056351310992607368914703890007277003076065445",
+      "no_token_id": "38972854287315461251637720882016965399354832893000727082216482123839288461642",
+      "model_prob": 0.0363,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0238,
+      "ev": 46.6,
+      "kelly": 0.0058,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 76-77°F on August 24?",
+      "market_id": "3790873",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7928.0,
+      "spread": 0.0,
+      "yes_token_id": "44642062591155974496468632580612528472995559213753820462092026573255729070026",
+      "no_token_id": "40385910232943144555783515435415000055522162138999038415233492368878952924098",
+      "model_prob": 0.099,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0645,
+      "ev": 128.0,
+      "kelly": 0.016,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 78-79°F on August 24?",
+      "market_id": "3790874",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 19056.0,
+      "spread": 0.0,
+      "yes_token_id": "29021338058883778837184563856390400887275370826838581154455937498117062593073",
+      "no_token_id": "92485840526531446185943864461694466700123049125584752885069660968227802503358",
+      "model_prob": 0.2151,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.14,
+      "ev": 279.0,
+      "kelly": 0.0349,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 80-81°F on August 24?",
+      "market_id": "3790875",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.66,
+      "no_price": 0.34,
+      "volume": 17115.0,
+      "spread": 0.0,
+      "yes_token_id": "67913620292064703140021904281032033758453605245871508343496490926812792485268",
+      "no_token_id": "26213588352237495048854087056185130776194546547366233035458468694750823498417",
+      "model_prob": 0.2748,
+      "side": "YES",
+      "ask": 0.66,
+      "market_prob": 0.66,
+      "belief_prob": 0.4096,
+      "ev": -0.3794,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 82-83°F on August 24?",
+      "market_id": "3790876",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.28,
+      "no_price": 0.72,
+      "volume": 10392.0,
+      "spread": 0.0,
+      "yes_token_id": "89417399206391283526949500888917902214370746982952681379663940046503627494939",
+      "no_token_id": "62666758352917965162070673463482842470335133106632345620472195662994429847238",
+      "model_prob": 0.1815,
+      "side": "YES",
+      "ask": 0.28,
+      "market_prob": 0.28,
+      "belief_prob": 0.216,
+      "ev": -0.2286,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be between 84-85°F on August 24?",
+      "market_id": "3790877",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 15793.0,
+      "spread": 0.0,
+      "yes_token_id": "88593643235132692906918820026537725724050985571424356773360699819915587547583",
+      "no_token_id": "44040243790005312530789715821089954867710698535081494019230052124195343986531",
+      "model_prob": 0.0764,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0514,
+      "ev": 9.28,
+      "kelly": 0.0117,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in New York City be 86°F or higher on August 24?",
+      "market_id": "3790878",
+      "range": [
+        86.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7702.0,
+      "spread": 0.0,
+      "yes_token_id": "97241578986346850006750647978158480309244838190483355940236963613269089595104",
+      "no_token_id": "109154838797909517475010149475064960702239043323123706435048062848933660295763",
+      "model_prob": 0.0926,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0604,
+      "ev": 119.8,
+      "kelly": 0.015,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3790875",
+      "question": "Will the highest temperature in New York City be between 80-81°F on August 24?",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "YES",
+      "price": 0.66,
+      "model_prob": 0.2748,
+      "ev": -0.3794,
+      "market_prob": 0.66,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.93,
+      "won": true,
+      "pnl_units": 15.45,
+      "user_entered": false
+    },
+    {
+      "market_id": "3790875",
+      "question": "Will the highest temperature in New York City be between 80-81°F on August 24? (NO)",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "NO",
+      "price": 0.34,
+      "model_prob": 0.7252,
+      "ev": 0.7365,
+      "market_prob": 0.34,
+      "role": "scenario_hedge",
+      "units": 10.3,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -10.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "3790869",
+      "question": "Will the highest temperature in New York City be between 68-69°F on August 24? (NO)",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9979,
+      "ev": -0.001,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 11.76,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
+    }
+  ],
+  "portfolio_score": -0.039977,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 5.16,
+  "worst_case_pnl_units": -21.77,
+  "success_probability": 0.4202,
+  "confidence": 0.2642,
+  "balance_units": 100,
+  "total_allocated_units": 52.1,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 80.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 5.16,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3790875",
+      "question": "Will the highest temperature in New York City be between 80-81°F on August 24?",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "YES",
+      "price": 0.66,
+      "model_prob": 0.2748,
+      "ev": -0.3794,
+      "market_prob": 0.66,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.93,
+      "won": true,
+      "pnl_units": 15.45,
+      "user_entered": false
+    },
+    {
+      "market_id": "3790875",
+      "question": "Will the highest temperature in New York City be between 80-81°F on August 24? (NO)",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "NO",
+      "price": 0.34,
+      "model_prob": 0.7252,
+      "ev": 0.7365,
+      "market_prob": 0.34,
+      "role": "scenario_hedge",
+      "units": 10.3,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -10.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "3790869",
+      "question": "Will the highest temperature in New York City be between 68-69°F on August 24? (NO)",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9979,
+      "ev": -0.001,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 11.76,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "city": "munich",
+  "city_name": "Munich",
+  "date": "2026-08-18",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-16T23:02:39.895452+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-18T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 20.11,
+  "sigma": 1.54,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Munich be 15°C or below on August 18?",
+      "market_id": "3624085",
+      "range": [
+        -999.0,
+        15.0
+      ],
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "volume": 4172.0,
+      "spread": 0.0,
+      "model_prob": 0.0152,
+      "side": "YES",
+      "ask": 0.0085,
+      "market_prob": 0.0085,
+      "belief_prob": 0.0129,
+      "ev": 0.5176,
+      "kelly": 0.0011
+    },
+    {
+      "question": "Will the highest temperature in Munich be 16°C on August 18?",
+      "market_id": "3624086",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.022,
+      "no_price": 0.978,
+      "volume": 6409.0,
+      "spread": 0.0,
+      "model_prob": 0.0179,
+      "side": "YES",
+      "ask": 0.022,
+      "market_prob": 0.022,
+      "belief_prob": 0.0193,
+      "ev": -0.1227,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Munich be 17°C on August 18?",
+      "market_id": "3624087",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0625,
+      "no_price": 0.9375,
+      "volume": 5489.0,
+      "spread": 0.0,
+      "model_prob": 0.0424,
+      "side": "YES",
+      "ask": 0.0625,
+      "market_prob": 0.0625,
+      "belief_prob": 0.0494,
+      "ev": -0.2096,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Munich be 18°C on August 18?",
+      "market_id": "3624088",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.189,
+      "no_price": 0.811,
+      "volume": 3538.0,
+      "spread": 0.0,
+      "model_prob": 0.0964,
+      "side": "YES",
+      "ask": 0.189,
+      "market_prob": 0.189,
+      "belief_prob": 0.1288,
+      "ev": -0.3185,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Munich be 19°C on August 18?",
+      "market_id": "3624089",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.3725,
+      "no_price": 0.6275,
+      "volume": 4539.0,
+      "spread": 0.0,
+      "model_prob": 0.1823,
+      "side": "YES",
+      "ask": 0.3725,
+      "market_prob": 0.3725,
+      "belief_prob": 0.2489,
+      "ev": -0.3318,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Munich be 20°C on August 18?",
+      "market_id": "3624090",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 4104.0,
+      "spread": 0.0,
+      "model_prob": 0.2407,
+      "side": "YES",
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.2282,
+      "ev": 0.1132,
+      "kelly": 0.0073
+    },
+    {
+      "question": "Will the highest temperature in Munich be 21°C on August 18?",
+      "market_id": "3624091",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.12,
+      "no_price": 0.88,
+      "volume": 6075.0,
+      "spread": 0.0,
+      "model_prob": 0.201,
+      "side": "YES",
+      "ask": 0.12,
+      "market_prob": 0.12,
+      "belief_prob": 0.1727,
+      "ev": 0.4392,
+      "kelly": 0.015
+    },
+    {
+      "question": "Will the highest temperature in Munich be 22°C on August 18?",
+      "market_id": "3624092",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 4869.0,
+      "spread": 0.0,
+      "model_prob": 0.1134,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.0842,
+      "ev": 1.8067,
+      "kelly": 0.014
+    },
+    {
+      "question": "Will the highest temperature in Munich be 23°C on August 18?",
+      "market_id": "3624093",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 4699.0,
+      "spread": 0.0,
+      "model_prob": 0.0512,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.042,
+      "ev": 0.68,
+      "kelly": 0.0044
+    },
+    {
+      "question": "Will the highest temperature in Munich be 24°C on August 18?",
+      "market_id": "3624094",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 4180.0,
+      "spread": 0.0,
+      "model_prob": 0.0216,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0175,
+      "ev": 0.75,
+      "kelly": 0.0019
+    },
+    {
+      "question": "Will the highest temperature in Munich be 25°C or higher on August 18?",
+      "market_id": "3624095",
+      "range": [
+        25.0,
+        999.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 6346.0,
+      "spread": 0.0,
+      "model_prob": 0.0179,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0127,
+      "ev": 3.2333,
+      "kelly": 0.0024
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.02051,
+  "worst_case_loss_frac": 0.125,
+  "best_case_pnl_units": 162.93,
+  "worst_case_pnl_units": -12.5,
+  "success_probability": 0.283,
+  "confidence": 0.5587,
+  "balance_units": 100,
+  "actual_temp": 20.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

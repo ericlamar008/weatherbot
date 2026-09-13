@@ -1,0 +1,238 @@
+{
+  "city": "istanbul",
+  "city_name": "Istanbul",
+  "date": "2026-08-09",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-08T18:44:02.284382+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-09T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 26.13,
+  "sigma": 0.677,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Istanbul be 23°C or below on August 9?",
+      "market_id": "3394527",
+      "range": [
+        -999.0,
+        23.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 1474.0,
+      "spread": 0.0,
+      "model_prob": 0.0058,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0043,
+      "ev": 1.8667,
+      "kelly": 0.0007
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 24°C on August 9?",
+      "market_id": "3394528",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 790.0,
+      "spread": 0.0,
+      "model_prob": 0.0247,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0166,
+      "ev": 10.0667,
+      "kelly": 0.0038
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 25°C on August 9?",
+      "market_id": "3394529",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0125,
+      "no_price": 0.9875,
+      "volume": 1604.0,
+      "spread": 0.0,
+      "model_prob": 0.1669,
+      "side": "YES",
+      "ask": 0.0125,
+      "market_prob": 0.0125,
+      "belief_prob": 0.1129,
+      "ev": 8.032,
+      "kelly": 0.0254
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 26°C on August 9?",
+      "market_id": "3394530",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 2315.0,
+      "spread": 0.0,
+      "model_prob": 0.4985,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.4098,
+      "ev": 0.6727,
+      "kelly": 0.0546
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 27°C on August 9?",
+      "market_id": "3394531",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.53,
+      "no_price": 0.47,
+      "volume": 5209.0,
+      "spread": 0.0,
+      "model_prob": 0.2546,
+      "side": "YES",
+      "ask": 0.53,
+      "market_prob": 0.53,
+      "belief_prob": 0.351,
+      "ev": -0.3377,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 28°C on August 9?",
+      "market_id": "3394532",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 1759.0,
+      "spread": 0.0,
+      "model_prob": 0.0408,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.0965,
+      "ev": -0.5175,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 29°C on August 9?",
+      "market_id": "3394533",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 2016.0,
+      "spread": 0.0,
+      "model_prob": 0.0065,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0063,
+      "ev": 0.05,
+      "kelly": 0.0001
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 30°C on August 9?",
+      "market_id": "3394534",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 488.0,
+      "spread": 0.0,
+      "model_prob": 0.0014,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0014,
+      "ev": -0.0667,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 31°C on August 9?",
+      "market_id": "3394535",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 579.0,
+      "spread": 0.0,
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0008,
+      "ev": -0.4667,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 32°C on August 9?",
+      "market_id": "3394536",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 1242.0,
+      "spread": 0.0,
+      "model_prob": 0.0001,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0006,
+      "ev": -0.6,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 33°C or higher on August 9?",
+      "market_id": "3394537",
+      "range": [
+        33.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 272.0,
+      "spread": 0.0,
+      "model_prob": 0.0001,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0002,
+      "ev": -0.6,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.157572,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 401.77,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.6377,
+  "confidence": 0.4449,
+  "balance_units": 100,
+  "actual_temp": 27.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

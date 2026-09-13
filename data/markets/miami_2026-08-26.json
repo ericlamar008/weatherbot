@@ -1,0 +1,353 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-08-26",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-08-26T19:18:37.072978+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-26T12:00:00Z",
+  "last_scan": "2026-08-26T19:18:37.072978+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 89.34,
+  "sigma": 1.622,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be 79°F or below on August 26?",
+      "market_id": "3864360",
+      "range": [
+        -999.0,
+        79.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 261.0,
+      "spread": 0.0,
+      "yes_token_id": "2783133253942463585946213195932796100041987384048689278837034661359394950999",
+      "no_token_id": "29374026264902738597538893404751565944150841284385071908381138023015126592509",
+      "model_prob": 0.0018,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0013,
+      "ev": 1.6,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 80-81°F on August 26?",
+      "market_id": "3864361",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 451.0,
+      "spread": 0.0,
+      "yes_token_id": "114746953886997475734839428571110399945396063554920088578009377973720584263911",
+      "no_token_id": "101060902727743249532301465458298000543854030885921073042726715997774549601632",
+      "model_prob": 0.0014,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0011,
+      "ev": 1.2,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 82-83°F on August 26?",
+      "market_id": "3864362",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 22501.0,
+      "spread": 0.0,
+      "yes_token_id": "61078327055938187492742216588025037603265050067219439513261981048702218334853",
+      "no_token_id": "5138584971174704133325527607909603804813936678284345914816116990331018211405",
+      "model_prob": 0.005,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0034,
+      "ev": 5.8,
+      "kelly": 0.0007,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 84-85°F on August 26?",
+      "market_id": "3864363",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7524.0,
+      "spread": 0.0,
+      "yes_token_id": "109663298069668127359711573739166830892208393570603211284972728222855234648813",
+      "no_token_id": "21938479671058143287491184755532022034936375069445039757086008987232236014472",
+      "model_prob": 0.0223,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0147,
+      "ev": 28.4,
+      "kelly": 0.0036,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 86-87°F on August 26?",
+      "market_id": "3864364",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7280.0,
+      "spread": 0.0,
+      "yes_token_id": "114691253015501547472213716404030501384033696610515813377351198420000293567250",
+      "no_token_id": "11948620657977057495512878451564553575303277820014306458361150516100687179209",
+      "model_prob": 0.1139,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0742,
+      "ev": 147.4,
+      "kelly": 0.0184,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on August 26?",
+      "market_id": "3864365",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15302.0,
+      "spread": 0.0,
+      "yes_token_id": "86937165710057858200293696599522030399459476579448465280402997099749439926147",
+      "no_token_id": "86854174369228170900608379295676953777640982480180633999918646001043429825114",
+      "model_prob": 0.395,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2569,
+      "ev": 512.8,
+      "kelly": 0.0641,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 26?",
+      "market_id": "3864366",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 87419.0,
+      "spread": 0.0,
+      "yes_token_id": "40905649386345312692311512949769428682185765819046922133741889035756198367741",
+      "no_token_id": "109698992513684527082149387949822303134132767958802774966702046695104441704164",
+      "model_prob": 0.3471,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2258,
+      "ev": 450.6,
+      "kelly": 0.0564,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 26?",
+      "market_id": "3864367",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.99,
+      "no_price": 0.01,
+      "volume": 11678.0,
+      "spread": 0.0,
+      "yes_token_id": "81944087760797004379185241265730879452129295698703430630234051102250922064491",
+      "no_token_id": "20994539142747797380374442273702935195322681803134297961263034658096675308542",
+      "model_prob": 0.0881,
+      "side": "YES",
+      "ask": 0.99,
+      "market_prob": 0.99,
+      "belief_prob": 0.4038,
+      "ev": -0.5921,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 94-95°F on August 26?",
+      "market_id": "3864368",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 5881.0,
+      "spread": 0.0,
+      "yes_token_id": "3479435661873689685845373824500919135980666792468106072870457240651798314464",
+      "no_token_id": "11404493358295173815619549713795462571658310329215128668649717274716486437636",
+      "model_prob": 0.0174,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.0136,
+      "ev": 1.0923,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 96-97°F on August 26?",
+      "market_id": "3864369",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 3933.0,
+      "spread": 0.0,
+      "yes_token_id": "68665614779331461861785623684362172778064934588135784192278430673398698755208",
+      "no_token_id": "28595558857416179667269761536519542483775996374299068519486785602918435495508",
+      "model_prob": 0.0041,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0042,
+      "ev": -0.0667,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Miami be 98°F or higher on August 26?",
+      "market_id": "3864370",
+      "range": [
+        98.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 610.0,
+      "spread": 0.0,
+      "yes_token_id": "12305029588393855258089762864018373832279296054109557893205391911153339432861",
+      "no_token_id": "9102626704278844984623614968741445799559053293393278721389112690636801036784",
+      "model_prob": 0.004,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0028,
+      "ev": 4.6,
+      "kelly": 0.0006,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3864367",
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 26?",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "side": "YES",
+      "price": 0.99,
+      "model_prob": 0.0881,
+      "ev": -0.5921,
+      "market_prob": 0.99,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.981,
+      "won": true,
+      "pnl_units": 0.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "3864367",
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 26? (NO)",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "side": "NO",
+      "price": 0.01,
+      "model_prob": 0.9119,
+      "ev": 58.62,
+      "market_prob": 0.01,
+      "role": "scenario_hedge",
+      "units": 0.2,
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -0.2,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.2,
+  "portfolio_score": -0.051863,
+  "worst_case_loss_frac": 0.102,
+  "best_case_pnl_units": 0.1,
+  "worst_case_pnl_units": -10.2,
+  "success_probability": 0.513,
+  "confidence": 0.0479,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 92.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.1,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3864367",
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 26?",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "side": "YES",
+      "price": 0.99,
+      "model_prob": 0.0881,
+      "ev": -0.5921,
+      "market_prob": 0.99,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.981,
+      "won": true,
+      "pnl_units": 0.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "3864367",
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 26? (NO)",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "side": "NO",
+      "price": 0.01,
+      "model_prob": 0.9119,
+      "ev": 58.62,
+      "market_prob": 0.01,
+      "role": "scenario_hedge",
+      "units": 0.2,
+      "sell_value": 0.002,
+      "won": false,
+      "pnl_units": -0.2,
+      "user_entered": false
+    }
+  ]
+}

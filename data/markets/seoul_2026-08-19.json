@@ -1,0 +1,238 @@
+{
+  "city": "seoul",
+  "city_name": "Seoul",
+  "date": "2026-08-19",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-17T20:15:00.077446+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-19T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 27.94,
+  "sigma": 0.936,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 23°C or below on August 19?",
+      "market_id": "3655233",
+      "range": [
+        -999.0,
+        23.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 291.0,
+      "spread": 0.0,
+      "model_prob": 0.0026,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0019,
+      "ev": 2.8,
+      "kelly": 0.0004
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 24°C on August 19?",
+      "market_id": "3655234",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1066.0,
+      "spread": 0.0,
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0032,
+      "ev": 5.4,
+      "kelly": 0.0007
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 25°C on August 19?",
+      "market_id": "3655235",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1173.0,
+      "spread": 0.0,
+      "model_prob": 0.0167,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.011,
+      "ev": 21.0,
+      "kelly": 0.0026
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 26°C on August 19?",
+      "market_id": "3655236",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1223.0,
+      "spread": 0.0,
+      "model_prob": 0.0683,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0446,
+      "ev": 88.2,
+      "kelly": 0.011
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 27°C on August 19?",
+      "market_id": "3655237",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.0115,
+      "no_price": 0.9885,
+      "volume": 2440.0,
+      "spread": 0.0,
+      "model_prob": 0.2368,
+      "side": "YES",
+      "ask": 0.0115,
+      "market_prob": 0.0115,
+      "belief_prob": 0.1579,
+      "ev": 12.7304,
+      "kelly": 0.037
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 28°C on August 19?",
+      "market_id": "3655238",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 3553.0,
+      "spread": 0.0,
+      "model_prob": 0.3831,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.2648,
+      "ev": 4.8844,
+      "kelly": 0.0575
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 29°C on August 19?",
+      "market_id": "3655239",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 3504.0,
+      "spread": 0.0,
+      "model_prob": 0.2096,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.2535,
+      "ev": -0.2433,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 30°C on August 19?",
+      "market_id": "3655240",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 2731.0,
+      "spread": 0.0,
+      "model_prob": 0.0577,
+      "side": "YES",
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.1968,
+      "ev": -0.5675,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 31°C on August 19?",
+      "market_id": "3655241",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.155,
+      "no_price": 0.845,
+      "volume": 3278.0,
+      "spread": 0.0,
+      "model_prob": 0.0142,
+      "side": "YES",
+      "ask": 0.155,
+      "market_prob": 0.155,
+      "belief_prob": 0.0635,
+      "ev": -0.5903,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 32°C on August 19?",
+      "market_id": "3655242",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.013,
+      "no_price": 0.987,
+      "volume": 4334.0,
+      "spread": 0.0,
+      "model_prob": 0.004,
+      "side": "YES",
+      "ask": 0.013,
+      "market_prob": 0.013,
+      "belief_prob": 0.0072,
+      "ev": -0.4462,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 33°C or higher on August 19?",
+      "market_id": "3655243",
+      "range": [
+        33.0,
+        999.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 2350.0,
+      "spread": 0.0,
+      "model_prob": 0.0023,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0031,
+      "ev": -0.3111,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.169539,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 434.79,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.7458,
+  "confidence": 0.4291,
+  "balance_units": 100,
+  "actual_temp": 29.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

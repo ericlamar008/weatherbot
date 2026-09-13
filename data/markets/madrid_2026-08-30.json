@@ -1,0 +1,353 @@
+{
+  "city": "madrid",
+  "city_name": "Madrid",
+  "date": "2026-08-30",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-30T18:26:13.771388+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-30T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 31.76,
+  "sigma": 0.783,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Madrid be 28°C or below on August 30?",
+      "market_id": "3945592",
+      "range": [
+        -999.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1363.0,
+      "spread": 0.0,
+      "yes_token_id": "104652941146275673356541211175000259608726030992006253831199347360237436940933",
+      "no_token_id": "85201530966594106980972669249344671193555417536625422290475988300499748276473",
+      "model_prob": 0.0044,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.003,
+      "ev": 5.0,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 29°C on August 30?",
+      "market_id": "3945593",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 292.0,
+      "spread": 0.0,
+      "yes_token_id": "84128001537141482199070413562178128819563840791525427747598022570146763993126",
+      "no_token_id": "92897709772573078574449104760912151096752637394394670018247650524305458915735",
+      "model_prob": 0.0128,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0085,
+      "ev": 16.0,
+      "kelly": 0.002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 30°C on August 30?",
+      "market_id": "3945594",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 500.0,
+      "spread": 0.0,
+      "yes_token_id": "82111120762450687476242024200149118490567732293195075169919437524093214783136",
+      "no_token_id": "73253944931800573198423565079256099492746483508438636087437265958625644485990",
+      "model_prob": 0.0671,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0438,
+      "ev": 86.6,
+      "kelly": 0.0108,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 31°C on August 30?",
+      "market_id": "3945595",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1079.0,
+      "spread": 0.0,
+      "yes_token_id": "100371850492577110699159312486524829417669319372799407727590125158426028301099",
+      "no_token_id": "60904828073676828858519998625269982072457713678952281047604252631200896079182",
+      "model_prob": 0.2924,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1902,
+      "ev": 379.4,
+      "kelly": 0.0474,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 32°C on August 30?",
+      "market_id": "3945596",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 7455.0,
+      "spread": 0.0,
+      "yes_token_id": "67245311458729986561587019466929143957476290636009997348622906105463552304124",
+      "no_token_id": "74524540031881861320023584135234912143097067781833895932706294816560185729217",
+      "model_prob": 0.4293,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2792,
+      "ev": 557.4,
+      "kelly": 0.0697,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 33°C on August 30?",
+      "market_id": "3945597",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.9965,
+      "no_price": 0.0035,
+      "volume": 7180.0,
+      "spread": 0.0,
+      "yes_token_id": "62191805851166302804002992054152896966244689524096111507653425805410925436728",
+      "no_token_id": "108404056271185474258696804640615204625718814281192364821966868416354551586546",
+      "model_prob": 0.1555,
+      "side": "YES",
+      "ask": 0.9965,
+      "market_prob": 0.9965,
+      "belief_prob": 0.4498,
+      "ev": -0.5486,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 34°C on August 30?",
+      "market_id": "3945598",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 7227.0,
+      "spread": 0.0,
+      "yes_token_id": "61282857576342477150753898350370352088492861605971971529923926137874729705463",
+      "no_token_id": "85675423462705176484559029248629557543553248954630325764537962051217338659525",
+      "model_prob": 0.0298,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0199,
+      "ev": 12.2667,
+      "kelly": 0.0046,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 35°C on August 30?",
+      "market_id": "3945599",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1815.0,
+      "spread": 0.0,
+      "yes_token_id": "75617772054039543077974693607419170254408507459911961208801179161710808770579",
+      "no_token_id": "47652240312700191762666493584636041012535413892349846339060761197000594916048",
+      "model_prob": 0.0062,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0042,
+      "ev": 7.4,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 36°C on August 30?",
+      "market_id": "3945600",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 494.0,
+      "spread": 0.0,
+      "yes_token_id": "8250177257326602592142669983680772583460406738847879214465803064672339548034",
+      "no_token_id": "95352688699919908865129141487481269331942392425694795298375985122264682298964",
+      "model_prob": 0.0016,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0012,
+      "ev": 1.4,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 37°C on August 30?",
+      "market_id": "3945601",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1062.0,
+      "spread": 0.0,
+      "yes_token_id": "34541889390979761750942387351156497368447361789441156319284605426698893471474",
+      "no_token_id": "87060452853509323247029479423128618728899308950663428105586927734909427918628",
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0005,
+      "ev": 0.0,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 38°C or higher on August 30?",
+      "market_id": "3945602",
+      "range": [
+        38.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 191.0,
+      "spread": 0.0,
+      "yes_token_id": "65040982421194281364090615827680837665083320193273488955922570179116336597115",
+      "no_token_id": "31624007419677219181642267162218458359611448169711217770865699216405268436626",
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0004,
+      "ev": -0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3945597",
+      "question": "Will the highest temperature in Madrid be 33°C on August 30?",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "YES",
+      "price": 0.9965,
+      "model_prob": 0.1555,
+      "ev": -0.5486,
+      "market_prob": 0.9965,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.993,
+      "won": true,
+      "pnl_units": 0.11,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945597",
+      "question": "Will the highest temperature in Madrid be 33°C on August 30? (NO)",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "NO",
+      "price": 0.0035,
+      "model_prob": 0.8445,
+      "ev": 156.2,
+      "market_prob": 0.0035,
+      "role": "scenario_hedge",
+      "units": 0.07,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.07,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.1,
+  "portfolio_score": -0.04324,
+  "worst_case_loss_frac": 0.1007,
+  "best_case_pnl_units": 0.04,
+  "worst_case_pnl_units": -10.07,
+  "success_probability": 0.5906,
+  "confidence": 0.074,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 33.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.04,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3945597",
+      "question": "Will the highest temperature in Madrid be 33°C on August 30?",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "YES",
+      "price": 0.9965,
+      "model_prob": 0.1555,
+      "ev": -0.5486,
+      "market_prob": 0.9965,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.993,
+      "won": true,
+      "pnl_units": 0.11,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945597",
+      "question": "Will the highest temperature in Madrid be 33°C on August 30? (NO)",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "side": "NO",
+      "price": 0.0035,
+      "model_prob": 0.8445,
+      "ev": 156.2,
+      "market_prob": 0.0035,
+      "role": "scenario_hedge",
+      "units": 0.07,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.07,
+      "user_entered": false
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "city": "los-angeles",
+  "city_name": "Los Angeles",
+  "date": "2026-08-09",
+  "unit": "F",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-08T18:44:02.284382+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-09T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 82.62,
+  "sigma": 9.353,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Los Angeles be 71°F or below on August 9?",
+      "market_id": "3413030",
+      "range": [
+        -999.0,
+        71.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 545.0,
+      "spread": 0.0,
+      "model_prob": 0.2068,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1346,
+      "ev": 268.2,
+      "kelly": 0.0335
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 72-73°F on August 9?",
+      "market_id": "3413031",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 503.0,
+      "spread": 0.0,
+      "model_prob": 0.031,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0203,
+      "ev": 39.6,
+      "kelly": 0.005
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 74-75°F on August 9?",
+      "market_id": "3413033",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.018,
+      "no_price": 0.982,
+      "volume": 1597.0,
+      "spread": 0.0,
+      "model_prob": 0.0383,
+      "side": "YES",
+      "ask": 0.018,
+      "market_prob": 0.018,
+      "belief_prob": 0.0312,
+      "ev": 0.7333,
+      "kelly": 0.0034
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 76-77°F on August 9?",
+      "market_id": "3413035",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.17,
+      "no_price": 0.83,
+      "volume": 5566.0,
+      "spread": 0.0,
+      "model_prob": 0.0456,
+      "side": "YES",
+      "ask": 0.17,
+      "market_prob": 0.17,
+      "belief_prob": 0.0891,
+      "ev": -0.4759,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 78-79°F on August 9?",
+      "market_id": "3413037",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.52,
+      "no_price": 0.48,
+      "volume": 1507.0,
+      "spread": 0.0,
+      "model_prob": 0.052,
+      "side": "YES",
+      "ask": 0.52,
+      "market_prob": 0.52,
+      "belief_prob": 0.2158,
+      "ev": -0.585,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 80-81°F on August 9?",
+      "market_id": "3413038",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.27,
+      "no_price": 0.73,
+      "volume": 1376.0,
+      "spread": 0.0,
+      "model_prob": 0.0565,
+      "side": "YES",
+      "ask": 0.27,
+      "market_prob": 0.27,
+      "belief_prob": 0.1312,
+      "ev": -0.5141,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 82-83°F on August 9?",
+      "market_id": "3413039",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 1007.0,
+      "spread": 0.0,
+      "model_prob": 0.0583,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0433,
+      "ev": 1.7935,
+      "kelly": 0.0071
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 84-85°F on August 9?",
+      "market_id": "3413040",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0125,
+      "no_price": 0.9875,
+      "volume": 298.0,
+      "spread": 0.0,
+      "model_prob": 0.0569,
+      "side": "YES",
+      "ask": 0.0125,
+      "market_prob": 0.0125,
+      "belief_prob": 0.0414,
+      "ev": 2.312,
+      "kelly": 0.0073
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 86-87°F on August 9?",
+      "market_id": "3413041",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 330.0,
+      "spread": 0.0,
+      "model_prob": 0.0527,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.035,
+      "ev": 16.5,
+      "kelly": 0.0083
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 88-89°F on August 9?",
+      "market_id": "3413042",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 1451.0,
+      "spread": 0.0,
+      "model_prob": 0.0464,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0307,
+      "ev": 19.4667,
+      "kelly": 0.0073
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be 90°F or higher on August 9?",
+      "market_id": "3413043",
+      "range": [
+        90.0,
+        999.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 1790.0,
+      "spread": 0.0,
+      "model_prob": 0.3556,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.2318,
+      "ev": 114.9,
+      "kelly": 0.0576
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.391871,
+  "worst_case_loss_frac": 0.118,
+  "best_case_pnl_units": 2900.7,
+  "worst_case_pnl_units": -11.8,
+  "success_probability": 0.725,
+  "confidence": 0.4034,
+  "balance_units": 100,
+  "actual_temp": null,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

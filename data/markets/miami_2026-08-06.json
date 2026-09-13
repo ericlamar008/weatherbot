@@ -1,0 +1,351 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-08-06",
+  "unit": "F",
+  "status": "resolved",
+  "created_at": "2026-08-06T08:12:27.968825+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-06T12:00:00Z",
+  "last_scan": "2026-08-08T18:44:02.284382+00:00",
+  "global_budget_share_units": 6.75,
+  "horizon_days": 0,
+  "forecast_mean": 87.24,
+  "sigma": 2.304,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Miami be 77°F or below on August 6?",
+      "market_id": "3350831",
+      "range": [
+        -999.0,
+        77.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 301.0,
+      "spread": 0.0,
+      "model_prob": 0.0082,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0055,
+      "ev": 10.0,
+      "kelly": 0.0013
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 78-79°F on August 6?",
+      "market_id": "3350832",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 521.0,
+      "spread": 0.0,
+      "model_prob": 0.0056,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0038,
+      "ev": 6.6,
+      "kelly": 0.0008
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 80-81°F on August 6?",
+      "market_id": "3350833",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 523.0,
+      "spread": 0.0,
+      "model_prob": 0.0166,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.011,
+      "ev": 21.0,
+      "kelly": 0.0026
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 82-83°F on August 6?",
+      "market_id": "3350834",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 2181.0,
+      "spread": 0.0,
+      "model_prob": 0.0524,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.0363,
+      "ev": 4.5846,
+      "kelly": 0.0075
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 84-85°F on August 6?",
+      "market_id": "3350835",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.0335,
+      "no_price": 0.9665,
+      "volume": 3455.0,
+      "spread": 0.0,
+      "model_prob": 0.155,
+      "side": "YES",
+      "ask": 0.0335,
+      "market_prob": 0.0335,
+      "belief_prob": 0.1125,
+      "ev": 2.3582,
+      "kelly": 0.0204
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 86-87°F on August 6?",
+      "market_id": "3350836",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 2839.0,
+      "spread": 0.0,
+      "model_prob": 0.3038,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.2797,
+      "ev": 0.1902,
+      "kelly": 0.0146
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 88-89°F on August 6?",
+      "market_id": "3350837",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.49,
+      "no_price": 0.51,
+      "volume": 6496.0,
+      "spread": 0.0,
+      "model_prob": 0.2721,
+      "side": "YES",
+      "ask": 0.49,
+      "market_prob": 0.49,
+      "belief_prob": 0.3484,
+      "ev": -0.289,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 90-91°F on August 6?",
+      "market_id": "3350838",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.255,
+      "no_price": 0.745,
+      "volume": 3816.0,
+      "spread": 0.0,
+      "model_prob": 0.1195,
+      "side": "YES",
+      "ask": 0.255,
+      "market_prob": 0.255,
+      "belief_prob": 0.1669,
+      "ev": -0.3455,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 92-93°F on August 6?",
+      "market_id": "3350839",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 2240.0,
+      "spread": 0.0,
+      "model_prob": 0.0387,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0304,
+      "ev": 1.0267,
+      "kelly": 0.0039
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 94-95°F on August 6?",
+      "market_id": "3350840",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 835.0,
+      "spread": 0.0,
+      "model_prob": 0.0124,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0096,
+      "ev": 1.1333,
+      "kelly": 0.0013
+    },
+    {
+      "question": "Will the highest temperature in Miami be 96°F or higher on August 6?",
+      "market_id": "3350841",
+      "range": [
+        96.0,
+        999.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 1068.0,
+      "spread": 0.0,
+      "model_prob": 0.0156,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0107,
+      "ev": 6.1333,
+      "kelly": 0.0023
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3350831",
+      "question": "Will the highest temperature in Miami be 77°F or below on August 6? (NO)",
+      "range": [
+        -999.0,
+        77.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9918,
+      "ev": -0.005,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 5,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "3350832",
+      "question": "Will the highest temperature in Miami be between 78-79°F on August 6? (NO)",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9944,
+      "ev": -0.0033,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 0.6,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "3350836",
+      "question": "Will the highest temperature in Miami be between 86-87°F on August 6? (NO)",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "side": "NO",
+      "price": 0.765,
+      "model_prob": 0.6962,
+      "ev": -0.0584,
+      "market_prob": 0.765,
+      "role": "scenario_hedge",
+      "units": 1.1,
+      "won": true,
+      "pnl_units": 0.34,
+      "user_entered": false
+    }
+  ],
+  "portfolio_score": 0.006396,
+  "worst_case_loss_frac": 0.1625,
+  "best_case_pnl_units": 0.34,
+  "worst_case_pnl_units": -4.66,
+  "success_probability": 0.8111,
+  "confidence": 0.9954,
+  "balance_units": 6.75,
+  "actual_temp": 88.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.34,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3350831",
+      "question": "Will the highest temperature in Miami be 77°F or below on August 6? (NO)",
+      "range": [
+        -999.0,
+        77.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9918,
+      "ev": -0.005,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 5,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "3350832",
+      "question": "Will the highest temperature in Miami be between 78-79°F on August 6? (NO)",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9944,
+      "ev": -0.0033,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 0.6,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "3350836",
+      "question": "Will the highest temperature in Miami be between 86-87°F on August 6? (NO)",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "side": "NO",
+      "price": 0.765,
+      "model_prob": 0.6962,
+      "ev": -0.0584,
+      "market_prob": 0.765,
+      "role": "scenario_hedge",
+      "units": 1.1,
+      "won": true,
+      "pnl_units": 0.34,
+      "user_entered": false
+    }
+  ]
+}

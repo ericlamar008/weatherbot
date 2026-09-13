@@ -1,0 +1,353 @@
+{
+  "city": "paris",
+  "city_name": "Paris",
+  "date": "2026-08-30",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-30T18:26:13.771388+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-30T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 22.83,
+  "sigma": 0.729,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Paris be 17°C or below on August 30?",
+      "market_id": "3945460",
+      "range": [
+        -999.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1202.0,
+      "spread": 0.0,
+      "yes_token_id": "17816021609094508600051972646034532185636789017532601559081847312567674709170",
+      "no_token_id": "53470719208414472919853807869309582684381490132134344818262352079141774564099",
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0004,
+      "ev": -0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 18°C on August 30?",
+      "market_id": "3945461",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1196.0,
+      "spread": 0.0,
+      "yes_token_id": "48392660819270558317852684658603725682893150283783538799766197177290276962091",
+      "no_token_id": "34528542912793751158590617409736726616601552753219185643908592936551986266797",
+      "model_prob": 0.0006,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0006,
+      "ev": 0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 19°C on August 30?",
+      "market_id": "3945462",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1111.0,
+      "spread": 0.0,
+      "yes_token_id": "60944827674155921375169875238799424914136221167511614200333509573544366147366",
+      "no_token_id": "39251679495033868969237996597963659636540939413874223490722979435981124382777",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 20°C on August 30?",
+      "market_id": "3945463",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 896.0,
+      "spread": 0.0,
+      "yes_token_id": "11865335180670092019234714686292354369373371184700364587900178704680366796995",
+      "no_token_id": "108359385016510851117028805556973016705108081487205022207560992525862676210421",
+      "model_prob": 0.009,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.006,
+      "ev": 11.0,
+      "kelly": 0.0014,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 21°C on August 30?",
+      "market_id": "3945464",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2488.0,
+      "spread": 0.0,
+      "yes_token_id": "115437928111745570502238184630364139428355441338251954874062988998210998506625",
+      "no_token_id": "5201417429912268551594613423934273226204460173385287198295528720068677925928",
+      "model_prob": 0.0518,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0338,
+      "ev": 66.6,
+      "kelly": 0.0083,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 22°C on August 30?",
+      "market_id": "3945465",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3557.0,
+      "spread": 0.0,
+      "yes_token_id": "64715446136728398520285305182021677041930501432159265819676323153145477437886",
+      "no_token_id": "59403070355465891139104796772671958203272159733715729139363221484479939221300",
+      "model_prob": 0.271,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1763,
+      "ev": 351.6,
+      "kelly": 0.044,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 23°C on August 30?",
+      "market_id": "3945466",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 12112.0,
+      "spread": 0.0,
+      "yes_token_id": "660212715972539246313225165521507811663254328472095814243398285085166826718",
+      "no_token_id": "80200440252469151957197474389781503725289709462939467830155972709722402839343",
+      "model_prob": 0.465,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3024,
+      "ev": 603.8,
+      "kelly": 0.0755,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 24°C on August 30?",
+      "market_id": "3945467",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.995,
+      "no_price": 0.005,
+      "volume": 12078.0,
+      "spread": 0.0,
+      "yes_token_id": "28553848668638594873008272126688490439316375468873226096381024490412047902372",
+      "no_token_id": "25319969641604305854919743592191835095889460243646587040192607991809042083323",
+      "model_prob": 0.1648,
+      "side": "YES",
+      "ask": 0.995,
+      "market_prob": 0.995,
+      "belief_prob": 0.4554,
+      "ev": -0.5423,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 25°C on August 30?",
+      "market_id": "3945468",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 9641.0,
+      "spread": 0.0,
+      "yes_token_id": "44319022336231503408589552188251765246261528997804524559468557538371197520847",
+      "no_token_id": "55402223901173967770391330494125115704220815117449057715099392530250348480940",
+      "model_prob": 0.028,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0201,
+      "ev": 2.6545,
+      "kelly": 0.0037,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 26°C on August 30?",
+      "market_id": "3945469",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 11274.0,
+      "spread": 0.0,
+      "yes_token_id": "45084187698455824164837743559982614378266059481507480225603355700648451797101",
+      "no_token_id": "59868463473350287119631243840314330836059261409090991573940701561862376665980",
+      "model_prob": 0.0053,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.004,
+      "ev": 1.6667,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Paris be 27°C or higher on August 30?",
+      "market_id": "3945470",
+      "range": [
+        27.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 3803.0,
+      "spread": 0.0,
+      "yes_token_id": "61995421233582116041229237635828567148586309918898721077839975266992431411449",
+      "no_token_id": "94647043651699433038242623704179145004629396798529895105244801217426841735644",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3945467",
+      "question": "Will the highest temperature in Paris be 24°C on August 30?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.995,
+      "model_prob": 0.1648,
+      "ev": -0.5423,
+      "market_prob": 0.995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.991,
+      "won": true,
+      "pnl_units": 0.15,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945467",
+      "question": "Will the highest temperature in Paris be 24°C on August 30? (NO)",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.005,
+      "model_prob": 0.8352,
+      "ev": 107.92,
+      "market_prob": 0.005,
+      "role": "scenario_hedge",
+      "units": 0.1,
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.1,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 30.1,
+  "portfolio_score": -0.04681,
+  "worst_case_loss_frac": 0.101,
+  "best_case_pnl_units": 0.05,
+  "worst_case_pnl_units": -10.1,
+  "success_probability": 0.5577,
+  "confidence": 0.004,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 24.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.05,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3945467",
+      "question": "Will the highest temperature in Paris be 24°C on August 30?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.995,
+      "model_prob": 0.1648,
+      "ev": -0.5423,
+      "market_prob": 0.995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.991,
+      "won": true,
+      "pnl_units": 0.15,
+      "user_entered": false
+    },
+    {
+      "market_id": "3945467",
+      "question": "Will the highest temperature in Paris be 24°C on August 30? (NO)",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.005,
+      "model_prob": 0.8352,
+      "ev": 107.92,
+      "market_prob": 0.005,
+      "role": "scenario_hedge",
+      "units": 0.1,
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.1,
+      "user_entered": false
+    }
+  ]
+}

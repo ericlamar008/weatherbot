@@ -1,0 +1,353 @@
+{
+  "city": "singapore",
+  "city_name": "Singapore",
+  "date": "2026-08-27",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-26T19:18:37.072978+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-27T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 31.32,
+  "sigma": 1.25,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Singapore be 27°C or below on August 27?",
+      "market_id": "3867650",
+      "range": [
+        -999.0,
+        27.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 3547.0,
+      "spread": 0.0,
+      "yes_token_id": "93717436745546129894242481041609390334553276233424545689738991089118980368273",
+      "no_token_id": "2974126520016114391343636628263166423089832556667140585161908487822550790095",
+      "model_prob": 0.0141,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.01,
+      "ev": 3.0,
+      "kelly": 0.0019,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 28°C on August 27?",
+      "market_id": "3867651",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.007,
+      "no_price": 0.993,
+      "volume": 2544.0,
+      "spread": 0.0,
+      "yes_token_id": "71862480436642990476658196294001269915589490064008904234377839354253033910632",
+      "no_token_id": "100058267407208938619737603231007506267875276983472133328983244714326670841868",
+      "model_prob": 0.0227,
+      "side": "YES",
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.0172,
+      "ev": 1.4571,
+      "kelly": 0.0026,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 29°C on August 27?",
+      "market_id": "3867652",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 3205.0,
+      "spread": 0.0,
+      "yes_token_id": "88206545936592350167995596721736719383276162543626009153700688160326892188016",
+      "no_token_id": "36092467444523706374791769376096040650412975249568132698622885304744951644387",
+      "model_prob": 0.0657,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0464,
+      "ev": 3.419,
+      "kelly": 0.0091,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 30°C on August 27?",
+      "market_id": "3867653",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 3593.0,
+      "spread": 0.0,
+      "yes_token_id": "31191668112941173981521878245786516863282960577777035110864693356079585312624",
+      "no_token_id": "113218043134480676799634577368074164553440971631122968291639671013290750116473",
+      "model_prob": 0.1678,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.1213,
+      "ev": 2.4657,
+      "kelly": 0.0224,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 31°C on August 27?",
+      "market_id": "3867654",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 3915.0,
+      "spread": 0.0,
+      "yes_token_id": "63247371230666849984040389249900757097031511902813572882795168787623755427961",
+      "no_token_id": "57225536605976284638336816777239058676807291628052222735625208171109513503549",
+      "model_prob": 0.284,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.2493,
+      "ev": 0.3476,
+      "kelly": 0.0197,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 32°C on August 27?",
+      "market_id": "3867655",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.625,
+      "no_price": 0.375,
+      "volume": 3386.0,
+      "spread": 0.0,
+      "yes_token_id": "69718058838210451334947947748864580667944698431955974401057761495866856192587",
+      "no_token_id": "9412408656357967089684198608173509135177497902469538408547832475351946381693",
+      "model_prob": 0.2513,
+      "side": "YES",
+      "ask": 0.625,
+      "market_prob": 0.625,
+      "belief_prob": 0.3821,
+      "ev": -0.3886,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 33°C on August 27?",
+      "market_id": "3867656",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.175,
+      "no_price": 0.825,
+      "volume": 2885.0,
+      "spread": 0.0,
+      "yes_token_id": "8822874624066805311173214424654403617651446978797988511383836626639267231490",
+      "no_token_id": "83552890989841822542168122660129832960251673686533989787998107469798765569601",
+      "model_prob": 0.1235,
+      "side": "YES",
+      "ask": 0.175,
+      "market_prob": 0.175,
+      "belief_prob": 0.1415,
+      "ev": -0.1914,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 34°C on August 27?",
+      "market_id": "3867657",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 2172.0,
+      "spread": 0.0,
+      "yes_token_id": "61682015514442793104832415660898469762501439024289158105010591968452833461960",
+      "no_token_id": "90464657231888703508209861828458579159427429809953442062428510829348099937093",
+      "model_prob": 0.045,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0305,
+      "ev": 7.7143,
+      "kelly": 0.0068,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 35°C on August 27?",
+      "market_id": "3867658",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1612.0,
+      "spread": 0.0,
+      "yes_token_id": "69182832562404858149843730333339324234645455960103559162496406823579726381605",
+      "no_token_id": "100566047102467403790033339203981718593249111676684043080588954656987300404196",
+      "model_prob": 0.0156,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0103,
+      "ev": 19.6,
+      "kelly": 0.0025,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 36°C on August 27?",
+      "market_id": "3867659",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 315.0,
+      "spread": 0.0,
+      "yes_token_id": "36959859627695071914701771683210344276101577411617875689699909071703323413813",
+      "no_token_id": "26533621761105711722204079218351646660396500660518356942008672289222474090335",
+      "model_prob": 0.0058,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0039,
+      "ev": 6.8,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Singapore be 37°C or higher on August 27?",
+      "market_id": "3867660",
+      "range": [
+        37.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 315.0,
+      "spread": 0.0,
+      "yes_token_id": "81545750194709651320987656045946940198459438123905947506386053728225381139891",
+      "no_token_id": "17015669130972023072143152640456476835447854565824940371178927845816673133103",
+      "model_prob": 0.0045,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0031,
+      "ev": 5.2,
+      "kelly": 0.0007,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3867655",
+      "question": "Will the highest temperature in Singapore be 32°C on August 27?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.625,
+      "model_prob": 0.2513,
+      "ev": -0.3886,
+      "market_prob": 0.625,
+      "role": "main_signal",
+      "units": 28.9,
+      "sell_value": 0.62,
+      "won": false,
+      "pnl_units": -28.9,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867655",
+      "question": "Will the highest temperature in Singapore be 32°C on August 27? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.375,
+      "model_prob": 0.7487,
+      "ev": 0.6477,
+      "market_prob": 0.375,
+      "role": "scenario_hedge",
+      "units": 11.34,
+      "sell_value": 0.37,
+      "won": true,
+      "pnl_units": 18.9,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 40.2,
+  "portfolio_score": -0.036371,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 6.0,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4216,
+  "confidence": 0.0218,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 33.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3867655",
+      "question": "Will the highest temperature in Singapore be 32°C on August 27?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.625,
+      "model_prob": 0.2513,
+      "ev": -0.3886,
+      "market_prob": 0.625,
+      "role": "main_signal",
+      "units": 28.9,
+      "sell_value": 0.62,
+      "won": false,
+      "pnl_units": -28.9,
+      "user_entered": false
+    },
+    {
+      "market_id": "3867655",
+      "question": "Will the highest temperature in Singapore be 32°C on August 27? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.375,
+      "model_prob": 0.7487,
+      "ev": 0.6477,
+      "market_prob": 0.375,
+      "role": "scenario_hedge",
+      "units": 11.34,
+      "sell_value": 0.37,
+      "won": true,
+      "pnl_units": 18.9,
+      "user_entered": false
+    }
+  ]
+}

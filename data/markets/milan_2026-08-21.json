@@ -1,0 +1,238 @@
+{
+  "city": "milan",
+  "city_name": "Milan",
+  "date": "2026-08-21",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-19T22:02:35.745665+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-21T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 1,
+  "forecast_mean": 22.47,
+  "sigma": 1.402,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Milan be 16°C or below on August 21?",
+      "market_id": "3715107",
+      "range": [
+        -999.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 504.0,
+      "spread": 0.0,
+      "model_prob": 0.004,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0028,
+      "ev": 4.6,
+      "kelly": 0.0006
+    },
+    {
+      "question": "Will the highest temperature in Milan be 17°C on August 21?",
+      "market_id": "3715108",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 614.0,
+      "spread": 0.0,
+      "model_prob": 0.0042,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0029,
+      "ev": 4.8,
+      "kelly": 0.0006
+    },
+    {
+      "question": "Will the highest temperature in Milan be 18°C on August 21?",
+      "market_id": "3715109",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1159.0,
+      "spread": 0.0,
+      "model_prob": 0.0101,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0067,
+      "ev": 12.4,
+      "kelly": 0.0016
+    },
+    {
+      "question": "Will the highest temperature in Milan be 19°C on August 21?",
+      "market_id": "3715110",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 646.0,
+      "spread": 0.0,
+      "model_prob": 0.0255,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0168,
+      "ev": 32.6,
+      "kelly": 0.0041
+    },
+    {
+      "question": "Will the highest temperature in Milan be 20°C on August 21?",
+      "market_id": "3715111",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0305,
+      "no_price": 0.9695,
+      "volume": 563.0,
+      "spread": 0.0,
+      "model_prob": 0.0656,
+      "side": "YES",
+      "ask": 0.0305,
+      "market_prob": 0.0305,
+      "belief_prob": 0.0533,
+      "ev": 0.7475,
+      "kelly": 0.0059
+    },
+    {
+      "question": "Will the highest temperature in Milan be 21°C on August 21?",
+      "market_id": "3715112",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.1,
+      "no_price": 0.9,
+      "volume": 1215.0,
+      "spread": 0.0,
+      "model_prob": 0.1504,
+      "side": "YES",
+      "ask": 0.1,
+      "market_prob": 0.1,
+      "belief_prob": 0.1328,
+      "ev": 0.328,
+      "kelly": 0.0091
+    },
+    {
+      "question": "Will the highest temperature in Milan be 22°C on August 21?",
+      "market_id": "3715113",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.32,
+      "no_price": 0.68,
+      "volume": 1874.0,
+      "spread": 0.0,
+      "model_prob": 0.2482,
+      "side": "YES",
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.2733,
+      "ev": -0.1459,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Milan be 23°C on August 21?",
+      "market_id": "3715114",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.36,
+      "no_price": 0.64,
+      "volume": 3238.0,
+      "spread": 0.0,
+      "model_prob": 0.2441,
+      "side": "YES",
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.2847,
+      "ev": -0.2092,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Milan be 24°C on August 21?",
+      "market_id": "3715115",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.13,
+      "no_price": 0.87,
+      "volume": 1958.0,
+      "spread": 0.0,
+      "model_prob": 0.1441,
+      "side": "YES",
+      "ask": 0.13,
+      "market_prob": 0.13,
+      "belief_prob": 0.1392,
+      "ev": 0.0708,
+      "kelly": 0.0026
+    },
+    {
+      "question": "Will the highest temperature in Milan be 25°C on August 21?",
+      "market_id": "3715116",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 2914.0,
+      "spread": 0.0,
+      "model_prob": 0.0621,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0666,
+      "ev": -0.112,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Milan be 26°C or higher on August 21?",
+      "market_id": "3715117",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 4685.0,
+      "spread": 0.0,
+      "model_prob": 0.0415,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0427,
+      "ev": -0.0511,
+      "kelly": 0.0
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.022318,
+  "worst_case_loss_frac": 0.107,
+  "best_case_pnl_units": 9998.67,
+  "worst_case_pnl_units": -10.7,
+  "success_probability": 0.0146,
+  "confidence": 0.4118,
+  "balance_units": 100,
+  "actual_temp": 24.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

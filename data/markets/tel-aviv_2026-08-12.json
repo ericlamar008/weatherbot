@@ -1,0 +1,238 @@
+{
+  "city": "tel-aviv",
+  "city_name": "Tel Aviv",
+  "date": "2026-08-12",
+  "unit": "C",
+  "status": "resolved_no_signal",
+  "created_at": "2026-08-10T21:52:39.685501+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-12T12:00:00Z",
+  "last_scan": "2026-09-02T19:27:32.223674+00:00",
+  "global_budget_share_units": null,
+  "horizon_days": 2,
+  "forecast_mean": 35.06,
+  "sigma": 1.82,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Tel Aviv be 32°C or below on August 12?",
+      "market_id": "3474670",
+      "range": [
+        -999.0,
+        32.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 403.0,
+      "spread": 0.0,
+      "model_prob": 0.1093,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.0733,
+      "ev": 10.2769,
+      "kelly": 0.0168
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 33°C on August 12?",
+      "market_id": "3474671",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 712.0,
+      "spread": 0.0,
+      "model_prob": 0.106,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0917,
+      "ev": 0.4108,
+      "kelly": 0.0071
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 34°C on August 12?",
+      "market_id": "3474672",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.445,
+      "no_price": 0.555,
+      "volume": 510.0,
+      "spread": 0.0,
+      "model_prob": 0.1701,
+      "side": "YES",
+      "ask": 0.445,
+      "market_prob": 0.445,
+      "belief_prob": 0.2663,
+      "ev": -0.4016,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 35°C on August 12?",
+      "market_id": "3474673",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.435,
+      "no_price": 0.565,
+      "volume": 703.0,
+      "spread": 0.0,
+      "model_prob": 0.2054,
+      "side": "YES",
+      "ask": 0.435,
+      "market_prob": 0.435,
+      "belief_prob": 0.2858,
+      "ev": -0.343,
+      "kelly": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 36°C on August 12?",
+      "market_id": "3474674",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 160.0,
+      "spread": 0.0,
+      "model_prob": 0.1769,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.1377,
+      "ev": 1.1185,
+      "kelly": 0.0194
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 37°C on August 12?",
+      "market_id": "3474675",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 61.0,
+      "spread": 0.0,
+      "model_prob": 0.1135,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.079,
+      "ev": 4.2667,
+      "kelly": 0.0162
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 38°C on August 12?",
+      "market_id": "3474676",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 5.0,
+      "spread": 0.0,
+      "model_prob": 0.0602,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0397,
+      "ev": 25.4667,
+      "kelly": 0.0096
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 39°C on August 12?",
+      "market_id": "3474677",
+      "range": [
+        39.0,
+        39.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 5.0,
+      "spread": 0.0,
+      "model_prob": 0.0293,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0196,
+      "ev": 12.0667,
+      "kelly": 0.0045
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 40°C on August 12?",
+      "market_id": "3474678",
+      "range": [
+        40.0,
+        40.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 129.0,
+      "spread": 0.0,
+      "model_prob": 0.0141,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.01,
+      "ev": 3.0,
+      "kelly": 0.0019
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 41°C on August 12?",
+      "market_id": "3474679",
+      "range": [
+        41.0,
+        41.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 189.0,
+      "spread": 0.0,
+      "model_prob": 0.0069,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0054,
+      "ev": 1.16,
+      "kelly": 0.0007
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 42°C or higher on August 12?",
+      "market_id": "3474680",
+      "range": [
+        42.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 441.0,
+      "spread": 0.0,
+      "model_prob": 0.0083,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0056,
+      "ev": 10.2,
+      "kelly": 0.0013
+    }
+  ],
+  "live_allocation": [],
+  "portfolio_score": 0.087353,
+  "worst_case_loss_frac": 0.11,
+  "best_case_pnl_units": 769.04,
+  "worst_case_pnl_units": -11.0,
+  "success_probability": 0.0572,
+  "confidence": 0.4357,
+  "balance_units": 100,
+  "actual_temp": 35.0,
+  "pnl_units": null,
+  "my_pnl_units": null
+}

@@ -1,0 +1,391 @@
+{
+  "city": "toronto",
+  "city_name": "Toronto",
+  "date": "2026-08-27",
+  "unit": "C",
+  "status": "resolved",
+  "created_at": "2026-08-26T19:18:37.072978+00:00",
+  "committed_allocation": null,
+  "hours_left": 0.0,
+  "event_end_date": "2026-08-27T12:00:00Z",
+  "last_scan": "2026-08-30T18:26:13.771388+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 25.76,
+  "sigma": 0.879,
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Toronto be 21°C or below on August 27?",
+      "market_id": "3894273",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 290.0,
+      "spread": 0.0,
+      "yes_token_id": "7368185125570925974158843499045992115201859617073129875626289635022499168044",
+      "no_token_id": "40812509451610362410085774305193965112029277243032393356165596587134831208652",
+      "model_prob": 0.0023,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0025,
+      "ev": -0.1667,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 22°C on August 27?",
+      "market_id": "3894274",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0115,
+      "no_price": 0.9885,
+      "volume": 137.0,
+      "spread": 0.0,
+      "yes_token_id": "82699464456154403639716257141556040867244997738941549705275508685988730889920",
+      "no_token_id": "82399383942107119318862163967233732152486443105340013898656798153179409765472",
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.0115,
+      "market_prob": 0.0115,
+      "belief_prob": 0.007,
+      "ev": -0.3913,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 23°C on August 27?",
+      "market_id": "3894275",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 70.0,
+      "spread": 0.0,
+      "yes_token_id": "57473180642617817306012847201830695029455191568154376474237926528322988931345",
+      "no_token_id": "59115445426040577697851860928197645453246627525021864395998196890257927828799",
+      "model_prob": 0.018,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0154,
+      "ev": 0.4667,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 24°C on August 27?",
+      "market_id": "3894276",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 248.0,
+      "spread": 0.0,
+      "yes_token_id": "19282508579992895462727257326259380433761805758828573676078486533669303809256",
+      "no_token_id": "109518025868106779044454662966979382284367049901901230886785151755753078980240",
+      "model_prob": 0.0806,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0681,
+      "ev": 0.5133,
+      "kelly": 0.006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 25°C on August 27?",
+      "market_id": "3894277",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 177.0,
+      "spread": 0.0,
+      "yes_token_id": "21534209001157072324777122527916087577877877151221200229676212274244467769308",
+      "no_token_id": "110086058841088318006371903930485605698691497164179884263647278283796954964031",
+      "model_prob": 0.2841,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.2704,
+      "ev": 0.1037,
+      "kelly": 0.0084,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 26°C on August 27?",
+      "market_id": "3894278",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.495,
+      "no_price": 0.505,
+      "volume": 1013.0,
+      "spread": 0.0,
+      "yes_token_id": "43074466146220134992893656728684901338298249569602379924382355056606218433725",
+      "no_token_id": "18867545181719101022404736930150994165446186297782016797973314391514497996030",
+      "model_prob": 0.3912,
+      "side": "YES",
+      "ask": 0.495,
+      "market_prob": 0.495,
+      "belief_prob": 0.4275,
+      "ev": -0.1364,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 27°C on August 27?",
+      "market_id": "3894279",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 411.0,
+      "spread": 0.0,
+      "yes_token_id": "62029761531259285483705487873584406517735050832088454381640309719318479981178",
+      "no_token_id": "20082249710412177989587816214318449787933048938867827875859843674878096763420",
+      "model_prob": 0.1668,
+      "side": "YES",
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.1749,
+      "ev": -0.0795,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 28°C on August 27?",
+      "market_id": "3894280",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 205.0,
+      "spread": 0.0,
+      "yes_token_id": "58657547692679779108606874945832686571759899147601738234670011970102225587590",
+      "no_token_id": "85245910772932277212699274601381330316388573227386738849595501121212595386627",
+      "model_prob": 0.0392,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.036,
+      "ev": 0.2,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 29°C on August 27?",
+      "market_id": "3894281",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "75774459655760273501783505299581190487646267147162810780536503636433157525254",
+      "no_token_id": "92394443545839053094837197809584228347512698301079511067905473927895185518993",
+      "model_prob": 0.0091,
+      "side": "YES",
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0112,
+      "ev": -0.2533,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 30°C on August 27?",
+      "market_id": "3894282",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 65.0,
+      "spread": 0.0,
+      "yes_token_id": "72853517310564125330308127057731801880251125366766536401247446745474063958581",
+      "no_token_id": "87573726693046714771499983799488619608545012459187791092846076691975499594605",
+      "model_prob": 0.0025,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0027,
+      "ev": -0.1,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 31°C or higher on August 27?",
+      "market_id": "3894283",
+      "range": [
+        31.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 280.0,
+      "spread": 0.0,
+      "yes_token_id": "81175025830695214521813288418483728268418158306659463244510537054357707496964",
+      "no_token_id": "92906307999210552657264707763195729437263794963654303590236480816740036211780",
+      "model_prob": 0.0015,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0011,
+      "ev": 1.2,
+      "kelly": 0.0002,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "3894278",
+      "question": "Will the highest temperature in Toronto be 26°C on August 27?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.495,
+      "model_prob": 0.3912,
+      "ev": -0.1364,
+      "market_prob": 0.495,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.49,
+      "won": true,
+      "pnl_units": 30.61,
+      "user_entered": false
+    },
+    {
+      "market_id": "3894278",
+      "question": "Will the highest temperature in Toronto be 26°C on August 27? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.505,
+      "model_prob": 0.6088,
+      "ev": 0.1337,
+      "market_prob": 0.505,
+      "role": "scenario_hedge",
+      "units": 20.4,
+      "sell_value": 0.5,
+      "won": false,
+      "pnl_units": -20.4,
+      "user_entered": false
+    },
+    {
+      "market_id": "3894273",
+      "question": "Will the highest temperature in Toronto be 21°C or below on August 27? (NO)",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.997,
+      "model_prob": 0.9977,
+      "ev": 0.0005,
+      "market_prob": 0.997,
+      "role": "scenario_hedge",
+      "units": 1.32,
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ],
+  "total_allocated_units": 51.7,
+  "portfolio_score": -0.017545,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 10.21,
+  "worst_case_pnl_units": -11.32,
+  "success_probability": 0.4336,
+  "confidence": 0.054,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 26.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 10.21,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "3894278",
+      "question": "Will the highest temperature in Toronto be 26°C on August 27?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.495,
+      "model_prob": 0.3912,
+      "ev": -0.1364,
+      "market_prob": 0.495,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.49,
+      "won": true,
+      "pnl_units": 30.61,
+      "user_entered": false
+    },
+    {
+      "market_id": "3894278",
+      "question": "Will the highest temperature in Toronto be 26°C on August 27? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.505,
+      "model_prob": 0.6088,
+      "ev": 0.1337,
+      "market_prob": 0.505,
+      "role": "scenario_hedge",
+      "units": 20.4,
+      "sell_value": 0.5,
+      "won": false,
+      "pnl_units": -20.4,
+      "user_entered": false
+    },
+    {
+      "market_id": "3894273",
+      "question": "Will the highest temperature in Toronto be 21°C or below on August 27? (NO)",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.997,
+      "model_prob": 0.9977,
+      "ev": 0.0005,
+      "market_prob": 0.997,
+      "role": "scenario_hedge",
+      "units": 1.32,
+      "sell_value": 0.996,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
+}
