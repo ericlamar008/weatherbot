@@ -1,35 +1,36 @@
 # مسیر واقعی: .github/workflows/monitor_locks.yml
 #
-# PATCH این نسخه (فاز ۳ نقشه‌راه، زیرگام ۳-ج -- آخرین تیکهٔ نقشه‌راه):
+# PATCH این نسخه (رفع خطای واقعی "unresolved conflict" روی
+# data/markets/*.json و simple.html که باعث شد این Workflow از حدود ۵ ساعت
+# پیش دیگر با موفقیت کامل نشود) -----------------------------------------------
 #
-# درخواست کاربر: در اسکن نیم‌ساعته، علاوه بر قیمت قفل‌های فعال، قیمت کل
-# پنل (همهٔ باکت‌های open) هم تازه شود (بدون فراخوانی هواشناسی)، و در پایان
-# هر اجرا -- صرف‌نظر از فعال‌بودن محرک -- همیشه یک پیام تلگرام (وضعیت +
-# لینک یکتای تازهٔ داشبورد) فرستاده شود.
+# ریشهٔ اصلی خطا: دقیقاً همون الگوی مشکل‌داری که در process_lock_events.yml
+# پیدا و رفع کردیم -- این Workflow یک‌بار simple.html/data/markets/*.json را
+# می‌ساخت، یک کامیت می‌ساخت، و فقط تلاش می‌کرد اون یک کامیت رو با
+# git pull --rebase روی آخرین نسخهٔ ریموت اعمال کنه. چون هم simple.html
+# (بازسازی کامل هر بار) و هم فایل‌های data/markets/*.json که
+# weatherbot_v3.py price_refresh هر بار کامل بازنویسی می‌کند، وقتی دو اجرای
+# پشت‌سرهم (هر ۳۰ دقیقه) با هم تداخل زمانی پیدا کنند، تقریباً حتمی است که
+# rebase با "unresolved conflict" شکست بخورد.
 #
-# تغییرات دقیق نسبت به نسخهٔ قبلی:
-# ۱) نصب پیش‌نیازها از "pip install requests" به "pip install -r
-#    requirements.txt" تغییر کرد -- چون فراخوانی weatherbot_v3.py حالا به
-#    کتابخانه‌های بیشتری (همان‌هایی که scan_daily/heartbeat استفاده می‌کنند)
-#    نیاز دارد.
-# ۲) مرحلهٔ تازهٔ "python weatherbot_v3.py price_refresh" بعد از
-#    price_monitor.py و قبل از dashboard_simple.py اضافه شد.
-# ۳) کل منطق قبلی تشخیص "قفل تازه از آخرین اعلام" (فایل
-#    data/last_lock_notify.json و متغیر NEED_LOCK_NOTIFY) حذف شد -- دیگر
-#    لازم نیست، چون همیشه لینک یکتا و پیام ساخته می‌شود.
-# ۴) ظرفیت نگه‌داری فایل‌های نسخه‌ای از (تلویحاً نامحدود) به «فقط ۶۰ فایل
-#    آخر» محدود شد -- چون این Workflow حالا هر ۳۰ دقیقه (۴۸ بار در روز)
-#    فایل یکتای جدید می‌سازد و بدون این پاک‌سازی، docs/ بی‌رویه رشد می‌کرد.
-#    این پاک‌سازی هرگز docs/simple.html، dashboard.html یا هر فایل/پوشهٔ
-#    داخل data/ را حذف نمی‌کند.
-# ۵) مرحلهٔ ارسال تلگرام حالا متن وضعیت را از data/last_price_status.txt
-#    (نوشته‌شده توسط price_monitor.py) می‌خواند و لینک یکتای تازه را به
-#    انتهایش اضافه می‌کند؛ اگر آن فایل نبود (یعنی هیچ قفل بازی وجود ندارد)،
-#    یک متن پیش‌فرض «هیچ قفل باز فعالی وجود ندارد» به‌جایش استفاده می‌شود --
-#    یعنی طبق درخواست کاربر، در هر صورت یک پیام فرستاده می‌شود.
+# چرا این‌بار شدیدتر شد: یک اجرا (احتمالاً هم‌زمان با آپلود حجم زیادی از
+# فایل‌های قدیمی data/markets/ به ریپو) کندتر از حد معمول طول کشید، دقیقاً
+# با اجرای زمان‌بندی‌شدهٔ بعدی (۳۰ دقیقه بعد) تداخل پیدا کرد، و طبق تنظیم
+# concurrency، گیت‌هاب اجرای قدیمی‌تر را کنسل کرد -- این باعث یک چرخهٔ
+# خودتکرارشونده از conflict/کنسل‌شدن شد که از آن لحظه تا الان ادامه داشته.
 #
-# concurrency، الگوی retry پوش، و بند permissions نسبت به نسخهٔ قبلی
-# تغییری نکرده‌اند.
+# راه‌حل: برخلاف process_lock_events.yml، این Workflow هیچ عملیات
+# یک‌بارمصرف و برگشت‌ناپذیر ندارد (هیچ GitHub Issue ای نمی‌بندد -- فقط
+# قیمت‌ها را می‌خواند و داشبورد می‌سازد). پس کاملاً امن است که *کل* مراحل
+# (price_monitor.py + price_refresh + dashboard_simple.py + انتشار) داخل
+# یک حلقهٔ retry قرار بگیرند که هر تلاش، اول با git fetch + git reset --hard
+# دقیقاً روی آخرین نسخهٔ واقعی ریموت می‌ایستد و سپس همه‌چیز را از صفر روی
+# همان نسخه بازسازی می‌کند -- هیچ‌وقت یک کامیت قدیمی روی تاریخچهٔ جدید
+# rebase نمی‌شود، پس تناقض متنی اصلاً رخ نمی‌دهد.
+#
+# منطق داخلی price_monitor.py، weatherbot_v3.py، و dashboard_simple.py
+# هیچ‌کدام تغییر نکرده‌اند -- فقط نحوهٔ فراخوانی/کامیت آن‌ها در این فایل
+# YAML بازطراحی شده است.
 
 name: WeatherBet - اسکن نیم‌ساعتهٔ قفل‌ها
 
@@ -58,48 +59,59 @@ jobs:
       - name: نصب پیش‌نیازها
         run: pip install -r requirements.txt
 
-      - name: بررسی قفل‌ها و آماده‌سازی متن وضعیت (بدون ارسال مستقیم تلگرام)
-        run: python price_monitor.py
-
-      - name: آپدیت سبک قیمت کل پنل (همهٔ باکت‌های باز، بدون فراخوانی هواشناسی)
-        run: python weatherbot_v3.py price_refresh
-
-      - name: بازسازی داشبورد ساده با قیمت‌های تازه
-        run: python dashboard_simple.py
-
-      - name: انتشار نسخهٔ یکتای داشبورد (همیشه) و پاک‌سازی نسخه‌های قدیمی
+      - name: اجرای اسکن سبک (قیمت/پیش‌بینی، بدون سایزینگ) و انتشار امن (با بازسازی کامل از روی آخرین نسخه در هر تلاش)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          mkdir -p docs
-          DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
-          cp simple.html "docs/${DASHBOARD_FILE}"
-          # مسیر ثابت فقط برای bookmarkهای قدیمی باقی می‌ماند؛ لینک تلگرام
-          # همیشه به نسخهٔ یکتای بالا اشاره می‌کند.
-          cp simple.html docs/simple.html
-          cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
-          echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
-
-          # فقط فایل‌های نسخه‌ای simple-*.html را مرتب کن و فقط ۶۰ فایل تازه
-          # (حدود ۱ تا ۲ روز، با احتساب اجرای هر ۳۰ دقیقه) را نگه‌دار. این
-          # دستور هرگز docs/simple.html، dashboard.html، CSV یا هیچ فایل/
-          # دایرکتوری داخل data/ را حذف نمی‌کند.
-          mapfile -t OLD_DASHBOARDS < <(ls -1t docs/simple-*.html 2>/dev/null | tail -n +61 || true)
-          if [ "${#OLD_DASHBOARDS[@]}" -gt 0 ]; then
-            printf 'حذف نسخه‌های قدیمی داشبورد:\n%s\n' "${OLD_DASHBOARDS[@]}"
-            rm -- "${OLD_DASHBOARDS[@]}"
-          fi
-
           git config user.name "weatherbot-ci"
           git config user.email "ci@users.noreply.github.com"
-          git add -A
-          git commit -m "بروزرسانی اسکن نیم‌ساعتهٔ قفل‌ها" || echo "چیزی برای کامیت نبود"
 
           PUSHED=false
+          DASHBOARD_FILE=""
+
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin "${{ github.ref_name }}" && git push; then
+            echo "=== تلاش $i ==="
+
+            # همیشه دقیقاً روی آخرین نسخهٔ واقعی ریموت می‌ایستیم -- نه rebase
+            # یک کامیت قدیمی، بلکه شروع تازه از جدیدترین تاریخچه. این
+            # Workflow هیچ عملیات برگشت‌ناپذیری (مثل بستن Issue) ندارد، پس
+            # این کار کاملاً بی‌خطر است.
+            git fetch origin
+            git reset --hard "origin/${{ github.ref_name }}"
+
+            python price_monitor.py
+            python weatherbot_v3.py price_refresh
+            python dashboard_simple.py
+
+            mkdir -p docs
+            DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${i}.html"
+            cp simple.html "docs/${DASHBOARD_FILE}"
+            cp simple.html docs/simple.html
+            cp data/lock_history.csv docs/lock_history.csv || echo "هنوز CSV ای وجود ندارد"
+
+            mapfile -t OLD_DASHBOARDS < <(ls -1t docs/simple-*.html 2>/dev/null | tail -n +61 || true)
+            if [ "${#OLD_DASHBOARDS[@]}" -gt 0 ]; then
+              printf 'حذف نسخه‌های قدیمی داشبورد:\n%s\n' "${OLD_DASHBOARDS[@]}"
+              rm -- "${OLD_DASHBOARDS[@]}"
+            fi
+
+            git add -A
+
+            if git diff --cached --quiet; then
+              echo "چیزی برای کامیت نبود -- احتمالاً یک اجرای دیگر همین لحظه را قبلاً پردازش کرده."
               PUSHED=true
               break
             fi
-            echo "تلاش $i برای push ناموفق بود -- ۵ ثانیه صبر و تلاش دوباره..."
+
+            git commit -m "بروزرسانی اسکن نیم‌ساعتهٔ قفل‌ها"
+
+            if git push; then
+              PUSHED=true
+              break
+            fi
+
+            echo "push در تلاش $i ناموفق بود (احتمالاً یک اجرای دیگر هم‌زمان push زد) -- ۵ ثانیه صبر و تلاش دوباره از روی آخرین نسخه..."
             sleep 5
           done
 
@@ -107,6 +119,8 @@ jobs:
             echo "::error::انتشار تغییرات بعد از ۵ تلاش ناموفق بود."
             exit 1
           fi
+
+          echo "DASHBOARD_FILE=${DASHBOARD_FILE}" >> "$GITHUB_ENV"
 
       - name: انتظار برای انتشار واقعی نسخهٔ یکتا در GitHub Pages
         run: |
@@ -123,15 +137,14 @@ jobs:
           echo "::error::نسخهٔ یکتا تا ۵ دقیقه منتشر نشد -- لینک ۴۰۴ به تلگرام فرستاده نمی‌شود."
           exit 1
 
-      - name: ارسال یک پیام واحد (وضعیت + لینک تازه) -- همیشه، بدون قید و شرط
+      - name: ارسال یک پیام واحد (وضعیت + لینک تازه) -- همیشه
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DASHBOARD_FILE: ${{ env.DASHBOARD_FILE }}
         run: |
           python3 - <<'PY'
-          import os
-          import requests
+          import os, requests
           from pathlib import Path
           from datetime import datetime, timezone
 
