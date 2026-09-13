@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-12T02:20:38.571271+00:00",
   "committed_allocation": null,
-  "hours_left": 2.8,
+  "hours_left": 2.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-13T22:00:00+00:00",
   "event_end_date": "2026-09-13T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 2.4,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0034,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 9.0,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0088,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 35.6,
       "kelly": 0.0045,
       "sell_value": null,
-      "model_prob_change": -0.0211,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 143.2,
       "kelly": 0.0179,
       "sell_value": null,
-      "model_prob_change": -0.0283,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 402.8,
       "kelly": 0.0504,
       "sell_value": null,
-      "model_prob_change": 0.0339,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 449.2,
       "kelly": 0.0562,
       "sell_value": null,
-      "model_prob_change": 0.0635,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -190,22 +190,22 @@
         33.0,
         33.0
       ],
-      "yes_price": 0.999,
-      "no_price": 0.001,
-      "volume": 10053.0,
+      "yes_price": 0.9995,
+      "no_price": 0.0005,
+      "volume": 10067.0,
       "spread": 0.0,
       "yes_token_id": "46498080046001491929751940319458200063225341079416757213761625824842538240117",
       "no_token_id": "3186633699430529676427967782904390041296924183527591027505602003995670244185",
       "model_prob": 0.1426,
       "side": "YES",
-      "ask": 0.999,
-      "market_prob": 0.999,
-      "belief_prob": 0.4423,
+      "ask": 0.9995,
+      "market_prob": 0.9995,
+      "belief_prob": 0.4425,
       "ev": -0.5573,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0042,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Madrid be 34°C on September 13?",
@@ -216,7 +216,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 8678.0,
+      "volume": 8681.0,
       "spread": 0.0,
       "yes_token_id": "32613163268276710089824251075951194005393150150878103829720190875745867332650",
       "no_token_id": "115711657446784315378279490878633646389548760084990234796254431003487365304502",
@@ -228,7 +228,7 @@
       "ev": 15.3333,
       "kelly": 0.0058,
       "sell_value": null,
-      "model_prob_change": -0.0154,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -252,7 +252,7 @@
       "ev": 11.6,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": -0.0078,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": 5.4,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0058,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -324,5 +324,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

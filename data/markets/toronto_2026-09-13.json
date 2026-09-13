@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-12T02:20:38.571271+00:00",
   "committed_allocation": null,
-  "hours_left": 8.8,
+  "hours_left": 8.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-14T04:00:00+00:00",
   "event_end_date": "2026-09-13T12:00:00Z",
@@ -84,7 +84,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 0.4,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 3.8,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": 0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 25.4,
       "kelly": 0.0032,
       "sell_value": null,
-      "model_prob_change": 0.006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 186.4,
       "kelly": 0.0233,
       "sell_value": null,
-      "model_prob_change": 0.0313,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -192,7 +192,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 9776.0,
+      "volume": 10812.0,
       "spread": 0.0,
       "yes_token_id": "54976251740192826361587584363728805580178873674519768589934429227792391916692",
       "no_token_id": "110380311622928393439534144830764114576674689204178632520082305398850080427828",
@@ -204,8 +204,8 @@
       "ev": 645.6,
       "kelly": 0.0807,
       "sell_value": null,
-      "model_prob_change": 0.0018,
-      "yes_price_change": -0.0045
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 27°C on September 13?",
@@ -216,7 +216,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 5864.0,
+      "volume": 8193.0,
       "spread": 0.0,
       "yes_token_id": "57661299841914148274944223826380264997600866317294476335428617409274523138277",
       "no_token_id": "64741576854396158500552698099319214262709640820780690035233226321395063617465",
@@ -228,8 +228,8 @@
       "ev": 365.0,
       "kelly": 0.0456,
       "sell_value": null,
-      "model_prob_change": -0.0387,
-      "yes_price_change": -0.0045
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 28°C on September 13?",
@@ -240,7 +240,7 @@
       ],
       "yes_price": 0.965,
       "no_price": 0.035,
-      "volume": 3587.0,
+      "volume": 3880.0,
       "spread": 0.0,
       "yes_token_id": "90093930909939437332143197576370671099679217811400511295799756857214242174592",
       "no_token_id": "101184430886742382452581013496916042309668501246823095333068576524572244538799",
@@ -252,8 +252,8 @@
       "ev": -0.6202,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0023,
-      "yes_price_change": 0.03
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 29°C or higher on September 13?",
@@ -262,22 +262,22 @@
         29.0,
         999.0
       ],
-      "yes_price": 0.0305,
-      "no_price": 0.9695,
-      "volume": 1643.0,
+      "yes_price": 0.033,
+      "no_price": 0.967,
+      "volume": 1884.0,
       "spread": 0.0,
       "yes_token_id": "59100895957142498601310787755853859394391685569715895332655641051538199366450",
       "no_token_id": "112352081948441936272091919601759555024599272647870001977419805815462635138225",
       "model_prob": 0.0088,
       "side": "YES",
-      "ask": 0.0305,
-      "market_prob": 0.0305,
-      "belief_prob": 0.0164,
-      "ev": -0.4623,
+      "ask": 0.033,
+      "market_prob": 0.033,
+      "belief_prob": 0.0173,
+      "ev": -0.4758,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0006,
-      "yes_price_change": -0.0075
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0025
     }
   ],
   "live_allocation": [
@@ -324,5 +324,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

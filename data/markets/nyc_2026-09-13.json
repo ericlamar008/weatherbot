@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-12T02:20:38.571271+00:00",
   "committed_allocation": null,
-  "hours_left": 8.8,
+  "hours_left": 8.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-14T04:00:00+00:00",
   "event_end_date": "2026-09-13T12:00:00Z",
@@ -24,7 +24,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 40138.0,
+      "volume": 40158.0,
       "spread": 0.0,
       "yes_token_id": "86683746131554509585385583394559393011048191905322329654693151931925692704497",
       "no_token_id": "65061314131765338126662085485535981408519012135774984191279885582289185078472",
@@ -36,7 +36,7 @@
       "ev": 6.8,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.0005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -48,7 +48,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 7441.0,
+      "volume": 7615.0,
       "spread": 0.0,
       "yes_token_id": "52078089421824066004592861795483278028304627440535486806136292590753498231604",
       "no_token_id": "69534249102845859521824495406085329074955431286369300193464645528937217602675",
@@ -60,7 +60,7 @@
       "ev": 7.0,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -70,22 +70,22 @@
         76.0,
         77.0
       ],
-      "yes_price": 0.06,
-      "no_price": 0.94,
-      "volume": 7067.0,
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 7357.0,
       "spread": 0.0,
       "yes_token_id": "33188601290919725781436970293796988980621804085211424746383286445470731887878",
       "no_token_id": "12938404062744622743847953246613482938983346323293300833426671546151336522678",
       "model_prob": 0.0252,
       "side": "YES",
-      "ask": 0.06,
-      "market_prob": 0.06,
-      "belief_prob": 0.0374,
-      "ev": -0.3767,
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0286,
+      "ev": -0.1829,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0058,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.025
     },
     {
       "question": "Will the highest temperature in New York City be between 78-79°F on September 13?",
@@ -94,22 +94,22 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.5,
-      "no_price": 0.5,
-      "volume": 7514.0,
+      "yes_price": 0.655,
+      "no_price": 0.345,
+      "volume": 7650.0,
       "spread": 0.0,
       "yes_token_id": "32970363237358354587295402672168905527880872656051383259093634773937613110720",
       "no_token_id": "4632490936832651386478780178476554272783775785976211942372859859352964375277",
       "model_prob": 0.1192,
       "side": "YES",
-      "ask": 0.5,
-      "market_prob": 0.5,
-      "belief_prob": 0.2525,
-      "ev": -0.495,
+      "ask": 0.655,
+      "market_prob": 0.655,
+      "belief_prob": 0.3067,
+      "ev": -0.5318,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0322,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.155
     },
     {
       "question": "Will the highest temperature in New York City be between 80-81°F on September 13?",
@@ -118,22 +118,22 @@
         80.0,
         81.0
       ],
-      "yes_price": 0.345,
-      "no_price": 0.655,
-      "volume": 4836.0,
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 4923.0,
       "spread": 0.0,
       "yes_token_id": "2212813148222335452288281783318167958972712938601297819045287414747697736564",
       "no_token_id": "105418659843195358490314611419581937912063890063092472047858580820012908388099",
       "model_prob": 0.3805,
       "side": "YES",
-      "ask": 0.345,
-      "market_prob": 0.345,
-      "belief_prob": 0.3681,
-      "ev": 0.067,
-      "kelly": 0.0088,
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.3488,
+      "ev": 0.2028,
+      "kelly": 0.0207,
       "sell_value": null,
-      "model_prob_change": 0.0709,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.055
     },
     {
       "question": "Will the highest temperature in New York City be between 82-83°F on September 13?",
@@ -142,22 +142,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.045,
-      "no_price": 0.955,
-      "volume": 6588.0,
+      "yes_price": 0.04,
+      "no_price": 0.96,
+      "volume": 6599.0,
       "spread": 0.0,
       "yes_token_id": "32678372968809215953012912981940123856434366335313105386347556534667439040907",
       "no_token_id": "40256267974787339217211948144026898325400212578912034200441803880085925018796",
       "model_prob": 0.3404,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
-      "belief_prob": 0.237,
-      "ev": 4.2667,
-      "kelly": 0.0503,
+      "ask": 0.04,
+      "market_prob": 0.04,
+      "belief_prob": 0.2353,
+      "ev": 4.8825,
+      "kelly": 0.0509,
       "sell_value": null,
-      "model_prob_change": -0.0489,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in New York City be between 84-85°F on September 13?",
@@ -180,7 +180,7 @@
       "ev": 14.775,
       "kelly": 0.0148,
       "sell_value": null,
-      "model_prob_change": -0.0455,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -190,22 +190,22 @@
         86.0,
         87.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.9975,
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
       "volume": 2046.0,
       "spread": 0.0,
       "yes_token_id": "30430775102969621751152394417277796961259513436926660792757719968409632343432",
       "no_token_id": "69122694975141953276053041306147116956413282884729015330824268678895740200560",
       "model_prob": 0.02,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.0139,
-      "ev": 4.56,
-      "kelly": 0.0029,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0135,
+      "ev": 8.0,
+      "kelly": 0.003,
       "sell_value": null,
-      "model_prob_change": -0.0116,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in New York City be between 88-89°F on September 13?",
@@ -228,7 +228,7 @@
       "ev": 5.8,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -252,7 +252,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": 1.8,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

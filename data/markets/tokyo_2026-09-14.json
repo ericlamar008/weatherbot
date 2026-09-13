@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-13T02:20:38.722111+00:00",
   "committed_allocation": null,
-  "hours_left": 19.8,
+  "hours_left": 19.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-14T15:00:00+00:00",
   "event_end_date": "2026-09-14T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 4.9,
       "kelly": 0.0012,
       "sell_value": null,
-      "model_prob_change": 0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 5.0,
       "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": 0.003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 1.81,
       "kelly": 0.0046,
       "sell_value": null,
-      "model_prob_change": 0.0107,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -94,22 +94,22 @@
         28.0,
         28.0
       ],
-      "yes_price": 0.045,
-      "no_price": 0.955,
+      "yes_price": 0.04,
+      "no_price": 0.96,
       "volume": 1329.0,
       "spread": 0.0,
       "yes_token_id": "69184161455718507982766639802514988836751106402712404289252585322104669078330",
       "no_token_id": "17374359677164584690480064916776636679676555628088410073667679390514722596356",
       "model_prob": 0.1081,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
-      "belief_prob": 0.086,
-      "ev": 0.9111,
-      "kelly": 0.0107,
+      "ask": 0.04,
+      "market_prob": 0.04,
+      "belief_prob": 0.0843,
+      "ev": 1.1075,
+      "kelly": 0.0115,
       "sell_value": null,
-      "model_prob_change": 0.0328,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Tokyo be 29°C on September 14?",
@@ -118,22 +118,22 @@
         29.0,
         29.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.845,
-      "volume": 3144.0,
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 3601.0,
       "spread": 0.0,
       "yes_token_id": "26291634935696246888400778275031043459713200476147958246461666865649063635139",
       "no_token_id": "106047715448069489785247990805376741933545931184343685707217268761920277103208",
       "model_prob": 0.2378,
       "side": "YES",
-      "ask": 0.155,
-      "market_prob": 0.155,
-      "belief_prob": 0.2088,
-      "ev": 0.3471,
-      "kelly": 0.0159,
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.2351,
+      "ev": 0.0222,
+      "kelly": 0.0017,
       "sell_value": null,
-      "model_prob_change": 0.0588,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.075
     },
     {
       "question": "Will the highest temperature in Tokyo be 30°C on September 14?",
@@ -142,22 +142,22 @@
         30.0,
         30.0
       ],
-      "yes_price": 0.46,
-      "no_price": 0.54,
-      "volume": 3506.0,
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 3580.0,
       "spread": 0.0,
       "yes_token_id": "81323793015418640508687337296279588212799034108375839689840389101376732486101",
       "no_token_id": "56999853453473574353183299227472286899377158337719589362864803834090240529094",
       "model_prob": 0.2952,
       "side": "YES",
-      "ask": 0.46,
-      "market_prob": 0.46,
-      "belief_prob": 0.3529,
-      "ev": -0.2328,
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.3511,
+      "ev": -0.2284,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0158,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Tokyo be 31°C on September 14?",
@@ -166,22 +166,22 @@
         31.0,
         31.0
       ],
-      "yes_price": 0.26,
-      "no_price": 0.74,
-      "volume": 5141.0,
+      "yes_price": 0.225,
+      "no_price": 0.775,
+      "volume": 5152.0,
       "spread": 0.0,
       "yes_token_id": "73683614723102006810483868734668728239390917924686187973297330360654565624870",
       "no_token_id": "80041076896230877304402782744669920196233847902428434172839113289453006382272",
       "model_prob": 0.1856,
       "side": "YES",
-      "ask": 0.26,
-      "market_prob": 0.26,
-      "belief_prob": 0.2116,
-      "ev": -0.1862,
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.1994,
+      "ev": -0.1138,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0498,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.035
     },
     {
       "question": "Will the highest temperature in Tokyo be 32°C on September 14?",
@@ -204,7 +204,7 @@
       "ev": 2.54,
       "kelly": 0.0097,
       "sell_value": null,
-      "model_prob_change": -0.0424,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -216,7 +216,7 @@
       ],
       "yes_price": 0.01,
       "no_price": 0.99,
-      "volume": 1190.0,
+      "volume": 1195.0,
       "spread": 0.0,
       "yes_token_id": "90601405540271381805069419907186910485782558233416419002406965659640044061681",
       "no_token_id": "73075112077243239871371181153663878515694340964739945104428926273732895858743",
@@ -228,8 +228,8 @@
       "ev": 0.98,
       "kelly": 0.0025,
       "sell_value": null,
-      "model_prob_change": -0.0186,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 34°C on September 14?",
@@ -238,22 +238,22 @@
         34.0,
         34.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.9975,
-      "volume": 766.0,
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 786.0,
       "spread": 0.0,
       "yes_token_id": "64175696355969447455115446152020870882485568316321692197730067371306020217790",
       "no_token_id": "91102868815869386638705427248296625880243717053399519144528560667859650361708",
       "model_prob": 0.0088,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.0066,
-      "ev": 1.64,
-      "kelly": 0.001,
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0073,
+      "ev": 0.6222,
+      "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0069,
-      "yes_price_change": -0.0025
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.002
     },
     {
       "question": "Will the highest temperature in Tokyo be 35°C or higher on September 14?",
@@ -276,7 +276,7 @@
       "ev": 3.4,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": -0.0046,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

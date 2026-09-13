@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-13T02:20:38.722111+00:00",
   "committed_allocation": null,
-  "hours_left": 32.8,
+  "hours_left": 32.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-15T04:00:00+00:00",
   "event_end_date": "2026-09-14T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": -0.56,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": -0.52,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -118,22 +118,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.05,
-      "no_price": 0.95,
+      "yes_price": 0.045,
+      "no_price": 0.955,
       "volume": 1177.0,
       "spread": 0.0,
       "yes_token_id": "73196653866448393187013440234460039888093456612555265313248795764710990469976",
       "no_token_id": "26852478339955242873784806052778287909075622910547383131003318269661411793921",
       "model_prob": 0.0174,
       "side": "YES",
-      "ask": 0.05,
-      "market_prob": 0.05,
-      "belief_prob": 0.0288,
-      "ev": -0.424,
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0271,
+      "ev": -0.3978,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0064,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 19°C on September 14?",
@@ -156,7 +156,7 @@
       "ev": -0.4817,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0176,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -166,21 +166,21 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.525,
-      "no_price": 0.475,
+      "yes_price": 0.52,
+      "no_price": 0.48,
       "volume": 4054.0,
       "spread": 0.0,
       "yes_token_id": "21661700993119772638616078208490400236656442068170056168207890027114108152742",
       "no_token_id": "10668703301047563633700039548826640004512836720598936390353833895897172835647",
       "model_prob": 0.2703,
       "side": "YES",
-      "ask": 0.525,
-      "market_prob": 0.525,
-      "belief_prob": 0.3594,
-      "ev": -0.3154,
+      "ask": 0.52,
+      "market_prob": 0.52,
+      "belief_prob": 0.3577,
+      "ev": -0.3121,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0119,
+      "model_prob_change": 0.0,
       "yes_price_change": -0.005
     },
     {
@@ -204,7 +204,7 @@
       "ev": 1.4742,
       "kelly": 0.0503,
       "sell_value": null,
-      "model_prob_change": 0.031,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -228,7 +228,7 @@
       "ev": 3.996,
       "kelly": 0.0256,
       "sell_value": null,
-      "model_prob_change": 0.0117,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -252,7 +252,7 @@
       "ev": 8.7667,
       "kelly": 0.0066,
       "sell_value": null,
-      "model_prob_change": -0.0014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": 18.4,
       "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": -0.0024,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

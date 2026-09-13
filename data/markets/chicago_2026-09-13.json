@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-12T02:20:38.571271+00:00",
   "committed_allocation": null,
-  "hours_left": 9.8,
+  "hours_left": 9.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-14T05:00:00+00:00",
   "event_end_date": "2026-09-13T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 34.6,
       "kelly": 0.0043,
       "sell_value": null,
-      "model_prob_change": 0.0076,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 37.8,
       "kelly": 0.0047,
       "sell_value": null,
-      "model_prob_change": 0.0083,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 141.0,
       "kelly": 0.0176,
       "sell_value": null,
-      "model_prob_change": 0.0267,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 385.2,
       "kelly": 0.0482,
       "sell_value": null,
-      "model_prob_change": 0.0349,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -118,22 +118,22 @@
         74.0,
         75.0
       ],
-      "yes_price": 0.98,
-      "no_price": 0.02,
-      "volume": 5423.0,
+      "yes_price": 0.995,
+      "no_price": 0.005,
+      "volume": 5632.0,
       "spread": 0.0,
       "yes_token_id": "38210492403371093681415622764034372801844713235412494491547494932044380552484",
       "no_token_id": "74379084430660121042894849471399902080465014157803998386856473575091520825999",
       "model_prob": 0.336,
       "side": "YES",
-      "ask": 0.98,
-      "market_prob": 0.98,
-      "belief_prob": 0.5614,
-      "ev": -0.4271,
+      "ask": 0.995,
+      "market_prob": 0.995,
+      "belief_prob": 0.5666,
+      "ev": -0.4306,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0341,
-      "yes_price_change": 0.04
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.015
     },
     {
       "question": "Will the highest temperature in Chicago be between 76-77°F on September 13?",
@@ -142,22 +142,22 @@
         76.0,
         77.0
       ],
-      "yes_price": 0.02,
-      "no_price": 0.98,
-      "volume": 4381.0,
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 4422.0,
       "spread": 0.0,
       "yes_token_id": "72162518513556869030390962984444729422271623467908878616171890275925711400507",
       "no_token_id": "79119595527933953625235687286388067010914820272224143405510000287368564020528",
       "model_prob": 0.1437,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
-      "belief_prob": 0.1004,
-      "ev": 4.02,
-      "kelly": 0.0205,
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.095,
+      "ev": 20.1111,
+      "kelly": 0.0227,
       "sell_value": null,
-      "model_prob_change": -0.033,
-      "yes_price_change": -0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0155
     },
     {
       "question": "Will the highest temperature in Chicago be between 78-79°F on September 13?",
@@ -180,8 +180,8 @@
       "ev": 5.1333,
       "kelly": 0.0058,
       "sell_value": null,
-      "model_prob_change": -0.0084,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 80-81°F on September 13?",
@@ -204,7 +204,7 @@
       "ev": 2.24,
       "kelly": 0.0014,
       "sell_value": null,
-      "model_prob_change": -0.0016,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -228,7 +228,7 @@
       "ev": 3.8,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-13T02:20:38.722111+00:00",
   "committed_allocation": null,
-  "hours_left": 19.8,
+  "hours_left": 19.4,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-14T15:00:00+00:00",
   "event_end_date": "2026-09-14T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 1.8,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 5.8,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 4.8333,
       "kelly": 0.0036,
       "sell_value": null,
-      "model_prob_change": -0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 5.7,
       "kelly": 0.0217,
       "sell_value": null,
-      "model_prob_change": 0.0658,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -118,22 +118,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.07,
-      "no_price": 0.93,
+      "yes_price": 0.065,
+      "no_price": 0.935,
       "volume": 5033.0,
       "spread": 0.0,
       "yes_token_id": "75924387683503928469924613905305378109840166535787348245755750022639920572224",
       "no_token_id": "70017645488698314344832784853511391348682298483371119055939581035521229378500",
       "model_prob": 0.4467,
       "side": "YES",
-      "ask": 0.07,
-      "market_prob": 0.07,
-      "belief_prob": 0.3149,
-      "ev": 3.4986,
-      "kelly": 0.0658,
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.3131,
+      "ev": 3.8169,
+      "kelly": 0.0663,
       "sell_value": null,
-      "model_prob_change": 0.2409,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 25°C on September 14?",
@@ -142,22 +142,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.255,
-      "no_price": 0.745,
-      "volume": 5203.0,
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 5239.0,
       "spread": 0.0,
       "yes_token_id": "54297833618422239990071023752307647336802073438840187864898026885347163489340",
       "no_token_id": "26243031415769347048679752911834904889538967432241965425213338500145111266982",
       "model_prob": 0.2986,
       "side": "YES",
-      "ask": 0.255,
-      "market_prob": 0.255,
-      "belief_prob": 0.2833,
-      "ev": 0.111,
-      "kelly": 0.0095,
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.2798,
+      "ev": 0.142,
+      "kelly": 0.0115,
       "sell_value": null,
-      "model_prob_change": -0.0113,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 26°C on September 14?",
@@ -166,22 +166,22 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.53,
-      "no_price": 0.47,
-      "volume": 5426.0,
+      "yes_price": 0.525,
+      "no_price": 0.475,
+      "volume": 5444.0,
       "spread": 0.0,
       "yes_token_id": "76853511772223526076970779584550327183269099468573841625996158613581302355732",
       "no_token_id": "72850499303822564338453500070438067108408856424126264201518772877093141512126",
       "model_prob": 0.0616,
       "side": "YES",
-      "ask": 0.53,
-      "market_prob": 0.53,
-      "belief_prob": 0.2255,
-      "ev": -0.5745,
+      "ask": 0.525,
+      "market_prob": 0.525,
+      "belief_prob": 0.2238,
+      "ev": -0.5737,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.1622,
-      "yes_price_change": 0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 27°C on September 14?",
@@ -192,7 +192,7 @@
       ],
       "yes_price": 0.18,
       "no_price": 0.82,
-      "volume": 3625.0,
+      "volume": 3694.0,
       "spread": 0.0,
       "yes_token_id": "66855540076202126585462405628896955144154930973614683909467752868285869208820",
       "no_token_id": "78342861159950555350697098641728048908129110282648685481115883546137710457839",
@@ -204,8 +204,8 @@
       "ev": -0.6111,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0809,
-      "yes_price_change": 0.02
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 28°C on September 14?",
@@ -228,7 +228,7 @@
       "ev": -0.3833,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0278,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -252,7 +252,7 @@
       "ev": -0.48,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0094,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0062,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +291,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-13T19:07:19.676826+00:00",
-  "last_lite_refresh": "2026-09-13T19:13:04.288962+00:00"
+  "last_lite_refresh": "2026-09-13T19:33:20.526618+00:00"
 }
