@@ -3,14 +3,14 @@
   "city_name": "Tel Aviv",
   "date": "2026-09-13",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-12T02:20:38.571271+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-13T21:00:00+00:00",
   "event_end_date": "2026-09-13T12:00:00Z",
-  "last_scan": "2026-09-13T02:20:38.722111+00:00",
+  "last_scan": "2026-09-14T02:20:37.695067+00:00",
   "horizon_days": 0,
   "forecast_mean": 32.54,
   "sigma": 1.227,
@@ -295,7 +295,10 @@
       "market_prob": 0.79,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.75
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 7.97,
+      "user_entered": false
     },
     {
       "market_id": "4461704",
@@ -311,7 +314,10 @@
       "market_prob": 0.21,
       "role": "scenario_hedge",
       "units": 5.32,
-      "sell_value": 0.2
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -5.32,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 35.3,
@@ -324,5 +330,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-14T02:07:21.530950+00:00",
-  "last_lite_refresh": "2026-09-13T20:20:45.712408+00:00"
+  "last_lite_refresh": "2026-09-13T20:20:45.712408+00:00",
+  "actual_temp": 32.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 2.65,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4461704",
+      "question": "Will the highest temperature in Tel Aviv be 32°C on September 13?",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "YES",
+      "price": 0.79,
+      "model_prob": 0.2956,
+      "ev": -0.4068,
+      "market_prob": 0.79,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 7.97,
+      "user_entered": false
+    },
+    {
+      "market_id": "4461704",
+      "question": "Will the highest temperature in Tel Aviv be 32°C on September 13? (NO)",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "side": "NO",
+      "price": 0.21,
+      "model_prob": 0.7044,
+      "ev": 1.5305,
+      "market_prob": 0.21,
+      "role": "scenario_hedge",
+      "units": 5.32,
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -5.32,
+      "user_entered": false
+    }
+  ]
 }
