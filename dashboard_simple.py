@@ -1,80 +1,48 @@
 """
 dashboard_simple.py -- می‌سازد simple.html: نسخهٔ ساده و تعاملی داشبورد.
 =====================================================================================
-تغییرات این نسخه (فقط نمایشی، منطق ربات دست‌نخورده):
+تغییرات پیشین (فقط نمایشی، منطق ربات دست‌نخورده):
   ۱) بازارها دیگر پیش‌فرض باز نیستند -- فقط با کلیک روی اسم شهر باز می‌شوند.
-  ۲) اگر یک شهر چند تاریخ داشته باشد، یک لایهٔ اضافی (تاریخ) بین شهر و
-     جدول باکت‌ها اضافه شده.
-  ۳) شهرهایی که سیگنال قابل‌معامله دارند (main_signal) بالای لیست می‌آیند؛
-     بقیه به‌ترتیب الفبا.
-  ۴) باکس جستجوی شهر + دو فیلتر (شهر/تاریخ) مخصوص بخش تاریخچه.
-  ۵) اسم شهر در هر بازار حالا لینک مستقیم به پلی‌مارکت است.
-  ۶) دکمهٔ پرش سریع به بخش تاریخچه، بالای صفحه.
-  ۷) زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m remaining").
-  ۸) ستون "باور نهایی" در جدول باکت‌ها.
-  ۹) سکشن «سیگنال‌های قفل‌شدهٔ فعال» بالای صفحه.
-  ۱۰) رفع باگ ثبت‌نشدن قفل (وضعیت موقت + payload کوتاه‌تر).
+  ۲) لایهٔ تاریخ بین شهر و جدول باکت‌ها (برای شهرهای چندتاریخه).
+  ۳) شهرهای دارای سیگنال قابل‌معامله بالای لیست می‌آیند.
+  ۴) باکس جستجوی شهر + دو فیلتر تاریخچه.
+  ۵) اسم شهر لینک مستقیم به پلی‌مارکت است.
+  ۶) دکمهٔ پرش سریع به بخش تاریخچه.
+  ۷) زمان باقی‌مانده به انگلیسی.
+  ۸) ستون «باور نهایی».
+  ۹) سکشن «سیگنال‌های قفل‌شدهٔ فعال».
+  ۱۰) رفع باگ ثبت‌نشدن قفل.
   ۱۱) بازطراحی بصری کامل (پالت روشن، فونت Vazirmatn).
-  ۱۲) «آخرین به‌روزرسانی» بالای صفحه با data-attribute و جاوااسکریپت
-      لحظه‌ای محاسبه می‌شود؛ ساعت به وقت ایران است.
-  ۱۳) رفع باگ نمایش قفل‌های منقضی: قفلی که بازار زیرینش واقعاً resolve/
-      expire شده (طبق data/markets/*.json) از سکشن قفل‌های فعال حذف می‌شود،
-      حتی اگر status خود قفل هنوز به‌روز نشده باشد.
+  ۱۲) «آخرین به‌روزرسانی» با محاسبهٔ لحظه‌ای جاوااسکریپت، به وقت ایران.
+  ۱۳) رفع باگ نمایش قفل‌های منقضی.
+  ۱۴) ستون «دمای سیگنال قفل‌شده»، رفع SyntaxError، رفع ناهماهنگی زمان،
+      رفع کاراکترهای عجیب مارکر، اسکریپت ضدکش CDN، میانبر حذف قفل در
+      سکشن فعال، متاتگ noindex، نمایش تغییر model_prob/yes_price در
+      اسکن لایت.
 
---- روادراه: فاز D -- زمان محلی به‌جای event_end_date خام -------------------
-پایان روز محلی هرگز به‌تنهایی باعث حذف قفل باز از سکشن فعال نمی‌شود؛ فقط
-وضعیت resolved/expired واقعی بازار این کار را می‌کند.
+=====================================================================================
+نقشه‌راه بهبود (۱۶ سپتامبر ۲۰۲۶) -- خلاصهٔ افزودنی‌های این نسخه
+=====================================================================================
+فاز ۱: ستون EV اضافه شد (از فیلد از‌قبل‌محاسبه‌شدهٔ ev در هر باکت -- بدون
+محاسبهٔ جدید). فیلتر BUCKET_PLAUSIBILITY_MIN=0.05: باکت‌هایی که هیچ‌کدام
+از model_prob/market_prob آن‌ها به این آستانه نمی‌رسد، از جدول حذف
+می‌شوند (تصمیم نهایی کاربر بعد از رد گزینهٔ فیلتر بر اساس volume که روی
+دادهٔ واقعی امتحان و رد شد).
 
---- اصلاحات قبلی --------------------------------------------------------------
-  ۱) ستون «دمای سیگنال قفل‌شده» در سکشن قفل‌های فعال.
-  ۲) رفع SyntaxError واقعی در _bucket_table (ساخت رشتهٔ onclick با
-     .format() به‌جای f-string تودرتو).
-  ۳) رفع باگ ناهماهنگی زمان «آخرین به‌روزرسانی»: هر دو بخش (ساعت بالا و
-     شمارش معکوس کنارش) از یک منبع واحد (آخرین اسکن واقعی) ساخته می‌شوند.
-  ۴) رفع کاراکترهای عجیب "□B8"/"□BE" کنار اسم شهرها: مارکر باز/بسته‌شدن
-     هر <summary> با مثلث خالص CSS جایگزین شد (بدون وابستگی به فونت).
+فاز ۲: رنگ‌بندی سیگنال (EV_GATE_THRESHOLD=0.10) -- آبی (is_main بدون EV
+کافی)، بنفش (EV کافی بدون is_main)، سبز (هر دو). is_main از همان فیلد
+از‌قبل‌محاسبه‌شدهٔ main_signal_market_id می‌آید -- بدون بازسازی منطق گیت
+belief. ⚠️ بدهی فنی: مسیرهای آبی/سبز فقط با تست مصنوعی تأیید شدند (هیچ
+مارکت واقعی با سیگنال فعال در این نشست دیده نشد) -- نیاز به تأیید نهایی
+با یک سیگنال واقعی در فاز ۷.
 
---- اصلاح قبلی (مهم) -----------------------------------------------------
-مشاهده شد که با وجود رفع منطق زمان، همچنان ساعت اسکن قدیمی نشان داده
-می‌شد -- علت این بود که هیچ Workflow فعلی واقعاً data/last_scan.json را
-با یک اسکن سبک/کامل تازه به‌روزرسانی نمی‌کرد.
-
-همچنین متاتگ‌های Cache-Control/Pragma/Expires به‌تنهایی برای دور زدن کش
-CDN گیت‌هاب‌پیجز (Fastly) کافی نبودند. اصلاح قطعی: یک اسکریپت کوچک در
-ابتدای <head> اضافه شد که در همان لحظهٔ بازشدن صفحه، اگر لینک پارامتر
-ضدکش (?_r=...) نداشته باشد، صفحه را با یک URL کاملاً جدید و یکتا دوباره
-بارگذاری می‌کند.
-
---- PATCH (فاز ۲ نقشه‌راه) -----------------------------------------
-درخواست کاربر: در سکشن «🔒 سیگنال‌های قفل‌شدهٔ فعال»، یک میانبر «حذف قفل»
-مستقیم کنار هر ردیف اضافه شود -- تا لازم نباشد برای حذف هر قفل، به‌صورت
-دستی به جدول اصلی همان شهر/تاریخ اسکرول کرد و باکت مربوطه را پیدا کرد.
-
-راه‌حل: یک ستون «عملیات» به جدول _locked_signals_section_html اضافه شد که
-دقیقاً همان تابع جاوااسکریپت موجود unlockBucket(...) را با همان پارامترها
-(city, city_name, date, market_id, bucket_label) صدا می‌زند -- هیچ تابع
-جاوااسکریپت جدیدی اضافه نشده و رفتار خود عملیات حذف قفل (باز شدن Issue در
-گیت‌هاب) دقیقاً همان چیزی است که در جدول اصلی هر شهر هم وجود دارد.
-
---- PATCH (درخواست کاربر: کاهش دیده‌شدن در جستجوها) -----------------
-یک تگ <meta name="robots" content="noindex, nofollow, noarchive, nosnippet,
-noimageindex"> به <head> اضافه شد.
-
---- PATCH این نسخه (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار در
-اسکن لایت، داخل پرانتز، بدون سکشن جدید) --------------------------------------
-weatherbot_v3.py (تابع refresh_open_market_info، فقط در اسکن لایت هر ۶
-ساعته) روی هر باکت full_distribution دو فیلد اختیاری تازه می‌نویسد:
-model_prob_change و yes_price_change (تفاضل خام نسبت به آخرین اسکن لایت،
-درصد-امتیاز خام نه نسبی). در _bucket_table() -- و فقط همین‌جا -- این دو
-مقدار (اگر موجود باشند) به‌صورت پرانتزی به انتهای متن سه ستون موجود
-اضافه می‌شوند:
-  - «احتمال مدل» (model_str): از model_prob_change
-  - «احتمال بازار (YES)» (market_str) و «قیمت YES» (price_str): هر دو از
-    yes_price_change (هرکدام در واحد خودش: market_str با علامت درصد،
-    price_str خام)
-هیچ ستون/سکشن جدیدی اضافه نشده، ساختار جدول (تعداد <th>/<td>، ترتیب
-ستون‌ها) و بقیهٔ منطق فایل (لینک‌ها، دکمه‌های قفل/حذف قفل، تاریخچه، سکشن
-قفل‌های فعال) کاملاً دست‌نخورده مانده است.
+فاز ۶ (بازار دمای کمینه): دو بخش لنگردار (#max-section/#min-section) در
+یک صفحه. _load_all_markets اصلاح شد تا فایل‌های *_min.json را قاطی نکند.
+توابع موازی کامل برای کمینه (_load_all_min_markets، _build_polymarket_
+url_min، _date_block_html_min). تابع JS لاک‌کردن (lockBucket) پارامتر
+market_type می‌گیرد تا payload درخواست قفل مشخص کند این باکت مربوط به
+کدام نوع بازار است (lock_manager.py از این فیلد استفاده می‌کند).
+=====================================================================================
 """
 import json
 from collections import defaultdict
@@ -105,6 +73,12 @@ OUTPUT_FILE = Path("simple.html")
 IRAN_TZ_NAME = "Asia/Tehran"
 
 RESOLVED_LIKE_STATUSES = {"resolved", "resolved_no_signal", "expired_no_signal"}
+
+# (فاز ۱) آستانهٔ حداقل معناداری برای نمایش یک باکت در جدول.
+BUCKET_PLAUSIBILITY_MIN = 0.05
+# (فاز ۲) آستانهٔ EV برای گیت سیگنال سبز/بنفش -- موقت، تا بک‌تست واقعی
+# (بعد از افزودن EV به گزارش دقت آینده) جایگزین شود.
+EV_GATE_THRESHOLD = 0.10
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -144,6 +118,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   --red-bg: #fdeceb;
   --amber: #b45309;
   --amber-bg: #fef3e0;
+  --blue: #2563eb;
+  --blue-bg: #eaf1ff;
+  --purple: #9333ea;
+  --purple-bg: #f3e8ff;
 }
 body{
   background:var(--bg);color:var(--text);
@@ -167,6 +145,10 @@ summary::-webkit-details-marker{display:none}
 summary::before{content:"";display:inline-block;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid var(--text-dim);margin-left:8px;vertical-align:middle;transition:transform .12s ease}
 details[open]>summary::before{transform:rotate(90deg)}
 .main-badge{background:var(--green-bg);color:var(--green);border:1px solid #16a34a55;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px}
+.signal-badge{border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:600;white-space:nowrap;margin-right:6px;border:1px solid}
+.signal-blue{background:var(--blue-bg);color:var(--blue);border-color:#2563eb55}
+.signal-purple{background:var(--purple-bg);color:var(--purple);border-color:#9333ea55}
+.signal-green{background:var(--green-bg);color:var(--green);border-color:#16a34a55}
 .time-note{color:var(--text-dim);font-size:11.5px;direction:ltr;unicode-bidi:embed;display:inline-block}
 .locked-section{border:1px solid #16a34a55;background:var(--green-bg)}
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px;border-radius:8px}
@@ -202,10 +184,14 @@ tr:last-child td{border-bottom:none}
 <div class="meta">آخرین به‌روزرسانی: LASTUPDATE (به وقت ایران) <span class="time-note relative-time" data-ts="LASTSCANISO" data-kind="LASTSCANKIND">LASTSCANFALLBACK</span><br>فقط دما / احتمال مدل / احتمال بازار -- بدون سایزینگ</div>
 <div class="toolbar">
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
+  <a class="jump-btn" href="#max-section">\U0001F525 حداکثر</a>
+  <a class="jump-btn" href="#min-section">\u2744\uFE0F حداقل</a>
   <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
 </div>
+<h2 id="max-section">\U0001F525 دمای حداکثر</h2>
 BODYHTML
-
+<h2 id="min-section">\u2744\uFE0F دمای حداقل</h2>
+MIN_BODYHTML
 <h2 id="history-section">تاریخچهٔ معاملات</h2>
 <a class="download-btn" href="lock_history.csv" download>\u2b07 دانلود CSV کامل</a>
 <div class="history-filters">
@@ -236,10 +222,10 @@ function setLockStatus(marketId, text, color) {
   const el = document.getElementById("lockstatus-" + marketId);
   if (el) { el.textContent = text; el.style.color = color || "#9aa0a6"; }
 }
-function lockBucket(city, cityName, date, marketId, tokenId, side, price, label) {
+function lockBucket(city, cityName, date, marketId, tokenId, side, price, label, marketType) {
   setLockStatus(marketId, "\u23F3 در حال باز شدن گیت‌هاب...", "#eab308");
   const repo = "GITHUB_REPO_PLACEHOLDER";
-  const payload = { city: city, date: date, market_id: marketId + "|" + tokenId, side: side, price: price };
+  const payload = { city: city, date: date, market_id: marketId + "|" + tokenId, side: side, price: price, market_type: (marketType || "max") };
   const title = encodeURIComponent("LOCK " + cityName + " " + date + " " + label + " " + side + " @ " + price);
   const body = encodeURIComponent(JSON.stringify(payload));
   const url = "https://github.com/" + repo + "/issues/new?title=" + title + "&body=" + body + "&labels=lock-request";
@@ -287,10 +273,27 @@ window.addEventListener('DOMContentLoaded', computeRelativeTimes);
 
 
 def _load_all_markets():
+    """(فاز ۶) فایل‌های *_min.json عمداً رد می‌شوند تا با بازار حداکثر
+    قاطی نشوند."""
     out = []
     if not MARKETS_DIR.exists():
         return out
     for f in MARKETS_DIR.glob("*.json"):
+        if f.name.endswith("_min.json"):
+            continue
+        try:
+            out.append(json.loads(f.read_text(encoding="utf-8")))
+        except Exception:
+            pass
+    return out
+
+
+def _load_all_min_markets():
+    """(فاز ۶) بارگذاری مستقل بازارهای کمینه."""
+    out = []
+    if not MARKETS_DIR.exists():
+        return out
+    for f in MARKETS_DIR.glob("*_min.json"):
         try:
             out.append(json.loads(f.read_text(encoding="utf-8")))
         except Exception:
@@ -344,8 +347,7 @@ def _hours_left_str(hours):
     return f"{h}h {m}m remaining"
 
 def _local_day_time_label(city, date, now):
-    """پایان روز محلی را از settlement رسمی جدا نگه می‌دارد -- پس از پایان
-    روز، به‌جای صفرشدن جعلی زمان، عبارت واقعی وضعیت را نشان می‌دهد."""
+    """پایان روز محلی را از settlement رسمی جدا نگه می‌دارد."""
     loc = LOCATIONS.get(city, {})
     timing = local_day_status(date, loc, now)
     if timing["kind"] == "local_day_open":
@@ -354,9 +356,7 @@ def _local_day_time_label(city, date, now):
 
 
 def _find_locked_bucket_label(mkt, market_id, unit_sym):
-    """پیدا کردن برچسب دمای باکتی که قفل شده، از full_distribution بازار.
-    اگر بازار دیگر full_distribution نداشته باشد (مثلاً بعد از resolve)،
-    به‌جای کرش، فقط "-" برمی‌گرداند."""
+    """پیدا کردن برچسب دمای باکتی که قفل شده، از full_distribution بازار."""
     if not mkt:
         return "-"
     for b in mkt.get("full_distribution", []) or []:
@@ -373,8 +373,7 @@ LAST_SCAN_FILE = Path("data/last_scan.json")
 
 
 def _latest_scan_info():
-    """برمی‌گرداند (iso_timestamp, kind_label) آخرین اسکن (کامل یا سبک)،
-    یا (None, None) اگر هیچ سابقه‌ای نبود."""
+    """برمی‌گرداند (iso_timestamp, kind_label) آخرین اسکن، یا (None, None)."""
     if not LAST_SCAN_FILE.exists():
         return None, None
     try:
@@ -396,7 +395,6 @@ def _latest_scan_info():
     kind_label = "اسکن کامل" if kind == "full" else "اسکن سبک"
     return latest.isoformat(), kind_label
 
-
 def _iran_time_str(dt_utc):
     """تبدیل یک datetime آگاه از UTC به رشتهٔ زمان محلی ایران."""
     if ZoneInfo is not None:
@@ -417,22 +415,51 @@ def _build_polymarket_url(city, date_str):
         return "https://polymarket.com"
 
 
-def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locked_keys, main_signal_id):
+def _build_polymarket_url_min(city, date_str):
+    """(فاز ۶) معادل _build_polymarket_url ولی lowest- به‌جای highest-."""
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        month = MONTHS[dt.month - 1]
+        return f"https://polymarket.com/event/lowest-temperature-in-{city}-on-{month}-{dt.day}-{dt.year}"
+    except Exception:
+        return "https://polymarket.com"
+
+
+def _signal_badge_html(is_main, ev_val):
+    """(فاز ۲) نشان رنگی سیگنال -- آبی/بنفش/سبز بر اساس is_main و EV."""
+    ev_val = ev_val if ev_val is not None else 0.0
+    if is_main and ev_val >= EV_GATE_THRESHOLD:
+        return '<span class="signal-badge signal-green">\U0001F7E2 سیگنال نهایی</span>'
+    if is_main:
+        return '<span class="signal-badge signal-blue">\U0001F535 محتمل\u200cترین</span>'
+    if ev_val >= EV_GATE_THRESHOLD:
+        return '<span class="signal-badge signal-purple">\U0001F7E3 ارزش بالا</span>'
+    return ''
+
+
+def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locked_keys, main_signal_id, market_type="max"):
+    """(فاز ۱+۲+۶) جدول per-bucket -- فیلتر plausibility، ستون EV، رنگ‌بندی
+    سیگنال، و پارامتر market_type برای payload صحیح دکمهٔ قفل."""
     if not full_distribution:
         return '<div class="empty">داده‌ای موجود نیست.</div>'
+
+    tradable = [
+        b for b in full_distribution
+        if max(b.get("model_prob") or 0.0, b.get("market_prob") or 0.0) >= BUCKET_PLAUSIBILITY_MIN
+    ]
+    if not tradable:
+        return '<div class="empty">داده‌ای موجود نیست.</div>'
+
     rows = [
         "<table><tr><th>باکت</th><th>احتمال مدل</th><th>احتمال بازار (YES)</th>"
-        "<th>قیمت YES</th><th>باور نهایی</th><th></th></tr>"
+        "<th>قیمت YES</th><th>باور نهایی</th><th>EV</th><th></th></tr>"
     ]
-    for b in full_distribution:
+    for b in tradable:
         low, high = b.get("range", [None, None])
         label = _label_for_range(low, high, unit_sym)
         model_prob = b.get("model_prob")
         yes_price = b.get("yes_price")
 
-        # PATCH: تغییر نسبت به آخرین اسکن لایت (فقط اگر refresh_open_market_info
-        # این دو فیلد را نوشته باشد -- در غیر این صورت None و پرانتز نشان
-        # داده نمی‌شود). درصد-امتیاز خام، طبق تصمیم مشترک با کاربر.
         model_change = b.get("model_prob_change")
         price_change = b.get("yes_price_change")
 
@@ -450,11 +477,21 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
 
         belief_val = b.get("belief_prob")
         belief_str = f"{belief_val * 100:.1f}%" if belief_val is not None else "-"
+
+        ev_val = b.get("ev")
+        if ev_val is None:
+            ev_str = "-"
+        else:
+            ev_pct = ev_val * 100
+            ev_css = "win" if ev_pct > 0 else ("loss" if ev_pct < 0 else "")
+            ev_sign = "+" if ev_pct > 0 else ""
+            ev_str = f'<span class="{ev_css}">{ev_sign}{ev_pct:.1f}%</span>' if ev_css else f"{ev_pct:.1f}%"
+
         market_id = str(b.get("market_id", ""))
         yes_token = b.get("yes_token_id", "")
 
         is_main = main_signal_id is not None and market_id == main_signal_id
-        label_html = f"{label} " + ('<span class="main-badge">سیگنال اصلی</span>' if is_main else "")
+        label_html = f"{label} " + _signal_badge_html(is_main, ev_val)
 
         is_locked = (city_slug, date, market_id) in locked_keys
         action_html = ""
@@ -470,8 +507,8 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
                     f'{status_span}'
                 )
             else:
-                lock_call = "lockBucket('{0}','{1}','{2}','{3}','{4}','YES',{5},'{6}')".format(
-                    city_slug, city_name, date, market_id, yes_token, yes_price, label
+                lock_call = "lockBucket('{0}','{1}','{2}','{3}','{4}','YES',{5},'{6}','{7}')".format(
+                    city_slug, city_name, date, market_id, yes_token, yes_price, label, market_type
                 )
                 action_html = (
                     f'<button class="lock-btn" onclick="{lock_call}">قفل کن</button>'
@@ -480,7 +517,7 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
 
         rows.append(
             f"<tr><td>{label_html}</td><td>{model_str}</td><td>{market_str}</td>"
-            f"<td>{price_str}</td><td>{belief_str}</td><td>{action_html}</td></tr>"
+            f"<td>{price_str}</td><td>{belief_str}</td><td>{ev_str}</td><td>{action_html}</td></tr>"
         )
     rows.append("</table>")
     return "".join(rows)
@@ -498,10 +535,7 @@ def _load_market_by_key(city, date):
 
 def _locked_signals_section_html(locks):
     """سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های قفل‌شدهٔ فعال
-    را با دمای قفل‌شده، قیمت قفل، قیمت فعلی، درصد تغییر، زمان تا پایان
-    روز محلی، آخرین به‌روزرسانی، و یک دکمهٔ میانبر حذف قفل نشان می‌دهد.
-    قفل‌هایی که بازار زیرینشان طبق داده‌های واقعی resolve/expire شده، حتی
-    اگر status خود قفل هنوز به‌روز نشده باشد، از این لیست حذف می‌شوند."""
+    را نشان می‌دهد."""
     open_locks = [l for l in locks if l.get("status") == "open"]
     if not open_locks:
         return ""
@@ -578,7 +612,6 @@ def _locked_signals_section_html(locks):
         "</details>"
     )
 
-
 def _date_block_html(m, city_slug, city_name, locked_keys):
     date = m.get("date", "")
     unit_sym = m.get("unit", "")
@@ -594,7 +627,28 @@ def _date_block_html(m, city_slug, city_name, locked_keys):
     )
     table = _bucket_table(
         city_slug, city_name, date, unit_sym,
-        m.get("full_distribution"), locked_keys, main_signal_id,
+        m.get("full_distribution"), locked_keys, main_signal_id, market_type="max",
+    )
+    return f"<details class='date-block'><summary>{summary}</summary><div class='table-scroll'>{table}</div></details>"
+
+
+def _date_block_html_min(m, city_slug, city_name, locked_keys):
+    """(فاز ۶) معادل _date_block_html برای بازار کمینه."""
+    date = m.get("date", "")
+    unit_sym = m.get("unit", "")
+    main_signal_id = _main_signal_market_id(m)
+    link = _build_polymarket_url_min(city_slug, date)
+    if m.get("time_status") == "awaiting_settlement":
+        time_note = "awaiting official settlement"
+    else:
+        time_note = _hours_left_str(m.get("hours_left"))
+    summary = (
+        f'<a href="{link}" target="_blank" rel="noopener">{city_name}</a> \u2014 {date}'
+        f'  <span class="time-note">{time_note}</span>'
+    )
+    table = _bucket_table(
+        city_slug, city_name, date, unit_sym,
+        m.get("full_distribution"), locked_keys, main_signal_id, market_type="min",
     )
     return f"<details class='date-block'><summary>{summary}</summary><div class='table-scroll'>{table}</div></details>"
 
@@ -632,8 +686,9 @@ def _history_table_html(locks):
     return table_html, city_options, date_options
 
 
-def build_simple_dashboard():
-    markets = [m for m in _load_all_markets() if m.get("status") == "open" and m.get("full_distribution")]
+def _build_group_section(markets, date_block_fn):
+    """(فاز ۶) کپسوله‌سازی مشترک منطق ساخت بلوک‌های شهر -- برای هر دو
+    بخش (max/min) بدون کپی کد استفاده می‌شود."""
     locks = _load_locks()
     locked_keys = _load_locked_keys(locks)
 
@@ -654,7 +709,7 @@ def build_simple_dashboard():
 
     parts = []
     if not sorted_slugs:
-        parts.append('<div class="empty">هیچ بازار بازی برای نمایش وجود ندارد.</div>')
+        return '<div class="empty">هیچ بازار بازی برای نمایش وجود ندارد.</div>'
 
     for slug in sorted_slugs:
         city_name = city_names[slug]
@@ -663,10 +718,10 @@ def build_simple_dashboard():
         badge = '<span class="main-badge">سیگنال فعال</span>' if has_signal else ""
 
         if len(mlist) == 1:
-            inner = _date_block_html(mlist[0], slug, city_name, locked_keys)
+            inner = date_block_fn(mlist[0], slug, city_name, locked_keys)
             summary = f"<b>{city_name}</b> {badge}"
         else:
-            inner = "".join(_date_block_html(m, slug, city_name, locked_keys) for m in mlist)
+            inner = "".join(date_block_fn(m, slug, city_name, locked_keys) for m in mlist)
             summary = f"<b>{city_name}</b> {badge} &nbsp;({len(mlist)} تاریخ)"
 
         parts.append(
@@ -674,7 +729,19 @@ def build_simple_dashboard():
             f"<summary>{summary}</summary>{inner}</details>"
         )
 
-    body_html = _locked_signals_section_html(locks) + "".join(parts)
+    return "".join(parts)
+
+
+def build_simple_dashboard():
+    markets = [m for m in _load_all_markets() if m.get("status") == "open" and m.get("full_distribution")]
+    locks = _load_locks()
+
+    body_html = _locked_signals_section_html(locks) + _build_group_section(markets, _date_block_html)
+
+    # (فاز ۶) بخش کمینه -- کاملاً موازی، بدون تغییر منطق بالا.
+    min_markets = [m for m in _load_all_min_markets() if m.get("status") == "open" and m.get("full_distribution")]
+    min_body_html = _build_group_section(min_markets, _date_block_html_min)
+
     history_html, history_city_options, history_date_options = _history_table_html(locks)
 
     scan_iso, scan_kind = _latest_scan_info()
@@ -686,6 +753,7 @@ def build_simple_dashboard():
     html = html.replace("LASTSCANKIND", scan_kind or "")
     html = html.replace("LASTSCANFALLBACK", "بدون سابقهٔ اسکن" if not scan_iso else "")
     html = html.replace("BODYHTML", body_html)
+    html = html.replace("MIN_BODYHTML", min_body_html)
     html = html.replace("HISTORYHTML", history_html)
     html = html.replace("HISTORYCITYOPTIONS", history_city_options)
     html = html.replace("HISTORYDATEOPTIONS", history_date_options)

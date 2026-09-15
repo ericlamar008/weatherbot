@@ -1,5 +1,5 @@
 """
-locations.py — 24 city configuration for WeatherBet v3
+locations.py -- 26 city configuration for WeatherBet v3
 Coordinates point to the EXACT station Polymarket uses for resolution
 (not city center), matching the official resolve source per city.
 
@@ -20,6 +20,18 @@ verified to match the CURRENT live resolution source exactly. No other
 mismatch was found. (Hong Kong intentionally uses the Hong Kong Observatory
 coordinates, not the airport, matching its "hko" resolve_source dispatch in
 resolution.py -- this was double-checked and is correct, not a bug.)
+
+--- فاز ۵ نقشه‌راه (۱۶ سپتامبر ۲۰۲۶) -----------------------------------------
+افزوده شدن دو شهر جدید بعد از تحقیق مستقل روی صفحهٔ زندهٔ Polymarket:
+  - cape-town: تأیید شده با ۴ نمونهٔ بازار مستقل (۲۵ آگوست، ۳۱ آگوست،
+    ۱۱ سپتامبر، ۱۴ سپتامبر ۲۰۲۶) -- ایستگاه FACT (Cape Town Intl)، منبع
+    NOAA/Wunderground استاندارد.
+  - denver: تأیید شده با ۳ نمونهٔ بازار مستقل (۲۹ آگوست، ۳۱ آگوست،
+    ۱۷ سپتامبر ۲۰۲۶) + یک منبع مستقل ثالث -- ایستگاه واقعی Buckley Space
+    Force Base (KBKF)، **نه** فرودگاه بین‌المللی دنور (KDEN).
+شش شهر پیشنهادی اولیه (Phoenix, Las Vegas, Riyadh, Cairo, Athens, Perth) و
+San Francisco (به‌خاطر مشکل شدید marine layer، مثل Los Angeles) عمداً
+اضافه نشدند -- جزئیات کامل در 03_DECISIONS.md / نقشه‌راه پروژه.
 ------------------------------------------------------------------------------
 """
 
@@ -51,6 +63,10 @@ LOCATIONS = {
     "shanghai": {"lat": 31.1443, "lon": 121.8083, "name": "Shanghai", "station": "ZSPD", "unit": "C", "region": "asia", "resolve_source": "wunderground", "tz": "Asia/Shanghai"},
     "toronto": {"lat": 43.6772, "lon": -79.6306, "name": "Toronto", "station": "CYYZ", "unit": "C", "region": "ca", "resolve_source": "wunderground", "tz": "America/Toronto"},
     "mexico-city": {"lat": 19.4363, "lon": -99.0721, "name": "Mexico City", "station": "MMMX", "unit": "C", "region": "sa", "resolve_source": "wunderground", "tz": "America/Mexico_City"},
+
+    # --- فاز ۵ نقشه‌راه: افزوده‌شدهٔ جدید (۱۶ سپتامبر ۲۰۲۶) -----------------
+    "cape-town": {"lat": -33.9648, "lon": 18.6017, "name": "Cape Town", "station": "FACT", "unit": "C", "region": "af", "resolve_source": "wunderground", "tz": "Africa/Johannesburg"},
+    "denver": {"lat": 39.7017, "lon": -104.7527, "name": "Denver", "station": "KBKF", "unit": "F", "region": "us", "resolve_source": "wunderground", "tz": "America/Denver"},
 }
 
 MONTHS = ["january", "february", "march", "april", "may", "june",

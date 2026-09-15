@@ -4,8 +4,8 @@ history_manager.py -- بستن خودکار قفل‌های resolve‌شده + �
 کاملاً جدید و مستقل. resolution.py فعلی را فقط می‌خواند، هیچ تغییری در آن
 نمی‌دهد و weatherbot_v3.py یا strategy.py را صدا نمی‌زند.
 
---- PATCH این نسخه (رفع خطای واقعی "cannot pull with rebase: You have
-unstaged changes") -----------------------------------------------------------
+--- PATCH (رفع خطای واقعی "cannot pull with rebase: You have unstaged
+changes") --------------------------------------------------------------------
 مشاهده شد که بعد از اولین UNLOCK واقعی (بعد از این‌که چند LOCK بدون مشکل کار
 کرده بودند)، Workflow ثبت قفل بلافاصله بعد از یک کامیت موفق با خطای
 "You have unstaged changes" روی git pull --rebase شکست می‌خورد.
@@ -24,6 +24,18 @@ CSV اضافه نمی‌کند، این مشکل تا اولین UNLOCK واقع
 فایل همیشه با کاراکتر پایان خط لینوکسی (همان چیزی که گیت انتظار دارد)
 نوشته شود -- این ناهماهنگی را کاملاً از ریشه حذف می‌کند. هیچ تغییر دیگری
 (محتوای ستون‌ها، ترتیب ردیف‌ها، انکودینگ utf-8-sig) اعمال نشده است.
+
+--- PATCH (فاز ۶ نقشه‌راه -- بازار دمای کمینه) -------------------------------
+افزوده شد: _load_market_min() و _load_market_for_lock() که بر اساس
+l.get("market_type") (پیش‌فرض "max" برای سازگاری کامل با قفل‌های قدیمی‌تر
+که این فیلد را ندارند) فایل مارکت درست را انتخاب می‌کند. در
+check_and_close_resolved_locks، write_history_csv و get_history_rows،
+هر جا قبلاً _load_market(city, date) مستقیم صدا زده می‌شد، حالا
+_load_market_for_lock(l) صدا زده می‌شود، و در check_and_close_resolved_locks
+تابع settlement هم بر اساس market_type انتخاب می‌شود
+(res.get_polymarket_settlement_min در برابر res.get_polymarket_settlement).
+هیچ تغییر دیگری در منطق/فرمت خروجی اعمال نشده است.
+=====================================================================================
 """
 import csv
 import json
@@ -57,6 +69,24 @@ def _load_market(city, date):
     except Exception:
         return None
 
+def _load_market_min(city, date):
+    """(فاز ۶) معادل _load_market ولی برای فایل بازار کمینه."""
+    p = MARKETS_DIR / f"{city}_{date}_min.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+def _load_market_for_lock(l):
+    """(فاز ۶) انتخاب خودکار فایل درست بر اساس market_type قفل (پیش‌فرض
+    "max" برای سازگاری کامل با قفل‌های قدیمی‌تر که این فیلد را ندارند)."""
+    city, date = l["city"], l["date"]
+    if l.get("market_type") == "min":
+        return _load_market_min(city, date)
+    return _load_market(city, date)
+
 def _find_range(market, market_id):
     if not market:
         return None
@@ -84,6 +114,9 @@ def check_and_close_resolved_locks(locks, now=None):
     قفل‌های بازی که بازارشان قبلاً resolve شده را می‌بندد. اگر پلی‌مارکت در
     دسترس نبود یا آن باکت خاص هنوز settle نشده، همان‌طور باز رها می‌شود.
     برمی‌گرداند تعداد قفل‌هایی که در همین دور بسته شدند.
+
+    (فاز ۶) settlement_fn و market بر اساس market_type هر قفل انتخاب
+    می‌شوند -- بدون تغییر رفتار برای قفل‌های حداکثر موجود.
     """
     closed_count = 0
     for l in locks:
@@ -96,8 +129,9 @@ def check_and_close_resolved_locks(locks, now=None):
         except Exception:
             continue
 
+        settlement_fn = res.get_polymarket_settlement_min if l.get("market_type") == "min" else res.get_polymarket_settlement
         try:
-            settlement = res.get_polymarket_settlement(city, MONTHS[dt.month - 1], dt.day, dt.year)
+            settlement = settlement_fn(city, MONTHS[dt.month - 1], dt.day, dt.year)
         except Exception:
             settlement = None
 
@@ -107,7 +141,7 @@ def check_and_close_resolved_locks(locks, now=None):
             continue
 
         won = settlement[market_id]
-        market = _load_market(city, date)
+        market = _load_market_for_lock(l)
         actual_temp = None
         if market:
             try:
@@ -137,7 +171,7 @@ def write_history_csv(locks):
         city = l["city"]
         city_name = LOCATIONS.get(city, {}).get("name", city)
         unit_sym = LOCATIONS.get(city, {}).get("unit", "")
-        market = _load_market(city, l["date"])
+        market = _load_market_for_lock(l)
         rng = _find_range(market, l["market_id"])
         signal_label = _label_for_range(rng, unit_sym)
 
@@ -171,7 +205,7 @@ def get_history_rows(locks):
         city = l["city"]
         city_name = LOCATIONS.get(city, {}).get("name", city)
         unit_sym = LOCATIONS.get(city, {}).get("unit", "")
-        market = _load_market(city, l["date"])
+        market = _load_market_for_lock(l)
         rng = _find_range(market, l["market_id"])
         signal_label = _label_for_range(rng, unit_sym)
         final_temp = l.get("actual_temp")

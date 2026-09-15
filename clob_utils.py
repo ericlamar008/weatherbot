@@ -1,5 +1,5 @@
 """
-clob_utils.py -- Shared price-fetching helpers for WeatherBet's new lock feature.
+clob_utils.py -- Shared price-fetching helpers for WeatherBet's lock feature.
 =====================================================================================
 UPDATE (bug fix, real-world tested): the 2-hour price monitor used to track
 price movement via get_clob_book_bid() (best order-book bid on Polymarket's
@@ -20,7 +20,7 @@ get_clob_book_bid() is kept (unchanged, still used by weatherbot_v3.py's
 existing sell-value display) -- nothing about the ORIGINAL bot's behavior
 changed.
 
---- HARDENING PATCH (this version, per explicit user directive) -------------
+--- HARDENING PATCH (per explicit user directive) ---------------------------
 get_gamma_event_prices() used to make exactly ONE attempt to reach
 gamma-api.polymarket.com. Any transient DNS hiccup or brief connection drop
 caused an immediate empty-dict return for that entire city/date, which
@@ -30,7 +30,15 @@ one). To reduce how often this happens, the same retry pattern already used
 by resolution.py's get_polymarket_settlement() (3 attempts, 3s delay) has
 been added here too, kept consistent rather than inventing a new style.
 Nothing about the returned data shape or the caller's behavior changed.
------------------------------------------------------------------------------
+
+--- PATCH (فاز ۶ نقشه‌راه -- بازار دمای کمینه) -------------------------------
+افزودن get_gamma_event_prices_min(): معادل کامل get_gamma_event_prices ولی
+با اسلاگ Polymarket "lowest-temperature-in-..." به‌جای "highest-temperature-
+in-...". لازم شد چون lock_manager.py و price_monitor.py برای قفل‌های
+دمای کمینه به همین منبع قیمت نیاز داشتند و تابع قبلی اسلاگ حداکثر را
+هاردکد کرده بود. get_clob_book_bid() و get_gamma_event_prices() موجود
+دقیقاً دست‌نخورده مانده‌اند.
+=====================================================================================
 """
 import json
 import time
@@ -39,6 +47,7 @@ import requests
 TIMEOUT = (5, 8)
 MAX_RETRIES = 3
 RETRY_DELAY_S = 3
+
 
 def get_clob_book_bid(token_id):
     """
@@ -60,6 +69,7 @@ def get_clob_book_bid(token_id):
         return round(max(float(b["price"]) for b in bids), 4)
     except Exception:
         return None
+
 
 def get_gamma_event_prices(city_slug, month, day, year):
     """
@@ -94,6 +104,41 @@ def get_gamma_event_prices(city_slug, month, day, year):
     if last_err is not None:
         return {}
 
+    if not data or not isinstance(data, list) or len(data) == 0:
+        return {}
+
+    event = data[0]
+    prices = {}
+    for market in event.get("markets", []):
+        mid = str(market.get("id", ""))
+        try:
+            outcome_prices = json.loads(market.get("outcomePrices", "[0.5,0.5]"))
+            prices[mid] = float(outcome_prices[0])
+        except Exception:
+            continue
+    return prices
+
+
+def get_gamma_event_prices_min(city_slug, month, day, year):
+    """(فاز ۶) معادل کامل get_gamma_event_prices ولی برای بازار کمینه --
+    فقط اسلاگ lowest- به‌جای highest-. همان الگوی retry/۳-تلاش را عیناً
+    حفظ می‌کند."""
+    slug = f"lowest-temperature-in-{city_slug}-on-{month}-{day}-{year}"
+    data = None
+    last_err = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = requests.get(f"https://gamma-api.polymarket.com/events?slug={slug}", timeout=TIMEOUT)
+            data = r.json()
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+
+    if last_err is not None:
+        return {}
     if not data or not isinstance(data, list) or len(data) == 0:
         return {}
 

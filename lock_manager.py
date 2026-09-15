@@ -1,7 +1,7 @@
 """
 lock_manager.py -- خواندن درخواست‌های قفل/حذف قفل از GitHub Issues و ثبت‌شان.
 =====================================================================================
-نسخهٔ نهایی (شامل رفع باگ قفل تکراری از فاز ۶).
+نسخهٔ نهایی (شامل رفع باگ قفل تکراری از فاز ۶ نقشهٔ‌راه قدیم).
 
 --- PATCH قبلی ------------------------------------------------------------------
 مشخص شد که لینک «ایجاد Issue جدید» در simple.html با پارامتر URL از نوع
@@ -18,7 +18,7 @@ issueها را پیدا نمی‌کرد، پس هیچ قفلی ثبت نمی‌�
 دست‌نخورده می‌ماند چون آن از طریق فراخوانی مستقیم API انجام می‌شود، نه از
 طریق URL prefill (که همان بخش غیرقابل‌اتکا بود).
 
---- PATCH این نسخه (فاز ۱ نقشه‌راه) -----------------------------------------------
+--- PATCH (فاز ۱ نقشه‌راه) -----------------------------------------------------
 مشکل: قیمتی که در دکمهٔ «قفل کن» simple.html ساخته می‌شود، از آخرین اسکن
 (که می‌تواند تا ۶ ساعت قدیمی باشد) گرفته شده -- یعنی entry_price ثبت‌شده
 می‌توانست با قیمت واقعی لحظهٔ کلیک کاربر فرق زیادی داشته باشد و باعث
@@ -28,17 +28,20 @@ issueها را پیدا نمی‌کرد، پس هیچ قفلی ثبت نمی‌�
 راه‌حل: process_lock_issues() دیگر مستقیماً به data["price"] (قیمت دکمهٔ
 داشبورد) اعتماد نمی‌کند. به‌جای آن، در همان لحظهٔ پردازش issue (که طبق
 مشاهدهٔ واقعی فقط ۱۵ تا ۴۰ ثانیه بعد از کلیک کاربر است)، یک بار قیمت زندهٔ
-واقعی این market_id را از Gamma API می‌گیرد (get_gamma_event_prices -- همان
-تابعی که price_monitor.py هم استفاده می‌کند) و همان را entry_price ثبت
-می‌کند. اگر بنا به هر دلیلی (قطعی شبکه، عدم وجود market_id در پاسخ) قیمت
-زنده در دسترس نبود، به‌صورت ایمن به همان قیمت دکمهٔ داشبورد برمی‌گردد --
-این مسیر هرگز ثبت قفل را کاملاً مسدود نمی‌کند. کامنت تاییدیهٔ روی issue هم
-حالا نشان می‌دهد قیمت واقعاً ثبت‌شده از کدام منبع آمده و اگر با قیمت دکمهٔ
-داشبورد فرق محسوسی داشت، هر دو عدد را کنار هم نشان می‌دهد.
+واقعی این market_id را از Gamma API می‌گیرد و همان را entry_price ثبت
+می‌کند. اگر بنا به هر دلیلی قیمت زنده در دسترس نبود، به‌صورت ایمن به همان
+قیمت دکمهٔ داشبورد برمی‌گردد -- این مسیر هرگز ثبت قفل را کاملاً مسدود
+نمی‌کند.
 
-هیچ‌چیز دیگری (process_unlock_issues، _close_issue، _has_open_lock، فرمت
-داده‌ی locked_signals.json، مکانیزم لیبل/عنوان) نسبت به نسخهٔ قبلی تغییر
-نکرده است.
+--- PATCH (فاز ۶ نقشه‌راه -- بازار دمای کمینه) -------------------------------
+هر قفل حالا یک فیلد "market_type" ("max" یا "min") دارد که از payload
+جاوااسکریپت داشبورد می‌آید (پیش‌فرض "max" برای سازگاری کامل با فرمت
+قدیمی/قفل‌های موجود که این فیلد را ندارند). _fetch_live_entry_price حالا
+بر اساس market_type، بین get_gamma_event_prices (حداکثر) و
+get_gamma_event_prices_min (کمینه) سوییچ می‌کند تا قیمت زندهٔ صحیح از
+رویداد Polymarket درست (highest- یا lowest-) گرفته شود.
+process_unlock_issues، _close_issue، _has_open_lock، فرمت
+داده‌ی locked_signals.json، مکانیزم لیبل/عنوان -- هیچ‌کدام تغییر نکرده‌اند.
 -----------------------------------------------------------------------------
 """
 import json
@@ -48,7 +51,7 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_clob_book_bid, get_gamma_event_prices
+from clob_utils import get_clob_book_bid, get_gamma_event_prices, get_gamma_event_prices_min
 import history_manager
 
 try:
@@ -106,15 +109,19 @@ def _fetch_open_issues():
     return issues
 
 
-def _fetch_live_entry_price(city, date, market_id, side):
+def _fetch_live_entry_price(city, date, market_id, side, market_type="max"):
     """قیمت زندهٔ واقعی این market_id را در همین لحظه از Gamma API می‌گیرد
     و بر اساس side (YES/NO) قیمت ورود درست را برمی‌گرداند. در هر شکستی
     (شبکه، نبودن market_id در پاسخ) None برمی‌گرداند تا فراخواننده به‌صورت
-    ایمن به قیمت دکمهٔ داشبورد برگردد -- این تابع هرگز استثنا پرتاب نمی‌کند."""
+    ایمن به قیمت دکمهٔ داشبورد برگردد -- این تابع هرگز استثنا پرتاب نمی‌کند.
+
+    (فاز ۶) پارامتر market_type تعیین می‌کند کدام رویداد Polymarket
+    (highest- یا lowest-) خوانده شود."""
     try:
         dt = datetime.strptime(date, "%Y-%m-%d")
         month = MONTHS[dt.month - 1]
-        prices = get_gamma_event_prices(city, month, dt.day, dt.year)
+        fetch_fn = get_gamma_event_prices_min if market_type == "min" else get_gamma_event_prices
+        prices = fetch_fn(city, month, dt.day, dt.year)
         live_yes_price = prices.get(str(market_id))
         if live_yes_price is None:
             return None
@@ -180,6 +187,7 @@ def process_lock_issues():
             market_id, _, token_id = market_id_raw.partition("|")
             city, date = data["city"], data["date"]
             dashboard_price = float(data["price"])
+            market_type = data.get("market_type", "max")  # (فاز ۶) پیش‌فرض "max"
         except Exception as e:
             _close_issue(
                 number,
@@ -197,7 +205,7 @@ def process_lock_issues():
         # دکمهٔ داشبورد. اگر گرفتن قیمت زنده شکست خورد، به‌صورت ایمن به
         # همان قیمت دکمهٔ داشبورد برمی‌گردیم؛ ثبت قفل هرگز کاملاً مسدود
         # نمی‌شود.
-        live_price = _fetch_live_entry_price(city, date, market_id, side)
+        live_price = _fetch_live_entry_price(city, date, market_id, side, market_type)
         if live_price is not None:
             entry_price = live_price
             price_source = "live"
@@ -210,6 +218,7 @@ def process_lock_issues():
             "city": city,
             "date": date,
             "market_id": market_id,
+            "market_type": market_type,  # (فاز ۶)
             "token_id": token_id or None,
             "side": side,
             "entry_price": entry_price,

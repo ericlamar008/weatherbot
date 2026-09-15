@@ -1,7 +1,7 @@
 """
 price_monitor.py -- اسکنر نیم‌ساعتهٔ مستقل برای قفل‌های باز + پیام تلگرام.
 =====================================================================================
-تغییرات این نسخه:
+تغییرات پیشین:
 ۱) زمان باقی‌مانده تا resolve حالا کنار همهٔ بازارها نشان داده می‌شود
    (نه فقط وقتی کمتر از ۳ ساعت مانده -- آن حالت فقط ⭐/⏰ را کنترل می‌کند).
 ۲) متن زمان باقی‌مانده به انگلیسی نوشته می‌شود ("2h 15m to resolve")
@@ -9,48 +9,37 @@ price_monitor.py -- اسکنر نیم‌ساعتهٔ مستقل برای قفل�
 ۳) (فاز ۲ نقشه‌راه قدیمی) آستانهٔ هشدار سود/ضرر از سنت مطلق به درصد تغییر
    کرد -- TAKE_PROFIT_PCT=20.0 / STOP_LOSS_PCT=10.0.
 ۴) هر بار که قیمت یک قفل با موفقیت گرفته می‌شود، فیلد "last_checked_at"
-   (زمان ISO این بررسی) هم روی همان قفل ثبت می‌شود -- این برای نمایش ستون
-   «آخرین به‌روزرسانی» در سکشن قفل‌های داشبورد تعاملی لازم است.
+   (زمان ISO این بررسی) هم روی همان قفل ثبت می‌شود.
 
 --- روادراه: فاز C -- زمان محلی به‌جای event_end_date خام --------
 مشکل قبلی: hours_left از تفاضل event_end_date منهای now محاسبه می‌شد که
-بعد از گذشتنش صفر می‌ماند و باعث هشدار تکراری "0h 0m to resolve" می‌شد،
-حتی وقتی بازار هنوز واقعاً باز بود. اصلاح: از ماژول مشترک market_time.py
-استفاده می‌شود تا hours_left از «پایان روز هدف در timezone شهر» محاسبه
-شود، هشدار ⏰ فقط در بازهٔ باز فعال شود، و بعد از پایان روز محلی عبارت
-واقعی "awaiting official settlement" نمایش داده شود.
+بعد از گذشتنش صفر می‌ماند و باعث هشدار تکراری "0h 0m to resolve" می‌شد.
+اصلاح: از ماژول مشترک market_time.py استفاده می‌شود تا hours_left از
+«پایان روز هدف در timezone شهر» محاسبه شود، هشدار ⏰ فقط در بازهٔ باز فعال
+شود، و بعد از پایان روز محلی عبارت واقعی "awaiting official settlement"
+نمایش داده شود.
 
---- HARDENING PATCH (قبلی) ---------------------
-last_price و last_checked_at فقط وقتی به‌روزرسانی می‌شوند که current واقعاً
-یک مقدار معتبر باشد؛ در غیر این صورت آخرین مقدار معتبر قبلی دست‌نخورده
-باقی می‌ماند.
-
---- FIX (قبلی): لینک شهر در پیام تلگرام گم شده بود ----------------------
+--- FIX: لینک شهر در پیام تلگرام گم شده بود ----------------------
 اسم شهر حالا با تگ HTML لنگر <a href="...">...</a> واقعاً به صفحهٔ Polymarket
 همان بازار لینک می‌شود.
 
---- PATCH این نسخه (فاز ۳ نقشه‌راه، زیرگام ۳-ب) ------------------------------
-درخواست کاربر: در اسکن نیم‌ساعته، صرف‌نظر از فعال‌بودن محرک سود/زیان یا
-نزدیک‌شدن به resolve، همیشه یک پیام وضعیت ساخته شود (با همان ایموجی‌های
-⭐/⏰ روی آیتم‌هایی که واقعاً واجد شرایطند) تا لایهٔ Workflow آن را با یک
-لینک یکتای تازه ترکیب و یک‌جا در تلگرام بفرستد.
+--- PATCH (فاز ۳ نقشه‌راه قدیم، زیرگام ۳-ب) ----------------------------------
+build_message() دیگر فقط زمانی None برمی‌گرداند که اصلاً هیچ قفل بازی وجود
+نداشته باشد. check_all() دیگر مستقیماً send_telegram() را صدا نمی‌زند -- متن
+وضعیت در data/last_price_status.txt نوشته می‌شود؛ Workflow آن را با لینک
+یکتای تازه ترکیب و یک‌جا می‌فرستد.
 
-تغییرات دقیق:
-۱) build_message() دیگر در نبود محرک `None` برنمی‌گرداند -- فقط زمانی
-   `None` برمی‌گرداند که اصلاً هیچ قفل بازی وجود نداشته باشد (چیزی برای
-   گزارش نیست). شرط `if not any_trigger: return None` قبلی حذف شد؛
-   متغیر `any_trigger` دیگر رفتار بازگشتی تابع را کنترل نمی‌کند (فقط
-   برای مشخص‌کردن ⭐/⏰ روی هر آیتم همچنان محاسبه می‌شود).
-۲) check_all() دیگر مستقیماً send_telegram() را صدا نمی‌زند. متن وضعیت
-   (در صورت وجود قفل باز) در data/last_price_status.txt نوشته می‌شود --
-   Workflow (monitor_locks.yml) این فایل را می‌خواند، لینک یکتای تازه را
-   به انتهای آن اضافه می‌کند و یک پیام واحد می‌فرستد. اگر هیچ قفل بازی
-   نباشد، این فایل (در صورت وجود از قبل) پاک می‌شود تا سیگنال قدیمی
-   دوباره فرستاده نشود.
-
-منطق محاسبهٔ pct، TAKE_PROFIT_PCT، STOP_LOSS_PCT، last_price/last_checked_at
-(با اصلاح محکم‌کاری قبلی)، و بستن قفل‌های resolve‌شده (history_manager)
-هیچ‌کدام تغییر نکرده‌اند.
+--- PATCH (فاز ۶ نقشه‌راه -- بازار دمای کمینه) -------------------------------
+تصمیم تأییدشده با کاربر: یک پیام واحد، دو سکشن مجزا با اموجی گرم/سرد.
+build_message() حالا قفل‌های باز را بر اساس market_type به دو گروه
+(max/min) تقسیم می‌کند و هرکدام را با _build_city_blocks() (تابع داخلی
+جدید که منطق قبلی حلقهٔ ساخت بلوک شهر را کپسوله می‌کند، بدون تغییر آن
+منطق) جداگانه می‌سازد -- سپس دو سکشن را زیر یک هدر مشترک کنار هم
+می‌گذارد. برای سکشن کمینه، از _load_market_min و
+get_gamma_event_prices_min (به‌جای نسخهٔ حداکثر) استفاده می‌شود تا قیمت و
+برچسب باکت از منبع درست خوانده شوند. منطق محاسبهٔ pct، TAKE_PROFIT_PCT،
+STOP_LOSS_PCT، last_price/last_checked_at، و بستن قفل‌های resolve‌شده
+(history_manager) هیچ‌کدام تغییر نکرده‌اند.
 """
 import json
 import os
@@ -59,7 +48,7 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_gamma_event_prices
+from clob_utils import get_gamma_event_prices, get_gamma_event_prices_min
 import history_manager
 from market_time import local_day_status, is_near_local_day_end
 
@@ -95,6 +84,16 @@ def _save_locks(locks):
 
 def _load_market(city, date):
     p = MARKETS_DIR / f"{city}_{date}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+def _load_market_min(city, date):
+    """(فاز ۶) معادل _load_market ولی برای فایل بازار کمینه."""
+    p = MARKETS_DIR / f"{city}_{date}_min.json"
     if not p.exists():
         return None
     try:
@@ -144,9 +143,18 @@ def _build_polymarket_url(city, date_str):
     except Exception:
         return "https://polymarket.com"
 
+def _build_polymarket_url_min(city, date_str):
+    """(فاز ۶) معادل _build_polymarket_url ولی lowest- به‌جای highest-."""
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        month = MONTHS[dt.month - 1]
+        return f"https://polymarket.com/event/lowest-temperature-in-{city}-on-{month}-{dt.day}-{dt.year}"
+    except Exception:
+        return "https://polymarket.com"
+
 def send_telegram(text):
-    """نگه‌داشته شده برای استفادهٔ مستقل/تستی -- از این به بعد check_all()
-    دیگر خودش این تابع را صدا نمی‌زند (طبق PATCH فاز ۳-ب)."""
+    """نگه‌داشته شده برای استفادهٔ مستقل/تستی -- check_all() دیگر خودش این
+    تابع را صدا نمی‌زند (طبق PATCH فاز ۳-ب)."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("[price_monitor] توکن یا چت آیدی تلگرام تنظیم نشده -- پیام فقط چاپ می‌شود:\n", text)
         return
@@ -164,24 +172,19 @@ def send_telegram(text):
     except Exception as e:
         print(f"[price_monitor] هشدار: ارسال تلگرام ناموفق بود: {e}")
 
-def build_message(now, locks):
-    """PATCH فاز ۳-ب: دیگر فقط زمانی None برمی‌گرداند که اصلاً هیچ قفل
-    بازی وجود نداشته باشد. اگر حداقل یک قفل باز وجود داشته باشد، همیشه
-    متن وضعیت کامل ساخته و برگردانده می‌شود -- صرف‌نظر از فعال‌بودن
-    محرک سود/زیان یا نزدیک‌شدن به resolve. علامت‌های ⭐/⏰ همچنان فقط
-    روی آیتم‌هایی که واقعاً واجد شرایطند نمایش داده می‌شوند."""
-    open_locks = [l for l in locks if l.get("status") == "open"]
-    if not open_locks:
-        return None
 
+def _build_city_blocks(locks_subset, now, is_min):
+    """(فاز ۶) منطق ساخت بلوک شهر -- کپسوله‌شده از build_message قدیمی تا
+    برای هر دو گروه (max/min) بدون کپی کدِ حلقه، دوباره‌استفاده شود.
+    is_min تعیین می‌کند از کدام فایل مارکت/تابع قیمت/سازندهٔ URL استفاده
+    شود."""
     by_city = {}
-    for l in open_locks:
+    for l in locks_subset:
         by_city.setdefault((l["city"], l["date"]), []).append(l)
 
-    city_blocks = []
-
+    blocks = []
     for (city, date), group in sorted(by_city.items(), key=lambda kv: (kv[0][0], kv[0][1])):
-        market = _load_market(city, date)
+        market = _load_market_min(city, date) if is_min else _load_market(city, date)
         loc = LOCATIONS.get(city, {})
 
         timing = local_day_status(date, loc, now)
@@ -190,7 +193,8 @@ def build_message(now, locks):
 
         try:
             dt = datetime.strptime(date, "%Y-%m-%d")
-            gamma_prices = get_gamma_event_prices(city, MONTHS[dt.month - 1], dt.day, dt.year)
+            fetch_fn = get_gamma_event_prices_min if is_min else get_gamma_event_prices
+            gamma_prices = fetch_fn(city, MONTHS[dt.month - 1], dt.day, dt.year)
         except Exception:
             gamma_prices = {}
 
@@ -232,23 +236,49 @@ def build_message(now, locks):
 
         marks = ("\u2B50" if star else "") + (" \u23F0" if near_resolve else "")
         name = LOCATIONS.get(city, {}).get("name", city)
-        link = _build_polymarket_url(city, date)
+        link = _build_polymarket_url_min(city, date) if is_min else _build_polymarket_url(city, date)
         title = f'<a href="{link}">{name}</a> \u2014 {date}'
         if marks:
             title = f"{marks} {title}"
         title += f" ({_local_day_label(hours_left, awaiting_settlement)})"
 
-        city_blocks.append(title + "\n" + "\n".join(lines))
+        blocks.append(title + "\n" + "\n".join(lines))
+
+    return blocks
+
+
+def build_message(now, locks):
+    """(فاز ۶) دیگر فقط زمانی None برمی‌گرداند که اصلاً هیچ قفل بازی وجود
+    نداشته باشد. قفل‌های باز بر اساس market_type به دو گروه (max/min)
+    تقسیم می‌شوند و هرکدام در سکشن جداگانهٔ خودش (🔥 حداکثر / ❄️ حداقل)
+    نمایش داده می‌شوند. علامت‌های ⭐/⏰ همچنان فقط روی آیتم‌هایی که واقعاً
+    واجد شرایطند نمایش داده می‌شوند."""
+    open_locks = [l for l in locks if l.get("status") == "open"]
+    if not open_locks:
+        return None
+
+    open_locks_max = [l for l in open_locks if l.get("market_type", "max") == "max"]
+    open_locks_min = [l for l in open_locks if l.get("market_type") == "min"]
+
+    city_blocks_max = _build_city_blocks(open_locks_max, now, is_min=False)
+    city_blocks_min = _build_city_blocks(open_locks_min, now, is_min=True)
 
     header_line = f"\U0001F4CA وضعیت قفل‌ها \u2014 {now.strftime('%Y-%m-%d %H:%M')} UTC"
-    return header_line + "\n\n" + "\n\n".join(city_blocks)
+
+    sections = []
+    if city_blocks_max:
+        sections.append("\U0001F525 حداکثر دما\n\n" + "\n\n".join(city_blocks_max))
+    if city_blocks_min:
+        sections.append("\u2744\uFE0F حداقل دما\n\n" + "\n\n".join(city_blocks_min))
+
+    return header_line + "\n\n" + "\n\n".join(sections)
+
 
 def check_all():
-    """PATCH فاز ۳-ب: دیگر مستقیماً به تلگرام پیام نمی‌فرستد. متن وضعیت
-    (در صورت وجود حداقل یک قفل باز) در data/last_price_status.txt نوشته
-    می‌شود تا لایهٔ Workflow آن را با لینک یکتای تازهٔ داشبورد ترکیب و
-    یک‌جا ارسال کند. اگر هیچ قفل بازی نباشد، این فایل (در صورت وجود از
-    قبل) پاک می‌شود تا وضعیت قدیمی دوباره فرستاده نشود."""
+    """دیگر مستقیماً به تلگرام پیام نمی‌فرستد. متن وضعیت (در صورت وجود
+    حداقل یک قفل باز) در data/last_price_status.txt نوشته می‌شود تا لایهٔ
+    Workflow آن را با لینک یکتای تازهٔ داشبورد ترکیب و یک‌جا ارسال کند.
+    اگر هیچ قفل بازی نباشد، این فایل (در صورت وجود از قبل) پاک می‌شود."""
     now = datetime.now(timezone.utc)
     locks = _load_locks()
 

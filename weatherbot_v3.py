@@ -3,98 +3,50 @@
 """
 weatherbot_v3.py -- Main orchestrator for WeatherBet v3
 =====================================================================================
-V5 CHANGES (this version, per explicit user directives):
+V5 CHANGES (per explicit user directives): global shared-capital-pool removed
+(each city/market sized independently); STRATEGY_VERSION stamping added.
 
-1. REMOVED the global shared-capital-pool / two-pass allocation entirely.
-Each city/market is now sized as its OWN independent 100%-notional pool --
-there is NO competition between simultaneously-signaling cities for one
-shared balance. `compute_global_capital_weights` in strategy.py is no
-longer called.
-
-2. STRATEGY_VERSION stamping: every market file now records which engine
-version computed it. On every scan, if a market's stored version doesn't
-match the current one, it is FORCE-recomputed at least once, even if it's
-about to expire (hours_left < MIN_HOURS).
-
-Everything else (fetch_outcomes/get_clob_book_bid sell-value fetching,
-parse_temp_range, resolution grading, the manual commit/lock workflow) is
-UNCHANGED from the previous version.
-
---- WEATHERBET INTERACTIVE-LOCK FEATURE (added, per user directive) ---------
-get_clob_book_bid() moved out of this file into clob_utils.py so that the
-new, independent lock-price scanner (price_monitor.py) can share the exact
-same implementation instead of duplicating it. Nothing else about this
-file's behavior changed -- same function, same signature, same retry-free
-best-effort semantics, just imported instead of defined locally.
------------------------------------------------------------------------------
+--- WEATHERBET INTERACTIVE-LOCK FEATURE ---------
+get_clob_book_bid() lives in clob_utils.py, shared with price_monitor.py.
 
 --- PHASE 3 FIX LOG (WEATHERBOT_ROADMAP.md, یافته F3) -------------------------
-`discover_new_signals()` used to build each city's "today/tomorrow/..."
-date list from a single shared `datetime.now(timezone.utc)`. Near UTC
-midnight this is WRONG for any city far from UTC: e.g. at 22:30 UTC, Seoul
-(UTC+9) and Tel Aviv (UTC+2/+3) already consider it a NEW local calendar
-day, but the bot still labeled that new day as "tomorrow" (horizon_days=1)
-instead of "today" (horizon_days=0).
+`_local_dates_for_city(now, loc, count)` converts shared UTC `now` into each
+city's own local calendar via its `tz` field before building the date list.
 
-FIX: a new helper `_local_dates_for_city(now, loc, count)` converts the
-single shared UTC `now` into each city's own local calendar via its `tz`
-field before building the date list. Falls back to the old UTC-based date
-list (with a one-time printed warning per timezone) if the local `zoneinfo`
-database isn't available on this machine -- this NEVER crashes the bot.
+--- ACCURACY REPORT AUTO-EXPORT ----------------------------------------------
+run_once() calls export_accuracy_report.build_accuracy_report() after the
+dashboard is built.
 
---- ACCURACY REPORT AUTO-EXPORT (added) -------------------------------------
-run_once() now also calls export_accuracy_report.build_accuracy_report()
-after the dashboard is built, so data/accuracy_report.csv stays up to date
-on every scan cycle without any manual step.
+--- روادراه: فاز ۳ -- اسکن سبک (heartbeat) + فاز ۳-الف (price_refresh) -------
+discover_new_signals/refresh_open_market_info/refresh_all_open_market_prices/
+run_lite_scan/run_price_refresh -- طبق طراحی قبلی، بدون تغییر رفتار.
 
---- روادراه: فاز ۳ -- اسکن سبک واقعی (heartbeat) ------------------------------
-دو تابع جدید: refresh_open_market_info(now) که فقط قیمت/پیش‌بینی بازارهای
-باز را از صفر تازه می‌کند (بدون فراخوانی strat.build_portfolio، یعنی بدون
-سایزینگ و بدون دست‌زدن به live_allocation/committed_allocation)، و
-run_lite_scan() که این تازه‌سازی + resolve_expired_markets +
-fc.update_calibration_from_live را با هم صدا می‌زند -- دستور CLI جدید:
-python weatherbot_v3.py lite_scan
-زمان هر اسکن (سنگین/سبک) در data/last_scan.json ثبت می‌شود تا داشبورد
-بتواند «آخرین به‌روزرسانی: X ساعت پیش» نشان دهد.
+=====================================================================================
+نقشه‌راه بهبود (۱۶ سپتامبر ۲۰۲۶) -- خلاصهٔ افزودنی‌های این نسخه
+=====================================================================================
+فاز ۳+۴: در discover_new_signals و refresh_open_market_info، فراخوانی
+fc.build_combined_distribution قدیمی با fc.build_combined_distribution_full
+جایگزین شد (همان دو فراخوانی ECMWF+GFS، بدون افزایش API؛ فقط علاوه بر
+members ترکیبی قدیمی -- که forecast_mean/sigma زنده از آن دقیقاً همان
+مقدار قبلی را می‌گیرد -- دیکشنری اعضای هر مدل هم برمی‌گرداند). سه فیلد
+جدید (forecast_mean_shadow, model_means_raw) در هر مارکت ذخیره می‌شود --
+فقط برای تحلیل آینده، بدون اثر روی سیگنال زنده. fc.update_model_skill_
+from_live در scan_and_update/run_lite_scan اضافه شد.
 
---- PATCH (فاز ۳ نقشه‌راه، زیرگام ۳-الف) ----------------------------
-تابع کاملاً تازه و مستقل refresh_all_open_market_prices(now): فقط قیمت
-بازار (yes_price) همهٔ باکت‌های همهٔ مارکت‌های open را از Gamma API تازه
-می‌کند -- بدون هیچ فراخوانی به forecasting.py (یعنی بدون گرفتن پیش‌بینی
-جدید هواشناسی) و بدون دست‌زدن به forecast_mean/sigma/model_prob. هدف:
-قیمتی که کاربر برای تصمیم قفل‌کردن در داشبورد می‌بیند، به‌جای تا ۶ ساعت
-قدیمی (که فقط با lite_scan/heartbeat به‌روز می‌شد)، حداکثر ۳۰ دقیقه قدیمی
-باشد. دستور CLI جدید: `python weatherbot_v3.py price_refresh`.
-
-این تابع کاملاً افزودنی است و به هیچ‌کدام از توابع موجود
-(discover_new_signals، refresh_open_market_info، refresh_all_locked_markets،
-resolve_expired_markets، run_once، run_lite_scan) دست نمی‌زند و از هیچ‌کدام
-صدا زده نمی‌شود -- فقط از یک Workflow جداگانه (monitor_locks.yml) فراخوانی
-خواهد شد. برای محاسبهٔ دوبارهٔ «باور نهایی» (belief_prob) با قیمت تازه، از
-همان strat.fuse_belief() موجود (بدون تغییر) استفاده می‌شود -- model_prob
-هر باکت دست‌نخورده از آخرین اسکن سنگین/سبک باقی می‌ماند.
-
---- PATCH این نسخه (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار در
-اسکن لایت) --------------------------------------------------------------
-refresh_open_market_info() اکنون، درست قبل از جایگزینی full_distribution
-با نسخهٔ تازه، مقدار model_prob و yes_price *قبلی* هر باکت (بر اساس
-market_id) را نگه می‌دارد و دو فیلد تازه روی هر باکت ذخیره می‌کند:
-model_prob_change و yes_price_change (تفاضل خام: مقدار جدید منهای مقدار
-قبلی، هر دو در همان مقیاس ۰ تا ۱ خود model_prob/yes_price -- یعنی
-درصد-امتیاز خام، نه درصد نسبی). این دو فیلد فقط توسط همین تابع (اسکن
-لایت هر ۶ ساعته) نوشته می‌شوند؛ refresh_all_open_market_prices() (اسکن
-قیمت هر ۳۰ دقیقه) کاری با این دو فیلد ندارد و دست‌نخورده باقی‌شان
-می‌گذارد -- یعنی مقدار نمایش‌داده‌شده تا اسکن لایت بعدی ثابت می‌ماند.
-اگر برای یک market_id مقدار قبلی موجود نباشد (مثلاً باکت تازه کشف شده)،
-این دو فیلد اصلاً ست نمی‌شوند. هیچ تابع دیگری در این فایل تغییر نکرده است.
+فاز ۶ (بازار دمای کمینه، کاملاً مستقل): market_path_min/load_market_min/
+save_market_min/load_all_min_markets، get_polymarket_event_min،
+discover_new_min_signals (فقط در اسکن سنگین -- طبق تصمیم صریح کاربر که
+کشف سیگنال جدید باید فقط در اسکن سنگین باشد، نه سبک)، و
+resolve_expired_min_markets (در هر دو مسیر سنگین و سبک، تا هیچ بازاری دیر
+resolve نشود) به scan_and_update/run_lite_scan متصل شدند.
 =====================================================================================
 Usage:
-python weatherbot_v3.py backfill # one-time: calibrate sigma+bias from history
-python weatherbot_v3.py serve # runs the scan loop AND serves dashboard.html
-python weatherbot_v3.py once # single scan cycle, then exit (no server)
-python weatherbot_v3.py lite_scan # light refresh: prices/forecasts + resolve, NO sizing
+python weatherbot_v3.py backfill      # one-time: calibrate sigma+bias from history
+python weatherbot_v3.py serve         # runs the scan loop AND serves dashboard.html
+python weatherbot_v3.py once          # single scan cycle, then exit (no server)
+python weatherbot_v3.py lite_scan     # light refresh: prices/forecasts + resolve, NO sizing
 python weatherbot_v3.py price_refresh # lightest refresh: ONLY market prices, no weather calls
-python weatherbot_v3.py run # main loop, no server
+python weatherbot_v3.py run           # main loop, no server
 =====================================================================================
 """
 
@@ -237,6 +189,8 @@ def save_market(m):
 def load_all_markets():
     out = []
     for f in MARKETS_DIR.glob("*.json"):
+        if f.name.endswith("_min.json"):
+            continue
         try:
             out.append(json.loads(f.read_text(encoding="utf-8")))
         except Exception:
@@ -245,6 +199,31 @@ def load_all_markets():
 
 def market_key(city_slug, date_str):
     return f"{city_slug}_{date_str}"
+
+# --- فاز ۶: پایداری فایل بازار دمای کمینه، کاملاً مستقل -----------------------
+
+def market_path_min(city_slug, date_str):
+    return MARKETS_DIR / f"{city_slug}_{date_str}_min.json"
+
+def load_market_min(city_slug, date_str):
+    p = market_path_min(city_slug, date_str)
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return None
+
+def save_market_min(m):
+    market_path_min(m["city"], m["date"]).write_text(
+        json.dumps(m, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+def load_all_min_markets():
+    out = []
+    for f in MARKETS_DIR.glob("*_min.json"):
+        try:
+            out.append(json.loads(f.read_text(encoding="utf-8")))
+        except Exception:
+            pass
+    return out
 
 # =============================================================================
 # MANUAL ENTRY LOG
@@ -372,10 +351,28 @@ def get_polymarket_event_for_market_date(city_slug, date_str):
     dt = datetime.strptime(date_str, "%Y-%m-%d")
     return get_polymarket_event(city_slug, MONTHS[dt.month - 1], dt.day, dt.year)
 
-# NOTE: get_clob_book_bid() used to be defined here. It now lives in
-# clob_utils.py (imported above) so that price_monitor.py can reuse the
-# exact same implementation instead of duplicating it. Behavior is 100%
-# unchanged.
+def get_polymarket_event_min(city_slug, month, day, year):
+    """(فاز ۶) معادل get_polymarket_event ولی با اسلاگ lowest- به‌جای
+    highest- (تأییدشده از URL واقعی بازارهای کمینهٔ زندهٔ Polymarket)."""
+    slug = f"lowest-temperature-in-{city_slug}-on-{month}-{day}-{year}"
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = requests.get(f"https://gamma-api.polymarket.com/events?slug={slug}", timeout=(5, 8))
+            data = r.json()
+            if data and isinstance(data, list) and len(data) > 0:
+                return data[0]
+            return None
+        except Exception:
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+    return None
+
+def get_polymarket_event_for_market_date_min(city_slug, date_str):
+    dt = datetime.strptime(date_str, "%Y-%m-%d")
+    return get_polymarket_event_min(city_slug, MONTHS[dt.month - 1], dt.day, dt.year)
+
+# NOTE: get_clob_book_bid() lives in clob_utils.py so that price_monitor.py
+# can reuse the exact same implementation instead of duplicating it.
 
 def parse_temp_range(question):
     if not question:
@@ -420,11 +417,7 @@ def hours_to_resolution(end_date_str):
         return 999.0
 
 def _refresh_local_day_timing(mkt, loc, now, event_end_date=None):
-    """Persists countdown data derived from the city's local target day.
-
-    `event_end_date` is retained only as Gamma metadata. It never decides
-    whether the target local day has ended and must not close a market.
-    """
+    """Persists countdown data derived from the city's local target day."""
     timing = local_day_status(mkt["date"], loc, now)
     mkt["hours_left"] = round(timing["remaining_seconds"] / 3600.0, 1)
     mkt["time_status"] = timing["kind"]
@@ -434,12 +427,7 @@ def _refresh_local_day_timing(mkt, loc, now, event_end_date=None):
     return timing
 
 def fetch_outcomes(event):
-    """Fast market extraction.
-
-    V10: do NOT fetch CLOB bids here. The old eager implementation made two
-    sequential CLOB HTTP calls for every bucket in every market. We retain
-    token IDs and fetch bids later, only for legs actually allocated.
-    """
+    """Fast market extraction. Does NOT fetch CLOB bids here."""
     outcomes = []
     for market in event.get("markets", []):
         question = market.get("question", "")
@@ -512,9 +500,8 @@ def _fetch_sell_values_for_allocation(allocation, tradable_dist, pool=None):
         leg["sell_value"] = values.get(index)
 
 # =============================================================================
-# PHASE 1 -- DISCOVERY + LIVE REFRESH
-# V5: single-pass, no shared-pool competition. Every market is sized
-# independently against its OWN fixed 100-unit notional budget.
+# PHASE 1 -- DISCOVERY + LIVE REFRESH (حداکثر دما)
+# V5: single-pass, no shared-pool competition.
 # =============================================================================
 
 _tz_warned = set()
@@ -605,8 +592,11 @@ def discover_new_signals(now, state):
                 save_market(mkt)
                 continue
 
-            members = fc.build_combined_distribution(city_slug, loc, date)
+            # (فاز ۳+۴) build_combined_distribution_full جایگزین نقطهٔ
+            # فراخوانی قدیمی شد -- members دقیقاً همان مقدار قبلی است.
+            members, model_members = fc.build_combined_distribution_full(city_slug, loc, date)
             mean, sigma = fc.build_calibrated_distribution(members, city_slug, i, loc["unit"])
+            shadow_mean, model_means_raw = fc.build_shadow_mean(model_members, city_slug, i, loc["unit"])
 
             if mean is None:
                 mkt["skipped_reason"] = "ensemble forecast unavailable (mean is None)"
@@ -631,6 +621,7 @@ def discover_new_signals(now, state):
 
             mkt.update({
                 "horizon_days": i, "forecast_mean": mean, "sigma": sigma,
+                "forecast_mean_shadow": shadow_mean, "model_means_raw": model_means_raw,
                 "full_distribution": portfolio["full_distribution"],
                 "live_allocation": portfolio["allocation"],
                 "total_allocated_units": portfolio.get("total_allocated_units"),
@@ -652,6 +643,126 @@ def discover_new_signals(now, state):
             save_market(mkt)
 
         print("ok")
+
+    return new_positions
+
+# --- فاز ۶: کشف بازار دمای کمینه (فقط در اسکن سنگین، طبق تصمیم کاربر) --------
+
+def discover_new_min_signals(now, state):
+    """معادل کامل discover_new_signals ولی برای بازار دمای کمینه --
+    fetch_outcomes/parse_temp_range/strat.build_portfolio عیناً REUSE
+    می‌شوند. تنها تفاوت‌ها: اسلاگ Polymarket (lowest-)، مسیر فایل جدا
+    (market_path_min)، فراخوانی fc.build_combined_distribution_min/
+    build_calibrated_distribution_min، و فیلد "market_type": "min"."""
+    new_positions = 0
+
+    fetch_jobs = []
+    for city_slug in LOCATIONS:
+        loc = LOCATIONS[city_slug]
+        dates = _local_dates_for_city(now, loc, 4)
+        for i, date in enumerate(dates):
+            dt = datetime.strptime(date, "%Y-%m-%d")
+            fetch_jobs.append((city_slug, date, i, dt))
+
+    events_by_job = {}
+    with ThreadPoolExecutor(max_workers=EVENT_FETCH_WORKERS) as pool:
+        future_to_job = {
+            pool.submit(get_polymarket_event_min, city_slug, MONTHS[dt.month - 1], dt.day, dt.year):
+                (city_slug, date, i, dt)
+            for (city_slug, date, i, dt) in fetch_jobs
+        }
+        for future in as_completed(future_to_job):
+            job = future_to_job[future]
+            try:
+                events_by_job[job] = future.result()
+            except Exception:
+                events_by_job[job] = None
+
+    for city_slug, loc in LOCATIONS.items():
+        dates = _local_dates_for_city(now, loc, 4)
+        for i, date in enumerate(dates):
+            dt = datetime.strptime(date, "%Y-%m-%d")
+            event = events_by_job.get((city_slug, date, i, dt))
+            if not event:
+                continue
+
+            end_date = event.get("endDate", "")
+            mkt = load_market_min(city_slug, date) or {
+                "city": city_slug, "city_name": loc["name"], "date": date,
+                "unit": loc["unit"], "status": "open", "market_type": "min",
+                "created_at": now.isoformat(), "committed_allocation": None,
+            }
+
+            if mkt["status"] == "resolved":
+                continue
+
+            timing = _refresh_local_day_timing(mkt, loc, now, end_date)
+            hours = timing["remaining_seconds"] / 3600.0
+            mkt["last_scan"] = now.isoformat()
+
+            needs_version_refresh = mkt.get("strategy_version") != STRATEGY_VERSION
+            if (hours < MIN_HOURS or hours > MAX_HOURS) and not needs_version_refresh:
+                save_market_min(mkt)
+                continue
+
+            outcomes = fetch_outcomes(event)
+            if not outcomes:
+                save_market_min(mkt)
+                continue
+
+            event_volume = float(event.get("volume", 0) or 0)
+            if event_volume < MIN_VOLUME:
+                mkt["skipped_reason"] = f"event volume {event_volume:.0f} < min_volume {MIN_VOLUME}"
+                save_market_min(mkt)
+                continue
+
+            dist_precheck = [d for d in outcomes if d["volume"] > 0]
+            if not dist_precheck:
+                save_market_min(mkt)
+                continue
+
+            members = fc.build_combined_distribution_min(city_slug, loc, date)
+            mean, sigma = fc.build_calibrated_distribution_min(members, city_slug, i, loc["unit"])
+
+            if mean is None:
+                mkt["skipped_reason"] = "ensemble forecast unavailable (mean is None)"
+                save_market_min(mkt)
+                continue
+
+            dist = fc.full_bucket_distribution(mean, sigma, outcomes)
+            tradable_dist = [d for d in dist if d["volume"] > 0]
+            if not tradable_dist:
+                save_market_min(mkt)
+                continue
+
+            portfolio = strat.build_portfolio(
+                city_slug, tradable_dist, STRATEGY_PARAMS, mean=mean, sigma=sigma
+            )
+            if portfolio["allocation"]:
+                _fetch_sell_values_for_allocation(portfolio["allocation"], tradable_dist)
+
+            was_new_signal = bool(portfolio["allocation"]) and not mkt.get("live_allocation")
+
+            mkt.update({
+                "horizon_days": i, "forecast_mean": mean, "sigma": sigma,
+                "full_distribution": portfolio["full_distribution"],
+                "live_allocation": portfolio["allocation"],
+                "total_allocated_units": portfolio.get("total_allocated_units"),
+                "portfolio_score": portfolio.get("portfolio_score"),
+                "worst_case_loss_frac": portfolio.get("worst_case_loss_frac"),
+                "best_case_pnl_units": portfolio.get("best_case_pnl_units"),
+                "worst_case_pnl_units": portfolio.get("worst_case_pnl_units"),
+                "success_probability": portfolio.get("success_probability"),
+                "confidence": portfolio.get("confidence"),
+                "balance_units": STRATEGY_PARAMS["balance_units"],
+                "strategy_version": STRATEGY_VERSION,
+            })
+            mkt.pop("skipped_reason", None)
+
+            if was_new_signal:
+                new_positions += 1
+
+            save_market_min(mkt)
 
     return new_positions
 
@@ -689,27 +800,13 @@ def refresh_all_locked_markets(now):
         save_market(mkt)
 
 def refresh_open_market_info(now):
-    """Phase 3 (نقشه‌راه heartbeat سبک): بازخوانی قیمت/پیش‌بینی بازارهای باز
-    از صفر -- بدون هیچ فراخوانی strat.build_portfolio، یعنی بدون سایزینگ و
-    بدون دست‌زدن به live_allocation/committed_allocation. فقط داده‌های
-    نمایشی (forecast_mean, sigma, full_distribution) تازه می‌شوند.
+    """Phase 3 (heartbeat سبک): بازخوانی قیمت/پیش‌بینی بازارهای باز از صفر
+    -- بدون strat.build_portfolio، بدون سایزینگ.
 
-    full_distribution همچنان با strat.build_candidate_set ساخته می‌شود
-    (نه fc.full_bucket_distribution خام) چون این تابع همان belief_prob/ev
-    را هم اضافه می‌کند -- بدون این کار، ستون «باور نهایی» بعد از هر
-    اسکن سبک خالی می‌ماند. باید پارامترها با strat.get_merged_params()
-    کامل شوند (نه STRATEGY_PARAMS خام)، چون build_candidate_set به
-    کلیدهایی مثل belief_model_weight نیاز دارد که فقط در DEFAULT_PARAMS
-    داخل strategy.py تعریف شده‌اند.
-
-    PATCH (درخواست کاربر: نمایش تغییر احتمال مدل/قیمت بازار): درست قبل از
-    جایگزینی full_distribution با نسخهٔ تازه، مقدار model_prob و yes_price
-    *قبلی* هر باکت (بر اساس market_id) نگه داشته می‌شود و دو فیلد تازه
-    (model_prob_change, yes_price_change) با تفاضل خام (جدید منهای قدیم،
-    درصد-امتیاز خام نه نسبی) روی همان باکت ذخیره می‌شود. اگر مقدار قبلی
-    برای یک market_id موجود نباشد (باکت تازه)، این دو فیلد اصلاً ست
-    نمی‌شوند. این دو فیلد فقط اینجا نوشته می‌شوند -- هیچ تابع دیگری
-    (از جمله refresh_all_open_market_prices) به آن‌ها دست نمی‌زند.
+    (فاز ۳+۴) fc.build_combined_distribution_full جایگزین نقطهٔ فراخوانی
+    قدیمی شد؛ forecast_mean/sigma زنده کاملاً همان مقدار قبلی می‌گیرند.
+    forecast_mean_shadow/model_means_raw هم اینجا (در اسکن سبک، طبق تصمیم
+    صریح کاربر که این‌ها هم در هر دو مسیر باشند) به‌روزرسانی می‌شوند.
     """
     open_markets = [m for m in load_all_markets() if m.get("status") == "open"]
     if not open_markets:
@@ -761,8 +858,9 @@ def refresh_open_market_info(now):
             continue
 
         try:
-            members = fc.build_combined_distribution(mkt["city"], loc, mkt["date"])
+            members, model_members = fc.build_combined_distribution_full(mkt["city"], loc, mkt["date"])
             mean, sigma = fc.build_calibrated_distribution(members, mkt["city"], horizon_days, loc["unit"])
+            shadow_mean, model_means_raw = fc.build_shadow_mean(model_members, mkt["city"], horizon_days, loc["unit"])
         except Exception:
             continue
 
@@ -781,7 +879,6 @@ def refresh_open_market_info(now):
         if not full_distribution:
             continue
 
-        # PATCH: محاسبهٔ تغییر نسبت به آخرین اسکن لایت، قبل از overwrite شدن.
         old_by_id = {
             str(b.get("market_id")): b
             for b in (mkt.get("full_distribution") or [])
@@ -801,6 +898,8 @@ def refresh_open_market_info(now):
 
         mkt["forecast_mean"] = mean
         mkt["sigma"] = sigma
+        mkt["forecast_mean_shadow"] = shadow_mean
+        mkt["model_means_raw"] = model_means_raw
         mkt["full_distribution"] = full_distribution
         mkt["last_lite_refresh"] = now.isoformat()
         save_market(mkt)
@@ -811,27 +910,8 @@ def refresh_open_market_info(now):
 def refresh_all_open_market_prices(now):
     """فاز ۳ نقشه‌راه، زیرگام ۳-الف: فقط قیمت بازار (yes_price) همهٔ
     باکت‌های موجود در full_distribution همهٔ مارکت‌های open را از Gamma API
-    تازه می‌کند -- بدون هیچ فراخوانی به forecasting.py (بدون گرفتن
-    پیش‌بینی جدید هواشناسی) و بدون دست‌زدن به forecast_mean/sigma/
-    model_prob/live_allocation/committed_allocation.
-
-    هدف: قیمتی که کاربر برای تصمیم قفل‌کردن در داشبورد می‌بیند، به‌جای تا
-    ۶ ساعت قدیمی (که فقط با lite_scan/heartbeat به‌روز می‌شد)، حداکثر ۳۰
-    دقیقه قدیمی باشد. هر مارکت (city+date) با یک فراخوانی دسته‌ای
-    get_gamma_event_prices تازه می‌شود -- نه یک فراخوانی به‌ازای هر باکت.
-
-    باور نهایی (belief_prob) هر باکت با همان strat.fuse_belief() موجود و
-    model_prob قبلی (دست‌نخورده از آخرین اسکن سنگین/سبک) دوباره محاسبه
-    می‌شود تا ستون «باور نهایی» در داشبورد هم با قیمت تازه هماهنگ بماند.
-
-    توجه: این تابع عمداً به فیلدهای model_prob_change/yes_price_change
-    (که فقط توسط refresh_open_market_info در اسکن لایت نوشته می‌شوند)
-    دست نمی‌زند -- آن‌ها دست‌نخورده باقی می‌مانند تا اسکن لایت بعدی.
-
-    این تابع کاملاً مستقل و افزودنی است -- هیچ‌کدام از توابع اسکن موجود
-    (discover_new_signals، refresh_open_market_info، run_once،
-    run_lite_scan) آن را صدا نمی‌زنند یا توسط آن تغییر نمی‌کنند.
-    """
+    تازه می‌کند -- بدون فراخوانی هواشناسی و بدون دست‌زدن به
+    forecast_mean/sigma/model_prob/live_allocation/committed_allocation."""
     open_markets = [m for m in load_all_markets() if m.get("status") == "open"]
     if not open_markets:
         return 0
@@ -891,7 +971,7 @@ def refresh_all_open_market_prices(now):
 LAST_SCAN_FILE = DATA_DIR / "last_scan.json"
 
 def _record_scan_timestamp(kind):
-    """ثبت زمان آخرین اسکن سنگین/سبک برای نمایش «آخرین به‌روزرسانی: X ساعت پیش» در داشبورد."""
+    """ثبت زمان آخرین اسکن سنگین/سبک برای نمایش «آخرین به‌روزرسانی» در داشبورد."""
     data = {}
     if LAST_SCAN_FILE.exists():
         try:
@@ -902,7 +982,7 @@ def _record_scan_timestamp(kind):
     LAST_SCAN_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 # =============================================================================
-# PHASE 3 -- RESOLUTION (unchanged)
+# PHASE 3 -- RESOLUTION (حداکثر)
 # =============================================================================
 
 def resolve_expired_markets(state):
@@ -982,16 +1062,110 @@ def resolve_expired_markets(state):
         resolved_count += 1
     return resolved_count
 
+def resolve_expired_min_markets(state):
+    """(فاز ۶) معادل کامل resolve_expired_markets ولی برای بازار کمینه --
+    همان state مشترک (balance_units/wins/losses) با بازار حداکثر
+    استفاده می‌شود."""
+    resolved_count = 0
+    entries = load_entries()
+    for mkt in load_all_min_markets():
+        if mkt.get("status") in ("resolved", "resolved_no_signal"):
+            continue
+        grading_allocation = mkt.get("committed_allocation") or mkt.get("live_allocation")
+        hours_left = mkt.get("hours_left", 999)
+
+        if not grading_allocation:
+            if hours_left > 0.5:
+                continue
+            loc = LOCATIONS[mkt["city"]]
+            dt = datetime.strptime(mkt["date"], "%Y-%m-%d")
+            settlement = res.get_polymarket_settlement_min(mkt["city"], MONTHS[dt.month - 1], dt.day, dt.year)
+            if not settlement:
+                mkt["status"] = "expired_no_signal"
+                save_market_min(mkt)
+                continue
+            settlement_temp = res.get_actual_temp_from_settlement(mkt, settlement)
+            mkt["actual_temp"] = settlement_temp if settlement_temp is not None else res.get_display_temp_min(loc, mkt["date"], VC_KEY)
+            mkt["status"] = "resolved_no_signal"
+            mkt["pnl_units"] = None
+            mkt["my_pnl_units"] = None
+            save_market_min(mkt)
+            continue
+
+        if hours_left > 0.5:
+            continue
+        loc = LOCATIONS[mkt["city"]]
+        dt = datetime.strptime(mkt["date"], "%Y-%m-%d")
+        settlement = res.get_polymarket_settlement_min(mkt["city"], MONTHS[dt.month - 1], dt.day, dt.year)
+        if settlement is None:
+            continue
+        all_settled = all(a["market_id"] in settlement for a in grading_allocation)
+        if not all_settled:
+            continue
+
+        settlement_temp = res.get_actual_temp_from_settlement(mkt, settlement)
+        mkt["actual_temp"] = settlement_temp if settlement_temp is not None else res.get_display_temp_min(loc, mkt["date"], VC_KEY)
+
+        raw_pnl_units = 0.0
+        raw_my_pnl_units = 0.0
+        any_user_entry = False
+        for a in grading_allocation:
+            yes_won = settlement[a["market_id"]]
+            won = yes_won if a["side"] == "YES" else (not yes_won)
+            trade_pnl = (a["units"] * (1.0 / a["price"] - 1.0)) if won else -a["units"]
+            a["won"] = won
+            a["pnl_units"] = round(trade_pnl, 2)
+            raw_pnl_units += trade_pnl
+            user_entered = entries.get(a.get("entry_key", ""), False)
+            a["user_entered"] = user_entered
+            if user_entered:
+                any_user_entry = True
+                raw_my_pnl_units += trade_pnl
+
+        pnl_units = round(raw_pnl_units, 2)
+        my_pnl_units = round(raw_my_pnl_units, 2)
+        mkt["status"] = "resolved"
+        mkt["graded_against"] = "committed" if mkt.get("committed_allocation") else "live_fallback"
+        mkt["resolved_outcome"] = "win" if pnl_units >= 0 else "loss"
+        mkt["pnl_units"] = pnl_units
+        mkt["my_pnl_units"] = my_pnl_units if any_user_entry else None
+        mkt["graded_allocation"] = grading_allocation
+
+        state["balance_units"] = round(state["balance_units"] + pnl_units, 2)
+        state["total_pnl_units"] = round(state["total_pnl_units"] + pnl_units, 2)
+        if pnl_units >= 0:
+            state["wins"] += 1
+        else:
+            state["losses"] += 1
+        if any_user_entry:
+            state["my_balance_units"] = round(state["my_balance_units"] + my_pnl_units, 2)
+            state["my_total_pnl_units"] = round(state["my_total_pnl_units"] + my_pnl_units, 2)
+            if my_pnl_units >= 0:
+                state["my_wins"] += 1
+            else:
+                state["my_losses"] += 1
+
+        save_market_min(mkt)
+        resolved_count += 1
+    return resolved_count
+
 def scan_and_update():
     state = load_state()
     now = datetime.now(timezone.utc)
     new_positions = discover_new_signals(now, state)
+    new_min_positions = discover_new_min_signals(now, state)
     refresh_all_locked_markets(now)
     committed = apply_lock_requests(now)
     resolved_count = resolve_expired_markets(state)
+    resolved_min_count = resolve_expired_min_markets(state)
     save_state(state)
     fc.update_calibration_from_live(load_all_markets(), LOCATIONS)
-    return new_positions, resolved_count, committed
+    fc.update_calibration_from_live_min(load_all_min_markets(), LOCATIONS)
+    try:
+        fc.update_model_skill_from_live(load_all_markets(), LOCATIONS)
+    except Exception as e:
+        print(f"  هشدار: به‌روزرسانی مهارت مدل‌ها ناموفق بود: {e}")
+    return new_positions + new_min_positions, resolved_count + resolved_min_count, committed
 
 def _start_local_server():
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(Path.cwd()))
@@ -1017,9 +1191,10 @@ def run_once():
     print(f"  mark your real trades in: {ENTRIES_FILE}")
 
 def run_lite_scan():
-    """فاز ۳ نقشه‌راه: اسکن سبک (heartbeat) -- فقط تازه‌سازی اطلاعات نمایشی
-    بازارهای باز، resolve بازارهای منقضی، و به‌روزرسانی کالیبراسیون زنده.
-    هیچ سیگنال جدیدی ساخته نمی‌شود و هیچ پوزیشنی سایز/تغییر نمی‌کند."""
+    """اسکن سبک (heartbeat) -- فقط تازه‌سازی اطلاعات نمایشی بازارهای باز،
+    resolve بازارهای منقضی، و به‌روزرسانی کالیبراسیون زنده. هیچ سیگنال
+    جدیدی ساخته نمی‌شود (طبق تصمیم صریح کاربر، discover_new_min_signals
+    اینجا فراخوانی نمی‌شود -- فقط در اسکن سنگین)."""
     t_start = time.perf_counter()
     now = datetime.now(timezone.utc)
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] اسکن سبک -- تازه‌سازی اطلاعات {len(LOCATIONS)} شهر...")
@@ -1027,22 +1202,29 @@ def run_lite_scan():
     refreshed = refresh_open_market_info(now)
     state = load_state()
     resolved_count = resolve_expired_markets(state)
+    resolved_min_count = resolve_expired_min_markets(state)
     save_state(state)
 
     try:
         fc.update_calibration_from_live(load_all_markets(), LOCATIONS)
     except Exception as e:
         print(f"  هشدار: به‌روزرسانی کالیبراسیون زنده ناموفق بود: {e}")
+    try:
+        fc.update_calibration_from_live_min(load_all_min_markets(), LOCATIONS)
+    except Exception as e:
+        print(f"  هشدار: به‌روزرسانی کالیبراسیون زندهٔ کمینه ناموفق بود: {e}")
+    try:
+        fc.update_model_skill_from_live(load_all_markets(), LOCATIONS)
+    except Exception as e:
+        print(f"  هشدار: به‌روزرسانی مهارت مدل‌ها ناموفق بود: {e}")
 
     _record_scan_timestamp("lite")
-    print(f"  بازارهای تازه‌سازی‌شده: {refreshed} | resolve‌شده: {resolved_count}")
+    print(f"  بازارهای تازه‌سازی‌شده: {refreshed} | resolve‌شده: {resolved_count + resolved_min_count}")
     print(f"  توجه: هیچ سیگنال/پوزیشن جدیدی در این مسیر ساخته نمی‌شود.")
 
 def run_price_refresh():
-    """فاز ۳ نقشه‌راه، زیرگام ۳-الف: سبک‌ترین مسیر اسکن -- فقط قیمت بازار
-    همهٔ باکت‌های open را تازه می‌کند (بدون هیچ فراخوانی هواشناسی). طراحی
-    شده تا هر ۳۰ دقیقه (از monitor_locks.yml) اجرا شود، جدا از lite_scan
-    ۶ساعته و اسکن کامل روزانه."""
+    """سبک‌ترین مسیر اسکن -- فقط قیمت بازار همهٔ باکت‌های open را تازه
+    می‌کند (بدون فراخوانی هواشناسی)."""
     now = datetime.now(timezone.utc)
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] آپدیت سبک قیمت پنل -- بدون فراخوانی هواشناسی...")
     refreshed = refresh_all_open_market_prices(now)
@@ -1077,7 +1259,8 @@ if __name__ == "__main__":
     if cmd == "backfill":
         print("Running one-time historical calibration backfill...")
         fc.backfill_calibration(LOCATIONS, lookback_days=CFG.get("calibration_lookback_days", 180))
-        print("Backfill complete. You can now run: python weatherbot_v3.py serve")
+        fc.backfill_calibration_min(LOCATIONS, lookback_days=CFG.get("calibration_lookback_days", 180))
+        print("Backfill complete (max + min). You can now run: python weatherbot_v3.py serve")
     elif cmd == "once":
         run_once()
     elif cmd == "lite_scan":

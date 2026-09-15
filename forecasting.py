@@ -30,57 +30,37 @@ in the rolling window.
 
 --- PHASE 6 FIX LOG (WEATHERBOT_ROADMAP.md, یافته F6) -------------------------
 Sigma for horizons D1/D2/D3 used to be pure guesswork: `base_mae * sqrt(1 +
-h*0.6)`, a synthetic scaling of the D0 error with NO real measurement of how
-much forecast skill actually degrades at 1/2/3 days lead time for that
-specific city. Investigated whether a real per-horizon measurement is
-possible: Open-Meteo's "Previous Model Runs API"
-(previous-runs-api.open-meteo.com) archives forecasts at FIXED lead-time
-offsets (`temperature_2m_previous_day1/2/3`, hourly, from Jan 2024 for most
-models) specifically for this kind of lead-time skill analysis -- exactly
-what was needed, and it was previously unused in this codebase.
+h*0.6)`. FIX: `fetch_historical_forecast_by_horizon()` pulls the archived
+HOURLY forecast at each lead-time offset via Open-Meteo's Previous Model Runs
+API, aggregates to a real daily max locally, and `backfill_calibration()`
+now compares this REAL per-horizon forecast against actual, with the SAME
+seasonal weighting as Phase 5. Explicit tested FALLBACK to the old synthetic
+scaling if fewer than MIN_REAL_HORIZON_SAMPLES real samples come back.
 
-FIX: `fetch_historical_forecast_by_horizon()` pulls the archived HOURLY
-forecast at each lead-time offset (there is no daily-max variant in this
-API, only hourly), aggregates it to a real daily max locally
-(`_daily_max_from_hourly_previous_day`), and `backfill_calibration()` now
-compares this REAL per-horizon forecast against the (Phase-2-corrected)
-actual, with the SAME seasonal weighting as Phase 5, to get a genuinely
-measured sigma/bias for D1/D2/D3 -- not a guess.
+=====================================================================================
+نقشه‌راه بهبود (۱۶ سپتامبر ۲۰۲۶) -- خلاصهٔ افزودنی‌های این نسخه
+=====================================================================================
+فاز ۳+۴ (وزن‌دهی پویای مدل‌ها، جایگزین -- بدون هیچ اثر روی forecast_mean/
+sigma زنده): build_combined_distribution_full() یک بار همان دو فراخوانی
+ECMWF+GEFS موجود را انجام می‌دهد و هم لیست ترکیبی قدیمی (برای سازگاری
+کامل) و هم دو (تا چهار) لیست جدا به‌ازای هر مدل را برمی‌گرداند. GEM
+(همهٔ شهرها) و ICON-EU-EPS (فقط region=="eu") به‌عنوان مدل‌های اضافی، بدون
+فراخوانی شبکهٔ اضافه‌شده به مسیر قدیمی، اضافه شده‌اند. HRRR (قطعی، نه
+ensemble؛ فقط شهرهای region=="us") جدا ذخیره می‌شود، وارد هیچ میانگینی
+نمی‌شود. build_shadow_mean() میانگین وزن‌دار (بر اساس مهارت واقعی
+ثبت‌شده در data/model_skill.json، با fallback ایمن به میانگین مساوی) را
+در forecast_mean_shadow ذخیره می‌کند -- کاملاً جدا از forecast_mean اصلی
+که هیچ‌گاه تغییر نمی‌کند. update_model_skill_from_live() مشابه دقیق
+update_calibration_from_live موجود است، فقط برای خطای هر مدل جدا.
 
-SAFETY / HONESTY NOTE: this is a NEW external API not previously used or
-tested against live traffic in this project. Built with an explicit, tested
-FALLBACK: if fewer than 20 real per-horizon samples come back for a given
-city/horizon (endpoint down, insufficient history, unexpected response
-shape, etc.), that horizon silently reverts to the OLD synthetic
-`sqrt(1+0.6h)` scaling -- never crashes, never leaves a horizon
-uncalibrated. Each `cal[key]["source"]` now says
-"historical_backfill_real_horizon" or "historical_backfill_synthetic_fallback"
-so you can see, per city per horizon, which path was actually used after a
-real backfill run.
+⚠️ نکتهٔ صداقت فنی (بدهی فنی فاز ۷): شناسهٔ دقیق مدل "icon_eu_eps" از
+الگوی نام‌گذاری مستندات Open-Meteo استنتاج شده، نه از رشتهٔ تأییدشدهٔ
+مستقیم. اگر اشتباه باشد، طبق طراحی امن این ماژول فقط dict خالی برمی‌گردد
+(هرگز crash نمی‌کند) و آن مدل بی‌اثر می‌ماند تا تأیید/اصلاح شود.
 
-Output shape of `cal[key]` unchanged (still sigma/bias/base_mae/
-base_bias_raw/n/source/updated_at, plus the Phase-5
-`seasonal_half_life_days` field) -- get_sigma()/get_bias() need zero changes.
-
---- PATCH این نسخه (موقتی -- فقط برای تشخیص) -----------------------------------
-درخواست کاربر: مکانیزم update_calibration_from_live از حدود ۱۰ روز پیش
-دیگر هیچ به‌روزرسانی جدیدی روی data/calibration.json ثبت نکرده، درحالی‌که
-هم scan_daily.yml هم heartbeat_dashboard_link.yml بدون هیچ خطایی اجرا
-می‌شوند. چون امکان اجرای مستقیم کد روی سرور واقعی وجود ندارد، این نسخه
-موقتاً چند خط print تشخیصی (با پیشوند "[CAL-DEBUG]") به
-update_calibration_from_live اضافه می‌کند تا در همان لاگ Workflow بعدی
-دقیقاً مشخص شود:
-  ۱) چند بازار resolve‌شده اصلاً پیدا شده،
-  ۲) برای هر شهر+افق، اندازهٔ گروه و وضعیت رد کردن آستانهٔ ۱۵ چقدر است،
-  ۳) اگر آستانه رد شد، دقیقاً چه مقداری محاسبه و قرار است ذخیره شود،
-  ۴) و یک try/except جدید دور خود مرحلهٔ save_calibration() که قبلاً هیچ
-     محافظتی نداشت -- اگر نوشتن فایل به هر دلیلی (مسیر، دسترسی) بی‌صدا
-     شکست می‌خورد، الان با یک پیام صریح دیده می‌شود.
-
-هیچ‌کدام از این تغییرات روی مقدار محاسبه‌شدهٔ نهایی (sigma/bias) اثر
-نمی‌گذارند -- فقط گزارش می‌دهند. بعد از پیدا شدن علت واقعی، این پرینت‌ها
-حذف و فایل به حالت تمیز برمی‌گردد. هیچ تابع دیگری در این فایل تغییر
-نکرده است.
+فاز ۶ (بازار دمای کمینه، کاملاً مستقل از حداکثر): تمام توابع با پسوند
+"_min" -- کالیبراسیون با کلیدهای جدا ({city}_min_D{h}) در همان
+calibration.json، بدون هیچ تداخل کلید با نسخهٔ حداکثر (تست شد).
 =====================================================================================
 """
 
@@ -95,6 +75,7 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 CALIBRATION_FILE = DATA_DIR / "calibration.json"
 ACTUALS_CACHE_FILE = DATA_DIR / "actuals_cache.json"
+MODEL_SKILL_FILE = DATA_DIR / "model_skill.json"
 
 DEFAULT_SIGMA_F = 2.5
 DEFAULT_SIGMA_C = 1.4
@@ -109,6 +90,7 @@ SEASONAL_HALF_LIFE_DAYS = 45
 # --- FIX (Phase 6 / F6): minimum real per-horizon samples required before
 # trusting the new real-lead-time measurement over the old synthetic scaling.
 MIN_REAL_HORIZON_SAMPLES = 20
+MIN_MODEL_SKILL_SAMPLES = 15  # (فاز ۳+۴) هماهنگ با آستانهٔ update_calibration_from_live
 TAIL_DF = 5.0
 MAX_RETRIES = 3
 RETRY_DELAY_S = 3
@@ -128,11 +110,21 @@ BIAS_CAP_OVERRIDES = {
     "houston": 3.6,
 }
 
+# (فاز ۴) کدام مدل‌های اضافی برای کدام شهرها فعال‌اند -- بر اساس فیلد
+# region موجود در locations.py؛ None یعنی «همهٔ شهرها».
+EXTRA_MODEL_REGIONS = {
+    "gem": None,
+    "icon_eu": "eu",
+}
+
+
 def norm_cdf(x):
     return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
 
+
 def norm_pdf(x):
     return math.exp(-0.5 * x * x) / math.sqrt(2 * math.pi)
+
 
 def _betacf(a, b, x, maxit=200, eps=3e-7, fpmin=1e-30):
     qab = a + b
@@ -169,6 +161,7 @@ def _betacf(a, b, x, maxit=200, eps=3e-7, fpmin=1e-30):
             break
     return h
 
+
 def _betai(a, b, x):
     if x <= 0.0:
         return 0.0
@@ -183,10 +176,12 @@ def _betai(a, b, x):
     else:
         return 1.0 - bt * _betacf(b, a, 1.0 - x) / b
 
+
 def student_t_cdf(t, df=TAIL_DF):
     x = df / (df + t * t)
     p = 0.5 * _betai(df / 2.0, 0.5, x)
     return 1.0 - p if t > 0 else p
+
 
 def _bias_cap(unit, city_slug=None, observed_raw_bias=None):
     """(Phase 4 / F4: dynamic cap -- see module docstring.)"""
@@ -200,6 +195,7 @@ def _bias_cap(unit, city_slug=None, observed_raw_bias=None):
         floor = max(floor, dynamic)
     return round(floor, 3)
 
+
 def _day_of_year_distance(d1, d2):
     """(Phase 5 / F5.) Circular day-of-year distance, handles year wrap."""
     doy1 = d1.timetuple().tm_yday
@@ -207,25 +203,31 @@ def _day_of_year_distance(d1, d2):
     diff = abs(doy1 - doy2)
     return min(diff, 365 - diff)
 
+
 def _seasonal_weight(date_obj, reference_date, half_life_days=SEASONAL_HALF_LIFE_DAYS):
     """(Phase 5 / F5.) Weight decaying by day-of-year distance from "today"."""
     dist = _day_of_year_distance(date_obj, reference_date)
     return 0.5 ** (dist / half_life_days)
 
+
 def _weighted_mean(values, weights):
     total_w = sum(weights) or 1.0
     return sum(v * w for v, w in zip(values, weights)) / total_w
 
+
 # =============================================================================
-# ENSEMBLE FETCH (LIVE FORECASTING) -- unchanged
+# ENSEMBLE FETCH (LIVE FORECASTING)
 # =============================================================================
 
-def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7):
+def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7, variable="temperature_2m_max"):
+    """(فاز ۶) پارامتر variable اضافه شد؛ مقدار پیش‌فرض دقیقاً رفتار
+    قبلی (temperature_2m_max) را حفظ می‌کند -- هیچ فراخوانی موجودی نیازی
+    به تغییر ندارد."""
     temp_unit = "fahrenheit" if unit == "F" else "celsius"
     url = (
         f"https://ensemble-api.open-meteo.com/v1/ensemble"
         f"?latitude={lat}&longitude={lon}"
-        f"&daily=temperature_2m_max&temperature_unit={temp_unit}"
+        f"&daily={variable}&temperature_unit={temp_unit}"
         f"&forecast_days={forecast_days}&timezone={tz}"
         f"&models={models}"
     )
@@ -238,7 +240,7 @@ def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7):
             dates = daily.get("time", [])
             result = {d: [] for d in dates}
             for key, series in daily.items():
-                if key == "time" or not key.startswith("temperature_2m_max"):
+                if key == "time" or not key.startswith(variable):
                     continue
                 for d, v in zip(dates, series):
                     if v is not None:
@@ -251,13 +253,54 @@ def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7):
                 return {}
     return {}
 
+
 def get_ecmwf_ensemble(lat, lon, tz, unit):
     return _fetch_ensemble(lat, lon, tz, unit, "ecmwf_ifs025", forecast_days=7)
+
 
 def get_gefs_ensemble(lat, lon, tz, unit):
     return _fetch_ensemble(lat, lon, tz, unit, "gfs_seamless", forecast_days=7)
 
+
+def get_gem_ensemble(lat, lon, tz, unit):
+    """(فاز ۴) GEM (سرویس هواشناسی کانادا) -- ۲۱ عضو، جهانی."""
+    return _fetch_ensemble(lat, lon, tz, unit, "gem_global", forecast_days=7)
+
+
+def get_icon_eu_ensemble(lat, lon, tz, unit):
+    """(فاز ۴) ICON-EU-EPS (DWD آلمان) -- ۴۰ عضو، ۱۳ کیلومتر، فقط اروپا.
+    ⚠️ رشتهٔ مدل استنتاجی -- نگاه کنید به یادداشت صداقت فنی بالای فایل."""
+    return _fetch_ensemble(lat, lon, tz, unit, "icon_eu_eps", forecast_days=7)
+
+
+def get_hrrr_forecast(lat, lon, tz, unit):
+    """(فاز ۴) HRRR -- برخلاف بقیه، قطعی است نه ensemble، و از endpoint
+    متفاوتی (v1/gfs) می‌آید. فقط برای شهرهای آمریکایی معنا دارد. خروجی:
+    dict[date_str] -> float (یا {} در صورت هر خطایی)."""
+    temp_unit = "fahrenheit" if unit == "F" else "celsius"
+    url = (
+        f"https://api.open-meteo.com/v1/gfs"
+        f"?latitude={lat}&longitude={lon}"
+        f"&daily=temperature_2m_max&temperature_unit={temp_unit}"
+        f"&timezone={tz}&forecast_days=7&models=ncep_hrrr_conus"
+    )
+    for attempt in range(MAX_RETRIES):
+        try:
+            data = requests.get(url, timeout=(5, 12)).json()
+            daily = data.get("daily", {})
+            return dict(zip(daily.get("time", []), daily.get("temperature_2m_max", [])))
+        except Exception:
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+            else:
+                return {}
+    return {}
+
+
 def build_combined_distribution(city_slug, loc, date_str):
+    """UNCHANGED -- همچنان جای دیگری (برای سازگاری قدیمی) قابل‌فراخوانی
+    است، ولی weatherbot_v3.py از این پس build_combined_distribution_full
+    را صدا می‌زند."""
     members = []
     ecmwf = get_ecmwf_ensemble(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
     gefs = get_gefs_ensemble(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
@@ -265,8 +308,143 @@ def build_combined_distribution(city_slug, loc, date_str):
     members.extend(gefs.get(date_str, []))
     return members
 
+
+def _active_extra_models(loc):
+    """(فاز ۴) کدام مدل‌های اضافی برای این شهر معنا دارند، بر اساس فیلد
+    region موجود در locations.py -- هیچ تغییری در locations.py لازم نیست."""
+    active = []
+    for model_name, required_region in EXTRA_MODEL_REGIONS.items():
+        if required_region is None or loc.get("region") == required_region:
+            active.append(model_name)
+    return active
+
+
+def _fetch_extra_model(model_name, lat, lon, tz, unit, date_str):
+    if model_name == "gem":
+        return get_gem_ensemble(lat, lon, tz, unit).get(date_str, [])
+    if model_name == "icon_eu":
+        return get_icon_eu_ensemble(lat, lon, tz, unit).get(date_str, [])
+    return []
+
+
+def build_combined_distribution_full(city_slug, loc, date_str):
+    """(فاز ۳+۴) جایگزین نقطهٔ فراخوانی build_combined_distribution --
+    همان دو فراخوانی ECMWF+GEFS را فقط یک‌بار انجام می‌دهد و هم لیست
+    ترکیبی (دقیقاً همان‌طور که تا الان forecast_mean/sigma زنده را
+    می‌ساخت -- بدون تغییر) و هم دیکشنری اعضای هر مدل جدا (برای محاسبهٔ
+    سایه) را برمی‌گرداند. مدل‌های اضافی (GEM/ICON-EU) فقط در دیکشنری دوم
+    ظاهر می‌شوند، هرگز در members_combined -- یعنی سیگنال واقعی دست‌نخورده
+    می‌ماند.
+    خروجی: (members_combined, model_members_dict)"""
+    ecmwf = get_ecmwf_ensemble(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
+    gefs = get_gefs_ensemble(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
+    ecmwf_members = ecmwf.get(date_str, [])
+    gfs_members = gefs.get(date_str, [])
+    members_combined = list(ecmwf_members) + list(gfs_members)
+
+    model_members = {"ecmwf": ecmwf_members, "gfs": gfs_members}
+    for extra in _active_extra_models(loc):
+        model_members[extra] = _fetch_extra_model(
+            extra, loc["lat"], loc["lon"], loc["tz"], loc["unit"], date_str
+        )
+    return members_combined, model_members
+
+
 # =============================================================================
-# CALIBRATION (HISTORICAL BACKFILL) -- unchanged
+# فاز ۳+۴: مهارت هرمدل + میانگین وزن‌دار «سایه» (بدون اثر روی سیگنال زنده)
+# =============================================================================
+
+def load_model_skill():
+    if MODEL_SKILL_FILE.exists():
+        try:
+            return json.loads(MODEL_SKILL_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_model_skill(skill):
+    MODEL_SKILL_FILE.write_text(json.dumps(skill, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def get_model_weights(city_slug, model_names, min_n=MIN_MODEL_SKILL_SAMPLES):
+    """وزن‌دهی معکوس-خطا بین هر تعداد مدل. اگر حتی یکی از مدل‌های
+    خواسته‌شده مهارت کافی ثبت‌شده نداشت، None برمی‌گرداند (یعنی: میانگین
+    مساوی، نه وزن‌دهی) -- امن، هرگز یک مدل بی‌داده را با وزن نادرست جریمه
+    نمی‌کند."""
+    skill = load_model_skill().get(city_slug, {})
+    maes = {}
+    for m in model_names:
+        entry = skill.get(m, {})
+        mae, n = entry.get("mae"), entry.get("n", 0)
+        if mae and n >= min_n:
+            maes[m] = mae
+    if len(maes) == len(model_names) and len(maes) > 0:
+        inv = {m: 1.0 / v for m, v in maes.items()}
+        total = sum(inv.values())
+        return {m: round(v / total, 4) for m, v in inv.items()}
+    return None
+
+
+def build_shadow_mean(model_members, city_slug, horizon_days, unit):
+    """میانگین وزن‌دار «سایه» -- هر تعداد مدل در model_members (dict) را
+    قبول می‌کند. sigma دست‌نخورده می‌ماند (از build_calibrated_distribution
+    موجود). خروجی: (shadow_mean, raw_means_dict) یا (None, {})."""
+    raw_means = {}
+    for model_name, members in model_members.items():
+        if members:
+            raw_means[model_name] = sum(members) / len(members)
+
+    if not raw_means:
+        return None, {}
+
+    weights = get_model_weights(city_slug, list(raw_means.keys()))
+    if weights is None:
+        raw_shadow_mean = sum(raw_means.values()) / len(raw_means)
+    else:
+        raw_shadow_mean = sum(weights[m] * raw_means[m] for m in raw_means)
+
+    bias = get_bias(city_slug, horizon_days, unit)
+    shadow_mean = round(raw_shadow_mean + bias, 2)
+    raw_means_rounded = {m: round(v, 2) for m, v in raw_means.items()}
+    return shadow_mean, raw_means_rounded
+
+
+def update_model_skill_from_live(markets, locations):
+    """مشابه دقیق update_calibration_from_live -- برای مهارت هرمدل جدا.
+    نیاز به فیلد model_means_raw (dict) در مارکت‌های resolve‌شده دارد
+    (weatherbot_v3.py آن را ذخیره می‌کند). مارکت‌های بدون این فیلد
+    (قدیمی‌تر) سایلنت رد می‌شوند -- هرگز crash نمی‌کند."""
+    skill = load_model_skill()
+    resolved = [
+        m for m in markets
+        if m.get("status") in ("resolved", "resolved_no_signal")
+        and m.get("actual_temp") is not None
+        and m.get("model_means_raw")
+    ]
+    all_model_names = set()
+    for m in resolved:
+        all_model_names.update(m["model_means_raw"].keys())
+
+    for city_slug in locations:
+        group = [m for m in resolved if m["city"] == city_slug]
+        for model_name in all_model_names:
+            samples = [m for m in group if m["model_means_raw"].get(model_name) is not None]
+            if len(samples) < MIN_MODEL_SKILL_SAMPLES:
+                continue
+            abs_errors = [abs(m["model_means_raw"][model_name] - m["actual_temp"]) for m in samples]
+            mae = sum(abs_errors) / len(abs_errors)
+            entry = skill.setdefault(city_slug, {})
+            entry[model_name] = {
+                "mae": round(mae, 3), "n": len(abs_errors),
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+            }
+    save_model_skill(skill)
+    return skill
+
+
+# =============================================================================
+# CALIBRATION (HISTORICAL BACKFILL) -- حداکثر دما
 # =============================================================================
 
 def fetch_historical_forecast(lat, lon, tz, unit, start_date, end_date):
@@ -292,6 +470,7 @@ def fetch_historical_forecast(lat, lon, tz, unit, start_date, end_date):
                 return {}
     return {}
 
+
 def _daily_max_from_hourly_previous_day(hourly_data, var_key):
     """(Phase 6 / F6.) The Previous Runs API only exposes HOURLY variables
     (no daily-max variant), so we aggregate to a daily max ourselves."""
@@ -306,16 +485,12 @@ def _daily_max_from_hourly_previous_day(hourly_data, var_key):
             daily_max[date_part] = v
     return daily_max
 
+
 def fetch_historical_forecast_by_horizon(lat, lon, tz, unit, start_date, end_date, horizon_days=(0, 1, 2, 3)):
     """
     FIX (Phase 6 / F6). Real per-horizon forecast series via Open-Meteo's
     Previous Model Runs API (fixed lead-time offsets), aggregated to daily
     max locally. Returns dict[h] -> dict[date_str] -> daily_max_float.
-
-    On ANY failure (network error, unexpected/empty response), returns a
-    dict of empty sub-dicts for every requested horizon -- callers must
-    treat an empty/sparse result as "not enough real data, use the fallback"
-    (this file's backfill_calibration() already does).
     """
     temp_unit = "fahrenheit" if unit == "F" else "celsius"
     var_names = [f"temperature_2m_previous_day{h}" for h in horizon_days]
@@ -346,6 +521,7 @@ def fetch_historical_forecast_by_horizon(lat, lon, tz, unit, start_date, end_dat
                 return result
     return result
 
+
 def _load_actuals_cache():
     if ACTUALS_CACHE_FILE.exists():
         try:
@@ -354,8 +530,10 @@ def _load_actuals_cache():
             return {}
     return {}
 
+
 def _save_actuals_cache(cache):
     ACTUALS_CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+
 
 def _fetch_metar_max_for_date(station, unit, date_str):
     url = (
@@ -379,6 +557,31 @@ def _fetch_metar_max_for_date(station, unit, date_str):
                 return None
     return None
 
+
+def _fetch_metar_min_for_date(station, unit, date_str):
+    """(فاز ۶) معادل _fetch_metar_max_for_date -- min(temps) به‌جای max(temps)."""
+    url = (
+        f"https://aviationweather.gov/api/data/metar"
+        f"?ids={station}&format=json&date={date_str.replace('-', '')}"
+    )
+    for attempt in range(MAX_RETRIES):
+        try:
+            data = requests.get(url, timeout=(5, 10)).json()
+            if not data:
+                return None
+            temps = [float(d.get("temp")) for d in data if d.get("temp") is not None]
+            if not temps:
+                return None
+            min_c = min(temps)
+            return round(min_c * 9 / 5 + 32, 1) if unit == "F" else round(min_c, 1)
+        except Exception:
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+            else:
+                return None
+    return None
+
+
 def _fetch_historical_actual_noaa_range(station, unit, start_date, end_date, cache):
     station_cache = cache.setdefault(station, {})
     results = {}
@@ -396,6 +599,27 @@ def _fetch_historical_actual_noaa_range(station, unit, start_date, end_date, cac
             results[date_str] = val
         d += timedelta(days=1)
     return results
+
+
+def _fetch_historical_actual_min_noaa_range(station, unit, start_date, end_date, cache):
+    """(فاز ۶) کش جدا از نسخهٔ حداکثر (کلید فرعی "_min" در همان cache dict)."""
+    station_cache = cache.setdefault(station + "_min", {})
+    results = {}
+    d = datetime.strptime(start_date, "%Y-%m-%d").date()
+    end = datetime.strptime(end_date, "%Y-%m-%d").date()
+    while d <= end:
+        date_str = d.isoformat()
+        if date_str in station_cache:
+            val = station_cache[date_str]
+        else:
+            val = _fetch_metar_min_for_date(station, unit, date_str)
+            station_cache[date_str] = val
+            time.sleep(0.2)
+        if val is not None:
+            results[date_str] = val
+        d += timedelta(days=1)
+    return results
+
 
 def _fetch_historical_actual_hko_range(start_date, end_date, cache):
     station_cache = cache.setdefault("HKO", {})
@@ -423,6 +647,35 @@ def _fetch_historical_actual_hko_range(start_date, end_date, cache):
 
     return {dt: station_cache[dt] for dt in needed_dates if dt in station_cache and station_cache[dt] is not None}
 
+
+def _fetch_historical_actual_min_hko_range(start_date, end_date, cache):
+    """(فاز ۶) معادل نسخهٔ حداکثر ولی با dataType=CLMMINT."""
+    station_cache = cache.setdefault("HKO_min", {})
+    d = datetime.strptime(start_date, "%Y-%m-%d").date()
+    end = datetime.strptime(end_date, "%Y-%m-%d").date()
+    needed_dates = set()
+    while d <= end:
+        needed_dates.add(d.isoformat())
+        d += timedelta(days=1)
+
+    if not needed_dates.issubset(station_cache.keys()):
+        try:
+            url = (
+                "https://data.weather.gov.hk/weatherAPI/opendata/opendata.php"
+                "?dataType=CLMMINT&lang=en&rformat=json&station=HKO"
+            )
+            data = requests.get(url, timeout=(5, 15)).json()
+            for row in data.get("data", []):
+                raw_date = str(row.get("date", ""))
+                if len(raw_date) == 8 and row.get("value") is not None:
+                    iso = f"{raw_date[0:4]}-{raw_date[4:6]}-{raw_date[6:8]}"
+                    station_cache[iso] = round(float(row["value"]), 1)
+        except Exception:
+            pass
+
+    return {dt: station_cache[dt] for dt in needed_dates if dt in station_cache and station_cache[dt] is not None}
+
+
 def fetch_historical_actual(loc, start_date, end_date):
     """(Phase 2 / F2.) Ground truth from the SAME station feed used for live
     resolution. Output shape: dict[date_str] -> float."""
@@ -434,6 +687,19 @@ def fetch_historical_actual(loc, start_date, end_date):
         result = _fetch_historical_actual_noaa_range(loc["station"], unit, start_date, end_date, cache)
     _save_actuals_cache(cache)
     return result
+
+
+def fetch_historical_actual_min(loc, start_date, end_date):
+    """(فاز ۶) معادل fetch_historical_actual برای کمینه."""
+    cache = _load_actuals_cache()
+    unit = loc["unit"]
+    if loc.get("resolve_source") == "hko":
+        result = _fetch_historical_actual_min_hko_range(start_date, end_date, cache)
+    else:
+        result = _fetch_historical_actual_min_noaa_range(loc["station"], unit, start_date, end_date, cache)
+    _save_actuals_cache(cache)
+    return result
+
 
 def backfill_calibration(locations, lookback_days=180, horizon_days=(0, 1, 2, 3)):
     cal = load_calibration()
@@ -470,9 +736,6 @@ def backfill_calibration(locations, lookback_days=180, horizon_days=(0, 1, 2, 3)
         base_mae = _weighted_mean(abs_errors, weights)
         base_bias_raw = _weighted_mean(signed_errors, weights)
 
-        # --- FIX (Phase 6 / F6): try to get a REAL per-horizon measurement
-        # for each horizon; fall back to the old synthetic sqrt(1+0.6h)
-        # scaling of the D0 measurement above if not enough real samples.
         per_horizon_forecast = fetch_historical_forecast_by_horizon(
             loc["lat"], loc["lon"], loc["tz"], loc["unit"],
             start.isoformat(), end.isoformat(), horizon_days
@@ -521,13 +784,71 @@ def backfill_calibration(locations, lookback_days=180, horizon_days=(0, 1, 2, 3)
     save_calibration(cal)
     return cal
 
+
+def backfill_calibration_min(locations, lookback_days=180):
+    """(فاز ۶) معادل backfill_calibration برای کمینه -- ساده‌تر از نسخهٔ
+    حداکثر (بدون per-horizon واقعی فاز ۶ قدیمی؛ همان فرمول synthetic
+    sqrt(1+0.6h) برای D1-D3 کافی است چون این یک ویژگی کاملاً جدید است).
+    کلیدهای کالیبراسیون: {city}_min_D{h}."""
+    cal = load_calibration()
+    end = datetime.now(timezone.utc).date() - timedelta(days=6)
+    start = end - timedelta(days=lookback_days)
+    reference_date = end
+
+    for city_slug, loc in locations.items():
+        forecasts = fetch_historical_forecast_min(
+            loc["lat"], loc["lon"], loc["tz"], loc["unit"], start.isoformat(), end.isoformat()
+        )
+        actuals = fetch_historical_actual_min(loc, start.isoformat(), end.isoformat())
+        if not forecasts or not actuals:
+            print(f"  [CAL-MIN-SKIP] {loc['name']}: no historical data")
+            continue
+
+        abs_errors, signed_errors, weights = [], [], []
+        for date_str, fval in forecasts.items():
+            actual = actuals.get(date_str)
+            if fval is not None and actual is not None:
+                abs_errors.append(abs(fval - actual))
+                signed_errors.append(actual - fval)
+                d_obj = datetime.strptime(date_str, "%Y-%m-%d").date()
+                weights.append(_seasonal_weight(d_obj, reference_date))
+
+        if len(abs_errors) < 20:
+            print(f"  [CAL-MIN-SKIP] {loc['name']}: only {len(abs_errors)} samples")
+            continue
+
+        base_mae = _weighted_mean(abs_errors, weights)
+        base_bias_raw = _weighted_mean(signed_errors, weights)
+
+        for h in (0, 1, 2, 3):
+            g = math.sqrt(1 + h * 0.6)
+            mae_h = base_mae * g
+            cap = _bias_cap(loc["unit"], city_slug, observed_raw_bias=base_bias_raw)
+            bias_h = max(-cap, min(cap, base_bias_raw))
+            key = f"{city_slug}_min_D{h}"
+            cal[key] = {
+                "sigma": round(mae_h, 3), "bias": round(bias_h, 3),
+                "base_mae": round(mae_h, 3), "base_bias_raw": round(base_bias_raw, 3),
+                "n": len(abs_errors), "source": "historical_backfill_synthetic_fallback",
+                "seasonal_half_life_days": SEASONAL_HALF_LIFE_DAYS,
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+            }
+        print(f"  [CAL-MIN] {loc['name']}: base_mae={base_mae:.2f} bias={base_bias_raw:+.2f} n={len(abs_errors)}")
+        time.sleep(0.5)
+
+    save_calibration(cal)
+    return cal
+
+
 def load_calibration():
     if CALIBRATION_FILE.exists():
         return json.loads(CALIBRATION_FILE.read_text(encoding="utf-8"))
     return {}
 
+
 def save_calibration(cal):
     CALIBRATION_FILE.write_text(json.dumps(cal, indent=2, ensure_ascii=False), encoding="utf-8")
+
 
 def update_calibration_from_live(markets, locations):
     cal = load_calibration()
@@ -536,23 +857,15 @@ def update_calibration_from_live(markets, locations):
         if m.get("status") in ("resolved", "resolved_no_signal")
         and m.get("actual_temp") is not None
     ]
-    print(f"[CAL-DEBUG] کل بازارها: {len(markets)} | resolve‌شدهٔ دارای actual_temp: {len(resolved)}")
-
-    updated_keys = []
-
     for city_slug in locations:
         unit = locations[city_slug]["unit"]
         for h in range(4):
             group = [m for m in resolved if m["city"] == city_slug and m.get("horizon_days") == h]
-            passed = len(group) >= 15
-            print(f"[CAL-DEBUG] {city_slug}_D{h}: group_size={len(group)} | آستانهٔ ۱۵ رد شد={passed}")
-            if not passed:
+            if len(group) < 15:
                 continue
-
             abs_errors = [abs(m["forecast_mean"] - m["actual_temp"]) for m in group if m.get("forecast_mean") is not None]
             signed_errors = [m["actual_temp"] - m["forecast_mean"] for m in group if m.get("forecast_mean") is not None]
             if not abs_errors:
-                print(f"[CAL-DEBUG] {city_slug}_D{h}: group>=15 بود ولی هیچ رکوردی forecast_mean معتبر نداشت -- رد شد")
                 continue
 
             live_mae = sum(abs_errors) / len(abs_errors)
@@ -577,18 +890,52 @@ def update_calibration_from_live(markets, locations):
                 "live_mae": round(live_mae, 3), "live_bias_raw": round(live_bias_raw, 3),
                 "source": "blended", "updated_at": datetime.now(timezone.utc).isoformat(),
             }
-            updated_keys.append(key)
-            print(f"[CAL-DEBUG] {key}: نوشته شد -- n_live={n_live}, sigma={new_sigma}, bias={new_bias}, w_live={round(w_live,3)}")
-
-    print(f"[CAL-DEBUG] تعداد کلیدهایی که این‌بار به‌روزرسانی شدن: {len(updated_keys)} -> {updated_keys}")
-
-    try:
-        save_calibration(cal)
-        print(f"[CAL-DEBUG] save_calibration() با موفقیت روی {CALIBRATION_FILE} نوشت.")
-    except Exception as e:
-        print(f"[CAL-DEBUG] هشدار جدی: save_calibration() شکست خورد: {e}")
-
+    save_calibration(cal)
     return cal
+
+
+def update_calibration_from_live_min(markets, locations):
+    """(فاز ۶) معادل دقیق update_calibration_from_live -- فقط برای
+    مارکت‌های market_type=="min"، با کلید {city}_min_D{h}."""
+    cal = load_calibration()
+    resolved = [
+        m for m in markets
+        if m.get("status") in ("resolved", "resolved_no_signal")
+        and m.get("actual_temp") is not None
+        and m.get("market_type") == "min"
+    ]
+    for city_slug in locations:
+        unit = locations[city_slug]["unit"]
+        for h in range(4):
+            group = [m for m in resolved if m["city"] == city_slug and m.get("horizon_days") == h]
+            if len(group) < 15:
+                continue
+            abs_errors = [abs(m["forecast_mean"] - m["actual_temp"]) for m in group if m.get("forecast_mean") is not None]
+            signed_errors = [m["actual_temp"] - m["forecast_mean"] for m in group if m.get("forecast_mean") is not None]
+            if not abs_errors:
+                continue
+            live_mae = sum(abs_errors) / len(abs_errors)
+            live_bias_raw = sum(signed_errors) / len(signed_errors)
+            n_live = len(abs_errors)
+            cap = _bias_cap(unit, city_slug, observed_raw_bias=live_bias_raw)
+            key = f"{city_slug}_min_D{h}"
+            old = cal.get(key, {})
+            default_sigma = DEFAULT_SIGMA_F if unit == "F" else DEFAULT_SIGMA_C
+            default_bias = DEFAULT_BIAS_F if unit == "F" else DEFAULT_BIAS_C
+            old_sigma = old.get("sigma", default_sigma)
+            old_bias = old.get("bias", default_bias)
+            w_live = min(0.7, n_live / (n_live + 30))
+            new_sigma = round(old_sigma * (1 - w_live) + live_mae * w_live, 3)
+            new_bias_raw = old_bias * (1 - w_live) + live_bias_raw * w_live
+            new_bias = round(max(-cap, min(cap, new_bias_raw)), 3)
+            cal[key] = {
+                "sigma": new_sigma, "bias": new_bias, "n_live": n_live,
+                "live_mae": round(live_mae, 3), "live_bias_raw": round(live_bias_raw, 3),
+                "source": "blended", "updated_at": datetime.now(timezone.utc).isoformat(),
+            }
+    save_calibration(cal)
+    return cal
+
 
 def get_sigma(city_slug, horizon_days, unit):
     cal = load_calibration()
@@ -597,6 +944,7 @@ def get_sigma(city_slug, horizon_days, unit):
     if key in cal:
         return cal[key]["sigma"]
     return DEFAULT_SIGMA_F if unit == "F" else DEFAULT_SIGMA_C
+
 
 def get_bias(city_slug, horizon_days, unit):
     cal = load_calibration()
@@ -608,8 +956,31 @@ def get_bias(city_slug, horizon_days, unit):
         return max(-cap, min(cap, cal[key].get("bias", 0.0)))
     return DEFAULT_BIAS_F if unit == "F" else DEFAULT_BIAS_C
 
+
+def get_sigma_min(city_slug, horizon_days, unit):
+    """(فاز ۶) معادل get_sigma برای کمینه."""
+    cal = load_calibration()
+    h = min(horizon_days, 3)
+    key = f"{city_slug}_min_D{h}"
+    if key in cal:
+        return cal[key]["sigma"]
+    return DEFAULT_SIGMA_F if unit == "F" else DEFAULT_SIGMA_C
+
+
+def get_bias_min(city_slug, horizon_days, unit):
+    """(فاز ۶) معادل get_bias برای کمینه."""
+    cal = load_calibration()
+    h = min(horizon_days, 3)
+    key = f"{city_slug}_min_D{h}"
+    if key in cal:
+        raw = cal[key].get("live_bias_raw", cal[key].get("base_bias_raw"))
+        cap = _bias_cap(unit, city_slug, observed_raw_bias=raw)
+        return max(-cap, min(cap, cal[key].get("bias", 0.0)))
+    return DEFAULT_BIAS_F if unit == "F" else DEFAULT_BIAS_C
+
+
 # =============================================================================
-# PROBABILITY DISTRIBUTION FROM ENSEMBLE + CALIBRATED SIGMA/BIAS -- unchanged
+# PROBABILITY DISTRIBUTION FROM ENSEMBLE + CALIBRATED SIGMA/BIAS
 # =============================================================================
 
 def build_calibrated_distribution(members, city_slug, horizon_days, unit):
@@ -630,6 +1001,23 @@ def build_calibrated_distribution(members, city_slug, horizon_days, unit):
     final_sigma = max(raw_sigma, calibrated_sigma)
     return round(corrected_mean, 2), round(final_sigma, 3)
 
+
+def build_calibrated_distribution_min(members, city_slug, horizon_days, unit):
+    """(فاز ۶) معادل build_calibrated_distribution برای کمینه."""
+    calibrated_sigma = get_sigma_min(city_slug, horizon_days, unit)
+    bias = get_bias_min(city_slug, horizon_days, unit)
+    if not members:
+        return None, calibrated_sigma
+    raw_mean = sum(members) / len(members)
+    corrected_mean = raw_mean + bias
+    if len(members) > 1:
+        raw_sigma = (sum((x - raw_mean) ** 2 for x in members) / (len(members) - 1)) ** 0.5
+    else:
+        raw_sigma = calibrated_sigma
+    final_sigma = max(raw_sigma, calibrated_sigma)
+    return round(corrected_mean, 2), round(final_sigma, 3)
+
+
 def bucket_probability(mean, sigma, t_low, t_high):
     if mean is None:
         return 0.0
@@ -642,6 +1030,7 @@ def bucket_probability(mean, sigma, t_low, t_high):
     hi = t_high + 0.5 if t_low == t_high else t_high
     return student_t_cdf((hi - mean) / s) - student_t_cdf((lo - mean) / s)
 
+
 def full_bucket_distribution(mean, sigma, outcomes):
     raw = []
     for o in outcomes:
@@ -653,8 +1042,10 @@ def full_bucket_distribution(mean, sigma, outcomes):
         dist.append({**o, "model_prob": round(p / total, 4)})
     return dist
 
+
 def distribution_sum(dist):
     return round(sum(d.get("model_prob", 0.0) for d in dist), 4)
+
 
 def scenario_grid(mean, sigma, n_sigma=4.0, step=0.5):
     if mean is None:
@@ -670,3 +1061,49 @@ def scenario_grid(mean, sigma, n_sigma=4.0, step=0.5):
         raw.append((round(t, 2), p))
     total = sum(p for _, p in raw) or 1.0
     return [(t, p / total) for t, p in raw]
+
+
+# =============================================================================
+# فاز ۶: مسیر ensemble کاملاً مستقل برای دمای کمینه
+# =============================================================================
+
+def get_ecmwf_ensemble_min(lat, lon, tz, unit):
+    return _fetch_ensemble(lat, lon, tz, unit, "ecmwf_ifs025", forecast_days=7, variable="temperature_2m_min")
+
+
+def get_gefs_ensemble_min(lat, lon, tz, unit):
+    return _fetch_ensemble(lat, lon, tz, unit, "gfs_seamless", forecast_days=7, variable="temperature_2m_min")
+
+
+def build_combined_distribution_min(city_slug, loc, date_str):
+    """معادل کامل build_combined_distribution ولی برای دمای کمینه --
+    کاملاً مستقل، هیچ داده‌ای با مسیر حداکثر به اشتراک نمی‌گذارد."""
+    members = []
+    ecmwf = get_ecmwf_ensemble_min(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
+    gefs = get_gefs_ensemble_min(loc["lat"], loc["lon"], loc["tz"], loc["unit"])
+    members.extend(ecmwf.get(date_str, []))
+    members.extend(gefs.get(date_str, []))
+    return members
+
+
+def fetch_historical_forecast_min(lat, lon, tz, unit, start_date, end_date):
+    """معادل fetch_historical_forecast برای کمینه (برای backfill)."""
+    temp_unit = "fahrenheit" if unit == "F" else "celsius"
+    url = (
+        f"https://historical-forecast-api.open-meteo.com/v1/forecast"
+        f"?latitude={lat}&longitude={lon}"
+        f"&daily=temperature_2m_min&temperature_unit={temp_unit}"
+        f"&timezone={tz}&start_date={start_date}&end_date={end_date}"
+        f"&models=ecmwf_ifs025"
+    )
+    for attempt in range(MAX_RETRIES):
+        try:
+            data = requests.get(url, timeout=(5, 15)).json()
+            daily = data.get("daily", {})
+            return dict(zip(daily.get("time", []), daily.get("temperature_2m_min", [])))
+        except Exception:
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+            else:
+                return {}
+    return {}

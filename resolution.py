@@ -21,6 +21,18 @@ exact same retry pattern already used by forecasting.py's _fetch_ensemble()
 retry style. Only after all retries are exhausted does the function give up
 and return None (still correctly distinguished from "event found but
 nothing settled yet", which returns an empty dict).
+
+--- PATCH (فاز ۶ نقشه‌راه -- بازار دمای کمینه) -------------------------------
+افزودن ۳ تابع موازی برای دمای کمینه:
+  - get_polymarket_settlement_min(): معادل کامل get_polymarket_settlement
+    ولی با اسلاگ "lowest-temperature-in-...".
+  - get_actual_noaa_min() / get_actual_hko_min(): معادل نسخهٔ حداکثر ولی
+    min(temps) به‌جای max(temps)، و dataType=CLMMINT به‌جای CLMMAXT برای
+    HKO (تأییدشده از مستندات رسمی HKO Open Data API).
+  - get_display_temp_min(): دیسپچر معادل get_display_temp برای کمینه.
+توجه: get_actual_temp_from_settlement() هیچ تغییری نکرده -- کاملاً عمومی
+است و بدون فرض حداکثر/کمینه، مستقیماً روی full_distribution/settlement کار
+می‌کند، پس برای هر دو نوع بازار به‌طور یکسان REUSE می‌شود.
 =====================================================================================
 """
 
@@ -91,6 +103,48 @@ def get_polymarket_settlement(city_slug, month, day, year):
 
     return settled
 
+
+def get_polymarket_settlement_min(city_slug, month, day, year):
+    """(فاز ۶) معادل دقیق get_polymarket_settlement، فقط با اسلاگ lowest-
+    به‌جای highest- (همان الگوی retry/۳-تلاش را عیناً حفظ می‌کند)."""
+    slug = f"lowest-temperature-in-{city_slug}-on-{month}-{day}-{year}"
+    data = None
+    last_err = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = requests.get(f"https://gamma-api.polymarket.com/events?slug={slug}", timeout=(5, 8))
+            data = r.json()
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+
+    if last_err is not None:
+        print(f"  [RESOLVE-PM-MIN] {city_slug} {year}-{month}-{day}: fetch error after {MAX_RETRIES} attempts: {last_err}")
+        return None
+
+    if not data or not isinstance(data, list) or len(data) == 0:
+        return None
+
+    event = data[0]
+    settled = {}
+    TOL = 0.02
+    for market in event.get("markets", []):
+        mid = str(market.get("id", ""))
+        try:
+            prices = json.loads(market.get("outcomePrices", "[0.5,0.5]"))
+            yes_price = float(prices[0])
+        except Exception:
+            continue
+        if yes_price >= (1.0 - TOL):
+            settled[mid] = True
+        elif yes_price <= TOL:
+            settled[mid] = False
+    return settled
+
+
 def is_event_fully_closed(city_slug, month, day, year):
     """
     Best-effort check for whether Polymarket itself considers the event
@@ -119,6 +173,10 @@ def get_actual_temp_from_settlement(mkt, settlement):
     Derives the display temperature directly from Polymarket's OWN settled
     outcomePrices -- finds the bucket whose YES side actually won and
     returns its midpoint (or lower/upper bound for open-ended buckets).
+
+    REUSE کامل برای فاز ۶: این تابع هیچ فرض حداکثر/کمینه‌ای ندارد -- فقط
+    روی full_distribution بازار (mkt) و دیکشنری settlement کار می‌کند، پس
+    برای بازار کمینه هم بدون هیچ تغییری صحیح است.
     """
     full_dist = mkt.get("full_distribution", [])
     for b in full_dist:
@@ -185,6 +243,26 @@ def get_actual_noaa(station, unit, date_str):
         print(f"  [DISPLAY-NOAA] {station} {date_str}: {e}")
         return None
 
+def get_actual_noaa_min(station, unit, date_str):
+    """(فاز ۶) معادل get_actual_noaa (فقط نمایشی/fallback، نه مرجع تعیین
+    برد/باخت) -- min(temps) به‌جای max(temps)."""
+    try:
+        url = (
+            f"https://aviationweather.gov/api/data/metar"
+            f"?ids={station}&format=json&date={date_str.replace('-', '')}"
+        )
+        data = requests.get(url, timeout=(5, 10)).json()
+        if not data:
+            return None
+        temps = [float(d["temp"]) for d in data if d.get("temp") is not None]
+        if not temps:
+            return None
+        min_c = min(temps)
+        return round(min_c * 9 / 5 + 32) if unit == "F" else round(min_c, 1)
+    except Exception as e:
+        print(f"  [DISPLAY-NOAA-MIN] {station} {date_str}: {e}")
+        return None
+
 def get_actual_hko(date_str):
     """Hong Kong Observatory open data API -- FALLBACK DISPLAY ONLY, not authoritative."""
     try:
@@ -200,6 +278,22 @@ def get_actual_hko(date_str):
         print(f"  [DISPLAY-HKO] {date_str}: {e}")
     return None
 
+def get_actual_hko_min(date_str):
+    """(فاز ۶) معادل get_actual_hko با dataType=CLMMINT به‌جای CLMMAXT
+    (تأییدشده از مستندات رسمی HKO Open Data API)."""
+    try:
+        url = (
+            "https://data.weather.gov.hk/weatherAPI/opendata/opendata.php"
+            "?dataType=CLMMINT&lang=en&rformat=json&station=HKO"
+        )
+        data = requests.get(url, timeout=(5, 10)).json()
+        for row in data.get("data", []):
+            if row.get("date") == date_str.replace("-", ""):
+                return round(float(row["value"]), 1)
+    except Exception as e:
+        print(f"  [DISPLAY-HKO-MIN] {date_str}: {e}")
+    return None
+
 def get_display_temp(loc, date_str, vc_key=""):
     """Dispatches to the correct FALLBACK-ONLY source per city config."""
     source = loc.get("resolve_source", "wunderground")
@@ -207,6 +301,15 @@ def get_display_temp(loc, date_str, vc_key=""):
         return get_actual_noaa(loc["station"], loc["unit"], date_str)
     if source == "hko":
         return get_actual_hko(date_str)
+    return get_actual_wunderground_proxy(loc["station"], loc["unit"], date_str, vc_key)
+
+def get_display_temp_min(loc, date_str, vc_key=""):
+    """(فاز ۶) معادل get_display_temp برای کمینه."""
+    source = loc.get("resolve_source", "wunderground")
+    if source == "noaa":
+        return get_actual_noaa_min(loc["station"], loc["unit"], date_str)
+    if source == "hko":
+        return get_actual_hko_min(date_str)
     return get_actual_wunderground_proxy(loc["station"], loc["unit"], date_str, vc_key)
 
 # Backward-compat alias
