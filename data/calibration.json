@@ -9,13 +9,13 @@
     "updated_at": "2026-08-03T00:24:22.200762+00:00"
   },
   "nyc_D1": {
-    "sigma": 1.933,
-    "bias": -1.454,
+    "sigma": 1.929,
+    "bias": -1.448,
     "n_live": 22,
     "live_mae": 1.923,
     "live_bias_raw": -1.439,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.447743+00:00"
+    "updated_at": "2026-09-15T23:38:46.938233+00:00"
   },
   "nyc_D2": {
     "sigma": 2.422,
@@ -45,13 +45,13 @@
     "updated_at": "2026-08-03T00:24:27.323172+00:00"
   },
   "miami_D1": {
-    "sigma": 1.585,
-    "bias": 1.454,
+    "sigma": 1.581,
+    "bias": 1.447,
     "n_live": 24,
     "live_mae": 1.577,
     "live_bias_raw": 1.438,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.447865+00:00"
+    "updated_at": "2026-09-15T23:38:46.938341+00:00"
   },
   "miami_D2": {
     "sigma": 2.406,
@@ -189,13 +189,13 @@
     "updated_at": "2026-08-03T00:24:32.656924+00:00"
   },
   "atlanta_D1": {
-    "sigma": 1.896,
-    "bias": -1.047,
+    "sigma": 1.899,
+    "bias": -1.059,
     "n_live": 18,
     "live_mae": 1.903,
     "live_bias_raw": -1.08,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448243+00:00"
+    "updated_at": "2026-09-15T23:38:46.938712+00:00"
   },
   "atlanta_D2": {
     "sigma": 1.68,
@@ -288,22 +288,22 @@
     "updated_at": "2026-08-03T00:24:35.308559+00:00"
   },
   "madrid_D0": {
-    "sigma": 0.92,
-    "bias": 0.85,
+    "sigma": 0.975,
+    "bias": 0.921,
     "n_live": 14,
     "live_mae": 1.094,
     "live_bias_raw": 1.072,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448504+00:00"
+    "updated_at": "2026-09-15T23:38:46.938957+00:00"
   },
   "madrid_D1": {
-    "sigma": 0.987,
-    "bias": 0.976,
-    "n_live": 18,
-    "live_mae": 0.989,
-    "live_bias_raw": 0.979,
+    "sigma": 0.978,
+    "bias": 0.967,
+    "n_live": 19,
+    "live_mae": 0.963,
+    "live_bias_raw": 0.953,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448539+00:00"
+    "updated_at": "2026-09-15T23:38:46.938989+00:00"
   },
   "madrid_D2": {
     "sigma": 0.43,
@@ -324,22 +324,22 @@
     "updated_at": "2026-08-03T00:24:36.645063+00:00"
   },
   "paris_D0": {
-    "sigma": 0.303,
-    "bias": -0.066,
-    "base_mae": 0.303,
-    "base_bias_raw": -0.066,
-    "n": 181,
-    "source": "historical_backfill",
-    "updated_at": "2026-08-03T00:24:38.074294+00:00"
+    "sigma": 0.641,
+    "bias": 0.361,
+    "n_live": 14,
+    "live_mae": 1.366,
+    "live_bias_raw": 1.277,
+    "source": "blended",
+    "updated_at": "2026-09-15T23:38:46.939066+00:00"
   },
   "paris_D1": {
     "sigma": 1.167,
-    "bias": 1.117,
+    "bias": 1.118,
     "n_live": 19,
     "live_mae": 1.168,
     "live_bias_raw": 1.119,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448646+00:00"
+    "updated_at": "2026-09-15T23:38:46.939097+00:00"
   },
   "paris_D2": {
     "sigma": 0.449,
@@ -360,22 +360,22 @@
     "updated_at": "2026-08-03T00:24:38.074338+00:00"
   },
   "munich_D0": {
-    "sigma": 1.191,
-    "bias": 0.689,
-    "n_live": 15,
-    "live_mae": 1.2,
-    "live_bias_raw": 0.695,
+    "sigma": 1.173,
+    "bias": 0.671,
+    "n_live": 16,
+    "live_mae": 1.139,
+    "live_bias_raw": 0.637,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448739+00:00"
+    "updated_at": "2026-09-15T23:38:46.939175+00:00"
   },
   "munich_D1": {
-    "sigma": 1.917,
+    "sigma": 1.916,
     "bias": 1.148,
     "n_live": 16,
     "live_mae": 1.913,
     "live_bias_raw": 1.149,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448774+00:00"
+    "updated_at": "2026-09-15T23:38:46.939206+00:00"
   },
   "munich_D2": {
     "sigma": 0.481,
@@ -396,13 +396,13 @@
     "updated_at": "2026-08-03T00:24:39.511643+00:00"
   },
   "milan_D0": {
-    "sigma": 0.864,
-    "bias": 0.744,
-    "n_live": 16,
-    "live_mae": 0.861,
-    "live_bias_raw": 0.745,
+    "sigma": 0.845,
+    "bias": 0.729,
+    "n_live": 17,
+    "live_mae": 0.812,
+    "live_bias_raw": 0.702,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448855+00:00"
+    "updated_at": "2026-09-15T23:38:46.939283+00:00"
   },
   "milan_D1": {
     "sigma": 0.92,
@@ -411,7 +411,7 @@
     "live_mae": 0.921,
     "live_bias_raw": 0.377,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448888+00:00"
+    "updated_at": "2026-09-15T23:38:46.939314+00:00"
   },
   "milan_D2": {
     "sigma": 0.875,
@@ -432,13 +432,13 @@
     "updated_at": "2026-08-03T00:24:43.924733+00:00"
   },
   "istanbul_D0": {
-    "sigma": 0.298,
-    "bias": 0.199,
-    "base_mae": 0.298,
-    "base_bias_raw": 0.199,
-    "n": 181,
-    "source": "historical_backfill",
-    "updated_at": "2026-08-03T00:24:45.244576+00:00"
+    "sigma": 0.348,
+    "bias": 0.144,
+    "n_live": 14,
+    "live_mae": 0.456,
+    "live_bias_raw": 0.025,
+    "source": "blended",
+    "updated_at": "2026-09-15T23:38:46.939390+00:00"
   },
   "istanbul_D1": {
     "sigma": 0.589,
@@ -447,7 +447,7 @@
     "live_mae": 0.59,
     "live_bias_raw": 0.377,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.448990+00:00"
+    "updated_at": "2026-09-15T23:38:46.939419+00:00"
   },
   "istanbul_D2": {
     "sigma": 0.443,
@@ -468,22 +468,22 @@
     "updated_at": "2026-08-03T00:24:45.244622+00:00"
   },
   "jeddah_D0": {
-    "sigma": 0.859,
-    "bias": -0.294,
+    "sigma": 0.861,
+    "bias": -0.291,
     "n_live": 15,
     "live_mae": 0.866,
     "live_bias_raw": -0.285,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449071+00:00"
+    "updated_at": "2026-09-15T23:38:46.939493+00:00"
   },
   "jeddah_D1": {
-    "sigma": 1.001,
-    "bias": -0.336,
-    "n_live": 15,
-    "live_mae": 0.995,
-    "live_bias_raw": -0.327,
+    "sigma": 1.021,
+    "bias": -0.37,
+    "n_live": 16,
+    "live_mae": 1.059,
+    "live_bias_raw": -0.433,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449104+00:00"
+    "updated_at": "2026-09-15T23:38:46.939524+00:00"
   },
   "jeddah_D2": {
     "sigma": 2.043,
@@ -504,22 +504,22 @@
     "updated_at": "2026-08-03T00:24:50.361655+00:00"
   },
   "tel-aviv_D0": {
-    "sigma": 0.684,
-    "bias": -0.024,
-    "n_live": 15,
-    "live_mae": 0.667,
-    "live_bias_raw": 0.001,
+    "sigma": 0.667,
+    "bias": -0.019,
+    "n_live": 16,
+    "live_mae": 0.636,
+    "live_bias_raw": -0.01,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449186+00:00"
+    "updated_at": "2026-09-15T23:38:46.939600+00:00"
   },
   "tel-aviv_D1": {
-    "sigma": 0.467,
-    "bias": -0.246,
+    "sigma": 0.465,
+    "bias": -0.244,
     "n_live": 14,
     "live_mae": 0.459,
     "live_bias_raw": -0.241,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449220+00:00"
+    "updated_at": "2026-09-15T23:38:46.939629+00:00"
   },
   "tel-aviv_D2": {
     "sigma": 1.82,
@@ -540,13 +540,13 @@
     "updated_at": "2026-08-03T00:24:55.071439+00:00"
   },
   "ankara_D0": {
-    "sigma": 0.564,
-    "bias": 0.538,
-    "n_live": 14,
-    "live_mae": 0.554,
-    "live_bias_raw": 0.554,
+    "sigma": 0.553,
+    "bias": 0.536,
+    "n_live": 15,
+    "live_mae": 0.531,
+    "live_bias_raw": 0.531,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449299+00:00"
+    "updated_at": "2026-09-15T23:38:46.939712+00:00"
   },
   "ankara_D1": {
     "sigma": 0.712,
@@ -555,7 +555,7 @@
     "live_mae": 0.711,
     "live_bias_raw": 0.439,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449332+00:00"
+    "updated_at": "2026-09-15T23:38:46.939743+00:00"
   },
   "ankara_D2": {
     "sigma": 0.889,
@@ -576,22 +576,22 @@
     "updated_at": "2026-08-03T00:24:56.419178+00:00"
   },
   "tokyo_D0": {
-    "sigma": 0.62,
-    "bias": -0.118,
+    "sigma": 0.594,
+    "bias": -0.063,
     "n_live": 15,
     "live_mae": 0.541,
     "live_bias_raw": 0.047,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449412+00:00"
+    "updated_at": "2026-09-15T23:38:46.939820+00:00"
   },
   "tokyo_D1": {
-    "sigma": 1.087,
-    "bias": -0.04,
+    "sigma": 1.086,
+    "bias": -0.038,
     "n_live": 14,
     "live_mae": 1.084,
     "live_bias_raw": -0.035,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449445+00:00"
+    "updated_at": "2026-09-15T23:38:46.939850+00:00"
   },
   "tokyo_D2": {
     "sigma": 1.747,
@@ -612,22 +612,22 @@
     "updated_at": "2026-08-03T00:24:57.845241+00:00"
   },
   "seoul_D0": {
-    "sigma": 1.316,
-    "bias": 1.096,
+    "sigma": 1.337,
+    "bias": 1.164,
     "n_live": 15,
     "live_mae": 1.378,
     "live_bias_raw": 1.301,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449525+00:00"
+    "updated_at": "2026-09-15T23:38:46.939927+00:00"
   },
   "seoul_D1": {
-    "sigma": 1.436,
-    "bias": 1.372,
+    "sigma": 1.437,
+    "bias": 1.377,
     "n_live": 14,
     "live_mae": 1.439,
     "live_bias_raw": 1.386,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449558+00:00"
+    "updated_at": "2026-09-15T23:38:46.939958+00:00"
   },
   "seoul_D2": {
     "sigma": 1.098,
@@ -648,22 +648,22 @@
     "updated_at": "2026-08-03T00:24:59.169268+00:00"
   },
   "singapore_D0": {
-    "sigma": 0.809,
-    "bias": 0.621,
+    "sigma": 0.795,
+    "bias": 0.604,
     "n_live": 15,
     "live_mae": 0.768,
     "live_bias_raw": 0.569,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449636+00:00"
+    "updated_at": "2026-09-15T23:38:46.940032+00:00"
   },
   "singapore_D1": {
-    "sigma": 0.784,
+    "sigma": 0.782,
     "bias": 0.78,
     "n_live": 13,
     "live_mae": 0.778,
     "live_bias_raw": 0.778,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449676+00:00"
+    "updated_at": "2026-09-15T23:38:46.940059+00:00"
   },
   "singapore_D2": {
     "sigma": 1.466,
@@ -684,22 +684,22 @@
     "updated_at": "2026-08-03T00:25:00.518862+00:00"
   },
   "hong-kong_D0": {
-    "sigma": 1.113,
-    "bias": 0.818,
+    "sigma": 1.099,
+    "bias": 0.81,
     "n_live": 15,
     "live_mae": 1.071,
     "live_bias_raw": 0.795,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449756+00:00"
+    "updated_at": "2026-09-15T23:38:46.940129+00:00"
   },
   "hong-kong_D1": {
-    "sigma": 1.124,
-    "bias": 0.372,
+    "sigma": 1.13,
+    "bias": 0.363,
     "n_live": 13,
     "live_mae": 1.144,
     "live_bias_raw": 0.344,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449787+00:00"
+    "updated_at": "2026-09-15T23:38:46.940157+00:00"
   },
   "hong-kong_D2": {
     "sigma": 0.851,
@@ -720,22 +720,22 @@
     "updated_at": "2026-08-03T00:25:01.642555+00:00"
   },
   "kuala-lumpur_D0": {
-    "sigma": 1.075,
-    "bias": 0.741,
+    "sigma": 1.076,
+    "bias": 0.714,
     "n_live": 16,
     "live_mae": 1.077,
     "live_bias_raw": 0.664,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449864+00:00"
+    "updated_at": "2026-09-15T23:38:46.940228+00:00"
   },
   "kuala-lumpur_D1": {
-    "sigma": 1.852,
-    "bias": 1.85,
+    "sigma": 1.856,
+    "bias": 1.855,
     "n_live": 13,
     "live_mae": 1.865,
     "live_bias_raw": 1.865,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449894+00:00"
+    "updated_at": "2026-09-15T23:38:46.940255+00:00"
   },
   "kuala-lumpur_D2": {
     "sigma": 0.525,
@@ -756,13 +756,13 @@
     "updated_at": "2026-08-03T00:25:06.747516+00:00"
   },
   "shanghai_D0": {
-    "sigma": 0.611,
-    "bias": 0.567,
+    "sigma": 0.605,
+    "bias": 0.562,
     "n_live": 16,
     "live_mae": 0.592,
     "live_bias_raw": 0.551,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.449972+00:00"
+    "updated_at": "2026-09-15T23:38:46.940325+00:00"
   },
   "shanghai_D1": {
     "sigma": 0.978,
@@ -771,7 +771,7 @@
     "live_mae": 0.979,
     "live_bias_raw": 0.676,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.450009+00:00"
+    "updated_at": "2026-09-15T23:38:46.940353+00:00"
   },
   "shanghai_D2": {
     "sigma": 1.039,
@@ -801,13 +801,13 @@
     "updated_at": "2026-08-03T00:25:09.521931+00:00"
   },
   "toronto_D1": {
-    "sigma": 1.18,
-    "bias": -0.487,
+    "sigma": 1.191,
+    "bias": -0.511,
     "n_live": 16,
     "live_mae": 1.211,
     "live_bias_raw": -0.557,
     "source": "blended",
-    "updated_at": "2026-09-15T20:27:37.450109+00:00"
+    "updated_at": "2026-09-15T23:38:46.940446+00:00"
   },
   "toronto_D2": {
     "sigma": 0.922,
