@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-15T02:20:41.553343+00:00",
   "committed_allocation": null,
-  "hours_left": 9.3,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T05:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 4.6,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.0029,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 2.4,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0016,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 6.8,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.0039,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 20.6,
       "kelly": 0.0026,
       "sell_value": null,
-      "model_prob_change": 0.0105,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 63.2,
       "kelly": 0.0079,
       "sell_value": null,
-      "model_prob_change": 0.0276,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -156,7 +156,7 @@
       "ev": 180.6,
       "kelly": 0.0226,
       "sell_value": null,
-      "model_prob_change": 0.0519,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -166,22 +166,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.235,
-      "no_price": 0.765,
-      "volume": 6026.0,
+      "yes_price": 0.64,
+      "no_price": 0.36,
+      "volume": 7030.0,
       "spread": 0.0,
       "yes_token_id": "70858771247614347908998018705999628772627176468463278074588953167435873651833",
       "no_token_id": "64758831975247405960180199604316700466101144957963291353870029769389315463045",
       "model_prob": 0.2768,
       "side": "YES",
-      "ask": 0.235,
-      "market_prob": 0.235,
-      "belief_prob": 0.2622,
-      "ev": 0.1157,
-      "kelly": 0.0089,
+      "ask": 0.64,
+      "market_prob": 0.64,
+      "belief_prob": 0.4039,
+      "ev": -0.3689,
+      "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0065,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.405
     },
     {
       "question": "Will the highest temperature in Houston be between 94-95°F on September 16?",
@@ -190,22 +190,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.74,
-      "no_price": 0.26,
-      "volume": 6067.0,
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 6405.0,
       "spread": 0.0,
       "yes_token_id": "96602328368750558268853306745676439980614260019766587316205147144295839453504",
       "no_token_id": "39492830979164387723832926203005961762453281642217003021648767659298524209529",
       "model_prob": 0.2725,
       "side": "YES",
-      "ask": 0.74,
-      "market_prob": 0.74,
-      "belief_prob": 0.4361,
-      "ev": -0.4107,
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.2909,
+      "ev": -0.1049,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0976,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.415
     },
     {
       "question": "Will the highest temperature in Houston be between 96-97°F on September 16?",
@@ -214,22 +214,22 @@
         96.0,
         97.0
       ],
-      "yes_price": 0.06,
-      "no_price": 0.94,
-      "volume": 6976.0,
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 7507.0,
       "spread": 0.0,
       "yes_token_id": "11163987330697087507414843221543425307426827004951266527217376470359040162126",
       "no_token_id": "98367549457249852069040749766417024329927522433887265271752372149556422277614",
       "model_prob": 0.1343,
       "side": "YES",
-      "ask": 0.06,
-      "market_prob": 0.06,
-      "belief_prob": 0.1083,
-      "ev": 0.805,
-      "kelly": 0.0128,
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0892,
+      "ev": 15.2182,
+      "kelly": 0.021,
       "sell_value": null,
-      "model_prob_change": -0.0221,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0545
     },
     {
       "question": "Will the highest temperature in Houston be between 98-99°F on September 16?",
@@ -238,22 +238,22 @@
         98.0,
         99.0
       ],
-      "yes_price": 0.0055,
-      "no_price": 0.9945,
-      "volume": 586.0,
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 644.0,
       "spread": 0.0,
       "yes_token_id": "56376980605210811722626713956852023077854852801117640152216669475074320018063",
       "no_token_id": "29842886470680407552976429298920710040483271446960345868194967173798118516963",
       "model_prob": 0.047,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
-      "belief_prob": 0.0325,
-      "ev": 4.9091,
-      "kelly": 0.0068,
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0316,
+      "ev": 9.5333,
+      "kelly": 0.0072,
       "sell_value": null,
-      "model_prob_change": 0.0072,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0025
     },
     {
       "question": "Will the highest temperature in Houston be 100°F or higher on September 16?",
@@ -276,7 +276,7 @@
       "ev": 67.4,
       "kelly": 0.0084,
       "sell_value": null,
-      "model_prob_change": 0.0207,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -324,7 +324,7 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00",
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00",
   "forecast_mean_shadow": 94.36,
   "model_means_raw": {
     "ecmwf": 91.88,

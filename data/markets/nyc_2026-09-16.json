@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-15T02:20:41.553343+00:00",
   "committed_allocation": null,
-  "hours_left": 8.3,
+  "hours_left": 7.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T04:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 25.2,
       "kelly": 0.0032,
       "sell_value": null,
-      "model_prob_change": 0.0108,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 18.0,
       "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": 0.0064,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 53.0,
       "kelly": 0.0066,
       "sell_value": null,
-      "model_prob_change": 0.0127,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 148.0,
       "kelly": 0.0185,
       "sell_value": null,
-      "model_prob_change": 0.0077,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 315.0,
       "kelly": 0.0394,
       "sell_value": null,
-      "model_prob_change": -0.0553,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -142,22 +142,22 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.955,
-      "no_price": 0.045,
-      "volume": 10756.0,
+      "yes_price": 0.98,
+      "no_price": 0.02,
+      "volume": 11121.0,
       "spread": 0.0,
       "yes_token_id": "66536519136491098079101480272965944039961037178612603964726337083598756234919",
       "no_token_id": "13424609807556614069436841801273010063333310961125826759212407932014884746741",
       "model_prob": 0.286,
       "side": "YES",
-      "ask": 0.955,
-      "market_prob": 0.955,
-      "belief_prob": 0.5202,
-      "ev": -0.4553,
+      "ask": 0.98,
+      "market_prob": 0.98,
+      "belief_prob": 0.5289,
+      "ev": -0.4603,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0579,
-      "yes_price_change": 0.035
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the highest temperature in New York City be between 80-81°F on September 16?",
@@ -166,22 +166,22 @@
         80.0,
         81.0
       ],
-      "yes_price": 0.045,
-      "no_price": 0.955,
-      "volume": 10088.0,
+      "yes_price": 0.0135,
+      "no_price": 0.9865,
+      "volume": 10550.0,
       "spread": 0.0,
       "yes_token_id": "59202947962221993239331184300330085555856269932479533469687596955204513392498",
       "no_token_id": "8735405904150687555966854934447107444946130943451154695820243108667551026197",
       "model_prob": 0.1705,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
-      "belief_prob": 0.1266,
-      "ev": 1.8133,
-      "kelly": 0.0214,
+      "ask": 0.0135,
+      "market_prob": 0.0135,
+      "belief_prob": 0.1156,
+      "ev": 7.563,
+      "kelly": 0.0259,
       "sell_value": null,
-      "model_prob_change": 0.0239,
-      "yes_price_change": -0.03
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0315
     },
     {
       "question": "Will the highest temperature in New York City be between 82-83°F on September 16?",
@@ -190,22 +190,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.005,
-      "no_price": 0.995,
-      "volume": 6093.0,
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 6356.0,
       "spread": 0.0,
       "yes_token_id": "77385360522844721514818370742045347464158821836918959142833866161252592391582",
       "no_token_id": "57611828534687615596959257377916855445459455298510845399678161382364797282721",
       "model_prob": 0.0668,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
-      "belief_prob": 0.0452,
-      "ev": 8.04,
-      "kelly": 0.0101,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0436,
+      "ev": 86.2,
+      "kelly": 0.0108,
       "sell_value": null,
-      "model_prob_change": 0.0265,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0045
     },
     {
       "question": "Will the highest temperature in New York City be between 84-85°F on September 16?",
@@ -214,22 +214,22 @@
         84.0,
         85.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.9975,
-      "volume": 5157.0,
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 5482.0,
       "spread": 0.0,
       "yes_token_id": "59154551823325280106105186905103629817596518817698242905815636785301443001814",
       "no_token_id": "71609151349650257865413434470038040250554054279874294800659013462461604457387",
       "model_prob": 0.0232,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.016,
-      "ev": 5.4,
-      "kelly": 0.0034,
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0158,
+      "ev": 6.9,
+      "kelly": 0.0035,
       "sell_value": null,
-      "model_prob_change": 0.0122,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in New York City be between 86-87°F on September 16?",
@@ -252,7 +252,7 @@
       "ev": 10.2,
       "kelly": 0.0013,
       "sell_value": null,
-      "model_prob_change": 0.005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": 15.8,
       "kelly": 0.002,
       "sell_value": null,
-      "model_prob_change": 0.008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,7 +291,7 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00",
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00",
   "forecast_mean_shadow": 79.93,
   "model_means_raw": {
     "ecmwf": 75.21,

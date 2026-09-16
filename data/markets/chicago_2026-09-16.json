@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-15T02:20:41.553343+00:00",
   "committed_allocation": null,
-  "hours_left": 9.3,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T05:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
@@ -36,7 +36,7 @@
       "ev": 3.4,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.0044,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -60,7 +60,7 @@
       "ev": 2.0,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0032,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -84,7 +84,7 @@
       "ev": 6.8,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": -0.0096,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -108,7 +108,7 @@
       "ev": 24.0,
       "kelly": 0.003,
       "sell_value": null,
-      "model_prob_change": -0.0304,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -132,7 +132,7 @@
       "ev": 89.0,
       "kelly": 0.0111,
       "sell_value": null,
-      "model_prob_change": -0.0811,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -144,7 +144,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 13407.0,
+      "volume": 13420.0,
       "spread": 0.0,
       "yes_token_id": "58077670641015962428691201322244058889929756806699850136005523290469184064004",
       "no_token_id": "10056259184278691553752388320910446859995494450223030925235100124129846797207",
@@ -156,7 +156,7 @@
       "ev": 282.2,
       "kelly": 0.0353,
       "sell_value": null,
-      "model_prob_change": -0.0869,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -180,7 +180,7 @@
       "ev": 466.4,
       "kelly": 0.0583,
       "sell_value": null,
-      "model_prob_change": 0.0802,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -190,22 +190,22 @@
         76.0,
         77.0
       ],
-      "yes_price": 0.99,
-      "no_price": 0.01,
-      "volume": 3562.0,
+      "yes_price": 0.993,
+      "no_price": 0.007,
+      "volume": 3957.0,
       "spread": 0.0,
       "yes_token_id": "51474891325530447629847499869128925959965516680507801336647481535664304709559",
       "no_token_id": "14153694567860369032004937221453881677193879406302698071924645000860830372132",
       "model_prob": 0.2175,
       "side": "YES",
-      "ask": 0.99,
-      "market_prob": 0.99,
-      "belief_prob": 0.4879,
-      "ev": -0.5072,
+      "ask": 0.993,
+      "market_prob": 0.993,
+      "belief_prob": 0.4889,
+      "ev": -0.5077,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0952,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.003
     },
     {
       "question": "Will the highest temperature in Chicago be between 78-79°F on September 16?",
@@ -214,22 +214,22 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.006,
-      "no_price": 0.994,
-      "volume": 3842.0,
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 3920.0,
       "spread": 0.0,
       "yes_token_id": "30053692093583030886442400194543761836147419716434690278729463516430792073268",
       "no_token_id": "88436732673202391670088710855654890601153656703943835828387392174463068457710",
       "model_prob": 0.0689,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
-      "belief_prob": 0.0469,
-      "ev": 6.8167,
-      "kelly": 0.0103,
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0458,
+      "ev": 14.2667,
+      "kelly": 0.0107,
       "sell_value": null,
-      "model_prob_change": 0.0298,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.003
     },
     {
       "question": "Will the highest temperature in Chicago be between 80-81°F on September 16?",
@@ -252,7 +252,7 @@
       "ev": 11.7,
       "kelly": 0.0029,
       "sell_value": null,
-      "model_prob_change": 0.0067,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +276,7 @@
       "ev": 11.8,
       "kelly": 0.003,
       "sell_value": null,
-      "model_prob_change": 0.004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,10 +291,11 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00",
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00",
   "forecast_mean_shadow": 74.43,
   "model_means_raw": {
     "ecmwf": 74.18,
-    "gfs": 73.67
+    "gfs": 73.67,
+    "gem": 73.9
   }
 }

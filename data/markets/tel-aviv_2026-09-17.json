@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 25.3,
+  "hours_left": 24.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T21:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -30,7 +30,7 @@
       ],
       "yes_price": 0.0045,
       "no_price": 0.9955,
-      "volume": 814.0,
+      "volume": 914.0,
       "spread": 0.0,
       "yes_token_id": "16732028927790851939679020946192729067655052442134185170112107457825075854304",
       "no_token_id": "84659903533987634216515516248287134095537305781770328163537942400428735445422",
@@ -42,7 +42,7 @@
       "ev": 4.3111,
       "kelly": 0.0049,
       "sell_value": null,
-      "model_prob_change": 0.0228,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 8.36,
       "kelly": 0.0052,
       "sell_value": null,
-      "model_prob_change": 0.0188,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 3.91,
       "kelly": 0.0099,
       "sell_value": null,
-      "model_prob_change": 0.0283,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -102,7 +102,7 @@
       ],
       "yes_price": 0.165,
       "no_price": 0.835,
-      "volume": 2081.0,
+      "volume": 2113.0,
       "spread": 0.0,
       "yes_token_id": "70842685468179845453489803701633148976758514205962498218054634823889918188335",
       "no_token_id": "20231063330531055173206398211280198958705217373678201824136748581170435563826",
@@ -114,7 +114,7 @@
       "ev": -0.1467,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0213,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -126,7 +126,7 @@
       ],
       "yes_price": 0.645,
       "no_price": 0.355,
-      "volume": 5767.0,
+      "volume": 5813.0,
       "spread": 0.0,
       "yes_token_id": "38420654669719556481113051779099575449863330674863480361885599838013112000509",
       "no_token_id": "14201693112812728184359253093214137418488454960008008885329925450296163616715",
@@ -138,7 +138,7 @@
       "ev": -0.4609,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0272,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -162,7 +162,7 @@
       "ev": 0.0416,
       "kelly": 0.0024,
       "sell_value": null,
-      "model_prob_change": -0.0685,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -172,22 +172,22 @@
         36.0,
         36.0
       ],
-      "yes_price": 0.03,
-      "no_price": 0.97,
-      "volume": 3718.0,
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 3738.0,
       "spread": 0.0,
       "yes_token_id": "97363369060652514466113023500024810527072196932476697865921904083551927835207",
       "no_token_id": "106255472540430031287068560027834747545606402424732162743883520905430895111714",
       "model_prob": 0.1563,
       "side": "YES",
-      "ask": 0.03,
-      "market_prob": 0.03,
-      "belief_prob": 0.1121,
-      "ev": 2.7367,
-      "kelly": 0.0212,
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.1103,
+      "ev": 3.412,
+      "kelly": 0.0219,
       "sell_value": null,
-      "model_prob_change": -0.0362,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 37°C on September 17?",
@@ -210,7 +210,7 @@
       "ev": 14.475,
       "kelly": 0.0145,
       "sell_value": null,
-      "model_prob_change": 0.0038,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 6.2222,
       "kelly": 0.007,
       "sell_value": null,
-      "model_prob_change": 0.0132,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 29.2,
       "kelly": 0.0037,
       "sell_value": null,
-      "model_prob_change": 0.01,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 30.0,
       "kelly": 0.0038,
       "sell_value": null,
-      "model_prob_change": 0.0137,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00"
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00"
 }

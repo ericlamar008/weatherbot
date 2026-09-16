@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 33.3,
+  "hours_left": 32.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T05:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -42,7 +42,7 @@
       "ev": 5.6,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0024,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 5.4,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0017,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 23.2,
       "kelly": 0.0029,
       "sell_value": null,
-      "model_prob_change": -0.004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 2.065,
       "kelly": 0.0105,
       "sell_value": null,
-      "model_prob_change": -0.0033,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,22 +124,22 @@
         96.0,
         97.0
       ],
-      "yes_price": 0.345,
-      "no_price": 0.655,
+      "yes_price": 0.34,
+      "no_price": 0.66,
       "volume": 5624.0,
       "spread": 0.0,
       "yes_token_id": "115357830296925976322067335262264731900239928304718092279202418596405618620655",
       "no_token_id": "56645673999834184403642749400890524532955777469341364220584446782329378847819",
       "model_prob": 0.307,
       "side": "YES",
-      "ask": 0.345,
-      "market_prob": 0.345,
-      "belief_prob": 0.3203,
-      "ev": -0.0716,
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.3185,
+      "ev": -0.0632,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0344,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 98-99°F on September 17?",
@@ -148,22 +148,22 @@
         98.0,
         99.0
       ],
-      "yes_price": 0.61,
-      "no_price": 0.39,
-      "volume": 1712.0,
+      "yes_price": 0.615,
+      "no_price": 0.385,
+      "volume": 1832.0,
       "spread": 0.0,
       "yes_token_id": "41634263484527918337852646094178170525290993119522159858323468437477379515233",
       "no_token_id": "112754487559357695099847833600198248069806150226327402975450994456533459448027",
       "model_prob": 0.3962,
       "side": "YES",
-      "ask": 0.61,
-      "market_prob": 0.61,
-      "belief_prob": 0.471,
-      "ev": -0.2279,
+      "ask": 0.615,
+      "market_prob": 0.615,
+      "belief_prob": 0.4728,
+      "ev": -0.2312,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0273,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 100-101°F on September 17?",
@@ -186,7 +186,7 @@
       "ev": 0.8867,
       "kelly": 0.0141,
       "sell_value": null,
-      "model_prob_change": -0.0277,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -210,7 +210,7 @@
       "ev": 1.39,
       "kelly": 0.0035,
       "sell_value": null,
-      "model_prob_change": -0.0145,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 4.2,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0047,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 2.0,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 2.8,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00"
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00"
 }

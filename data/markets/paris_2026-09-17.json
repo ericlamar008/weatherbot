@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 26.3,
+  "hours_left": 25.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T22:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -43,7 +43,7 @@
       "ev": 2.0,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -67,7 +67,7 @@
       "ev": 2.8,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -91,7 +91,7 @@
       "ev": 8.2,
       "kelly": 0.001,
       "sell_value": null,
-      "model_prob_change": -0.0025,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -101,22 +101,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.0015,
-      "no_price": 0.9985,
-      "volume": 802.0,
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 851.0,
       "spread": 0.0,
       "yes_token_id": "44842187155137823796344453460221251690620552092926531944594417386676713003441",
       "no_token_id": "32728346288330218457717434693265954129804575399650940028996558797966141949248",
       "model_prob": 0.02,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
-      "belief_prob": 0.0135,
-      "ev": 8.0,
-      "kelly": 0.003,
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.0134,
+      "ev": 12.4,
+      "kelly": 0.0031,
       "sell_value": null,
-      "model_prob_change": -0.0081,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Paris be 20°C on September 17?",
@@ -127,7 +127,7 @@
       ],
       "yes_price": 0.015,
       "no_price": 0.985,
-      "volume": 2384.0,
+      "volume": 2481.0,
       "spread": 0.0,
       "yes_token_id": "12608122122910873657555837157667975223788177105431105372969358020725218328064",
       "no_token_id": "22603720126809396548248510492405977078875781150836320824825755633513214652322",
@@ -139,7 +139,7 @@
       "ev": 2.0533,
       "kelly": 0.0078,
       "sell_value": null,
-      "model_prob_change": -0.0244,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -151,7 +151,7 @@
       ],
       "yes_price": 0.155,
       "no_price": 0.845,
-      "volume": 4019.0,
+      "volume": 4147.0,
       "spread": 0.0,
       "yes_token_id": "6020249105899928656139095710491357919560022389487215103934947254818932737566",
       "no_token_id": "45487634888436386349635235093953104053696858417294515650678434898356655463182",
@@ -163,7 +163,7 @@
       "ev": 0.0748,
       "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": -0.0458,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -173,22 +173,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.485,
-      "no_price": 0.515,
-      "volume": 4450.0,
+      "yes_price": 0.465,
+      "no_price": 0.535,
+      "volume": 4509.0,
       "spread": 0.0,
       "yes_token_id": "85282016175343493143528948389022746799781165610905165779169402633284635614791",
       "no_token_id": "2984103914068512774770886887491449171269755568099778870808383671056252292553",
       "model_prob": 0.3043,
       "side": "YES",
-      "ask": 0.485,
-      "market_prob": 0.485,
-      "belief_prob": 0.3675,
-      "ev": -0.2423,
+      "ask": 0.465,
+      "market_prob": 0.465,
+      "belief_prob": 0.3605,
+      "ev": -0.2247,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0095,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.02
     },
     {
       "question": "Will the highest temperature in Paris be 23°C on September 17?",
@@ -197,22 +197,22 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.335,
-      "no_price": 0.665,
-      "volume": 5988.0,
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 6420.0,
       "spread": 0.0,
       "yes_token_id": "90505287115090002642585169414057684153326037713546041553252848420070007490715",
       "no_token_id": "35080936258471872416646645199846554313647833171367718798362571274240613016415",
       "model_prob": 0.2571,
       "side": "YES",
-      "ask": 0.335,
-      "market_prob": 0.335,
-      "belief_prob": 0.2844,
-      "ev": -0.151,
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.2861,
+      "ev": -0.1585,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0446,
-      "yes_price_change": 0.02
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Paris be 24°C on September 17?",
@@ -223,7 +223,7 @@
       ],
       "yes_price": 0.05,
       "no_price": 0.95,
-      "volume": 2374.0,
+      "volume": 2529.0,
       "spread": 0.0,
       "yes_token_id": "36966768950932828306148993083542583285262841226553057113215749462631158326311",
       "no_token_id": "111467659556432378065272590066057053070641177484536773263181271403368183668089",
@@ -235,8 +235,8 @@
       "ev": 0.834,
       "kelly": 0.011,
       "sell_value": null,
-      "model_prob_change": 0.031,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 25°C on September 17?",
@@ -245,22 +245,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.012,
-      "no_price": 0.988,
-      "volume": 544.0,
+      "yes_price": 0.0115,
+      "no_price": 0.9885,
+      "volume": 641.0,
       "spread": 0.0,
       "yes_token_id": "104524566215026654559528873506981753317162850172138052686294661078919159297650",
       "no_token_id": "37007619092842700213969239939321443394537027863306865908053385670463160008106",
       "model_prob": 0.0378,
       "side": "YES",
-      "ask": 0.012,
-      "market_prob": 0.012,
-      "belief_prob": 0.0288,
-      "ev": 1.4,
+      "ask": 0.0115,
+      "market_prob": 0.0115,
+      "belief_prob": 0.0286,
+      "ev": 1.487,
       "kelly": 0.0043,
       "sell_value": null,
-      "model_prob_change": 0.0109,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Paris be 26°C or higher on September 17?",
@@ -271,7 +271,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 1203.0,
+      "volume": 1300.0,
       "spread": 0.0,
       "yes_token_id": "64600260215026159511264300765812803504365083405730590669270388605011932676820",
       "no_token_id": "3005295212598392937814347604459119796104879723137815215024697720044689084287",
@@ -283,7 +283,7 @@
       "ev": 8.0,
       "kelly": 0.003,
       "sell_value": null,
-      "model_prob_change": 0.0051,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -331,5 +331,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00"
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00"
 }

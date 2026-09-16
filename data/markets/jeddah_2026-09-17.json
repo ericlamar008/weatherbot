@@ -6,15 +6,15 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 25.3,
+  "hours_left": 24.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T21:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
   "last_scan": "2026-09-16T02:20:36.941666+00:00",
   "horizon_days": 1,
   "forecast_mean": 38.64,
-  "sigma": 1.049,
-  "forecast_mean_shadow": 36.34,
+  "sigma": 1.053,
+  "forecast_mean_shadow": 36.33,
   "model_means_raw": {
     "ecmwf": 38.74,
     "gfs": 39.57,
@@ -42,7 +42,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": -0.6,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 0.0,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 1.0,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -154,7 +154,7 @@
       "spread": 0.0,
       "yes_token_id": "71235581271085885977849603021082632612496985944769244806832225622671505236352",
       "no_token_id": "43254828776648412164192903472537099209655832698527633790869974821076627475377",
-      "model_prob": 0.0032,
+      "model_prob": 0.0033,
       "side": "YES",
       "ask": 0.01,
       "market_prob": 0.01,
@@ -162,7 +162,7 @@
       "ev": -0.44,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0034,
+      "model_prob_change": 0.0001,
       "yes_price_change": 0.0
     },
     {
@@ -174,11 +174,11 @@
       ],
       "yes_price": 0.035,
       "no_price": 0.965,
-      "volume": 331.0,
+      "volume": 346.0,
       "spread": 0.0,
       "yes_token_id": "25229324695880568186082223524592922644586559929120479747485174413831393482815",
       "no_token_id": "55633751175196516213828486701510271294343797919150426059611976520749191596773",
-      "model_prob": 0.0097,
+      "model_prob": 0.0098,
       "side": "YES",
       "ask": 0.035,
       "market_prob": 0.035,
@@ -186,7 +186,7 @@
       "ev": -0.4686,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0103,
+      "model_prob_change": 0.0001,
       "yes_price_change": 0.0
     },
     {
@@ -196,22 +196,22 @@
         36.0,
         36.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.845,
-      "volume": 2515.0,
+      "yes_price": 0.15,
+      "no_price": 0.85,
+      "volume": 2519.0,
       "spread": 0.0,
       "yes_token_id": "71987322516307228186332447159601902162390056911936367614162286112657377330571",
       "no_token_id": "24230296810723448367419604342750300567712259402651072576364740458956354284880",
-      "model_prob": 0.0333,
+      "model_prob": 0.0335,
       "side": "YES",
-      "ask": 0.155,
-      "market_prob": 0.155,
-      "belief_prob": 0.0759,
-      "ev": -0.5103,
+      "ask": 0.15,
+      "market_prob": 0.15,
+      "belief_prob": 0.0743,
+      "ev": -0.5047,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0316,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0002,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Jeddah be 37°C on September 17?",
@@ -222,19 +222,19 @@
       ],
       "yes_price": 0.405,
       "no_price": 0.595,
-      "volume": 939.0,
+      "volume": 995.0,
       "spread": 0.0,
       "yes_token_id": "66170168991894254203611211254276085619671275214417890720047137245444306623952",
       "no_token_id": "52646545136926466595605422026345776349080485735881429747112672517821367158252",
-      "model_prob": 0.1149,
+      "model_prob": 0.1153,
       "side": "YES",
       "ask": 0.405,
       "market_prob": 0.405,
-      "belief_prob": 0.2164,
-      "ev": -0.4657,
+      "belief_prob": 0.2167,
+      "ev": -0.4649,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0701,
+      "model_prob_change": 0.0004,
       "yes_price_change": 0.0
     },
     {
@@ -244,22 +244,22 @@
         38.0,
         38.0
       ],
-      "yes_price": 0.335,
-      "no_price": 0.665,
-      "volume": 1869.0,
+      "yes_price": 0.36,
+      "no_price": 0.64,
+      "volume": 1892.0,
       "spread": 0.0,
       "yes_token_id": "76285928285644583903212945660469988847054387031934951803576353768608557003305",
       "no_token_id": "59827660017101712164213296301045894713702272470388184265598450935093110299960",
-      "model_prob": 0.2861,
+      "model_prob": 0.2855,
       "side": "YES",
-      "ask": 0.335,
-      "market_prob": 0.335,
-      "belief_prob": 0.3032,
-      "ev": -0.0949,
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.3116,
+      "ev": -0.1344,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0329,
-      "yes_price_change": 0.0
+      "model_prob_change": -0.0006,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the highest temperature in Jeddah be 39°C or higher on September 17?",
@@ -270,19 +270,19 @@
       ],
       "yes_price": 0.075,
       "no_price": 0.925,
-      "volume": 1762.0,
+      "volume": 1832.0,
       "spread": 0.0,
       "yes_token_id": "87423410971388290758313838768267019625641630229862700860749289649715569805592",
       "no_token_id": "31988563218985901252917169527459876324900215068738460684713491636873665764559",
-      "model_prob": 0.5505,
+      "model_prob": 0.5503,
       "side": "YES",
       "ask": 0.075,
       "market_prob": 0.075,
-      "belief_prob": 0.3841,
-      "ev": 4.1213,
+      "belief_prob": 0.3839,
+      "ev": 4.1187,
       "kelly": 0.0835,
       "sell_value": null,
-      "model_prob_change": 0.1502,
+      "model_prob_change": -0.0002,
       "yes_price_change": 0.0
     }
   ],
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00"
+  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00"
 }
