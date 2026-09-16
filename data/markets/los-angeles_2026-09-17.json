@@ -1,0 +1,143 @@
+{
+  "city": "los-angeles",
+  "city_name": "Los Angeles",
+  "date": "2026-09-17",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-09-16T02:20:36.941666+00:00",
+  "committed_allocation": null,
+  "hours_left": 52.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-18T07:00:00+00:00",
+  "event_end_date": "2026-09-17T12:00:00Z",
+  "last_scan": "2026-09-16T02:20:36.941666+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 73.13,
+  "sigma": 10.967,
+  "forecast_mean_shadow": 73.13,
+  "model_means_raw": {
+    "ecmwf": 80.51
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Los Angeles be between 72-73°F on September 17?",
+      "market_id": "4584291",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 64.0,
+      "spread": 0.0,
+      "yes_token_id": "30735038296889731912917004139580259952537170340636579032282436031508109536576",
+      "no_token_id": "84445581613112855926608446437073723377421379842886663137251855296016576124229",
+      "model_prob": 0.0476,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0572,
+      "ev": -0.2373,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 74-75°F on September 17?",
+      "market_id": "4584292",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.37,
+      "no_price": 0.63,
+      "volume": 1229.0,
+      "spread": 0.0,
+      "yes_token_id": "91946181376748117928111673810458663493133200328645860868880499697094016447990",
+      "no_token_id": "23641694591416565744545920621347078938636518817810107369432610313860495414061",
+      "model_prob": 0.0473,
+      "side": "YES",
+      "ask": 0.37,
+      "market_prob": 0.37,
+      "belief_prob": 0.1602,
+      "ev": -0.567,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 76-77°F on September 17?",
+      "market_id": "4584293",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.435,
+      "no_price": 0.565,
+      "volume": 2005.0,
+      "spread": 0.0,
+      "yes_token_id": "21988108173356915552038177458900341693071209787736569706443051887718539997972",
+      "no_token_id": "16237937411480545241479228867004116260077184565128084344590145832164019491019",
+      "model_prob": 0.0451,
+      "side": "YES",
+      "ask": 0.435,
+      "market_prob": 0.435,
+      "belief_prob": 0.1816,
+      "ev": -0.5825,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 78-79°F on September 17?",
+      "market_id": "4584294",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 210.0,
+      "spread": 0.0,
+      "yes_token_id": "114255738733744825040489740986878969366214695960577327818994254050373839934654",
+      "no_token_id": "101516712410990761410367432421481154742998048397962771776257907695532847299598",
+      "model_prob": 0.0415,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.0585,
+      "ev": -0.35,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be 82°F or higher on September 17?",
+      "market_id": "4584296",
+      "range": [
+        82.0,
+        999.0
+      ],
+      "yes_price": 0.007,
+      "no_price": 0.993,
+      "volume": 361.0,
+      "spread": 0.0,
+      "yes_token_id": "79813678622532036546171276722417947197778483979105904518411751605556211260748",
+      "no_token_id": "77556450052378249910200831761765362948898769525947235366742092573746485109198",
+      "model_prob": 0.3308,
+      "side": "YES",
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.2175,
+      "ev": 30.0714,
+      "kelly": 0.053,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [],
+  "total_allocated_units": 0,
+  "portfolio_score": null,
+  "worst_case_loss_frac": null,
+  "best_case_pnl_units": null,
+  "worst_case_pnl_units": null,
+  "success_probability": null,
+  "confidence": null,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
