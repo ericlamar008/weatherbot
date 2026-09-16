@@ -3,11 +3,11 @@
   "city_name": "Hong Kong",
   "date": "2026-09-16",
   "unit": "C",
-  "status": "open",
+  "status": "resolved_no_signal",
   "created_at": "2026-09-15T02:20:41.553343+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-16T16:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
   "last_scan": "2026-09-16T02:20:36.941666+00:00",
@@ -291,11 +291,14 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-16T19:37:24.840040+00:00",
-  "last_lite_refresh": "2026-09-16T14:20:45.728487+00:00",
+  "last_lite_refresh": "2026-09-16T19:39:09.634357+00:00",
   "forecast_mean_shadow": 30.34,
   "model_means_raw": {
     "ecmwf": 29.6,
     "gfs": 29.73,
     "gem": 29.27
-  }
+  },
+  "actual_temp": 31.0,
+  "pnl_units": null,
+  "my_pnl_units": null
 }
