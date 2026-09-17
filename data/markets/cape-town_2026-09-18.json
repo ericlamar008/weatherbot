@@ -1,0 +1,326 @@
+{
+  "city": "cape-town",
+  "city_name": "Cape Town",
+  "date": "2026-09-18",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-17T02:20:43.632644+00:00",
+  "committed_allocation": null,
+  "hours_left": 43.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-18T22:00:00+00:00",
+  "event_end_date": "2026-09-18T12:00:00Z",
+  "last_scan": "2026-09-17T02:20:43.632644+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 19.11,
+  "sigma": 1.4,
+  "forecast_mean_shadow": 19.15,
+  "model_means_raw": {
+    "ecmwf": 19.04,
+    "gfs": 19.24,
+    "gem": 19.16
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Cape Town be 16°C or below on September 18?",
+      "market_id": "4606503",
+      "range": [
+        -999.0,
+        16.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 407.0,
+      "spread": 0.0,
+      "yes_token_id": "46673444596692274878518691194238288076624041905216989552998202045188652360046",
+      "no_token_id": "111069349716574547785681304754503282710560413545439327583453703965107639553822",
+      "model_prob": 0.0607,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0409,
+      "ev": 9.225,
+      "kelly": 0.0093,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 17°C on September 18?",
+      "market_id": "4606504",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 169.0,
+      "spread": 0.0,
+      "yes_token_id": "29527885023695832879956677344830584836925116288212816208552931169162976322851",
+      "no_token_id": "46154744430094181330520137969428571772567687289065759146361502060127513011870",
+      "model_prob": 0.0904,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0602,
+      "ev": 14.05,
+      "kelly": 0.0141,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 18°C on September 18?",
+      "market_id": "4606505",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 228.0,
+      "spread": 0.0,
+      "yes_token_id": "43697010908235404667661847852017434948209848467168007861760795323383767192457",
+      "no_token_id": "115678079386728117244556055425855333400032233865087398908944841648703730088089",
+      "model_prob": 0.1895,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.1249,
+      "ev": 23.98,
+      "kelly": 0.0301,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 19°C on September 18?",
+      "market_id": "4606506",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 268.0,
+      "spread": 0.0,
+      "yes_token_id": "1993256311135825319442183618929415234624785010496993536025167354010295811097",
+      "no_token_id": "77324503756292320127166249654270977722359265889049623201640080369653511751928",
+      "model_prob": 0.2635,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.1835,
+      "ev": 4.2429,
+      "kelly": 0.0385,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 20°C on September 18?",
+      "market_id": "4606507",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.04,
+      "no_price": 0.96,
+      "volume": 299.0,
+      "spread": 0.0,
+      "yes_token_id": "65450581852468774563236731600552557153110382322527979702312759178773223946828",
+      "no_token_id": "45765338872175248544698825465813476072648937351745415227295292531627734833332",
+      "model_prob": 0.2127,
+      "side": "YES",
+      "ask": 0.04,
+      "market_prob": 0.04,
+      "belief_prob": 0.1523,
+      "ev": 2.8075,
+      "kelly": 0.0292,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 21°C on September 18?",
+      "market_id": "4606508",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.635,
+      "no_price": 0.365,
+      "volume": 1584.0,
+      "spread": 0.0,
+      "yes_token_id": "30145653842328063546267901516923219743875943472513485660454901603343985245615",
+      "no_token_id": "72044616528143533038168052515529179517237764986796781003721464491230646651641",
+      "model_prob": 0.1089,
+      "side": "YES",
+      "ask": 0.635,
+      "market_prob": 0.635,
+      "belief_prob": 0.293,
+      "ev": -0.5386,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 22°C on September 18?",
+      "market_id": "4606509",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 575.0,
+      "spread": 0.0,
+      "yes_token_id": "112071343253213122072846310956959197267682539596442587382877558467734756604171",
+      "no_token_id": "58598165550873728438818420041248041591227000983340374289008376508233548414872",
+      "model_prob": 0.0442,
+      "side": "YES",
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.1285,
+      "ev": -0.5491,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 23°C on September 18?",
+      "market_id": "4606510",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 450.0,
+      "spread": 0.0,
+      "yes_token_id": "30659296231427017138041323273929912712964491842822992948766665439084393327898",
+      "no_token_id": "111074956543319339521004976217484584356644816962029399083404706096335868012431",
+      "model_prob": 0.0171,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0269,
+      "ev": -0.4022,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 24°C on September 18?",
+      "market_id": "4606511",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 163.0,
+      "spread": 0.0,
+      "yes_token_id": "108621946670685456388804695060662294877923309760462015960633512001958155778808",
+      "no_token_id": "94696165736648141859837388582754470040895604024400857166930005727254556172419",
+      "model_prob": 0.0069,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0064,
+      "ev": 0.1636,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 25°C on September 18?",
+      "market_id": "4606512",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 163.0,
+      "spread": 0.0,
+      "yes_token_id": "41193901366767367843251560476712350390166972878233736980472599535726843076723",
+      "no_token_id": "48697393340853255163580958437335562035550696875843189493096208254739354162353",
+      "model_prob": 0.003,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0039,
+      "ev": -0.2909,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Cape Town be 26°C or higher on September 18?",
+      "market_id": "4606513",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 344.0,
+      "spread": 0.0,
+      "yes_token_id": "89068030718295330669473772227675003263999628732945235632204147903300700484072",
+      "no_token_id": "77852462059252754852529511036885519803989876822429444307982024186943316431633",
+      "model_prob": 0.003,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.003,
+      "ev": 0.0,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4606508",
+      "question": "Will the highest temperature in Cape Town be 21°C on September 18?",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "YES",
+      "price": 0.635,
+      "model_prob": 0.1089,
+      "ev": -0.5386,
+      "market_prob": 0.635,
+      "role": "main_signal",
+      "units": 23.3,
+      "sell_value": 0.63
+    },
+    {
+      "market_id": "4606508",
+      "question": "Will the highest temperature in Cape Town be 21°C on September 18? (NO)",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.365,
+      "model_prob": 0.8911,
+      "ev": 0.937,
+      "market_prob": 0.365,
+      "role": "scenario_hedge",
+      "units": 7.64,
+      "sell_value": 0.36
+    },
+    {
+      "market_id": "4606513",
+      "question": "Will the highest temperature in Cape Town be 26°C or higher on September 18? (NO)",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.997,
+      "model_prob": 0.997,
+      "ev": -0.0,
+      "market_prob": 0.997,
+      "role": "scenario_hedge",
+      "units": 2.82,
+      "sell_value": 0.995
+    }
+  ],
+  "total_allocated_units": 33.8,
+  "portfolio_score": -0.046652,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 5.76,
+  "worst_case_pnl_units": -12.83,
+  "success_probability": 0.3641,
+  "confidence": 0.0645,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
