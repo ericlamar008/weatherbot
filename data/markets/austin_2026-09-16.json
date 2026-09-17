@@ -3,15 +3,15 @@
   "city_name": "Austin",
   "date": "2026-09-16",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-15T02:20:41.553343+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-17T05:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
   "last_scan": "2026-09-17T02:20:43.632644+00:00",
-  "last_lite_refresh": "2026-09-16T20:20:36.767445+00:00",
+  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00",
   "forecast_mean": 97.42,
   "sigma": 1.727,
   "full_distribution": [
@@ -280,7 +280,10 @@
       "market_prob": 0.9995,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.999
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -291,5 +294,31 @@
   "success_probability": 0.593,
   "confidence": 0.6037,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 98.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.02,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4548254",
+      "question": "Will the highest temperature in Austin be between 98-99°F on September 16?",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.3471,
+      "ev": -0.4243,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    }
+  ]
 }
