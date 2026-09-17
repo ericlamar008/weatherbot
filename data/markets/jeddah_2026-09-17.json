@@ -6,19 +6,19 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 11.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T21:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
   "last_scan": "2026-09-17T02:20:43.632644+00:00",
   "horizon_days": 0,
-  "forecast_mean": 38.37,
-  "sigma": 0.863,
-  "forecast_mean_shadow": 36.02,
+  "forecast_mean": 38.36,
+  "sigma": 0.862,
+  "forecast_mean_shadow": 36.1,
   "model_means_raw": {
     "ecmwf": 39.19,
     "gfs": 37.8,
-    "gem": 31.95
+    "gem": 32.21
   },
   "full_distribution": [
     {
@@ -114,7 +114,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -162,7 +162,7 @@
       "ev": 2.0,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -174,11 +174,11 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1222.0,
+      "volume": 1232.0,
       "spread": 0.0,
       "yes_token_id": "25229324695880568186082223524592922644586559929120479747485174413831393482815",
       "no_token_id": "55633751175196516213828486701510271294343797919150426059611976520749191596773",
-      "model_prob": 0.0072,
+      "model_prob": 0.0073,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
@@ -186,7 +186,7 @@
       "ev": 8.8,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": 0.001,
+      "model_prob_change": 0.0001,
       "yes_price_change": 0.0
     },
     {
@@ -196,22 +196,22 @@
         36.0,
         36.0
       ],
-      "yes_price": 0.29,
-      "no_price": 0.71,
-      "volume": 3575.0,
+      "yes_price": 0.295,
+      "no_price": 0.705,
+      "volume": 3668.0,
       "spread": 0.0,
       "yes_token_id": "71987322516307228186332447159601902162390056911936367614162286112657377330571",
       "no_token_id": "24230296810723448367419604342750300567712259402651072576364740458956354284880",
-      "model_prob": 0.0308,
+      "model_prob": 0.0312,
       "side": "YES",
-      "ask": 0.29,
-      "market_prob": 0.29,
-      "belief_prob": 0.1215,
-      "ev": -0.581,
+      "ask": 0.295,
+      "market_prob": 0.295,
+      "belief_prob": 0.1235,
+      "ev": -0.5814,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.005,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0004,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Jeddah be 37°C on September 17?",
@@ -220,22 +220,22 @@
         37.0,
         37.0
       ],
-      "yes_price": 0.5,
-      "no_price": 0.54,
-      "volume": 2442.0,
+      "yes_price": 0.295,
+      "no_price": 0.705,
+      "volume": 2559.0,
       "spread": 0.0,
       "yes_token_id": "66170168991894254203611211254276085619671275214417890720047137245444306623952",
       "no_token_id": "52646545136926466595605422026345776349080485735881429747112672517821367158252",
-      "model_prob": 0.1386,
+      "model_prob": 0.1404,
       "side": "YES",
-      "ask": 0.46,
-      "market_prob": 0.46,
-      "belief_prob": 0.2651,
-      "ev": -0.4541,
+      "ask": 0.295,
+      "market_prob": 0.295,
+      "belief_prob": 0.1945,
+      "ev": -0.3407,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0213,
-      "yes_price_change": 0.025
+      "model_prob_change": 0.0018,
+      "yes_price_change": -0.205
     },
     {
       "question": "Will the highest temperature in Jeddah be 38°C on September 17?",
@@ -244,22 +244,22 @@
         38.0,
         38.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.77,
-      "volume": 2925.0,
+      "yes_price": 0.24,
+      "no_price": 0.76,
+      "volume": 2986.0,
       "spread": 0.0,
       "yes_token_id": "76285928285644583903212945660469988847054387031934951803576353768608557003305",
       "no_token_id": "59827660017101712164213296301045894713702272470388184265598450935093110299960",
-      "model_prob": 0.3771,
+      "model_prob": 0.3792,
       "side": "YES",
-      "ask": 0.23,
-      "market_prob": 0.23,
-      "belief_prob": 0.2994,
-      "ev": 0.4157,
-      "kelly": 0.031,
+      "ask": 0.24,
+      "market_prob": 0.24,
+      "belief_prob": 0.3305,
+      "ev": 0.3771,
+      "kelly": 0.0298,
       "sell_value": null,
-      "model_prob_change": 0.0248,
-      "yes_price_change": -0.015
+      "model_prob_change": 0.0021,
+      "yes_price_change": 0.085
     },
     {
       "question": "Will the highest temperature in Jeddah be 39°C or higher on September 17?",
@@ -268,22 +268,22 @@
         39.0,
         999.0
       ],
-      "yes_price": 0.05,
-      "no_price": 0.95,
-      "volume": 2832.0,
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 2877.0,
       "spread": 0.0,
       "yes_token_id": "87423410971388290758313838768267019625641630229862700860749289649715569805592",
       "no_token_id": "31988563218985901252917169527459876324900215068738460684713491636873665764559",
-      "model_prob": 0.4431,
+      "model_prob": 0.4387,
       "side": "YES",
-      "ask": 0.05,
-      "market_prob": 0.05,
-      "belief_prob": 0.3055,
-      "ev": 5.11,
-      "kelly": 0.0672,
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.3009,
+      "ev": 5.6867,
+      "kelly": 0.067,
       "sell_value": null,
-      "model_prob_change": -0.0525,
-      "yes_price_change": -0.01
+      "model_prob_change": -0.0044,
+      "yes_price_change": -0.005
     }
   ],
   "live_allocation": [],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

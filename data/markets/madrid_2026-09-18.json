@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 36.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T22:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 27.61,
   "sigma": 0.963,
-  "forecast_mean_shadow": 27.6,
+  "forecast_mean_shadow": 27.66,
   "model_means_raw": {
     "ecmwf": 26.98,
     "gfs": 26.12,
-    "icon_eu": 26.83
+    "gem": 27.02
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 1.4,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 2.4,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 1.8,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 3.975,
       "kelly": 0.004,
       "sell_value": null,
-      "model_prob_change": 0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 1.7467,
       "kelly": 0.0135,
       "sell_value": null,
-      "model_prob_change": 0.0055,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -148,22 +148,22 @@
         27.0,
         27.0
       ],
-      "yes_price": 0.24,
-      "no_price": 0.76,
-      "volume": 1701.0,
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 1722.0,
       "spread": 0.0,
       "yes_token_id": "11406865599620338474842470330727084743598536663910022254465690516464695396061",
       "no_token_id": "55518082032141249113214753813900783094811597450008585265923347033191212017693",
       "model_prob": 0.3062,
       "side": "YES",
-      "ask": 0.24,
-      "market_prob": 0.24,
-      "belief_prob": 0.283,
-      "ev": 0.1792,
-      "kelly": 0.0141,
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.2813,
+      "ev": 0.197,
+      "kelly": 0.0151,
       "sell_value": null,
-      "model_prob_change": 0.0082,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Madrid be 28°C on September 18?",
@@ -174,7 +174,7 @@
       ],
       "yes_price": 0.56,
       "no_price": 0.44,
-      "volume": 1697.0,
+      "volume": 1751.0,
       "spread": 0.0,
       "yes_token_id": "22336340834106407204573976838664266437324260304194629515218504981000867672896",
       "no_token_id": "87615098531029531081909111987410905432316830390820106102695191979610841842117",
@@ -186,7 +186,7 @@
       "ev": -0.2502,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0052,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -196,22 +196,22 @@
         29.0,
         29.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.855,
-      "volume": 2195.0,
+      "yes_price": 0.16,
+      "no_price": 0.84,
+      "volume": 2375.0,
       "spread": 0.0,
       "yes_token_id": "32855784368463276385836916469575389654358583291852773164209004758120042475337",
       "no_token_id": "57223399610260151513620733089165003157392186985375375678404158750134746370963",
       "model_prob": 0.1454,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
-      "belief_prob": 0.1488,
-      "ev": 0.0021,
-      "kelly": 0.0001,
+      "ask": 0.16,
+      "market_prob": 0.16,
+      "belief_prob": 0.1505,
+      "ev": -0.0594,
+      "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0072,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Madrid be 30°C on September 18?",
@@ -234,7 +234,7 @@
       "ev": 2.68,
       "kelly": 0.0051,
       "sell_value": null,
-      "model_prob_change": -0.0023,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 1.0,
       "kelly": 0.001,
       "sell_value": null,
-      "model_prob_change": -0.0005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 2.6,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

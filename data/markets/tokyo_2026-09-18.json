@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 30.7,
+  "hours_left": 29.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T15:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 24.17,
   "sigma": 1.173,
-  "forecast_mean_shadow": 23.83,
+  "forecast_mean_shadow": 23.9,
   "model_means_raw": {
     "ecmwf": 24.4,
     "gfs": 23.88,
-    "gem": 23.31
+    "gem": 23.51
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 6.2,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": 0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 9.4,
       "kelly": 0.0012,
       "sell_value": null,
-      "model_prob_change": 0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 0.34,
       "kelly": 0.0013,
       "sell_value": null,
-      "model_prob_change": 0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -100,22 +100,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.035,
-      "no_price": 0.965,
-      "volume": 451.0,
+      "yes_price": 0.04,
+      "no_price": 0.96,
+      "volume": 453.0,
       "spread": 0.0,
       "yes_token_id": "90807199899695092017092748251845654172097831821611268042613642005852674428764",
       "no_token_id": "8076609182891521799005031256007224597388373171863153351844619453432439903309",
       "model_prob": 0.071,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
-      "belief_prob": 0.0584,
-      "ev": 0.6686,
-      "kelly": 0.0061,
+      "ask": 0.04,
+      "market_prob": 0.04,
+      "belief_prob": 0.0601,
+      "ev": 0.5025,
+      "kelly": 0.0052,
       "sell_value": null,
-      "model_prob_change": 0.007,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Tokyo be 23°C on September 18?",
@@ -124,22 +124,22 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.175,
-      "no_price": 0.825,
-      "volume": 2632.0,
+      "yes_price": 0.18,
+      "no_price": 0.82,
+      "volume": 2682.0,
       "spread": 0.0,
       "yes_token_id": "8275431689741098672433251169801289017640865544441406774434723989080348762383",
       "no_token_id": "46996776873590483801963477303772391139711401215698014705491004196628232059715",
       "model_prob": 0.1894,
       "side": "YES",
-      "ask": 0.175,
-      "market_prob": 0.175,
-      "belief_prob": 0.1844,
-      "ev": 0.0537,
-      "kelly": 0.0028,
+      "ask": 0.18,
+      "market_prob": 0.18,
+      "belief_prob": 0.1861,
+      "ev": 0.0339,
+      "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": 0.0149,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Tokyo be 24°C on September 18?",
@@ -162,8 +162,8 @@
       "ev": -0.1418,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0066,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 25°C on September 18?",
@@ -172,22 +172,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.325,
-      "no_price": 0.675,
-      "volume": 2025.0,
+      "yes_price": 0.3,
+      "no_price": 0.7,
+      "volume": 2045.0,
       "spread": 0.0,
       "yes_token_id": "113269477687463470961106900914578612687716981336068427584906180660968715124288",
       "no_token_id": "34975445090235051473454588490355279654661710975232588161184882884034082194739",
       "model_prob": 0.2407,
       "side": "YES",
-      "ask": 0.325,
-      "market_prob": 0.325,
-      "belief_prob": 0.2702,
-      "ev": -0.1686,
+      "ask": 0.3,
+      "market_prob": 0.3,
+      "belief_prob": 0.2615,
+      "ev": -0.1283,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0135,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.025
     },
     {
       "question": "Will the highest temperature in Tokyo be 26°C on September 18?",
@@ -198,7 +198,7 @@
       ],
       "yes_price": 0.065,
       "no_price": 0.935,
-      "volume": 890.0,
+      "volume": 905.0,
       "spread": 0.0,
       "yes_token_id": "35009830844073810758228837569550367161643882204242531206478287100491840998725",
       "no_token_id": "89631298110905643305525462842757603532660905135017229434608759144254969992883",
@@ -210,7 +210,7 @@
       "ev": 0.3723,
       "kelly": 0.0065,
       "sell_value": null,
-      "model_prob_change": -0.0114,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 0.8133,
       "kelly": 0.0031,
       "sell_value": null,
-      "model_prob_change": -0.0045,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 2.24,
       "kelly": 0.0014,
       "sell_value": null,
-      "model_prob_change": -0.0014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -270,7 +270,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 925.0,
+      "volume": 995.0,
       "spread": 0.0,
       "yes_token_id": "10091105819686308232976790897740817579409606648556671018401535248881832446783",
       "no_token_id": "103543746369215223885342194405721333826625062580860922971371034551349548893307",
@@ -282,7 +282,7 @@
       "ev": 2.4,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

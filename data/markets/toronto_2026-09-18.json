@@ -6,11 +6,261 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 42.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-19T04:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
   "last_scan": "2026-09-17T02:20:43.632644+00:00",
   "skipped_reason": "event volume 355 < min_volume 500",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00",
+  "forecast_mean": 20.4,
+  "sigma": 1.13,
+  "forecast_mean_shadow": 20.4,
+  "model_means_raw": {
+    "ecmwf": 20.91
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Toronto be 14°C or below on September 18?",
+      "market_id": "4613378",
+      "range": [
+        -999.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "102645910320824714244794608408218048864805708658571427628011956113750465257635",
+      "no_token_id": "80855204063230196802356702549373512199604466892106945122278700393552658616271",
+      "model_prob": 0.0017,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0013,
+      "ev": 1.6,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 15°C on September 18?",
+      "market_id": "4613379",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "72743392756533637541180732669495431376981583000616771831843225251149597987151",
+      "no_token_id": "50796897604014823811741491582126364200761667660367225770600258932187519443538",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 16°C on September 18?",
+      "market_id": "4613380",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "75593304865515860668166293190459398033680543859323902245445239685273049113172",
+      "no_token_id": "42449906615504421687678174630009745276448062006723446148241767660827500745902",
+      "model_prob": 0.0054,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0037,
+      "ev": 6.4,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 17°C on September 18?",
+      "market_id": "4613381",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 32.0,
+      "spread": 0.0,
+      "yes_token_id": "5757346635659178643402688300845179916099418128572993872633644450768602610133",
+      "no_token_id": "9785176575634139083249989739673198174650790403208058799258461411601192407928",
+      "model_prob": 0.016,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0139,
+      "ev": 0.39,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 18°C on September 18?",
+      "market_id": "4613382",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 175.0,
+      "spread": 0.0,
+      "yes_token_id": "22187678088797259544406746678160549677805639516723011789175429695784576087457",
+      "no_token_id": "94376766532487959602367728402212617705593811282881540599654533241081482128116",
+      "model_prob": 0.0516,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0356,
+      "ev": 4.9333,
+      "kelly": 0.0074,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 19°C on September 18?",
+      "market_id": "4613383",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 237.0,
+      "spread": 0.0,
+      "yes_token_id": "74623359505497066199539408630617452433932958834946610423708092173248478311163",
+      "no_token_id": "84637093658041511618633131381431719425906417847806754455323717659548468332553",
+      "model_prob": 0.1542,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.109,
+      "ev": 3.36,
+      "kelly": 0.0215,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 20°C on September 18?",
+      "market_id": "4613384",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.125,
+      "no_price": 0.875,
+      "volume": 466.0,
+      "spread": 0.0,
+      "yes_token_id": "34036374809708827146895923647714973628210545236324119054498814514339304102935",
+      "no_token_id": "13548721648575437364570260678996540873279569434540008126384165991639375082344",
+      "model_prob": 0.3026,
+      "side": "YES",
+      "ask": 0.125,
+      "market_prob": 0.125,
+      "belief_prob": 0.2404,
+      "ev": 0.9232,
+      "kelly": 0.033,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 21°C on September 18?",
+      "market_id": "4613385",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.505,
+      "no_price": 0.495,
+      "volume": 1372.0,
+      "spread": 0.0,
+      "yes_token_id": "90498698773333626244827547154812141145895289297631853312035262112612725989037",
+      "no_token_id": "14876006867884567855013391161486064191437622220952889256549927284677130645640",
+      "model_prob": 0.2789,
+      "side": "YES",
+      "ask": 0.505,
+      "market_prob": 0.505,
+      "belief_prob": 0.358,
+      "ev": -0.2911,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 22°C on September 18?",
+      "market_id": "4613386",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.31,
+      "no_price": 0.69,
+      "volume": 689.0,
+      "spread": 0.0,
+      "yes_token_id": "79049024820634676101131320145341627884658372838149765113162077815543376543761",
+      "no_token_id": "21700435905044772611814954615642136846165761183543909423088728672967604118052",
+      "model_prob": 0.1264,
+      "side": "YES",
+      "ask": 0.31,
+      "market_prob": 0.31,
+      "belief_prob": 0.1907,
+      "ev": -0.3848,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 23°C on September 18?",
+      "market_id": "4613387",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 219.0,
+      "spread": 0.0,
+      "yes_token_id": "100949885271624136905983112980893807814498565626206675752885265939123077577518",
+      "no_token_id": "1215096197613601802783241493617519036734146615931474461116262227446560268068",
+      "model_prob": 0.0408,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0388,
+      "ev": 0.1086,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 24°C or higher on September 18?",
+      "market_id": "4613388",
+      "range": [
+        24.0,
+        999.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 218.0,
+      "spread": 0.0,
+      "yes_token_id": "68115278137007792747802876477704856246371352197685716101748764147828638049190",
+      "no_token_id": "104431852847060704003487860980913943959965748113183786725433512246566679070471",
+      "model_prob": 0.0203,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0153,
+      "ev": 1.55,
+      "kelly": 0.0023,
+      "sell_value": null
+    }
+  ]
 }

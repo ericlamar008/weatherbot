@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 18.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T04:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -42,7 +42,7 @@
       "ev": 1.6,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0025,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 1.0,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 3.8,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0078,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 16.2,
       "kelly": 0.002,
       "sell_value": null,
-      "model_prob_change": -0.0312,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,22 +124,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.065,
-      "no_price": 0.935,
-      "volume": 4898.0,
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 4975.0,
       "spread": 0.0,
       "yes_token_id": "59379359028245094632635590787325786660452431075687579902747035265809668382131",
       "no_token_id": "18515380724071763978212093953616387587037100487553769013353974932704004864637",
       "model_prob": 0.0551,
       "side": "YES",
-      "ask": 0.065,
-      "market_prob": 0.065,
-      "belief_prob": 0.0586,
-      "ev": -0.0985,
-      "kelly": 0.0,
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.0463,
+      "ev": 0.5433,
+      "kelly": 0.0042,
       "sell_value": null,
-      "model_prob_change": -0.1147,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.035
     },
     {
       "question": "Will the highest temperature in Atlanta be between 90-91°F on September 17?",
@@ -148,22 +148,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.66,
-      "no_price": 0.33,
-      "volume": 5301.0,
+      "yes_price": 0.745,
+      "no_price": 0.255,
+      "volume": 5495.0,
       "spread": 0.0,
       "yes_token_id": "77250232482920418101290063328508094613785554025886124419254053759458252086523",
       "no_token_id": "108946837158855509738932864291079311421373003008700561689393200567221242270984",
       "model_prob": 0.2188,
       "side": "YES",
-      "ask": 0.67,
-      "market_prob": 0.67,
-      "belief_prob": 0.3732,
-      "ev": -0.4378,
+      "ask": 0.745,
+      "market_prob": 0.745,
+      "belief_prob": 0.403,
+      "ev": -0.4591,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.1602,
-      "yes_price_change": 0.025
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.085
     },
     {
       "question": "Will the highest temperature in Atlanta be between 92-93°F on September 17?",
@@ -172,22 +172,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.255,
-      "no_price": 0.755,
-      "volume": 2415.0,
+      "yes_price": 0.22,
+      "no_price": 0.78,
+      "volume": 2426.0,
       "spread": 0.0,
       "yes_token_id": "13540696445624843579905200994495875865858579724049867301803612756381959667246",
       "no_token_id": "27784850458329242194252242458854150382775948131584361211478454560981373661302",
       "model_prob": 0.412,
       "side": "YES",
-      "ask": 0.245,
-      "market_prob": 0.245,
-      "belief_prob": 0.357,
-      "ev": 0.4429,
-      "kelly": 0.0359,
+      "ask": 0.22,
+      "market_prob": 0.22,
+      "belief_prob": 0.3448,
+      "ev": 0.5673,
+      "kelly": 0.04,
       "sell_value": null,
-      "model_prob_change": 0.1392,
-      "yes_price_change": -0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.035
     },
     {
       "question": "Will the highest temperature in Atlanta be between 94-95°F on September 17?",
@@ -196,22 +196,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.022,
-      "no_price": 0.9785,
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
       "volume": 1672.0,
       "spread": 0.0,
       "yes_token_id": "65025346788282500356506903366983809781611176957762868499164103527378420924760",
       "no_token_id": "72863261157520438425268791020081803143549324845018948559453467572959062106019",
       "model_prob": 0.2163,
       "side": "YES",
-      "ask": 0.0215,
-      "market_prob": 0.0215,
-      "belief_prob": 0.1483,
-      "ev": 5.8884,
-      "kelly": 0.0323,
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.146,
+      "ev": 8.4194,
+      "kelly": 0.0331,
       "sell_value": null,
-      "model_prob_change": 0.1335,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0065
     },
     {
       "question": "Will the highest temperature in Atlanta be between 96-97°F on September 17?",
@@ -234,7 +234,7 @@
       "ev": 70.0,
       "kelly": 0.0088,
       "sell_value": null,
-      "model_prob_change": 0.0337,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 15.8,
       "kelly": 0.002,
       "sell_value": null,
-      "model_prob_change": 0.007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 14.2,
       "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": 0.005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

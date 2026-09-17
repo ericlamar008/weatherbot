@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 36.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T22:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,12 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 22.37,
   "sigma": 1.596,
-  "forecast_mean_shadow": 22.63,
+  "forecast_mean_shadow": 22.58,
   "model_means_raw": {
     "ecmwf": 21.33,
     "gfs": 23.07,
-    "gem": 22.2,
-    "icon_eu": 22.42
+    "gem": 22.2
   },
   "full_distribution": [
     {
@@ -43,7 +42,7 @@
       "ev": 4.2,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": 0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -67,7 +66,7 @@
       "ev": 3.6,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": 0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -91,7 +90,7 @@
       "ev": 8.4,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": 0.0024,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -115,7 +114,7 @@
       "ev": 6.1333,
       "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": 0.0063,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -139,7 +138,7 @@
       "ev": 4.04,
       "kelly": 0.0051,
       "sell_value": null,
-      "model_prob_change": 0.0163,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -163,7 +162,7 @@
       "ev": 8.9273,
       "kelly": 0.0123,
       "sell_value": null,
-      "model_prob_change": 0.0387,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -174,20 +173,20 @@
         21.0
       ],
       "yes_price": 0.045,
-      "no_price": 0.935,
-      "volume": 368.0,
+      "no_price": 0.955,
+      "volume": 375.0,
       "spread": 0.0,
       "yes_token_id": "40124781124689460211750916207340992362215873286378625783080048937269492715006",
       "no_token_id": "71504705603858200061397994557953366415202839380481416718879439045711565741332",
       "model_prob": 0.1575,
       "side": "YES",
-      "ask": 0.065,
-      "market_prob": 0.065,
+      "ask": 0.045,
+      "market_prob": 0.045,
       "belief_prob": 0.1181,
-      "ev": 0.9246,
-      "kelly": 0.0161,
+      "ev": 1.6244,
+      "kelly": 0.0191,
       "sell_value": null,
-      "model_prob_change": 0.0708,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -211,7 +210,7 @@
       "ev": 0.1449,
       "kelly": 0.0082,
       "sell_value": null,
-      "model_prob_change": 0.0726,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -235,7 +234,7 @@
       "ev": -0.2693,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0055,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -245,22 +244,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.28,
-      "no_price": 0.725,
-      "volume": 799.0,
+      "yes_price": 0.305,
+      "no_price": 0.695,
+      "volume": 846.0,
       "spread": 0.0,
       "yes_token_id": "70538960122772808398950389608220088193977286803380589385046047741890380930942",
       "no_token_id": "58746412774850232644533769737042864593043954444005705831824371697196358284470",
       "model_prob": 0.1355,
       "side": "YES",
-      "ask": 0.275,
-      "market_prob": 0.275,
-      "belief_prob": 0.1861,
-      "ev": -0.3298,
+      "ask": 0.305,
+      "market_prob": 0.305,
+      "belief_prob": 0.1948,
+      "ev": -0.3613,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0623,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the highest temperature in Milan be 25°C or higher on September 18?",
@@ -269,22 +268,22 @@
         25.0,
         999.0
       ],
-      "yes_price": 0.13,
-      "no_price": 0.88,
-      "volume": 1051.0,
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 1059.0,
       "spread": 0.0,
       "yes_token_id": "9913275521819925371755985341812136287118528106316897072287210494618599403232",
       "no_token_id": "90860801638772226948724836366755101644835153862424045836360407303149596072046",
       "model_prob": 0.1198,
       "side": "YES",
-      "ask": 0.12,
-      "market_prob": 0.12,
-      "belief_prob": 0.1234,
-      "ev": -0.0008,
-      "kelly": 0.0,
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.1146,
+      "ev": 0.0914,
+      "kelly": 0.0027,
       "sell_value": null,
-      "model_prob_change": -0.1521,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.025
     }
   ],
   "live_allocation": [],
@@ -298,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

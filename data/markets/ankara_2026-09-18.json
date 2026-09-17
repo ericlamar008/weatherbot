@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 35.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T21:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 22.51,
   "sigma": 1.359,
-  "forecast_mean_shadow": 22.25,
+  "forecast_mean_shadow": 22.09,
   "model_means_raw": {
     "ecmwf": 22.08,
     "gfs": 22.06,
-    "gem": 21.47,
+    "gem": 20.83,
     "icon_eu": 21.64
   },
   "full_distribution": [
@@ -43,7 +43,7 @@
       "ev": 8.6,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -115,8 +115,8 @@
       "ev": 1.4865,
       "kelly": 0.007,
       "sell_value": null,
-      "model_prob_change": -0.0005,
-      "yes_price_change": -0.0055
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 21°C on September 18?",
@@ -127,7 +127,7 @@
       ],
       "yes_price": 0.215,
       "no_price": 0.785,
-      "volume": 2900.0,
+      "volume": 2950.0,
       "spread": 0.0,
       "yes_token_id": "61396025333856528597173266008966870943281466166644391999813852784412723034366",
       "no_token_id": "51549063704688246102007472748230870146350206366439026621339145022457437643872",
@@ -139,7 +139,7 @@
       "ev": -0.2093,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -151,7 +151,7 @@
       ],
       "yes_price": 0.385,
       "no_price": 0.615,
-      "volume": 1805.0,
+      "volume": 1840.0,
       "spread": 0.0,
       "yes_token_id": "65219224560814227932126817267080075119409130950185909544241116134983698333118",
       "no_token_id": "94417724608756112076769203765075786701625308497734176034152769423612850209020",
@@ -163,8 +163,8 @@
       "ev": -0.2249,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0032,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 23°C on September 18?",
@@ -187,7 +187,7 @@
       "ev": -0.0919,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -197,22 +197,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.125,
-      "no_price": 0.875,
-      "volume": 3342.0,
+      "yes_price": 0.115,
+      "no_price": 0.885,
+      "volume": 3378.0,
       "spread": 0.0,
       "yes_token_id": "1966621857964952879238316639542189963415389150942448885241338980341831481067",
       "no_token_id": "97323724764822486169544423959657051494971669870528314181524905101099550070145",
       "model_prob": 0.148,
       "side": "YES",
-      "ask": 0.125,
-      "market_prob": 0.125,
-      "belief_prob": 0.1399,
-      "ev": 0.1192,
-      "kelly": 0.0043,
+      "ask": 0.115,
+      "market_prob": 0.115,
+      "belief_prob": 0.1364,
+      "ev": 0.1861,
+      "kelly": 0.006,
       "sell_value": null,
-      "model_prob_change": 0.0023,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Ankara be 25°C on September 18?",
@@ -235,7 +235,7 @@
       "ev": 6.6727,
       "kelly": 0.0092,
       "sell_value": null,
-      "model_prob_change": 0.0019,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -259,7 +259,7 @@
       "ev": 5.4,
       "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": 0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -283,7 +283,7 @@
       "ev": 20.4,
       "kelly": 0.0026,
       "sell_value": null,
-      "model_prob_change": 0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -298,5 +298,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

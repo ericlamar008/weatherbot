@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 36.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T22:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,12 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 21.48,
   "sigma": 1.914,
-  "forecast_mean_shadow": 21.7,
+  "forecast_mean_shadow": 21.6,
   "model_means_raw": {
     "ecmwf": 20.05,
     "gfs": 20.78,
-    "gem": 20.95,
-    "icon_eu": 20.43
+    "icon_eu": 20.52
   },
   "full_distribution": [
     {
@@ -29,22 +28,22 @@
         -999.0,
         17.0
       ],
-      "yes_price": 0.003,
-      "no_price": 0.9945,
-      "volume": 414.0,
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 480.0,
       "spread": 0.0,
       "yes_token_id": "25222793773445508436283005934211125409831691032273172972445589402381593617042",
       "no_token_id": "22473659341463148624174775306233972629983572115460938188084347671155740290017",
       "model_prob": 0.0461,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
-      "belief_prob": 0.031,
-      "ev": 4.8,
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0321,
+      "ev": 4.35,
       "kelly": 0.0066,
       "sell_value": null,
-      "model_prob_change": -0.0062,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.003
     },
     {
       "question": "Will the highest temperature in Munich be 18°C on September 18?",
@@ -67,7 +66,7 @@
       "ev": 2.21,
       "kelly": 0.0056,
       "sell_value": null,
-      "model_prob_change": -0.0061,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -77,22 +76,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.03,
-      "no_price": 0.97,
-      "volume": 165.0,
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 227.0,
       "spread": 0.0,
       "yes_token_id": "45387087246110216885714792979179532382602071373067728117848036285939347148155",
       "no_token_id": "41262636523462900959532241107987754737616410885954521487970103596316002654608",
       "model_prob": 0.0841,
       "side": "YES",
-      "ask": 0.03,
-      "market_prob": 0.03,
-      "belief_prob": 0.0652,
-      "ev": 1.1733,
-      "kelly": 0.0091,
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0669,
+      "ev": 0.9114,
+      "kelly": 0.0083,
       "sell_value": null,
-      "model_prob_change": -0.0098,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Munich be 20°C on September 18?",
@@ -101,22 +100,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.23,
-      "no_price": 0.77,
-      "volume": 1130.0,
+      "yes_price": 0.22,
+      "no_price": 0.78,
+      "volume": 1131.0,
       "spread": 0.0,
       "yes_token_id": "41660570665217447754247984795947496599475044710939274128877255880165382665964",
       "no_token_id": "4065128446849524524361148611119358241489334525826757102856607171743947809663",
       "model_prob": 0.1411,
       "side": "YES",
-      "ask": 0.23,
-      "market_prob": 0.23,
-      "belief_prob": 0.1722,
-      "ev": -0.2513,
+      "ask": 0.22,
+      "market_prob": 0.22,
+      "belief_prob": 0.1687,
+      "ev": -0.2332,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.011,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Munich be 21°C on September 18?",
@@ -126,21 +125,21 @@
         21.0
       ],
       "yes_price": 0.555,
-      "no_price": 0.455,
-      "volume": 818.0,
+      "no_price": 0.445,
+      "volume": 823.0,
       "spread": 0.0,
       "yes_token_id": "35245767401127986446407012913702492082366575693012628826867720407304955971548",
       "no_token_id": "112750101310026188658783174831086374924351571187316437348935467504169730483548",
       "model_prob": 0.1887,
       "side": "YES",
-      "ask": 0.545,
-      "market_prob": 0.545,
+      "ask": 0.555,
+      "market_prob": 0.555,
       "belief_prob": 0.3169,
-      "ev": -0.425,
+      "ev": -0.429,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0044,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 22°C on September 18?",
@@ -149,22 +148,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.16,
-      "no_price": 0.84,
-      "volume": 353.0,
+      "yes_price": 0.165,
+      "no_price": 0.835,
+      "volume": 387.0,
       "spread": 0.0,
       "yes_token_id": "55192810467945737886791846502631039164477149977959378432824457213279407395462",
       "no_token_id": "59628571151984559162016999332864954586322675047829317148560704577404392987489",
       "model_prob": 0.1876,
       "side": "YES",
-      "ask": 0.16,
-      "market_prob": 0.16,
-      "belief_prob": 0.1779,
-      "ev": 0.1119,
-      "kelly": 0.0053,
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.1797,
+      "ev": 0.0891,
+      "kelly": 0.0044,
       "sell_value": null,
-      "model_prob_change": 0.0067,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Munich be 23°C on September 18?",
@@ -174,21 +173,21 @@
         23.0
       ],
       "yes_price": 0.04,
-      "no_price": 0.965,
-      "volume": 369.0,
+      "no_price": 0.96,
+      "volume": 405.0,
       "spread": 0.0,
       "yes_token_id": "91085761303281182655703407615378862094994820906413358287621960533367004995616",
       "no_token_id": "69582035439503473061102264095680750459998156069952592536196760120363491915759",
       "model_prob": 0.1387,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
+      "ask": 0.04,
+      "market_prob": 0.04,
       "belief_prob": 0.1042,
-      "ev": 1.9257,
-      "kelly": 0.0175,
+      "ev": 1.605,
+      "kelly": 0.0167,
       "sell_value": null,
-      "model_prob_change": 0.0114,
-      "yes_price_change": 0.02
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 24°C on September 18?",
@@ -211,7 +210,7 @@
       "ev": 4.69,
       "kelly": 0.0118,
       "sell_value": null,
-      "model_prob_change": 0.0091,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -235,7 +234,7 @@
       "ev": 4.4182,
       "kelly": 0.0061,
       "sell_value": null,
-      "model_prob_change": 0.0053,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -259,7 +258,7 @@
       "ev": 27.2,
       "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": 0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -283,7 +282,7 @@
       "ev": 30.0,
       "kelly": 0.0038,
       "sell_value": null,
-      "model_prob_change": 0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -331,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

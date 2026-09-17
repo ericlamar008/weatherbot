@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 20.7,
+  "hours_left": 19.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T05:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -42,7 +42,7 @@
       "ev": 1.6,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 1.6,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 8.4,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0033,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -100,9 +100,9 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.025,
+      "yes_price": 0.02,
       "no_price": 0.98,
-      "volume": 1393.0,
+      "volume": 1398.0,
       "spread": 0.0,
       "yes_token_id": "41096541731196273155813612120543227143629421864332594766417586983128021720808",
       "no_token_id": "57907531488803582975331975420383418424193842092032265970930191089707512395757",
@@ -110,12 +110,12 @@
       "side": "YES",
       "ask": 0.02,
       "market_prob": 0.02,
-      "belief_prob": 0.0338,
+      "belief_prob": 0.032,
       "ev": 0.6,
       "kelly": 0.0031,
       "sell_value": null,
-      "model_prob_change": -0.0139,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 96-97°F on September 17?",
@@ -124,22 +124,22 @@
         96.0,
         97.0
       ],
-      "yes_price": 0.14,
-      "no_price": 0.85,
-      "volume": 8668.0,
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 9064.0,
       "spread": 0.0,
       "yes_token_id": "115357830296925976322067335262264731900239928304718092279202418596405618620655",
       "no_token_id": "56645673999834184403642749400890524532955777469341364220584446782329378847819",
       "model_prob": 0.2248,
       "side": "YES",
-      "ask": 0.15,
-      "market_prob": 0.15,
-      "belief_prob": 0.1951,
-      "ev": 0.324,
-      "kelly": 0.0143,
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.2126,
+      "ev": 0.1189,
+      "kelly": 0.007,
       "sell_value": null,
-      "model_prob_change": -0.0287,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.05
     },
     {
       "question": "Will the highest temperature in Dallas be between 98-99°F on September 17?",
@@ -150,7 +150,7 @@
       ],
       "yes_price": 0.655,
       "no_price": 0.345,
-      "volume": 3147.0,
+      "volume": 3166.0,
       "spread": 0.0,
       "yes_token_id": "41634263484527918337852646094178170525290993119522159858323468437477379515233",
       "no_token_id": "112754487559357695099847833600198248069806150226327402975450994456533459448027",
@@ -162,7 +162,7 @@
       "ev": -0.1495,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0432,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -172,22 +172,22 @@
         100.0,
         101.0
       ],
-      "yes_price": 0.145,
-      "no_price": 0.855,
-      "volume": 3438.0,
+      "yes_price": 0.165,
+      "no_price": 0.835,
+      "volume": 3655.0,
       "spread": 0.0,
       "yes_token_id": "49992536997926361077975806271007125660933783828848604087816167941207170913208",
       "no_token_id": "108495915117728424529076915446083910565826741121447271736515528870867691371961",
       "model_prob": 0.1827,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
-      "belief_prob": 0.1695,
-      "ev": 0.169,
-      "kelly": 0.0072,
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.1765,
+      "ev": 0.0697,
+      "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": 0.0095,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.02
     },
     {
       "question": "Will the highest temperature in Dallas be between 102-103°F on September 17?",
@@ -198,7 +198,7 @@
       ],
       "yes_price": 0.01,
       "no_price": 0.99,
-      "volume": 409.0,
+      "volume": 415.0,
       "spread": 0.0,
       "yes_token_id": "55957394183098736639627720646895626134282637941568077321762371287456417530811",
       "no_token_id": "72241619854107452970608191980058320123997630656392061464370346701434152476547",
@@ -210,7 +210,7 @@
       "ev": 1.33,
       "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": -0.0028,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 3.1,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -346,5 +346,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

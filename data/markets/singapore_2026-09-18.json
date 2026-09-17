@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 30.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T16:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 31.92,
   "sigma": 1.151,
-  "forecast_mean_shadow": 31.94,
+  "forecast_mean_shadow": 32.12,
   "model_means_raw": {
     "ecmwf": 31.84,
     "gfs": 29.99,
-    "gem": 31.65
+    "gem": 32.19
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 7.2,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 11.6,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": 0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 37.4,
       "kelly": 0.0047,
       "sell_value": null,
-      "model_prob_change": 0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 8.4769,
       "kelly": 0.0139,
       "sell_value": null,
-      "model_prob_change": 0.0063,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 9.2733,
       "kelly": 0.0353,
       "sell_value": null,
-      "model_prob_change": 0.0068,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -148,22 +148,22 @@
         32.0,
         32.0
       ],
-      "yes_price": 0.395,
-      "no_price": 0.605,
-      "volume": 2668.0,
+      "yes_price": 0.4,
+      "no_price": 0.6,
+      "volume": 2685.0,
       "spread": 0.0,
       "yes_token_id": "90728386021152054713127390170087583158439906920891150269577466864995155147324",
       "no_token_id": "85885477003154707134581522278196918536764556250321727482426304559368949183447",
       "model_prob": 0.3171,
       "side": "YES",
-      "ask": 0.395,
-      "market_prob": 0.395,
-      "belief_prob": 0.3444,
-      "ev": -0.1281,
+      "ask": 0.4,
+      "market_prob": 0.4,
+      "belief_prob": 0.3461,
+      "ev": -0.1347,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0054,
-      "yes_price_change": 0.02
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Singapore be 33°C on September 18?",
@@ -174,7 +174,7 @@
       ],
       "yes_price": 0.53,
       "no_price": 0.47,
-      "volume": 3351.0,
+      "volume": 3445.0,
       "spread": 0.0,
       "yes_token_id": "83614350306068286372070085545521186917574033407816583404213637934697218617584",
       "no_token_id": "43726735495412204998288949855933269988375356662268212430231769732621401522317",
@@ -186,7 +186,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0086,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -210,8 +210,8 @@
       "ev": 0.18,
       "kelly": 0.0029,
       "sell_value": null,
-      "model_prob_change": -0.0029,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 35°C on September 18?",
@@ -234,7 +234,7 @@
       "ev": 2.5,
       "kelly": 0.0031,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 6.2,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

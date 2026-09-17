@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 42.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-19T04:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 2,
   "forecast_mean": 87.0,
   "sigma": 1.87,
-  "forecast_mean_shadow": 88.81,
+  "forecast_mean_shadow": 89.19,
   "model_means_raw": {
     "ecmwf": 84.56,
     "gfs": 87.17,
-    "gem": 90.34
+    "gem": 91.46
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 4.4,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": -0.005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 0.16,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0028,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 2.05,
       "kelly": 0.0052,
       "sell_value": null,
-      "model_prob_change": -0.0085,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 1.7333,
       "kelly": 0.0204,
       "sell_value": null,
-      "model_prob_change": 0.0229,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,20 +125,20 @@
         87.0
       ],
       "yes_price": 0.165,
-      "no_price": 0.875,
-      "volume": 256.0,
+      "no_price": 0.835,
+      "volume": 299.0,
       "spread": 0.0,
       "yes_token_id": "68105287710261445170239576598779627617140757733541171666371642935446050776557",
       "no_token_id": "49887179965102689268667958309414739649846931143402374462119900010111620788269",
       "model_prob": 0.3863,
       "side": "YES",
-      "ask": 0.125,
-      "market_prob": 0.125,
+      "ask": 0.165,
+      "market_prob": 0.165,
       "belief_prob": 0.3088,
-      "ev": 1.3584,
-      "kelly": 0.0485,
+      "ev": 0.8715,
+      "kelly": 0.0431,
       "sell_value": null,
-      "model_prob_change": 0.1046,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -150,7 +150,7 @@
       ],
       "yes_price": 0.465,
       "no_price": 0.535,
-      "volume": 401.0,
+      "volume": 418.0,
       "spread": 0.0,
       "yes_token_id": "79934249364116045010672886514932529972250422339076726781848109588858098175026",
       "no_token_id": "11952071392804788282944488302076324785970642507726877543211215573662143252045",
@@ -162,8 +162,8 @@
       "ev": -0.2538,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0073,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on September 18?",
@@ -186,7 +186,7 @@
       "ev": -0.4502,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0509,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -210,8 +210,8 @@
       "ev": -0.384,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0268,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on September 18?",
@@ -233,7 +233,9 @@
       "belief_prob": 0.0062,
       "ev": -0.1733,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 96°F or higher on September 18?",
@@ -256,7 +258,7 @@
       "ev": 0.96,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": -0.0139,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -271,5 +273,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

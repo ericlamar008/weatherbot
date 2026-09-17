@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 18.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T04:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -14,10 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 24.33,
   "sigma": 1.528,
-  "forecast_mean_shadow": 24.49,
+  "forecast_mean_shadow": 23.53,
   "model_means_raw": {
     "ecmwf": 23.42,
-    "gfs": 24.76
+    "gfs": 24.76,
+    "gem": 21.2
   },
   "full_distribution": [
     {
@@ -41,7 +42,7 @@
       "ev": 7.5,
       "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": -0.0471,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -65,7 +66,7 @@
       "ev": 0.29,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0451,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -75,22 +76,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.04,
-      "no_price": 0.96,
-      "volume": 1621.0,
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 1924.0,
       "spread": 0.0,
       "yes_token_id": "15652594959616303683095151716324185698600311994213792611478629286947294134451",
       "no_token_id": "35725646911227265962310374924594406605326739442192858511093361662137818703571",
       "model_prob": 0.0346,
       "side": "YES",
-      "ask": 0.04,
-      "market_prob": 0.04,
-      "belief_prob": 0.0365,
-      "ev": -0.0875,
-      "kelly": 0.0,
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0312,
+      "ev": 0.248,
+      "kelly": 0.0016,
       "sell_value": null,
-      "model_prob_change": -0.0765,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.015
     },
     {
       "question": "Will the highest temperature in Toronto be 22°C on September 17?",
@@ -99,22 +100,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.11,
-      "no_price": 0.86,
-      "volume": 3457.0,
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 3653.0,
       "spread": 0.0,
       "yes_token_id": "34985080896471229162532246620002479574532591133651391687319985608915945055800",
       "no_token_id": "63052661778311168354962028467844210271534003562371599381837576592710426456580",
       "model_prob": 0.0808,
       "side": "YES",
-      "ask": 0.14,
-      "market_prob": 0.14,
-      "belief_prob": 0.091,
-      "ev": -0.275,
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.0893,
+      "ev": -0.1495,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0918,
-      "yes_price_change": -0.025
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 23°C on September 17?",
@@ -123,7 +124,7 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.28,
+      "yes_price": 0.285,
       "no_price": 0.715,
       "volume": 1839.0,
       "spread": 0.0,
@@ -133,12 +134,12 @@
       "side": "YES",
       "ask": 0.285,
       "market_prob": 0.285,
-      "belief_prob": 0.2038,
+      "belief_prob": 0.2056,
       "ev": -0.2786,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0391,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 24°C on September 17?",
@@ -147,22 +148,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.43,
-      "no_price": 0.555,
-      "volume": 4385.0,
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 4417.0,
       "spread": 0.0,
       "yes_token_id": "21739105554466543290718928656560869470719161835140461271155879240729070394803",
       "no_token_id": "60847723318122705048917174995808344379994845024413744201972122777393055379401",
       "model_prob": 0.237,
       "side": "YES",
-      "ask": 0.445,
-      "market_prob": 0.445,
-      "belief_prob": 0.3045,
-      "ev": -0.3038,
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.3133,
+      "ev": -0.3114,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0666,
-      "yes_price_change": 0.02
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the highest temperature in Toronto be 25°C on September 17?",
@@ -171,22 +172,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.125,
-      "no_price": 0.885,
-      "volume": 1596.0,
+      "yes_price": 0.155,
+      "no_price": 0.845,
+      "volume": 1661.0,
       "spread": 0.0,
       "yes_token_id": "106343711978172474837976949744011462291630577148603160635380306933200036498059",
       "no_token_id": "45763463126330571361802940748301062499111262995320948850632643269000325293295",
       "model_prob": 0.2187,
       "side": "YES",
-      "ask": 0.115,
-      "market_prob": 0.115,
-      "belief_prob": 0.1859,
-      "ev": 0.5861,
-      "kelly": 0.019,
+      "ask": 0.155,
+      "market_prob": 0.155,
+      "belief_prob": 0.1964,
+      "ev": 0.2671,
+      "kelly": 0.0122,
       "sell_value": null,
-      "model_prob_change": 0.11,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.03
     },
     {
       "question": "Will the highest temperature in Toronto be 26°C on September 17?",
@@ -196,20 +197,20 @@
         26.0
       ],
       "yes_price": 0.025,
-      "no_price": 0.98,
-      "volume": 728.0,
+      "no_price": 0.975,
+      "volume": 993.0,
       "spread": 0.0,
       "yes_token_id": "29709917337041945432747612542394496139185161259364975739987896400645333990843",
       "no_token_id": "56705923312387175633137398948105745695381084675582501108118744937113764384265",
       "model_prob": 0.1318,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
+      "ask": 0.025,
+      "market_prob": 0.025,
       "belief_prob": 0.0944,
-      "ev": 3.635,
-      "kelly": 0.0185,
+      "ev": 2.776,
+      "kelly": 0.0178,
       "sell_value": null,
-      "model_prob_change": 0.0738,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -220,20 +221,20 @@
         27.0
       ],
       "yes_price": 0.006,
-      "no_price": 0.99,
+      "no_price": 0.994,
       "volume": 269.0,
       "spread": 0.0,
       "yes_token_id": "28047816140833955851404039267771583179779837968165710388738371109250849019393",
       "no_token_id": "84407203717665778613393689340248952985767339617466607582825270349402132175862",
       "model_prob": 0.0611,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
+      "ask": 0.006,
+      "market_prob": 0.006,
       "belief_prob": 0.0418,
-      "ev": 3.32,
-      "kelly": 0.0084,
+      "ev": 5.9667,
+      "kelly": 0.009,
       "sell_value": null,
-      "model_prob_change": 0.0325,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -257,7 +258,7 @@
       "ev": 32.8,
       "kelly": 0.0041,
       "sell_value": null,
-      "model_prob_change": 0.0118,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -281,7 +282,7 @@
       "ev": 26.2,
       "kelly": 0.0033,
       "sell_value": null,
-      "model_prob_change": 0.0053,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -296,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

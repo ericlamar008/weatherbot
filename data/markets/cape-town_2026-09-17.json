@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 12.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T22:00:00+00:00",
   "event_end_date": "2026-09-17T12:00:00Z",
@@ -41,7 +41,7 @@
       "ev": 41.6,
       "kelly": 0.0052,
       "sell_value": null,
-      "model_prob_change": 0.0057,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -65,7 +65,7 @@
       "ev": 62.0,
       "kelly": 0.0078,
       "sell_value": null,
-      "model_prob_change": 0.0091,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -89,7 +89,7 @@
       "ev": 151.8,
       "kelly": 0.019,
       "sell_value": null,
-      "model_prob_change": 0.0195,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -101,7 +101,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 2108.0,
+      "volume": 2109.0,
       "spread": 0.0,
       "yes_token_id": "53421950733570918985451946954190588236511374421697913976871064923359514060181",
       "no_token_id": "115255644499703726201858045712579699951317125979203925309815669330009969902077",
@@ -113,7 +113,7 @@
       "ev": 287.4,
       "kelly": 0.0359,
       "sell_value": null,
-      "model_prob_change": 0.0223,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -123,22 +123,22 @@
         17.0,
         17.0
       ],
-      "yes_price": 0.01,
-      "no_price": 0.99,
-      "volume": 1707.0,
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 1735.0,
       "spread": 0.0,
       "yes_token_id": "48607939446109882407216948936959792289980248002327862474652298356345307836025",
       "no_token_id": "109232596884593927118288705660872045873233728952741747737796598962796018377213",
       "model_prob": 0.2615,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
-      "belief_prob": 0.1735,
-      "ev": 16.35,
-      "kelly": 0.0413,
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.1717,
+      "ev": 33.34,
+      "kelly": 0.0419,
       "sell_value": null,
-      "model_prob_change": -0.0029,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Cape Town be 18°C on September 17?",
@@ -147,21 +147,21 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.065,
-      "no_price": 0.935,
-      "volume": 3096.0,
+      "yes_price": 0.06,
+      "no_price": 0.94,
+      "volume": 3101.0,
       "spread": 0.0,
       "yes_token_id": "35819291740859907250428581635193641395695180048184743739000784207750172096237",
       "no_token_id": "35147371587974574268945112913489589390895817160631856606091316911751626659395",
       "model_prob": 0.1797,
       "side": "YES",
-      "ask": 0.065,
-      "market_prob": 0.065,
-      "belief_prob": 0.1396,
-      "ev": 1.1477,
-      "kelly": 0.0199,
+      "ask": 0.06,
+      "market_prob": 0.06,
+      "belief_prob": 0.1378,
+      "ev": 1.2967,
+      "kelly": 0.0207,
       "sell_value": null,
-      "model_prob_change": -0.0237,
+      "model_prob_change": 0.0,
       "yes_price_change": -0.005
     },
     {
@@ -171,22 +171,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.62,
-      "no_price": 0.37,
-      "volume": 3070.0,
+      "yes_price": 0.52,
+      "no_price": 0.48,
+      "volume": 3210.0,
       "spread": 0.0,
       "yes_token_id": "18397827768788951502959674009251740300484868241835836567490031314262610541786",
       "no_token_id": "115303060605866591116510937256982086790289889158045815210760912393053125547836",
       "model_prob": 0.0836,
       "side": "YES",
-      "ask": 0.63,
-      "market_prob": 0.63,
-      "belief_prob": 0.2713,
-      "ev": -0.5638,
+      "ask": 0.52,
+      "market_prob": 0.52,
+      "belief_prob": 0.2363,
+      "ev": -0.5456,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0175,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.1
     },
     {
       "question": "Will the highest temperature in Cape Town be 20°C on September 17?",
@@ -195,22 +195,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.315,
-      "no_price": 0.68,
+      "yes_price": 0.325,
+      "no_price": 0.675,
       "volume": 1252.0,
       "spread": 0.0,
       "yes_token_id": "84260786143682530881459882434732242570622830037532963918054071863582193804605",
       "no_token_id": "47994367460204036072766855056672762515652653828401903520031127599817011513085",
       "model_prob": 0.0329,
       "side": "YES",
-      "ask": 0.32,
-      "market_prob": 0.32,
-      "belief_prob": 0.1316,
-      "ev": -0.5831,
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.1351,
+      "ev": -0.5843,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0077,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the highest temperature in Cape Town be 21°C on September 17?",
@@ -219,22 +219,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.0185,
-      "no_price": 0.9815,
-      "volume": 532.0,
+      "yes_price": 0.0225,
+      "no_price": 0.9775,
+      "volume": 748.0,
       "spread": 0.0,
       "yes_token_id": "61623923579665175775102920735334470216504968141105310686316217428293656093324",
       "no_token_id": "85804774021581649145684222391189646073188536023504129394460012143863004799016",
       "model_prob": 0.0128,
       "side": "YES",
-      "ask": 0.0185,
-      "market_prob": 0.0185,
-      "belief_prob": 0.0148,
-      "ev": -0.2,
+      "ask": 0.0225,
+      "market_prob": 0.0225,
+      "belief_prob": 0.0162,
+      "ev": -0.28,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0029,
-      "yes_price_change": 0.0125
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.004
     },
     {
       "question": "Will the highest temperature in Cape Town be 22°C on September 17?",
@@ -257,7 +257,7 @@
       "ev": 6.2,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": -0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -281,7 +281,7 @@
       "ev": 1.4,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -329,5 +329,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

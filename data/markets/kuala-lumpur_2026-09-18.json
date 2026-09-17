@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 30.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T16:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,10 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 33.83,
   "sigma": 1.864,
-  "forecast_mean_shadow": 33.58,
+  "forecast_mean_shadow": 33.02,
   "model_means_raw": {
     "ecmwf": 32.74,
-    "gfs": 30.7
+    "gfs": 30.7,
+    "gem": 30.02
   },
   "full_distribution": [
     {
@@ -41,7 +42,7 @@
       "ev": 22.4,
       "kelly": 0.0028,
       "sell_value": null,
-      "model_prob_change": -0.0062,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -65,7 +66,7 @@
       "ev": 1.6889,
       "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": -0.0065,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -89,7 +90,7 @@
       "ev": 0.212,
       "kelly": 0.0014,
       "sell_value": null,
-      "model_prob_change": -0.0131,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -113,7 +114,7 @@
       "ev": -0.3311,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.023,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,7 +126,7 @@
       ],
       "yes_price": 0.25,
       "no_price": 0.75,
-      "volume": 791.0,
+      "volume": 796.0,
       "spread": 0.0,
       "yes_token_id": "49868528531771938681377340067973017971017776098675503599836326374572815547832",
       "no_token_id": "44300938919916477947916943615095330414941826877035962450724637042297324646414",
@@ -137,8 +138,8 @@
       "ev": -0.3368,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0295,
-      "yes_price_change": -0.025
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 33°C on September 18?",
@@ -147,22 +148,22 @@
         33.0,
         33.0
       ],
-      "yes_price": 0.345,
-      "no_price": 0.66,
-      "volume": 1155.0,
+      "yes_price": 0.355,
+      "no_price": 0.645,
+      "volume": 1158.0,
       "spread": 0.0,
       "yes_token_id": "96967197312239844108723718918976468109267719280662743393216946797780804094299",
       "no_token_id": "23755488934879322215803648687335857318156507981781787295582535763957145740842",
       "model_prob": 0.1795,
       "side": "YES",
-      "ask": 0.34,
-      "market_prob": 0.34,
-      "belief_prob": 0.2374,
-      "ev": -0.3068,
+      "ask": 0.355,
+      "market_prob": 0.355,
+      "belief_prob": 0.2409,
+      "ev": -0.3214,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.017,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 34°C on September 18?",
@@ -185,7 +186,7 @@
       "ev": -0.12,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0121,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -209,7 +210,7 @@
       "ev": 2.8433,
       "kelly": 0.022,
       "sell_value": null,
-      "model_prob_change": 0.029,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -221,7 +222,7 @@
       ],
       "yes_price": 0.0165,
       "no_price": 0.9835,
-      "volume": 319.0,
+      "volume": 344.0,
       "spread": 0.0,
       "yes_token_id": "106511952845978945225143524501917216122970196153070415906785778501373270662988",
       "no_token_id": "8878124739224333001757437886406775648612048602834141833152483271166428352913",
@@ -233,7 +234,7 @@
       "ev": 3.2848,
       "kelly": 0.0138,
       "sell_value": null,
-      "model_prob_change": 0.0249,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -257,7 +258,7 @@
       "ev": 67.8,
       "kelly": 0.0085,
       "sell_value": null,
-      "model_prob_change": 0.0148,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -281,7 +282,7 @@
       "ev": 68.2,
       "kelly": 0.0085,
       "sell_value": null,
-      "model_prob_change": 0.0145,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -296,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }

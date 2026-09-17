@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 43.9,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-19T05:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
@@ -14,11 +14,10 @@
   "horizon_days": 2,
   "forecast_mean": 96.72,
   "sigma": 2.016,
-  "forecast_mean_shadow": 96.47,
+  "forecast_mean_shadow": 96.81,
   "model_means_raw": {
     "ecmwf": 96.18,
-    "gfs": 96.92,
-    "gem": 95.51
+    "gfs": 96.92
   },
   "full_distribution": [
     {
@@ -42,7 +41,7 @@
       "ev": 7.0,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": 0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +65,7 @@
       "ev": 0.3667,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -89,7 +88,9 @@
       "belief_prob": 0.0119,
       "ev": 1.38,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 92-93°F on September 18?",
@@ -111,7 +112,9 @@
       "belief_prob": 0.0394,
       "ev": 6.1636,
       "kelly": 0.0085,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 94-95°F on September 18?",
@@ -134,7 +137,7 @@
       "ev": 12.09,
       "kelly": 0.0305,
       "sell_value": null,
-      "model_prob_change": -0.0046,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -146,7 +149,7 @@
       ],
       "yes_price": 0.245,
       "no_price": 0.755,
-      "volume": 136.0,
+      "volume": 138.0,
       "spread": 0.0,
       "yes_token_id": "59182347566349862186546082865287633043425187939668542631729154398247749709229",
       "no_token_id": "92682671552243742786805986235207966446828691973552751563163050591877044478115",
@@ -158,7 +161,7 @@
       "ev": 0.3233,
       "kelly": 0.0262,
       "sell_value": null,
-      "model_prob_change": -0.0463,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -169,21 +172,21 @@
         99.0
       ],
       "yes_price": 0.625,
-      "no_price": 0.395,
-      "volume": 533.0,
+      "no_price": 0.375,
+      "volume": 544.0,
       "spread": 0.0,
       "yes_token_id": "882319550953763787335597249371823475569165269561554120737651091416402278197",
       "no_token_id": "19817999821095598300182670412290205662096485098077634660319255730970336790098",
       "model_prob": 0.2423,
       "side": "YES",
-      "ask": 0.605,
-      "market_prob": 0.605,
+      "ask": 0.625,
+      "market_prob": 0.625,
       "belief_prob": 0.3762,
-      "ev": -0.3898,
+      "ev": -0.3981,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0062,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 100-101°F on September 18?",
@@ -192,22 +195,22 @@
         100.0,
         101.0
       ],
-      "yes_price": 0.13,
-      "no_price": 0.87,
+      "yes_price": 0.125,
+      "no_price": 0.875,
       "volume": 675.0,
       "spread": 0.0,
       "yes_token_id": "111541383701049858063044045115599340880146717939005789223691988862525133653420",
       "no_token_id": "15421234228810413618832448763369740779265218420153497346801213409246539404522",
       "model_prob": 0.077,
       "side": "YES",
-      "ask": 0.13,
-      "market_prob": 0.13,
-      "belief_prob": 0.0955,
-      "ev": -0.2654,
+      "ask": 0.125,
+      "market_prob": 0.125,
+      "belief_prob": 0.0938,
+      "ev": -0.2496,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0166,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Austin be between 102-103°F on September 18?",
@@ -229,7 +232,9 @@
       "belief_prob": 0.0204,
       "ev": 0.02,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 104-105°F on September 18?",
@@ -252,7 +257,7 @@
       "ev": 0.0545,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": 0.0022,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -276,7 +281,7 @@
       "ev": 0.7143,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -291,5 +296,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-17T08:37:25.761216+00:00",
-  "last_lite_refresh": "2026-09-17T08:20:39.850038+00:00"
+  "last_lite_refresh": "2026-09-17T09:05:53.773636+00:00"
 }
