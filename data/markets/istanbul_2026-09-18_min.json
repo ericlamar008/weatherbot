@@ -7,10 +7,145 @@
   "market_type": "min",
   "created_at": "2026-09-17T02:20:43.632644+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 18.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-18T21:00:00+00:00",
   "event_end_date": "2026-09-18T12:00:00Z",
-  "last_scan": "2026-09-17T02:20:43.632644+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "last_scan": "2026-09-18T02:20:39.080116+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 18.67,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 16°C on September 18?",
+      "market_id": "4605708",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.465,
+      "no_price": 0.535,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "10755117695293622419344620969734640801272441810965904142573877399408419865001",
+      "no_token_id": "9223544027750863956788590585222965966728800127722560856404674944815890621182",
+      "model_prob": 0.0544,
+      "side": "YES",
+      "ask": 0.465,
+      "market_prob": 0.465,
+      "belief_prob": 0.1981,
+      "ev": -0.574,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 21°C on September 18?",
+      "market_id": "4605713",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 520.0,
+      "spread": 0.0,
+      "yes_token_id": "45014407203833547668667249488688943039040951028458700555382316621901533226624",
+      "no_token_id": "93669210628833186825174442368319323563467807478083987912282021656462571481386",
+      "model_prob": 0.0744,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0485,
+      "ev": 96.0,
+      "kelly": 0.012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 22°C on September 18?",
+      "market_id": "4605714",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "5705258434234154946838382906738552221480687542301828346708888967941832067226",
+      "no_token_id": "53984108154898500467153810835180235906409589063601078308271197866872710294778",
+      "model_prob": 0.0291,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0191,
+      "ev": 37.2,
+      "kelly": 0.0047,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 23°C or higher on September 18?",
+      "market_id": "4605715",
+      "range": [
+        23.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "38346162266019592739250085026000825832113555962862781016157592832962171002664",
+      "no_token_id": "92241179460240019220403909307051644388648183694490022515980996260102148094997",
+      "model_prob": 0.0205,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0135,
+      "ev": 26.0,
+      "kelly": 0.0033,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4605708",
+      "question": "Will the lowest temperature in Istanbul be 16°C on September 18?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.465,
+      "model_prob": 0.0544,
+      "ev": -0.574,
+      "market_prob": 0.465,
+      "role": "main_signal",
+      "units": 17.4,
+      "sell_value": 0.02
+    },
+    {
+      "market_id": "4605708",
+      "question": "Will the lowest temperature in Istanbul be 16°C on September 18? (NO)",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "NO",
+      "price": 0.535,
+      "model_prob": 0.9456,
+      "ev": 0.4989,
+      "market_prob": 0.535,
+      "role": "scenario_hedge",
+      "units": 8.51,
+      "sell_value": 0.09
+    }
+  ],
+  "total_allocated_units": 25.9,
+  "portfolio_score": 0.006396,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 11.51,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.5216,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
