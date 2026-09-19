@@ -7,10 +7,277 @@
   "market_type": "min",
   "created_at": "2026-09-18T02:20:39.080116+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-19T22:00:00+00:00",
   "event_end_date": "2026-09-19T12:00:00Z",
-  "last_scan": "2026-09-18T02:20:39.080116+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "last_scan": "2026-09-19T02:20:39.180344+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 10.51,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 6°C or below on September 19?",
+      "market_id": "4632067",
+      "range": [
+        -999.0,
+        6.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 29.0,
+      "spread": 0.0,
+      "yes_token_id": "28139352045207634709154204437372002899679226747543313479926042733149366353451",
+      "no_token_id": "86196967402814083770854807675634614971895505444516160847044035750260862709324",
+      "model_prob": 0.0176,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.0972,
+      "ev": -0.6033,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 8°C on September 19?",
+      "market_id": "4632069",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.845,
+      "no_price": 0.155,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "67708615384515021252805240725192999397693695594567923971474845403732515664603",
+      "no_token_id": "112622015504698023065209085928544088002473332556291336206151430475100358835757",
+      "model_prob": 0.0632,
+      "side": "YES",
+      "ask": 0.845,
+      "market_prob": 0.845,
+      "belief_prob": 0.3368,
+      "ev": -0.6014,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 9°C on September 19?",
+      "market_id": "4632070",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 110.0,
+      "spread": 0.0,
+      "yes_token_id": "91805789939395679233582064081187456952404380604752575641566968322590911040980",
+      "no_token_id": "28057980475435447308942632720892938658732291777069691891794337933704922104624",
+      "model_prob": 0.1462,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0952,
+      "ev": 189.4,
+      "kelly": 0.0237,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 10°C on September 19?",
+      "market_id": "4632071",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 114.0,
+      "spread": 0.0,
+      "yes_token_id": "41314750227456899632841715077589631044072823912025330942111001868411909141037",
+      "no_token_id": "57064527475299179444386898100707850357000701710807487811401695311262079700135",
+      "model_prob": 0.2458,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1599,
+      "ev": 318.8,
+      "kelly": 0.0399,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 11°C on September 19?",
+      "market_id": "4632072",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "2301944271730769553904517881661480625458416290017117926083230187942378794763",
+      "no_token_id": "17233025019838641514051306690632036171930654595109332475033454143375139404753",
+      "model_prob": 0.2472,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1609,
+      "ev": 320.8,
+      "kelly": 0.0401,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 12°C on September 19?",
+      "market_id": "4632073",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "10188693538711393298414239855966170055872197209333518207162559485344693429793",
+      "no_token_id": "92302729211191335483759913292320793532669400083461661368594352414637116639383",
+      "model_prob": 0.1483,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0966,
+      "ev": 192.2,
+      "kelly": 0.024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 13°C on September 19?",
+      "market_id": "4632074",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "3551488287116353285654582087647355386849566576465982233542829533555582179999",
+      "no_token_id": "61114544657429401128353589177826827628480230622135544494944703074923272427239",
+      "model_prob": 0.0643,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.042,
+      "ev": 83.0,
+      "kelly": 0.0104,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 14°C on September 19?",
+      "market_id": "4632075",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 22.0,
+      "spread": 0.0,
+      "yes_token_id": "7539361446031336963338644715175974757624314082689210078316886762312059416093",
+      "no_token_id": "101910508763061966928976560649782047636800792294018454466379734154524838958915",
+      "model_prob": 0.025,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0164,
+      "ev": 31.8,
+      "kelly": 0.004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 15°C on September 19?",
+      "market_id": "4632076",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "98103031660363450546226773433897972965181641689853354894200710773277821789567",
+      "no_token_id": "103094632652162763257037759446297969786002357505268594697467007305167579139592",
+      "model_prob": 0.0098,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0065,
+      "ev": 12.0,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 16°C or higher on September 19?",
+      "market_id": "4632077",
+      "range": [
+        16.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 57.0,
+      "spread": 0.0,
+      "yes_token_id": "97901469924235548768755252421260185936171423072381963152576268951736359146604",
+      "no_token_id": "17212175092163559680360174263685149477559872791123544183075992575747506515183",
+      "model_prob": 0.0081,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0054,
+      "ev": 9.8,
+      "kelly": 0.0012,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4632069",
+      "question": "Will the lowest temperature in Munich be 8°C on September 19?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.845,
+      "model_prob": 0.0632,
+      "ev": -0.6014,
+      "market_prob": 0.845,
+      "role": "main_signal",
+      "units": 26.1,
+      "sell_value": 0.72
+    },
+    {
+      "market_id": "4632069",
+      "question": "Will the lowest temperature in Munich be 8°C on September 19? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.155,
+      "model_prob": 0.9368,
+      "ev": 3.2787,
+      "market_prob": 0.155,
+      "role": "scenario_hedge",
+      "units": 2.95,
+      "sell_value": 0.03
+    }
+  ],
+  "total_allocated_units": 29.1,
+  "portfolio_score": -0.053193,
+  "worst_case_loss_frac": 0.1002,
+  "best_case_pnl_units": 1.84,
+  "worst_case_pnl_units": -10.02,
+  "success_probability": 0.4231,
+  "confidence": 0.3955,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

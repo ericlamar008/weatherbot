@@ -1,0 +1,289 @@
+{
+  "city": "istanbul",
+  "city_name": "Istanbul",
+  "date": "2026-09-20",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-19T02:20:39.180344+00:00",
+  "committed_allocation": null,
+  "hours_left": 42.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-20T21:00:00+00:00",
+  "event_end_date": "2026-09-20T12:00:00Z",
+  "last_scan": "2026-09-19T02:20:39.180344+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 23.71,
+  "sigma": 0.799,
+  "forecast_mean_shadow": 23.51,
+  "model_means_raw": {
+    "ecmwf": 23.85,
+    "gfs": 22.47,
+    "gem": 22.46,
+    "icon_eu": 23.75
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Istanbul be 20°C or below on September 20?",
+      "market_id": "4667982",
+      "range": [
+        -999.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 96.0,
+      "spread": 0.0,
+      "yes_token_id": "42402317453311850833384812434475168474575117347634046817882774410819058922451",
+      "no_token_id": "32458853471402163464807183565603983692574889935224226933150558279533941187464",
+      "model_prob": 0.0051,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0035,
+      "ev": 6.0,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 21°C on September 20?",
+      "market_id": "4667983",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 27.0,
+      "spread": 0.0,
+      "yes_token_id": "12324352448577910667495365096810849356134685875328090743420332800594717040536",
+      "no_token_id": "45678730413580122170658570138613758656651607976745005639067178326119849548128",
+      "model_prob": 0.0147,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0131,
+      "ev": 0.31,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 22°C on September 20?",
+      "market_id": "4667984",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "30348961873195314778817546830105567236327563452460171387772588831966242128765",
+      "no_token_id": "81304661922822916164467576423369528253478305000121519752864805379609018043073",
+      "model_prob": 0.0754,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0578,
+      "ev": 1.312,
+      "kelly": 0.0084,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 23°C on September 20?",
+      "market_id": "4667985",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.12,
+      "no_price": 0.88,
+      "volume": 121.0,
+      "spread": 0.0,
+      "yes_token_id": "6033122952801437569630534159560583977827662916581664697315720583753255598037",
+      "no_token_id": "108158432491088351679134151613184953986585302044625630385812692587443831197480",
+      "model_prob": 0.3064,
+      "side": "YES",
+      "ask": 0.12,
+      "market_prob": 0.12,
+      "belief_prob": 0.2412,
+      "ev": 1.01,
+      "kelly": 0.0344,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 24°C on September 20?",
+      "market_id": "4667986",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.645,
+      "no_price": 0.355,
+      "volume": 701.0,
+      "spread": 0.0,
+      "yes_token_id": "47365190439326217245572388274897397336989839911706882328690849898400615350769",
+      "no_token_id": "36349645200692249798671115960288779190360710255620098044203653061384992212146",
+      "model_prob": 0.4143,
+      "side": "YES",
+      "ask": 0.645,
+      "market_prob": 0.645,
+      "belief_prob": 0.495,
+      "ev": -0.2326,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 25°C on September 20?",
+      "market_id": "4667987",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 140.0,
+      "spread": 0.0,
+      "yes_token_id": "32954551353749503181467924537426778322313647058617653219678599569838056595139",
+      "no_token_id": "4413255753509203388035268555469672130512138366174675263332364029262881559355",
+      "model_prob": 0.1465,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.1775,
+      "ev": -0.2447,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 26°C on September 20?",
+      "market_id": "4667988",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 146.0,
+      "spread": 0.0,
+      "yes_token_id": "13242255390290064884579822556407600507723019172869875659134804702391515494835",
+      "no_token_id": "68122648520390067510800306901143930967186905063536935351220321520233664815199",
+      "model_prob": 0.0289,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.0293,
+      "ev": -0.0233,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 27°C on September 20?",
+      "market_id": "4667989",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.026,
+      "no_price": 0.974,
+      "volume": 22.0,
+      "spread": 0.0,
+      "yes_token_id": "84015543056967566379194763412399301626981727995700932684711869836510417191175",
+      "no_token_id": "66828082543299239860654343726976203646585136711026376200888690025596333224739",
+      "model_prob": 0.0062,
+      "side": "YES",
+      "ask": 0.026,
+      "market_prob": 0.026,
+      "belief_prob": 0.0131,
+      "ev": -0.4962,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 29°C on September 20?",
+      "market_id": "4667991",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "78033194185622124929032575085005030227366342883617438688447173701667768776049",
+      "no_token_id": "27312699296377127578642677855606580959923526089434844397283796320453265346181",
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0022,
+      "ev": -0.6,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 30°C or higher on September 20?",
+      "market_id": "4667992",
+      "range": [
+        30.0,
+        999.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 171.0,
+      "spread": 0.0,
+      "yes_token_id": "87804149409234661932320799133649414641308923856066163707389678026752347684518",
+      "no_token_id": "36608594093387644021521438132626160193425656081502945790889556073567567532333",
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0011,
+      "ev": -0.56,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4667986",
+      "question": "Will the highest temperature in Istanbul be 24°C on September 20?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.645,
+      "model_prob": 0.4143,
+      "ev": -0.2326,
+      "market_prob": 0.645,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.64
+    },
+    {
+      "market_id": "4667986",
+      "question": "Will the highest temperature in Istanbul be 24°C on September 20? (NO)",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.355,
+      "model_prob": 0.5857,
+      "ev": 0.4225,
+      "market_prob": 0.355,
+      "role": "scenario_hedge",
+      "units": 11.01,
+      "sell_value": 0.35
+    }
+  ],
+  "total_allocated_units": 41.0,
+  "portfolio_score": -0.023501,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 5.5,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.515,
+  "confidence": 0.3682,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
