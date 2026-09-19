@@ -7,10 +7,277 @@
   "market_type": "min",
   "created_at": "2026-09-16T02:20:36.941666+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 3.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-17T06:00:00+00:00",
   "event_end_date": "2026-09-16T12:00:00Z",
-  "last_scan": "2026-09-16T02:20:36.941666+00:00",
-  "skipped_reason": "event volume 44 < min_volume 500"
+  "last_scan": "2026-09-17T02:20:43.632644+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 11.34,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 6°C or below on September 16?",
+      "market_id": "4551561",
+      "range": [
+        -999.0,
+        6.0
+      ],
+      "yes_price": 0.0145,
+      "no_price": 0.9855,
+      "volume": 115.0,
+      "spread": 0.0,
+      "yes_token_id": "85145147454427551540367021819188173767639568541808214114736191515963545896085",
+      "no_token_id": "52488611167665594524439467684141135681517574003051564538775421704450119323249",
+      "model_prob": 0.009,
+      "side": "YES",
+      "ask": 0.0145,
+      "market_prob": 0.0145,
+      "belief_prob": 0.0109,
+      "ev": -0.2483,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 7°C on September 16?",
+      "market_id": "4551562",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.009,
+      "no_price": 0.991,
+      "volume": 46.0,
+      "spread": 0.0,
+      "yes_token_id": "55628949532609601381285848066645557862209860131488131350626823736501245581246",
+      "no_token_id": "91717948826483438146910397315104016825500698193436387966461166138599930986534",
+      "model_prob": 0.0113,
+      "side": "YES",
+      "ask": 0.009,
+      "market_prob": 0.009,
+      "belief_prob": 0.0105,
+      "ev": 0.1667,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 8°C on September 16?",
+      "market_id": "4551563",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "83865221170662699068965152455201705336583479825529829879560320453633234312633",
+      "no_token_id": "82221445492743304229573494985918931288754291237866956391345437425106912339262",
+      "model_prob": 0.0288,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0257,
+      "ev": 0.285,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 9°C on September 16?",
+      "market_id": "4551564",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "15217860977497878722675563853073304643499597386307567746599631840731428601071",
+      "no_token_id": "61140880918128689386277942855752181082327641233930311098559415483521224068319",
+      "model_prob": 0.0738,
+      "side": "YES",
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.0483,
+      "ev": 47.3,
+      "kelly": 0.0118,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 11°C on September 16?",
+      "market_id": "4551566",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 35.0,
+      "spread": 0.0,
+      "yes_token_id": "58981909787841772423805691853004854177447990571981004096256754655617354918016",
+      "no_token_id": "102115954300373883852332589591932143522882722547432105138376625827798880047364",
+      "model_prob": 0.2559,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.1751,
+      "ev": 6.004,
+      "kelly": 0.0385,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 12°C on September 16?",
+      "market_id": "4551567",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 21.0,
+      "spread": 0.0,
+      "yes_token_id": "66431749755403770258004439885635730605712808837571241536538403507967744891124",
+      "no_token_id": "38812674447624366320328433632519041812414749848415496600526070020024309867195",
+      "model_prob": 0.2342,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.1785,
+      "ev": 1.38,
+      "kelly": 0.028,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 13°C on September 16?",
+      "market_id": "4551568",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.98,
+      "no_price": 0.02,
+      "volume": 14.0,
+      "spread": 0.0,
+      "yes_token_id": "45666301956675696732697190169136600240690586942721055411385969941085869635910",
+      "no_token_id": "2785645545399440886315934884258837611138977429851449927755598070660797645958",
+      "model_prob": 0.1308,
+      "side": "YES",
+      "ask": 0.98,
+      "market_prob": 0.98,
+      "belief_prob": 0.428,
+      "ev": -0.5633,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 14°C on September 16?",
+      "market_id": "4551569",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 248.0,
+      "spread": 0.0,
+      "yes_token_id": "89908078050724818368804185833594477089986111923114728116654475786187468402648",
+      "no_token_id": "80755981745426372965779493649166730225183324710882186259440130076916976876266",
+      "model_prob": 0.0549,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0359,
+      "ev": 70.8,
+      "kelly": 0.0089,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 15°C on September 16?",
+      "market_id": "4551570",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 73.0,
+      "spread": 0.0,
+      "yes_token_id": "58678185785249454864360201360492541383507700206142236935384732907285699737049",
+      "no_token_id": "112933834036506708231146627409260913863644228323956232493739217583901700085598",
+      "model_prob": 0.0213,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.014,
+      "ev": 27.0,
+      "kelly": 0.0034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 16°C or higher on September 16?",
+      "market_id": "4551571",
+      "range": [
+        16.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "56158677726421563065078437385534955477201966285868204967123505382292082000543",
+      "no_token_id": "106233180564144577010188262720673571102462621965072666228667969487136096636699",
+      "model_prob": 0.0156,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0103,
+      "ev": 19.6,
+      "kelly": 0.0025,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4551568",
+      "question": "Will the lowest temperature in Mexico City be 13°C on September 16?",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "YES",
+      "price": 0.98,
+      "model_prob": 0.1308,
+      "ev": -0.5633,
+      "market_prob": 0.98,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.96
+    },
+    {
+      "market_id": "4551568",
+      "question": "Will the lowest temperature in Mexico City be 13°C on September 16? (NO)",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "NO",
+      "price": 0.02,
+      "model_prob": 0.8692,
+      "ev": 27.6,
+      "market_prob": 0.02,
+      "role": "scenario_hedge",
+      "units": 0.41,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 30.4,
+  "portfolio_score": -0.050991,
+  "worst_case_loss_frac": 0.0991,
+  "best_case_pnl_units": 0.2,
+  "worst_case_pnl_units": -9.91,
+  "success_probability": 0.5017,
+  "confidence": 0.5985,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

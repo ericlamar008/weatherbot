@@ -1,0 +1,113 @@
+{
+  "city": "milan",
+  "city_name": "Milan",
+  "date": "2026-09-18",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-17T02:20:43.632644+00:00",
+  "committed_allocation": null,
+  "hours_left": 19.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-18T22:00:00+00:00",
+  "event_end_date": "2026-09-18T12:00:00Z",
+  "last_scan": "2026-09-18T02:20:39.080116+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 16.76,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 20°C on September 18?",
+      "market_id": "4605603",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1277.0,
+      "spread": 0.0,
+      "yes_token_id": "19999424310789370278879937571106094779900026361254909650742807688934587640330",
+      "no_token_id": "64706199616521969943466353771861875448132491670206337510193962249995046962441",
+      "model_prob": 0.0317,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0208,
+      "ev": 40.6,
+      "kelly": 0.0051,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 21°C on September 18?",
+      "market_id": "4605604",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "83716909204555178968861277279880765054763855990490284696274746260874679694988",
+      "no_token_id": "66944006745111751088986815761493787671882245540628948190554874938965483151273",
+      "model_prob": 0.0124,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0082,
+      "ev": 15.4,
+      "kelly": 0.0019,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 22°C or higher on September 18?",
+      "market_id": "4605605",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "4351848134149694440982202915532019957622502093645665881798616962719131633816",
+      "no_token_id": "17734642608335299797326165116355941668626704461609944185639591396608613835585",
+      "model_prob": 0.0098,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0065,
+      "ev": 12.0,
+      "kelly": 0.0015,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4605603",
+      "question": "Will the lowest temperature in Milan be 20°C on September 18?",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "side": "YES",
+      "price": 0.0005,
+      "model_prob": 0.0317,
+      "ev": 40.6,
+      "market_prob": 0.0005,
+      "role": "main_signal",
+      "units": 6.3,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 6.3,
+  "portfolio_score": 0.838646,
+  "worst_case_loss_frac": 0.063,
+  "best_case_pnl_units": 12593.7,
+  "worst_case_pnl_units": -6.3,
+  "success_probability": 0.1841,
+  "confidence": 0.6911,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

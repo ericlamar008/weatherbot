@@ -1,0 +1,283 @@
+{
+  "city": "toronto",
+  "city_name": "Toronto",
+  "date": "2026-09-18",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-17T02:20:43.632644+00:00",
+  "committed_allocation": null,
+  "hours_left": 1.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-19T04:00:00+00:00",
+  "event_end_date": "2026-09-18T12:00:00Z",
+  "last_scan": "2026-09-19T02:20:39.180344+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 13.25,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 8°C or below on September 18?",
+      "market_id": "4612902",
+      "range": [
+        -999.0,
+        8.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "33848153051489952464573089318505491061823823727677638451845773820124358358387",
+      "no_token_id": "41891449893986284908717284618690357664439177869651428869622475744311457193654",
+      "model_prob": 0.0097,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0065,
+      "ev": 12.0,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 9°C on September 18?",
+      "market_id": "4612903",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "108006971037983659099934532386858012389748279169042246074968493463904703853318",
+      "no_token_id": "55416793180238419522552454599623623497974596722626173012996046753712011404688",
+      "model_prob": 0.0122,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0081,
+      "ev": 15.2,
+      "kelly": 0.0019,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 10°C on September 18?",
+      "market_id": "4612904",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 52.0,
+      "spread": 0.0,
+      "yes_token_id": "105581917166975776509346984948444419936708244008231624678389984681880458202194",
+      "no_token_id": "60700283609919479338760819802437000297693583029744369798956246501682224793565",
+      "model_prob": 0.0314,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0206,
+      "ev": 40.2,
+      "kelly": 0.005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 11°C on September 18?",
+      "market_id": "4612905",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 61.0,
+      "spread": 0.0,
+      "yes_token_id": "109311536514323815052356578170950530975561104146006709977675053337797102195242",
+      "no_token_id": "84951372709048596237108876322751526001346432160592937543303041747735228362181",
+      "model_prob": 0.08,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0522,
+      "ev": 103.4,
+      "kelly": 0.0129,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 12°C on September 18?",
+      "market_id": "4612906",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "110636525229087024920985625175901124234336289406023625962259885455427867385289",
+      "no_token_id": "19172713845511739029245849394664204791954332203714115519922004071544106494621",
+      "model_prob": 0.1743,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.1152,
+      "ev": 19.9455,
+      "kelly": 0.0276,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 14°C on September 18?",
+      "market_id": "4612908",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.51,
+      "no_price": 0.49,
+      "volume": 16.0,
+      "spread": 0.0,
+      "yes_token_id": "105782403328333528230360353846891070988125676509532921256806240228983028121974",
+      "no_token_id": "89677244666829098982131822538006883584943705724421863417850911730928931454864",
+      "model_prob": 0.2262,
+      "side": "YES",
+      "ask": 0.51,
+      "market_prob": 0.51,
+      "belief_prob": 0.3255,
+      "ev": -0.3618,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 15°C on September 18?",
+      "market_id": "4612909",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "95649627581154294032817434222099950711474224037472039868586346303983680606451",
+      "no_token_id": "64506534789216010554549239570120977177255563746408977017474403261917065871834",
+      "model_prob": 0.122,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0795,
+      "ev": 158.0,
+      "kelly": 0.0198,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 16°C on September 18?",
+      "market_id": "4612910",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 147.0,
+      "spread": 0.0,
+      "yes_token_id": "20728997369077810131332865806418455249936032264827704482641408408943913556784",
+      "no_token_id": "29352894650470509787053550314412622085856900600371437496236053510549411687439",
+      "model_prob": 0.0505,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.033,
+      "ev": 65.0,
+      "kelly": 0.0081,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 17°C on September 18?",
+      "market_id": "4612911",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "16311354090811128918064498584273146794760809024717783285561142877487501734823",
+      "no_token_id": "9654234737511591532284208106818947292854090147704155131615361425827812046877",
+      "model_prob": 0.0195,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0129,
+      "ev": 24.8,
+      "kelly": 0.0031,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 18°C or higher on September 18?",
+      "market_id": "4612912",
+      "range": [
+        18.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 16.0,
+      "spread": 0.0,
+      "yes_token_id": "92652764928373329762144541148000740925341192358918032438749859624740393035178",
+      "no_token_id": "7522728905673575452093964634141666106367280306329516017417150011669478962564",
+      "model_prob": 0.0144,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0095,
+      "ev": 18.0,
+      "kelly": 0.0023,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4612908",
+      "question": "Will the lowest temperature in Toronto be 14°C on September 18?",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "side": "YES",
+      "price": 0.51,
+      "model_prob": 0.2262,
+      "ev": -0.3618,
+      "market_prob": 0.51,
+      "role": "main_signal",
+      "units": 25.3,
+      "sell_value": 0.03
+    },
+    {
+      "market_id": "4612908",
+      "question": "Will the lowest temperature in Toronto be 14°C on September 18? (NO)",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "side": "NO",
+      "price": 0.49,
+      "model_prob": 0.7738,
+      "ev": 0.3765,
+      "market_prob": 0.49,
+      "role": "scenario_hedge",
+      "units": 14.7,
+      "sell_value": 0.01
+    }
+  ],
+  "total_allocated_units": 40.0,
+  "portfolio_score": 0.014767,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 9.61,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.6095,
+  "confidence": 0.8837,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
