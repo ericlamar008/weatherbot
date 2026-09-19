@@ -23,7 +23,7 @@
         12.0,
         12.0
       ],
-      "yes_price": 0.01,
+      "yes_price": 0.0,
       "no_price": 0.99,
       "volume": 105.0,
       "spread": 0.0,
@@ -33,7 +33,7 @@
       "side": "YES",
       "ask": 0.01,
       "market_prob": 0.01,
-      "belief_prob": 0.1736,
+      "belief_prob": 0.1701,
       "ev": 16.36,
       "kelly": 0.0413,
       "sell_value": null
@@ -45,7 +45,7 @@
         13.0,
         13.0
       ],
-      "yes_price": 0.875,
+      "yes_price": 1.0,
       "no_price": 0.125,
       "volume": 55.0,
       "spread": 0.0,
@@ -55,7 +55,7 @@
       "side": "YES",
       "ask": 0.875,
       "market_prob": 0.875,
-      "belief_prob": 0.4496,
+      "belief_prob": 0.4934,
       "ev": -0.4862,
       "kelly": 0.0,
       "sell_value": null
@@ -67,7 +67,7 @@
         14.0,
         14.0
       ],
-      "yes_price": 0.0005,
+      "yes_price": 0.0,
       "no_price": 0.9995,
       "volume": 485.0,
       "spread": 0.0,
@@ -77,7 +77,7 @@
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0758,
+      "belief_prob": 0.0756,
       "ev": 150.6,
       "kelly": 0.0188,
       "sell_value": null
@@ -89,7 +89,7 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.0005,
+      "yes_price": 0.0,
       "no_price": 0.9995,
       "volume": 163.0,
       "spread": 0.0,
@@ -99,7 +99,7 @@
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0312,
+      "belief_prob": 0.031,
       "ev": 61.4,
       "kelly": 0.0077,
       "sell_value": null
@@ -111,7 +111,7 @@
         16.0,
         999.0
       ],
-      "yes_price": 0.0005,
+      "yes_price": 0.0,
       "no_price": 0.9995,
       "volume": 16.0,
       "spread": 0.0,
@@ -121,7 +121,7 @@
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0211,
+      "belief_prob": 0.0209,
       "ev": 41.2,
       "kelly": 0.0052,
       "sell_value": null
@@ -169,5 +169,6 @@
   "success_probability": 0.6121,
   "confidence": 0.7266,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "last_price_refresh": "2026-09-19T19:37:19.200755+00:00"
 }
