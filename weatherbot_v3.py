@@ -74,7 +74,7 @@ import forecasting as fc
 import strategy as strat
 import resolution as res
 import dashboard as dash
-from clob_utils import get_clob_book_bid, get_gamma_event_prices
+from clob_utils import get_clob_book_bid, get_gamma_event_prices, get_gamma_event_prices_min
 import export_accuracy_report as accuracy_report
 
 # =============================================================================
@@ -799,6 +799,37 @@ def refresh_all_locked_markets(now):
         mkt["last_scan"] = now.isoformat()
         save_market(mkt)
 
+def refresh_all_locked_markets_min(now):
+    """معادل کامل refresh_all_locked_markets ولی برای بازار کمینه -- تنها
+    فرقش استفاده از load_all_min_markets/get_polymarket_event_for_market_date_min/
+    save_market_min است. بدون این تابع، hours_left بازارهای کمینه فقط یک‌بار
+    در لحظهٔ discover_new_min_signals محاسبه و برای همیشه یخ‌زده می‌ماند."""
+    open_markets = [m for m in load_all_min_markets() if m.get("status") != "resolved"]
+    if not open_markets:
+        return
+    with ThreadPoolExecutor(max_workers=EVENT_FETCH_WORKERS) as pool:
+        future_to_mkt = {
+            pool.submit(get_polymarket_event_for_market_date_min, m["city"], m["date"]): m
+            for m in open_markets
+        }
+        events_by_mkt_key = {}
+        for future in as_completed(future_to_mkt):
+            mkt = future_to_mkt[future]
+            key = (mkt["city"], mkt["date"])
+            try:
+                events_by_mkt_key[key] = future.result()
+            except Exception:
+                events_by_mkt_key[key] = None
+    for mkt in open_markets:
+        loc = LOCATIONS.get(mkt.get("city"))
+        if not loc:
+            continue
+        event = events_by_mkt_key.get((mkt["city"], mkt["date"]))
+        end_date = event.get("endDate", "") if event else None
+        _refresh_local_day_timing(mkt, loc, now, end_date)
+        mkt["last_scan"] = now.isoformat()
+        save_market_min(mkt)
+
 def refresh_open_market_info(now):
     """Phase 3 (heartbeat سبک): بازخوانی قیمت/پیش‌بینی بازارهای باز از صفر
     -- بدون strat.build_portfolio، بدون سایزینگ.
@@ -907,6 +938,114 @@ def refresh_open_market_info(now):
 
     return refreshed
 
+def refresh_open_market_info_min(now):
+    """معادل کامل refresh_open_market_info ولی برای بازار کمینه -- تنها
+    فرق‌ها: load_all_min_markets/get_polymarket_event_for_market_date_min/
+    save_market_min، و fc.build_combined_distribution_min/
+    build_calibrated_distribution_min (به‌جای نسخهٔ full/شادو) -- دقیقاً
+    همان الگویی که discover_new_min_signals از قبل برای بازار کمینه
+    استفاده می‌کند؛ forecast_mean_shadow/model_means_raw عمداً اینجا هم
+    ردیابی نمی‌شوند، چون بازار کمینه از ابتدا این دو فیلد را نداشته است.
+
+    بدون این تابع، model_prob/yes_price/EV/full_distribution بازار کمینه
+    فقط یک‌بار در روز (هنگام discover_new_min_signals) محاسبه می‌شد و تا
+    اسکن سنگین بعدی هرگز در طول روز به‌روز نمی‌شد."""
+    open_markets = [m for m in load_all_min_markets() if m.get("status") == "open"]
+    if not open_markets:
+        return 0
+
+    merged_params = strat.get_merged_params(STRATEGY_PARAMS)
+
+    with ThreadPoolExecutor(max_workers=EVENT_FETCH_WORKERS) as pool:
+        future_to_mkt = {
+            pool.submit(get_polymarket_event_for_market_date_min, m["city"], m["date"]): m
+            for m in open_markets
+        }
+        events_by_key = {}
+        for future in as_completed(future_to_mkt):
+            mkt = future_to_mkt[future]
+            key = (mkt["city"], mkt["date"])
+            try:
+                events_by_key[key] = future.result()
+            except Exception:
+                events_by_key[key] = None
+
+    refreshed = 0
+    for mkt in open_markets:
+        loc = LOCATIONS.get(mkt["city"])
+        if not loc:
+            continue
+
+        event = events_by_key.get((mkt["city"], mkt["date"]))
+        end_date = event.get("endDate", "") if event else None
+        _refresh_local_day_timing(mkt, loc, now, end_date)
+        mkt["last_lite_refresh"] = now.isoformat()
+        save_market_min(mkt)
+
+        local_dates = _local_dates_for_city(now, loc, 4)
+        try:
+            horizon_days = local_dates.index(mkt["date"])
+        except ValueError:
+            continue
+
+        if not event:
+            continue
+
+        outcomes = fetch_outcomes(event)
+        if not outcomes:
+            continue
+
+        tradable_outcomes = [d for d in outcomes if d["volume"] > 0]
+        if not tradable_outcomes:
+            continue
+
+        try:
+            members = fc.build_combined_distribution_min(mkt["city"], loc, mkt["date"])
+            mean, sigma = fc.build_calibrated_distribution_min(members, mkt["city"], horizon_days, loc["unit"])
+        except Exception:
+            continue
+
+        if mean is None:
+            continue
+
+        dist = fc.full_bucket_distribution(mean, sigma, tradable_outcomes)
+        tradable_dist = [d for d in dist if d["volume"] > 0]
+        if not tradable_dist:
+            continue
+
+        candidates = strat.build_candidate_set(tradable_dist, merged_params)
+        full_distribution = sorted(
+            [c for c in candidates if c["side"] == "YES"], key=lambda x: x["range"][0]
+        )
+        if not full_distribution:
+            continue
+
+        old_by_id = {
+            str(b.get("market_id")): b
+            for b in (mkt.get("full_distribution") or [])
+        }
+        for c in full_distribution:
+            old = old_by_id.get(str(c.get("market_id")))
+            if old is None:
+                continue
+            old_model = old.get("model_prob")
+            new_model = c.get("model_prob")
+            if old_model is not None and new_model is not None:
+                c["model_prob_change"] = round(new_model - old_model, 4)
+            old_price = old.get("yes_price")
+            new_price = c.get("yes_price")
+            if old_price is not None and new_price is not None:
+                c["yes_price_change"] = round(new_price - old_price, 4)
+
+        mkt["forecast_mean"] = mean
+        mkt["sigma"] = sigma
+        mkt["full_distribution"] = full_distribution
+        mkt["last_lite_refresh"] = now.isoformat()
+        save_market_min(mkt)
+        refreshed += 1
+
+    return refreshed
+
 def refresh_all_open_market_prices(now):
     """فاز ۳ نقشه‌راه، زیرگام ۳-الف: فقط قیمت بازار (yes_price) همهٔ
     باکت‌های موجود در full_distribution همهٔ مارکت‌های open را از Gamma API
@@ -967,6 +1106,68 @@ def refresh_all_open_market_prices(now):
             refreshed += 1
 
     return refreshed
+def refresh_all_open_market_prices_min(now):
+    """معادل کامل refresh_all_open_market_prices ولی برای بازار کمینه --
+    فقط yes_price/belief_prob هر باکت را از get_gamma_event_prices_min
+    تازه می‌کند، بدون فراخوانی هواشناسی. بدون این تابع، مسیر سبک‌ترین و
+    پرتکرارترین اسکن (run_price_refresh) اصلاً بازار کمینه را لمس
+    نمی‌کرد."""
+    open_markets = [m for m in load_all_min_markets() if m.get("status") == "open"]
+    if not open_markets:
+        return 0
+
+    merged_params = strat.get_merged_params(STRATEGY_PARAMS)
+
+    event_keys = {(m["city"], m["date"]) for m in open_markets}
+
+    def _fetch_prices_min(key):
+        city, date = key
+        try:
+            dt = datetime.strptime(date, "%Y-%m-%d")
+            return get_gamma_event_prices_min(city, MONTHS[dt.month - 1], dt.day, dt.year)
+        except Exception:
+            return {}
+
+    prices_by_event = {}
+    with ThreadPoolExecutor(max_workers=EVENT_FETCH_WORKERS) as pool:
+        future_to_key = {pool.submit(_fetch_prices_min, key): key for key in event_keys}
+        for future in as_completed(future_to_key):
+            key = future_to_key[future]
+            try:
+                prices_by_event[key] = future.result()
+            except Exception:
+                prices_by_event[key] = {}
+
+    refreshed = 0
+    for mkt in open_markets:
+        key = (mkt["city"], mkt["date"])
+        prices = prices_by_event.get(key)
+        if not prices:
+            continue
+
+        full_dist = mkt.get("full_distribution")
+        if not full_dist:
+            continue
+
+        changed = False
+        for bucket in full_dist:
+            mid = str(bucket.get("market_id", ""))
+            new_yes_price = prices.get(mid)
+            if new_yes_price is None:
+                continue
+            bucket["yes_price"] = round(new_yes_price, 4)
+            model_prob = bucket.get("model_prob")
+            bucket["belief_prob"] = strat.fuse_belief(model_prob, new_yes_price, merged_params)
+            changed = True
+
+        if changed:
+            mkt["full_distribution"] = full_dist
+            mkt["last_price_refresh"] = now.isoformat()
+            save_market_min(mkt)
+            refreshed += 1
+
+    return refreshed
+
 
 LAST_SCAN_FILE = DATA_DIR / "last_scan.json"
 
@@ -1155,6 +1356,7 @@ def scan_and_update():
     new_positions = discover_new_signals(now, state)
     new_min_positions = discover_new_min_signals(now, state)
     refresh_all_locked_markets(now)
+    refresh_all_locked_markets_min(now)
     committed = apply_lock_requests(now)
     resolved_count = resolve_expired_markets(state)
     resolved_min_count = resolve_expired_min_markets(state)
@@ -1200,6 +1402,7 @@ def run_lite_scan():
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] اسکن سبک -- تازه‌سازی اطلاعات {len(LOCATIONS)} شهر...")
 
     refreshed = refresh_open_market_info(now)
+    refresh_open_market_info_min(now)
     state = load_state()
     resolved_count = resolve_expired_markets(state)
     resolved_min_count = resolve_expired_min_markets(state)
@@ -1228,6 +1431,7 @@ def run_price_refresh():
     now = datetime.now(timezone.utc)
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] آپدیت سبک قیمت پنل -- بدون فراخوانی هواشناسی...")
     refreshed = refresh_all_open_market_prices(now)
+    refresh_all_open_market_prices_min(now)
     print(f"  قیمت {refreshed} بازار تازه شد.")
 
 def run_loop():

@@ -533,6 +533,19 @@ def _load_market_by_key(city, date):
         return None
 
 
+def _load_market_by_key_min(city, date):
+    """معادل _load_market_by_key ولی برای فایل بازار کمینه -- برای رفع باگ
+    سکشن قفل‌های فعال که تا این پچ همیشه فایل بیشینه را می‌خواند، حتی
+    برای قفل‌های واقعاً کمینه (market_type == "min")."""
+    p = MARKETS_DIR / f"{city}_{date}_min.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
 def _locked_signals_section_html(locks):
     """سکشن مجزا و قابل‌اسکرول بالای صفحه که همهٔ سیگنال‌های قفل‌شدهٔ فعال
     را نشان می‌دهد."""
@@ -546,8 +559,9 @@ def _locked_signals_section_html(locks):
     for l in sorted(open_locks, key=lambda x: (x.get("city", ""), x.get("date", ""))):
         city = l.get("city", "")
         date = l.get("date", "")
+        is_min = l.get("market_type") == "min"
 
-        mkt = _load_market_by_key(city, date)
+        mkt = _load_market_by_key_min(city, date) if is_min else _load_market_by_key(city, date)
 
         if mkt is not None and mkt.get("status") in RESOLVED_LIKE_STATUSES:
             continue
@@ -558,7 +572,7 @@ def _locked_signals_section_html(locks):
         bucket_label = _find_locked_bucket_label(mkt, l.get("market_id"), unit_sym)
 
         name = LOCATIONS.get(city, {}).get("name", city)
-        link = _build_polymarket_url(city, date)
+        link = _build_polymarket_url_min(city, date) if is_min else _build_polymarket_url(city, date)
         name_html = f'<a href="{link}" target="_blank" rel="noopener">{name}</a>'
 
         entry = l.get("entry_price")
