@@ -6,10 +6,175 @@
   "status": "open",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T05:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "ensemble forecast unavailable (mean is None)"
+  "skipped_reason": "ensemble forecast unavailable (mean is None)",
+  "last_lite_refresh": "2026-09-19T08:20:41.025798+00:00",
+  "forecast_mean": 99.59,
+  "sigma": 1.98,
+  "forecast_mean_shadow": 98.84,
+  "model_means_raw": {
+    "ecmwf": 98.54,
+    "gfs": 100.25,
+    "gem": 96.51
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Dallas be 89°F or below on September 20?",
+      "market_id": "4675536",
+      "range": [
+        -999.0,
+        89.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "90389415310307915702925328294516076589189047352946740272290030897525810251401",
+      "no_token_id": "108603219472523986197578223027279181078108582884138606492232453298804361613412",
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0051,
+      "ev": -0.15,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be between 94-95°F on September 20?",
+      "market_id": "4675539",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 93.0,
+      "spread": 0.0,
+      "yes_token_id": "68253854274289554055044909355122147979092834158661258706346111573677496785822",
+      "no_token_id": "35352767517766550362197393585780709866331454505134616261248252442049839762981",
+      "model_prob": 0.0377,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.056,
+      "ev": -0.3778,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be between 96-97°F on September 20?",
+      "market_id": "4675540",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.395,
+      "no_price": 0.605,
+      "volume": 339.0,
+      "spread": 0.0,
+      "yes_token_id": "109515721710862601544051920344660528739024582399070877524789310700275626148543",
+      "no_token_id": "105128863252579528660838265951125253505015987027324483040986069325134126033133",
+      "model_prob": 0.1427,
+      "side": "YES",
+      "ask": 0.395,
+      "market_prob": 0.395,
+      "belief_prob": 0.231,
+      "ev": -0.4152,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be between 98-99°F on September 20?",
+      "market_id": "4675541",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 646.0,
+      "spread": 0.0,
+      "yes_token_id": "94563961871606514390909523641422740012152441159150980092167742075812271660355",
+      "no_token_id": "103997868718123157957921472328839164544107320250765908095109532268644818295566",
+      "model_prob": 0.3854,
+      "side": "YES",
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.394,
+      "ev": -0.039,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be between 100-101°F on September 20?",
+      "market_id": "4675542",
+      "range": [
+        100.0,
+        101.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 52.0,
+      "spread": 0.0,
+      "yes_token_id": "100944919038693731838113076921567565793028563016177476972755009382528457430969",
+      "no_token_id": "103272036102012344797525276775272632020427912095053608131391269513165691857788",
+      "model_prob": 0.4055,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.3003,
+      "ev": 1.86,
+      "kelly": 0.0546,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be between 106-107°F on September 20?",
+      "market_id": "4675545",
+      "range": [
+        106.0,
+        107.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 166.0,
+      "spread": 0.0,
+      "yes_token_id": "10357893281061599466863865170160661830241476937193956187223075355465607976230",
+      "no_token_id": "31829226215018138619503466345353514677247595415897011013444737787021064536496",
+      "model_prob": 0.0116,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0095,
+      "ev": 0.7273,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Dallas be 108°F or higher on September 20?",
+      "market_id": "4675546",
+      "range": [
+        108.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "62167599127100652688315471447320614556872699834419095834671990735939224457110",
+      "no_token_id": "71330738867231123159342394136262945531693568815309573401408648603337373621978",
+      "model_prob": 0.0125,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0083,
+      "ev": 15.6,
+      "kelly": 0.002,
+      "sell_value": null
+    }
+  ]
 }

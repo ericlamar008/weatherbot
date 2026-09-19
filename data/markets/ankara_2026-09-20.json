@@ -6,20 +6,20 @@
   "status": "open",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T21:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
   "horizon_days": 1,
-  "forecast_mean": 23.93,
+  "forecast_mean": 23.85,
   "sigma": 0.712,
-  "forecast_mean_shadow": 23.84,
+  "forecast_mean_shadow": 23.76,
   "model_means_raw": {
     "ecmwf": 23.5,
-    "gfs": 23.47,
-    "gem": 23.48,
-    "icon_eu": 23.15
+    "gfs": 23.26,
+    "gem": 23.24,
+    "icon_eu": 23.27
   },
   "full_distribution": [
     {
@@ -35,14 +35,16 @@
       "spread": 0.0,
       "yes_token_id": "110463426020396394733622730736725968388041949643821487089807497632597257403180",
       "no_token_id": "85909722843119856489431080291419048931751243341382927663221033383350100537785",
-      "model_prob": 0.0024,
+      "model_prob": 0.0027,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0017,
-      "ev": 2.4,
-      "kelly": 0.0003,
-      "sell_value": null
+      "belief_prob": 0.0019,
+      "ev": 2.8,
+      "kelly": 0.0004,
+      "sell_value": null,
+      "model_prob_change": 0.0003,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 21°C on September 20?",
@@ -57,14 +59,16 @@
       "spread": 0.0,
       "yes_token_id": "85990920713430740537202492187971895826649485201636998012737830360456516333637",
       "no_token_id": "69199133785454545775812258022929703993538999743329383001753946374722375261298",
-      "model_prob": 0.0071,
+      "model_prob": 0.0081,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0048,
-      "ev": 8.6,
-      "kelly": 0.0011,
-      "sell_value": null
+      "belief_prob": 0.0054,
+      "ev": 9.8,
+      "kelly": 0.0012,
+      "sell_value": null,
+      "model_prob_change": 0.001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 22°C on September 20?",
@@ -73,20 +77,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.0155,
-      "no_price": 0.998,
-      "volume": 888.0,
+      "yes_price": 0.015,
+      "no_price": 0.985,
+      "volume": 1285.0,
       "spread": 0.0,
       "yes_token_id": "82028176570843550917812630470087902282663161823251223858136083587616676673589",
       "no_token_id": "50463676464874225268244104631020343654577030705089700586497659868198401740136",
-      "model_prob": 0.0409,
+      "model_prob": 0.0475,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
-      "belief_prob": 0.032,
-      "ev": 12.65,
-      "kelly": 0.0063,
-      "sell_value": null
+      "ask": 0.015,
+      "market_prob": 0.015,
+      "belief_prob": 0.0361,
+      "ev": 1.4067,
+      "kelly": 0.0054,
+      "sell_value": null,
+      "model_prob_change": 0.0066,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Ankara be 23°C on September 20?",
@@ -96,19 +102,21 @@
         23.0
       ],
       "yes_price": 0.07,
-      "no_price": 0.915,
-      "volume": 1303.0,
+      "no_price": 0.93,
+      "volume": 1333.0,
       "spread": 0.0,
       "yes_token_id": "45415627953074162166656354453477944639116114612659888459384241501523979880442",
       "no_token_id": "53095528858074861088155110060382240989307233277649074587017945343093937918958",
-      "model_prob": 0.2357,
+      "model_prob": 0.2637,
       "side": "YES",
-      "ask": 0.085,
-      "market_prob": 0.085,
-      "belief_prob": 0.1777,
-      "ev": 1.1529,
-      "kelly": 0.0268,
-      "sell_value": null
+      "ask": 0.07,
+      "market_prob": 0.07,
+      "belief_prob": 0.1959,
+      "ev": 1.7986,
+      "kelly": 0.0338,
+      "sell_value": null,
+      "model_prob_change": 0.028,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 24°C on September 20?",
@@ -117,20 +125,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.48,
-      "no_price": 0.57,
-      "volume": 2136.0,
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 2345.0,
       "spread": 0.0,
       "yes_token_id": "44142720364371017591956551753461762140066417841699246832667027711553286516171",
       "no_token_id": "102891692989070240574267169912325090684285442043257114908622115427381993542398",
-      "model_prob": 0.484,
+      "model_prob": 0.4765,
       "side": "YES",
-      "ask": 0.43,
-      "market_prob": 0.43,
-      "belief_prob": 0.4826,
-      "ev": 0.0816,
-      "kelly": 0.0154,
-      "sell_value": null
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.4795,
+      "ev": -0.0113,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": -0.0075,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Ankara be 25°C on September 20?",
@@ -140,19 +150,21 @@
         25.0
       ],
       "yes_price": 0.45,
-      "no_price": 0.485,
-      "volume": 2405.0,
+      "no_price": 0.55,
+      "volume": 2575.0,
       "spread": 0.0,
       "yes_token_id": "86468671748624250281249424433873818300148948090994430539938795793202735152984",
       "no_token_id": "81898612558426443552308079371783770522759823924540174492112507816012891053958",
-      "model_prob": 0.1906,
+      "model_prob": 0.1674,
       "side": "YES",
-      "ask": 0.515,
-      "market_prob": 0.515,
-      "belief_prob": 0.2814,
-      "ev": -0.4095,
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.2663,
+      "ev": -0.4082,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0232,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 26°C on September 20?",
@@ -167,14 +179,16 @@
       "spread": 0.0,
       "yes_token_id": "9917256084488227174982847910758406928216031755354373092862582760904709471660",
       "no_token_id": "77041848698417639755316236137489814139028607897323444889544695185856757192769",
-      "model_prob": 0.0316,
+      "model_prob": 0.0273,
       "side": "YES",
       "ask": 0.01,
       "market_prob": 0.01,
-      "belief_prob": 0.024,
-      "ev": 1.4,
-      "kelly": 0.0035,
-      "sell_value": null
+      "belief_prob": 0.0212,
+      "ev": 1.12,
+      "kelly": 0.0028,
+      "sell_value": null,
+      "model_prob_change": -0.0043,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 27°C on September 20?",
@@ -189,14 +203,16 @@
       "spread": 0.0,
       "yes_token_id": "31252339636725947548508387516634191335217260196140606220081676661000026688753",
       "no_token_id": "43873937216676928676603237641499257458475028836447010250217477867795661613226",
-      "model_prob": 0.0057,
+      "model_prob": 0.005,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0039,
-      "ev": 6.8,
-      "kelly": 0.0009,
-      "sell_value": null
+      "belief_prob": 0.0034,
+      "ev": 5.8,
+      "kelly": 0.0007,
+      "sell_value": null,
+      "model_prob_change": -0.0007,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 28°C on September 20?",
@@ -211,14 +227,16 @@
       "spread": 0.0,
       "yes_token_id": "73803456233756587027124620389980815559391915981110627164991879784645415116988",
       "no_token_id": "9010928463080924632133938628379903073203135641830854692334537638820209043156",
-      "model_prob": 0.0013,
+      "model_prob": 0.0012,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 29°C on September 20?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 30°C or higher on September 20?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -324,5 +346,6 @@
   "confidence": 0.0196,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-09-19T08:07:55.904645+00:00"
+  "last_price_refresh": "2026-09-19T08:07:55.904645+00:00",
+  "last_lite_refresh": "2026-09-19T08:20:41.025798+00:00"
 }
