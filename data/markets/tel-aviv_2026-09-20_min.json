@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 24.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T21:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 112 < min_volume 500"
+  "skipped_reason": "event volume 112 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 21.27,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 20°C on September 20?",
+      "market_id": "4667153",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.21,
+      "no_price": 0.79,
+      "volume": 112.0,
+      "spread": 0.0,
+      "yes_token_id": "68450241510156171043271133215791448412230428582831841771924392813421288427653",
+      "no_token_id": "3869655242677882768699435320940366508020576537909169197506819214957992087776",
+      "model_prob": 0.5814,
+      "side": "YES",
+      "ask": 0.21,
+      "market_prob": 0.21,
+      "belief_prob": 0.4514,
+      "ev": 1.1495,
+      "kelly": 0.0764,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 23°C on September 20?",
+      "market_id": "4667156",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "95124028093595967601536554593300740070320690036019559842542127735078992095089",
+      "no_token_id": "12036125781332720233915313459358093214610028241631058559576075807644239262",
+      "model_prob": 0.4186,
+      "side": "YES",
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.3946,
+      "ev": 0.1274,
+      "kelly": 0.0172,
+      "sell_value": null
+    }
+  ]
 }

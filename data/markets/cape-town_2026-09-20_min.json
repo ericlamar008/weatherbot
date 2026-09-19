@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 25.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T22:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 301 < min_volume 500"
+  "skipped_reason": "event volume 301 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 15.33,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 20°C or higher on September 20?",
+      "market_id": "4667508",
+      "range": [
+        20.0,
+        999.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 301.0,
+      "spread": 0.0,
+      "yes_token_id": "8654720042229941401652444252840070093729372608348715777255835821243918352045",
+      "no_token_id": "91425890529117644483827499873319720615107229698808662793769734786759655211839",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.6511,
+      "ev": 216.0333,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 24.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T21:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 175 < min_volume 500"
+  "skipped_reason": "event volume 175 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 28.17,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 30°C on September 20?",
+      "market_id": "4667493",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.515,
+      "no_price": 0.485,
+      "volume": 49.0,
+      "spread": 0.0,
+      "yes_token_id": "109123268667509575174845151064285431243108590435663989159500372407649005704437",
+      "no_token_id": "74178413289325217690336381245465346827223681017200001870932451526240724399028",
+      "model_prob": 0.7095,
+      "side": "YES",
+      "ask": 0.515,
+      "market_prob": 0.515,
+      "belief_prob": 0.6414,
+      "ev": 0.2454,
+      "kelly": 0.0652,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 31°C on September 20?",
+      "market_id": "4667494",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.375,
+      "no_price": 0.625,
+      "volume": 165.0,
+      "spread": 0.0,
+      "yes_token_id": "80647591175219183228977572343339988472644516127852798253828706100817952214588",
+      "no_token_id": "69404218526999117144069707703355473314631863918801501123316137415536597552297",
+      "model_prob": 0.2905,
+      "side": "YES",
+      "ask": 0.375,
+      "market_prob": 0.375,
+      "belief_prob": 0.3201,
+      "ev": -0.1464,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

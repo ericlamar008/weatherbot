@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 51.7,
+  "hours_left": 33.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T06:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 31 < min_volume 500"
+  "skipped_reason": "event volume 31 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 53.84,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 50-51°F on September 20?",
+      "market_id": "4675229",
+      "range": [
+        50.0,
+        51.0
+      ],
+      "yes_price": 0.24,
+      "no_price": 0.76,
+      "volume": 2.0,
+      "spread": 0.0,
+      "yes_token_id": "30396275936527590243059632670545726277865282571626272252894776484063599681964",
+      "no_token_id": "28458785591615821551144313803528376815609326397436996149059657992500833519164",
+      "model_prob": 0.4255,
+      "side": "YES",
+      "ask": 0.24,
+      "market_prob": 0.24,
+      "belief_prob": 0.3606,
+      "ev": 0.5025,
+      "kelly": 0.0397,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 56-57°F on September 20?",
+      "market_id": "4675232",
+      "range": [
+        56.0,
+        57.0
+      ],
+      "yes_price": 0.17,
+      "no_price": 0.83,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "52835938665634171423359491355976516111059271422245320865160883798646490148100",
+      "no_token_id": "25141010888528184973866847807276992371710154448932440361225225803807457277374",
+      "model_prob": 0.5745,
+      "side": "YES",
+      "ask": 0.17,
+      "market_prob": 0.17,
+      "belief_prob": 0.4329,
+      "ev": 1.5465,
+      "kelly": 0.0792,
+      "sell_value": null
+    }
+  ]
 }

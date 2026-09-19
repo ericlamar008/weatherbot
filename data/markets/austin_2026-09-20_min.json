@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 32.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T05:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 76.15,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be between 68-69°F on September 20?",
+      "market_id": "4675218",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "80820810645842165811349283864644591068601712526296453553129305501687818051937",
+      "no_token_id": "64033133074753777556431969555827764995927448498140814538290055442726731224729",
+      "model_prob": 0.0346,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.0907,
+      "ev": -0.5349,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be between 70-71°F on September 20?",
+      "market_id": "4675219",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.21,
+      "no_price": 0.79,
+      "volume": 9.0,
+      "spread": 0.0,
+      "yes_token_id": "51934407522743627264372163712745994338149267066507803406830101785154505823826",
+      "no_token_id": "617242737268333656880476757028969131782975226642371048065674787012300889926",
+      "model_prob": 0.0993,
+      "side": "YES",
+      "ask": 0.21,
+      "market_prob": 0.21,
+      "belief_prob": 0.138,
+      "ev": -0.3429,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be between 72-73°F on September 20?",
+      "market_id": "4675220",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.22,
+      "no_price": 0.78,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "85910014606211346410920017095941291982856187797347713048081485796072614564359",
+      "no_token_id": "45727890574830951354010172239627570310144227199307491762849460052367076755722",
+      "model_prob": 0.2816,
+      "side": "YES",
+      "ask": 0.22,
+      "market_prob": 0.22,
+      "belief_prob": 0.26,
+      "ev": 0.1818,
+      "kelly": 0.0128,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be between 78-79°F on September 20?",
+      "market_id": "4675223",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "94744330215761597313975780325329100744603244063057890600731140994324802237826",
+      "no_token_id": "32185428234765856366132585279441553591443810648940076882430418957974318977571",
+      "model_prob": 0.4983,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.3431,
+      "ev": 5.2382,
+      "kelly": 0.0762,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be 84°F or higher on September 20?",
+      "market_id": "4675226",
+      "range": [
+        84.0,
+        999.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "26893480066624925095036215917113681497217860764980799906565569328267788111659",
+      "no_token_id": "24432939070207754181803705374706349971341348648967832525644908076256385934412",
+      "model_prob": 0.0861,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0572,
+      "ev": 15.3429,
+      "kelly": 0.0135,
+      "sell_value": null
+    }
+  ]
 }

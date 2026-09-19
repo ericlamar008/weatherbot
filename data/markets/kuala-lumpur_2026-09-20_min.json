@@ -7,10 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T16:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 77 < min_volume 500"
+  "skipped_reason": "event volume 77 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 24.91,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 25°C on September 20?",
+      "market_id": "4667481",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "82356028553277340795845125401424772192257668843917609790370557711220058398228",
+      "no_token_id": "32724273994143816146109830792346783977794679262218945903160320429043901692907",
+      "model_prob": 0.433,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.4565,
+      "ev": -0.087,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 26°C on September 20?",
+      "market_id": "4667482",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "90968522059812599511382951396892150044842363548621586068045521839594029523978",
+      "no_token_id": "106556935105772367978918894196287600808940144114386127826167425182989730639643",
+      "model_prob": 0.3146,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.3795,
+      "ev": -0.241,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 27°C on September 20?",
+      "market_id": "4667483",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.475,
+      "no_price": 0.525,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "9579598818503966838380594814895632280044781728588152198182280017090475940509",
+      "no_token_id": "100270006008510809549018585514816814434312949385813230625505300397956740242561",
+      "model_prob": 0.151,
+      "side": "YES",
+      "ask": 0.475,
+      "market_prob": 0.475,
+      "belief_prob": 0.2644,
+      "ev": -0.4434,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 28°C on September 20?",
+      "market_id": "4667484",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "105805444135680556012583967198773275688074229640950540509599001253964282982786",
+      "no_token_id": "85164780414657788864678047477768982478297929839555375364744952406197087980050",
+      "model_prob": 0.06,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0392,
+      "ev": 77.4,
+      "kelly": 0.0097,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 29°C on September 20?",
+      "market_id": "4667485",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "83365713705496784928294738614501261101142501660977807920703290657152496871565",
+      "no_token_id": "5951336297593342668596612425238867305417299592300344500022599683177962989861",
+      "model_prob": 0.0233,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0153,
+      "ev": 29.6,
+      "kelly": 0.0037,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 30°C or higher on September 20?",
+      "market_id": "4667486",
+      "range": [
+        30.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "109159959394455990155915355616384785004745067511269419739834738105172981482941",
+      "no_token_id": "43226657315467577088178577023576762258956041321025066945738947574274612444730",
+      "model_prob": 0.018,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0119,
+      "ev": 22.8,
+      "kelly": 0.0029,
+      "sell_value": null
+    }
+  ]
 }

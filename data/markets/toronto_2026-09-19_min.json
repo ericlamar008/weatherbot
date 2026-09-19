@@ -7,10 +7,191 @@
   "market_type": "min",
   "created_at": "2026-09-18T02:20:39.080116+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 7.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T04:00:00+00:00",
   "event_end_date": "2026-09-19T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 62 < min_volume 500"
+  "skipped_reason": "event volume 62 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 11.3,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 8°C on September 19?",
+      "market_id": "4637933",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "80878700383118747464746359806878386162123852937504503225317583935965617143452",
+      "no_token_id": "2127156113827907196595380892436182244242416110086616630014002974521910698223",
+      "model_prob": 0.0306,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.1949,
+      "ev": -0.6102,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 9°C on September 19?",
+      "market_id": "4637934",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "65581743341854717622673416129653956503310933929841103175703316313093094940251",
+      "no_token_id": "92183872561027104334011639839253314930818226780953076602986603640594941933810",
+      "model_prob": 0.0781,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.2258,
+      "ev": -0.5484,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 10°C on September 19?",
+      "market_id": "4637935",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 61.0,
+      "spread": 0.0,
+      "yes_token_id": "103130351626693186556493691766505171783418667224959935171813385703500128398844",
+      "no_token_id": "78016386203586880738396103253899369887828214881414291593992686158081749202652",
+      "model_prob": 0.1724,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.1243,
+      "ev": 2.5514,
+      "kelly": 0.0231,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 11°C on September 19?",
+      "market_id": "4637936",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.55,
+      "no_price": 0.45,
+      "volume": 55.0,
+      "spread": 0.0,
+      "yes_token_id": "108792385067370089022798567054010614244756862271237184396201220241681810631541",
+      "no_token_id": "4151643402579776741376895651522726930858965651439122986379513601646428847676",
+      "model_prob": 0.2633,
+      "side": "YES",
+      "ask": 0.55,
+      "market_prob": 0.55,
+      "belief_prob": 0.3636,
+      "ev": -0.3389,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 12°C on September 19?",
+      "market_id": "4637937",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 2013.0,
+      "spread": 0.0,
+      "yes_token_id": "28502570468550507410877868909274616727239862219712553863178383188420566161485",
+      "no_token_id": "67808167801951300206586454534877538643596827313067693647062498384102079424037",
+      "model_prob": 0.2357,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1534,
+      "ev": 305.8,
+      "kelly": 0.0382,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 13°C on September 19?",
+      "market_id": "4637938",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "60793889028968192388686735312949585567966151792406908446562300055313495414987",
+      "no_token_id": "75409756500302004673177580773852404106235755995514506548109718629069778182896",
+      "model_prob": 0.1295,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0843,
+      "ev": 167.6,
+      "kelly": 0.021,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 14°C on September 19?",
+      "market_id": "4637939",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "38517308914434358126461780128036040330594126130593649921908169903566071739046",
+      "no_token_id": "66019322074707539201570568954345856458813139944800960412244811213667964807507",
+      "model_prob": 0.0541,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0353,
+      "ev": 69.6,
+      "kelly": 0.0087,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 15°C or higher on September 19?",
+      "market_id": "4637940",
+      "range": [
+        15.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "99156407817203085300136851419546482195952543307103101347984283996440258386792",
+      "no_token_id": "30274169756880086060567637973765626191061555877836820622431469417627143730068",
+      "model_prob": 0.0363,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0238,
+      "ev": 46.6,
+      "kelly": 0.0058,
+      "sell_value": null
+    }
+  ]
 }

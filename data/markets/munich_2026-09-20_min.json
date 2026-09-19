@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 25.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T22:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 11 < min_volume 500"
+  "skipped_reason": "event volume 11 < min_volume 500",
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "forecast_mean": 13.04,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 8°C on September 20?",
+      "market_id": "4667142",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "63813850204139256843562906796888226488636312755472924335129691107606706720686",
+      "no_token_id": "113978055991504339578182293738139519193977469921944366923970262213489227020437",
+      "model_prob": 0.0593,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.119,
+      "ev": -0.4826,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 11°C on September 20?",
+      "market_id": "4667145",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "67494405927462773447589805011138131347798588907838282555827542761540864902614",
+      "no_token_id": "89462445083640329262848640557946760511408270281095457451679470610726083924318",
+      "model_prob": 0.9407,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.6867,
+      "ev": 2.194,
+      "kelly": 0.1502,
+      "sell_value": null
+    }
+  ]
 }
