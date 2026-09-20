@@ -186,6 +186,7 @@ tr:last-child td{border-bottom:none}
   <input type="text" id="citySearch" placeholder="جستجوی شهر..." oninput="filterCities()">
   <a class="jump-btn" href="#max-section">\U0001F525 حداکثر</a>
   <a class="jump-btn" href="#min-section">\u2744\uFE0F حداقل</a>
+  <a class="jump-btn" href="#daily-section">\U0001F4C5 آمار روزانه</a>
   <a class="jump-btn" href="#history-section">مشاهدهٔ نتایج \u2193</a>
 </div>
 <h2 id="max-section">\U0001F525 دمای حداکثر</h2>
@@ -668,12 +669,18 @@ def _date_block_html_min(m, city_slug, city_name, locked_keys):
     return f"<details class='date-block'><summary>{summary}</summary><div class='table-scroll'>{table}</div></details>"
 
 
+DAILY_PNL_VISIBLE_DAYS = 5
+
+
 def _daily_pnl_section_html(locks):
-    """سکشن مستقل و جدید: برآیند کل (میانگین درصد سود/زیان) هر روز، بر
-    اساس روزی که واقعاً قفل بسته شده (closed_at، به وقت ایران) -- نه
-    تاریخ هدف بازار. کاملاً مستقل از _history_table_html/lock_history.csv
-    است؛ مستقیماً از خودِ locks محاسبه می‌شود، بدون اطلاعات اضافی به‌جز
-    تاریخ و درصد."""
+    """سکشن مستقل: برای هر روزی که واقعاً قفلی در آن بسته شده
+    (closed_at، به وقت ایران -- نه تاریخ هدف بازار)، یک بلوک قابل‌اکسپند
+    می‌سازد؛ داخل هرکدام، جزئیات کامل هر قفل (شهر، تاریخ، باکت، قیمت
+    ورود/خروج، درصد، دلیل بسته‌شدن) -- دقیقاً همان فیلدهایی که در پیام
+    تلگرام daily_report.py گزارش می‌شود. فقط DAILY_PNL_VISIBLE_DAYS روز
+    آخر همیشه باز نشان داده می‌شوند؛ بقیه داخل یک بلوک جمع‌شدهٔ «نمایش
+    روزهای قدیمی‌تر» می‌روند تا صفحه طولانی نشود. کاملاً مستقل از
+    _history_table_html/lock_history.csv است."""
     daily = {}
     for l in locks:
         if l.get("status") not in ("closed_manual", "closed_resolved"):
@@ -694,27 +701,69 @@ def _daily_pnl_section_html(locks):
                 local_date = dt_utc.strftime("%Y-%m-%d")
         else:
             local_date = dt_utc.strftime("%Y-%m-%d")
-        pct = (exit_price - entry) / entry * 100
-        daily.setdefault(local_date, []).append(pct)
+        daily.setdefault(local_date, []).append(l)
 
     if not daily:
         return ""
 
-    rows = []
-    for date in sorted(daily.keys(), reverse=True):
-        pcts = daily[date]
-        avg_pct = sum(pcts) / len(pcts)
-        css = "win" if avg_pct >= 0 else "loss"
-        rows.append(
-            f"<tr><td>{date}</td><td><span class=\'{css}\'>{avg_pct:+.1f}%</span></td></tr>"
+    def _day_block_html(date, day_locks, open_attr):
+        pcts = []
+        rows = []
+        for l in day_locks:
+            entry = l.get("entry_price")
+            exit_price = l.get("exit_price")
+            pct = (exit_price - entry) / entry * 100 if entry and exit_price is not None else None
+            if pct is not None:
+                pcts.append(pct)
+
+            is_min = l.get("market_type") == "min"
+            mkt = _load_market_by_key_min(l.get("city"), l.get("date")) if is_min else _load_market_by_key(l.get("city"), l.get("date"))
+            unit_sym = mkt.get("unit", "") if mkt else ""
+            label = _find_locked_bucket_label(mkt, l.get("market_id"), unit_sym)
+
+            name = LOCATIONS.get(l.get("city"), {}).get("name", l.get("city"))
+            reason = "resolve خودکار" if l.get("status") == "closed_resolved" else "حذف دستی"
+            entry_str = f"{entry:.3f}" if entry is not None else "-"
+            exit_str = f"{exit_price:.3f}" if exit_price is not None else "-"
+            css = "win" if (pct or 0) >= 0 else "loss"
+            pct_str = f"<span class=\'{css}\'>{pct:+.1f}%</span>" if pct is not None else "-"
+
+            rows.append(
+                f"<tr><td>{name}</td><td>{l.get('date')}</td><td>{label}</td>"
+                f"<td>{entry_str}</td><td>{exit_str}</td><td>{pct_str}</td><td>{reason}</td></tr>"
+            )
+
+        avg_pct = sum(pcts) / len(pcts) if pcts else 0.0
+        summary_css = "win" if avg_pct >= 0 else "loss"
+        table_html = (
+            "<table><tr><th>شهر</th><th>تاریخ</th><th>باکت</th><th>ورود</th>"
+            "<th>خروج</th><th>درصد</th><th>دلیل</th></tr>" + "".join(rows) + "</table>"
+        )
+        return (
+            f"<details class=\'date-block\'{open_attr}>"
+            f"<summary>{date} \u2014 <span class=\'{summary_css}\'>{avg_pct:+.1f}%</span></summary>"
+            f"<div class=\'table-scroll\'>{table_html}</div>"
+            "</details>"
         )
 
-    table_html = (
-        "<table><tr><th>تاریخ</th><th>برآیند کل</th></tr>" + "".join(rows) + "</table>"
-    )
+    sorted_dates = sorted(daily.keys(), reverse=True)
+    visible_dates = sorted_dates[:DAILY_PNL_VISIBLE_DAYS]
+    older_dates = sorted_dates[DAILY_PNL_VISIBLE_DAYS:]
+
+    blocks = [_day_block_html(d, daily[d], " open") for d in visible_dates]
+
+    if older_dates:
+        older_blocks = "".join(_day_block_html(d, daily[d], "") for d in older_dates)
+        blocks.append(
+            "<details class=\'city-block\'>"
+            f"<summary>نمایش روزهای قدیمی\u200cتر ({len(older_dates)} روز)</summary>"
+            f"{older_blocks}"
+            "</details>"
+        )
+
     return (
-        "<h2>\U0001F4C5 گزارش روزانه</h2>"
-        f"<div class=\'table-scroll\'>{table_html}</div>"
+        "<h2 id=\'daily-section\'>\U0001F4C5 گزارش روزانه</h2>"
+        + "".join(blocks)
     )
 
 
