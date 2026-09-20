@@ -2360,14 +2360,15 @@
     "side": "YES",
     "entry_price": 0.46,
     "locked_at": "2026-09-19T06:22:45.869181+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.51,
     "last_pct": 10.9,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.42,
+    "closed_at": "2026-09-20T11:10:20.351743+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-20T11:07:23.169391+00:00"
+    "last_checked_at": "2026-09-20T11:07:23.169391+00:00",
+    "unlock_issue_number": 242
   },
   {
     "issue_number": 232,
@@ -2484,5 +2485,23 @@
     "close_reason": null,
     "actual_temp": null,
     "last_checked_at": "2026-09-20T11:07:23.169391+00:00"
+  },
+  {
+    "issue_number": 241,
+    "city": "ankara",
+    "date": "2026-09-20",
+    "market_id": "4667770",
+    "market_type": "max",
+    "token_id": "86468671748624250281249424433873818300148948090994430539938795793202735152984",
+    "side": "YES",
+    "entry_price": 0.515,
+    "locked_at": "2026-09-20T11:10:17.602127+00:00",
+    "status": "open",
+    "last_price": null,
+    "last_pct": null,
+    "exit_price": null,
+    "closed_at": null,
+    "close_reason": null,
+    "actual_temp": null
   }
 ]
