@@ -3,15 +3,15 @@
   "city_name": "Ankara",
   "date": "2026-09-19",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-18T02:20:39.080116+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-19T21:00:00+00:00",
   "event_end_date": "2026-09-19T12:00:00Z",
-  "last_scan": "2026-09-19T02:20:39.180344+00:00",
+  "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "horizon_days": 0,
   "forecast_mean": 13.17,
   "sigma": 1.4,
@@ -270,7 +270,10 @@
       "market_prob": 0.585,
       "role": "main_signal",
       "units": 26.8,
-      "sell_value": 0.2
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -26.8,
+      "user_entered": false
     },
     {
       "market_id": "4632038",
@@ -286,7 +289,10 @@
       "market_prob": 0.415,
       "role": "scenario_hedge",
       "units": 11.92,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": true,
+      "pnl_units": 16.8,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 38.7,
@@ -299,5 +305,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-20T02:07:21.506146+00:00",
-  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00"
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "actual_temp": 12.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4632038",
+      "question": "Will the lowest temperature in Ankara be 13°C on September 19?",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "YES",
+      "price": 0.585,
+      "model_prob": 0.2225,
+      "ev": -0.4027,
+      "market_prob": 0.585,
+      "role": "main_signal",
+      "units": 26.8,
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -26.8,
+      "user_entered": false
+    },
+    {
+      "market_id": "4632038",
+      "question": "Will the lowest temperature in Ankara be 13°C on September 19? (NO)",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "NO",
+      "price": 0.415,
+      "model_prob": 0.7775,
+      "ev": 0.5677,
+      "market_prob": 0.415,
+      "role": "scenario_hedge",
+      "units": 11.92,
+      "sell_value": 0.03,
+      "won": true,
+      "pnl_units": 16.8,
+      "user_entered": false
+    }
+  ]
 }

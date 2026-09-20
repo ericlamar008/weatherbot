@@ -3,15 +3,15 @@
   "city_name": "Munich",
   "date": "2026-09-19",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-18T02:20:39.080116+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-19T22:00:00+00:00",
   "event_end_date": "2026-09-19T12:00:00Z",
-  "last_scan": "2026-09-19T02:20:39.180344+00:00",
+  "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "horizon_days": 0,
   "forecast_mean": 10.06,
   "sigma": 1.4,
@@ -294,7 +294,10 @@
       "market_prob": 0.845,
       "role": "main_signal",
       "units": 26.1,
-      "sell_value": 0.72
+      "sell_value": 0.72,
+      "won": true,
+      "pnl_units": 4.79,
+      "user_entered": false
     },
     {
       "market_id": "4632069",
@@ -310,7 +313,10 @@
       "market_prob": 0.155,
       "role": "scenario_hedge",
       "units": 2.95,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -2.95,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 29.1,
@@ -323,5 +329,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-20T02:07:21.506146+00:00",
-  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00"
+  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
+  "actual_temp": 8.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 1.84,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4632069",
+      "question": "Will the lowest temperature in Munich be 8°C on September 19?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.845,
+      "model_prob": 0.0632,
+      "ev": -0.6014,
+      "market_prob": 0.845,
+      "role": "main_signal",
+      "units": 26.1,
+      "sell_value": 0.72,
+      "won": true,
+      "pnl_units": 4.79,
+      "user_entered": false
+    },
+    {
+      "market_id": "4632069",
+      "question": "Will the lowest temperature in Munich be 8°C on September 19? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.155,
+      "model_prob": 0.9368,
+      "ev": 3.2787,
+      "market_prob": 0.155,
+      "role": "scenario_hedge",
+      "units": 2.95,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -2.95,
+      "user_entered": false
+    }
+  ]
 }

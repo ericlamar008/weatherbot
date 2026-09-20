@@ -7,16 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T22:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
-  "last_scan": "2026-09-19T02:20:39.180344+00:00",
-  "skipped_reason": "event volume 301 < min_volume 500",
+  "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00",
-  "forecast_mean": 15.33,
+  "forecast_mean": 14.54,
   "sigma": 1.4,
   "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 16°C on September 20?",
+      "market_id": "4667504",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 392.0,
+      "spread": 0.0,
+      "yes_token_id": "16286997060600676275446828743867199807165283615357787685644550042222938286600",
+      "no_token_id": "92634741890046348951964509496923810823655237986331479509319883927149024611321",
+      "model_prob": 0.1515,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0987,
+      "ev": 196.4,
+      "kelly": 0.0246,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 17°C on September 20?",
+      "market_id": "4667505",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "51395020371576268204793531254270833060004007607813766727736700480474792370664",
+      "no_token_id": "15120775839083724538506247383363493931675379266939315196673255360423679479978",
+      "model_prob": 0.0661,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0431,
+      "ev": 85.2,
+      "kelly": 0.0107,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 18°C on September 20?",
+      "market_id": "4667506",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "33321387966232415488389856711097949115929477251423413767522045421755015637646",
+      "no_token_id": "68962713459611152560415483557364629559468511581401034179938430737009259203678",
+      "model_prob": 0.0257,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0169,
+      "ev": 32.8,
+      "kelly": 0.0041,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 19°C on September 20?",
+      "market_id": "4667507",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "84692927454078424260258581449732787518794038598809753135919142696241317951698",
+      "no_token_id": "15690502884961518774737086457613793369275027521162462816595566912788314860656",
+      "model_prob": 0.0101,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0067,
+      "ev": 12.4,
+      "kelly": 0.0016,
+      "sell_value": null
+    },
     {
       "question": "Will the lowest temperature in Cape Town be 20°C or higher on September 20?",
       "market_id": "4667508",
@@ -25,20 +112,64 @@
         999.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.997,
-      "volume": 301.0,
+      "no_price": 0.9995,
+      "volume": 1441.0,
       "spread": 0.0,
       "yes_token_id": "8654720042229941401652444252840070093729372608348715777255835821243918352045",
       "no_token_id": "91425890529117644483827499873319720615107229698808662793769734786759655211839",
-      "model_prob": 1.0,
+      "model_prob": 0.0083,
       "side": "YES",
-      "ask": 0.003,
-      "market_prob": 0.003,
-      "belief_prob": 0.6502,
-      "ev": 216.0333,
-      "kelly": 0.1625,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0056,
+      "ev": 10.2,
+      "kelly": 0.0013,
       "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-09-20T02:07:21.506146+00:00"
+  "last_price_refresh": "2026-09-20T02:07:21.506146+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "4667504",
+      "question": "Will the lowest temperature in Cape Town be 16°C on September 20?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.0005,
+      "model_prob": 0.1515,
+      "ev": 196.4,
+      "market_prob": 0.0005,
+      "role": "main_signal",
+      "units": 11.2,
+      "sell_value": null
+    },
+    {
+      "market_id": "4667504",
+      "question": "Will the lowest temperature in Cape Town be 16°C on September 20? (NO)",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.8485,
+      "ev": -0.0982,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 88.8,
+      "sell_value": 0.999
+    }
+  ],
+  "total_allocated_units": 100.0,
+  "portfolio_score": 0.802528,
+  "worst_case_loss_frac": 0.1116,
+  "best_case_pnl_units": 22300.0,
+  "worst_case_pnl_units": -11.16,
+  "success_probability": 0.1665,
+  "confidence": 0.5267,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

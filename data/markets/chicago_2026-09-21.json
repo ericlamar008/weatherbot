@@ -1,0 +1,287 @@
+{
+  "city": "chicago",
+  "city_name": "Chicago",
+  "date": "2026-09-21",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-09-20T02:20:43.185544+00:00",
+  "committed_allocation": null,
+  "hours_left": 50.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-22T05:00:00+00:00",
+  "event_end_date": "2026-09-21T12:00:00Z",
+  "last_scan": "2026-09-20T02:20:43.185544+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 64.97,
+  "sigma": 1.592,
+  "forecast_mean_shadow": 63.82,
+  "model_means_raw": {
+    "gfs": 64.46,
+    "gem": 62.16
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Chicago be 53°F or below on September 21?",
+      "market_id": "4720022",
+      "range": [
+        -999.0,
+        53.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "77530005740004011539718972524325798587099356644268628025899619128465184074872",
+      "no_token_id": "105187164970837689423051406220760974193378351623960959420748093123970565129426",
+      "model_prob": 0.0008,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0007,
+      "ev": 0.4,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 54-55°F on September 21?",
+      "market_id": "4720023",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "40781011112624763038103483098987877855722205750599914040741968257854832297029",
+      "no_token_id": "112550860633504169169374681507557259797588995480754564500934041411799725418163",
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0005,
+      "ev": 0.0,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 56-57°F on September 21?",
+      "market_id": "4720024",
+      "range": [
+        56.0,
+        57.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "100859560184798872848393151679730836085119540655582977743411154350692803891825",
+      "no_token_id": "46165269913547800396363179862949087069301173107536650791759151308461331242470",
+      "model_prob": 0.0016,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0012,
+      "ev": 1.4,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 60-61°F on September 21?",
+      "market_id": "4720026",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "38022725332719790138294828634513314964105598704051430790214942455459533688601",
+      "no_token_id": "98047757243375938333499316846328530077823951998966673848522418611586025845908",
+      "model_prob": 0.0286,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0413,
+      "ev": -0.3646,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 62-63°F on September 21?",
+      "market_id": "4720027",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.265,
+      "no_price": 0.735,
+      "volume": 488.0,
+      "spread": 0.0,
+      "yes_token_id": "67255396546683389404833882399082771829556568843041259920809074914276477736055",
+      "no_token_id": "15628458761390810802364384754184355499875728091301264769129625175068177917500",
+      "model_prob": 0.149,
+      "side": "YES",
+      "ask": 0.265,
+      "market_prob": 0.265,
+      "belief_prob": 0.1896,
+      "ev": -0.2845,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 64-65°F on September 21?",
+      "market_id": "4720028",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.515,
+      "no_price": 0.485,
+      "volume": 209.0,
+      "spread": 0.0,
+      "yes_token_id": "71042341931951696583130405777498133869014632946739126273833333043706883930461",
+      "no_token_id": "25011718846213017966899657406720128375265190328526523238624571711034886888999",
+      "model_prob": 0.443,
+      "side": "YES",
+      "ask": 0.515,
+      "market_prob": 0.515,
+      "belief_prob": 0.4682,
+      "ev": -0.0909,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 66-67°F on September 21?",
+      "market_id": "4720029",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 229.0,
+      "spread": 0.0,
+      "yes_token_id": "15299182682416389217248250010795799754791952072794051706202733079121591264064",
+      "no_token_id": "3857424751244899717942824196332436854361186566443731463629647378569051759265",
+      "model_prob": 0.2863,
+      "side": "YES",
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.2526,
+      "ev": 0.3295,
+      "kelly": 0.0193,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 68-69°F on September 21?",
+      "market_id": "4720030",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 23.0,
+      "spread": 0.0,
+      "yes_token_id": "58326479102395336144795700481357224124993760445771173807747970466786663206200",
+      "no_token_id": "32728952386059742024602066676887078081818512460648547592272081977265396879826",
+      "model_prob": 0.0626,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0442,
+      "ev": 3.42,
+      "kelly": 0.0086,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 70-71°F on September 21?",
+      "market_id": "4720031",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 53.0,
+      "spread": 0.0,
+      "yes_token_id": "84643251112278268402142664766863081664299541162002372563460156818788387522347",
+      "no_token_id": "100151194642083891494469694575985625714215597110582160527949274953693505314905",
+      "model_prob": 0.0123,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0092,
+      "ev": 1.6286,
+      "kelly": 0.0014,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Chicago be 72°F or higher on September 21?",
+      "market_id": "4720032",
+      "range": [
+        72.0,
+        999.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 85.0,
+      "spread": 0.0,
+      "yes_token_id": "30218998911343542912509934905544621844810005518246475554410649040502647441039",
+      "no_token_id": "42578841196190981470538519795953607527247322450094810539569086360645859021894",
+      "model_prob": 0.0093,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0074,
+      "ev": 0.85,
+      "kelly": 0.0009,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4720028",
+      "question": "Will the highest temperature in Chicago be between 64-65°F on September 21?",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "side": "YES",
+      "price": 0.515,
+      "model_prob": 0.443,
+      "ev": -0.0909,
+      "market_prob": 0.515,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.5
+    },
+    {
+      "market_id": "4720028",
+      "question": "Will the highest temperature in Chicago be between 64-65°F on September 21? (NO)",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "side": "NO",
+      "price": 0.485,
+      "model_prob": 0.557,
+      "ev": 0.0965,
+      "market_prob": 0.485,
+      "role": "scenario_hedge",
+      "units": 18.83,
+      "sell_value": 0.47
+    }
+  ],
+  "total_allocated_units": 48.8,
+  "portfolio_score": -0.036454,
+  "worst_case_loss_frac": 0.1001,
+  "best_case_pnl_units": 9.42,
+  "worst_case_pnl_units": -10.01,
+  "success_probability": 0.3528,
+  "confidence": 0.2357,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
