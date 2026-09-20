@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-22T04:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
-  "skipped_reason": "event volume 360 < min_volume 500"
+  "skipped_reason": "event volume 360 < min_volume 500",
+  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00",
+  "forecast_mean": 77.24,
+  "sigma": 3.581,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be between 74-75°F on September 21?",
+      "market_id": "4719811",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.385,
+      "no_price": 0.615,
+      "volume": 29.0,
+      "spread": 0.0,
+      "yes_token_id": "8681282913796308924653407345569552565145401039149562458499749293336356579213",
+      "no_token_id": "11277759374611513041571551361968053308820262315902859320560682890004419784581",
+      "model_prob": 0.2209,
+      "side": "YES",
+      "ask": 0.385,
+      "market_prob": 0.385,
+      "belief_prob": 0.2783,
+      "ev": -0.2771,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 76-77°F on September 21?",
+      "market_id": "4719812",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.405,
+      "no_price": 0.595,
+      "volume": 260.0,
+      "spread": 0.0,
+      "yes_token_id": "73564879361397771738128201985920583373681177772574102405550211289738974287335",
+      "no_token_id": "44083763479104729638321837338912856482509769600284093638629989382634660703680",
+      "model_prob": 0.2992,
+      "side": "YES",
+      "ask": 0.405,
+      "market_prob": 0.405,
+      "belief_prob": 0.3362,
+      "ev": -0.1699,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 78-79°F on September 21?",
+      "market_id": "4719813",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 79.0,
+      "spread": 0.0,
+      "yes_token_id": "52836540667419642513981530058090506300052028288841673701014121669707242732134",
+      "no_token_id": "111254510531875710586569166578718754528854335445163567793689461395923603787904",
+      "model_prob": 0.2854,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.2223,
+      "ev": 1.1171,
+      "kelly": 0.0328,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 80-81°F on September 21?",
+      "market_id": "4719814",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "97781477713973245356638353017259779633276676113592188381978602166155163836283",
+      "no_token_id": "62952998652903499134723871807599753546538149053021366986514121478770520253539",
+      "model_prob": 0.1945,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.1439,
+      "ev": 1.878,
+      "kelly": 0.0247,
+      "sell_value": null
+    }
+  ]
 }

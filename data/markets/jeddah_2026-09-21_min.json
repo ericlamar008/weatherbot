@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T21:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
-  "skipped_reason": "event volume 223 < min_volume 500"
+  "skipped_reason": "event volume 223 < min_volume 500",
+  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00",
+  "forecast_mean": 28.25,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 30°C on September 21?",
+      "market_id": "4717686",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.555,
+      "no_price": 0.445,
+      "volume": 128.0,
+      "spread": 0.0,
+      "yes_token_id": "66571775545001696925020735379338403494775729833773041778846688359392082598197",
+      "no_token_id": "105658986620511348199695502322070777454531488643383783636958591666731057658834",
+      "model_prob": 0.6939,
+      "side": "YES",
+      "ask": 0.555,
+      "market_prob": 0.555,
+      "belief_prob": 0.6453,
+      "ev": 0.1627,
+      "kelly": 0.0507,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 31°C on September 21?",
+      "market_id": "4717687",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "18825583743258632806659818044468099788159537772607814098092510278471517816947",
+      "no_token_id": "36396065400668549644122658240855764639956918739922212826906943149429285350703",
+      "model_prob": 0.2873,
+      "side": "YES",
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.2585,
+      "ev": 0.261,
+      "kelly": 0.0168,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 35°C or higher on September 21?",
+      "market_id": "4717691",
+      "range": [
+        35.0,
+        999.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 120.0,
+      "spread": 0.0,
+      "yes_token_id": "106403842519299616363114947467591139638301909955291556844495729102577539617554",
+      "no_token_id": "49266323224914686499859202186654777753906762339836073423822132240787784069683",
+      "model_prob": 0.0188,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0143,
+      "ev": 1.3833,
+      "kelly": 0.0021,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T16:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
-  "skipped_reason": "event volume 10 < min_volume 500"
+  "skipped_reason": "event volume 10 < min_volume 500",
+  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00",
+  "forecast_mean": 24.6,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 25°C on September 21?",
+      "market_id": "4717675",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.22,
+      "no_price": 0.78,
+      "volume": 2.0,
+      "spread": 0.0,
+      "yes_token_id": "49046937107736298939604698885770665472186128430505790128698883795747992523999",
+      "no_token_id": "5476276031291330175843990616670238219320004284947895554421347381355585532713",
+      "model_prob": 0.526,
+      "side": "YES",
+      "ask": 0.22,
+      "market_prob": 0.22,
+      "belief_prob": 0.4189,
+      "ev": 0.9041,
+      "kelly": 0.0638,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 26°C on September 21?",
+      "market_id": "4717676",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.475,
+      "no_price": 0.525,
+      "volume": 18.0,
+      "spread": 0.0,
+      "yes_token_id": "52750716649044161676242688030994369637906685774508089690279588891966881428385",
+      "no_token_id": "108270848592272557107823432504790640325586110545218305229081803673954747044044",
+      "model_prob": 0.3286,
+      "side": "YES",
+      "ask": 0.475,
+      "market_prob": 0.475,
+      "belief_prob": 0.3798,
+      "ev": -0.2004,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 27°C on September 21?",
+      "market_id": "4717677",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 3.0,
+      "spread": 0.0,
+      "yes_token_id": "85729007463891547704500686250642331647916265761621616234964972655452580264790",
+      "no_token_id": "69767622960406375018642898225338599025678405378635367566333163521792685460785",
+      "model_prob": 0.1454,
+      "side": "YES",
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.161,
+      "ev": -0.1526,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,13 +7,13 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 6.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T15:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "horizon_days": 0,
-  "forecast_mean": 18.13,
+  "forecast_mean": 18.12,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -36,7 +36,9 @@
       "belief_prob": 0.0035,
       "ev": 6.0,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 13°C on September 20?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0038,
       "ev": 6.6,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 14°C on September 20?",
@@ -73,14 +77,16 @@
       "spread": 0.0,
       "yes_token_id": "99139758066808110439432085525001229380454598760834328740887874147108365943027",
       "no_token_id": "65951803583763096402760043425352538621711876037212324154484731036003960330979",
-      "model_prob": 0.0137,
+      "model_prob": 0.0138,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.0091,
       "ev": 17.2,
       "kelly": 0.0022,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 15°C on September 20?",
@@ -95,14 +101,16 @@
       "spread": 0.0,
       "yes_token_id": "100642395065090688941256458550857792580567117785299553742082442519485443774190",
       "no_token_id": "95173817294156130325822577228533160033916646308087274687287543458090699824773",
-      "model_prob": 0.0352,
+      "model_prob": 0.0356,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0231,
-      "ev": 45.2,
+      "belief_prob": 0.0233,
+      "ev": 45.6,
       "kelly": 0.0057,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on September 20?",
@@ -117,14 +125,16 @@
       "spread": 0.0,
       "yes_token_id": "2646029104575884620080380542500719448446384711043231804843713626721633198732",
       "no_token_id": "52899952258915525070496838600334882648096877244185774328279956113002215277140",
-      "model_prob": 0.0889,
+      "model_prob": 0.0896,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.058,
-      "ev": 115.0,
-      "kelly": 0.0144,
-      "sell_value": null
+      "belief_prob": 0.0584,
+      "ev": 115.8,
+      "kelly": 0.0145,
+      "sell_value": null,
+      "model_prob_change": 0.0007,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 17°C on September 20?",
@@ -139,14 +149,16 @@
       "spread": 0.0,
       "yes_token_id": "33819545100580105507639178877008642419594044670541990034188865149723701142908",
       "no_token_id": "58685750641582418881162849984996748064000488639588515184022519352183376132981",
-      "model_prob": 0.1874,
+      "model_prob": 0.1884,
       "side": "YES",
       "ask": 0.002,
       "market_prob": 0.002,
-      "belief_prob": 0.1225,
-      "ev": 60.25,
-      "kelly": 0.0302,
-      "sell_value": null
+      "belief_prob": 0.1232,
+      "ev": 60.6,
+      "kelly": 0.0304,
+      "sell_value": null,
+      "model_prob_change": 0.001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 18°C on September 20?",
@@ -156,19 +168,21 @@
         18.0
       ],
       "yes_price": 0.02,
-      "no_price": 0.985,
-      "volume": 3571.0,
+      "no_price": 0.98,
+      "volume": 3649.0,
       "spread": 0.0,
       "yes_token_id": "61412518424658154914222021596813504354005137232250324604047977481638740762292",
       "no_token_id": "76562385661564790064481592654802229685852998497487625578434765283597663091634",
-      "model_prob": 0.2632,
+      "model_prob": 0.2634,
       "side": "YES",
-      "ask": 0.015,
-      "market_prob": 0.015,
-      "belief_prob": 0.1781,
-      "ev": 10.7533,
-      "kelly": 0.0409,
-      "sell_value": null
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.1782,
+      "ev": 7.91,
+      "kelly": 0.0404,
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 19°C on September 20?",
@@ -183,14 +197,16 @@
       "spread": 0.0,
       "yes_token_id": "2486944155554770126419342304667114637876903094623163008025101558244897486365",
       "no_token_id": "14697714459248462809146530665723464575326192117711853225197458556776836380047",
-      "model_prob": 0.2147,
+      "model_prob": 0.2137,
       "side": "YES",
       "ask": 0.98,
       "market_prob": 0.98,
-      "belief_prob": 0.4826,
-      "ev": -0.5076,
+      "belief_prob": 0.4819,
+      "ev": -0.5083,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 20°C on September 20?",
@@ -201,18 +217,20 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1437.0,
+      "volume": 2637.0,
       "spread": 0.0,
       "yes_token_id": "110017173693167756202008095932654368901881761456841797416398553131534235140886",
       "no_token_id": "63370028570145018564840950621140376985389920018199495341764885441519400684855",
-      "model_prob": 0.1107,
+      "model_prob": 0.1098,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0721,
-      "ev": 143.2,
-      "kelly": 0.0179,
-      "sell_value": null
+      "belief_prob": 0.0715,
+      "ev": 142.0,
+      "kelly": 0.0178,
+      "sell_value": null,
+      "model_prob_change": -0.0009,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 21°C on September 20?",
@@ -227,14 +245,16 @@
       "spread": 0.0,
       "yes_token_id": "14345527152488652324869397275160685042660956494272505991829477255623349426393",
       "no_token_id": "63678659549892995093174224537477362172931140041914483589823246881866498136869",
-      "model_prob": 0.0451,
+      "model_prob": 0.0447,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0295,
-      "ev": 58.0,
-      "kelly": 0.0073,
-      "sell_value": null
+      "belief_prob": 0.0292,
+      "ev": 57.4,
+      "kelly": 0.0072,
+      "sell_value": null,
+      "model_prob_change": -0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 22°C or higher on September 20?",
@@ -249,14 +269,16 @@
       "spread": 0.0,
       "yes_token_id": "85230072330358627938358223010567232373244404866245171506074902879429238778700",
       "no_token_id": "58474044552673229172962043225641973935290381731155999972496978916905564033304",
-      "model_prob": 0.0305,
+      "model_prob": 0.0303,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.02,
-      "ev": 39.0,
+      "belief_prob": 0.0199,
+      "ev": 38.8,
       "kelly": 0.0049,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-20T08:07:21.927970+00:00",
-  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00"
+  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00"
 }

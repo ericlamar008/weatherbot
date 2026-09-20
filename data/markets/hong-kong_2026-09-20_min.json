@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 7.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T16:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0144,
       "ev": 27.8,
       "kelly": 0.0035,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 23°C on September 20?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0206,
       "ev": 40.2,
       "kelly": 0.005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 24°C on September 20?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0522,
       "ev": 103.4,
       "kelly": 0.0129,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 25°C on September 20?",
@@ -89,20 +95,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.0125,
-      "no_price": 0.991,
-      "volume": 1025.0,
+      "yes_price": 0.007,
+      "no_price": 0.993,
+      "volume": 1103.0,
       "spread": 0.0,
       "yes_token_id": "78760825947726149930431358483674029036076418532164493176683143244819014837501",
       "no_token_id": "2914616149381572696508381925055803951891380032469284404141658288924252613886",
       "model_prob": 0.1743,
       "side": "YES",
-      "ask": 0.009,
-      "market_prob": 0.009,
-      "belief_prob": 0.1177,
-      "ev": 11.9333,
-      "kelly": 0.0271,
-      "sell_value": null
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.1157,
+      "ev": 15.5286,
+      "kelly": 0.0274,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0055
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 26°C on September 20?",
@@ -111,20 +119,22 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.035,
-      "no_price": 0.965,
-      "volume": 6095.0,
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 6438.0,
       "spread": 0.0,
       "yes_token_id": "65653797100011461944480823630846216859720513845252981689796727583596382359758",
       "no_token_id": "10029036577317693181185595090097766082016354023482521222154317706164337691776",
       "model_prob": 0.2598,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
-      "belief_prob": 0.1811,
-      "ev": 4.1743,
-      "kelly": 0.0378,
-      "sell_value": null
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.1776,
+      "ev": 6.104,
+      "kelly": 0.0391,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 27°C on September 20?",
@@ -133,20 +143,22 @@
         27.0,
         27.0
       ],
-      "yes_price": 0.965,
-      "no_price": 0.04,
-      "volume": 8916.0,
+      "yes_price": 0.975,
+      "no_price": 0.025,
+      "volume": 9647.0,
       "spread": 0.0,
       "yes_token_id": "18329126466390901338974469326538074177878444708550556037765256345955099296944",
       "no_token_id": "61161628754326520769978295707978960840237438198811155614803020641483962550983",
       "model_prob": 0.2262,
       "side": "YES",
-      "ask": 0.96,
-      "market_prob": 0.96,
-      "belief_prob": 0.4848,
-      "ev": -0.4969,
+      "ask": 0.975,
+      "market_prob": 0.975,
+      "belief_prob": 0.4883,
+      "ev": -0.4992,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 28°C on September 20?",
@@ -157,7 +169,7 @@
       ],
       "yes_price": 0.0035,
       "no_price": 0.9965,
-      "volume": 5185.0,
+      "volume": 5918.0,
       "spread": 0.0,
       "yes_token_id": "67652260106754222438747165568613711863568798912333559999846687018222321765926",
       "no_token_id": "97668703625464395313524078634121043830547186426882476119416626784424980217305",
@@ -168,7 +180,9 @@
       "belief_prob": 0.0805,
       "ev": 22.0,
       "kelly": 0.0193,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 29°C on September 20?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.033,
       "ev": 65.0,
       "kelly": 0.0081,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 30°C on September 20?",
@@ -200,19 +216,21 @@
         30.0
       ],
       "yes_price": 0.003,
-      "no_price": 0.999,
+      "no_price": 0.997,
       "volume": 1154.0,
       "spread": 0.0,
       "yes_token_id": "98448457873307796527686404325580723505977985623621696201677778632139051631768",
       "no_token_id": "48870025361082046856755365698228764648732142966096730208530878833430267092159",
       "model_prob": 0.0195,
       "side": "YES",
-      "ask": 0.001,
-      "market_prob": 0.001,
+      "ask": 0.003,
+      "market_prob": 0.003,
       "belief_prob": 0.0137,
-      "ev": 12.0,
-      "kelly": 0.003,
-      "sell_value": null
+      "ev": 3.5667,
+      "kelly": 0.0027,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 31°C on September 20?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0052,
       "ev": 9.4,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 32°C or higher on September 20?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0045,
       "ev": 8.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-20T08:07:21.927970+00:00",
-  "last_lite_refresh": "2026-09-19T20:20:40.030810+00:00"
+  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00"
 }
