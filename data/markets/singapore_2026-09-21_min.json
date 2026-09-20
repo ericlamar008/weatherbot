@@ -7,11 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T16:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-20T14:20:42.378309+00:00"
+  "last_lite_refresh": "2026-09-20T20:20:38.896756+00:00",
+  "forecast_mean": 25.55,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Singapore be 28°C on September 21?",
+      "market_id": "4717512",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 58.0,
+      "spread": 0.0,
+      "yes_token_id": "25942030387531895278730612359064688157068697731324625193374103994046473435970",
+      "no_token_id": "96730033693276035254235348807868727731876221653415343096041871055124345675155",
+      "model_prob": 0.6001,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3902,
+      "ev": 779.4,
+      "kelly": 0.0975,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Singapore be 29°C on September 21?",
+      "market_id": "4717513",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1031.0,
+      "spread": 0.0,
+      "yes_token_id": "4406071036304383969466243374535877948524957657260899269314290921777581939717",
+      "no_token_id": "110582774438902774351276878352730689148331539178346652136705513462392489427913",
+      "model_prob": 0.2333,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1518,
+      "ev": 302.6,
+      "kelly": 0.0378,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Singapore be 30°C on September 21?",
+      "market_id": "4717514",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "18858332930232318715138278464868674833316624195622793108719183889296831357782",
+      "no_token_id": "85823843407529559313768268298580934753507552516037280119325378869007523881708",
+      "model_prob": 0.0918,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0598,
+      "ev": 118.6,
+      "kelly": 0.0148,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Singapore be 31°C or higher on September 21?",
+      "market_id": "4717515",
+      "range": [
+        31.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "81720642926635947445398757324402578911675093780862448777544962331493630442277",
+      "no_token_id": "74548664244147264560853300247166436316622895586561274484905361293341301605234",
+      "model_prob": 0.0748,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0488,
+      "ev": 96.6,
+      "kelly": 0.0121,
+      "sell_value": null
+    }
+  ]
 }

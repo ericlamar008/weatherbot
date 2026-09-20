@@ -7,13 +7,13 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T21:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "skipped_reason": "event volume 283 < min_volume 500",
-  "last_lite_refresh": "2026-09-20T14:20:42.378309+00:00",
+  "last_lite_refresh": "2026-09-20T20:20:38.896756+00:00",
   "forecast_mean": 22.05,
   "sigma": 1.4,
   "full_distribution": [
@@ -38,7 +38,7 @@
       "ev": 0.011,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0019,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -49,20 +49,20 @@
         21.0
       ],
       "yes_price": 0.17,
-      "no_price": 0.64,
+      "no_price": 0.83,
       "volume": 15.0,
       "spread": 0.0,
       "yes_token_id": "71374617029108557313609765010626473408820257157486743516108882669487757831752",
       "no_token_id": "77379866998627255658793119505534173661765158383483097947386448066065102561645",
       "model_prob": 0.2094,
       "side": "YES",
-      "ask": 0.36,
-      "market_prob": 0.36,
+      "ask": 0.17,
+      "market_prob": 0.17,
       "belief_prob": 0.1956,
-      "ev": -0.2719,
-      "kelly": 0.0,
+      "ev": 0.1506,
+      "kelly": 0.0077,
       "sell_value": null,
-      "model_prob_change": -0.0026,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -72,22 +72,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.375,
-      "no_price": 0.61,
-      "volume": 307.0,
+      "yes_price": 0.37,
+      "no_price": 0.63,
+      "volume": 329.0,
       "spread": 0.0,
       "yes_token_id": "61102059174610193303528794667292769853905020553193520107919232193814422533475",
       "no_token_id": "96327528182456544175943184493455248317881713736762908776194703309061311438524",
       "model_prob": 0.2823,
       "side": "YES",
-      "ask": 0.39,
-      "market_prob": 0.39,
-      "belief_prob": 0.3147,
-      "ev": -0.1795,
+      "ask": 0.37,
+      "market_prob": 0.37,
+      "belief_prob": 0.313,
+      "ev": -0.1541,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0005,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the lowest temperature in Tel Aviv be 23°C on September 20?",
@@ -97,20 +97,20 @@
         23.0
       ],
       "yes_price": 0.8445,
-      "no_price": 0.4325,
-      "volume": 4244.0,
+      "no_price": 0.1555,
+      "volume": 5897.0,
       "spread": 0.0,
       "yes_token_id": "95124028093595967601536554593300740070320690036019559842542127735078992095089",
       "no_token_id": "12036125781332720233915313459358093214610028241631058559576075807644239262",
       "model_prob": 0.2207,
       "side": "YES",
-      "ask": 0.5675,
-      "market_prob": 0.5675,
+      "ask": 0.8445,
+      "market_prob": 0.8445,
       "belief_prob": 0.439,
-      "ev": -0.3972,
+      "ev": -0.4802,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -134,7 +134,7 @@
       "ev": 143.2,
       "kelly": 0.0179,
       "sell_value": null,
-      "model_prob_change": 0.0017,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -158,7 +158,7 @@
       "ev": 57.4,
       "kelly": 0.0072,
       "sell_value": null,
-      "model_prob_change": 0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -182,7 +182,7 @@
       "ev": 21.8,
       "kelly": 0.0027,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -206,7 +206,7 @@
       "ev": 8.4,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
