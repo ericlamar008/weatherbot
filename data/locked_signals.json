@@ -2437,14 +2437,15 @@
     "side": "YES",
     "entry_price": 0.56,
     "locked_at": "2026-09-20T06:22:17.296923+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.235,
     "last_pct": -58.0,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.02,
+    "closed_at": "2026-09-20T07:19:10.423342+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-20T07:07:19.717902+00:00"
+    "last_checked_at": "2026-09-20T07:07:19.717902+00:00",
+    "unlock_issue_number": 240
   },
   {
     "issue_number": 238,
@@ -2464,5 +2465,23 @@
     "close_reason": null,
     "actual_temp": null,
     "last_checked_at": "2026-09-20T07:07:19.717902+00:00"
+  },
+  {
+    "issue_number": 239,
+    "city": "chicago",
+    "date": "2026-09-20",
+    "market_id": "4674361",
+    "market_type": "max",
+    "token_id": "80576388552973867744995471045527967087290808069424256462808333680123713065807",
+    "side": "YES",
+    "entry_price": 0.78,
+    "locked_at": "2026-09-20T07:19:07.923833+00:00",
+    "status": "open",
+    "last_price": null,
+    "last_pct": null,
+    "exit_price": null,
+    "closed_at": null,
+    "close_reason": null,
+    "actual_temp": null
   }
 ]
