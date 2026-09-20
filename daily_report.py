@@ -29,9 +29,12 @@ except Exception:
     IRAN_TZ = None
 
 try:
-    from locations import LOCATIONS
+    from locations import LOCATIONS, MONTHS
 except ImportError:
-    LOCATIONS = {}
+    LOCATIONS, MONTHS = {}, [
+        "january", "february", "march", "april", "may", "june",
+        "july", "august", "september", "october", "november", "december",
+    ]
 
 LOCKS_FILE = Path("data/locked_signals.json")
 
@@ -118,11 +121,45 @@ def _label_for_range(rng, unit_sym):
     return f"{low}-{high}{unit_sym}"
 
 
+def _build_polymarket_url(l):
+    """(درخواست کاربر) لینک بازار Polymarket -- عیناً معادل
+    _build_polymarket_url/_build_polymarket_url_min در price_monitor.py،
+    بر اساس market_type همان قفل."""
+    city, date_str, is_min = l.get("city"), l.get("date"), l.get("market_type") == "min"
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        month = MONTHS[dt.month - 1]
+        kind = "lowest" if is_min else "highest"
+        return f"https://polymarket.com/event/{kind}-temperature-in-{city}-on-{month}-{dt.day}-{dt.year}"
+    except Exception:
+        return "https://polymarket.com"
+
+
+def _time_range_str(l):
+    """(درخواست کاربر) بازهٔ زمانی «از ساعت X تا ساعت Y» به وقت ایران،
+    از locked_at تا closed_at."""
+    locked_at, closed_at = l.get("locked_at"), l.get("closed_at")
+    if not locked_at or not closed_at:
+        return "-"
+    try:
+        dt_from = datetime.fromisoformat(locked_at)
+        dt_to = datetime.fromisoformat(closed_at)
+        if IRAN_TZ is not None:
+            dt_from = dt_from.astimezone(IRAN_TZ)
+            dt_to = dt_to.astimezone(IRAN_TZ)
+        return f"{dt_from.strftime('%H:%M')} \u2192 {dt_to.strftime('%H:%M')}"
+    except Exception:
+        return "-"
+
+
 def build_report_text():
     """(درخواست کاربر) علاوه بر برآیند کلی، اطلاعات کامل هر بازار/قفل
-    همان روز هم گزارش می‌شود -- دقیقاً با همان قالب و فیلدهایی که در
-    پیام تلگرام نیم‌ساعتهٔ price_monitor.py دیده می‌شود (شهر، تاریخ،
-    برچسب باکت، قیمت ورود/خروج، درصد برآیند، دلیل بسته‌شدن)."""
+    همان روز گروه‌بندی‌شده بر اساس شهر گزارش می‌شود -- هم‌سبک با پیام
+    تلگرام نیم‌ساعتهٔ price_monitor.py: رنگ سبز/قرمز روی هر معامله،
+    درصد، قیمت ورود/خروج، دمای قفل‌شده و دمای پیش‌بینی‌شدهٔ مدل، بازهٔ
+    ساعتی قفل (از locked_at تا closed_at، به وقت ایران)، نحوهٔ
+    بسته‌شدن (resolve خودکار / حذف دستی)، و لینک قابل‌کلیک روی اسم هر
+    شهر -- با فاصلهٔ خالی بین هر شهر تا شلوغ نشود."""
     daily = _daily_pnl()
     if not daily:
         return "\U0001F4C5 گزارش روزانه\n\nهنوز هیچ معامله‌ای بسته نشده -- چیزی برای گزارش نیست."
@@ -130,35 +167,47 @@ def build_report_text():
     latest_date = max(daily.keys())
     locks_today = daily[latest_date]
 
-    pcts = []
-    lines = []
+    by_city = {}
     for l in locks_today:
-        entry = l.get("entry_price")
-        exit_price = l.get("exit_price")
-        pct = (exit_price - entry) / entry * 100 if entry and exit_price is not None else None
-        if pct is not None:
-            pcts.append(pct)
+        by_city.setdefault((l.get("city"), l.get("date")), []).append(l)
 
-        market = _load_market_for_lock(l)
-        unit_sym = market.get("unit", "") if market else ""
-        rng = _find_range(market, l.get("market_id"))
-        label = _label_for_range(rng, unit_sym)
+    pcts = []
+    city_blocks = []
+    for (city, date), group in sorted(by_city.items(), key=lambda kv: (kv[0][0], kv[0][1])):
+        name = LOCATIONS.get(city, {}).get("name", city)
+        link = _build_polymarket_url(group[0])
+        block_lines = [f'<a href="{link}">{name}</a> \u2014 {date}']
 
-        name = LOCATIONS.get(l.get("city"), {}).get("name", l.get("city"))
-        reason = "resolve خودکار" if l.get("status") == "closed_resolved" else "حذف دستی"
-        entry_str = f"{int(round(entry * 100))}\u00a2" if entry is not None else "-"
-        exit_str = f"{int(round(exit_price * 100))}\u00a2" if exit_price is not None else "-"
-        pct_str = f"{pct:+.0f}%" if pct is not None else "-"
+        for l in group:
+            entry = l.get("entry_price")
+            exit_price = l.get("exit_price")
+            pct = (exit_price - entry) / entry * 100 if entry and exit_price is not None else None
+            if pct is not None:
+                pcts.append(pct)
 
-        lines.append(
-            f"  \u2705 {name} \u2014 {l.get('date')} ({label}): "
-            f"{entry_str} \u2192 {exit_str} ({pct_str}) [{reason}]"
-        )
+            market = _load_market_for_lock(l)
+            unit_sym = market.get("unit", "") if market else ""
+            forecast_mean = market.get("forecast_mean") if market else None
+            rng = _find_range(market, l.get("market_id"))
+            label = _label_for_range(rng, unit_sym)
+
+            reason = "resolve خودکار" if l.get("status") == "closed_resolved" else "حذف دستی"
+            entry_str = f"{int(round(entry * 100))}\u00a2" if entry is not None else "-"
+            exit_str = f"{int(round(exit_price * 100))}\u00a2" if exit_price is not None else "-"
+            pct_str = f"{pct:+.0f}%" if pct is not None else "-"
+            color = "\U0001F7E2" if (pct or 0) >= 0 else "\U0001F534"
+
+            block_lines.append(f" {color} {label}: {entry_str} \u2192 {exit_str} ({pct_str})")
+            if forecast_mean is not None:
+                block_lines.append(f"    \U0001F321 پیش\u200cبینی مدل: {forecast_mean:.1f}{unit_sym}")
+            block_lines.append(f"    \u23F1 {_time_range_str(l)} ({reason})")
+
+        city_blocks.append("\n".join(block_lines))
 
     avg_pct = sum(pcts) / len(pcts) if pcts else 0.0
     sign = "\U0001F7E2" if avg_pct >= 0 else "\U0001F534"
     header = f"\U0001F4C5 گزارش روزانه \u2014 {latest_date}\n\n{sign} برآیند کل: {avg_pct:+.1f}% ({len(locks_today)} معامله)"
-    return header + "\n\n" + "\n".join(lines)
+    return header + "\n\n" + "\n\n".join(city_blocks)
 
 
 def send_telegram(text):
