@@ -234,6 +234,13 @@ def _build_city_blocks(locks_subset, now, is_min):
                 f"{int(round(current * 100))}\u00a2 ({pct:+.0f}% {arrow})"
             )
 
+            # (درخواست کاربر) دمای پیش‌بینی‌شدهٔ مدل، به‌عنوان یک سطر مجزا --
+            # ساختار سطر بالا دست‌نخورده می‌ماند؛ فقط در پیام تلگرام
+            # (dashboard_simple.py هیچ تغییری نکرده).
+            forecast_mean = market.get("forecast_mean") if market else None
+            if forecast_mean is not None:
+                lines.append(f"    \u2022 دمای پیش‌بینی مدل: {forecast_mean:.1f}{unit_sym}")
+
         marks = ("\u2B50" if star else "") + (" \u23F0" if near_resolve else "")
         name = LOCATIONS.get(city, {}).get("name", city)
         link = _build_polymarket_url_min(city, date) if is_min else _build_polymarket_url(city, date)
@@ -274,6 +281,33 @@ def build_message(now, locks):
     return header_line + "\n\n" + "\n\n".join(sections)
 
 
+def _closed_locks_footer(locks):
+    """(درخواست کاربر) گزارش یک‌بارهٔ قفل‌هایی که از آخرین پیام تا الان
+    بسته شده‌اند -- چه با حذف دستی (closed_manual)، چه با resolve خودکار
+    (closed_resolved). با پرچم داخلی notified_close از تکرار در پیام‌های
+    بعدی جلوگیری می‌شود. این فقط یک بخش زیرین و جداگانه است؛ ساختار
+    فعلی سکشن‌های \U0001F525/\u2744\uFE0F بالای پیام دست‌نخورده می‌ماند."""
+    lines = []
+    for l in locks:
+        if l.get("status") not in ("closed_manual", "closed_resolved"):
+            continue
+        if l.get("notified_close"):
+            continue
+
+        entry = l.get("entry_price")
+        exit_price = l.get("exit_price")
+        pct = (exit_price - entry) / entry * 100 if entry and exit_price is not None else None
+        pct_str = f"{pct:+.0f}%" if pct is not None else "-"
+
+        name = LOCATIONS.get(l.get("city"), {}).get("name", l.get("city"))
+        reason = "resolve خودکار" if l.get("status") == "closed_resolved" else "حذف دستی"
+        lines.append(f"  \u2705 {name} \u2014 {l.get('date')} ({reason}, {pct_str})")
+
+        l["notified_close"] = True
+
+    return lines
+
+
 def check_all():
     """دیگر مستقیماً به تلگرام پیام نمی‌فرستد. متن وضعیت (در صورت وجود
     حداقل یک قفل باز) در data/last_price_status.txt نوشته می‌شود تا لایهٔ
@@ -287,6 +321,18 @@ def check_all():
         print(f"[price_monitor] {n_resolved} قفل به‌طور خودکار با resolve شدن بازار بسته شد")
 
     message = build_message(now, locks)
+
+    # (درخواست کاربر) اعلان قفل‌های تازه‌بسته‌شده -- یک بخش زیرین و جدا،
+    # مستقل از این‌که پیام وضعیت اصلی بالا None باشد یا نه، تا حتی وقتی
+    # هیچ قفل بازی نمانده باشد ولی چیزی همین الان بسته شده، پیام حذف نشود.
+    closed_lines = _closed_locks_footer(locks)
+    if closed_lines:
+        footer = "\U0001F514 قفل‌های بسته‌شده از آخرین بررسی:\n" + "\n".join(closed_lines)
+        if message:
+            message = message + "\n\n" + footer
+        else:
+            header_line = f"\U0001F4CA وضعیت قفل‌ها \u2014 {now.strftime('%Y-%m-%d %H:%M')} UTC"
+            message = header_line + "\n\n" + footer
 
     _save_locks(locks)
     history_manager.write_history_csv(locks)

@@ -192,6 +192,7 @@ tr:last-child td{border-bottom:none}
 BODYHTML
 <h2 id="min-section">\u2744\uFE0F دمای حداقل</h2>
 MIN_BODYHTML
+DAILYPNLHTML
 <h2 id="history-section">تاریخچهٔ معاملات</h2>
 <a class="download-btn" href="lock_history.csv" download>\u2b07 دانلود CSV کامل</a>
 <div class="history-filters">
@@ -445,7 +446,7 @@ def _bucket_table(city_slug, city_name, date, unit_sym, full_distribution, locke
 
     tradable = [
         b for b in full_distribution
-        if max(b.get("model_prob") or 0.0, b.get("market_prob") or 0.0) >= BUCKET_PLAUSIBILITY_MIN
+        if max(b.get("model_prob") or 0.0, b.get("yes_price") or 0.0) >= BUCKET_PLAUSIBILITY_MIN
     ]
     if not tradable:
         return '<div class="empty">داده‌ای موجود نیست.</div>'
@@ -667,6 +668,56 @@ def _date_block_html_min(m, city_slug, city_name, locked_keys):
     return f"<details class='date-block'><summary>{summary}</summary><div class='table-scroll'>{table}</div></details>"
 
 
+def _daily_pnl_section_html(locks):
+    """سکشن مستقل و جدید: برآیند کل (میانگین درصد سود/زیان) هر روز، بر
+    اساس روزی که واقعاً قفل بسته شده (closed_at، به وقت ایران) -- نه
+    تاریخ هدف بازار. کاملاً مستقل از _history_table_html/lock_history.csv
+    است؛ مستقیماً از خودِ locks محاسبه می‌شود، بدون اطلاعات اضافی به‌جز
+    تاریخ و درصد."""
+    daily = {}
+    for l in locks:
+        if l.get("status") not in ("closed_manual", "closed_resolved"):
+            continue
+        closed_at = l.get("closed_at")
+        entry = l.get("entry_price")
+        exit_price = l.get("exit_price")
+        if not closed_at or not entry or exit_price is None:
+            continue
+        try:
+            dt_utc = datetime.fromisoformat(closed_at)
+        except Exception:
+            continue
+        if ZoneInfo is not None:
+            try:
+                local_date = dt_utc.astimezone(ZoneInfo(IRAN_TZ_NAME)).strftime("%Y-%m-%d")
+            except Exception:
+                local_date = dt_utc.strftime("%Y-%m-%d")
+        else:
+            local_date = dt_utc.strftime("%Y-%m-%d")
+        pct = (exit_price - entry) / entry * 100
+        daily.setdefault(local_date, []).append(pct)
+
+    if not daily:
+        return ""
+
+    rows = []
+    for date in sorted(daily.keys(), reverse=True):
+        pcts = daily[date]
+        avg_pct = sum(pcts) / len(pcts)
+        css = "win" if avg_pct >= 0 else "loss"
+        rows.append(
+            f"<tr><td>{date}</td><td><span class=\'{css}\'>{avg_pct:+.1f}%</span></td></tr>"
+        )
+
+    table_html = (
+        "<table><tr><th>تاریخ</th><th>برآیند کل</th></tr>" + "".join(rows) + "</table>"
+    )
+    return (
+        "<h2>\U0001F4C5 گزارش روزانه</h2>"
+        f"<div class=\'table-scroll\'>{table_html}</div>"
+    )
+
+
 def _history_table_html(locks):
     rows = history_manager.get_history_rows(locks)
     cities = sorted({r["city_name"] for r in rows})
@@ -757,6 +808,7 @@ def build_simple_dashboard():
     min_body_html = _build_group_section(min_markets, _date_block_html_min)
 
     history_html, history_city_options, history_date_options = _history_table_html(locks)
+    daily_pnl_html = _daily_pnl_section_html(locks)
 
     scan_iso, scan_kind = _latest_scan_info()
     reference_dt = datetime.fromisoformat(scan_iso) if scan_iso else datetime.now(timezone.utc)
@@ -768,6 +820,7 @@ def build_simple_dashboard():
     html = html.replace("LASTSCANFALLBACK", "بدون سابقهٔ اسکن" if not scan_iso else "")
     html = html.replace("MIN_BODYHTML", min_body_html)
     html = html.replace("BODYHTML", body_html)
+    html = html.replace("DAILYPNLHTML", daily_pnl_html)
     html = html.replace("HISTORYHTML", history_html)
     html = html.replace("HISTORYCITYOPTIONS", history_city_options)
     html = html.replace("HISTORYDATEOPTIONS", history_date_options)
