@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 38.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-22T05:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00"
+  "last_lite_refresh": "2026-09-20T14:20:42.378309+00:00",
+  "forecast_mean": 77.51,
+  "sigma": 2.608,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be between 74-75°F on September 21?",
+      "market_id": "4719790",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.225,
+      "no_price": 0.775,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "66713697261927538038486457066168788145631808529759492036036415257419595871668",
+      "no_token_id": "77458832636362692794978759785467036689996809008243452965818889006497285255899",
+      "model_prob": 0.3519,
+      "side": "YES",
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.3075,
+      "ev": 0.3667,
+      "kelly": 0.0266,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 76-77°F on September 21?",
+      "market_id": "4719791",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.47,
+      "no_price": 0.53,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "77378313149672070208483442796482778802659936227454026748553267880443570045105",
+      "no_token_id": "87950073895553097351399075134240525375518954061796727184177743336816465887134",
+      "model_prob": 0.6481,
+      "side": "YES",
+      "ask": 0.47,
+      "market_prob": 0.47,
+      "belief_prob": 0.5858,
+      "ev": 0.2464,
+      "kelly": 0.0546,
+      "sell_value": null
+    }
+  ]
 }

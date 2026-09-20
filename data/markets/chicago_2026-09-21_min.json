@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-20T02:20:43.185544+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 38.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-22T05:00:00+00:00",
   "event_end_date": "2026-09-21T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00"
+  "last_lite_refresh": "2026-09-20T14:20:42.378309+00:00",
+  "forecast_mean": 58.95,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Chicago be between 60-61°F on September 21?",
+      "market_id": "4719825",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.38,
+      "no_price": 0.62,
+      "volume": 11.0,
+      "spread": 0.0,
+      "yes_token_id": "101381167541927229467148513221383095670067969645695827028571853195188505730257",
+      "no_token_id": "35675454526116980620972062522206635021643296611548963626303557589861251923598",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.38,
+      "market_prob": 0.38,
+      "belief_prob": 0.783,
+      "ev": 1.0605,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

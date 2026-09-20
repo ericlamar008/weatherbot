@@ -6,19 +6,19 @@
   "status": "open",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-20T16:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
   "last_scan": "2026-09-20T02:20:43.185544+00:00",
   "horizon_days": 0,
-  "forecast_mean": 28.01,
-  "sigma": 0.616,
-  "forecast_mean_shadow": 27.41,
+  "forecast_mean": 28.11,
+  "sigma": 0.592,
+  "forecast_mean_shadow": 27.5,
   "model_means_raw": {
-    "ecmwf": 27.85,
-    "gfs": 26.9,
-    "gem": 25.93
+    "ecmwf": 28.01,
+    "gfs": 26.96,
+    "gem": 26.06
   },
   "full_distribution": [
     {
@@ -34,14 +34,16 @@
       "spread": 0.0,
       "yes_token_id": "110268451870155117075392770508372209322905780295218808524513896974567388367973",
       "no_token_id": "20854020835889800679821181014398189601323216042275429162992912093347989274481",
-      "model_prob": 0.0048,
+      "model_prob": 0.0035,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0033,
-      "ev": 5.6,
-      "kelly": 0.0007,
-      "sell_value": null
+      "belief_prob": 0.0024,
+      "ev": 3.8,
+      "kelly": 0.0005,
+      "sell_value": null,
+      "model_prob_change": -0.0013,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 26°C on September 20?",
@@ -56,14 +58,16 @@
       "spread": 0.0,
       "yes_token_id": "97193782165085730931108946067703935770338130307023853364180805303943671021366",
       "no_token_id": "31809826707188236386451659680199819699658209828418607483980706750787010072349",
-      "model_prob": 0.0241,
+      "model_prob": 0.0174,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0158,
-      "ev": 30.6,
-      "kelly": 0.0038,
-      "sell_value": null
+      "belief_prob": 0.0115,
+      "ev": 22.0,
+      "kelly": 0.0028,
+      "sell_value": null,
+      "model_prob_change": -0.0067,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 27°C on September 20?",
@@ -73,19 +77,21 @@
         27.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.985,
-      "volume": 6002.0,
+      "no_price": 0.9995,
+      "volume": 7881.0,
       "spread": 0.0,
       "yes_token_id": "33437608864763427656490543064265714882339251390090180512419065608975809537539",
       "no_token_id": "97824021687803776345443885984146649045189634216853923116085179566409792451061",
-      "model_prob": 0.1938,
+      "model_prob": 0.1541,
       "side": "YES",
-      "ask": 0.015,
-      "market_prob": 0.015,
-      "belief_prob": 0.1261,
-      "ev": 7.7467,
-      "kelly": 0.0295,
-      "sell_value": null
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1003,
+      "ev": 199.6,
+      "kelly": 0.025,
+      "sell_value": null,
+      "model_prob_change": -0.0397,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 28°C on September 20?",
@@ -95,19 +101,21 @@
         28.0
       ],
       "yes_price": 0.9995,
-      "no_price": 0.315,
-      "volume": 8312.0,
+      "no_price": 0.0005,
+      "volume": 19106.0,
       "spread": 0.0,
       "yes_token_id": "50991992239785839170677890320049578326095920006203180127776227093017814840227",
       "no_token_id": "110607528399705151020014135070948661830309005481461417137247157306542577949005",
-      "model_prob": 0.5461,
+      "model_prob": 0.5554,
       "side": "YES",
-      "ask": 0.685,
-      "market_prob": 0.685,
-      "belief_prob": 0.7048,
-      "ev": -0.1318,
+      "ask": 0.9995,
+      "market_prob": 0.9995,
+      "belief_prob": 0.7108,
+      "ev": -0.2888,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0093,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 29°C on September 20?",
@@ -117,19 +125,21 @@
         29.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.745,
-      "volume": 7487.0,
+      "no_price": 0.9995,
+      "volume": 12346.0,
       "spread": 0.0,
       "yes_token_id": "81713016579427328341351032197039604232752898466511467050396851525500914173631",
       "no_token_id": "110566769152385202261590877224800352771442060950000055504111273193994730598827",
-      "model_prob": 0.2011,
+      "model_prob": 0.2367,
       "side": "YES",
-      "ask": 0.255,
-      "market_prob": 0.255,
-      "belief_prob": 0.1309,
-      "ev": -0.1373,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.154,
+      "ev": 307.0,
+      "kelly": 0.0384,
+      "sell_value": null,
+      "model_prob_change": 0.0356,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 30°C on September 20?",
@@ -139,19 +149,21 @@
         30.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.965,
-      "volume": 3766.0,
+      "no_price": 0.9995,
+      "volume": 8590.0,
       "spread": 0.0,
       "yes_token_id": "80095054773819177107334483654922213845226119162530540845324057687349197235500",
       "no_token_id": "20306646189188537201771900160421144747936432419343065929898015374183440406645",
-      "model_prob": 0.0252,
+      "model_prob": 0.0279,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
-      "belief_prob": 0.0166,
-      "ev": -0.1829,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0183,
+      "ev": 35.6,
+      "kelly": 0.0045,
+      "sell_value": null,
+      "model_prob_change": 0.0027,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 31°C on September 20?",
@@ -161,19 +173,21 @@
         31.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9985,
-      "volume": 3267.0,
+      "no_price": 0.9995,
+      "volume": 3636.0,
       "spread": 0.0,
       "yes_token_id": "73724549197668142999233397285063859954985786991975219400881615457525920769983",
       "no_token_id": "27478270466374820026544724933223721033342346965747335806543326204500042381937",
       "model_prob": 0.0038,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0026,
-      "ev": 1.0,
-      "kelly": 0.0004,
-      "sell_value": null
+      "ev": 4.2,
+      "kelly": 0.0005,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 32°C on September 20?",
@@ -183,19 +197,21 @@
         32.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9985,
+      "no_price": 0.9995,
       "volume": 1603.0,
       "spread": 0.0,
       "yes_token_id": "39192678995809362326513038751189527514115789020600002480434568369326169873865",
       "no_token_id": "47375252046337600310512258114850479383278256893358265729556756818705464246422",
       "model_prob": 0.0008,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0007,
-      "ev": -0.3333,
-      "kelly": 0.0,
-      "sell_value": null
+      "ev": 0.4,
+      "kelly": 0.0001,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 33°C on September 20?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 34°C on September 20?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0002,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 35°C or higher on September 20?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0002,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-20T14:07:21.256745+00:00",
-  "last_lite_refresh": "2026-09-20T08:20:40.246454+00:00"
+  "last_lite_refresh": "2026-09-20T14:20:42.378309+00:00"
 }
