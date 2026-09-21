@@ -94,7 +94,7 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.005,
+      "yes_price": 0.0085,
       "no_price": 0.995,
       "volume": 557.0,
       "spread": 0.0,
@@ -104,7 +104,7 @@
       "side": "YES",
       "ask": 0.005,
       "market_prob": 0.005,
-      "belief_prob": 0.0193,
+      "belief_prob": 0.0205,
       "ev": 2.86,
       "kelly": 0.0036,
       "sell_value": null
@@ -116,7 +116,7 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.095,
+      "yes_price": 0.13,
       "no_price": 0.905,
       "volume": 1735.0,
       "spread": 0.0,
@@ -126,7 +126,7 @@
       "side": "YES",
       "ask": 0.095,
       "market_prob": 0.095,
-      "belief_prob": 0.0772,
+      "belief_prob": 0.0894,
       "ev": -0.1874,
       "kelly": 0.0,
       "sell_value": null
@@ -160,7 +160,7 @@
         28.0,
         28.0
       ],
-      "yes_price": 0.545,
+      "yes_price": 0.515,
       "no_price": 0.455,
       "volume": 1232.0,
       "spread": 0.0,
@@ -170,7 +170,7 @@
       "side": "YES",
       "ask": 0.545,
       "market_prob": 0.545,
-      "belief_prob": 0.3487,
+      "belief_prob": 0.3382,
       "ev": -0.3602,
       "kelly": 0.0,
       "sell_value": null
@@ -248,7 +248,7 @@
         32.0,
         999.0
       ],
-      "yes_price": 0.001,
+      "yes_price": 0.0005,
       "no_price": 0.999,
       "volume": 628.0,
       "spread": 0.0,
@@ -258,7 +258,7 @@
       "side": "YES",
       "ask": 0.001,
       "market_prob": 0.001,
-      "belief_prob": 0.0293,
+      "belief_prob": 0.0291,
       "ev": 28.3,
       "kelly": 0.0071,
       "sell_value": null
@@ -306,5 +306,6 @@
   "success_probability": 0.3784,
   "confidence": 0.1571,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "last_price_refresh": "2026-09-21T02:41:23.120287+00:00"
 }
