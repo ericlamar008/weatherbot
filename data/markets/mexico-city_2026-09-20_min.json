@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-09-19T02:20:39.180344+00:00",
   "committed_allocation": null,
-  "hours_left": 9.7,
+  "hours_left": 3.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-21T06:00:00+00:00",
   "event_end_date": "2026-09-20T12:00:00Z",
-  "last_scan": "2026-09-20T02:20:43.185544+00:00",
-  "skipped_reason": "event volume 75 < min_volume 500",
+  "last_scan": "2026-09-21T02:20:40.399896+00:00",
   "last_lite_refresh": "2026-09-20T20:20:38.896756+00:00",
-  "forecast_mean": 13.11,
+  "forecast_mean": 13.17,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -30,12 +29,12 @@
       "spread": 0.0,
       "yes_token_id": "82827492312793160874324538902628902649450394834721853600597837782926357452230",
       "no_token_id": "22588727736357401250466937151694286310015278127133146495110884081921110942537",
-      "model_prob": 0.3997,
+      "model_prob": 0.2623,
       "side": "YES",
       "ask": 0.9,
       "market_prob": 0.9,
-      "belief_prob": 0.5748,
-      "ev": -0.3613,
+      "belief_prob": 0.4855,
+      "ev": -0.4606,
       "kelly": 0.0,
       "sell_value": null
     },
@@ -52,16 +51,14 @@
       "spread": 0.0,
       "yes_token_id": "26945374835730420332826819960944897359986972056367453718640711994136637117242",
       "no_token_id": "43700904087977065078898940245771393799934493488655722537634447503119477544339",
-      "model_prob": 0.3225,
+      "model_prob": 0.2186,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.2098,
-      "ev": 418.6,
-      "kelly": 0.0524,
-      "sell_value": null,
-      "model_prob_change": -0.2098,
-      "yes_price_change": 0.0
+      "belief_prob": 0.1423,
+      "ev": 283.6,
+      "kelly": 0.0355,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Mexico City be 15°C on September 20?",
@@ -76,16 +73,14 @@
       "spread": 0.0,
       "yes_token_id": "42678347227522493730228625449967160580427006879300169458065145002770581617429",
       "no_token_id": "25321985716065777144831433785559342053029175113889111632059633899777388471240",
-      "model_prob": 0.1652,
+      "model_prob": 0.1144,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.1076,
-      "ev": 214.2,
-      "kelly": 0.0268,
-      "sell_value": null,
-      "model_prob_change": -0.1123,
-      "yes_price_change": 0.0
+      "belief_prob": 0.0745,
+      "ev": 148.0,
+      "kelly": 0.0185,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Mexico City be 16°C on September 20?",
@@ -100,16 +95,14 @@
       "spread": 0.0,
       "yes_token_id": "58997350956144313562075809428198648545571312197355514727058056016920073400436",
       "no_token_id": "67319875176055133836082929221538247206558692899833867284789305204610100482847",
-      "model_prob": 0.0671,
+      "model_prob": 0.0468,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0438,
-      "ev": 86.6,
-      "kelly": 0.0108,
-      "sell_value": null,
-      "model_prob_change": -0.0464,
-      "yes_price_change": 0.0
+      "belief_prob": 0.0306,
+      "ev": 60.2,
+      "kelly": 0.0075,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Mexico City be 17°C or higher on September 20?",
@@ -124,17 +117,59 @@
       "spread": 0.0,
       "yes_token_id": "108554408636500864746920511101663294544593794208981214810716328987717497169523",
       "no_token_id": "100242245836406365852848715387002978805510736861235040975009605179497376932475",
-      "model_prob": 0.0455,
+      "model_prob": 0.0316,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0298,
-      "ev": 58.6,
-      "kelly": 0.0073,
-      "sell_value": null,
-      "model_prob_change": -0.0312,
-      "yes_price_change": 0.0
+      "belief_prob": 0.0207,
+      "ev": 40.4,
+      "kelly": 0.0051,
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-09-21T02:07:19.420570+00:00"
+  "last_price_refresh": "2026-09-21T02:07:19.420570+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "4684395",
+      "question": "Will the lowest temperature in Mexico City be 13°C on September 20?",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "YES",
+      "price": 0.9,
+      "model_prob": 0.2623,
+      "ev": -0.4606,
+      "market_prob": 0.9,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.8
+    },
+    {
+      "market_id": "4684395",
+      "question": "Will the lowest temperature in Mexico City be 13°C on September 20? (NO)",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "NO",
+      "price": 0.1,
+      "model_prob": 0.7377,
+      "ev": 4.145,
+      "market_prob": 0.1,
+      "role": "scenario_hedge",
+      "units": 2.22,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 32.2,
+  "portfolio_score": -0.032345,
+  "worst_case_loss_frac": 0.1002,
+  "best_case_pnl_units": 1.11,
+  "worst_case_pnl_units": -10.02,
+  "success_probability": 0.6278,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
