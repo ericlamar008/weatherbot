@@ -2817,14 +2817,15 @@
     "side": "YES",
     "entry_price": 0.63,
     "locked_at": "2026-09-21T16:32:01.634595+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.76,
     "last_pct": 20.6,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.63,
+    "closed_at": "2026-09-21T20:43:06.683400+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-21T20:38:36.083461+00:00"
+    "last_checked_at": "2026-09-21T20:38:36.083461+00:00",
+    "unlock_issue_number": 265
   },
   {
     "issue_number": 261,
