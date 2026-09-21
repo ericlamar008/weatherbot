@@ -2749,13 +2749,14 @@
     "side": "YES",
     "entry_price": 0.235,
     "locked_at": "2026-09-21T08:46:27.565470+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.115,
     "last_pct": -51.1,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.05,
+    "closed_at": "2026-09-21T09:15:56.098406+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-09-21T09:07:19.638498+00:00"
+    "last_checked_at": "2026-09-21T09:07:19.638498+00:00",
+    "unlock_issue_number": 251
   }
 ]
