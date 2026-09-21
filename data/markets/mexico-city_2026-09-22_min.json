@@ -7,10 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-21T02:20:40.399896+00:00",
   "committed_allocation": null,
-  "hours_left": 51.7,
+  "hours_left": 45.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-23T06:00:00+00:00",
   "event_end_date": "2026-09-22T12:00:00Z",
   "last_scan": "2026-09-21T02:20:40.399896+00:00",
-  "skipped_reason": "event volume 346 < min_volume 500"
+  "skipped_reason": "event volume 346 < min_volume 500",
+  "last_lite_refresh": "2026-09-21T08:20:42.796620+00:00",
+  "forecast_mean": 12.1,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 5°C or below on September 22?",
+      "market_id": "4756743",
+      "range": [
+        -999.0,
+        5.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 296.0,
+      "spread": 0.0,
+      "yes_token_id": "37344495121313027591099021185256911471821568953565859505524534157374263988785",
+      "no_token_id": "32715896780622407295781981915800824566690439513247573623356530755828145774920",
+      "model_prob": 0.0173,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0123,
+      "ev": 3.1,
+      "kelly": 0.0023,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 6°C on September 22?",
+      "market_id": "4756744",
+      "range": [
+        6.0,
+        6.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "83760628898350344538793977365214882482736793333340539317859028428916299376701",
+      "no_token_id": "44879080069151803393303185326999582197432453109085686431453849832067939400096",
+      "model_prob": 0.0166,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.079,
+      "ev": -0.5949,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 7°C on September 22?",
+      "market_id": "4756745",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "17766215730178820598612461510182920819086409765965166791160634210611584163487",
+      "no_token_id": "25221841919463924495765843997332343586842734560635902240323848705317013345262",
+      "model_prob": 0.0377,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0473,
+      "ev": -0.2723,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 8°C on September 22?",
+      "market_id": "4756746",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "54613257736064789442697162838684463887024719840744705156156218772941875966522",
+      "no_token_id": "89454753980431598119076700147056083006417205495359169761478324682476884785095",
+      "model_prob": 0.0923,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.1282,
+      "ev": -0.3426,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 9°C on September 22?",
+      "market_id": "4756747",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "115512067717770311855612798869875083504625509230506380233788843899948285427624",
+      "no_token_id": "100614950533560458093137098745341356123420656875348308655996138713265066706393",
+      "model_prob": 0.2377,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.2228,
+      "ev": 0.1426,
+      "kelly": 0.0086,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 10°C on September 22?",
+      "market_id": "4756748",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "64027098400723264162811183250841468168255491734141941850144833625700764041503",
+      "no_token_id": "25830521760589318688030223157096462412804822912621079923874398312452173249644",
+      "model_prob": 0.5984,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.4572,
+      "ev": 1.3446,
+      "kelly": 0.0814,
+      "sell_value": null
+    }
+  ]
 }
