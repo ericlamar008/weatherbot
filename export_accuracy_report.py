@@ -26,7 +26,7 @@ MARKETS_DIR = Path("data/markets")
 OUTPUT_FILE = Path("data/accuracy_report.csv")
 
 HEADERS = [
-    "شهر", "تاریخ", "افق زمانی (روز)", "پیش‌بینی مدل", "سیگما", "دمای واقعی",
+    "شهر", "تاریخ", "نوع بازار", "افق زمانی (روز)", "پیش‌بینی مدل", "سیگما", "دمای واقعی",
     "خطای مطلق", "بایاس علامت‌دار", "نتیجه", "سود/زیان (واحد)",
     "اطمینان", "احتمال موفقیت",
 ]
@@ -67,6 +67,7 @@ def build_accuracy_report():
         rows.append([
             m.get("city_name", m.get("city", "")),
             m.get("date", ""),
+            "کمینه" if m.get("market_type") == "min" else "بیشینه",
             m.get("horizon_days", ""),
             forecast if forecast is not None else "",
             m.get("sigma", ""),
