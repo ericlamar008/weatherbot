@@ -282,7 +282,17 @@ def process_unlock_issues():
             _close_issue(number, "\u26a0\ufe0f هیچ قفل بازی با این مشخصات پیدا نشد (شاید قبلاً حذف یا resolve شده).")
             continue
 
-        current_price = get_clob_book_bid(target.get("token_id"))
+        # خروج باید از همان منبع قیمت ورود خوانده شود: Gamma API (قیمت
+        # outcomePrices که در وب‌سایت Polymarket دیده می‌شود). استفادهٔ
+        # قبلی از بهترین bid دفتر سفارش CLOB در بازارهای کم‌عمق می‌توانست
+        # قیمت خروج نادرست/بسیار پایین ثبت کند. اگر Gamma موقتاً در دسترس
+        # نبود، فقط به‌عنوان fallback امن به CLOB برمی‌گردیم تا حذف قفل
+        # کاملاً مسدود نشود.
+        current_price = _fetch_live_entry_price(
+            city, date, market_id, target.get("side", "YES"), target.get("market_type", "max")
+        )
+        if current_price is None:
+            current_price = get_clob_book_bid(target.get("token_id"))
         if current_price is None:
             _close_issue(
                 number,
