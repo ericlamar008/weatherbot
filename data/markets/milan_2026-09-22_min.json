@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-21T02:20:40.399896+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 13.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-22T22:00:00+00:00",
   "event_end_date": "2026-09-22T12:00:00Z",
   "last_scan": "2026-09-22T02:20:39.575397+00:00",
   "skipped_reason": "event volume 312 < min_volume 500",
-  "last_lite_refresh": "2026-09-21T20:20:41.326049+00:00"
+  "last_lite_refresh": "2026-09-22T08:20:40.735719+00:00",
+  "forecast_mean": 16.02,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 13°C on September 22?",
+      "market_id": "4745267",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 11.0,
+      "spread": 0.0,
+      "yes_token_id": "93172951569346157991039142034985835180613456085529516997630022108304701088817",
+      "no_token_id": "31265318558464529804896505939406828254942117697200875402058576179510388903238",
+      "model_prob": 0.0598,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.1964,
+      "ev": -0.5636,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 16°C on September 22?",
+      "market_id": "4745270",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 158.0,
+      "spread": 0.0,
+      "yes_token_id": "103374213624576327398909650994279752506292629612890582129098136993599130851624",
+      "no_token_id": "80264808980397564985786290489729774177840145608647796008360875107961445276354",
+      "model_prob": 0.4041,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.4377,
+      "ev": -0.1246,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 17°C on September 22?",
+      "market_id": "4745271",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 158.0,
+      "spread": 0.0,
+      "yes_token_id": "42653538267490065994573284367914875052506394954946965507588077920747111568639",
+      "no_token_id": "46519513855863504053722424339954649909673033032528755791787338201319283007127",
+      "model_prob": 0.3109,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2023,
+      "ev": 403.6,
+      "kelly": 0.0505,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 18°C on September 22?",
+      "market_id": "4745272",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "14225751109889565229199366804783036253595147788365266520765348932226850517138",
+      "no_token_id": "77029215505931360235822928822772338878052287605934283615523635434934977473202",
+      "model_prob": 0.1545,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1006,
+      "ev": 200.2,
+      "kelly": 0.025,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 19°C on September 22?",
+      "market_id": "4745273",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 43.0,
+      "spread": 0.0,
+      "yes_token_id": "113010115439753895037470263537381179614909400646333949066178685292802294970978",
+      "no_token_id": "60077614677054602069439370051389330017558961412554297975286102495603907254224",
+      "model_prob": 0.0621,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0405,
+      "ev": 80.0,
+      "kelly": 0.01,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 22°C or higher on September 22?",
+      "market_id": "4745276",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "2402726908259837235084246441564810221986763708970483385455165671513299605390",
+      "no_token_id": "83631600902899561612793508775167647661964005322541882499826126384247851519270",
+      "model_prob": 0.0086,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0058,
+      "ev": 10.6,
+      "kelly": 0.0013,
+      "sell_value": null
+    }
+  ]
 }

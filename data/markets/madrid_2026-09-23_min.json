@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-22T02:20:39.575397+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-23T22:00:00+00:00",
   "event_end_date": "2026-09-23T12:00:00Z",
   "last_scan": "2026-09-22T02:20:39.575397+00:00",
-  "skipped_reason": "event volume 341 < min_volume 500"
+  "skipped_reason": "event volume 341 < min_volume 500",
+  "last_lite_refresh": "2026-09-22T08:20:40.735719+00:00",
+  "forecast_mean": 17.54,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 15°C on September 23?",
+      "market_id": "4781731",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 2.0,
+      "spread": 0.0,
+      "yes_token_id": "115642754239052191156178470810912863954215553368451668381651964340267200706779",
+      "no_token_id": "66567555589055178539289689107695879929688645601050811458921649394348963498567",
+      "model_prob": 0.376,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.3196,
+      "ev": 0.4865,
+      "kelly": 0.0333,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 20°C on September 23?",
+      "market_id": "4781736",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 141.0,
+      "spread": 0.0,
+      "yes_token_id": "22873303255988644398789968208651153335794246523244581220757879653820778261270",
+      "no_token_id": "72682330315859724720694168536573205662968504295904829997689058555824457358206",
+      "model_prob": 0.4048,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.2824,
+      "ev": 4.1345,
+      "kelly": 0.0602,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 21°C on September 23?",
+      "market_id": "4781737",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0075,
+      "no_price": 0.9925,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "98604427949402022589526631262045938553640305354306316477908962657081467221490",
+      "no_token_id": "26554813491579221445077155578900755338460609453781743009919444661129471012080",
+      "model_prob": 0.1573,
+      "side": "YES",
+      "ask": 0.0075,
+      "market_prob": 0.0075,
+      "belief_prob": 0.1049,
+      "ev": 12.9867,
+      "kelly": 0.0245,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 22°C on September 23?",
+      "market_id": "4781738",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "112520011125517151269860145184235659124093802448998768036216787039124227715699",
+      "no_token_id": "47442240676934379475812716387906316161907187881884257018665464580180010561501",
+      "model_prob": 0.0619,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0437,
+      "ev": 3.37,
+      "kelly": 0.0085,
+      "sell_value": null
+    }
+  ]
 }

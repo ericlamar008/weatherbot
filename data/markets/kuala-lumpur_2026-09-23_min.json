@@ -7,10 +7,191 @@
   "market_type": "min",
   "created_at": "2026-09-22T02:20:39.575397+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-23T16:00:00+00:00",
   "event_end_date": "2026-09-23T12:00:00Z",
   "last_scan": "2026-09-22T02:20:39.575397+00:00",
-  "skipped_reason": "event volume 392 < min_volume 500"
+  "skipped_reason": "event volume 392 < min_volume 500",
+  "last_lite_refresh": "2026-09-22T08:20:40.735719+00:00",
+  "forecast_mean": 24.31,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 21°C or below on September 23?",
+      "market_id": "4781872",
+      "range": [
+        -999.0,
+        21.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 104.0,
+      "spread": 0.0,
+      "yes_token_id": "26484663550155358806385628482909958459676618745910294349545119376906498992548",
+      "no_token_id": "32666155372484404510020041518941184497291689376296639952270807923888533560467",
+      "model_prob": 0.0968,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0641,
+      "ev": 17.3143,
+      "kelly": 0.0152,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 22°C on September 23?",
+      "market_id": "4781873",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.016,
+      "no_price": 0.984,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "40993370841946869518264904901774375454304967251470098971888396839289021470492",
+      "no_token_id": "58852099221013005926476895358870272024206461800178634387590525389189300574042",
+      "model_prob": 0.1453,
+      "side": "YES",
+      "ask": 0.016,
+      "market_prob": 0.016,
+      "belief_prob": 0.1,
+      "ev": 5.25,
+      "kelly": 0.0213,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 25°C on September 23?",
+      "market_id": "4781876",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.42,
+      "no_price": 0.58,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "64910889462922590359873927266619099671171042705976169004846485262421344826612",
+      "no_token_id": "44996739610289559737655727246894121669745991036212542460027557452415922384827",
+      "model_prob": 0.4441,
+      "side": "YES",
+      "ask": 0.42,
+      "market_prob": 0.42,
+      "belief_prob": 0.4357,
+      "ev": 0.0374,
+      "kelly": 0.0068,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 26°C on September 23?",
+      "market_id": "4781877",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.295,
+      "no_price": 0.705,
+      "volume": 109.0,
+      "spread": 0.0,
+      "yes_token_id": "115167671479348583508260882379053413979930867819514349829055785413346044855020",
+      "no_token_id": "100865199887791198858539529306736468116469491433160867125660484568940858482368",
+      "model_prob": 0.2451,
+      "side": "YES",
+      "ask": 0.295,
+      "market_prob": 0.295,
+      "belief_prob": 0.2626,
+      "ev": -0.1098,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 28°C on September 23?",
+      "market_id": "4781879",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.08,
+      "no_price": 0.92,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "88168802039709078765940610810091635652349996159792198779957333011268320867134",
+      "no_token_id": "77031319181977963126149267505508265943156796289198094312540382330483099246433",
+      "model_prob": 0.0396,
+      "side": "YES",
+      "ask": 0.08,
+      "market_prob": 0.08,
+      "belief_prob": 0.0537,
+      "ev": -0.3288,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 29°C on September 23?",
+      "market_id": "4781880",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 11.0,
+      "spread": 0.0,
+      "yes_token_id": "25178748724330362791794302084666442201215953341174666002710833650209864424063",
+      "no_token_id": "24344150756759426050274105838579160556732922005601024630373510603736853460198",
+      "model_prob": 0.0158,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0124,
+      "ev": 1.0667,
+      "kelly": 0.0016,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 30°C on September 23?",
+      "market_id": "4781881",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "94890349634031060991643883662046993830400440338816691904351143910101009401701",
+      "no_token_id": "36022753222439545531689193969095991054702869958666241592033364746719307490851",
+      "model_prob": 0.0067,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0056,
+      "ev": 0.6,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Kuala Lumpur be 31°C or higher on September 23?",
+      "market_id": "4781882",
+      "range": [
+        31.0,
+        999.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "11637742314321833902555457909665032780814569248428591773618019364301185130478",
+      "no_token_id": "87034647272466355389991685613781214859576409441145574188189276217661604058053",
+      "model_prob": 0.0066,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0055,
+      "ev": 0.5714,
+      "kelly": 0.0005,
+      "sell_value": null
+    }
+  ]
 }
