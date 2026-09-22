@@ -3,11 +3,11 @@
   "city_name": "Shanghai",
   "date": "2026-09-22",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-21T02:20:40.399896+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-22T16:00:00+00:00",
   "event_end_date": "2026-09-22T12:00:00Z",
   "last_scan": "2026-09-22T02:20:39.575397+00:00",
@@ -301,7 +301,10 @@
       "market_prob": 0.75,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.75
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 10.0,
+      "user_entered": false
     },
     {
       "market_id": "4746209",
@@ -317,7 +320,10 @@
       "market_prob": 0.25,
       "role": "scenario_hedge",
       "units": 6.67,
-      "sell_value": 0.2
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -6.67,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 36.7,
@@ -330,5 +336,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-22T20:07:22.614043+00:00",
-  "last_lite_refresh": "2026-09-22T14:20:43.290558+00:00"
+  "last_lite_refresh": "2026-09-22T20:20:40.866850+00:00",
+  "actual_temp": 28.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 3.33,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4746209",
+      "question": "Will the highest temperature in Shanghai be 28°C on September 22?",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "side": "YES",
+      "price": 0.75,
+      "model_prob": 0.4463,
+      "ev": -0.2632,
+      "market_prob": 0.75,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 10.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "4746209",
+      "question": "Will the highest temperature in Shanghai be 28°C on September 22? (NO)",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "side": "NO",
+      "price": 0.25,
+      "model_prob": 0.5537,
+      "ev": 0.7896,
+      "market_prob": 0.25,
+      "role": "scenario_hedge",
+      "units": 6.67,
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -6.67,
+      "user_entered": false
+    }
+  ]
 }
