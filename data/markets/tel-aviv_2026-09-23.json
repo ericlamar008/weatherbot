@@ -1,0 +1,309 @@
+{
+  "city": "tel-aviv",
+  "city_name": "Tel Aviv",
+  "date": "2026-09-23",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-22T02:20:39.575397+00:00",
+  "committed_allocation": null,
+  "hours_left": 42.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-23T21:00:00+00:00",
+  "event_end_date": "2026-09-23T12:00:00Z",
+  "last_scan": "2026-09-22T02:20:39.575397+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 29.45,
+  "sigma": 0.659,
+  "forecast_mean_shadow": 30.38,
+  "model_means_raw": {
+    "gfs": 29.7,
+    "gem": 31.56
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Tel Aviv be 26°C or below on September 23?",
+      "market_id": "4782154",
+      "range": [
+        -999.0,
+        26.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 1037.0,
+      "spread": 0.0,
+      "yes_token_id": "78985592757536817371602718423224748075440781535701336758380289101703632443353",
+      "no_token_id": "102077229783627375211111293395022016853082584029745735434924078319715880670232",
+      "model_prob": 0.0033,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0041,
+      "ev": -0.2545,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 27°C on September 23?",
+      "market_id": "4782155",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "75964770950585022380300738295909602491860485473695251341747145000087954260100",
+      "no_token_id": "68477079257280637988722288079026203342448975268185022652774987870413375562066",
+      "model_prob": 0.0125,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0083,
+      "ev": 15.6,
+      "kelly": 0.002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 28°C on September 23?",
+      "market_id": "4782156",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "89698023883004713202222775523458488962033705126175296303434972775893794656385",
+      "no_token_id": "32496694030134248962224125274815807726682968622476102676839002943148627809803",
+      "model_prob": 0.0887,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0578,
+      "ev": 114.6,
+      "kelly": 0.0143,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 29°C on September 23?",
+      "market_id": "4782157",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 250.0,
+      "spread": 0.0,
+      "yes_token_id": "6113265399065819921253650212672815362672347685254280737464658292154515158728",
+      "no_token_id": "103517975086047939844137875990530139790543169085245821859418476244523967943567",
+      "model_prob": 0.4243,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.2915,
+      "ev": 5.4778,
+      "kelly": 0.0645,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 30°C on September 23?",
+      "market_id": "4782158",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.605,
+      "no_price": 0.395,
+      "volume": 319.0,
+      "spread": 0.0,
+      "yes_token_id": "12363761728339525858299456131474719610493086318130851035762938162215798099386",
+      "no_token_id": "48253773905439387754224446553628372929606249905433446632283786866012154253639",
+      "model_prob": 0.3852,
+      "side": "YES",
+      "ask": 0.605,
+      "market_prob": 0.605,
+      "belief_prob": 0.4621,
+      "ev": -0.2362,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 31°C on September 23?",
+      "market_id": "4782159",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.36,
+      "no_price": 0.64,
+      "volume": 176.0,
+      "spread": 0.0,
+      "yes_token_id": "4721000493078472170094541182614751317908231791634532652032725145708466013690",
+      "no_token_id": "26001873779224247653502277320237792065106271938072205394681510088316460413618",
+      "model_prob": 0.0727,
+      "side": "YES",
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.1733,
+      "ev": -0.5186,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 32°C on September 23?",
+      "market_id": "4782160",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 200.0,
+      "spread": 0.0,
+      "yes_token_id": "11690763182992790707546091450765884667497276555586247588034416536118428934503",
+      "no_token_id": "104325715769166845755859882943735823801357240471541873349848318094322938447359",
+      "model_prob": 0.0104,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.0173,
+      "ev": -0.4233,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 33°C on September 23?",
+      "market_id": "4782161",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 36.0,
+      "spread": 0.0,
+      "yes_token_id": "80963453838098497973659004506607819183665215917568209335576886353365438415037",
+      "no_token_id": "97420990774994332017353484404449005883410602916574628011512425330970734973129",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0048,
+      "ev": -0.52,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 34°C on September 23?",
+      "market_id": "4782162",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "63183043959859651945047104294562415807178771198001405632724454802459366791847",
+      "no_token_id": "16554625927192254362230879690457722138649347543306700548426544295296494154017",
+      "model_prob": 0.0005,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0038,
+      "ev": -0.62,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 35°C on September 23?",
+      "market_id": "4782163",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "31877316102316971661292200920930171160314649111298461995483597682154819635874",
+      "no_token_id": "95981392399972781067421502140574434995034228124316868000389263685130253375041",
+      "model_prob": 0.0002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0003,
+      "ev": -0.4,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 36°C or higher on September 23?",
+      "market_id": "4782164",
+      "range": [
+        36.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "1042807061704496081412714581688094036091192888563673784274729754578460505940",
+      "no_token_id": "24105284312685962303895756362125572946342368234111432098166584109016673717249",
+      "model_prob": 0.0001,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0002,
+      "ev": -0.6,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4782158",
+      "question": "Will the highest temperature in Tel Aviv be 30°C on September 23?",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "YES",
+      "price": 0.605,
+      "model_prob": 0.3852,
+      "ev": -0.2362,
+      "market_prob": 0.605,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.59
+    },
+    {
+      "market_id": "4782158",
+      "question": "Will the highest temperature in Tel Aviv be 30°C on September 23? (NO)",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "side": "NO",
+      "price": 0.395,
+      "model_prob": 0.6148,
+      "ev": 0.3618,
+      "market_prob": 0.395,
+      "role": "scenario_hedge",
+      "units": 13.06,
+      "sell_value": 0.38
+    }
+  ],
+  "total_allocated_units": 43.1,
+  "portfolio_score": -0.027131,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 6.53,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4639,
+  "confidence": 0.0568,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

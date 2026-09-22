@@ -1,0 +1,309 @@
+{
+  "city": "jeddah",
+  "city_name": "Jeddah",
+  "date": "2026-09-23",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-09-22T02:20:39.575397+00:00",
+  "committed_allocation": null,
+  "hours_left": 42.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-23T21:00:00+00:00",
+  "event_end_date": "2026-09-23T12:00:00Z",
+  "last_scan": "2026-09-22T02:20:39.575397+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 35.68,
+  "sigma": 1.058,
+  "forecast_mean_shadow": 33.32,
+  "model_means_raw": {
+    "gfs": 36.12,
+    "gem": 31.39
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Jeddah be 29°C or below on September 23?",
+      "market_id": "4782382",
+      "range": [
+        -999.0,
+        29.0
+      ],
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 115.0,
+      "spread": 0.0,
+      "yes_token_id": "23852596838380615575023274868570705461427415588885185964687967260406702471449",
+      "no_token_id": "46494127363457165968940296570496156268384132840605765579590133590896043356132",
+      "model_prob": 0.001,
+      "side": "YES",
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.001,
+      "ev": 0.0,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 30°C on September 23?",
+      "market_id": "4782383",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 95.0,
+      "spread": 0.0,
+      "yes_token_id": "55334365056658701152654221786976302548078828663682317401732840751571416078145",
+      "no_token_id": "84634623906365955082599602067591739582002414373833358210541768276881903368409",
+      "model_prob": 0.0012,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.001,
+      "ev": 1.0,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 31°C on September 23?",
+      "market_id": "4782384",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 105.0,
+      "spread": 0.0,
+      "yes_token_id": "74508119050586212578157915323353756237457814039128074347634093903631128621697",
+      "no_token_id": "43988422089738370340490007099159313237483501250027581568409441443896290981032",
+      "model_prob": 0.0032,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0023,
+      "ev": 3.6,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 32°C on September 23?",
+      "market_id": "4782385",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "55292508606460438373364608761203854743064950876886271402344378336272737624875",
+      "no_token_id": "40817257509389298942818489595058308275163229997673364336196396020748644084381",
+      "model_prob": 0.0095,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0097,
+      "ev": -0.03,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 33°C on September 23?",
+      "market_id": "4782386",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 164.0,
+      "spread": 0.0,
+      "yes_token_id": "81534959759639353100875123057432054030934506066734693059682331701735365341529",
+      "no_token_id": "88451466245763310532231846558219176285232412789656193101332668089243227069741",
+      "model_prob": 0.0322,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.0297,
+      "ev": 0.188,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 34°C on September 23?",
+      "market_id": "4782387",
+      "range": [
+        34.0,
+        34.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 94.0,
+      "spread": 0.0,
+      "yes_token_id": "16212941545178095987822092088668344995635099005266657689684879643235721165495",
+      "no_token_id": "77446201778137071639232890275321147666680191972321175966649990976641073018091",
+      "model_prob": 0.1105,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.0823,
+      "ev": 1.7433,
+      "kelly": 0.0135,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 35°C on September 23?",
+      "market_id": "4782388",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "yes_price": 0.135,
+      "no_price": 0.865,
+      "volume": 250.0,
+      "spread": 0.0,
+      "yes_token_id": "34748644943630163946113780795464920700450660736809609095182478435275015686304",
+      "no_token_id": "115184771990874225921103355392992448988710454665642918705941074012468122720770",
+      "model_prob": 0.2781,
+      "side": "YES",
+      "ask": 0.135,
+      "market_prob": 0.135,
+      "belief_prob": 0.228,
+      "ev": 0.6889,
+      "kelly": 0.0269,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 36°C on September 23?",
+      "market_id": "4782389",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "yes_price": 0.515,
+      "no_price": 0.485,
+      "volume": 997.0,
+      "spread": 0.0,
+      "yes_token_id": "115676441051555385128873884277519121971945707465671550487114208232335343753123",
+      "no_token_id": "54257134462628028018218942538795875901526256567144237490554768403108559615603",
+      "model_prob": 0.3275,
+      "side": "YES",
+      "ask": 0.515,
+      "market_prob": 0.515,
+      "belief_prob": 0.3931,
+      "ev": -0.2367,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 37°C on September 23?",
+      "market_id": "4782390",
+      "range": [
+        37.0,
+        37.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 307.0,
+      "spread": 0.0,
+      "yes_token_id": "67627960894860293519767523694057522042796995912537035266907585746519062990502",
+      "no_token_id": "40582335723065984951341808564427822728808165266929308645233695244462682558474",
+      "model_prob": 0.1637,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.2079,
+      "ev": -0.2831,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 38°C on September 23?",
+      "market_id": "4782391",
+      "range": [
+        38.0,
+        38.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 122.0,
+      "spread": 0.0,
+      "yes_token_id": "111964529054919979042349736007094417951314609391883033897697955498573446918232",
+      "no_token_id": "3051592993479846373549856742532641523865164523627023836890612806523516366990",
+      "model_prob": 0.0507,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0487,
+      "ev": 0.0822,
+      "kelly": 0.001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Jeddah be 39°C or higher on September 23?",
+      "market_id": "4782392",
+      "range": [
+        39.0,
+        999.0
+      ],
+      "yes_price": 0.0275,
+      "no_price": 0.9725,
+      "volume": 113.0,
+      "spread": 0.0,
+      "yes_token_id": "12262801375204553137548616901573157433678958716256635706226421432965130009733",
+      "no_token_id": "45623883010472498732014793825528644687399012526311405752601006941773480651763",
+      "model_prob": 0.0223,
+      "side": "YES",
+      "ask": 0.0275,
+      "market_prob": 0.0275,
+      "belief_prob": 0.0241,
+      "ev": -0.1236,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4782389",
+      "question": "Will the highest temperature in Jeddah be 36°C on September 23?",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "side": "YES",
+      "price": 0.515,
+      "model_prob": 0.3275,
+      "ev": -0.2367,
+      "market_prob": 0.515,
+      "role": "main_signal",
+      "units": 29.6,
+      "sell_value": 0.5
+    },
+    {
+      "market_id": "4782389",
+      "question": "Will the highest temperature in Jeddah be 36°C on September 23? (NO)",
+      "range": [
+        36.0,
+        36.0
+      ],
+      "side": "NO",
+      "price": 0.485,
+      "model_prob": 0.6725,
+      "ev": 0.2513,
+      "market_prob": 0.485,
+      "role": "scenario_hedge",
+      "units": 18.46,
+      "sell_value": 0.47
+    }
+  ],
+  "total_allocated_units": 48.1,
+  "portfolio_score": -0.028869,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 9.42,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3915,
+  "confidence": 0.1494,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
