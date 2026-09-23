@@ -7,10 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-23T02:20:39.998636+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-25T04:00:00+00:00",
   "event_end_date": "2026-09-24T12:00:00Z",
   "last_scan": "2026-09-23T02:20:39.998636+00:00",
-  "skipped_reason": "event volume 432 < min_volume 500"
+  "skipped_reason": "event volume 432 < min_volume 500",
+  "last_lite_refresh": "2026-09-23T08:20:40.599849+00:00",
+  "forecast_mean": 54.06,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be between 50-51°F on September 24?",
+      "market_id": "4833855",
+      "range": [
+        50.0,
+        51.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 56.0,
+      "spread": 0.0,
+      "yes_token_id": "64548705406007984908266334781103554204926508548645285287910195910513244613664",
+      "no_token_id": "93916847805328488782687359599032318926964313255148085695139801098914222782354",
+      "model_prob": 0.1193,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0933,
+      "ev": 1.0733,
+      "kelly": 0.0126,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 52-53°F on September 24?",
+      "market_id": "4833856",
+      "range": [
+        52.0,
+        53.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 189.0,
+      "spread": 0.0,
+      "yes_token_id": "64605342316400527077221805028083001484902600829206196397417618536930247557595",
+      "no_token_id": "2665371756353701874456046127204215631391980974019077441048446898682843157070",
+      "model_prob": 0.2618,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.2017,
+      "ev": 1.2411,
+      "kelly": 0.0307,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 54-55°F on September 24?",
+      "market_id": "4833857",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "yes_price": 0.445,
+      "no_price": 0.555,
+      "volume": 195.0,
+      "spread": 0.0,
+      "yes_token_id": "85185753656582055029418413254064981344972194426166812090340005683114716984020",
+      "no_token_id": "105869790632147536836888155379776399437039669237190138812462444064998742476502",
+      "model_prob": 0.3205,
+      "side": "YES",
+      "ask": 0.445,
+      "market_prob": 0.445,
+      "belief_prob": 0.3641,
+      "ev": -0.1818,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 56-57°F on September 24?",
+      "market_id": "4833858",
+      "range": [
+        56.0,
+        57.0
+      ],
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 418.0,
+      "spread": 0.0,
+      "yes_token_id": "97228211747486488696724250650095539708243731449797828804478812844290138757837",
+      "no_token_id": "38845412058128323821122287048663515570601299802294898816008261806833228376806",
+      "model_prob": 0.1953,
+      "side": "YES",
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.2267,
+      "ev": -0.2046,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 58-59°F on September 24?",
+      "market_id": "4833859",
+      "range": [
+        58.0,
+        59.0
+      ],
+      "yes_price": 0.15,
+      "no_price": 0.85,
+      "volume": 180.0,
+      "spread": 0.0,
+      "yes_token_id": "65014804800380691230780235572964483765702380237787742593863929243933946907605",
+      "no_token_id": "56296716843769434732070786998324401017329911123813974626465759545876573140150",
+      "model_prob": 0.0766,
+      "side": "YES",
+      "ask": 0.15,
+      "market_prob": 0.15,
+      "belief_prob": 0.1023,
+      "ev": -0.318,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 60-61°F on September 24?",
+      "market_id": "4833860",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "76858834485391793891033296079843285035688610568334115102467147178891517665046",
+      "no_token_id": "53754744244924634915432236568338137546948385230029393440222211481905267138487",
+      "model_prob": 0.0264,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0207,
+      "ev": 1.07,
+      "kelly": 0.0027,
+      "sell_value": null
+    }
+  ]
 }
