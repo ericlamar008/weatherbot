@@ -1,0 +1,195 @@
+{
+  "city": "shanghai",
+  "city_name": "Shanghai",
+  "date": "2026-09-24",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-23T02:20:39.998636+00:00",
+  "committed_allocation": null,
+  "hours_left": 37.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-24T16:00:00+00:00",
+  "event_end_date": "2026-09-24T12:00:00Z",
+  "last_scan": "2026-09-23T02:20:39.998636+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 24.2,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Shanghai be 18°C or below on September 24?",
+      "market_id": "4829508",
+      "range": [
+        -999.0,
+        18.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "48609875527784767443773944917305227309093901357656645479569712729872422856589",
+      "no_token_id": "84124184439354739681833513301886390466031961850669622376283597882312638929666",
+      "model_prob": 0.0048,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0038,
+      "ev": 0.9,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 21°C on September 24?",
+      "market_id": "4829511",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 108.0,
+      "spread": 0.0,
+      "yes_token_id": "48892037876338328943052537635227883102275833178835379511727324360829637023614",
+      "no_token_id": "10331037108872289109670942660364909501079094525447334182357820030052254628105",
+      "model_prob": 0.0329,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0406,
+      "ev": -0.2618,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 22°C on September 24?",
+      "market_id": "4829512",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 55.0,
+      "spread": 0.0,
+      "yes_token_id": "92146168174820221963137849921635461308756412327983321713550115164369560809475",
+      "no_token_id": "8448848404421732955519741090566889381653789581397007177010268283414017888394",
+      "model_prob": 0.0836,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.0876,
+      "ev": -0.0779,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 23°C on September 24?",
+      "market_id": "4829513",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.28,
+      "no_price": 0.72,
+      "volume": 655.0,
+      "spread": 0.0,
+      "yes_token_id": "31206551919930527275603627447197561042449614323942770353771003422481742827204",
+      "no_token_id": "88107532954062886417360744089197163185094423781417443804657160587864021675783",
+      "model_prob": 0.1797,
+      "side": "YES",
+      "ask": 0.28,
+      "market_prob": 0.28,
+      "belief_prob": 0.2148,
+      "ev": -0.2329,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 24°C on September 24?",
+      "market_id": "4829514",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.47,
+      "no_price": 0.53,
+      "volume": 1039.0,
+      "spread": 0.0,
+      "yes_token_id": "36600093769167963010213228071987282391664593406492538743519273850156234660781",
+      "no_token_id": "23137528418548505145927492376556825931704906719962807286036528020494585891276",
+      "model_prob": 0.2615,
+      "side": "YES",
+      "ask": 0.47,
+      "market_prob": 0.47,
+      "belief_prob": 0.3345,
+      "ev": -0.2883,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 25°C on September 24?",
+      "market_id": "4829515",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 420.0,
+      "spread": 0.0,
+      "yes_token_id": "41593836815021155229440093090578106948798455723960601022845459542313839790143",
+      "no_token_id": "28691190905792830313869054284529305543909392750524879720604901912196095274073",
+      "model_prob": 0.2215,
+      "side": "YES",
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.193,
+      "ev": 0.3786,
+      "kelly": 0.0154,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4829514",
+      "question": "Will the lowest temperature in Shanghai be 24°C on September 24?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.47,
+      "model_prob": 0.2615,
+      "ev": -0.2883,
+      "market_prob": 0.47,
+      "role": "main_signal",
+      "units": 25.9,
+      "sell_value": 0.46
+    },
+    {
+      "market_id": "4829514",
+      "question": "Will the lowest temperature in Shanghai be 24°C on September 24? (NO)",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "NO",
+      "price": 0.53,
+      "model_prob": 0.7385,
+      "ev": 0.2557,
+      "market_prob": 0.53,
+      "role": "scenario_hedge",
+      "units": 17.93,
+      "sell_value": 0.52
+    }
+  ],
+  "total_allocated_units": 43.8,
+  "portfolio_score": -0.030142,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 11.28,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3545,
+  "confidence": 0.0382,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
