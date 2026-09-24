@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-24T02:20:43.505142+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-25T22:00:00+00:00",
   "event_end_date": "2026-09-25T12:00:00Z",
   "last_scan": "2026-09-24T02:20:43.505142+00:00",
-  "skipped_reason": "event volume 66 < min_volume 500"
+  "skipped_reason": "event volume 66 < min_volume 500",
+  "last_lite_refresh": "2026-09-24T08:20:51.102284+00:00",
+  "forecast_mean": 15.01,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 18°C on September 25?",
+      "market_id": "4872871",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "112625811393561306907438393470449162083224365316439990379631237361693425360232",
+      "no_token_id": "108744426958627492651122012200177608085421107072319886479401093660067935882842",
+      "model_prob": 0.7209,
+      "side": "YES",
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.5403,
+      "ev": 1.6356,
+      "kelly": 0.1054,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 19°C on September 25?",
+      "market_id": "4872872",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 58.0,
+      "spread": 0.0,
+      "yes_token_id": "83315841393745821563861282707324309989154521140263071013186910299728877661474",
+      "no_token_id": "24850100205683583429857281668281347052347234832731921218635019242352110301691",
+      "model_prob": 0.2791,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.1835,
+      "ev": 29.5833,
+      "kelly": 0.0446,
+      "sell_value": null
+    }
+  ]
 }

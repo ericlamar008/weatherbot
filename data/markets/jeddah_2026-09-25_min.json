@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-24T02:20:43.505142+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-25T21:00:00+00:00",
   "event_end_date": "2026-09-25T12:00:00Z",
   "last_scan": "2026-09-24T02:20:43.505142+00:00",
-  "skipped_reason": "event volume 75 < min_volume 500"
+  "skipped_reason": "event volume 75 < min_volume 500",
+  "last_lite_refresh": "2026-09-24T08:20:51.102284+00:00",
+  "forecast_mean": 27.85,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 30°C on September 25?",
+      "market_id": "4872857",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "yes_price": 0.48,
+      "no_price": 0.52,
+      "volume": 75.0,
+      "spread": 0.0,
+      "yes_token_id": "7593012407594784506329739200923643482909265288161286263585378624533590420108",
+      "no_token_id": "29023486202813253385897383016074145703442341172917193630179522362206277094574",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.48,
+      "market_prob": 0.48,
+      "belief_prob": 0.818,
+      "ev": 0.7042,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
