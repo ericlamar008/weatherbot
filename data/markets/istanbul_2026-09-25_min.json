@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-09-24T02:20:43.505142+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-25T21:00:00+00:00",
   "event_end_date": "2026-09-25T12:00:00Z",
   "last_scan": "2026-09-24T02:20:43.505142+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-24T08:20:51.102284+00:00"
+  "last_lite_refresh": "2026-09-24T14:20:47.368603+00:00",
+  "forecast_mean": 13.28,
+  "sigma": 2.484,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 8°C on September 25?",
+      "market_id": "4872810",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "80860817010504551458844672650100029899499333366529576614082686983116704907588",
+      "no_token_id": "14161326209941078342780240401475148783630302754197450935883448981913218919745",
+      "model_prob": 0.1175,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.1464,
+      "ev": -0.268,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 9°C on September 25?",
+      "market_id": "4872811",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "96826272166244413503328317944593497745645700711108811492545321187313947114477",
+      "no_token_id": "5573611259422613734222979947833424628307731276938340423524988891175375330982",
+      "model_prob": 0.1998,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.1369,
+      "ev": 5.845,
+      "kelly": 0.0298,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 12°C on September 25?",
+      "market_id": "4872814",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.42,
+      "no_price": 0.58,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "78838673629851843143661536904053728131506280630116219092746383887943066497249",
+      "no_token_id": "105002032337517196870610551328384721521374658012138118931773649091784194589148",
+      "model_prob": 0.6827,
+      "side": "YES",
+      "ask": 0.42,
+      "market_prob": 0.42,
+      "belief_prob": 0.5908,
+      "ev": 0.4067,
+      "kelly": 0.0736,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-09-23T02:20:39.998636+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-24T16:00:00+00:00",
   "event_end_date": "2026-09-24T12:00:00Z",
@@ -37,7 +37,7 @@
       "ev": 4.6667,
       "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": 0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -61,7 +61,7 @@
       "ev": 3.52,
       "kelly": 0.0022,
       "sell_value": null,
-      "model_prob_change": 0.0027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -85,7 +85,7 @@
       "ev": 53.2,
       "kelly": 0.0067,
       "sell_value": null,
-      "model_prob_change": 0.0072,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -109,8 +109,8 @@
       "ev": 26.08,
       "kelly": 0.0163,
       "sell_value": null,
-      "model_prob_change": 0.0162,
-      "yes_price_change": -0.0015
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 25°C on September 24?",
@@ -120,21 +120,21 @@
         25.0
       ],
       "yes_price": 0.015,
-      "no_price": 0.99,
+      "no_price": 0.985,
       "volume": 2314.0,
       "spread": 0.0,
       "yes_token_id": "49883371852080200732164679408380178564058746509804821546525177199963658033217",
       "no_token_id": "56072753399166255240419086829668399781089545334661490556175991864390832247739",
       "model_prob": 0.2055,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
+      "ask": 0.015,
+      "market_prob": 0.015,
       "belief_prob": 0.1388,
-      "ev": 12.71,
-      "kelly": 0.0321,
+      "ev": 8.2533,
+      "kelly": 0.0314,
       "sell_value": null,
-      "model_prob_change": 0.0214,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 26°C on September 24?",
@@ -143,9 +143,9 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.025,
+      "yes_price": 0.03,
       "no_price": 0.97,
-      "volume": 3309.0,
+      "volume": 3332.0,
       "spread": 0.0,
       "yes_token_id": "113268512400086101617241534562218573565211132767249128296582755847941563385002",
       "no_token_id": "45975672174027520997007272716335909573451517585483280692341003698477664206265",
@@ -153,12 +153,12 @@
       "side": "YES",
       "ask": 0.03,
       "market_prob": 0.03,
-      "belief_prob": 0.1805,
+      "belief_prob": 0.1823,
       "ev": 5.0767,
       "kelly": 0.0393,
       "sell_value": null,
-      "model_prob_change": 0.0018,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 27°C on September 24?",
@@ -168,20 +168,20 @@
         27.0
       ],
       "yes_price": 0.985,
-      "no_price": 0.02,
-      "volume": 6653.0,
+      "no_price": 0.015,
+      "volume": 6936.0,
       "spread": 0.0,
       "yes_token_id": "70372143364428594285529395793844140993231070210754194379015283691563385307192",
       "no_token_id": "8792553509497766506711639142063105269004915433468863486396756810716205515662",
       "model_prob": 0.1971,
       "side": "YES",
-      "ask": 0.98,
-      "market_prob": 0.98,
+      "ask": 0.985,
+      "market_prob": 0.985,
       "belief_prob": 0.4729,
-      "ev": -0.5193,
+      "ev": -0.5199,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0206,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 124.2,
       "kelly": 0.0155,
       "sell_value": null,
-      "model_prob_change": -0.0175,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 49.2,
       "kelly": 0.0062,
       "sell_value": null,
-      "model_prob_change": -0.008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 18.8,
       "kelly": 0.0024,
       "sell_value": null,
-      "model_prob_change": -0.003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 14.2,
       "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": -0.002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -325,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-24T14:07:21.411640+00:00",
-  "last_lite_refresh": "2026-09-24T08:20:51.102284+00:00"
+  "last_lite_refresh": "2026-09-24T14:20:47.368603+00:00"
 }

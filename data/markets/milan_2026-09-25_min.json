@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-24T02:20:43.505142+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-25T22:00:00+00:00",
   "event_end_date": "2026-09-25T12:00:00Z",
   "last_scan": "2026-09-24T02:20:43.505142+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-24T08:20:51.102284+00:00"
+  "last_lite_refresh": "2026-09-24T14:20:47.368603+00:00",
+  "forecast_mean": 14.67,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 9°C or below on September 25?",
+      "market_id": "4872698",
+      "range": [
+        -999.0,
+        9.0
+      ],
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "11318998436728466387045362983027563459345930786542940570522234893194211759788",
+      "no_token_id": "54412679338536941507258720423887979604542537047191690230421418637942860722314",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.7935,
+      "ev": 0.9354,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
