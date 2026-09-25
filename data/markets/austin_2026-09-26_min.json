@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-25T02:20:38.671699+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 38.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-27T05:00:00+00:00",
   "event_end_date": "2026-09-26T12:00:00Z",
   "last_scan": "2026-09-25T02:20:38.671699+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-25T08:20:42.122709+00:00"
+  "last_lite_refresh": "2026-09-25T14:20:40.117967+00:00",
+  "forecast_mean": 75.05,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be between 78-79°F on September 26?",
+      "market_id": "4903381",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "71308238643262611079862107356585254024885152184766552229951686325547855500623",
+      "no_token_id": "36054697079886827118684071315856085105735204506970474876022346896345945033716",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.7147,
+      "ev": 2.8632,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
