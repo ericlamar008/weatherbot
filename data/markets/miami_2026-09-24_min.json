@@ -3,16 +3,16 @@
   "city_name": "Miami",
   "date": "2026-09-24",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-23T02:20:39.998636+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-25T04:00:00+00:00",
   "event_end_date": "2026-09-24T12:00:00Z",
   "last_scan": "2026-09-25T02:20:38.671699+00:00",
-  "last_lite_refresh": "2026-09-24T20:20:38.984768+00:00",
+  "last_lite_refresh": "2026-09-25T08:20:42.122709+00:00",
   "forecast_mean": 76.96,
   "sigma": 2.5,
   "full_distribution": [
@@ -250,7 +250,10 @@
       "market_prob": 0.41,
       "role": "main_signal",
       "units": 25.8,
-      "sell_value": 0.36
+      "sell_value": 0.36,
+      "won": false,
+      "pnl_units": -25.8,
+      "user_entered": false
     },
     {
       "market_id": "4833891",
@@ -266,7 +269,10 @@
       "market_prob": 0.59,
       "role": "scenario_hedge",
       "units": 22.74,
-      "sell_value": 0.53
+      "sell_value": 0.53,
+      "won": true,
+      "pnl_units": 15.8,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 48.5,
@@ -277,5 +283,50 @@
   "success_probability": 0.2808,
   "confidence": 0.0021,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 78.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4833891",
+      "question": "Will the lowest temperature in Miami be between 76-77°F on September 24?",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "side": "YES",
+      "price": 0.41,
+      "model_prob": 0.2907,
+      "ev": -0.189,
+      "market_prob": 0.41,
+      "role": "main_signal",
+      "units": 25.8,
+      "sell_value": 0.36,
+      "won": false,
+      "pnl_units": -25.8,
+      "user_entered": false
+    },
+    {
+      "market_id": "4833891",
+      "question": "Will the lowest temperature in Miami be between 76-77°F on September 24? (NO)",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "side": "NO",
+      "price": 0.59,
+      "model_prob": 0.7093,
+      "ev": 0.1314,
+      "market_prob": 0.59,
+      "role": "scenario_hedge",
+      "units": 22.74,
+      "sell_value": 0.53,
+      "won": true,
+      "pnl_units": 15.8,
+      "user_entered": false
+    }
+  ]
 }
