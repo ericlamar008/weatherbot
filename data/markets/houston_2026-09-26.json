@@ -1,0 +1,222 @@
+{
+  "city": "houston",
+  "city_name": "Houston",
+  "date": "2026-09-26",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-09-25T02:20:38.671699+00:00",
+  "committed_allocation": null,
+  "hours_left": 50.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-27T05:00:00+00:00",
+  "event_end_date": "2026-09-26T12:00:00Z",
+  "last_scan": "2026-09-25T02:20:38.671699+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 91.11,
+  "sigma": 2.195,
+  "forecast_mean_shadow": 91.22,
+  "model_means_raw": {
+    "ecmwf": 90.84,
+    "gfs": 91.3,
+    "gem": 91.23
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Houston be between 82-83°F on September 26?",
+      "market_id": "4903614",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "75543780427699720322153437913497296695824155930984671065564766382142687363987",
+      "no_token_id": "18153915689156716618568912511450236790490856247113506104645527661093928367575",
+      "model_prob": 0.0051,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0035,
+      "ev": 6.0,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 84-85°F on September 26?",
+      "market_id": "4903615",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.034,
+      "no_price": 0.966,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "6336713596995220976862558446776027524131143316745512935399557151562450723988",
+      "no_token_id": "6509700040856101686912218476735672678833535711292228637858934483104854769695",
+      "model_prob": 0.0156,
+      "side": "YES",
+      "ask": 0.034,
+      "market_prob": 0.034,
+      "belief_prob": 0.022,
+      "ev": -0.3529,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 86-87°F on September 26?",
+      "market_id": "4903616",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "110980294751164802639153244271988190909786761717904321838457536506897716026708",
+      "no_token_id": "57285241530741053633757755238644091399154037424471170450244288868266152773278",
+      "model_prob": 0.0521,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.0531,
+      "ev": -0.0345,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 88-89°F on September 26?",
+      "market_id": "4903617",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.265,
+      "no_price": 0.735,
+      "volume": 103.0,
+      "spread": 0.0,
+      "yes_token_id": "2357058756570221987874488389279009583366833920893335535795573688420069764977",
+      "no_token_id": "78058116282278174700968433958529703133720923155439412325470780787489613878927",
+      "model_prob": 0.1632,
+      "side": "YES",
+      "ask": 0.265,
+      "market_prob": 0.265,
+      "belief_prob": 0.1988,
+      "ev": -0.2498,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 90-91°F on September 26?",
+      "market_id": "4903618",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 141.0,
+      "spread": 0.0,
+      "yes_token_id": "36392341272485719040969134328761158773696432236510560039731045366808190808328",
+      "no_token_id": "17617677770948850734276780864954294667241960240425407752726013846270211607385",
+      "model_prob": 0.3242,
+      "side": "YES",
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.37,
+      "ev": -0.1868,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 92-93°F on September 26?",
+      "market_id": "4903619",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 52.0,
+      "spread": 0.0,
+      "yes_token_id": "97130937677763733020557115528729155139136455806765992386254398147503497778289",
+      "no_token_id": "106105370052664282500119643022964898446049126359006639131103103833269940395692",
+      "model_prob": 0.2706,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.2406,
+      "ev": 0.3005,
+      "kelly": 0.0171,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Houston be between 94-95°F on September 26?",
+      "market_id": "4903620",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.08,
+      "no_price": 0.92,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "70722021785389002031600721019393611702313542735188465135511131211666900812646",
+      "no_token_id": "11953111688095097177425728665959041314580078378072232953847997241894992193115",
+      "model_prob": 0.1074,
+      "side": "YES",
+      "ask": 0.08,
+      "market_prob": 0.08,
+      "belief_prob": 0.0978,
+      "ev": 0.2225,
+      "kelly": 0.0048,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4903618",
+      "question": "Will the highest temperature in Houston be between 90-91°F on September 26?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.455,
+      "model_prob": 0.3242,
+      "ev": -0.1868,
+      "market_prob": 0.455,
+      "role": "main_signal",
+      "units": 28.1,
+      "sell_value": 0.45
+    },
+    {
+      "market_id": "4903618",
+      "question": "Will the highest temperature in Houston be between 90-91°F on September 26? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.545,
+      "model_prob": 0.6758,
+      "ev": 0.156,
+      "market_prob": 0.545,
+      "role": "scenario_hedge",
+      "units": 21.68,
+      "sell_value": 0.54
+    }
+  ],
+  "total_allocated_units": 49.8,
+  "portfolio_score": -0.040851,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 11.98,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.2953,
+  "confidence": 0.0252,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

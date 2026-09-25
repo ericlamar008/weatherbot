@@ -1,0 +1,271 @@
+{
+  "city": "los-angeles",
+  "city_name": "Los Angeles",
+  "date": "2026-09-26",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-09-25T02:20:38.671699+00:00",
+  "committed_allocation": null,
+  "hours_left": 52.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-27T07:00:00+00:00",
+  "event_end_date": "2026-09-26T12:00:00Z",
+  "last_scan": "2026-09-25T02:20:38.671699+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 82.06,
+  "sigma": 10.967,
+  "forecast_mean_shadow": 80.82,
+  "model_means_raw": {
+    "ecmwf": 93.28,
+    "gfs": 83.11
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Los Angeles be 75°F or below on September 26?",
+      "market_id": "4905684",
+      "range": [
+        -999.0,
+        75.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 44.0,
+      "spread": 0.0,
+      "yes_token_id": "78706609283946639553703049805452000681213179003202164835097045625768526460696",
+      "no_token_id": "42169625947748870217626507422843826013795199501698345644639022399537416981659",
+      "model_prob": 0.3942,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.2632,
+      "ev": 12.16,
+      "kelly": 0.062,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 76-77°F on September 26?",
+      "market_id": "4905685",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.115,
+      "no_price": 0.885,
+      "volume": 838.0,
+      "spread": 0.0,
+      "yes_token_id": "30666518816726412422377316179625063946934501335361212588084705412841269167254",
+      "no_token_id": "22534492532104376151231598875263468029158784380816206331052987178602051456438",
+      "model_prob": 0.0408,
+      "side": "YES",
+      "ask": 0.115,
+      "market_prob": 0.115,
+      "belief_prob": 0.0668,
+      "ev": -0.4191,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 78-79°F on September 26?",
+      "market_id": "4905686",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.18,
+      "no_price": 0.82,
+      "volume": 391.0,
+      "spread": 0.0,
+      "yes_token_id": "14362848248161675801475383059370785131296668180858917340448230873751787849905",
+      "no_token_id": "49681228346893220957340965102033664293926666580101470861931396290040413877379",
+      "model_prob": 0.0445,
+      "side": "YES",
+      "ask": 0.18,
+      "market_prob": 0.18,
+      "belief_prob": 0.0919,
+      "ev": -0.4894,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 80-81°F on September 26?",
+      "market_id": "4905687",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "105852378762596915755938140093753355691942013421851650984724585961859282207408",
+      "no_token_id": "64924686926591528617186620106553351677654042203007458518159278602498683068558",
+      "model_prob": 0.0468,
+      "side": "YES",
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.1529,
+      "ev": -0.5631,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 82-83°F on September 26?",
+      "market_id": "4905688",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 1638.0,
+      "spread": 0.0,
+      "yes_token_id": "42904206245199566949646832801705165346474702801717078381898599669413615799633",
+      "no_token_id": "72030300958287381342217528516030805832737501644053316059482624941240823892791",
+      "model_prob": 0.0473,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.148,
+      "ev": -0.5582,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 84-85°F on September 26?",
+      "market_id": "4905689",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "111231101293849647175825095844290728896942036340917088300453603265659618356236",
+      "no_token_id": "33224115276580069838187610915722975232036663052208583973776525956628313048231",
+      "model_prob": 0.046,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.0631,
+      "ev": -0.3358,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 86-87°F on September 26?",
+      "market_id": "4905690",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 53.0,
+      "spread": 0.0,
+      "yes_token_id": "24228931554519098139827781985353984675724790157782945398221707917413622953823",
+      "no_token_id": "64337459440646776387681707946306940240716097414677887758988094260490772311695",
+      "model_prob": 0.043,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.0454,
+      "ev": -0.092,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 88-89°F on September 26?",
+      "market_id": "4905691",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.01,
+      "no_price": 0.99,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "61280594297888517411042422426522306917127884773671574586754013378926386732956",
+      "no_token_id": "31134934295224433265759803499746449310412144361570888104289372919340366440811",
+      "model_prob": 0.0388,
+      "side": "YES",
+      "ask": 0.01,
+      "market_prob": 0.01,
+      "belief_prob": 0.0287,
+      "ev": 1.87,
+      "kelly": 0.0047,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 92-93°F on September 26?",
+      "market_id": "4905693",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 95.0,
+      "spread": 0.0,
+      "yes_token_id": "104138581783768601986750031266282867180688520219021670662117119105832752646938",
+      "no_token_id": "16559256947688391208929956573533588166597083942885533211389237125467187931846",
+      "model_prob": 0.0288,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0189,
+      "ev": 36.8,
+      "kelly": 0.0046,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be 94°F or higher on September 26?",
+      "market_id": "4905694",
+      "range": [
+        94.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "36180567986015171111646047145759380658242349341719712546761704528965762354436",
+      "no_token_id": "22848335774795067618319721314201497738866897719568506359335694956345387639948",
+      "model_prob": 0.236,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1536,
+      "ev": 306.2,
+      "kelly": 0.0383,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4905684",
+      "question": "Will the highest temperature in Los Angeles be 75°F or below on September 26?",
+      "range": [
+        -999.0,
+        75.0
+      ],
+      "side": "YES",
+      "price": 0.02,
+      "model_prob": 0.3942,
+      "ev": 12.16,
+      "market_prob": 0.02,
+      "role": "main_signal",
+      "units": 21.4,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 21.4,
+  "portfolio_score": 0.163398,
+  "worst_case_loss_frac": 0.214,
+  "best_case_pnl_units": 1048.6,
+  "worst_case_pnl_units": -21.4,
+  "success_probability": 0.1507,
+  "confidence": 0.1424,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
