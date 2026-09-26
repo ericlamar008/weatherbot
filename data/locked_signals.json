@@ -3068,13 +3068,32 @@
     "side": "YES",
     "entry_price": 0.58,
     "locked_at": "2026-09-26T03:55:22.684556+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.495,
     "last_pct": -14.7,
+    "exit_price": 0.465,
+    "closed_at": "2026-09-26T06:27:32.202759+00:00",
+    "close_reason": "manual_unlock",
+    "actual_temp": null,
+    "last_checked_at": "2026-09-26T06:22:22.374460+00:00",
+    "unlock_issue_number": 287
+  },
+  {
+    "issue_number": 286,
+    "city": "ankara",
+    "date": "2026-09-26",
+    "market_id": "4900574",
+    "market_type": "max",
+    "token_id": "86368100609138641955737800858386754324339155485610226432566172809024536235751",
+    "side": "YES",
+    "entry_price": 0.43,
+    "locked_at": "2026-09-26T06:27:29.745906+00:00",
+    "status": "open",
+    "last_price": null,
+    "last_pct": null,
     "exit_price": null,
     "closed_at": null,
     "close_reason": null,
-    "actual_temp": null,
-    "last_checked_at": "2026-09-26T06:22:22.374460+00:00"
+    "actual_temp": null
   }
 ]
