@@ -1,0 +1,195 @@
+{
+  "city": "seoul",
+  "city_name": "Seoul",
+  "date": "2026-09-27",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-26T02:20:38.408641+00:00",
+  "committed_allocation": null,
+  "hours_left": 36.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-27T15:00:00+00:00",
+  "event_end_date": "2026-09-27T12:00:00Z",
+  "last_scan": "2026-09-26T02:20:38.408641+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 17.69,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 13°C or below on September 27?",
+      "market_id": "4942074",
+      "range": [
+        -999.0,
+        13.0
+      ],
+      "yes_price": 0.0145,
+      "no_price": 0.9855,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "38525331769255500060403135937182789985354233135091881884853777379574338821085",
+      "no_token_id": "97867096496833062451644007548044491325329002843219106323508083042355202100508",
+      "model_prob": 0.0152,
+      "side": "YES",
+      "ask": 0.0145,
+      "market_prob": 0.0145,
+      "belief_prob": 0.015,
+      "ev": 0.0345,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 14°C on September 27?",
+      "market_id": "4942075",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.016,
+      "no_price": 0.984,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "101952501125013546720828523744776698692087117788553035981977933844020284528946",
+      "no_token_id": "76454762677705999757676579439986974297274968199760933708334818433735896136561",
+      "model_prob": 0.0207,
+      "side": "YES",
+      "ask": 0.016,
+      "market_prob": 0.016,
+      "belief_prob": 0.0191,
+      "ev": 0.1937,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 17°C on September 27?",
+      "market_id": "4942078",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 161.0,
+      "spread": 0.0,
+      "yes_token_id": "112571913918002992990034859835839510053161883750768047321607425664245675102962",
+      "no_token_id": "33903142543390888536302382266413102549518479065198724744422877968009637333798",
+      "model_prob": 0.2316,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.2258,
+      "ev": 0.0502,
+      "kelly": 0.0034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 18°C on September 27?",
+      "market_id": "4942079",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.535,
+      "no_price": 0.465,
+      "volume": 885.0,
+      "spread": 0.0,
+      "yes_token_id": "107583734642617838177710061675359429477319987910503777681201084134456716027450",
+      "no_token_id": "88690464294741668359428067432515772610601882307407831822348050907722839640608",
+      "model_prob": 0.2573,
+      "side": "YES",
+      "ask": 0.535,
+      "market_prob": 0.535,
+      "belief_prob": 0.3545,
+      "ev": -0.3374,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 19°C on September 27?",
+      "market_id": "4942080",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 410.0,
+      "spread": 0.0,
+      "yes_token_id": "25541966826963431338440820694359756428864948607970442047226749346490116627081",
+      "no_token_id": "20778338450064660131278883469431165778536252319312040852753906276210372071098",
+      "model_prob": 0.1677,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.1895,
+      "ev": -0.1761,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 23°C or higher on September 27?",
+      "market_id": "4942084",
+      "range": [
+        23.0,
+        999.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 167.0,
+      "spread": 0.0,
+      "yes_token_id": "55510134258560705253914222649219420422273590567062926746727441071383072234841",
+      "no_token_id": "102480451291258988348446748373112727253049203902934805689826605455442884956823",
+      "model_prob": 0.0093,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0115,
+      "ev": -0.2581,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4942079",
+      "question": "Will the lowest temperature in Seoul (Incheon) be 18°C on September 27?",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "side": "YES",
+      "price": 0.535,
+      "model_prob": 0.2573,
+      "ev": -0.3374,
+      "market_prob": 0.535,
+      "role": "main_signal",
+      "units": 27.2,
+      "sell_value": 0.4
+    },
+    {
+      "market_id": "4942079",
+      "question": "Will the lowest temperature in Seoul (Incheon) be 18°C on September 27? (NO)",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "side": "NO",
+      "price": 0.465,
+      "model_prob": 0.7427,
+      "ev": 0.3882,
+      "market_prob": 0.465,
+      "role": "scenario_hedge",
+      "units": 14.95,
+      "sell_value": 0.35
+    }
+  ],
+  "total_allocated_units": 42.1,
+  "portfolio_score": -0.031135,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 8.69,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3933,
+  "confidence": 0.0466,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

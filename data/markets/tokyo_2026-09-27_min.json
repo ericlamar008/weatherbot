@@ -1,0 +1,239 @@
+{
+  "city": "tokyo",
+  "city_name": "Tokyo",
+  "date": "2026-09-27",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-26T02:20:38.408641+00:00",
+  "committed_allocation": null,
+  "hours_left": 36.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-09-27T15:00:00+00:00",
+  "event_end_date": "2026-09-27T12:00:00Z",
+  "last_scan": "2026-09-26T02:20:38.408641+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 18.8,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tokyo be 14°C or below on September 27?",
+      "market_id": "4942140",
+      "range": [
+        -999.0,
+        14.0
+      ],
+      "yes_price": 0.003,
+      "no_price": 0.997,
+      "volume": 37.0,
+      "spread": 0.0,
+      "yes_token_id": "95235220288429336536774910603634716027069046633910412535397218860942765359851",
+      "no_token_id": "1144400646796896784663780127497410258002827725280203041641798691315799612334",
+      "model_prob": 0.0139,
+      "side": "YES",
+      "ask": 0.003,
+      "market_prob": 0.003,
+      "belief_prob": 0.0101,
+      "ev": 2.3667,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 17°C on September 27?",
+      "market_id": "4942143",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.05,
+      "no_price": 0.95,
+      "volume": 16.0,
+      "spread": 0.0,
+      "yes_token_id": "67823601759162678625869893115687731737607412433443719019489275351724535016409",
+      "no_token_id": "94436039628529037935542446920968167616573253759872509387602902333957505438714",
+      "model_prob": 0.1172,
+      "side": "YES",
+      "ask": 0.05,
+      "market_prob": 0.05,
+      "belief_prob": 0.0937,
+      "ev": 0.874,
+      "kelly": 0.0115,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 18°C on September 27?",
+      "market_id": "4942144",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.21,
+      "no_price": 0.79,
+      "volume": 115.0,
+      "spread": 0.0,
+      "yes_token_id": "42025953358715125890032244147012826184824662610870396482209304131026408126553",
+      "no_token_id": "53845679241005109434830684578017251961265855078467524237472348242575642851515",
+      "model_prob": 0.2215,
+      "side": "YES",
+      "ask": 0.21,
+      "market_prob": 0.21,
+      "belief_prob": 0.2175,
+      "ev": 0.0357,
+      "kelly": 0.0024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 19°C on September 27?",
+      "market_id": "4942145",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.51,
+      "no_price": 0.49,
+      "volume": 448.0,
+      "spread": 0.0,
+      "yes_token_id": "9905610656940679898233846305631096151494013850749850840618114605649786669997",
+      "no_token_id": "97057724208009092396089361772450320656328910409356642299155752394895463048848",
+      "model_prob": 0.2615,
+      "side": "YES",
+      "ask": 0.51,
+      "market_prob": 0.51,
+      "belief_prob": 0.3485,
+      "ev": -0.3167,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 20°C on September 27?",
+      "market_id": "4942146",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.265,
+      "no_price": 0.735,
+      "volume": 300.0,
+      "spread": 0.0,
+      "yes_token_id": "16477347487805913209084151531289020067932618720517532458604097446650742872223",
+      "no_token_id": "31816982843254735576403850083206960431270339899474592727102734740157174883085",
+      "model_prob": 0.1797,
+      "side": "YES",
+      "ask": 0.265,
+      "market_prob": 0.265,
+      "belief_prob": 0.2096,
+      "ev": -0.2091,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 21°C on September 27?",
+      "market_id": "4942147",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 17.0,
+      "spread": 0.0,
+      "yes_token_id": "46186243821356511660438284001049776199539324706067344224823508394649599345657",
+      "no_token_id": "37070604358079697625102348955007988890556624367086354314644845641401354782456",
+      "model_prob": 0.0836,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0701,
+      "ev": 0.5578,
+      "kelly": 0.0066,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 22°C on September 27?",
+      "market_id": "4942148",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.035,
+      "no_price": 0.965,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "901464576107310433636915123379041182663798921808804343416738119355701997379",
+      "no_token_id": "48253064392247552835857229359874436387245898863060175001971064831318871167232",
+      "model_prob": 0.0329,
+      "side": "YES",
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0336,
+      "ev": -0.04,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 24°C or higher on September 27?",
+      "market_id": "4942150",
+      "range": [
+        24.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 16.0,
+      "spread": 0.0,
+      "yes_token_id": "24265744536571606423903385751828461236451562248915338295376040552042299468243",
+      "no_token_id": "87166219282538460747970752333131392352105736002115989357095676676387594945140",
+      "model_prob": 0.0101,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0085,
+      "ev": 0.5455,
+      "kelly": 0.0008,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "4942145",
+      "question": "Will the lowest temperature in Tokyo be 19°C on September 27?",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "YES",
+      "price": 0.51,
+      "model_prob": 0.2615,
+      "ev": -0.3167,
+      "market_prob": 0.51,
+      "role": "main_signal",
+      "units": 26.8,
+      "sell_value": 0.48
+    },
+    {
+      "market_id": "4942145",
+      "question": "Will the lowest temperature in Tokyo be 19°C on September 27? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.49,
+      "model_prob": 0.7385,
+      "ev": 0.3296,
+      "market_prob": 0.49,
+      "role": "scenario_hedge",
+      "units": 16.14,
+      "sell_value": 0.49
+    }
+  ],
+  "total_allocated_units": 42.9,
+  "portfolio_score": -0.034492,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 9.61,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3596,
+  "confidence": 0.0682,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

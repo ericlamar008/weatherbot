@@ -3,14 +3,14 @@
   "city_name": "Madrid",
   "date": "2026-09-25",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-24T02:20:43.505142+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-25T22:00:00+00:00",
   "event_end_date": "2026-09-25T12:00:00Z",
-  "last_scan": "2026-09-25T02:20:38.671699+00:00",
+  "last_scan": "2026-09-26T02:20:38.408641+00:00",
   "horizon_days": 0,
   "forecast_mean": 34.55,
   "sigma": 0.989,
@@ -300,7 +300,10 @@
       "market_prob": 0.755,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.75
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 9.74,
+      "user_entered": false
     },
     {
       "market_id": "4873184",
@@ -316,7 +319,10 @@
       "market_prob": 0.245,
       "role": "scenario_hedge",
       "units": 6.49,
-      "sell_value": 0.24
+      "sell_value": 0.24,
+      "won": false,
+      "pnl_units": -6.49,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 36.5,
@@ -329,5 +335,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-26T02:07:21.992891+00:00",
-  "last_lite_refresh": "2026-09-25T20:20:40.974666+00:00"
+  "last_lite_refresh": "2026-09-25T20:20:40.974666+00:00",
+  "actual_temp": 35.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 3.25,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4873184",
+      "question": "Will the highest temperature in Madrid be 35°C on September 25?",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "side": "YES",
+      "price": 0.755,
+      "model_prob": 0.3147,
+      "ev": -0.3791,
+      "market_prob": 0.755,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.75,
+      "won": true,
+      "pnl_units": 9.74,
+      "user_entered": false
+    },
+    {
+      "market_id": "4873184",
+      "question": "Will the highest temperature in Madrid be 35°C on September 25? (NO)",
+      "range": [
+        35.0,
+        35.0
+      ],
+      "side": "NO",
+      "price": 0.245,
+      "model_prob": 0.6853,
+      "ev": 1.1682,
+      "market_prob": 0.245,
+      "role": "scenario_hedge",
+      "units": 6.49,
+      "sell_value": 0.24,
+      "won": false,
+      "pnl_units": -6.49,
+      "user_entered": false
+    }
+  ]
 }
