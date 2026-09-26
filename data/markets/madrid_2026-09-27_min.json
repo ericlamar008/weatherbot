@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-26T02:20:38.408641+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-27T22:00:00+00:00",
   "event_end_date": "2026-09-27T12:00:00Z",
   "last_scan": "2026-09-26T02:20:38.408641+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-26T08:20:36.704255+00:00"
+  "last_lite_refresh": "2026-09-26T14:20:43.806841+00:00",
+  "forecast_mean": 18.52,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 25°C or higher on September 27?",
+      "market_id": "4942197",
+      "range": [
+        25.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 200.0,
+      "spread": 0.0,
+      "yes_token_id": "53846620051055880525501130234445072943908329524643899844934646937061524935944",
+      "no_token_id": "112369569018839806368003668237554019719876638396261583063566927041297159039767",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.6519,
+      "ev": 117.5273,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
