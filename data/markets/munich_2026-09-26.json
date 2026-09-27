@@ -3,14 +3,14 @@
   "city_name": "Munich",
   "date": "2026-09-26",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-25T02:20:38.671699+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-26T22:00:00+00:00",
   "event_end_date": "2026-09-26T12:00:00Z",
-  "last_scan": "2026-09-26T02:20:38.408641+00:00",
+  "last_scan": "2026-09-27T02:20:43.900237+00:00",
   "horizon_days": 0,
   "forecast_mean": 22.35,
   "sigma": 0.999,
@@ -302,7 +302,10 @@
       "market_prob": 0.525,
       "role": "main_signal",
       "units": 28.1,
-      "sell_value": 0.5
+      "sell_value": 0.5,
+      "won": false,
+      "pnl_units": -28.1,
+      "user_entered": false
     },
     {
       "market_id": "4900610",
@@ -318,7 +321,10 @@
       "market_prob": 0.475,
       "role": "scenario_hedge",
       "units": 16.38,
-      "sell_value": 0.47
+      "sell_value": 0.47,
+      "won": true,
+      "pnl_units": 18.1,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 44.5,
@@ -331,5 +337,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-27T02:07:21.113569+00:00",
-  "last_lite_refresh": "2026-09-26T20:20:40.032746+00:00"
+  "last_lite_refresh": "2026-09-26T20:20:40.032746+00:00",
+  "actual_temp": 24.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4900610",
+      "question": "Will the highest temperature in Munich be 23°C on September 26?",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "YES",
+      "price": 0.525,
+      "model_prob": 0.2866,
+      "ev": -0.2952,
+      "market_prob": 0.525,
+      "role": "main_signal",
+      "units": 28.1,
+      "sell_value": 0.5,
+      "won": false,
+      "pnl_units": -28.1,
+      "user_entered": false
+    },
+    {
+      "market_id": "4900610",
+      "question": "Will the highest temperature in Munich be 23°C on September 26? (NO)",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "NO",
+      "price": 0.475,
+      "model_prob": 0.7134,
+      "ev": 0.3263,
+      "market_prob": 0.475,
+      "role": "scenario_hedge",
+      "units": 16.38,
+      "sell_value": 0.47,
+      "won": true,
+      "pnl_units": 18.1,
+      "user_entered": false
+    }
+  ]
 }
