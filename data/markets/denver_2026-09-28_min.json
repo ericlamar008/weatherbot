@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-27T02:20:43.900237+00:00",
   "committed_allocation": null,
-  "hours_left": 45.7,
+  "hours_left": 39.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-29T06:00:00+00:00",
   "event_end_date": "2026-09-28T12:00:00Z",
   "last_scan": "2026-09-27T02:20:43.900237+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-27T08:20:39.956132+00:00"
+  "last_lite_refresh": "2026-09-27T14:20:37.902070+00:00",
+  "forecast_mean": 60.27,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 60-61°F on September 28?",
+      "market_id": "4974708",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "83277271752214991974486954149107461913708043212807001464059689709518416810791",
+      "no_token_id": "43267954213837292303737135581489645086133557800445447789813085803124222869447",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.7305,
+      "ev": 2.1761,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
