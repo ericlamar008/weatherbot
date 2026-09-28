@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T04:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
-  "skipped_reason": "event volume 390 < min_volume 500"
+  "skipped_reason": "event volume 390 < min_volume 500",
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 75.57,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be 65°F or below on September 29?",
+      "market_id": "5017092",
+      "range": [
+        -999.0,
+        65.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 300.0,
+      "spread": 0.0,
+      "yes_token_id": "41283115459070019244889274125798641007920429753214783781285016686656149646886",
+      "no_token_id": "19499012386624416882970780708673492891580822465351454312074409018386936493387",
+      "model_prob": 0.0134,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0106,
+      "ev": 0.9273,
+      "kelly": 0.0013,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 70-71°F on September 29?",
+      "market_id": "5017095",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.15,
+      "no_price": 0.85,
+      "volume": 21.0,
+      "spread": 0.0,
+      "yes_token_id": "87004201114938163825468759342635853156385737779172066413423216272255497514271",
+      "no_token_id": "46300983214571776873901457610240991218841496068820273130317838831000925729014",
+      "model_prob": 0.0678,
+      "side": "YES",
+      "ask": 0.15,
+      "market_prob": 0.15,
+      "belief_prob": 0.0966,
+      "ev": -0.356,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 72-73°F on September 29?",
+      "market_id": "5017096",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.115,
+      "no_price": 0.885,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "115718315129155494734352488301856559227073097968590670303844065158823191969974",
+      "no_token_id": "76086454741699199105217541931356654190139769754701081356295131793264132720644",
+      "model_prob": 0.185,
+      "side": "YES",
+      "ask": 0.115,
+      "market_prob": 0.115,
+      "belief_prob": 0.1605,
+      "ev": 0.3957,
+      "kelly": 0.0129,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 74-75°F on September 29?",
+      "market_id": "5017097",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.36,
+      "no_price": 0.64,
+      "volume": 26.0,
+      "spread": 0.0,
+      "yes_token_id": "2417746523222507718205369331376648572691126111961569472104191884268866620842",
+      "no_token_id": "106919379675279870011064973128237497979085154309463167158464103079937776781253",
+      "model_prob": 0.3622,
+      "side": "YES",
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.3614,
+      "ev": 0.0039,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 76-77°F on September 29?",
+      "market_id": "5017098",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.4,
+      "no_price": 0.6,
+      "volume": 69.0,
+      "spread": 0.0,
+      "yes_token_id": "45810280973624202228157997282601989980830394866457262878055867218631449178212",
+      "no_token_id": "9761815584347742825597964569182064397496714169265615561681784118078637110347",
+      "model_prob": 0.3716,
+      "side": "YES",
+      "ask": 0.4,
+      "market_prob": 0.4,
+      "belief_prob": 0.3815,
+      "ev": -0.0463,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

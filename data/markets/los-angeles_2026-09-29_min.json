@@ -7,10 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 46.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T07:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
-  "skipped_reason": "event volume 71 < min_volume 500"
+  "skipped_reason": "event volume 71 < min_volume 500",
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 65.89,
+  "sigma": 4.615,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Los Angeles be 57°F or below on September 29?",
+      "market_id": "5025860",
+      "range": [
+        -999.0,
+        57.0
+      ],
+      "yes_price": 0.44,
+      "no_price": 0.56,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "19131352417053875914198923774385714709393653035123775050388406063885587406654",
+      "no_token_id": "80680251186627090918877008121515629085451603986774368236811164859409165306389",
+      "model_prob": 0.2282,
+      "side": "YES",
+      "ask": 0.44,
+      "market_prob": 0.44,
+      "belief_prob": 0.3023,
+      "ev": -0.313,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 64-65°F on September 29?",
+      "market_id": "5025864",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.265,
+      "no_price": 0.735,
+      "volume": 21.0,
+      "spread": 0.0,
+      "yes_token_id": "44844044552486469435665225794561713877060418502766722481964377853587980662627",
+      "no_token_id": "40540968081617276992996304412219048519706900831344837071080333561401354986574",
+      "model_prob": 0.2758,
+      "side": "YES",
+      "ask": 0.265,
+      "market_prob": 0.265,
+      "belief_prob": 0.272,
+      "ev": 0.0264,
+      "kelly": 0.0024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 70-71°F on September 29?",
+      "market_id": "5025867",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "109408459745004796995999582559088102263310013269965339466898974251350262167273",
+      "no_token_id": "83140645622063274168178803388141953160752229563315377217781635688112193783449",
+      "model_prob": 0.1691,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.1799,
+      "ev": -0.1005,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 72-73°F on September 29?",
+      "market_id": "5025868",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "63839316839320490188988670179462815612551415867329616292948821778545622186939",
+      "no_token_id": "63828022462728912967712272902409677335132794898874431725312941318776182569473",
+      "model_prob": 0.1042,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.1377,
+      "ev": -0.3115,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 74-75°F on September 29?",
+      "market_id": "5025869",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "67770248622387848338089161377418607062832329329883288084789357459378544994511",
+      "no_token_id": "15378247211746946210490872863308691366607294364428181177988839909083446878900",
+      "model_prob": 0.06,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.109,
+      "ev": -0.455,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be 76°F or higher on September 29?",
+      "market_id": "5025870",
+      "range": [
+        76.0,
+        999.0
+      ],
+      "yes_price": 0.44,
+      "no_price": 0.56,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "16326035258312687221765542659963484466335305176103799331258715695989438935687",
+      "no_token_id": "25034911664910413104603622545372433918760717995586586337972785507322595564631",
+      "model_prob": 0.1627,
+      "side": "YES",
+      "ask": 0.44,
+      "market_prob": 0.44,
+      "belief_prob": 0.2598,
+      "ev": -0.4095,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

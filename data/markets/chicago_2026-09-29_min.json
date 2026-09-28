@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T05:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
-  "skipped_reason": "event volume 9 < min_volume 500"
+  "skipped_reason": "event volume 9 < min_volume 500",
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 52.61,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Chicago be between 52-53°F on September 29?",
+      "market_id": "5017107",
+      "range": [
+        52.0,
+        53.0
+      ],
+      "yes_price": 0.255,
+      "no_price": 0.745,
+      "volume": 9.0,
+      "spread": 0.0,
+      "yes_token_id": "45048479065203626222633803492200324934615111844133616877372948886207479943017",
+      "no_token_id": "15531489486252038885129843066651239052203535437138580895071560925606815768195",
+      "model_prob": 0.5786,
+      "side": "YES",
+      "ask": 0.255,
+      "market_prob": 0.255,
+      "belief_prob": 0.4653,
+      "ev": 0.8247,
+      "kelly": 0.0706,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be between 54-55°F on September 29?",
+      "market_id": "5017108",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "7226359015893607864638158795981777641524727270179676003527712540593347917027",
+      "no_token_id": "61349733524921653260697657131707748342335354964425970915010417508622846712651",
+      "model_prob": 0.4214,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.4314,
+      "ev": -0.0413,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

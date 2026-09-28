@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-09-27T02:20:43.900237+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-29T04:00:00+00:00",
   "event_end_date": "2026-09-28T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
   "skipped_reason": "event volume 8 < min_volume 500",
-  "last_lite_refresh": "2026-09-27T20:20:36.891810+00:00"
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 13.13,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 12°C on September 28?",
+      "market_id": "4978132",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.48,
+      "no_price": 0.52,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "19680500340817902735006660292603492724881166246232267755997340234159176537701",
+      "no_token_id": "82295444669667633879068499126351486390735988780076703504226124117603853328681",
+      "model_prob": 0.2323,
+      "side": "YES",
+      "ask": 0.48,
+      "market_prob": 0.48,
+      "belief_prob": 0.319,
+      "ev": -0.3354,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 13°C on September 28?",
+      "market_id": "4978133",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.495,
+      "no_price": 0.505,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "43375927883395443189734508881735391319015024361373960843611644064431540542937",
+      "no_token_id": "39649503032769897112921474082687277865115832495326200622137945252074388933219",
+      "model_prob": 0.3263,
+      "side": "YES",
+      "ask": 0.495,
+      "market_prob": 0.495,
+      "belief_prob": 0.3853,
+      "ev": -0.2216,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 14°C on September 28?",
+      "market_id": "4978134",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "21228278513016654800276616801583952743783344647156723051085311681467603165918",
+      "no_token_id": "49692140611989892152686778797855203647664039790905831159579751251915357604517",
+      "model_prob": 0.2662,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.348,
+      "ev": -0.304,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 15°C on September 28?",
+      "market_id": "4978135",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.465,
+      "no_price": 0.535,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "69050131926340025610774671564122912578176091611298001158412508646967005235902",
+      "no_token_id": "50979698709328467582729084257922566321357492182441336712721051232568769376926",
+      "model_prob": 0.1373,
+      "side": "YES",
+      "ask": 0.465,
+      "market_prob": 0.465,
+      "belief_prob": 0.252,
+      "ev": -0.4581,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 17°C on September 28?",
+      "market_id": "4978137",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "102692003216907119724791186090880819155609294230992793816839716369908707922261",
+      "no_token_id": "26180872698476383272304360869381669674381548918341146845314878403913852256392",
+      "model_prob": 0.0216,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0142,
+      "ev": 27.4,
+      "kelly": 0.0034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 18°C or higher on September 28?",
+      "market_id": "4978138",
+      "range": [
+        18.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "2371120660464010230479244877782268405718248061856725877127768926310219437715",
+      "no_token_id": "62461324347529748653097723738878661996077042795164929594772327532885279393162",
+      "model_prob": 0.0162,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0107,
+      "ev": 20.4,
+      "kelly": 0.0026,
+      "sell_value": null
+    }
+  ]
 }

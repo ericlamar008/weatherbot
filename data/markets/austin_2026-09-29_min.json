@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T05:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
-  "skipped_reason": "event volume 9 < min_volume 500"
+  "skipped_reason": "event volume 9 < min_volume 500",
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 75.53,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be between 72-73°F on September 29?",
+      "market_id": "5017118",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "102253919140371196159950712088761114450771020957258171559992362717964381544304",
+      "no_token_id": "92693084741183054812594293998022172208612740653409698270641150479874077537448",
+      "model_prob": 0.3403,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.3069,
+      "ev": 0.2527,
+      "kelly": 0.0205,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be between 74-75°F on September 29?",
+      "market_id": "5017119",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 9.0,
+      "spread": 0.0,
+      "yes_token_id": "8073750556665091069151187954727335634303054394742305678246170867800250199498",
+      "no_token_id": "86075746197679842677532649285749147815931319124141781608594966937867578667851",
+      "model_prob": 0.6597,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.5111,
+      "ev": 1.1749,
+      "kelly": 0.0902,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-27T02:20:43.900237+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-29T06:00:00+00:00",
   "event_end_date": "2026-09-28T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-27T20:20:36.891810+00:00"
+  "last_lite_refresh": "2026-09-28T08:20:37.449225+00:00",
+  "forecast_mean": 13.12,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 15°C on September 28?",
+      "market_id": "4978147",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.42,
+      "no_price": 0.58,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "7229515673073401267519527862672121886616145879861687564969535134091300581855",
+      "no_token_id": "82215367187279848800771163312675406248441396508624677985912301754893218104712",
+      "model_prob": 0.7109,
+      "side": "YES",
+      "ask": 0.42,
+      "market_prob": 0.42,
+      "belief_prob": 0.6091,
+      "ev": 0.4502,
+      "kelly": 0.0815,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 16°C on September 28?",
+      "market_id": "4978148",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.42,
+      "no_price": 0.58,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "70663543917057047712168615243976789045189129856407432168284745612001677433322",
+      "no_token_id": "3785096011075021326282540265827084982095059732119604757792454174562067394988",
+      "model_prob": 0.2891,
+      "side": "YES",
+      "ask": 0.42,
+      "market_prob": 0.42,
+      "belief_prob": 0.3349,
+      "ev": -0.2026,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }
