@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T04:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-28T02:20:38.032066+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-28T14:20:48.464301+00:00"
+  "last_lite_refresh": "2026-09-28T20:20:39.517764+00:00",
+  "forecast_mean": 57.63,
+  "sigma": 2.507,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Atlanta be between 58-59°F on September 29?",
+      "market_id": "5017086",
+      "range": [
+        58.0,
+        59.0
+      ],
+      "yes_price": 0.44,
+      "no_price": 0.56,
+      "volume": 14.0,
+      "spread": 0.0,
+      "yes_token_id": "105112688833526444870022336376433896797608688918832491305165762240953287837672",
+      "no_token_id": "108771428137802081304956401912535182632858950279821800715313117702407885523920",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.44,
+      "market_prob": 0.44,
+      "belief_prob": 0.804,
+      "ev": 0.8273,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
