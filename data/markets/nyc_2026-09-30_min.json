@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T04:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 60.39,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be 51°F or below on September 30?",
+      "market_id": "5067335",
+      "range": [
+        -999.0,
+        51.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "39440091048464991354480178063667616734147124735498012218887555922523662497729",
+      "no_token_id": "63139442059316658495820449018916781376794104869158798531198251437791684577836",
+      "model_prob": 0.0654,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0583,
+      "ev": 0.2956,
+      "kelly": 0.0035,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 62-63°F on September 30?",
+      "market_id": "5067341",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.425,
+      "no_price": 0.575,
+      "volume": 351.0,
+      "spread": 0.0,
+      "yes_token_id": "19754627432072051050796965240525616878945726165710718007860291019478377509374",
+      "no_token_id": "10069959452881725625402367443512790317184055717719093642328315978780015370499",
+      "model_prob": 0.8178,
+      "side": "YES",
+      "ask": 0.425,
+      "market_prob": 0.425,
+      "belief_prob": 0.6803,
+      "ev": 0.6007,
+      "kelly": 0.111,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 66-67°F on September 30?",
+      "market_id": "5067343",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "43163863646390133117324280103498802496330017908232272090850953246364353962075",
+      "no_token_id": "52173331860399199761955051929138396746204285740585656154161611150401157302581",
+      "model_prob": 0.1168,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0813,
+      "ev": 4.2452,
+      "kelly": 0.0167,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T05:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 228 < min_volume 500"
+  "skipped_reason": "event volume 228 < min_volume 500",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 79.61,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Houston be between 72-73°F on September 30?",
+      "market_id": "5067413",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 110.0,
+      "spread": 0.0,
+      "yes_token_id": "79225509054413623603399608316118534199477196448511511888432112917703875873672",
+      "no_token_id": "74884275095489368515081535175169524295238268483847394438070234931905619108857",
+      "model_prob": 0.0244,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0178,
+      "ev": 2.2364,
+      "kelly": 0.0031,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 76-77°F on September 30?",
+      "market_id": "5067415",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "49824020763657310862612397981771682177306895030590096201847425191153020900576",
+      "no_token_id": "12234919856445748932688546467652050834708251971075080808455388929470334466863",
+      "model_prob": 0.1937,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.2012,
+      "ev": -0.0642,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 78-79°F on September 30?",
+      "market_id": "5067416",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 77.0,
+      "spread": 0.0,
+      "yes_token_id": "53086150875065485379853564606147389616965957835229746124869208652196670098446",
+      "no_token_id": "38139793463094171024385374432534630731567735359532918113441434187020280025416",
+      "model_prob": 0.3831,
+      "side": "YES",
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.4188,
+      "ev": -0.1365,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 80-81°F on September 30?",
+      "market_id": "5067417",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "2510767588334079030560413209896234885309080448765778691994911578248429717029",
+      "no_token_id": "10918934888880060937876342332986228948647731781840942164674997506474278332470",
+      "model_prob": 0.3988,
+      "side": "YES",
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.3782,
+      "ev": 0.1124,
+      "kelly": 0.0145,
+      "sell_value": null
+    }
+  ]
 }

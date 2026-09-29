@@ -6,20 +6,18 @@
   "status": "open",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T21:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
   "horizon_days": 1,
-  "forecast_mean": 20.12,
+  "forecast_mean": 20.07,
   "sigma": 0.564,
-  "forecast_mean_shadow": 20.31,
+  "forecast_mean_shadow": 20.14,
   "model_means_raw": {
-    "ecmwf": 19.68,
-    "gfs": 19.87,
-    "gem": 20.39,
-    "icon_eu": 19.84
+    "ecmwf": 19.48,
+    "gfs": 20.06
   },
   "full_distribution": [
     {
@@ -42,7 +40,9 @@
       "belief_prob": 0.0004,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 15°C on September 30?",
@@ -64,7 +64,9 @@
       "belief_prob": 0.0002,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 16°C on September 30?",
@@ -75,7 +77,7 @@
       ],
       "yes_price": 0.005,
       "no_price": 0.995,
-      "volume": 32.0,
+      "volume": 72.0,
       "spread": 0.0,
       "yes_token_id": "22128543848365951693474550997505426105355936085757372851035749795543410382615",
       "no_token_id": "20641904516562611617948197670215214997133670836305738189462341296154200891666",
@@ -86,7 +88,9 @@
       "belief_prob": 0.0021,
       "ev": -0.58,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 17°C on September 30?",
@@ -96,19 +100,21 @@
         17.0
       ],
       "yes_price": 0.007,
-      "no_price": 0.994,
-      "volume": 174.0,
+      "no_price": 0.993,
+      "volume": 283.0,
       "spread": 0.0,
       "yes_token_id": "102613315321207708821663381536672446516608538384570123665148744842330134923791",
       "no_token_id": "9886020250376798870628222817794159077845898415224706029092885594206013193053",
-      "model_prob": 0.0021,
+      "model_prob": 0.0023,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
-      "belief_prob": 0.0038,
-      "ev": -0.4167,
+      "ask": 0.007,
+      "market_prob": 0.007,
+      "belief_prob": 0.0039,
+      "ev": -0.4429,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 18°C on September 30?",
@@ -118,19 +124,21 @@
         18.0
       ],
       "yes_price": 0.005,
-      "no_price": 0.971,
-      "volume": 20.0,
+      "no_price": 0.995,
+      "volume": 69.0,
       "spread": 0.0,
       "yes_token_id": "79617089628937678017028701389041792772212363161255754040430385348521018240300",
       "no_token_id": "41530174280291023621173535027485063726434489717909776369417301497772332920567",
-      "model_prob": 0.0146,
+      "model_prob": 0.0163,
       "side": "YES",
-      "ask": 0.029,
-      "market_prob": 0.029,
-      "belief_prob": 0.0112,
-      "ev": -0.3241,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0123,
+      "ev": 1.46,
+      "kelly": 0.0018,
+      "sell_value": null,
+      "model_prob_change": 0.0017,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 19°C on September 30?",
@@ -139,20 +147,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.15,
-      "no_price": 0.85,
-      "volume": 969.0,
+      "yes_price": 0.145,
+      "no_price": 0.855,
+      "volume": 1101.0,
       "spread": 0.0,
       "yes_token_id": "65189629421797145127040318462568649653411073948724578339841539694486501440633",
       "no_token_id": "30321359602835043201676248906863418811085285062598728127978418587061745230501",
-      "model_prob": 0.1434,
+      "model_prob": 0.1599,
       "side": "YES",
-      "ask": 0.15,
-      "market_prob": 0.15,
-      "belief_prob": 0.1457,
-      "ev": -0.0287,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.145,
+      "market_prob": 0.145,
+      "belief_prob": 0.1547,
+      "ev": 0.0669,
+      "kelly": 0.0028,
+      "sell_value": null,
+      "model_prob_change": 0.0165,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Istanbul be 20°C on September 30?",
@@ -161,20 +171,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.53,
-      "no_price": 0.5,
-      "volume": 1468.0,
+      "yes_price": 0.535,
+      "no_price": 0.465,
+      "volume": 1583.0,
       "spread": 0.0,
       "yes_token_id": "94417644536839889943948045465336994828185007915647537558069031726674970084424",
       "no_token_id": "67233924650003270382808877390551986156236298300015876532901862812965864012449",
-      "model_prob": 0.574,
+      "model_prob": 0.5806,
       "side": "YES",
-      "ask": 0.5,
-      "market_prob": 0.5,
-      "belief_prob": 0.5586,
-      "ev": 0.0962,
-      "kelly": 0.0241,
-      "sell_value": null
+      "ask": 0.535,
+      "market_prob": 0.535,
+      "belief_prob": 0.5646,
+      "ev": 0.0553,
+      "kelly": 0.0159,
+      "sell_value": null,
+      "model_prob_change": 0.0066,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Istanbul be 21°C on September 30?",
@@ -183,20 +195,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.265,
-      "no_price": 0.7,
-      "volume": 50.0,
+      "yes_price": 0.27,
+      "no_price": 0.73,
+      "volume": 171.0,
       "spread": 0.0,
       "yes_token_id": "69337479647456979757708040415857058093819997179027853072099377677214570824164",
       "no_token_id": "2978425564440276195424220597377519439429524862770690180992621594221968006441",
-      "model_prob": 0.2361,
+      "model_prob": 0.214,
       "side": "YES",
-      "ask": 0.3,
-      "market_prob": 0.3,
-      "belief_prob": 0.2462,
-      "ev": -0.1383,
+      "ask": 0.27,
+      "market_prob": 0.27,
+      "belief_prob": 0.2336,
+      "ev": -0.1348,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0221,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Istanbul be 22°C on September 30?",
@@ -206,19 +220,21 @@
         22.0
       ],
       "yes_price": 0.041,
-      "no_price": 0.95,
-      "volume": 235.0,
+      "no_price": 0.959,
+      "volume": 284.0,
       "spread": 0.0,
       "yes_token_id": "63393491426950314504260600406800314572377874584050124664719581437343222016663",
       "no_token_id": "102331662073522187167793227135384325999310104417709877977838935662562107151682",
-      "model_prob": 0.0249,
+      "model_prob": 0.0223,
       "side": "YES",
-      "ask": 0.05,
-      "market_prob": 0.05,
-      "belief_prob": 0.0305,
-      "ev": -0.326,
+      "ask": 0.041,
+      "market_prob": 0.041,
+      "belief_prob": 0.0288,
+      "ev": -0.2976,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0026,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 23°C on September 30?",
@@ -228,19 +244,21 @@
         23.0
       ],
       "yes_price": 0.005,
-      "no_price": 0.994,
-      "volume": 24.0,
+      "no_price": 0.995,
+      "volume": 63.0,
       "spread": 0.0,
       "yes_token_id": "35728279984272545791241936708941658716491485057691015856856707186177870544936",
       "no_token_id": "59731154053595800269078419012923130884996048836072373497821861412239826739070",
-      "model_prob": 0.0032,
+      "model_prob": 0.003,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
-      "belief_prob": 0.0038,
-      "ev": -0.3,
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0037,
+      "ev": -0.26,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 24°C or higher on September 30?",
@@ -251,7 +269,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 11.0,
+      "volume": 51.0,
       "spread": 0.0,
       "yes_token_id": "24508290980114439450117175320806763860543123737889490355035614182604556813940",
       "no_token_id": "4879393923060320240186839437191477433953711101482277352091704601338416630017",
@@ -262,7 +280,9 @@
       "belief_prob": 0.0015,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +328,6 @@
   "confidence": 0.4135,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-09-29T08:07:26.251106+00:00"
+  "last_price_refresh": "2026-09-29T08:07:26.251106+00:00",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00"
 }

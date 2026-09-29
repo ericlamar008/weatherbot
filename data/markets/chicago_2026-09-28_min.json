@@ -3,16 +3,16 @@
   "city_name": "Chicago",
   "date": "2026-09-28",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-27T02:20:43.900237+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-29T05:00:00+00:00",
   "event_end_date": "2026-09-28T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "last_lite_refresh": "2026-09-28T20:20:39.517764+00:00",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
   "forecast_mean": 51.66,
   "sigma": 2.5,
   "full_distribution": [
@@ -254,7 +254,10 @@
       "market_prob": 0.975,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.951
+      "sell_value": 0.951,
+      "won": true,
+      "pnl_units": 0.77,
+      "user_entered": false
     },
     {
       "market_id": "4974685",
@@ -270,7 +273,10 @@
       "market_prob": 0.025,
       "role": "scenario_hedge",
       "units": 0.51,
-      "sell_value": 0.001
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.51,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.5,
@@ -281,5 +287,50 @@
   "success_probability": 0.3872,
   "confidence": 0.0362,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 52.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.26,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "4974685",
+      "question": "Will the lowest temperature in Chicago be between 52-53°F on September 28?",
+      "range": [
+        52.0,
+        53.0
+      ],
+      "side": "YES",
+      "price": 0.975,
+      "model_prob": 0.2734,
+      "ev": -0.4677,
+      "market_prob": 0.975,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.951,
+      "won": true,
+      "pnl_units": 0.77,
+      "user_entered": false
+    },
+    {
+      "market_id": "4974685",
+      "question": "Will the lowest temperature in Chicago be between 52-53°F on September 28? (NO)",
+      "range": [
+        52.0,
+        53.0
+      ],
+      "side": "NO",
+      "price": 0.025,
+      "model_prob": 0.7266,
+      "ev": 18.24,
+      "market_prob": 0.025,
+      "role": "scenario_hedge",
+      "units": 0.51,
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.51,
+      "user_entered": false
+    }
+  ]
 }

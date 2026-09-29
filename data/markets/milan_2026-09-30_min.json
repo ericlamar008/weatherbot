@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T22:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 10 < min_volume 500"
+  "skipped_reason": "event volume 10 < min_volume 500",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 15.66,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 12°C on September 30?",
+      "market_id": "5063299",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 11.0,
+      "spread": 0.0,
+      "yes_token_id": "71717161213692747409450621271573001643432100075943774142067888953037425551709",
+      "no_token_id": "88691582577761205651499199970099470170953238378122430083428929547680982307100",
+      "model_prob": 0.1398,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.1294,
+      "ev": 0.1764,
+      "kelly": 0.0054,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 14°C on September 30?",
+      "market_id": "5063301",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.265,
+      "no_price": 0.735,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "93558485539263426167769755347314172577034817446445788234083041428189743682592",
+      "no_token_id": "14428621014299622774270042262060804255520954190655167549366007631810785730385",
+      "model_prob": 0.8602,
+      "side": "YES",
+      "ask": 0.265,
+      "market_prob": 0.265,
+      "belief_prob": 0.6519,
+      "ev": 1.46,
+      "kelly": 0.1316,
+      "sell_value": null
+    }
+  ]
 }

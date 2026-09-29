@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T04:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
   "horizon_days": 2,
-  "forecast_mean": 73.85,
-  "sigma": 2.5,
+  "forecast_mean": 76.5,
+  "sigma": 2.709,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Miami be 67°F or below on September 30?",
@@ -29,13 +29,37 @@
       "spread": 0.0,
       "yes_token_id": "14213241579971425509042546276987639867844576079254394106446256987693454701833",
       "no_token_id": "32308856126413108849970555373064356231925944709427143010486960770694887831470",
-      "model_prob": 0.0504,
+      "model_prob": 0.1528,
       "side": "YES",
       "ask": 0.0055,
       "market_prob": 0.0055,
-      "belief_prob": 0.0347,
-      "ev": 5.3091,
-      "kelly": 0.0073,
+      "belief_prob": 0.1012,
+      "ev": 17.4,
+      "kelly": 0.0241,
+      "sell_value": null,
+      "model_prob_change": 0.1024,
+      "yes_price_change": 0.0
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 80-81°F on September 30?",
+      "market_id": "5067375",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.175,
+      "no_price": 0.825,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "90892826876495370467195254126814584233665422708608574856420143271506531416918",
+      "no_token_id": "94399527644128397559502430006264093286799404442435422884257872582087505626970",
+      "model_prob": 0.6945,
+      "side": "YES",
+      "ask": 0.175,
+      "market_prob": 0.175,
+      "belief_prob": 0.5127,
+      "ev": 1.9297,
+      "kelly": 0.1023,
       "sell_value": null
     },
     {
@@ -51,14 +75,16 @@
       "spread": 0.0,
       "yes_token_id": "19559717557072155750378533534259616640786078827860895177067781485319900195135",
       "no_token_id": "53179637423647794390764487843893358701438050177938937477550347548624037316437",
-      "model_prob": 0.0054,
+      "model_prob": 0.1528,
       "side": "YES",
       "ask": 0.0055,
       "market_prob": 0.0055,
-      "belief_prob": 0.0054,
-      "ev": -0.0182,
-      "kelly": 0.0,
-      "sell_value": null
+      "belief_prob": 0.1012,
+      "ev": 17.4,
+      "kelly": 0.0241,
+      "sell_value": null,
+      "model_prob_change": 0.1474,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -88,5 +114,6 @@
   "confidence": 1.0,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-09-29T08:07:26.251106+00:00"
+  "last_price_refresh": "2026-09-29T08:07:26.251106+00:00",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00"
 }

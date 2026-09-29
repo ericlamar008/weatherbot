@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T05:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 24 < min_volume 500"
+  "skipped_reason": "event volume 24 < min_volume 500",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 76.97,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be between 70-71°F on September 30?",
+      "market_id": "5067348",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "54071516689430606383643689894008310087045370182723283126554182300244462338143",
+      "no_token_id": "113136797955276777711739631774908500516000834760644708306869738376127259618499",
+      "model_prob": 0.061,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.0729,
+      "ev": -0.2326,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 78-79°F on September 30?",
+      "market_id": "5067352",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "6307134165478980333302226051495337229139719707026668708646593644907267733720",
+      "no_token_id": "69135706386367302532798085074476953965981394797490071309473119736850364985947",
+      "model_prob": 0.6197,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.4903,
+      "ev": 0.9612,
+      "kelly": 0.0801,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 80-81°F on September 30?",
+      "market_id": "5067353",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 70.0,
+      "spread": 0.0,
+      "yes_token_id": "14476145203694681448408192421203650623698099815900286713161668699860477802688",
+      "no_token_id": "55966220754001185562157225007722469049653932081024104020908401012878974050601",
+      "model_prob": 0.2842,
+      "side": "YES",
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.344,
+      "ev": -0.244,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 84-85°F on September 30?",
+      "market_id": "5067355",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "65944279325739325031457704440652868089050258384751947364817786604791323121372",
+      "no_token_id": "5571103349886377125824019673779607347485409218548839573124926565545655523986",
+      "model_prob": 0.035,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.0543,
+      "ev": -0.3967,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

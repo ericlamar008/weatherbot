@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T21:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 11.07,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 7°C or below on September 30?",
+      "market_id": "5063208",
+      "range": [
+        -999.0,
+        7.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "29982421660266768402874816543693172410843465860532257703361262065233398257400",
+      "no_token_id": "34255301875346530676131927682041350175528666085927098919069276084405235808644",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.7358,
+      "ev": 2.0033,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T06:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
   "last_scan": "2026-09-29T02:20:36.807366+00:00",
   "skipped_reason": "event volume 5 < min_volume 500",
-  "last_lite_refresh": "2026-09-28T20:20:39.517764+00:00"
+  "last_lite_refresh": "2026-09-29T08:20:41.136916+00:00",
+  "forecast_mean": 14.1,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 14°C on September 29?",
+      "market_id": "5028049",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "99780475626203602457185327554387985017871132216622196470576943678213665544512",
+      "no_token_id": "97802745612577531907102079626721151825828090650495514868297781654764905040048",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.7935,
+      "ev": 0.9354,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
