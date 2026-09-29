@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-29T22:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
-  "last_scan": "2026-09-28T02:20:38.032066+00:00",
-  "skipped_reason": "event volume 178 < min_volume 500",
+  "last_scan": "2026-09-29T02:20:36.807366+00:00",
   "last_lite_refresh": "2026-09-28T20:20:39.517764+00:00",
-  "forecast_mean": 15.17,
+  "forecast_mean": 15.38,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -30,17 +29,125 @@
       "spread": 0.0,
       "yes_token_id": "105373550061066694372876085927891812918333445834375496045147541899194505148469",
       "no_token_id": "36650083738080816490247058554983238834365609881099942327467819212356975154882",
-      "model_prob": 1.0,
+      "model_prob": 0.0045,
       "side": "YES",
       "ask": 0.016,
       "market_prob": 0.016,
-      "belief_prob": 0.6556,
-      "ev": 39.975,
-      "kelly": 0.1625,
-      "sell_value": null,
-      "model_prob_change": 0.0,
-      "yes_price_change": 0.0
+      "belief_prob": 0.0085,
+      "ev": -0.4688,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 14°C on September 29?",
+      "market_id": "5011282",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.495,
+      "no_price": 0.505,
+      "volume": 22.0,
+      "spread": 0.0,
+      "yes_token_id": "57373768156478347056173223509101469343883326675370020109995324580972488331772",
+      "no_token_id": "111696074842567247005890753815214668420828647877783684099333060275263377732008",
+      "model_prob": 0.1601,
+      "side": "YES",
+      "ask": 0.495,
+      "market_prob": 0.495,
+      "belief_prob": 0.2773,
+      "ev": -0.4398,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 15°C on September 29?",
+      "market_id": "5011283",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 294.0,
+      "spread": 0.0,
+      "yes_token_id": "31646701966840520281998889409587082128707523487873474691807175234484416168165",
+      "no_token_id": "100617189619430290181519153471587600944416385954881909147621236189270271290977",
+      "model_prob": 0.2539,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1652,
+      "ev": 329.4,
+      "kelly": 0.0412,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 19°C or higher on September 29?",
+      "market_id": "5011287",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "20792310559233920733278744801268796152532658137365985363059198360971189343172",
+      "no_token_id": "101503122526677149193055380242168092251345011930909872616101721239557518122721",
+      "model_prob": 0.0382,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.025,
+      "ev": 49.0,
+      "kelly": 0.0061,
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-09-29T02:07:22.852019+00:00"
+  "last_price_refresh": "2026-09-29T02:07:22.852019+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "5011282",
+      "question": "Will the lowest temperature in Milan be 14°C on September 29?",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "side": "YES",
+      "price": 0.495,
+      "model_prob": 0.1601,
+      "ev": -0.4398,
+      "market_prob": 0.495,
+      "role": "main_signal",
+      "units": 22.3,
+      "sell_value": 0.02
+    },
+    {
+      "market_id": "5011282",
+      "question": "Will the lowest temperature in Milan be 14°C on September 29? (NO)",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "side": "NO",
+      "price": 0.505,
+      "model_prob": 0.8399,
+      "ev": 0.4311,
+      "market_prob": 0.505,
+      "role": "scenario_hedge",
+      "units": 12.55,
+      "sell_value": 0.02
+    }
+  ],
+  "total_allocated_units": 34.9,
+  "portfolio_score": 0.009224,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 10.2,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.5658,
+  "confidence": 0.119,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

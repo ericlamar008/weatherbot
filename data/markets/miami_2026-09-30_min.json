@@ -1,0 +1,91 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-09-30",
+  "unit": "F",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-09-29T02:20:36.807366+00:00",
+  "committed_allocation": null,
+  "hours_left": 49.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-01T04:00:00+00:00",
+  "event_end_date": "2026-09-30T12:00:00Z",
+  "last_scan": "2026-09-29T02:20:36.807366+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 73.85,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be 67°F or below on September 30?",
+      "market_id": "5067368",
+      "range": [
+        -999.0,
+        67.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 200.0,
+      "spread": 0.0,
+      "yes_token_id": "14213241579971425509042546276987639867844576079254394106446256987693454701833",
+      "no_token_id": "32308856126413108849970555373064356231925944709427143010486960770694887831470",
+      "model_prob": 0.0504,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0347,
+      "ev": 5.3091,
+      "kelly": 0.0073,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be 86°F or higher on September 30?",
+      "market_id": "5067378",
+      "range": [
+        86.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 300.0,
+      "spread": 0.0,
+      "yes_token_id": "19559717557072155750378533534259616640786078827860895177067781485319900195135",
+      "no_token_id": "53179637423647794390764487843893358701438050177938937477550347548624037316437",
+      "model_prob": 0.0054,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0054,
+      "ev": -0.0182,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5067368",
+      "question": "Will the lowest temperature in Miami be 67°F or below on September 30?",
+      "range": [
+        -999.0,
+        67.0
+      ],
+      "side": "YES",
+      "price": 0.0055,
+      "model_prob": 0.0504,
+      "ev": 5.3091,
+      "market_prob": 0.0055,
+      "role": "main_signal",
+      "units": 7.2,
+      "sell_value": 0.001
+    }
+  ],
+  "total_allocated_units": 7.2,
+  "portfolio_score": 0.634985,
+  "worst_case_loss_frac": 0.072,
+  "best_case_pnl_units": 1301.89,
+  "worst_case_pnl_units": -7.2,
+  "success_probability": 0.2614,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
