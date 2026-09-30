@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T05:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-09-30T02:20:41.052290+00:00",
-  "skipped_reason": "event volume 155 < min_volume 500"
+  "skipped_reason": "event volume 155 < min_volume 500",
+  "last_lite_refresh": "2026-09-30T08:20:42.101030+00:00",
+  "forecast_mean": 62.33,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Chicago be 55°F or below on October 1?",
+      "market_id": "5119272",
+      "range": [
+        -999.0,
+        55.0
+      ],
+      "yes_price": 0.255,
+      "no_price": 0.745,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "32106155640025277052266777901217338897714774173725399826296248078244433938067",
+      "no_token_id": "35531095064458222835531158279918854168550085575101855003479504566597769734351",
+      "model_prob": 0.1192,
+      "side": "YES",
+      "ask": 0.255,
+      "market_prob": 0.255,
+      "belief_prob": 0.1667,
+      "ev": -0.3463,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be between 62-63°F on October 1?",
+      "market_id": "5119276",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 14.0,
+      "spread": 0.0,
+      "yes_token_id": "67306010933689681679591028494867342622232401221754673911764078432151739112957",
+      "no_token_id": "81131450134217703469485894919499811843147423743962699486299499842667504751884",
+      "model_prob": 0.8697,
+      "side": "YES",
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.6651,
+      "ev": 1.3337,
+      "kelly": 0.1329,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be between 72-73°F on October 1?",
+      "market_id": "5119281",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "45991211515179677751016795561377885143637275497336800080212793479980400243499",
+      "no_token_id": "90986379708402670779760593695262352650469629869419354880977058691947346701308",
+      "model_prob": 0.0111,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.0947,
+      "ev": -0.6212,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

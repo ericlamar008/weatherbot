@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T05:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-09-30T02:20:41.052290+00:00",
-  "skipped_reason": "event volume 148 < min_volume 500"
+  "skipped_reason": "event volume 148 < min_volume 500",
+  "last_lite_refresh": "2026-09-30T08:20:42.101030+00:00",
+  "forecast_mean": 75.63,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be between 80-81°F on October 1?",
+      "market_id": "5119247",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.259,
+      "no_price": 0.741,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "2767121367897700693827103889419286225201603820713782225901022998300890640483",
+      "no_token_id": "89522909193025140681644527592942882751126685953251293869192348060797955401401",
+      "model_prob": 0.6893,
+      "side": "YES",
+      "ask": 0.259,
+      "market_prob": 0.259,
+      "belief_prob": 0.5387,
+      "ev": 1.0799,
+      "kelly": 0.0944,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be 84°F or higher on October 1?",
+      "market_id": "5119249",
+      "range": [
+        84.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 70.0,
+      "spread": 0.0,
+      "yes_token_id": "38635313450464432957988939324974553687259090989674269495951459462001419365574",
+      "no_token_id": "96667115627924540093319465773932989566706176104728573320237585661881775124241",
+      "model_prob": 0.3107,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.2039,
+      "ev": 36.0727,
+      "kelly": 0.0499,
+      "sell_value": null
+    }
+  ]
 }

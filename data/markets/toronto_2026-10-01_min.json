@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T04:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-09-30T02:20:41.052290+00:00",
-  "skipped_reason": "event volume 5 < min_volume 500"
+  "skipped_reason": "event volume 5 < min_volume 500",
+  "last_lite_refresh": "2026-09-30T08:20:42.101030+00:00",
+  "forecast_mean": 17.24,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 17°C on October 1?",
+      "market_id": "5122899",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.315,
+      "no_price": 0.685,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "78827457662224977159608347959848875947104612131258671165164798583262477000345",
+      "no_token_id": "50079327430101801350926236757240342519245502826806465926089250040600654464186",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.315,
+      "market_prob": 0.315,
+      "belief_prob": 0.7602,
+      "ev": 1.4133,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
