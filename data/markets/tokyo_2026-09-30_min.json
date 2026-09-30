@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T15:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
@@ -37,7 +37,7 @@
       "ev": 49.4,
       "kelly": 0.0062,
       "sell_value": null,
-      "model_prob_change": -0.0014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -61,7 +61,7 @@
       "ev": 74.2,
       "kelly": 0.0093,
       "sell_value": null,
-      "model_prob_change": -0.0022,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -85,7 +85,7 @@
       "ev": 2.2933,
       "kelly": 0.0177,
       "sell_value": null,
-      "model_prob_change": -0.0041,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -96,21 +96,21 @@
         17.0
       ],
       "yes_price": 0.0425,
-      "no_price": 0.9475,
-      "volume": 319.0,
+      "no_price": 0.9575,
+      "volume": 342.0,
       "spread": 0.0,
       "yes_token_id": "4480081016974756256721895591938602055488717751820613030784348606429311430504",
       "no_token_id": "5426935258622072869369234159023406331062577519773296352551386483838505606238",
       "model_prob": 0.2383,
       "side": "YES",
-      "ask": 0.0525,
-      "market_prob": 0.0525,
+      "ask": 0.0425,
+      "market_prob": 0.0425,
       "belief_prob": 0.1698,
-      "ev": 2.301,
-      "kelly": 0.0319,
+      "ev": 2.9953,
+      "kelly": 0.0332,
       "sell_value": null,
-      "model_prob_change": -0.0031,
-      "yes_price_change": 0.0045
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 18°C on September 30?",
@@ -119,22 +119,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.9565,
-      "no_price": 0.0455,
-      "volume": 865.0,
+      "yes_price": 0.961,
+      "no_price": 0.039,
+      "volume": 881.0,
       "spread": 0.0,
       "yes_token_id": "73717593019833418722776437372509410177024477506479585774822354067906074178338",
       "no_token_id": "40479440446100773607221117693349713597094905363598918265924558720381229776409",
       "model_prob": 0.2533,
       "side": "YES",
-      "ask": 0.9545,
-      "market_prob": 0.9545,
-      "belief_prob": 0.4994,
-      "ev": -0.4775,
+      "ask": 0.961,
+      "market_prob": 0.961,
+      "belief_prob": 0.501,
+      "ev": -0.4787,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0023,
-      "yes_price_change": -0.0035
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0045
     },
     {
       "question": "Will the lowest temperature in Tokyo be 19°C on September 30?",
@@ -157,7 +157,7 @@
       "ev": 206.0,
       "kelly": 0.0258,
       "sell_value": null,
-      "model_prob_change": 0.0043,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -181,7 +181,7 @@
       "ev": 91.0,
       "kelly": 0.0114,
       "sell_value": null,
-      "model_prob_change": 0.0025,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 35.2,
       "kelly": 0.0044,
       "sell_value": null,
-      "model_prob_change": 0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 13.4,
       "kelly": 0.0017,
       "sell_value": null,
-      "model_prob_change": 0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 5.2,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 4.8,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -325,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-09-30T14:07:24.336008+00:00",
-  "last_lite_refresh": "2026-09-30T08:20:42.101030+00:00"
+  "last_lite_refresh": "2026-09-30T14:20:39.774646+00:00"
 }
