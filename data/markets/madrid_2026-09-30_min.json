@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-09-30T22:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
-  "last_scan": "2026-09-29T02:20:36.807366+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_scan": "2026-09-30T02:20:41.052290+00:00",
   "last_lite_refresh": "2026-09-29T20:20:39.081570+00:00",
-  "forecast_mean": 17.73,
+  "forecast_mean": 17.63,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -30,15 +29,169 @@
       "spread": 0.0,
       "yes_token_id": "42726974523407784248715592579083558235406107230834125168589063159695088980925",
       "no_token_id": "74487879573357127877176239849486519888372275669283299198440981746477991182622",
-      "model_prob": 1.0,
+      "model_prob": 0.1338,
       "side": "YES",
       "ask": 0.09,
       "market_prob": 0.09,
-      "belief_prob": 0.6815,
-      "ev": 6.5722,
-      "kelly": 0.1625,
+      "belief_prob": 0.1185,
+      "ev": 0.3167,
+      "kelly": 0.0078,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 20°C on September 30?",
+      "market_id": "5063314",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 74.0,
+      "spread": 0.0,
+      "yes_token_id": "82315742015484897698156514279243339543967103044112557918537207905062460121311",
+      "no_token_id": "72972209976236109399309825623120247154483908693212512489781612540818995614053",
+      "model_prob": 0.0718,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0468,
+      "ev": 92.6,
+      "kelly": 0.0116,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 21°C on September 30?",
+      "market_id": "5063315",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "83723822418289771663640885915211044295413489272791627748785408680787686333596",
+      "no_token_id": "103886452957827555286319132656417804051400633324930870426496171529505179210015",
+      "model_prob": 0.028,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0184,
+      "ev": 35.8,
+      "kelly": 0.0045,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 22°C on September 30?",
+      "market_id": "5063316",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "46071409612018683220092001256260091188517240108420020037002938225063902158300",
+      "no_token_id": "680735071958594626207579285616068709481764799866034839906217292859139980303",
+      "model_prob": 0.011,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0073,
+      "ev": 13.6,
+      "kelly": 0.0017,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 23°C on September 30?",
+      "market_id": "5063317",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "101474268246186249984068144260269600337636340639104540490269161204492527699045",
+      "no_token_id": "9070536293545757886377133192986555691626940707225530896348246725621577341252",
+      "model_prob": 0.0046,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0032,
+      "ev": 5.4,
+      "kelly": 0.0007,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 24°C or higher on September 30?",
+      "market_id": "5063318",
+      "range": [
+        24.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "13204378775670770436719417410050478010900945808965962325603640493882885034932",
+      "no_token_id": "47904694165946608560666217354314924323496992702280081516467160270159412065968",
+      "model_prob": 0.0043,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.003,
+      "ev": 5.0,
+      "kelly": 0.0006,
       "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-09-30T02:07:24.015063+00:00"
+  "last_price_refresh": "2026-09-30T02:07:24.015063+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "5063310",
+      "question": "Will the lowest temperature in Madrid be 16°C on September 30?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.09,
+      "model_prob": 0.1338,
+      "ev": 0.3167,
+      "market_prob": 0.09,
+      "role": "main_signal",
+      "units": 12.4,
+      "sell_value": null
+    },
+    {
+      "market_id": "5063310",
+      "question": "Will the lowest temperature in Madrid be 16°C on September 30? (NO)",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "NO",
+      "price": 0.91,
+      "model_prob": 0.8662,
+      "ev": -0.0313,
+      "market_prob": 0.91,
+      "role": "scenario_hedge",
+      "units": 24.27,
+      "sell_value": 0.82
+    }
+  ],
+  "total_allocated_units": 36.7,
+  "portfolio_score": 0.331467,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 101.11,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.5433,
+  "confidence": 0.688,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

@@ -3,15 +3,15 @@
   "city_name": "Paris",
   "date": "2026-09-29",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-28T02:20:38.032066+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-09-29T22:00:00+00:00",
   "event_end_date": "2026-09-29T12:00:00Z",
-  "last_scan": "2026-09-29T02:20:36.807366+00:00",
+  "last_scan": "2026-09-30T02:20:41.052290+00:00",
   "last_lite_refresh": "2026-09-29T20:20:39.081570+00:00",
   "forecast_mean": 15.86,
   "sigma": 1.4,
@@ -298,7 +298,10 @@
       "market_prob": 0.485,
       "role": "main_signal",
       "units": 26.3,
-      "sell_value": 0.28
+      "sell_value": 0.28,
+      "won": false,
+      "pnl_units": -26.3,
+      "user_entered": false
     },
     {
       "market_id": "5011180",
@@ -314,7 +317,10 @@
       "market_prob": 0.515,
       "role": "scenario_hedge",
       "units": 17.31,
-      "sell_value": 0.31
+      "sell_value": 0.31,
+      "won": true,
+      "pnl_units": 16.3,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 43.6,
@@ -325,5 +331,50 @@
   "success_probability": 0.3647,
   "confidence": 0.0096,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 15.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5011180",
+      "question": "Will the lowest temperature in Paris be 16°C on September 29?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.485,
+      "model_prob": 0.2628,
+      "ev": -0.2977,
+      "market_prob": 0.485,
+      "role": "main_signal",
+      "units": 26.3,
+      "sell_value": 0.28,
+      "won": false,
+      "pnl_units": -26.3,
+      "user_entered": false
+    },
+    {
+      "market_id": "5011180",
+      "question": "Will the lowest temperature in Paris be 16°C on September 29? (NO)",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "NO",
+      "price": 0.515,
+      "model_prob": 0.7372,
+      "ev": 0.2804,
+      "market_prob": 0.515,
+      "role": "scenario_hedge",
+      "units": 17.31,
+      "sell_value": 0.31,
+      "won": true,
+      "pnl_units": 16.3,
+      "user_entered": false
+    }
+  ]
 }
