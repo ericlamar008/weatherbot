@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 39.7,
+  "hours_left": 33.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T06:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-09-30T02:20:41.052290+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-30T14:20:39.774646+00:00"
+  "last_lite_refresh": "2026-09-30T20:20:43.404533+00:00",
+  "forecast_mean": 52.68,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 54-55°F on October 1?",
+      "market_id": "5119300",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 9.0,
+      "spread": 0.0,
+      "yes_token_id": "77224807204238925587524333767421776068575904867631211085619734648773278410420",
+      "no_token_id": "60758020829778784621430919500668812421987691605113953460016613865771102533514",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.7375,
+      "ev": 1.95,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

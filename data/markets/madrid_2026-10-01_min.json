@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 25.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T22:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-09-30T02:20:41.052290+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-09-30T14:20:39.774646+00:00"
+  "last_lite_refresh": "2026-09-30T20:20:43.404533+00:00",
+  "forecast_mean": 15.84,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 14°C on October 1?",
+      "market_id": "5115708",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "18013146763966219171392566326765736809765905876859962555195869063790029244116",
+      "no_token_id": "8318228898193279362948632203025014180384323641169794572635437824887111185512",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.7515,
+      "ev": 1.5914,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
