@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-01T02:20:42.314778+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-03T04:00:00+00:00",
   "event_end_date": "2026-10-02T12:00:00Z",
   "last_scan": "2026-10-01T02:20:42.314778+00:00",
-  "skipped_reason": "event volume 5 < min_volume 500"
+  "skipped_reason": "event volume 5 < min_volume 500",
+  "last_lite_refresh": "2026-10-01T08:20:40.480002+00:00",
+  "forecast_mean": 79.56,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be between 76-77°F on October 2?",
+      "market_id": "5150187",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "35805745386048087566414879656477728949983710922094316916568692734953309113902",
+      "no_token_id": "112037779418152719377581331964066664927750454775872705746046468353777498673986",
+      "model_prob": 0.1665,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.1415,
+      "ev": 0.4895,
+      "kelly": 0.0128,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 78-79°F on October 2?",
+      "market_id": "5150188",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.33,
+      "no_price": 0.67,
+      "volume": 180.0,
+      "spread": 0.0,
+      "yes_token_id": "55344648599971538124976370591201289991904219806924020324924397654370133317185",
+      "no_token_id": "112103341242658632643658902351214551946980205798927954879149253304936559118001",
+      "model_prob": 0.3253,
+      "side": "YES",
+      "ask": 0.33,
+      "market_prob": 0.33,
+      "belief_prob": 0.3269,
+      "ev": -0.0094,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 80-81°F on October 2?",
+      "market_id": "5150189",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.355,
+      "no_price": 0.645,
+      "volume": 168.0,
+      "spread": 0.0,
+      "yes_token_id": "8986057012003325352289297204912943214556896528254170109485986344315742746825",
+      "no_token_id": "848431760432910787029766694259574538455455853749779261980293688478031395347",
+      "model_prob": 0.3325,
+      "side": "YES",
+      "ask": 0.355,
+      "market_prob": 0.355,
+      "belief_prob": 0.3404,
+      "ev": -0.0411,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 82-83°F on October 2?",
+      "market_id": "5150190",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.175,
+      "no_price": 0.825,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "79967308155596773274204557316096667903314990650371297429519347263269343403122",
+      "no_token_id": "32023928577018553583732455096176331562731345944213628919111662628793762111320",
+      "model_prob": 0.1756,
+      "side": "YES",
+      "ask": 0.175,
+      "market_prob": 0.175,
+      "belief_prob": 0.1754,
+      "ev": 0.0023,
+      "kelly": 0.0001,
+      "sell_value": null
+    }
+  ]
 }

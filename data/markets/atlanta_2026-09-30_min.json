@@ -3,16 +3,16 @@
   "city_name": "Atlanta",
   "date": "2026-09-30",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-01T04:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-10-01T02:20:42.314778+00:00",
-  "last_lite_refresh": "2026-09-30T20:20:43.404533+00:00",
+  "last_lite_refresh": "2026-10-01T08:20:40.480002+00:00",
   "forecast_mean": 60.41,
   "sigma": 2.5,
   "full_distribution": [
@@ -166,7 +166,10 @@
       "market_prob": 0.955,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.91
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.41,
+      "user_entered": false
     },
     {
       "market_id": "5067362",
@@ -182,7 +185,10 @@
       "market_prob": 0.045,
       "role": "scenario_hedge",
       "units": 0.94,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.94,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.9,
@@ -193,5 +199,50 @@
   "success_probability": 0.4408,
   "confidence": 0.3108,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 62.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.47,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5067362",
+      "question": "Will the lowest temperature in Atlanta be between 62-63°F on September 30?",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "side": "YES",
+      "price": 0.955,
+      "model_prob": 0.2003,
+      "ev": -0.5137,
+      "market_prob": 0.955,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.41,
+      "user_entered": false
+    },
+    {
+      "market_id": "5067362",
+      "question": "Will the lowest temperature in Atlanta be between 62-63°F on September 30? (NO)",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "side": "NO",
+      "price": 0.045,
+      "model_prob": 0.7997,
+      "ev": 10.9022,
+      "market_prob": 0.045,
+      "role": "scenario_hedge",
+      "units": 0.94,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.94,
+      "user_entered": false
+    }
+  ]
 }

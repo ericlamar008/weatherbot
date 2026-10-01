@@ -3,15 +3,15 @@
   "city_name": "Houston",
   "date": "2026-09-30",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-09-29T02:20:36.807366+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-01T05:00:00+00:00",
   "event_end_date": "2026-09-30T12:00:00Z",
   "last_scan": "2026-10-01T02:20:42.314778+00:00",
-  "last_lite_refresh": "2026-09-30T20:20:43.404533+00:00",
+  "last_lite_refresh": "2026-10-01T08:20:40.480002+00:00",
   "forecast_mean": 90.89,
   "sigma": 1.592,
   "forecast_mean_shadow": 91.13,
@@ -302,7 +302,10 @@
       "market_prob": 0.595,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.59
+      "sell_value": 0.59,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "5067683",
@@ -318,7 +321,10 @@
       "market_prob": 0.405,
       "role": "scenario_hedge",
       "units": 13.61,
-      "sell_value": 0.4
+      "sell_value": 0.4,
+      "won": true,
+      "pnl_units": 19.99,
+      "user_entered": false
     },
     {
       "market_id": "5067687",
@@ -334,7 +340,10 @@
       "market_prob": 0.9985,
       "role": "scenario_hedge",
       "units": 3.37,
-      "sell_value": 0.997
+      "sell_value": 0.997,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 47.0,
@@ -346,5 +355,69 @@
   "confidence": 0.1525,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "skipped_reason": "ensemble forecast unavailable (mean is None)"
+  "skipped_reason": "ensemble forecast unavailable (mean is None)",
+  "actual_temp": 92.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5067683",
+      "question": "Will the highest temperature in Houston be between 90-91°F on September 30?",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "YES",
+      "price": 0.595,
+      "model_prob": 0.4876,
+      "ev": -0.1173,
+      "market_prob": 0.595,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.59,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "5067683",
+      "question": "Will the highest temperature in Houston be between 90-91°F on September 30? (NO)",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "side": "NO",
+      "price": 0.405,
+      "model_prob": 0.5124,
+      "ev": 0.1723,
+      "market_prob": 0.405,
+      "role": "scenario_hedge",
+      "units": 13.61,
+      "sell_value": 0.4,
+      "won": true,
+      "pnl_units": 19.99,
+      "user_entered": false
+    },
+    {
+      "market_id": "5067687",
+      "question": "Will the highest temperature in Houston be between 98-99°F on September 30? (NO)",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "side": "NO",
+      "price": 0.9985,
+      "model_prob": 0.9981,
+      "ev": -0.0003,
+      "market_prob": 0.9985,
+      "role": "scenario_hedge",
+      "units": 3.37,
+      "sell_value": 0.997,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
+    }
+  ]
 }
