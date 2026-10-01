@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 20.7,
+  "hours_left": 14.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T05:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-10-01T02:20:42.314778+00:00",
   "skipped_reason": "event volume 195 < min_volume 500",
-  "last_lite_refresh": "2026-10-01T08:20:40.480002+00:00",
-  "forecast_mean": 79.85,
+  "last_lite_refresh": "2026-10-01T14:20:44.733818+00:00",
+  "forecast_mean": 79.86,
   "sigma": 2.5,
   "full_distribution": [
     {
@@ -25,21 +25,21 @@
         75.0
       ],
       "yes_price": 0.45,
-      "no_price": 0.56,
+      "no_price": 0.55,
       "volume": 8.0,
       "spread": 0.0,
       "yes_token_id": "12200517885157295048342510384964825312565993889840919155849277567428929098718",
       "no_token_id": "27756999134633785038254578222482256907384585313151399273998903499719144512267",
-      "model_prob": 0.0605,
+      "model_prob": 0.0601,
       "side": "YES",
-      "ask": 0.44,
-      "market_prob": 0.44,
-      "belief_prob": 0.1968,
-      "ev": -0.5607,
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.1966,
+      "ev": -0.5631,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0495,
-      "yes_price_change": 0.06
+      "model_prob_change": -0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 76-77°F on October 1?",
@@ -49,19 +49,21 @@
         77.0
       ],
       "yes_price": 0.225,
-      "no_price": 0.76,
+      "no_price": 0.775,
       "volume": 2.0,
       "spread": 0.0,
       "yes_token_id": "78758485524371726589032579909416981397658794648211113257110539338208626663793",
       "no_token_id": "110528977225709085702285815663449008806606911709985762655992457289375581157503",
-      "model_prob": 0.1685,
+      "model_prob": 0.1675,
       "side": "YES",
-      "ask": 0.24,
-      "market_prob": 0.24,
-      "belief_prob": 0.1883,
-      "ev": -0.1937,
+      "ask": 0.225,
+      "market_prob": 0.225,
+      "belief_prob": 0.1876,
+      "ev": -0.1662,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 80-81°F on October 1?",
@@ -71,21 +73,21 @@
         81.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.505,
-      "volume": 119.0,
+      "no_price": 0.9995,
+      "volume": 498.0,
       "spread": 0.0,
       "yes_token_id": "88012397006021963806196178331440994219361690017767204356778069220278540967232",
       "no_token_id": "77538377574345308028277185450173175789805459806650980768760443671967205095527",
       "model_prob": 0.4009,
       "side": "YES",
-      "ask": 0.495,
-      "market_prob": 0.495,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.2608,
-      "ev": -0.1236,
-      "kelly": 0.0,
+      "ev": 520.6,
+      "kelly": 0.0651,
       "sell_value": null,
-      "model_prob_change": -0.3235,
-      "yes_price_change": -0.1
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 82-83°F on October 1?",
@@ -100,14 +102,16 @@
       "spread": 0.0,
       "yes_token_id": "59304461647264799039337861388367755290775793082048403028744629177682038449935",
       "no_token_id": "1094220959000104730754673886149528502468933119291039849011085182669222384125",
-      "model_prob": 0.2295,
+      "model_prob": 0.2302,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.1494,
-      "ev": 297.8,
-      "kelly": 0.0372,
-      "sell_value": null
+      "belief_prob": 0.1498,
+      "ev": 298.6,
+      "kelly": 0.0373,
+      "sell_value": null,
+      "model_prob_change": 0.0007,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 84-85°F on October 1?",
@@ -122,15 +126,15 @@
       "spread": 0.0,
       "yes_token_id": "32867158406966285916300701415252024352388774737948458470380974394541585071135",
       "no_token_id": "19300233395659930622874654889104600609826948764438470911564390101806097972960",
-      "model_prob": 0.0877,
+      "model_prob": 0.0881,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0572,
-      "ev": 113.4,
+      "belief_prob": 0.0574,
+      "ev": 113.8,
       "kelly": 0.0142,
       "sell_value": null,
-      "model_prob_change": -0.0702,
+      "model_prob_change": 0.0004,
       "yes_price_change": 0.0
     },
     {
@@ -146,14 +150,16 @@
       "spread": 0.0,
       "yes_token_id": "109692211730138419699059542822226878762426699228273767846912052625862098855609",
       "no_token_id": "28957668859686033301741096848552832343375614465896368657382217596820106749658",
-      "model_prob": 0.0302,
+      "model_prob": 0.0303,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0198,
-      "ev": 38.6,
-      "kelly": 0.0048,
-      "sell_value": null
+      "belief_prob": 0.0199,
+      "ev": 38.8,
+      "kelly": 0.0049,
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 88-89°F on October 1?",
@@ -175,7 +181,9 @@
       "belief_prob": 0.0073,
       "ev": 13.6,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 90-91°F on October 1?",
@@ -198,7 +206,7 @@
       "ev": 5.0,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": -0.0034,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -221,7 +229,9 @@
       "belief_prob": 0.0052,
       "ev": 9.4,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-01T14:07:22.250108+00:00"

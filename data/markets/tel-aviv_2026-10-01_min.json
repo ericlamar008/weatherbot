@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-09-30T02:20:41.052290+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 6.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-01T21:00:00+00:00",
   "event_end_date": "2026-10-01T12:00:00Z",
   "last_scan": "2026-10-01T02:20:42.314778+00:00",
-  "last_lite_refresh": "2026-10-01T08:20:40.480002+00:00",
+  "last_lite_refresh": "2026-10-01T14:20:44.733818+00:00",
   "forecast_mean": 20.43,
   "sigma": 1.4,
   "full_distribution": [
@@ -24,19 +24,21 @@
         17.0
       ],
       "yes_price": 0.0495,
-      "no_price": 0.985,
+      "no_price": 0.9505,
       "volume": 15.0,
       "spread": 0.0,
       "yes_token_id": "81175042101246412985620197627374549423819659455574714845320010382287989684941",
       "no_token_id": "74535787219206573073232784023199927501117212672443539432574483107512461574408",
       "model_prob": 0.0486,
       "side": "YES",
-      "ask": 0.015,
-      "market_prob": 0.015,
+      "ask": 0.0495,
+      "market_prob": 0.0495,
       "belief_prob": 0.0489,
-      "ev": 1.4533,
-      "kelly": 0.0055,
-      "sell_value": null
+      "ev": -0.0121,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tel Aviv be 19°C on October 1?",
@@ -46,19 +48,21 @@
         19.0
       ],
       "yes_price": 0.09,
-      "no_price": 0.9,
+      "no_price": 0.91,
       "volume": 15.0,
       "spread": 0.0,
       "yes_token_id": "72578730115398112017084696621541148309618494136879513150458100522504330307246",
       "no_token_id": "41598469904135421541725058632632110775240579262586090306105002443408174824358",
       "model_prob": 0.166,
       "side": "YES",
-      "ask": 0.1,
-      "market_prob": 0.1,
+      "ask": 0.09,
+      "market_prob": 0.09,
       "belief_prob": 0.1394,
-      "ev": 0.429,
-      "kelly": 0.0119,
-      "sell_value": null
+      "ev": 0.5489,
+      "kelly": 0.0136,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tel Aviv be 20°C on October 1?",
@@ -68,20 +72,20 @@
         20.0
       ],
       "yes_price": 0.17,
-      "no_price": 0.8,
+      "no_price": 0.83,
       "volume": 125.0,
       "spread": 0.0,
       "yes_token_id": "91128108517987569488447409802444715186045384332849885437219963258516041309801",
       "no_token_id": "114985476682382769744234252567395599649831206532344482506196073485466882611186",
       "model_prob": 0.2693,
       "side": "YES",
-      "ask": 0.2,
-      "market_prob": 0.2,
+      "ask": 0.17,
+      "market_prob": 0.17,
       "belief_prob": 0.2345,
-      "ev": 0.225,
-      "kelly": 0.0141,
+      "ev": 0.3794,
+      "kelly": 0.0194,
       "sell_value": null,
-      "model_prob_change": 0.0078,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -92,20 +96,20 @@
         21.0
       ],
       "yes_price": 0.78,
-      "no_price": 0.45,
-      "volume": 301.0,
+      "no_price": 0.22,
+      "volume": 351.0,
       "spread": 0.0,
       "yes_token_id": "51698144295373001792872861227106156458686177553619975642706179945348817466097",
       "no_token_id": "69038736752407202602383063385288885261812929605516638961134259088608696837030",
       "model_prob": 0.259,
       "side": "YES",
-      "ask": 0.55,
-      "market_prob": 0.55,
+      "ask": 0.78,
+      "market_prob": 0.78,
       "belief_prob": 0.4413,
-      "ev": -0.3438,
+      "ev": -0.4342,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0375,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -129,7 +133,7 @@
       "ev": 194.4,
       "kelly": 0.0243,
       "sell_value": null,
-      "model_prob_change": 0.0329,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -153,7 +157,7 @@
       "ev": 82.6,
       "kelly": 0.0103,
       "sell_value": null,
-      "model_prob_change": 0.0159,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -177,7 +181,7 @@
       "ev": 31.6,
       "kelly": 0.004,
       "sell_value": null,
-      "model_prob_change": 0.0062,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -201,7 +205,7 @@
       "ev": 12.0,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": 0.0023,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -225,7 +229,7 @@
       "ev": 4.8,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -249,7 +253,7 @@
       "ev": 4.6,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
