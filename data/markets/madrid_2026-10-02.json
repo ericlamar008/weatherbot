@@ -1,0 +1,311 @@
+{
+  "city": "madrid",
+  "city_name": "Madrid",
+  "date": "2026-10-02",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-10-01T02:20:42.314778+00:00",
+  "committed_allocation": null,
+  "hours_left": 43.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-02T22:00:00+00:00",
+  "event_end_date": "2026-10-02T12:00:00Z",
+  "last_scan": "2026-10-01T02:20:42.314778+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 26.01,
+  "sigma": 1.584,
+  "forecast_mean_shadow": 24.96,
+  "model_means_raw": {
+    "ecmwf": 25.13,
+    "gfs": 24.91,
+    "gem": 22.8,
+    "icon_eu": 23.15
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Madrid be 16°C or below on October 2?",
+      "market_id": "5148239",
+      "range": [
+        -999.0,
+        16.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 313.0,
+      "spread": 0.0,
+      "yes_token_id": "6321225315347889169966421216968932972329138161712119308216162164217785648741",
+      "no_token_id": "17589583044202977168027486506099196364460809701128211163625210403594899584304",
+      "model_prob": 0.0009,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0025,
+      "ev": -0.5455,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 17°C on October 2?",
+      "market_id": "5148240",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 265.0,
+      "spread": 0.0,
+      "yes_token_id": "18157273666158630222977231125191222026880749900773562981054226314252456703971",
+      "no_token_id": "10927864437583821443846850973172385557203748009960281782460116897398569923258",
+      "model_prob": 0.0006,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0006,
+      "ev": 0.2,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 18°C on October 2?",
+      "market_id": "5148241",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 270.0,
+      "spread": 0.0,
+      "yes_token_id": "98454528457931659154639352346983160467748076515147426043162114636436257007155",
+      "no_token_id": "38238388232884145649270065128223116079470440777433121144835906243883556128113",
+      "model_prob": 0.0011,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0009,
+      "ev": 0.8,
+      "kelly": 0.0001,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 19°C on October 2?",
+      "market_id": "5148242",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 657.0,
+      "spread": 0.0,
+      "yes_token_id": "94637302424206993005571927868091935332855641900497517677629975639285335787330",
+      "no_token_id": "39616069119604970497959546411276463090308857609070004775128292526944253008160",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0022,
+      "ev": -0.12,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 20°C on October 2?",
+      "market_id": "5148243",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 423.0,
+      "spread": 0.0,
+      "yes_token_id": "91584050056013897778167506698991337166887955768267520455887276276279720054106",
+      "no_token_id": "111999059755026624396104349727245883997407226849332146855631116149289322777423",
+      "model_prob": 0.0042,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0034,
+      "ev": 0.7,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 21°C on October 2?",
+      "market_id": "5148244",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0185,
+      "no_price": 0.9815,
+      "volume": 211.0,
+      "spread": 0.0,
+      "yes_token_id": "94209275805444843393998933359475684337923649257181632259623766994530519344102",
+      "no_token_id": "4782424620024434784711362145832633619749946259220341787440751118951778871237",
+      "model_prob": 0.0091,
+      "side": "YES",
+      "ask": 0.0185,
+      "market_prob": 0.0185,
+      "belief_prob": 0.0124,
+      "ev": -0.3297,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 22°C on October 2?",
+      "market_id": "5148245",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0375,
+      "no_price": 0.9625,
+      "volume": 338.0,
+      "spread": 0.0,
+      "yes_token_id": "61708608218565160365746066673580098627342385540326186715478600585837685747000",
+      "no_token_id": "20894572663319849897230185026803199253424408545988112696028150998776168167804",
+      "model_prob": 0.0208,
+      "side": "YES",
+      "ask": 0.0375,
+      "market_prob": 0.0375,
+      "belief_prob": 0.0266,
+      "ev": -0.2907,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 23°C on October 2?",
+      "market_id": "5148246",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.057,
+      "no_price": 0.943,
+      "volume": 1057.0,
+      "spread": 0.0,
+      "yes_token_id": "103286597687140046677662589309003575394872991107646996288132522245973648685443",
+      "no_token_id": "8378493201538171456441486582078125691880646750474847251504984421516303806704",
+      "model_prob": 0.0482,
+      "side": "YES",
+      "ask": 0.057,
+      "market_prob": 0.057,
+      "belief_prob": 0.0513,
+      "ev": -0.1,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 24°C on October 2?",
+      "market_id": "5148247",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.1835,
+      "no_price": 0.8165,
+      "volume": 1160.0,
+      "spread": 0.0,
+      "yes_token_id": "60494851347193798169360446869225745146026211647687787576831810562266989630536",
+      "no_token_id": "58431876195045144440060016630167416365285234067401038679679602679178225916768",
+      "model_prob": 0.1052,
+      "side": "YES",
+      "ask": 0.1835,
+      "market_prob": 0.1835,
+      "belief_prob": 0.1326,
+      "ev": -0.2774,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 25°C on October 2?",
+      "market_id": "5148248",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.305,
+      "no_price": 0.695,
+      "volume": 1150.0,
+      "spread": 0.0,
+      "yes_token_id": "27111685540252308644089090013550118800328994316206982664499995523783012248376",
+      "no_token_id": "84081334427750104761380805516512431093222454573387121816618337705362981630194",
+      "model_prob": 0.1881,
+      "side": "YES",
+      "ask": 0.305,
+      "market_prob": 0.305,
+      "belief_prob": 0.229,
+      "ev": -0.2492,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 26°C or higher on October 2?",
+      "market_id": "5148249",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "yes_price": 0.415,
+      "no_price": 0.585,
+      "volume": 5631.0,
+      "spread": 0.0,
+      "yes_token_id": "1746360301201561400674924573398166129867067342455372349113565546104684485534",
+      "no_token_id": "65519397429342049663373533265707917069997957973320935191655643271385134568810",
+      "model_prob": 0.6197,
+      "side": "YES",
+      "ask": 0.415,
+      "market_prob": 0.415,
+      "belief_prob": 0.5481,
+      "ev": 0.3207,
+      "kelly": 0.0569,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5148249",
+      "question": "Will the highest temperature in Madrid be 26°C or higher on October 2?",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "side": "YES",
+      "price": 0.415,
+      "model_prob": 0.6197,
+      "ev": 0.3207,
+      "market_prob": 0.415,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.4
+    },
+    {
+      "market_id": "5148249",
+      "question": "Will the highest temperature in Madrid be 26°C or higher on October 2? (NO)",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.585,
+      "model_prob": 0.3803,
+      "ev": -0.2275,
+      "market_prob": 0.585,
+      "role": "scenario_hedge",
+      "units": 28.19,
+      "sell_value": 0.59
+    }
+  ],
+  "total_allocated_units": 58.2,
+  "portfolio_score": 0.018198,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 14.1,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.5208,
+  "confidence": 0.5956,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
