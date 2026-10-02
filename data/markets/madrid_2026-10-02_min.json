@@ -7,11 +7,190 @@
   "market_type": "min",
   "created_at": "2026-10-01T02:20:42.314778+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-02T22:00:00+00:00",
   "event_end_date": "2026-10-02T12:00:00Z",
-  "last_scan": "2026-10-01T02:20:42.314778+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-01T20:20:43.804139+00:00"
+  "last_scan": "2026-10-02T02:20:35.244375+00:00",
+  "last_lite_refresh": "2026-10-01T20:20:43.804139+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 15.68,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 17°C on October 2?",
+      "market_id": "5147508",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "110480322367949105677779633660091719909045399525264889946913491125976433580197",
+      "no_token_id": "45057863082937723054426524683237860462231233503920054025293746284072371288412",
+      "model_prob": 0.1666,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1085,
+      "ev": 216.0,
+      "kelly": 0.027,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 18°C on October 2?",
+      "market_id": "5147509",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "93917939029853450745644078931625255985645292429207894065383122939809090333157",
+      "no_token_id": "88233628895608361310059996100499635622845666882799746180800907873659052642574",
+      "model_prob": 0.0751,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.049,
+      "ev": 97.0,
+      "kelly": 0.0121,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 19°C on October 2?",
+      "market_id": "5147510",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1115.0,
+      "spread": 0.0,
+      "yes_token_id": "81480679010351330223953286401415462708108157291569605327578323640612706654841",
+      "no_token_id": "79634049582969338722561443534063700151568421444459314081898009774622796003869",
+      "model_prob": 0.0294,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0193,
+      "ev": 37.6,
+      "kelly": 0.0047,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 20°C on October 2?",
+      "market_id": "5147511",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "61704453370953337544602917083443556226300456469829166426462499336550823202056",
+      "no_token_id": "65792764256685031398332565305673915638648493598258627618405720902211148180269",
+      "model_prob": 0.0115,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0076,
+      "ev": 14.2,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 21°C on October 2?",
+      "market_id": "5147512",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "45320342552141813318212974902373828036364285827211856788298959189736419244449",
+      "no_token_id": "61393404529696581017533011256055565442709417353467043360447495242487555341492",
+      "model_prob": 0.0048,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0033,
+      "ev": 5.6,
+      "kelly": 0.0007,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 22°C or higher on October 2?",
+      "market_id": "5147513",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "72681638858168337811770609022648134967015809636759905877547454217387423154381",
+      "no_token_id": "36067833208823827628816183491793101789678850697903954594125373329301174934773",
+      "model_prob": 0.0044,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.003,
+      "ev": 5.0,
+      "kelly": 0.0006,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5147508",
+      "question": "Will the lowest temperature in Madrid be 17°C on October 2?",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "YES",
+      "price": 0.0005,
+      "model_prob": 0.1666,
+      "ev": 216.0,
+      "market_prob": 0.0005,
+      "role": "main_signal",
+      "units": 11.8,
+      "sell_value": null
+    },
+    {
+      "market_id": "5147508",
+      "question": "Will the lowest temperature in Madrid be 17°C on October 2? (NO)",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.8334,
+      "ev": -0.1081,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 88.2,
+      "sell_value": 0.999
+    }
+  ],
+  "total_allocated_units": 100.0,
+  "portfolio_score": 0.863021,
+  "worst_case_loss_frac": 0.1176,
+  "best_case_pnl_units": 23500.0,
+  "worst_case_pnl_units": -11.76,
+  "success_probability": 0.1768,
+  "confidence": 0.4762,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
