@@ -7,11 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-01T02:20:42.314778+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-03T06:00:00+00:00",
   "event_end_date": "2026-10-02T12:00:00Z",
   "last_scan": "2026-10-02T02:20:35.244375+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-01T20:20:43.804139+00:00"
+  "last_lite_refresh": "2026-10-02T08:20:38.000885+00:00",
+  "forecast_mean": 14.37,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 16°C on October 2?",
+      "market_id": "5154030",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.47,
+      "no_price": 0.53,
+      "volume": 36.0,
+      "spread": 0.0,
+      "yes_token_id": "86749149017808295571253849176324042813838291368082332639610312247209716187010",
+      "no_token_id": "49459919279175335906808308228385275075095764742837352605030958522212750113721",
+      "model_prob": 0.5865,
+      "side": "YES",
+      "ask": 0.47,
+      "market_prob": 0.47,
+      "belief_prob": 0.5457,
+      "ev": 0.1611,
+      "kelly": 0.0357,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 17°C on October 2?",
+      "market_id": "5154031",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "7260244806465545606296801224788461055810418627373991633103193639547449633381",
+      "no_token_id": "695681367518546903918993052563639216080548024277775923362814328759965000242",
+      "model_prob": 0.2477,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1612,
+      "ev": 321.4,
+      "kelly": 0.0402,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 18°C on October 2?",
+      "market_id": "5154032",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "60956973226262734305308773877600794261806631447546658736206032271900725053773",
+      "no_token_id": "57048219588158141592889562072940458993338159769648004079337229999845234723868",
+      "model_prob": 0.0959,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0625,
+      "ev": 124.0,
+      "kelly": 0.0155,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 19°C or higher on October 2?",
+      "market_id": "5154033",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "85993379632066383901884611306443592717715331493681683832359227899959756595560",
+      "no_token_id": "51631539020671379242961364681169614598457620183421680641001622037254238760032",
+      "model_prob": 0.0699,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0456,
+      "ev": 90.2,
+      "kelly": 0.0113,
+      "sell_value": null
+    }
+  ]
 }

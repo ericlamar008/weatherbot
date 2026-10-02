@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-02T02:20:35.244375+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-03T16:00:00+00:00",
   "event_end_date": "2026-10-03T12:00:00Z",
   "last_scan": "2026-10-02T02:20:35.244375+00:00",
-  "skipped_reason": "event volume 333 < min_volume 500"
+  "skipped_reason": "event volume 333 < min_volume 500",
+  "last_lite_refresh": "2026-10-02T08:20:38.000885+00:00",
+  "forecast_mean": 26.88,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Hong Kong be 26°C on October 3?",
+      "market_id": "5169745",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "yes_price": 0.39,
+      "no_price": 0.61,
+      "volume": 126.0,
+      "spread": 0.0,
+      "yes_token_id": "86306148633325974312956470165619223550878114775077761446932376464367216572878",
+      "no_token_id": "79906281365123307327169342759099720878085349056844013471065266562655507734626",
+      "model_prob": 0.283,
+      "side": "YES",
+      "ask": 0.39,
+      "market_prob": 0.39,
+      "belief_prob": 0.3205,
+      "ev": -0.1782,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Hong Kong be 27°C on October 3?",
+      "market_id": "5169746",
+      "range": [
+        27.0,
+        27.0
+      ],
+      "yes_price": 0.405,
+      "no_price": 0.595,
+      "volume": 301.0,
+      "spread": 0.0,
+      "yes_token_id": "57476318478234653383063850568084396938882858589383717266140163327425925072151",
+      "no_token_id": "15132021392099830922217356534381713694880296964054784441227421623865931035867",
+      "model_prob": 0.3488,
+      "side": "YES",
+      "ask": 0.405,
+      "market_prob": 0.405,
+      "belief_prob": 0.3685,
+      "ev": -0.0901,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Hong Kong be 28°C on October 3?",
+      "market_id": "5169747",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.055,
+      "no_price": 0.945,
+      "volume": 265.0,
+      "spread": 0.0,
+      "yes_token_id": "49574606319842976415166306803571477286050076283752773486862842096669509149558",
+      "no_token_id": "61237410604639985911025498939197261770425753670109454058704534182614568288078",
+      "model_prob": 0.2495,
+      "side": "YES",
+      "ask": 0.055,
+      "market_prob": 0.055,
+      "belief_prob": 0.1814,
+      "ev": 2.2982,
+      "kelly": 0.0334,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Hong Kong be 29°C on October 3?",
+      "market_id": "5169748",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.0655,
+      "no_price": 0.9345,
+      "volume": 56.0,
+      "spread": 0.0,
+      "yes_token_id": "13789420034641014029249830908312803029183377936155481925132867347244798029004",
+      "no_token_id": "26687411313637650016195290980417447102113622714304326665091438161698785023304",
+      "model_prob": 0.1187,
+      "side": "YES",
+      "ask": 0.0655,
+      "market_prob": 0.0655,
+      "belief_prob": 0.1001,
+      "ev": 0.5282,
+      "kelly": 0.0093,
+      "sell_value": null
+    }
+  ]
 }
