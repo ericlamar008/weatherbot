@@ -3,11 +3,11 @@
   "city_name": "Mexico City",
   "date": "2026-10-02",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-01T02:20:42.314778+00:00",
   "committed_allocation": null,
-  "hours_left": 3.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-03T06:00:00+00:00",
   "event_end_date": "2026-10-02T12:00:00Z",
   "last_scan": "2026-10-03T02:20:37.879794+00:00",
@@ -279,7 +279,10 @@
       "market_prob": 0.9995,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.999
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -292,5 +295,31 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-03T08:07:24.736129+00:00",
-  "last_lite_refresh": "2026-10-02T20:20:42.617450+00:00"
+  "last_lite_refresh": "2026-10-03T08:20:39.675090+00:00",
+  "actual_temp": 24.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.02,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5154273",
+      "question": "Will the highest temperature in Mexico City be 24°C on October 2?",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "side": "YES",
+      "price": 0.9995,
+      "model_prob": 0.1848,
+      "ev": -0.5299,
+      "market_prob": 0.9995,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.999,
+      "won": true,
+      "pnl_units": 0.02,
+      "user_entered": false
+    }
+  ]
 }

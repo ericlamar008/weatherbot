@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-03T02:20:37.879794+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-04T15:00:00+00:00",
   "event_end_date": "2026-10-04T12:00:00Z",
   "last_scan": "2026-10-03T02:20:37.879794+00:00",
-  "skipped_reason": "event volume 89 < min_volume 500"
+  "skipped_reason": "event volume 89 < min_volume 500",
+  "last_lite_refresh": "2026-10-03T08:20:39.675090+00:00",
+  "forecast_mean": 16.17,
+  "sigma": 1.984,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tokyo be 15°C on October 4?",
+      "market_id": "5197449",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.255,
+      "no_price": 0.745,
+      "volume": 21.0,
+      "spread": 0.0,
+      "yes_token_id": "19641559278410295635064991294092159419007126741370228004175079162434752975656",
+      "no_token_id": "51042096715796321468241220731070368203495036059141900563482217284842295446079",
+      "model_prob": 0.3226,
+      "side": "YES",
+      "ask": 0.255,
+      "market_prob": 0.255,
+      "belief_prob": 0.2989,
+      "ev": 0.1722,
+      "kelly": 0.0147,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 16°C on October 4?",
+      "market_id": "5197450",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 274.0,
+      "spread": 0.0,
+      "yes_token_id": "77870066923200080640695725856084701487923207097510611244424807455705666950403",
+      "no_token_id": "95922935004053099481311300120425334235740835431990053110554298970275033984824",
+      "model_prob": 0.3904,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.2905,
+      "ev": 1.7667,
+      "kelly": 0.0518,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 18°C on October 4?",
+      "market_id": "5197452",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.385,
+      "no_price": 0.615,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "44694556955420475198007763942904563505224107194137744123681584871296112376011",
+      "no_token_id": "58714730533480081575218497956163985609294109017992684122207766469822972918246",
+      "model_prob": 0.2482,
+      "side": "YES",
+      "ask": 0.385,
+      "market_prob": 0.385,
+      "belief_prob": 0.2961,
+      "ev": -0.2309,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 21°C on October 4?",
+      "market_id": "5197455",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "89262122277691445147025995050648522263332022469541872028858982555490025708350",
+      "no_token_id": "67010462516247975659616861818830113403027777861436164490949083828595246114536",
+      "model_prob": 0.0388,
+      "side": "YES",
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.028,
+      "ev": 2.5,
+      "kelly": 0.005,
+      "sell_value": null
+    }
+  ]
 }

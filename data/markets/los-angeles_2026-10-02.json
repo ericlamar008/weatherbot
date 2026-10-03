@@ -3,11 +3,11 @@
   "city_name": "Los Angeles",
   "date": "2026-10-02",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-01T02:20:42.314778+00:00",
   "committed_allocation": null,
-  "hours_left": 4.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-03T07:00:00+00:00",
   "event_end_date": "2026-10-02T12:00:00Z",
   "last_scan": "2026-10-03T02:20:37.879794+00:00",
@@ -301,7 +301,10 @@
       "market_prob": 0.005,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.003
+      "sell_value": 0.003,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -314,6 +317,32 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-03T08:07:24.736129+00:00",
-  "last_lite_refresh": "2026-10-02T20:20:42.617450+00:00",
-  "skipped_reason": "ensemble forecast unavailable (mean is None)"
+  "last_lite_refresh": "2026-10-03T08:20:39.675090+00:00",
+  "skipped_reason": "ensemble forecast unavailable (mean is None)",
+  "actual_temp": 84.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -30.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5153544",
+      "question": "Will the highest temperature in Los Angeles be 94°F or higher on October 2?",
+      "range": [
+        94.0,
+        999.0
+      ],
+      "side": "YES",
+      "price": 0.005,
+      "model_prob": 0.7572,
+      "ev": 97.78,
+      "market_prob": 0.005,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.003,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    }
+  ]
 }

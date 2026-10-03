@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-03T02:20:37.879794+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-04T22:00:00+00:00",
   "event_end_date": "2026-10-04T12:00:00Z",
   "last_scan": "2026-10-03T02:20:37.879794+00:00",
-  "skipped_reason": "event volume 40 < min_volume 500"
+  "skipped_reason": "event volume 40 < min_volume 500",
+  "last_lite_refresh": "2026-10-03T08:20:39.675090+00:00",
+  "forecast_mean": 13.4,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 8°C or below on October 4?",
+      "market_id": "5197479",
+      "range": [
+        -999.0,
+        8.0
+      ],
+      "yes_price": 0.07,
+      "no_price": 0.93,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "36378462408951260870881465933577834704314876991321072216693797235361876332693",
+      "no_token_id": "60953307365035014346020180426267057671238404783606062432740725889934401536689",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.07,
+      "market_prob": 0.07,
+      "belief_prob": 0.6745,
+      "ev": 8.6357,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
