@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-04T02:20:36.993420+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-05T22:00:00+00:00",
   "event_end_date": "2026-10-05T12:00:00Z",
   "last_scan": "2026-10-04T02:20:36.993420+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-04T08:20:37.464303+00:00"
+  "last_lite_refresh": "2026-10-04T14:20:42.046736+00:00",
+  "forecast_mean": 15.53,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 18°C on October 5?",
+      "market_id": "5224293",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "3108132752523102458786025358463755689323965868698635476754507294829177813176",
+      "no_token_id": "46868735570758689550558095237002805013382679253583478340007627340599199101336",
+      "model_prob": 0.6001,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.3955,
+      "ev": 24.5161,
+      "kelly": 0.0965,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 19°C or higher on October 5?",
+      "market_id": "5224294",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "10813885442521362464447749101300151097131024210516426595437458089305339383399",
+      "no_token_id": "83550073710308912772515934354449691987492369466516061744823173216916869386826",
+      "model_prob": 0.3999,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.2636,
+      "ev": 24.1048,
+      "kelly": 0.0639,
+      "sell_value": null
+    }
+  ]
 }

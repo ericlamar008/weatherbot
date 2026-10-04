@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-04T02:20:36.993420+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-05T22:00:00+00:00",
   "event_end_date": "2026-10-05T12:00:00Z",
   "last_scan": "2026-10-04T02:20:36.993420+00:00",
   "skipped_reason": "event volume 24 < min_volume 500",
-  "last_lite_refresh": "2026-10-04T08:20:37.464303+00:00",
-  "forecast_mean": 13.97,
+  "last_lite_refresh": "2026-10-04T14:20:42.046736+00:00",
+  "forecast_mean": 15.73,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -25,19 +25,21 @@
         7.0
       ],
       "yes_price": 0.0105,
-      "no_price": 0.99,
+      "no_price": 0.9895,
       "volume": 24.0,
       "spread": 0.0,
       "yes_token_id": "21878629651101036277536310452637027691581076455808072221201982957719009619323",
       "no_token_id": "6049669824646851562139444659321143212684393900184510291872050637489677674441",
       "model_prob": 1.0,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
+      "ask": 0.0105,
+      "market_prob": 0.0105,
       "belief_prob": 0.6537,
-      "ev": 64.35,
+      "ev": 61.2571,
       "kelly": 0.1625,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-04T14:07:21.544047+00:00"
