@@ -3815,13 +3815,14 @@
     "side": "YES",
     "entry_price": 0.415,
     "locked_at": "2026-10-03T15:14:25.911306+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.705,
     "last_pct": 69.9,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.705,
+    "closed_at": "2026-10-04T03:02:44.082511+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
-    "last_checked_at": "2026-10-04T02:52:24.743395+00:00"
+    "last_checked_at": "2026-10-04T02:52:24.743395+00:00",
+    "unlock_issue_number": 355
   }
 ]
