@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-04T02:20:36.993420+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-05T21:00:00+00:00",
   "event_end_date": "2026-10-05T12:00:00Z",
   "last_scan": "2026-10-04T02:20:36.993420+00:00",
-  "skipped_reason": "event volume 48 < min_volume 500"
+  "skipped_reason": "event volume 48 < min_volume 500",
+  "last_lite_refresh": "2026-10-04T08:20:37.464303+00:00",
+  "forecast_mean": 7.74,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 11°C on October 5?",
+      "market_id": "5223989",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "91572921181523918421937518555543837338236395695223583640073861909043786378076",
+      "no_token_id": "55579356152975052991308488267254357948161697663112468317020951932254299991731",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.6588,
+      "ev": 25.352,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

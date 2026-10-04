@@ -3,16 +3,16 @@
   "city_name": "Los Angeles",
   "date": "2026-10-03",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-02T02:20:35.244375+00:00",
   "committed_allocation": null,
-  "hours_left": 4.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-04T07:00:00+00:00",
   "event_end_date": "2026-10-03T12:00:00Z",
   "last_scan": "2026-10-04T02:20:36.993420+00:00",
-  "last_lite_refresh": "2026-10-03T20:21:18.893123+00:00",
+  "last_lite_refresh": "2026-10-04T08:20:37.464303+00:00",
   "forecast_mean": 78.71,
   "sigma": 2.866,
   "full_distribution": [
@@ -188,7 +188,10 @@
       "market_prob": 0.95,
       "role": "main_signal",
       "units": 29.2,
-      "sell_value": 0.91
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.54,
+      "user_entered": false
     },
     {
       "market_id": "5174208",
@@ -204,7 +207,10 @@
       "market_prob": 0.05,
       "role": "scenario_hedge",
       "units": 1.01,
-      "sell_value": 0.01
+      "sell_value": 0.01,
+      "won": false,
+      "pnl_units": -1.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.2,
@@ -215,5 +221,50 @@
   "success_probability": 0.4349,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 74.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.53,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5174208",
+      "question": "Will the lowest temperature in Los Angeles be between 74-75°F on October 3?",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "YES",
+      "price": 0.95,
+      "model_prob": 0.0839,
+      "ev": -0.5926,
+      "market_prob": 0.95,
+      "role": "main_signal",
+      "units": 29.2,
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.54,
+      "user_entered": false
+    },
+    {
+      "market_id": "5174208",
+      "question": "Will the lowest temperature in Los Angeles be between 74-75°F on October 3? (NO)",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "side": "NO",
+      "price": 0.05,
+      "model_prob": 0.9161,
+      "ev": 11.26,
+      "market_prob": 0.05,
+      "role": "scenario_hedge",
+      "units": 1.01,
+      "sell_value": 0.01,
+      "won": false,
+      "pnl_units": -1.01,
+      "user_entered": false
+    }
+  ]
 }
