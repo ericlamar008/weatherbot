@@ -1,0 +1,292 @@
+{
+  "city": "los-angeles",
+  "city_name": "Los Angeles",
+  "date": "2026-10-05",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-10-04T02:20:36.993420+00:00",
+  "committed_allocation": null,
+  "hours_left": 52.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-06T07:00:00+00:00",
+  "event_end_date": "2026-10-05T12:00:00Z",
+  "last_scan": "2026-10-04T02:20:36.993420+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 96.34,
+  "sigma": 10.967,
+  "forecast_mean_shadow": 96.34,
+  "model_means_raw": {
+    "ecmwf": 103.72
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Los Angeles be 81°F or below on October 5?",
+      "market_id": "5229012",
+      "range": [
+        -999.0,
+        81.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 116.0,
+      "spread": 0.0,
+      "yes_token_id": "54840450831615240545110865403108939552929511044899621489550496655248306837005",
+      "no_token_id": "4474724859684748547449819912226994473290573462671045991667850485412512202223",
+      "model_prob": 0.155,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.1016,
+      "ev": 39.64,
+      "kelly": 0.0248,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 82-83°F on October 5?",
+      "market_id": "5229013",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 200.0,
+      "spread": 0.0,
+      "yes_token_id": "106462926661679180149764215384078911806258407107129105230308630497511815827411",
+      "no_token_id": "45288436219154504388990970685286027053178606755220332719269456538146469273302",
+      "model_prob": 0.02,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0148,
+      "ev": 1.96,
+      "kelly": 0.0025,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 84-85°F on October 5?",
+      "market_id": "5229014",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 176.0,
+      "spread": 0.0,
+      "yes_token_id": "96719975404415291236639022329789926857218354421913536756570392382615536819552",
+      "no_token_id": "93150160974446142376112345772663004414045787634615574350713076035047498479708",
+      "model_prob": 0.0245,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.018,
+      "ev": 2.0,
+      "kelly": 0.003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 86-87°F on October 5?",
+      "market_id": "5229015",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 136.0,
+      "spread": 0.0,
+      "yes_token_id": "3929452157650873943267795185852984736810227928651544011661042651737601536508",
+      "no_token_id": "56009100997557051124451211699174387337735678965585753360555195251547032237607",
+      "model_prob": 0.0293,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0204,
+      "ev": 4.1,
+      "kelly": 0.0041,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 88-89°F on October 5?",
+      "market_id": "5229016",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 321.0,
+      "spread": 0.0,
+      "yes_token_id": "39503956952868236137433233141209059166412350978917619386878177720114191311019",
+      "no_token_id": "95571958352961250846298310556842698648583321393463331242240742976841551521921",
+      "model_prob": 0.0342,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0228,
+      "ev": 14.2,
+      "kelly": 0.0053,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 90-91°F on October 5?",
+      "market_id": "5229017",
+      "range": [
+        90.0,
+        91.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 273.0,
+      "spread": 0.0,
+      "yes_token_id": "112508015996063897045264228852329573127511395288918358106538529739285958057059",
+      "no_token_id": "66525783405270545942465674503938172215324932543773413861084818005015842473308",
+      "model_prob": 0.0389,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.0323,
+      "ev": 0.615,
+      "kelly": 0.0031,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 92-93°F on October 5?",
+      "market_id": "5229018",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 1518.0,
+      "spread": 0.0,
+      "yes_token_id": "40340049172882842984339609528222656474127925542403020537937757291826976398353",
+      "no_token_id": "41890224580583039191592972528671073025568365645818538989933893465488883271496",
+      "model_prob": 0.0426,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.0959,
+      "ev": -0.5082,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 94-95°F on October 5?",
+      "market_id": "5229019",
+      "range": [
+        94.0,
+        95.0
+      ],
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 2970.0,
+      "spread": 0.0,
+      "yes_token_id": "30666519394295182690187137882462023434850165380995073532523694879421003072152",
+      "no_token_id": "23481456678222810557351981477340880689853083432913273482316783686951485533477",
+      "model_prob": 0.0451,
+      "side": "YES",
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.1886,
+      "ev": -0.5855,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 96-97°F on October 5?",
+      "market_id": "5229020",
+      "range": [
+        96.0,
+        97.0
+      ],
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 548.0,
+      "spread": 0.0,
+      "yes_token_id": "47011868609552409827623628388556219616797599386868832514644069219544545030942",
+      "no_token_id": "18939974091154863935208684671782438814336858531705563532908311037538632687844",
+      "model_prob": 0.0458,
+      "side": "YES",
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.0963,
+      "ev": -0.4932,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 98-99°F on October 5?",
+      "market_id": "5229021",
+      "range": [
+        98.0,
+        99.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 1629.0,
+      "spread": 0.0,
+      "yes_token_id": "73869811384978975917831352389727175099387352584357655360694492612443195023956",
+      "no_token_id": "30852517456898759543404061099496472401730956693679548086694368812411152870135",
+      "model_prob": 0.0448,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0519,
+      "ev": -0.2015,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be 100°F or higher on October 5?",
+      "market_id": "5229022",
+      "range": [
+        100.0,
+        999.0
+      ],
+      "yes_price": 0.0475,
+      "no_price": 0.9525,
+      "volume": 2652.0,
+      "spread": 0.0,
+      "yes_token_id": "73038757882845705211202238585772968274306092812322909645518798287925707019111",
+      "no_token_id": "45311640226476132853081441830579122368077817289018489745021264600869779213019",
+      "model_prob": 0.5198,
+      "side": "YES",
+      "ask": 0.0475,
+      "market_prob": 0.0475,
+      "belief_prob": 0.3545,
+      "ev": 6.4632,
+      "kelly": 0.0806,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5229022",
+      "question": "Will the highest temperature in Los Angeles be 100°F or higher on October 5?",
+      "range": [
+        100.0,
+        999.0
+      ],
+      "side": "YES",
+      "price": 0.0475,
+      "model_prob": 0.5198,
+      "ev": 6.4632,
+      "market_prob": 0.0475,
+      "role": "main_signal",
+      "units": 27.2,
+      "sell_value": 0.031
+    }
+  ],
+  "total_allocated_units": 27.2,
+  "portfolio_score": 0.153664,
+  "worst_case_loss_frac": 0.272,
+  "best_case_pnl_units": 545.43,
+  "worst_case_pnl_units": -27.2,
+  "success_probability": 0.2159,
+  "confidence": 0.2531,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

@@ -3,14 +3,14 @@
   "city_name": "Milan",
   "date": "2026-10-03",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-02T02:20:35.244375+00:00",
   "committed_allocation": null,
-  "hours_left": 1.6,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-03T22:00:00+00:00",
   "event_end_date": "2026-10-03T12:00:00Z",
-  "last_scan": "2026-10-03T02:20:37.879794+00:00",
+  "last_scan": "2026-10-04T02:20:36.993420+00:00",
   "horizon_days": 0,
   "forecast_mean": 24.12,
   "sigma": 0.693,
@@ -302,7 +302,10 @@
       "market_prob": 0.595,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.59
+      "sell_value": 0.59,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "5170471",
@@ -318,7 +321,10 @@
       "market_prob": 0.405,
       "role": "scenario_hedge",
       "units": 13.61,
-      "sell_value": 0.38
+      "sell_value": 0.38,
+      "won": true,
+      "pnl_units": 19.99,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 43.6,
@@ -331,5 +337,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-04T02:07:21.680750+00:00",
-  "last_lite_refresh": "2026-10-03T20:21:18.893123+00:00"
+  "last_lite_refresh": "2026-10-03T20:21:18.893123+00:00",
+  "actual_temp": 24.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.01,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5170471",
+      "question": "Will the highest temperature in Milan be 25°C on October 3?",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "YES",
+      "price": 0.595,
+      "model_prob": 0.4888,
+      "ev": -0.116,
+      "market_prob": 0.595,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.59,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "5170471",
+      "question": "Will the highest temperature in Milan be 25°C on October 3? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.405,
+      "model_prob": 0.5112,
+      "ev": 0.1704,
+      "market_prob": 0.405,
+      "role": "scenario_hedge",
+      "units": 13.61,
+      "sell_value": 0.38,
+      "won": true,
+      "pnl_units": 19.99,
+      "user_entered": false
+    }
+  ]
 }
