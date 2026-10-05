@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-05T02:20:35.872265+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T04:00:00+00:00",
   "event_end_date": "2026-10-06T12:00:00Z",
   "last_scan": "2026-10-05T02:20:35.872265+00:00",
-  "skipped_reason": "event volume 5 < min_volume 500"
+  "skipped_reason": "event volume 5 < min_volume 500",
+  "last_lite_refresh": "2026-10-05T08:20:39.079853+00:00",
+  "forecast_mean": 50.04,
+  "sigma": 1.595,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be between 52-53°F on October 6?",
+      "market_id": "5270278",
+      "range": [
+        52.0,
+        53.0
+      ],
+      "yes_price": 0.385,
+      "no_price": 0.615,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "27371994840098630486575084336442651046005792348552029144387720460127128218737",
+      "no_token_id": "15863121662440661793261196729559500110113873460606532744131287918771000613443",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.385,
+      "market_prob": 0.385,
+      "belief_prob": 0.7848,
+      "ev": 1.0384,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

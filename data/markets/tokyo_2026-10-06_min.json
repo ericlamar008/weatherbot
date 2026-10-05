@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-05T02:20:35.872265+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-06T15:00:00+00:00",
   "event_end_date": "2026-10-06T12:00:00Z",
   "last_scan": "2026-10-05T02:20:35.872265+00:00",
-  "skipped_reason": "event volume 45 < min_volume 500"
+  "skipped_reason": "event volume 45 < min_volume 500",
+  "last_lite_refresh": "2026-10-05T08:20:39.079853+00:00",
+  "forecast_mean": 19.34,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tokyo be 21°C on October 6?",
+      "market_id": "5265765",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.46,
+      "no_price": 0.54,
+      "volume": 30.0,
+      "spread": 0.0,
+      "yes_token_id": "53907359948005933186352473486005136299313868662835447774841331195538958070709",
+      "no_token_id": "21059088990035749631202782219098513358158152872117686181093223726202687361134",
+      "model_prob": 0.6109,
+      "side": "YES",
+      "ask": 0.46,
+      "market_prob": 0.46,
+      "belief_prob": 0.5581,
+      "ev": 0.2133,
+      "kelly": 0.0454,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 22°C on October 6?",
+      "market_id": "5265766",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 46.0,
+      "spread": 0.0,
+      "yes_token_id": "22993131864899825054461334335968280768812956283996734368169314441656145365997",
+      "no_token_id": "7185134172088932386009305816576901522340819115589147132299306282246708582192",
+      "model_prob": 0.2567,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.2421,
+      "ev": 0.126,
+      "kelly": 0.0086,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 23°C on October 6?",
+      "market_id": "5265767",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "86597876239022037807354196822344526585850077876473115187311932635232997355705",
+      "no_token_id": "59634064263738485572256394740870486016205815414609730205676752135569449433271",
+      "model_prob": 0.0993,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0682,
+      "ev": 5.4952,
+      "kelly": 0.0146,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 25°C on October 6?",
+      "market_id": "5265769",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "105084890048641887228965646285429190720795116602521805665907776164354228761150",
+      "no_token_id": "25860299453447938983225412097697602343960844922145157347730305433745790109164",
+      "model_prob": 0.0168,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0128,
+      "ev": 1.3273,
+      "kelly": 0.0018,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 26°C or higher on October 6?",
+      "market_id": "5265770",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "71646338050797897521484918750389642905873934002101148435897894672260152206064",
+      "no_token_id": "114143391495989116311529600518945826935143826037211196904072993217894601934984",
+      "model_prob": 0.0164,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0126,
+      "ev": 1.2909,
+      "kelly": 0.0018,
+      "sell_value": null
+    }
+  ]
 }
