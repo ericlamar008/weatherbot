@@ -1,0 +1,311 @@
+{
+  "city": "istanbul",
+  "city_name": "Istanbul",
+  "date": "2026-10-06",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-10-05T02:20:35.872265+00:00",
+  "committed_allocation": null,
+  "hours_left": 42.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-06T21:00:00+00:00",
+  "event_end_date": "2026-10-06T12:00:00Z",
+  "last_scan": "2026-10-05T02:20:35.872265+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 19.55,
+  "sigma": 0.564,
+  "forecast_mean_shadow": 19.63,
+  "model_means_raw": {
+    "ecmwf": 19.5,
+    "gfs": 18.68,
+    "gem": 19.33,
+    "icon_eu": 19.56
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Istanbul be 15°C or below on October 6?",
+      "market_id": "5266830",
+      "range": [
+        -999.0,
+        15.0
+      ],
+      "yes_price": 0.0075,
+      "no_price": 0.9925,
+      "volume": 130.0,
+      "spread": 0.0,
+      "yes_token_id": "73411718627142248200153872947416708470452071872822484420545810706351863434414",
+      "no_token_id": "20482465152666356478563467930811553700726325060156470246671009595609625376177",
+      "model_prob": 0.0004,
+      "side": "YES",
+      "ask": 0.0075,
+      "market_prob": 0.0075,
+      "belief_prob": 0.0029,
+      "ev": -0.6133,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 16°C on October 6?",
+      "market_id": "5266831",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0095,
+      "no_price": 0.9905,
+      "volume": 102.0,
+      "spread": 0.0,
+      "yes_token_id": "81776150591398528358581409792802072630066434857658269474649188392072001032823",
+      "no_token_id": "52253043979488128283410839298559898431131839539183127668209653016801196357782",
+      "model_prob": 0.0011,
+      "side": "YES",
+      "ask": 0.0095,
+      "market_prob": 0.0095,
+      "belief_prob": 0.004,
+      "ev": -0.5789,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 17°C on October 6?",
+      "market_id": "5266832",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 173.0,
+      "spread": 0.0,
+      "yes_token_id": "94114061482345386879834100004858658860154132521323782546550040788321231611279",
+      "no_token_id": "114069996243697591130853591434776791274534959140923417248332496585381463417375",
+      "model_prob": 0.006,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0048,
+      "ev": 0.92,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 18°C on October 6?",
+      "market_id": "5266833",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.027,
+      "no_price": 0.973,
+      "volume": 69.0,
+      "spread": 0.0,
+      "yes_token_id": "37773860748774818826276963051088125242438949991279215122574550101949162757014",
+      "no_token_id": "100924251745053747404990729349346302018306127159065812556128963519864792885206",
+      "model_prob": 0.0534,
+      "side": "YES",
+      "ask": 0.027,
+      "market_prob": 0.027,
+      "belief_prob": 0.0442,
+      "ev": 0.637,
+      "kelly": 0.0044,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 19°C on October 6?",
+      "market_id": "5266834",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 271.0,
+      "spread": 0.0,
+      "yes_token_id": "38794136843165177335047957339258602898350305441172768094142963652162715534602",
+      "no_token_id": "3073585915439941239704125704407447416441827117323536564805906735038802779572",
+      "model_prob": 0.4055,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.3318,
+      "ev": 0.7015,
+      "kelly": 0.0425,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 20°C on October 6?",
+      "market_id": "5266835",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.585,
+      "no_price": 0.415,
+      "volume": 412.0,
+      "spread": 0.0,
+      "yes_token_id": "43908961826993505514848792519374186443976519314556241762669560278046413203033",
+      "no_token_id": "41898007303546852012778283802773938841451823161420008636477986189693668727123",
+      "model_prob": 0.4571,
+      "side": "YES",
+      "ask": 0.585,
+      "market_prob": 0.585,
+      "belief_prob": 0.5019,
+      "ev": -0.1421,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 21°C on October 6?",
+      "market_id": "5266836",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.215,
+      "no_price": 0.785,
+      "volume": 317.0,
+      "spread": 0.0,
+      "yes_token_id": "29956981281279065923251431368844954427897072772447626762464505959416994818246",
+      "no_token_id": "21715229644407067760533954330484748056102074790626362235533137934171645873437",
+      "model_prob": 0.0674,
+      "side": "YES",
+      "ask": 0.215,
+      "market_prob": 0.215,
+      "belief_prob": 0.1191,
+      "ev": -0.446,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 22°C on October 6?",
+      "market_id": "5266837",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 152.0,
+      "spread": 0.0,
+      "yes_token_id": "59200404768732324280763292497850412159651321362234041324313660764991847040094",
+      "no_token_id": "11317168698302554737328687611977837830712209886427044660269417687064468633340",
+      "model_prob": 0.0074,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0057,
+      "ev": 1.28,
+      "kelly": 0.0008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 23°C on October 6?",
+      "market_id": "5266838",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 114.0,
+      "spread": 0.0,
+      "yes_token_id": "78881107217017109807198986735612081760046149706487666250910368177758732746424",
+      "no_token_id": "89541569041212630679455218777787421151449000126594072261974596094513286599029",
+      "model_prob": 0.0012,
+      "side": "YES",
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.0036,
+      "ev": -0.55,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 24°C on October 6?",
+      "market_id": "5266839",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0075,
+      "no_price": 0.9925,
+      "volume": 116.0,
+      "spread": 0.0,
+      "yes_token_id": "77465013032004699848277834244445296640893674852485154647859454809662720515752",
+      "no_token_id": "35520291933259592163352886059562832424322467735299066217117857615458815394212",
+      "model_prob": 0.0003,
+      "side": "YES",
+      "ask": 0.0075,
+      "market_prob": 0.0075,
+      "belief_prob": 0.0028,
+      "ev": -0.6267,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Istanbul be 25°C or higher on October 6?",
+      "market_id": "5266840",
+      "range": [
+        25.0,
+        999.0
+      ],
+      "yes_price": 0.0075,
+      "no_price": 0.9925,
+      "volume": 130.0,
+      "spread": 0.0,
+      "yes_token_id": "14765784905396890034832022706059705514742135880865718834680561576111340969270",
+      "no_token_id": "13041351916443555740125360214917677843420494460513576441707136937403639613630",
+      "model_prob": 0.0002,
+      "side": "YES",
+      "ask": 0.0075,
+      "market_prob": 0.0075,
+      "belief_prob": 0.0028,
+      "ev": -0.6267,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5266835",
+      "question": "Will the highest temperature in Istanbul be 20°C on October 6?",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "side": "YES",
+      "price": 0.585,
+      "model_prob": 0.4571,
+      "ev": -0.1421,
+      "market_prob": 0.585,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.57
+    },
+    {
+      "market_id": "5266835",
+      "question": "Will the highest temperature in Istanbul be 20°C on October 6? (NO)",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "side": "NO",
+      "price": 0.415,
+      "model_prob": 0.5429,
+      "ev": 0.2002,
+      "market_prob": 0.415,
+      "role": "scenario_hedge",
+      "units": 14.19,
+      "sell_value": 0.4
+    }
+  ],
+  "total_allocated_units": 44.2,
+  "portfolio_score": -0.01961,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 7.09,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.4931,
+  "confidence": 0.0084,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
