@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 30.7,
+  "hours_left": 24.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T21:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-06T14:20:41.003017+00:00"
+  "last_lite_refresh": "2026-10-06T20:20:45.378935+00:00",
+  "forecast_mean": 8.97,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 11°C on October 7?",
+      "market_id": "5312899",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.0405,
+      "no_price": 0.9595,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "46972596902811578609796593547214371194124028267183102250323555802307852053066",
+      "no_token_id": "86831019080200815563143302799262199422159238942106620031631571028958023333172",
+      "model_prob": 0.7144,
+      "side": "YES",
+      "ask": 0.0405,
+      "market_prob": 0.0405,
+      "belief_prob": 0.4785,
+      "ev": 10.8148,
+      "kelly": 0.1141,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 12°C on October 7?",
+      "market_id": "5312900",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0205,
+      "no_price": 0.9795,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "73136928525585671822846275487541530511517614658388285907258878364008887678460",
+      "no_token_id": "14975896799286591634125231326508269585930393201457347259960992941193965666865",
+      "model_prob": 0.2856,
+      "side": "YES",
+      "ask": 0.0205,
+      "market_prob": 0.0205,
+      "belief_prob": 0.1928,
+      "ev": 8.4049,
+      "kelly": 0.044,
+      "sell_value": null
+    }
+  ]
 }
