@@ -3,15 +3,15 @@
   "city_name": "Shanghai",
   "date": "2026-10-05",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-04T02:20:36.993420+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-05T16:00:00+00:00",
   "event_end_date": "2026-10-05T12:00:00Z",
-  "last_scan": "2026-10-05T02:20:35.872265+00:00",
+  "last_scan": "2026-10-06T02:20:39.263060+00:00",
   "last_lite_refresh": "2026-10-05T14:20:40.975906+00:00",
   "forecast_mean": 17.9,
   "sigma": 0.596,
@@ -298,7 +298,10 @@
       "market_prob": 0.39,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.06
+      "sell_value": 0.06,
+      "won": true,
+      "pnl_units": 46.92,
+      "user_entered": false
     },
     {
       "market_id": "5224062",
@@ -314,7 +317,10 @@
       "market_prob": 0.61,
       "role": "scenario_hedge",
       "units": 31.28,
-      "sell_value": 0.31
+      "sell_value": 0.31,
+      "won": false,
+      "pnl_units": -31.28,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 61.3,
@@ -325,5 +331,50 @@
   "success_probability": 0.4131,
   "confidence": 0.4718,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 18.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 15.64,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5224062",
+      "question": "Will the lowest temperature in Shanghai be 18°C on October 5?",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "side": "YES",
+      "price": 0.39,
+      "model_prob": 0.5521,
+      "ev": 0.2703,
+      "market_prob": 0.39,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.06,
+      "won": true,
+      "pnl_units": 46.92,
+      "user_entered": false
+    },
+    {
+      "market_id": "5224062",
+      "question": "Will the lowest temperature in Shanghai be 18°C on October 5? (NO)",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "side": "NO",
+      "price": 0.61,
+      "model_prob": 0.4479,
+      "ev": -0.1728,
+      "market_prob": 0.61,
+      "role": "scenario_hedge",
+      "units": 31.28,
+      "sell_value": 0.31,
+      "won": false,
+      "pnl_units": -31.28,
+      "user_entered": false
+    }
+  ]
 }

@@ -3,15 +3,15 @@
   "city_name": "Paris",
   "date": "2026-10-05",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-04T02:20:36.993420+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-05T22:00:00+00:00",
   "event_end_date": "2026-10-05T12:00:00Z",
-  "last_scan": "2026-10-05T02:20:35.872265+00:00",
+  "last_scan": "2026-10-06T02:20:39.263060+00:00",
   "last_lite_refresh": "2026-10-05T14:20:40.975906+00:00",
   "forecast_mean": 13.31,
   "sigma": 0.975,
@@ -298,7 +298,10 @@
       "market_prob": 0.45,
       "role": "main_signal",
       "units": 29.2,
-      "sell_value": 0.21
+      "sell_value": 0.21,
+      "won": false,
+      "pnl_units": -29.2,
+      "user_entered": false
     },
     {
       "market_id": "5223961",
@@ -314,7 +317,10 @@
       "market_prob": 0.55,
       "role": "scenario_hedge",
       "units": 23.47,
-      "sell_value": 0.31
+      "sell_value": 0.31,
+      "won": true,
+      "pnl_units": 19.2,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 52.7,
@@ -325,5 +331,50 @@
   "success_probability": 0.3616,
   "confidence": 0.0365,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 10.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5223961",
+      "question": "Will the lowest temperature in Paris be 12°C on October 5?",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "side": "YES",
+      "price": 0.45,
+      "model_prob": 0.3535,
+      "ev": -0.1393,
+      "market_prob": 0.45,
+      "role": "main_signal",
+      "units": 29.2,
+      "sell_value": 0.21,
+      "won": false,
+      "pnl_units": -29.2,
+      "user_entered": false
+    },
+    {
+      "market_id": "5223961",
+      "question": "Will the lowest temperature in Paris be 12°C on October 5? (NO)",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "side": "NO",
+      "price": 0.55,
+      "model_prob": 0.6465,
+      "ev": 0.114,
+      "market_prob": 0.55,
+      "role": "scenario_hedge",
+      "units": 23.47,
+      "sell_value": 0.31,
+      "won": true,
+      "pnl_units": 19.2,
+      "user_entered": false
+    }
+  ]
 }

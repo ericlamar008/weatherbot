@@ -7,11 +7,212 @@
   "market_type": "min",
   "created_at": "2026-10-05T02:20:35.872265+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-06T22:00:00+00:00",
   "event_end_date": "2026-10-06T12:00:00Z",
-  "last_scan": "2026-10-05T02:20:35.872265+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-05T14:20:40.975906+00:00"
+  "last_scan": "2026-10-06T02:20:39.263060+00:00",
+  "last_lite_refresh": "2026-10-05T14:20:40.975906+00:00",
+  "horizon_days": 0,
+  "forecast_mean": 12.96,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 11°C on October 6?",
+      "market_id": "5265795",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.395,
+      "no_price": 0.605,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "8341769004507781753612542643980611755592478859510532113956175318694139462352",
+      "no_token_id": "43116073330025734235749191030546987004145320705775838246635033656199554377419",
+      "model_prob": 0.1028,
+      "side": "YES",
+      "ask": 0.395,
+      "market_prob": 0.395,
+      "belief_prob": 0.2051,
+      "ev": -0.4808,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 14°C on October 6?",
+      "market_id": "5265798",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 55.0,
+      "spread": 0.0,
+      "yes_token_id": "51957019529279364300994150950116519077952297498856350198419155523164687610046",
+      "no_token_id": "26332664016265049246190628386185813226328883278797138211192204451486571302170",
+      "model_prob": 0.1971,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1283,
+      "ev": 255.6,
+      "kelly": 0.032,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 15°C on October 6?",
+      "market_id": "5265799",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "87941117573917345568363927060465488216790574361322369392030034849675236505475",
+      "no_token_id": "66402930215843086807579792596753241011901425206501643695130633214846674758675",
+      "model_prob": 0.096,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0626,
+      "ev": 124.2,
+      "kelly": 0.0155,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 16°C on October 6?",
+      "market_id": "5265800",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "27796102417642956536434235531274756374572093923934386173888931140893663388998",
+      "no_token_id": "45603033363195187151877000198591392076306470817640488351056512488103941046477",
+      "model_prob": 0.0384,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0251,
+      "ev": 49.2,
+      "kelly": 0.0062,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 17°C on October 6?",
+      "market_id": "5265801",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "99697158862292277950649861525675770804445381178843087709072615042339195639035",
+      "no_token_id": "26616590186079054095508728388131651203905988556290284269573381616172169735921",
+      "model_prob": 0.0149,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0099,
+      "ev": 18.8,
+      "kelly": 0.0024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 18°C on October 6?",
+      "market_id": "5265802",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "35335976167581694729374244297820849246170969513154266196285562367556268583753",
+      "no_token_id": "39874978653544864832597015117351421952936356308594283858268286567050231986022",
+      "model_prob": 0.0061,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0041,
+      "ev": 7.2,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 19°C or higher on October 6?",
+      "market_id": "5265803",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 507.0,
+      "spread": 0.0,
+      "yes_token_id": "54007848347961634558810414262630920932428171214377673996551955264596317650839",
+      "no_token_id": "733675389553286542621013781519629003539867694360229948253976700809579691872",
+      "model_prob": 0.0054,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0037,
+      "ev": 6.4,
+      "kelly": 0.0008,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5265795",
+      "question": "Will the lowest temperature in Milan be 11°C on October 6?",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "side": "YES",
+      "price": 0.395,
+      "model_prob": 0.1028,
+      "ev": -0.4808,
+      "market_prob": 0.395,
+      "role": "main_signal",
+      "units": 17.8,
+      "sell_value": 0.04
+    },
+    {
+      "market_id": "5265795",
+      "question": "Will the lowest temperature in Milan be 11°C on October 6? (NO)",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "side": "NO",
+      "price": 0.605,
+      "model_prob": 0.8972,
+      "ev": 0.3139,
+      "market_prob": 0.605,
+      "role": "scenario_hedge",
+      "units": 11.95,
+      "sell_value": 0.26
+    }
+  ],
+  "total_allocated_units": 29.8,
+  "portfolio_score": 0.031717,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 15.31,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.553,
+  "confidence": 0.0657,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
