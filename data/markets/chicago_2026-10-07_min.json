@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T05:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
-  "skipped_reason": "event volume 48 < min_volume 500"
+  "skipped_reason": "event volume 48 < min_volume 500",
+  "last_lite_refresh": "2026-10-06T08:20:37.437964+00:00",
+  "forecast_mean": 56.91,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Chicago be 47°F or below on October 7?",
+      "market_id": "5317291",
+      "range": [
+        -999.0,
+        47.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "96565207847048724707555343804800567148474763186260167076991812698318760446071",
+      "no_token_id": "82787357574465698050077418933110233273801457467861042084255643172554176513292",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.6588,
+      "ev": 25.352,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

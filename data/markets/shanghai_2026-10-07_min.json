@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T16:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
-  "skipped_reason": "event volume 291 < min_volume 500"
+  "skipped_reason": "event volume 291 < min_volume 500",
+  "last_lite_refresh": "2026-10-06T08:20:37.437964+00:00",
+  "forecast_mean": 16.92,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Shanghai be 14°C on October 7?",
+      "market_id": "5312973",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.24,
+      "no_price": 0.76,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "102554177650775984466576684641412271998950761302660475165177970440330381017909",
+      "no_token_id": "14982084832829112341179609709960227395532030559764002553630337795986362168909",
+      "model_prob": 0.1055,
+      "side": "YES",
+      "ask": 0.24,
+      "market_prob": 0.24,
+      "belief_prob": 0.1526,
+      "ev": -0.3642,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 16°C on October 7?",
+      "market_id": "5312975",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 281.0,
+      "spread": 0.0,
+      "yes_token_id": "32111914029368397212829733770075280911980410317557221839282360185824889264123",
+      "no_token_id": "50926182600477005721503910435760817802007456911960021845723209624346009031943",
+      "model_prob": 0.5141,
+      "side": "YES",
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.4339,
+      "ev": 0.5225,
+      "kelly": 0.0521,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 19°C or higher on October 7?",
+      "market_id": "5312978",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.024,
+      "no_price": 0.976,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "18683736752176012619470415233522101102739337092245342278455281209417415065992",
+      "no_token_id": "70950375101409253926964013042402799604582369022997012971770569840708119216155",
+      "model_prob": 0.3805,
+      "side": "YES",
+      "ask": 0.024,
+      "market_prob": 0.024,
+      "belief_prob": 0.2557,
+      "ev": 9.6542,
+      "kelly": 0.0593,
+      "sell_value": null
+    }
+  ]
 }

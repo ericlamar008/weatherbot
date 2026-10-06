@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-05T02:20:35.872265+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T06:00:00+00:00",
   "event_end_date": "2026-10-06T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-05T14:20:40.975906+00:00"
+  "last_lite_refresh": "2026-10-06T08:20:37.437964+00:00",
+  "forecast_mean": 58.36,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 62-63°F on October 6?",
+      "market_id": "5270344",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "25304772444808722011548571474275929259425257734346866486930140686967757980209",
+      "no_token_id": "99105386073381953249028786866162136435380177382730268031551634817532612604217",
+      "model_prob": 0.6262,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.4072,
+      "ev": 813.4,
+      "kelly": 0.1017,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 64-65°F on October 6?",
+      "market_id": "5270345",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "85691618131695613369830078983571485440321810170693487289564266337234698125653",
+      "no_token_id": "115291555588570235915550226172119531924253331337967313201869149268384026843716",
+      "model_prob": 0.2171,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1413,
+      "ev": 281.6,
+      "kelly": 0.0352,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 66-67°F on October 6?",
+      "market_id": "5270346",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "71188524812170460852554004352110251709537636968666858817971674697050475625124",
+      "no_token_id": "69443343357764278096624175643496787310916179891191716625956992610214478715663",
+      "model_prob": 0.0767,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.05,
+      "ev": 99.0,
+      "kelly": 0.0124,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 68-69°F on October 6?",
+      "market_id": "5270347",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "26276556727075020215326554880423347574834182635565439152043855544895183945684",
+      "no_token_id": "22446349529597023701603561855699757711184550045431498800118351129670390293365",
+      "model_prob": 0.0294,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0193,
+      "ev": 37.6,
+      "kelly": 0.0047,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be 70°F or higher on October 6?",
+      "market_id": "5270348",
+      "range": [
+        70.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "104232136049157673966024184885102809214832770914913436330962637594859248568307",
+      "no_token_id": "37484403766815155017781655653843676338119191627574355009188946595093615928845",
+      "model_prob": 0.0506,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0331,
+      "ev": 65.2,
+      "kelly": 0.0082,
+      "sell_value": null
+    }
+  ]
 }

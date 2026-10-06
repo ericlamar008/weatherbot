@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T15:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
-  "skipped_reason": "event volume 114 < min_volume 500"
+  "skipped_reason": "event volume 114 < min_volume 500",
+  "last_lite_refresh": "2026-10-06T08:20:37.437964+00:00",
+  "forecast_mean": 12.45,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 15°C on October 7?",
+      "market_id": "5312886",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.365,
+      "no_price": 0.635,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "102070058446906704259121589880352508595067921352733379115332743325040754819295",
+      "no_token_id": "102884189605688866788660711931979275573723272281493826211392775705191083316134",
+      "model_prob": 0.7207,
+      "side": "YES",
+      "ask": 0.365,
+      "market_prob": 0.365,
+      "belief_prob": 0.5962,
+      "ev": 0.6334,
+      "kelly": 0.091,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 7?",
+      "market_id": "5312887",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 132.0,
+      "spread": 0.0,
+      "yes_token_id": "55333165926684896732002254079566062444145804123417179225735196602438034137673",
+      "no_token_id": "85629518886653406641370066410331825915055931107252965411842266764562250978674",
+      "model_prob": 0.2793,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.2988,
+      "ev": -0.1081,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

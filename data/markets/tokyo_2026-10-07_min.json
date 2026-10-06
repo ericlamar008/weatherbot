@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T15:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
   "last_scan": "2026-10-06T02:20:39.263060+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500"
+  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_lite_refresh": "2026-10-06T08:20:37.437964+00:00",
+  "forecast_mean": 18.22,
+  "sigma": 1.772,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tokyo be 23°C on October 7?",
+      "market_id": "5312954",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "8799941424206215520758325662887293905734795169753378882599215356798227183716",
+      "no_token_id": "38242159289404877245034211410749950536080676114008049943948240688322218207506",
+      "model_prob": 0.4904,
+      "side": "YES",
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.3216,
+      "ev": 39.2,
+      "kelly": 0.079,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 24°C on October 7?",
+      "market_id": "5312955",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 265.0,
+      "spread": 0.0,
+      "yes_token_id": "12835759689500511648329203131263321374356762247612337373259187665117612799183",
+      "no_token_id": "34600181954224399118928729560901937322498144307038499236855460990903826337059",
+      "model_prob": 0.2368,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.1557,
+      "ev": 30.14,
+      "kelly": 0.0379,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 25°C or higher on October 7?",
+      "market_id": "5312956",
+      "range": [
+        25.0,
+        999.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "26308743260468638349174244700414802974646679611263465466312409553313663833738",
+      "no_token_id": "108536439438081608796802212968123839115913706963630418699825653279933286816564",
+      "model_prob": 0.2728,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.1791,
+      "ev": 34.82,
+      "kelly": 0.0437,
+      "sell_value": null
+    }
+  ]
 }
