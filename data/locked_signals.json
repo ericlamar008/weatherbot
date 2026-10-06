@@ -3878,14 +3878,15 @@
     "side": "YES",
     "entry_price": 0.25,
     "locked_at": "2026-10-05T08:51:44.858552+00:00",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.13,
     "last_pct": -48.0,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.0,
+    "closed_at": "2026-10-06T03:37:23.089066+00:00",
+    "close_reason": "auto_resolved",
     "actual_temp": null,
-    "last_checked_at": "2026-10-06T03:22:24.031234+00:00"
+    "last_checked_at": "2026-10-06T03:22:24.031234+00:00",
+    "notified_close": true
   },
   {
     "issue_number": 361,
