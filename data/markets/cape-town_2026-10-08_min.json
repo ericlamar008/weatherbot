@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T22:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-07T02:20:36.665878+00:00",
-  "skipped_reason": "event volume 275 < min_volume 500"
+  "skipped_reason": "event volume 275 < min_volume 500",
+  "last_lite_refresh": "2026-10-07T08:20:38.872902+00:00",
+  "forecast_mean": 10.44,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 13°C on October 8?",
+      "market_id": "5363851",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.33,
+      "no_price": 0.67,
+      "volume": 75.0,
+      "spread": 0.0,
+      "yes_token_id": "97158606706370146323872523549665897510485112396726232469346362718205228504759",
+      "no_token_id": "65240780169015363665398473480691225211892074644090027493011296412290067047343",
+      "model_prob": 0.5996,
+      "side": "YES",
+      "ask": 0.33,
+      "market_prob": 0.33,
+      "belief_prob": 0.5052,
+      "ev": 0.5309,
+      "kelly": 0.0654,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 14°C on October 8?",
+      "market_id": "5363852",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "75434919776880447544245598736602133222803917949144598394014386194301721148830",
+      "no_token_id": "41075573011506402348863973781734998727686805355103505813913799032223249040915",
+      "model_prob": 0.2324,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.2648,
+      "ev": -0.1852,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 15°C or higher on October 8?",
+      "market_id": "5363853",
+      "range": [
+        15.0,
+        999.0
+      ],
+      "yes_price": 0.405,
+      "no_price": 0.595,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "113335340788091082904299219395257110749219569503815842563145897331814709005129",
+      "no_token_id": "67424211634187165981788349851157504491099960989512562741317798616477949301367",
+      "model_prob": 0.168,
+      "side": "YES",
+      "ask": 0.405,
+      "market_prob": 0.405,
+      "belief_prob": 0.251,
+      "ev": -0.3802,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

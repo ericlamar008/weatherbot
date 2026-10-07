@@ -7,10 +7,147 @@
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T21:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-07T02:20:36.665878+00:00",
-  "skipped_reason": "event volume 265 < min_volume 500"
+  "skipped_reason": "event volume 265 < min_volume 500",
+  "last_lite_refresh": "2026-10-07T08:20:38.872902+00:00",
+  "forecast_mean": 9.89,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 8°C on October 8?",
+      "market_id": "5363493",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.685,
+      "no_price": 0.315,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "68253296180933500823490015371263997056713167087211307540025670544912784913886",
+      "no_token_id": "17061435666615686536934399150353823096816338687305554647015801044968574377190",
+      "model_prob": 0.2423,
+      "side": "YES",
+      "ask": 0.685,
+      "market_prob": 0.685,
+      "belief_prob": 0.3972,
+      "ev": -0.4201,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 11°C on October 8?",
+      "market_id": "5363496",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "22855183466908597897118046884852870721454534499805487727853657142278812691946",
+      "no_token_id": "28011933674536781607436615844211725113364833391085663561236217927455271174634",
+      "model_prob": 0.4216,
+      "side": "YES",
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.3965,
+      "ev": 0.1329,
+      "kelly": 0.0179,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 12°C on October 8?",
+      "market_id": "5363497",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.009,
+      "no_price": 0.991,
+      "volume": 51.0,
+      "spread": 0.0,
+      "yes_token_id": "95856236511172964153080653071632062331860706003048573694806046955374379679625",
+      "no_token_id": "16404030109293402261213431969895008960834831686084574274876223099375271760910",
+      "model_prob": 0.2012,
+      "side": "YES",
+      "ask": 0.009,
+      "market_prob": 0.009,
+      "belief_prob": 0.1339,
+      "ev": 13.8778,
+      "kelly": 0.0315,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 13°C on October 8?",
+      "market_id": "5363498",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.28,
+      "no_price": 0.72,
+      "volume": 125.0,
+      "spread": 0.0,
+      "yes_token_id": "105977420283439627561110247574570766977790046049428599859980340659674919677804",
+      "no_token_id": "41162719931419587386897453868118525956146474385170755851600619031045428753863",
+      "model_prob": 0.0798,
+      "side": "YES",
+      "ask": 0.28,
+      "market_prob": 0.28,
+      "belief_prob": 0.1499,
+      "ev": -0.4646,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 14°C on October 8?",
+      "market_id": "5363499",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.012,
+      "no_price": 0.988,
+      "volume": 26.0,
+      "spread": 0.0,
+      "yes_token_id": "12902428342703773192344015246738194926950555565423701358088715837108804334701",
+      "no_token_id": "34088560835365303904774238888128955211913345929009064388049179902301451228286",
+      "model_prob": 0.031,
+      "side": "YES",
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0244,
+      "ev": 1.0333,
+      "kelly": 0.0031,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 15°C or higher on October 8?",
+      "market_id": "5363500",
+      "range": [
+        15.0,
+        999.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 41.0,
+      "spread": 0.0,
+      "yes_token_id": "80233150318120251163182603107461936484881729961902058643314456792411111175996",
+      "no_token_id": "81061590859496382719987067726235392080522335561844012653420471115794247739100",
+      "model_prob": 0.0241,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0178,
+      "ev": 1.9667,
+      "kelly": 0.003,
+      "sell_value": null
+    }
+  ]
 }

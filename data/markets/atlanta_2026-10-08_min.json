@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T04:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-07T02:20:36.665878+00:00",
-  "skipped_reason": "event volume 50 < min_volume 500"
+  "skipped_reason": "event volume 50 < min_volume 500",
+  "last_lite_refresh": "2026-10-07T08:20:38.872902+00:00",
+  "forecast_mean": 58.28,
+  "sigma": 3.025,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Atlanta be 51°F or below on October 8?",
+      "market_id": "5369338",
+      "range": [
+        -999.0,
+        51.0
+      ],
+      "yes_price": 0.039,
+      "no_price": 0.961,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "7003313662233863845935251336671631001740637074911910466774417569469703541202",
+      "no_token_id": "9893666401993007520467052717907279161635960049036297212984452605260460116725",
+      "model_prob": 0.7813,
+      "side": "YES",
+      "ask": 0.039,
+      "market_prob": 0.039,
+      "belief_prob": 0.5215,
+      "ev": 12.3718,
+      "kelly": 0.1255,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Atlanta be between 68-69°F on October 8?",
+      "market_id": "5369347",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.305,
+      "no_price": 0.695,
+      "volume": 30.0,
+      "spread": 0.0,
+      "yes_token_id": "81566578209351333378886060989785652714019207637252115203344054702115546498683",
+      "no_token_id": "108662385165687773610668983051147362387087455523390252557487989916896131363968",
+      "model_prob": 0.0744,
+      "side": "YES",
+      "ask": 0.305,
+      "market_prob": 0.305,
+      "belief_prob": 0.1551,
+      "ev": -0.4915,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Atlanta be 70°F or higher on October 8?",
+      "market_id": "5369348",
+      "range": [
+        70.0,
+        999.0
+      ],
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "68777327351648207235620445903291275830398244878815525071504631254079072567868",
+      "no_token_id": "83155252452546804886225691498923869079193749458987250499811426937035846296408",
+      "model_prob": 0.1443,
+      "side": "YES",
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.2373,
+      "ev": -0.4212,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

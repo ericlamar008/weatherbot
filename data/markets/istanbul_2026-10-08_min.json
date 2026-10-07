@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T21:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-07T02:20:36.665878+00:00",
-  "skipped_reason": "event volume 275 < min_volume 500"
+  "skipped_reason": "event volume 275 < min_volume 500",
+  "last_lite_refresh": "2026-10-07T08:20:38.872902+00:00",
+  "forecast_mean": 16.18,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 8°C on October 8?",
+      "market_id": "5363789",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.32,
+      "no_price": 0.68,
+      "volume": 75.0,
+      "spread": 0.0,
+      "yes_token_id": "55766515210799124796648293534319261494222068323849913660222536118712640897495",
+      "no_token_id": "48174993377730034058187940603861511863764506061070522802529196141072195799900",
+      "model_prob": 0.0014,
+      "side": "YES",
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.1129,
+      "ev": -0.6472,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 9°C on October 8?",
+      "market_id": "5363790",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.32,
+      "no_price": 0.68,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "36664392384121864898540114960643592322575692702689770539039550795686723091994",
+      "no_token_id": "85980319037902613103789517544705302845173187165804234200742629987627281825582",
+      "model_prob": 0.0027,
+      "side": "YES",
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.1138,
+      "ev": -0.6444,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 17°C or higher on October 8?",
+      "market_id": "5363798",
+      "range": [
+        17.0,
+        999.0
+      ],
+      "yes_price": 0.405,
+      "no_price": 0.595,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "84363952584440455607333625504606668618579643771793988142842007729479237692312",
+      "no_token_id": "98556259984958618295303024039743840649440084135418113196685097734926072874292",
+      "model_prob": 0.9959,
+      "side": "YES",
+      "ask": 0.405,
+      "market_prob": 0.405,
+      "belief_prob": 0.7891,
+      "ev": 0.9484,
+      "kelly": 0.1614,
+      "sell_value": null
+    }
+  ]
 }
