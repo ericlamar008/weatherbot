@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-10-06T02:20:39.263060+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-07T22:00:00+00:00",
   "event_end_date": "2026-10-07T12:00:00Z",
-  "last_scan": "2026-10-06T02:20:39.263060+00:00",
-  "skipped_reason": "event volume 38 < min_volume 500",
+  "last_scan": "2026-10-07T02:20:36.665878+00:00",
   "last_lite_refresh": "2026-10-06T20:20:45.378935+00:00",
-  "forecast_mean": 14.18,
+  "forecast_mean": 14.0,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -24,23 +23,175 @@
         13.0,
         13.0
       ],
-      "yes_price": 0.315,
-      "no_price": 0.675,
+      "yes_price": 0.32,
+      "no_price": 0.68,
       "volume": 61.0,
       "spread": 0.0,
       "yes_token_id": "61633361012499125006417106557125729972504125564938142668014256982902050003199",
       "no_token_id": "71549182998652161985574481885212712712980864524643145209252672826580843310241",
-      "model_prob": 1.0,
+      "model_prob": 0.2013,
       "side": "YES",
-      "ask": 0.325,
-      "market_prob": 0.325,
-      "belief_prob": 0.7602,
-      "ev": 1.3502,
-      "kelly": 0.1625,
-      "sell_value": null,
-      "model_prob_change": 0.0,
-      "yes_price_change": -0.04
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.2428,
+      "ev": -0.2412,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 15°C on October 7?",
+      "market_id": "5312996",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "25275198494088735027517455591075892739125432122432856597202859596483352706376",
+      "no_token_id": "113360785670988995002859100265687611510522579889262871878219027909647811470028",
+      "model_prob": 0.2013,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.131,
+      "ev": 261.0,
+      "kelly": 0.0326,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 16°C on October 7?",
+      "market_id": "5312997",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "82804223135530410790483826604879252322513864425024887595462855423412201791712",
+      "no_token_id": "15655950614990305403897681401047841344496881493465977787178748578259587800133",
+      "model_prob": 0.0994,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0648,
+      "ev": 128.6,
+      "kelly": 0.0161,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 17°C on October 7?",
+      "market_id": "5312998",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "106586448709972176553807733768534816507464536090669238948640946228504493818295",
+      "no_token_id": "12532476706798655962010267947288298666401358947706342653216355390082103710461",
+      "model_prob": 0.0399,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0261,
+      "ev": 51.2,
+      "kelly": 0.0064,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 18°C on October 7?",
+      "market_id": "5312999",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "83636407202574582827008565826234833395714677799879310044485839771139886036367",
+      "no_token_id": "21146397715179103599279752609352278372372439681989100659228465670509656313064",
+      "model_prob": 0.0154,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0102,
+      "ev": 19.4,
+      "kelly": 0.0024,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 19°C or higher on October 7?",
+      "market_id": "5313000",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 1120.0,
+      "spread": 0.0,
+      "yes_token_id": "17667809271051686953078793489977867236483842546128192495631643487700796741222",
+      "no_token_id": "562443672234801399243615845956288555801589588622360140450479535878487919613",
+      "model_prob": 0.0118,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0078,
+      "ev": 14.6,
+      "kelly": 0.0018,
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-07T02:07:25.275847+00:00"
+  "last_price_refresh": "2026-10-07T02:07:25.275847+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "5312994",
+      "question": "Will the lowest temperature in Madrid be 13°C on October 7?",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "YES",
+      "price": 0.32,
+      "model_prob": 0.2013,
+      "ev": -0.2412,
+      "market_prob": 0.32,
+      "role": "main_signal",
+      "units": 20.2,
+      "sell_value": 0.05
+    },
+    {
+      "market_id": "5312994",
+      "question": "Will the lowest temperature in Madrid be 13°C on October 7? (NO)",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "NO",
+      "price": 0.68,
+      "model_prob": 0.7987,
+      "ev": 0.1135,
+      "market_prob": 0.68,
+      "role": "scenario_hedge",
+      "units": 21.68,
+      "sell_value": 0.44
+    }
+  ],
+  "total_allocated_units": 41.9,
+  "portfolio_score": 0.075085,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 21.24,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.6055,
+  "confidence": 0.2356,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
