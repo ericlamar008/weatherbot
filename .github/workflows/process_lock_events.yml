@@ -50,6 +50,11 @@ concurrency:
   group: weatherbot-data-writer
   cancel-in-progress: false
 
+env:
+  # جلوگیری از ساخت __pycache__/*.pyc (فایل باینری که هر اجرا فرق می‌کند و
+  # در rebase/merge همیشه CONFLICT غیرقابل‌حل می‌سازد)
+  PYTHONDONTWRITEBYTECODE: "1"
+
 jobs:
   process:
     runs-on: ubuntu-latest
