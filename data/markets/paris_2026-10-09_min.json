@@ -7,10 +7,191 @@
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T22:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-08T02:20:39.442741+00:00",
-  "skipped_reason": "event volume 417 < min_volume 500"
+  "skipped_reason": "event volume 417 < min_volume 500",
+  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00",
+  "forecast_mean": 8.37,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Paris be 2°C or below on October 9?",
+      "market_id": "5396511",
+      "range": [
+        -999.0,
+        2.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "102440868072601384364148959941245143864704231368778389264060492567516919016997",
+      "no_token_id": "98848055108618127643417304379197310998520764395242808340783221034253727777378",
+      "model_prob": 0.0063,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0303,
+      "ev": -0.596,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 3°C on October 9?",
+      "market_id": "5396512",
+      "range": [
+        3.0,
+        3.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "97797987624500631169931332329737950223424775232871509393457186640063548146015",
+      "no_token_id": "44767261997514891828109689764596197672894426282888404388254544464824663217989",
+      "model_prob": 0.0067,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.0271,
+      "ev": -0.5831,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 5°C on October 9?",
+      "market_id": "5396514",
+      "range": [
+        5.0,
+        5.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 62.0,
+      "spread": 0.0,
+      "yes_token_id": "70883546978688364930605026141235703478653741475773219746318383844935225054243",
+      "no_token_id": "49166009682255580784848363944765196597337202169504206867589892504672819932633",
+      "model_prob": 0.0412,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.1283,
+      "ev": -0.5576,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 7°C on October 9?",
+      "market_id": "5396516",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 68.0,
+      "spread": 0.0,
+      "yes_token_id": "111604199931699486039529628442416510776087889980429334626308407448955034779059",
+      "no_token_id": "62361327192951255254699616638979600159657204027206109792258885617117229634354",
+      "model_prob": 0.2368,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.2554,
+      "ev": -0.1193,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 8°C on October 9?",
+      "market_id": "5396517",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "54781055613209914737124352202264454015684621486605748339202493952712592400368",
+      "no_token_id": "64807505875052616330760377983659945336840061012425995700338831896888066557162",
+      "model_prob": 0.3738,
+      "side": "YES",
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.3252,
+      "ev": 0.3838,
+      "kelly": 0.0295,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 10°C on October 9?",
+      "market_id": "5396519",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.125,
+      "no_price": 0.875,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "85450358366805703802326205321049225568999246316404026766198876979755691283376",
+      "no_token_id": "8391520854437736920962363629625230635385227671724550263217882389535575789585",
+      "model_prob": 0.1966,
+      "side": "YES",
+      "ask": 0.125,
+      "market_prob": 0.125,
+      "belief_prob": 0.1715,
+      "ev": 0.372,
+      "kelly": 0.0133,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 11°C on October 9?",
+      "market_id": "5396520",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.22,
+      "no_price": 0.78,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "10867096653605080965781493515259123012436775268629893080344279536733245254686",
+      "no_token_id": "62867027256252570289007985221228977786297764901308334802242334991008259926747",
+      "model_prob": 0.083,
+      "side": "YES",
+      "ask": 0.22,
+      "market_prob": 0.22,
+      "belief_prob": 0.131,
+      "ev": -0.4045,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 12°C or higher on October 9?",
+      "market_id": "5396521",
+      "range": [
+        12.0,
+        999.0
+      ],
+      "yes_price": 0.28,
+      "no_price": 0.72,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "21033445066607496529393136369908044539759120946853745584460697287328145306672",
+      "no_token_id": "11585154254408005836920316197264074788975508221084471749819133577894183788691",
+      "model_prob": 0.0556,
+      "side": "YES",
+      "ask": 0.28,
+      "market_prob": 0.28,
+      "belief_prob": 0.1341,
+      "ev": -0.5211,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

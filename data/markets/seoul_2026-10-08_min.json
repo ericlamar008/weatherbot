@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 6.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T15:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-08T02:20:39.442741+00:00",
   "horizon_days": 0,
-  "forecast_mean": 12.63,
-  "sigma": 0.915,
+  "forecast_mean": 12.62,
+  "sigma": 0.907,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 7°C or below on October 8?",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0181,
       "ev": -0.6343,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 8°C on October 8?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0014,
       "ev": 1.8,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 9°C on October 8?",
@@ -73,14 +77,16 @@
       "spread": 0.0,
       "yes_token_id": "2823019988195083914491757643020959057220221216289717133710156988080679743916",
       "no_token_id": "20649260943749365809653077781148630033084148181139869912022183974983854244009",
-      "model_prob": 0.0063,
+      "model_prob": 0.0061,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0043,
-      "ev": 7.6,
-      "kelly": 0.001,
-      "sell_value": null
+      "belief_prob": 0.0041,
+      "ev": 7.2,
+      "kelly": 0.0009,
+      "sell_value": null,
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 10°C on October 8?",
@@ -95,14 +101,16 @@
       "spread": 0.0,
       "yes_token_id": "64672886730611585949591827220962688263381658634159394024906696660918481785859",
       "no_token_id": "102888325550962969065409649399611915724146041572976602413508090324931195291892",
-      "model_prob": 0.0243,
+      "model_prob": 0.0241,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.016,
-      "ev": 31.0,
-      "kelly": 0.0039,
-      "sell_value": null
+      "belief_prob": 0.0158,
+      "ev": 30.6,
+      "kelly": 0.0038,
+      "sell_value": null,
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 11°C on October 8?",
@@ -117,14 +125,16 @@
       "spread": 0.0,
       "yes_token_id": "19341259336849338993649474223656599558962179514993733898724240775533166448023",
       "no_token_id": "32684477956599715698848949137709356103802814447066363260123365347345409740607",
-      "model_prob": 0.1022,
+      "model_prob": 0.1026,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0666,
-      "ev": 132.2,
-      "kelly": 0.0165,
-      "sell_value": null
+      "belief_prob": 0.0669,
+      "ev": 132.8,
+      "kelly": 0.0166,
+      "sell_value": null,
+      "model_prob_change": 0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 12°C on October 8?",
@@ -139,14 +149,16 @@
       "spread": 0.0,
       "yes_token_id": "48679292600981754778592977144247906002757723170622836636074092452959612294674",
       "no_token_id": "95685705241460826175266785472474716452363331804482200778951934836031288852164",
-      "model_prob": 0.3104,
+      "model_prob": 0.3141,
       "side": "YES",
       "ask": 0.001,
       "market_prob": 0.001,
-      "belief_prob": 0.2021,
-      "ev": 201.1,
-      "kelly": 0.0503,
-      "sell_value": null
+      "belief_prob": 0.2045,
+      "ev": 203.5,
+      "kelly": 0.0509,
+      "sell_value": null,
+      "model_prob_change": 0.0037,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 13°C on October 8?",
@@ -161,14 +173,16 @@
       "spread": 0.0,
       "yes_token_id": "98066442291426008572509496955133928985655856026864332409786070472599407569114",
       "no_token_id": "17826649617074475441763577687535950279942450686269793127458713362001127508438",
-      "model_prob": 0.361,
+      "model_prob": 0.3618,
       "side": "YES",
       "ask": 0.9505,
       "market_prob": 0.9505,
-      "belief_prob": 0.5673,
-      "ev": -0.4032,
+      "belief_prob": 0.5678,
+      "ev": -0.4026,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0008,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 14°C on October 8?",
@@ -183,14 +197,16 @@
       "spread": 0.0,
       "yes_token_id": "31337004534224731590635123051565252333240762437137064554139062024357885103717",
       "no_token_id": "60129411396255135608278924738862641229878498356875047961222742904833492055417",
-      "model_prob": 0.1445,
+      "model_prob": 0.1418,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0941,
-      "ev": 187.2,
-      "kelly": 0.0234,
-      "sell_value": null
+      "belief_prob": 0.0923,
+      "ev": 183.6,
+      "kelly": 0.023,
+      "sell_value": null,
+      "model_prob_change": -0.0027,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 15°C on October 8?",
@@ -205,14 +221,16 @@
       "spread": 0.0,
       "yes_token_id": "105972949222515817047914220418795000783493810931493648045597249418114125712562",
       "no_token_id": "31853685304923901093802842447474770951097991578904607981361728277490199560032",
-      "model_prob": 0.0353,
+      "model_prob": 0.0341,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0231,
-      "ev": 45.2,
-      "kelly": 0.0057,
-      "sell_value": null
+      "belief_prob": 0.0223,
+      "ev": 43.6,
+      "kelly": 0.0055,
+      "sell_value": null,
+      "model_prob_change": -0.0012,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 8?",
@@ -227,14 +245,16 @@
       "spread": 0.0,
       "yes_token_id": "9154146905343501119744505350346943812587730112673213470649409893252341737087",
       "no_token_id": "87810505590591990225831999859832474528744810291387553630383164241588956583556",
-      "model_prob": 0.0088,
+      "model_prob": 0.0084,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0059,
-      "ev": 10.8,
-      "kelly": 0.0014,
-      "sell_value": null
+      "belief_prob": 0.0056,
+      "ev": 10.2,
+      "kelly": 0.0013,
+      "sell_value": null,
+      "model_prob_change": -0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 17°C or higher on October 8?",
@@ -249,14 +269,16 @@
       "spread": 0.0,
       "yes_token_id": "70733192344711836779733540522081283657685303464048203339154366274337102775805",
       "no_token_id": "92438330861404498732076727880286814811905292149691848169589062233038782101892",
-      "model_prob": 0.0041,
+      "model_prob": 0.0039,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0028,
-      "ev": 4.6,
+      "belief_prob": 0.0027,
+      "ev": 4.4,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:07:25.346525+00:00",
-  "last_lite_refresh": "2026-10-07T20:20:36.320894+00:00"
+  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
 }

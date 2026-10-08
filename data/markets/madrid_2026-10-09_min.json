@@ -7,10 +7,191 @@
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T22:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-08T02:20:39.442741+00:00",
-  "skipped_reason": "event volume 377 < min_volume 500"
+  "skipped_reason": "event volume 377 < min_volume 500",
+  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00",
+  "forecast_mean": 7.71,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 5°C on October 9?",
+      "market_id": "5396665",
+      "range": [
+        5.0,
+        5.0
+      ],
+      "yes_price": 0.125,
+      "no_price": 0.875,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "94147452921871429120274323748689389735044648181380947450319089430720505489901",
+      "no_token_id": "50547190399002071431618336879724740945766483389111104399350552311133971658536",
+      "model_prob": 0.0833,
+      "side": "YES",
+      "ask": 0.125,
+      "market_prob": 0.125,
+      "belief_prob": 0.0979,
+      "ev": -0.2168,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 6°C on October 9?",
+      "market_id": "5396666",
+      "range": [
+        6.0,
+        6.0
+      ],
+      "yes_price": 0.24,
+      "no_price": 0.76,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "46531959251672305428328048618487446810665033713262480540261903228054704962591",
+      "no_token_id": "30545904269599237330068338239981341263826797860418611894200988908779387255516",
+      "model_prob": 0.1999,
+      "side": "YES",
+      "ask": 0.24,
+      "market_prob": 0.24,
+      "belief_prob": 0.2139,
+      "ev": -0.1087,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 7°C on October 9?",
+      "market_id": "5396667",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.13,
+      "no_price": 0.87,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "35775908395744224340727925706019899991909666322058040496560876815761811764860",
+      "no_token_id": "16233217302711526122268999149975630014128386986952841547693758438784668489596",
+      "model_prob": 0.3652,
+      "side": "YES",
+      "ask": 0.13,
+      "market_prob": 0.13,
+      "belief_prob": 0.2829,
+      "ev": 1.1762,
+      "kelly": 0.0439,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 9°C on October 9?",
+      "market_id": "5396669",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 8.0,
+      "spread": 0.0,
+      "yes_token_id": "74443567736640816013386134232486148515537319188926934660596181792116765737170",
+      "no_token_id": "70294020635788216561189581540900361245279113684537204213134798964385193645131",
+      "model_prob": 0.2699,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.2139,
+      "ev": 0.9445,
+      "kelly": 0.0292,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 11°C on October 9?",
+      "market_id": "5396671",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.32,
+      "no_price": 0.68,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "80806142394128232200806359199074249125594349437052630713375041534757963156510",
+      "no_token_id": "56665601195425576987329351898377715079424721354018293458867573057463174335689",
+      "model_prob": 0.048,
+      "side": "YES",
+      "ask": 0.32,
+      "market_prob": 0.32,
+      "belief_prob": 0.1432,
+      "ev": -0.5525,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 12°C on October 9?",
+      "market_id": "5396672",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "40586830391892543675520863368306961682077586796896786232688908457121602231932",
+      "no_token_id": "61124485386818203568896653147788160368219943226664687686013267943064517540127",
+      "model_prob": 0.0188,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1295,
+      "ev": -0.6134,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 13°C on October 9?",
+      "market_id": "5396673",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 106.0,
+      "spread": 0.0,
+      "yes_token_id": "81520197457170143080570214493639398331340714797741786609041448484394456418707",
+      "no_token_id": "69491292738278844195348803989051891202169947415422069843758291667652384563937",
+      "model_prob": 0.0078,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1223,
+      "ev": -0.6349,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 14°C or higher on October 9?",
+      "market_id": "5396674",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.365,
+      "no_price": 0.635,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "107679998804981613949312127096966801165957014956197532422801121986318900778527",
+      "no_token_id": "51098848123422375256499767060757482903442101088584938078882405732717628588550",
+      "model_prob": 0.0072,
+      "side": "YES",
+      "ask": 0.365,
+      "market_prob": 0.365,
+      "belief_prob": 0.1324,
+      "ev": -0.6373,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }
