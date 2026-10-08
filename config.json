@@ -28,5 +28,7 @@
   "scenario_step": 0.5,
   "scenario_n_sigma": 4.0,
   "tail_df": 5.0,
-  "event_fetch_workers": 8
+  "event_fetch_workers": 8,
+  "weather_prefetch": true,
+  "weather_prefetch_workers": 4
 }

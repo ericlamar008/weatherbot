@@ -68,6 +68,8 @@ import json
 import math
 import time
 import requests
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -219,8 +221,10 @@ def _weighted_mean(values, weights):
 # ENSEMBLE FETCH (LIVE FORECASTING)
 # =============================================================================
 
-def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7, variable="temperature_2m_max"):
-    """(فاز ۶) پارامتر variable اضافه شد؛ مقدار پیش‌فرض دقیقاً رفتار
+def _fetch_ensemble_uncached(lat, lon, tz, unit, models, forecast_days=7, variable="temperature_2m_max"):
+    """(مرحلهٔ ۲: نام این تابع از _fetch_ensemble به _fetch_ensemble_uncached عوض شد؛ بدنه‌اش
+    دقیقاً همان قبلی است.)
+    (فاز ۶) پارامتر variable اضافه شد؛ مقدار پیش‌فرض دقیقاً رفتار
     قبلی (temperature_2m_max) را حفظ می‌کند -- هیچ فراخوانی موجودی نیازی
     به تغییر ندارد."""
     temp_unit = "fahrenheit" if unit == "F" else "celsius"
@@ -253,6 +257,107 @@ def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7, variable="tempe
                 return {}
     return {}
 
+
+# =============================================================================
+# (مرحلهٔ ۲) حافظهٔ موقت + پیش‌گرفتن موازی پاسخ‌های Open-Meteo
+# -----------------------------------------------------------------------------
+# تا قبل از این، برای هر (شهر، تاریخ) کل پیش‌بینی ۷ روزهٔ همان شهر دوباره از
+# اینترنت گرفته می‌شد؛ در حالی که آدرس درخواست برای همهٔ تاریخ‌های یک شهر یکی
+# است. حالا:
+#  - هر آدرس یکتا فقط یک بار در طول یک اسکن گرفته می‌شود (حافظهٔ موقت).
+#  - فقط پاسخ موفق و دارای داده ذخیره می‌شود؛ شکست/خالی هرگز ذخیره نمی‌شود و
+#    مثل قبل برای هر مارکت دوباره تلاش می‌شود (رفتار خطا دست‌نخورده).
+#  - هر بار که حافظه می‌خواند، یک کپی برمی‌گرداند تا هیچ کدی نتواند آن را خراب کند.
+#  - prefetch_ensembles() همین آدرس‌ها را قبل از حلقهٔ اصلی با چند کار همزمان
+#    می‌گیرد؛ حلقه‌های اسکن هیچ تغییری نکرده‌اند و فقط از حافظه می‌خوانند.
+#  - با set_ensemble_cache_enabled(False) رفتار دقیقاً مثل قبل است.
+# =============================================================================
+_ENSEMBLE_CACHE = {}
+_ENSEMBLE_CACHE_LOCK = threading.Lock()
+_ENSEMBLE_CACHE_ENABLED = True
+
+def set_ensemble_cache_enabled(enabled):
+    global _ENSEMBLE_CACHE_ENABLED
+    _ENSEMBLE_CACHE_ENABLED = bool(enabled)
+
+def clear_ensemble_cache():
+    with _ENSEMBLE_CACHE_LOCK:
+        _ENSEMBLE_CACHE.clear()
+
+def _copy_ensemble(result):
+    return {d: list(v) for d, v in result.items()}
+
+def _ensemble_has_data(result):
+    return bool(result) and any(result.values())
+
+def _fetch_ensemble(lat, lon, tz, unit, models, forecast_days=7, variable="temperature_2m_max"):
+    """همان امضا و همان خروجی قبلی؛ فقط اگر همین آدرس قبلاً در همین اسکن با
+    موفقیت گرفته شده باشد، از حافظه می‌خواند."""
+    if not _ENSEMBLE_CACHE_ENABLED:
+        return _fetch_ensemble_uncached(lat, lon, tz, unit, models, forecast_days, variable)
+    key = (lat, lon, tz, unit, models, forecast_days, variable)
+    with _ENSEMBLE_CACHE_LOCK:
+        hit = _ENSEMBLE_CACHE.get(key)
+    if hit is not None:
+        return _copy_ensemble(hit)
+    result = _fetch_ensemble_uncached(lat, lon, tz, unit, models, forecast_days, variable)
+    if _ensemble_has_data(result):
+        with _ENSEMBLE_CACHE_LOCK:
+            _ENSEMBLE_CACHE[key] = _copy_ensemble(result)
+    return result
+
+def prefetch_ensembles(locations, max_cities=None, min_cities=None, workers=4):
+    """آدرس‌های یکتای مورد نیاز اسکن را با چند کار همزمان می‌گیرد و در حافظه می‌گذارد.
+    max_cities/min_cities: مجموعهٔ slug شهرها (None یعنی همهٔ شهرها).
+    هیچ استثنایی بیرون نمی‌دهد؛ هر شکستی فقط یعنی آن آدرس بعداً توسط خود حلقه
+    (مثل قبل) گرفته می‌شود."""
+    tasks = []
+    for slug, loc in locations.items():
+        args = (loc["lat"], loc["lon"], loc["tz"], loc["unit"])
+        if max_cities is None or slug in max_cities:
+            tasks.append((get_ecmwf_ensemble, args))
+            tasks.append((get_gefs_ensemble, args))
+            for extra in _active_extra_models(loc):
+                if extra == "gem":
+                    tasks.append((get_gem_ensemble, args))
+                elif extra == "icon_eu":
+                    tasks.append((get_icon_eu_ensemble, args))
+        if min_cities is None or slug in min_cities:
+            tasks.append((get_ecmwf_ensemble_min, args))
+            tasks.append((get_gefs_ensemble_min, args))
+
+    def _run(task):
+        fn, args = task
+        try:
+            fn(*args)
+        except Exception:
+            pass
+
+    t0 = time.perf_counter()
+    if tasks:
+        with ThreadPoolExecutor(max_workers=max(1, int(workers))) as pool:
+            list(pool.map(_run, tasks))
+    with _ENSEMBLE_CACHE_LOCK:
+        cached = len(_ENSEMBLE_CACHE)
+    return {"tasks": len(tasks), "cached": cached, "seconds": round(time.perf_counter() - t0, 1)}
+
+def verify_ensemble_cache(sample=5):
+    """(فقط برای بررسی) چند آدرس حافظه را دوباره مستقیم می‌گیرد و برابری را می‌سنجد.
+    برمی‌گرداند (تعداد برابر, تعداد بررسی‌شده)."""
+    with _ENSEMBLE_CACHE_LOCK:
+        keys = list(_ENSEMBLE_CACHE.keys())
+    if not keys:
+        return 0, 0
+    step = max(1, len(keys) // sample)
+    picked = keys[::step][:sample]
+    same = 0
+    for key in picked:
+        fresh = _fetch_ensemble_uncached(*key)
+        with _ENSEMBLE_CACHE_LOCK:
+            cached = _ENSEMBLE_CACHE.get(key)
+        if fresh == cached:
+            same += 1
+    return same, len(picked)
 
 def get_ecmwf_ensemble(lat, lon, tz, unit):
     return _fetch_ensemble(lat, lon, tz, unit, "ecmwf_ifs025", forecast_days=7)

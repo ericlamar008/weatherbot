@@ -50,6 +50,7 @@ python weatherbot_v3.py run           # main loop, no server
 =====================================================================================
 """
 
+import os
 import re
 import sys
 import json
@@ -1349,9 +1350,32 @@ def resolve_expired_min_markets(state):
         resolved_count += 1
     return resolved_count
 
+# (مرحلهٔ ۲) پیش‌گرفتن موازی پاسخ‌های Open-Meteo -- نگاه کنید به توضیح بالای
+# prefetch_ensembles در forecasting.py. با weather_prefetch=false در config.json
+# رفتار دقیقاً مثل قبل می‌شود.
+WEATHER_PREFETCH = bool(CFG.get("weather_prefetch", True))
+WEATHER_PREFETCH_WORKERS = int(CFG.get("weather_prefetch_workers", 4))
+
+def _prepare_weather_cache(max_cities=None, min_cities=None):
+    fc.clear_ensemble_cache()
+    fc.set_ensemble_cache_enabled(WEATHER_PREFETCH)
+    if not WEATHER_PREFETCH:
+        print("  [prefetch] غیرفعال است (weather_prefetch=false) -- رفتار قبلی")
+        return
+    try:
+        stats = fc.prefetch_ensembles(LOCATIONS, max_cities, min_cities, WEATHER_PREFETCH_WORKERS)
+        print(f"  [prefetch] {stats['cached']} از {stats['tasks']} آدرس هواشناسی در {stats['seconds']} ثانیه "
+              f"گرفته شد ({WEATHER_PREFETCH_WORKERS} کار همزمان)")
+        if os.environ.get("WEATHERBOT_VERIFY_PREFETCH") == "1":
+            same, checked = fc.verify_ensemble_cache(5)
+            print(f"  [prefetch-verify] {same} از {checked} نمونه با دریافت مستقیم برابر بود")
+    except Exception as e:
+        print(f"  [prefetch] هشدار: پیش‌گرفتن ناموفق بود ({e}) -- اسکن بدون آن ادامه می‌یابد")
+
 def scan_and_update():
     state = load_state()
     now = datetime.now(timezone.utc)
+    _prepare_weather_cache()
     new_positions = discover_new_signals(now, state)
     new_min_positions = discover_new_min_signals(now, state)
     refresh_all_locked_markets(now)
@@ -1398,6 +1422,15 @@ def run_lite_scan():
     t_start = time.perf_counter()
     now = datetime.now(timezone.utc)
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] اسکن سبک -- تازه‌سازی اطلاعات {len(LOCATIONS)} شهر...")
+
+    try:
+        open_max_cities = {m.get("city") for m in load_all_markets() if m.get("status") == "open"}
+        open_min_cities = {m.get("city") for m in load_all_min_markets() if m.get("status") == "open"}
+        _prepare_weather_cache(open_max_cities, open_min_cities)
+    except Exception as e:
+        fc.clear_ensemble_cache()
+        fc.set_ensemble_cache_enabled(False)
+        print(f"  [prefetch] هشدار: آماده‌سازی ناموفق بود ({e}) -- رفتار قبلی")
 
     refreshed = refresh_open_market_info(now)
     refresh_open_market_info_min(now)
