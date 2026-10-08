@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 10.3,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T05:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 90.78,
   "sigma": 1.761,
-  "forecast_mean_shadow": 90.98,
+  "forecast_mean_shadow": 91.01,
   "model_means_raw": {
     "ecmwf": 89.76,
     "gfs": 91.92,
-    "gem": 90.25
+    "gem": 90.36
   },
   "full_distribution": [
     {
@@ -114,7 +114,7 @@
       "ev": 12.0,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -126,7 +126,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 849.0,
+      "volume": 859.0,
       "spread": 0.0,
       "yes_token_id": "74545492181496066760204391650723928390065888885487040749467760185926313881027",
       "no_token_id": "33654942770746248789669880941032760920295096981076688067150664218266326587997",
@@ -138,7 +138,7 @@
       "ev": 54.2,
       "kelly": 0.0068,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -150,7 +150,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4662.0,
+      "volume": 4768.0,
       "spread": 0.0,
       "yes_token_id": "38656942788234188033734265522580942103015006645969366815581959420878128773286",
       "no_token_id": "88780342569472994694781191008743130304101526867124203399387011990387022975828",
@@ -162,7 +162,7 @@
       "ev": 235.8,
       "kelly": 0.0295,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -172,22 +172,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.665,
-      "no_price": 0.435,
-      "volume": 7166.0,
+      "yes_price": 0.84,
+      "no_price": 0.16,
+      "volume": 7785.0,
       "spread": 0.0,
       "yes_token_id": "53376517381514166221226764671192288025406567294666070843980937523550705675786",
       "no_token_id": "24780818729465566640535012863889589106268643971907807983306360952001748688750",
       "model_prob": 0.4152,
       "side": "YES",
-      "ask": 0.565,
-      "market_prob": 0.565,
-      "belief_prob": 0.5026,
-      "ev": -0.1724,
+      "ask": 0.84,
+      "market_prob": 0.84,
+      "belief_prob": 0.5639,
+      "ev": -0.3287,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0004,
-      "yes_price_change": 0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.175
     },
     {
       "question": "Will the highest temperature in Houston be between 92-93°F on October 8?",
@@ -196,22 +196,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.295,
-      "no_price": 0.605,
-      "volume": 5693.0,
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 5934.0,
       "spread": 0.0,
       "yes_token_id": "28589767050755141510466143802266697459490140702869983476614160341764829285233",
       "no_token_id": "1544857974670755404285374359490025279831388095812648482561459769547675074696",
       "model_prob": 0.2543,
       "side": "YES",
-      "ask": 0.395,
-      "market_prob": 0.395,
-      "belief_prob": 0.2685,
-      "ev": -0.2316,
-      "kelly": 0.0,
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.2143,
+      "ev": 0.5307,
+      "kelly": 0.0216,
       "sell_value": null,
-      "model_prob_change": 0.0013,
-      "yes_price_change": -0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.155
     },
     {
       "question": "Will the highest temperature in Houston be between 94-95°F on October 8?",
@@ -220,22 +220,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.0385,
-      "no_price": 0.9595,
-      "volume": 2641.0,
+      "yes_price": 0.0145,
+      "no_price": 0.9855,
+      "volume": 2891.0,
       "spread": 0.0,
       "yes_token_id": "62675368884421293692963631222881460472561236746544670182819979725763839925706",
       "no_token_id": "71112843538636206361704159694833112712799175212493362467594945235149977277607",
       "model_prob": 0.0646,
       "side": "YES",
-      "ask": 0.0405,
-      "market_prob": 0.0405,
-      "belief_prob": 0.0555,
-      "ev": 0.3877,
-      "kelly": 0.0041,
+      "ask": 0.0145,
+      "market_prob": 0.0145,
+      "belief_prob": 0.0471,
+      "ev": 2.2483,
+      "kelly": 0.0083,
       "sell_value": null,
-      "model_prob_change": 0.0005,
-      "yes_price_change": -0.0045
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.024
     },
     {
       "question": "Will the highest temperature in Houston be between 96-97°F on October 8?",
@@ -244,22 +244,22 @@
         96.0,
         97.0
       ],
-      "yes_price": 0.0045,
-      "no_price": 0.998,
-      "volume": 1593.0,
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 1737.0,
       "spread": 0.0,
       "yes_token_id": "27246670335092560619775088047879610093893395408314067661116824754727266221049",
       "no_token_id": "111564454700660462687740139468345864734110479953403811523355783885120504423709",
       "model_prob": 0.0146,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
-      "belief_prob": 0.0111,
-      "ev": 4.1,
-      "kelly": 0.0021,
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0107,
+      "ev": 2.0571,
+      "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": 0.0001,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Houston be 98°F or higher on October 8?",
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

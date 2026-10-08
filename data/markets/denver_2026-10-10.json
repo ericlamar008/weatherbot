@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 59.3,
+  "hours_left": 57.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-11T06:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 2,
   "forecast_mean": 81.03,
   "sigma": 2.5,
-  "forecast_mean_shadow": 80.69,
+  "forecast_mean_shadow": 80.72,
   "model_means_raw": {
     "ecmwf": 81.89,
     "gfs": 79.61,
-    "gem": 80.57
+    "gem": 80.68
   },
   "full_distribution": [
     {
@@ -29,20 +29,20 @@
         73.0
       ],
       "yes_price": 0.027,
-      "no_price": 0.966,
-      "volume": 50.0,
+      "no_price": 0.973,
+      "volume": 55.0,
       "spread": 0.0,
       "yes_token_id": "74125165585338529970985440689697983826314466799024203256651223981877377085079",
       "no_token_id": "74453478295460963177619319993576177160528118534607420007943366717490477078029",
       "model_prob": 0.0538,
       "side": "YES",
-      "ask": 0.034,
-      "market_prob": 0.034,
+      "ask": 0.027,
+      "market_prob": 0.027,
       "belief_prob": 0.0444,
-      "ev": 0.3794,
-      "kelly": 0.0033,
+      "ev": 0.6444,
+      "kelly": 0.0045,
       "sell_value": null,
-      "model_prob_change": 0.0247,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 54.0,
       "kelly": 0.0068,
       "sell_value": null,
-      "model_prob_change": 0.0193,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 13.8,
       "kelly": 0.0191,
       "sell_value": null,
-      "model_prob_change": 0.056,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -100,22 +100,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.46,
-      "no_price": 0.545,
+      "yes_price": 0.465,
+      "no_price": 0.535,
       "volume": 42.0,
       "spread": 0.0,
       "yes_token_id": "73091223572624010186587238741762520972827003621392505402007806131334772708923",
       "no_token_id": "65848057877920453445961524855459042770184630445957514632154164499785990584630",
       "model_prob": 0.4484,
       "side": "YES",
-      "ask": 0.455,
-      "market_prob": 0.455,
-      "belief_prob": 0.4525,
-      "ev": -0.0095,
+      "ask": 0.465,
+      "market_prob": 0.465,
+      "belief_prob": 0.4542,
+      "ev": -0.0232,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.2056,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Denver be between 84-85°F on October 10?",
@@ -125,21 +125,21 @@
         85.0
       ],
       "yes_price": 0.315,
-      "no_price": 0.67,
-      "volume": 124.0,
+      "no_price": 0.685,
+      "volume": 129.0,
       "spread": 0.0,
       "yes_token_id": "62336001776503598512770768774677522998655434044556226793407875050572998816619",
       "no_token_id": "97354376836408226168044678498820030288969275288407587806945243622620447231951",
       "model_prob": 0.2083,
       "side": "YES",
-      "ask": 0.33,
-      "market_prob": 0.33,
+      "ask": 0.315,
+      "market_prob": 0.315,
       "belief_prob": 0.2456,
-      "ev": -0.2397,
+      "ev": -0.2203,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0955,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 86-87°F on October 10?",
@@ -149,21 +149,21 @@
         87.0
       ],
       "yes_price": 0.08,
-      "no_price": 0.915,
-      "volume": 166.0,
+      "no_price": 0.92,
+      "volume": 171.0,
       "spread": 0.0,
       "yes_token_id": "28542787751356368157973634052444097110158265711675570225534385150372826816500",
       "no_token_id": "64289450511442644726954762654916121485266083186105591461316899629067495061368",
       "model_prob": 0.0742,
       "side": "YES",
-      "ask": 0.085,
-      "market_prob": 0.085,
+      "ask": 0.08,
+      "market_prob": 0.08,
       "belief_prob": 0.0762,
-      "ev": -0.0824,
+      "ev": -0.0475,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.034,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 88-89°F on October 10?",
@@ -186,7 +186,7 @@
       "ev": 0.1256,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": 0.0118,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -197,20 +197,20 @@
         91.0
       ],
       "yes_price": 0.0105,
-      "no_price": 0.99,
+      "no_price": 0.9895,
       "volume": 50.0,
       "spread": 0.0,
       "yes_token_id": "14557310067016682727921350501945196181453181636072545874022921331797499803315",
       "no_token_id": "107721381491404105921447825232302312589098633247545335267869037426126727242619",
       "model_prob": 0.0096,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
+      "ask": 0.0105,
+      "market_prob": 0.0105,
       "belief_prob": 0.0099,
-      "ev": -0.03,
+      "ev": -0.0571,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0044,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 6.1333,
       "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": 0.0072,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -282,5 +282,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

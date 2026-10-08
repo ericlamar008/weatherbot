@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 3.3,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T22:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 19.21,
   "sigma": 1.022,
-  "forecast_mean_shadow": 18.71,
+  "forecast_mean_shadow": 19.04,
   "model_means_raw": {
     "ecmwf": 19.3,
     "gfs": 17.8,
-    "gem": 17.68,
+    "gem": 18.77,
     "icon_eu": 19.11
   },
   "full_distribution": [
@@ -245,22 +245,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.9995,
-      "no_price": 0.0005,
-      "volume": 10596.0,
+      "yes_price": 0.9975,
+      "no_price": 0.0025,
+      "volume": 11164.0,
       "spread": 0.0,
       "yes_token_id": "27310704751220270042720813316088319409360340608668929370768925170787528591121",
       "no_token_id": "70347774214822215650785750757110973666815015444977858781081730793694292862431",
       "model_prob": 0.2627,
       "side": "YES",
-      "ask": 0.9995,
-      "market_prob": 0.9995,
-      "belief_prob": 0.5206,
-      "ev": -0.4791,
+      "ask": 0.9975,
+      "market_prob": 0.9975,
+      "belief_prob": 0.5199,
+      "ev": -0.4788,
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": 0.0
+      "yes_price_change": -0.002
     },
     {
       "question": "Will the highest temperature in Milan be 21°C or higher on October 8?",
@@ -269,22 +269,22 @@
         21.0,
         999.0
       ],
-      "yes_price": 0.0005,
-      "no_price": 0.9995,
-      "volume": 7906.0,
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 8947.0,
       "spread": 0.0,
       "yes_token_id": "28016832127569081266148127801289055148397497577586305559605860065009336379611",
       "no_token_id": "3229870894304796921549338195525088184475452285572994691775241403069895275839",
       "model_prob": 0.1313,
       "side": "YES",
-      "ask": 0.0005,
-      "market_prob": 0.0005,
-      "belief_prob": 0.0855,
-      "ev": 170.0,
-      "kelly": 0.0213,
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0862,
+      "ev": 33.48,
+      "kelly": 0.021,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": 0.0
+      "yes_price_change": 0.002
     }
   ],
   "live_allocation": [
@@ -315,5 +315,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

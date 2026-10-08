@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 33.3,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T04:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 87.7,
   "sigma": 1.503,
-  "forecast_mean_shadow": 88.73,
+  "forecast_mean_shadow": 89.19,
   "model_means_raw": {
     "ecmwf": 86.53,
     "gfs": 86.9,
-    "gem": 89.47
+    "gem": 90.8
   },
   "full_distribution": [
     {
@@ -114,7 +114,7 @@
       "ev": 6.3286,
       "kelly": 0.0112,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,20 +125,20 @@
         87.0
       ],
       "yes_price": 0.049,
-      "no_price": 0.949,
+      "no_price": 0.951,
       "volume": 243.0,
       "spread": 0.0,
       "yes_token_id": "113536718714420814903394545519665031083334679395369819522584653409051649506297",
       "no_token_id": "104775191072148595523391491206966170804841947515679202277966832422299254015719",
       "model_prob": 0.3514,
       "side": "YES",
-      "ask": 0.051,
-      "market_prob": 0.051,
+      "ask": 0.049,
+      "market_prob": 0.049,
       "belief_prob": 0.2456,
-      "ev": 3.8294,
-      "kelly": 0.0514,
+      "ev": 4.0122,
+      "kelly": 0.0517,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -148,22 +148,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.535,
-      "no_price": 0.49,
-      "volume": 1511.0,
+      "yes_price": 0.545,
+      "no_price": 0.455,
+      "volume": 1740.0,
       "spread": 0.0,
       "yes_token_id": "112212273619746644059301476204302508888470982886434709918623773780331685213091",
       "no_token_id": "29258091271304643017269967868519937675710433695579082719912343353789747767561",
       "model_prob": 0.4227,
       "side": "YES",
-      "ask": 0.51,
-      "market_prob": 0.51,
-      "belief_prob": 0.462,
-      "ev": -0.1112,
+      "ask": 0.545,
+      "market_prob": 0.545,
+      "belief_prob": 0.4655,
+      "ev": -0.1459,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0002,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 9?",
@@ -172,22 +172,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.38,
-      "no_price": 0.61,
-      "volume": 9111.0,
+      "yes_price": 0.365,
+      "no_price": 0.635,
+      "volume": 9184.0,
       "spread": 0.0,
       "yes_token_id": "17621304280442943842984172122069640526861863488309862155565118916434088298158",
       "no_token_id": "45807545410366693302853542362578551828221963279796990963587467809272328310391",
       "model_prob": 0.1069,
       "side": "YES",
-      "ask": 0.39,
-      "market_prob": 0.39,
-      "belief_prob": 0.2025,
-      "ev": -0.4718,
+      "ask": 0.365,
+      "market_prob": 0.365,
+      "belief_prob": 0.1972,
+      "ev": -0.4597,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.015
     },
     {
       "question": "Will the highest temperature in Miami be between 92-93°F on October 9?",
@@ -198,7 +198,7 @@
       ],
       "yes_price": 0.036,
       "no_price": 0.964,
-      "volume": 267.0,
+      "volume": 292.0,
       "spread": 0.0,
       "yes_token_id": "38258389988213309429381937837878996995645329280115314448757994078278628510350",
       "no_token_id": "90943346244149036677190708461527980066580539270742605959698868560955606331426",
@@ -210,7 +210,7 @@
       "ev": -0.3167,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

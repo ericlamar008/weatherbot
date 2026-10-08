@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 10.3,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T05:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 86.39,
   "sigma": 2.25,
-  "forecast_mean_shadow": 87.8,
+  "forecast_mean_shadow": 87.86,
   "model_means_raw": {
     "ecmwf": 84.45,
     "gfs": 88.57,
-    "gem": 88.69
+    "gem": 88.88
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 5.4,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 9.8,
       "kelly": 0.0012,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 32.2,
       "kelly": 0.004,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 106.6,
       "kelly": 0.0133,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -162,7 +162,7 @@
       "ev": 290.0,
       "kelly": 0.0363,
       "sell_value": null,
-      "model_prob_change": -0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -173,20 +173,20 @@
         87.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9955,
-      "volume": 3001.0,
+      "no_price": 0.9995,
+      "volume": 3462.0,
       "spread": 0.0,
       "yes_token_id": "103452666689134601366173843649069035973365297430051636926096691668785181505642",
       "no_token_id": "17295680751223706427183126542896137505451710612044550370537587251725241585754",
       "model_prob": 0.3286,
       "side": "YES",
-      "ask": 0.0045,
-      "market_prob": 0.0045,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.2138,
-      "ev": 46.8222,
-      "kelly": 0.0529,
+      "ev": 426.6,
+      "kelly": 0.0534,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -196,22 +196,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.79,
-      "no_price": 0.51,
-      "volume": 3997.0,
+      "yes_price": 0.795,
+      "no_price": 0.205,
+      "volume": 4508.0,
       "spread": 0.0,
       "yes_token_id": "102846663613574165169129200016587033354417251063168087605176811508313609435728",
       "no_token_id": "52410601771484307172374803072532440945939461677316627737612179815567100344223",
       "model_prob": 0.2047,
       "side": "YES",
-      "ask": 0.49,
-      "market_prob": 0.49,
-      "belief_prob": 0.4096,
-      "ev": -0.3784,
+      "ask": 0.795,
+      "market_prob": 0.795,
+      "belief_prob": 0.4113,
+      "ev": -0.4826,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0008,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 90-91°F on October 8?",
@@ -220,22 +220,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.195,
-      "no_price": 0.495,
-      "volume": 2964.0,
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 3542.0,
       "spread": 0.0,
       "yes_token_id": "60258429217224078035393831111418782046028432031660818512817596691725258996974",
       "no_token_id": "77173827910666984187329852977838289817587296265726776922208328237861991061794",
       "model_prob": 0.0726,
       "side": "YES",
-      "ask": 0.505,
-      "market_prob": 0.505,
-      "belief_prob": 0.1154,
-      "ev": -0.5566,
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.1189,
+      "ev": -0.42,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0004,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the highest temperature in Dallas be between 92-93°F on October 8?",
@@ -244,22 +244,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.015,
-      "no_price": 0.9595,
-      "volume": 2401.0,
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "volume": 2603.0,
       "spread": 0.0,
       "yes_token_id": "111483654097352868725986660597355932515276815353848514980826544339934692379058",
       "no_token_id": "110174958218291545518629393232299039822969868333460041328109707798564115466469",
       "model_prob": 0.0223,
       "side": "YES",
-      "ask": 0.0405,
-      "market_prob": 0.0405,
-      "belief_prob": 0.0197,
-      "ev": -0.2914,
-      "kelly": 0.0,
+      "ask": 0.0085,
+      "market_prob": 0.0085,
+      "belief_prob": 0.0175,
+      "ev": 1.0588,
+      "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": 0.0002,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0065
     },
     {
       "question": "Will the highest temperature in Dallas be 94°F or higher on October 8?",
@@ -268,22 +268,22 @@
         94.0,
         999.0
       ],
-      "yes_price": 0.0055,
-      "no_price": 0.9975,
-      "volume": 1162.0,
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 1681.0,
       "spread": 0.0,
       "yes_token_id": "53737564808198291789023404367486320586497916537900450746222251784751450801547",
       "no_token_id": "59311997978778254527033266128534231442974447177352760266621932707538011744267",
       "model_prob": 0.0247,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.018,
-      "ev": 5.76,
-      "kelly": 0.0036,
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0173,
+      "ev": 3.9429,
+      "kelly": 0.0035,
       "sell_value": null,
-      "model_prob_change": 0.0001,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.002
     }
   ],
   "live_allocation": [],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

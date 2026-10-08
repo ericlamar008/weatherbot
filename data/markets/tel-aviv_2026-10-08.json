@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 2.3,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T21:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 30.22,
   "sigma": 0.793,
-  "forecast_mean_shadow": 30.72,
+  "forecast_mean_shadow": 30.63,
   "model_means_raw": {
     "ecmwf": 30.82,
     "gfs": 29.33,
-    "gem": 32.06
+    "gem": 31.82
   },
   "full_distribution": [
     {
@@ -100,22 +100,22 @@
         30.0,
         30.0
       ],
-      "yes_price": 0.0005,
-      "no_price": 0.9995,
-      "volume": 10072.0,
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 10076.0,
       "spread": 0.0,
       "yes_token_id": "30764252548822336916399981133826553486705772129822761457289031808538994232142",
       "no_token_id": "15186065502160605823273356492495220012591678227936265129687750214168301744692",
       "model_prob": 0.428,
       "side": "YES",
-      "ask": 0.0005,
-      "market_prob": 0.0005,
-      "belief_prob": 0.2784,
-      "ev": 555.8,
-      "kelly": 0.0695,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.2787,
+      "ev": 184.8,
+      "kelly": 0.0694,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": 0.0
+      "yes_price_change": 0.001
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 31°C on October 8?",
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

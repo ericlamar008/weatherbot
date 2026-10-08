@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 3.3,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T22:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 16.43,
   "sigma": 0.947,
-  "forecast_mean_shadow": 15.98,
+  "forecast_mean_shadow": 16.38,
   "model_means_raw": {
     "ecmwf": 15.76,
     "gfs": 16.01,
-    "gem": 14.62,
+    "gem": 15.76,
     "icon_eu": 15.59
   },
   "full_distribution": [
@@ -139,7 +139,7 @@
       "ev": 44.8,
       "kelly": 0.0056,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -163,7 +163,7 @@
       "ev": 177.4,
       "kelly": 0.0222,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -187,7 +187,7 @@
       "ev": 444.4,
       "kelly": 0.0556,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -199,7 +199,7 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 13967.0,
+      "volume": 13973.0,
       "spread": 0.0,
       "yes_token_id": "67728776761760880847499004398454474118651193676358299663620322044533043402235",
       "no_token_id": "23714166182769901078564154290506471240316063846026253352549645118635398573015",
@@ -211,7 +211,7 @@
       "ev": -0.4438,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -223,7 +223,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 6316.0,
+      "volume": 6331.0,
       "spread": 0.0,
       "yes_token_id": "10120288803621165033509212554866947027551746047139480256185925425058934806359",
       "no_token_id": "48703258999519319033950761020207947437401962805004540262205300453323161546663",
@@ -235,7 +235,7 @@
       "ev": 148.4,
       "kelly": 0.0186,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -259,7 +259,7 @@
       "ev": 36.8,
       "kelly": 0.0046,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -315,5 +315,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }

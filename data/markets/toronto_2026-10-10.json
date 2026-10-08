@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 57.3,
+  "hours_left": 55.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-11T04:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 2,
   "forecast_mean": 17.38,
   "sigma": 1.361,
-  "forecast_mean_shadow": 17.37,
+  "forecast_mean_shadow": 17.22,
   "model_means_raw": {
     "ecmwf": 17.17,
     "gfs": 16.67,
-    "gem": 17.3
+    "gem": 16.53
   },
   "full_distribution": [
     {
@@ -29,21 +29,21 @@
         12.0
       ],
       "yes_price": 0.03,
-      "no_price": 0.9695,
-      "volume": 84.0,
+      "no_price": 0.97,
+      "volume": 90.0,
       "spread": 0.0,
       "yes_token_id": "71691533499284373879530314198413751529245558995608359211113097792974974264971",
       "no_token_id": "52681709220346935091693782905924017258547069597707554323073185411898747422458",
       "model_prob": 0.0085,
       "side": "YES",
-      "ask": 0.0305,
-      "market_prob": 0.0305,
+      "ask": 0.03,
+      "market_prob": 0.03,
       "belief_prob": 0.016,
-      "ev": -0.4689,
+      "ev": -0.4667,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0006,
-      "yes_price_change": 0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 13°C on October 10?",
@@ -66,7 +66,7 @@
       "ev": 2.16,
       "kelly": 0.0014,
       "sell_value": null,
-      "model_prob_change": 0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": -0.284,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 0.0954,
       "kelly": 0.0017,
       "sell_value": null,
-      "model_prob_change": 0.0056,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,22 +124,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.235,
-      "no_price": 0.77,
-      "volume": 81.0,
+      "yes_price": 0.275,
+      "no_price": 0.725,
+      "volume": 84.0,
       "spread": 0.0,
       "yes_token_id": "11653881841787575945331991517112322208521463631102958555005771765983876928497",
       "no_token_id": "87010795337985992423919229516067218961262654082057244422118349960578460206283",
       "model_prob": 0.1734,
       "side": "YES",
-      "ask": 0.23,
-      "market_prob": 0.23,
-      "belief_prob": 0.195,
-      "ev": -0.16,
+      "ask": 0.275,
+      "market_prob": 0.275,
+      "belief_prob": 0.209,
+      "ev": -0.24,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0131,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.04
     },
     {
       "question": "Will the highest temperature in Toronto be 17°C on October 10?",
@@ -149,20 +149,20 @@
         17.0
       ],
       "yes_price": 0.395,
-      "no_price": 0.61,
+      "no_price": 0.605,
       "volume": 180.0,
       "spread": 0.0,
       "yes_token_id": "3044908697883997711725319052965437879634487020787167805892810905676565696942",
       "no_token_id": "109831559111560096564279087480422494552234550558505703077680450951926786897959",
       "model_prob": 0.2814,
       "side": "YES",
-      "ask": 0.39,
-      "market_prob": 0.39,
+      "ask": 0.395,
+      "market_prob": 0.395,
       "belief_prob": 0.3212,
-      "ev": -0.181,
+      "ev": -0.1868,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0212,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -173,21 +173,21 @@
         18.0
       ],
       "yes_price": 0.265,
-      "no_price": 0.715,
-      "volume": 150.0,
+      "no_price": 0.735,
+      "volume": 160.0,
       "spread": 0.0,
       "yes_token_id": "17425924770181955434771746194584912340120180246284317184808268919550054690913",
       "no_token_id": "94771856792917766274438881478526163267805887284813067992406667684792958914564",
       "model_prob": 0.2624,
       "side": "YES",
-      "ask": 0.285,
-      "market_prob": 0.285,
+      "ask": 0.265,
+      "market_prob": 0.265,
       "belief_prob": 0.2633,
-      "ev": -0.0516,
+      "ev": -0.0064,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0198,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 19°C on October 10?",
@@ -197,20 +197,20 @@
         19.0
       ],
       "yes_price": 0.08,
-      "no_price": 0.91,
+      "no_price": 0.92,
       "volume": 49.0,
       "spread": 0.0,
       "yes_token_id": "2032709812842599080203311986048999451083991340717584714369625955991835406723",
       "no_token_id": "32424376535185514475430314793522535017670314208561958207420284716653308161598",
       "model_prob": 0.1449,
       "side": "YES",
-      "ask": 0.09,
-      "market_prob": 0.09,
+      "ask": 0.08,
+      "market_prob": 0.08,
       "belief_prob": 0.1222,
-      "ev": 0.3967,
-      "kelly": 0.0098,
+      "ev": 0.5275,
+      "kelly": 0.0115,
       "sell_value": null,
-      "model_prob_change": 0.0109,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -221,21 +221,21 @@
         999.0
       ],
       "yes_price": 0.025,
-      "no_price": 0.965,
-      "volume": 61.0,
+      "no_price": 0.975,
+      "volume": 113.0,
       "spread": 0.0,
       "yes_token_id": "85392595404300917214152169161153432702098941281870542821314398894580942159043",
       "no_token_id": "62230090295262539255894591608228770526404306021048063472858289519354483123535",
       "model_prob": 0.0158,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
+      "ask": 0.025,
+      "market_prob": 0.025,
       "belief_prob": 0.019,
-      "ev": -0.3571,
+      "ev": -0.24,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0012,
-      "yes_price_change": -0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -249,5 +249,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T20:07:24.712930+00:00",
-  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
+  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
 }
