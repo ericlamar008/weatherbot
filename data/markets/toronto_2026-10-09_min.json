@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 33.5,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T04:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
-  "last_scan": "2026-10-08T02:20:39.442741+00:00",
-  "skipped_reason": "event volume 370 < min_volume 500",
+  "last_scan": "2026-10-08T18:28:05.856221+00:00",
   "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00",
-  "forecast_mean": 7.99,
+  "forecast_mean": 7.93,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -25,21 +24,19 @@
         2.0
       ],
       "yes_price": 0.47,
-      "no_price": 0.535,
+      "no_price": 0.53,
       "volume": 100.0,
       "spread": 0.0,
       "yes_token_id": "83080997789445229275982090875932687975513753079796793897547752984992180286016",
       "no_token_id": "100983173309129110771818999376583396807078351290087784951921965762207926404010",
-      "model_prob": 0.0155,
+      "model_prob": 0.0058,
       "side": "YES",
-      "ask": 0.465,
-      "market_prob": 0.465,
-      "belief_prob": 0.1746,
-      "ev": -0.6284,
+      "ask": 0.47,
+      "market_prob": 0.47,
+      "belief_prob": 0.1683,
+      "ev": -0.6419,
       "kelly": 0.0,
-      "sell_value": null,
-      "model_prob_change": -0.0011,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 3°C on October 9?",
@@ -54,16 +51,14 @@
       "spread": 0.0,
       "yes_token_id": "46224536050332733817756278363633158029121041386839466361256615876290514385857",
       "no_token_id": "67948002252290228433599770284240786071267626232156895346862134705836686376818",
-      "model_prob": 0.0176,
+      "model_prob": 0.0067,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.1287,
-      "ev": -0.6158,
+      "belief_prob": 0.1216,
+      "ev": -0.637,
       "kelly": 0.0,
-      "sell_value": null,
-      "model_prob_change": -0.0014,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 4°C on October 9?",
@@ -78,16 +73,14 @@
       "spread": 0.0,
       "yes_token_id": "9703393957006257731075646790148394777887876330932385366628641113364691266248",
       "no_token_id": "16113703270777928834592094795930751825731778027953095081250350037811213697952",
-      "model_prob": 0.0434,
+      "model_prob": 0.0165,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.1455,
-      "ev": -0.5657,
+      "belief_prob": 0.128,
+      "ev": -0.6179,
       "kelly": 0.0,
-      "sell_value": null,
-      "model_prob_change": -0.0038,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 5°C on October 9?",
@@ -102,16 +95,14 @@
       "spread": 0.0,
       "yes_token_id": "102392620573196059588322294313101280666508423527395966912905292457818255339563",
       "no_token_id": "85719979263490059316579335106107618592702063354595749976147715547904940467555",
-      "model_prob": 0.112,
+      "model_prob": 0.0426,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.19,
-      "ev": -0.4328,
+      "belief_prob": 0.1449,
+      "ev": -0.5675,
       "kelly": 0.0,
-      "sell_value": null,
-      "model_prob_change": -0.01,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 8°C on October 9?",
@@ -126,16 +117,14 @@
       "spread": 0.0,
       "yes_token_id": "85303510029849846590061560877494396127895062241777146088172716841393457759140",
       "no_token_id": "90730612166235615247338002357348038375307808285570802867263288551551203903499",
-      "model_prob": 0.7362,
+      "model_prob": 0.2641,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.5958,
-      "ev": 0.7785,
-      "kelly": 0.098,
-      "sell_value": null,
-      "model_prob_change": 0.0093,
-      "yes_price_change": 0.0
+      "belief_prob": 0.2889,
+      "ev": -0.1376,
+      "kelly": 0.0,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 12°C or higher on October 9?",
@@ -145,22 +134,64 @@
         999.0
       ],
       "yes_price": 0.046,
-      "no_price": 0.984,
+      "no_price": 0.954,
       "volume": 375.0,
       "spread": 0.0,
       "yes_token_id": "74912915664932419388423802956980107395756643476741767281553955165555103776143",
       "no_token_id": "78006949476943932226104748740349770902610316054205505504321625217504297231753",
-      "model_prob": 0.0752,
+      "model_prob": 0.0256,
       "side": "YES",
-      "ask": 0.016,
-      "market_prob": 0.016,
-      "belief_prob": 0.065,
-      "ev": 2.4062,
-      "kelly": 0.0098,
-      "sell_value": null,
-      "model_prob_change": 0.0069,
-      "yes_price_change": 0.0
+      "ask": 0.046,
+      "market_prob": 0.046,
+      "belief_prob": 0.0327,
+      "ev": -0.2891,
+      "kelly": 0.0,
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-08T18:22:26.998521+00:00"
+  "last_price_refresh": "2026-10-08T18:22:26.998521+00:00",
+  "horizon_days": 1,
+  "live_allocation": [
+    {
+      "market_id": "5404421",
+      "question": "Will the lowest temperature in Toronto be 8°C on October 9?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.335,
+      "model_prob": 0.2641,
+      "ev": -0.1376,
+      "market_prob": 0.335,
+      "role": "main_signal",
+      "units": 23.1,
+      "sell_value": null
+    },
+    {
+      "market_id": "5404421",
+      "question": "Will the lowest temperature in Toronto be 8°C on October 9? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.665,
+      "model_prob": 0.7359,
+      "ev": 0.0693,
+      "market_prob": 0.665,
+      "role": "scenario_hedge",
+      "units": 26.0,
+      "sell_value": 0.33
+    }
+  ],
+  "total_allocated_units": 49.1,
+  "portfolio_score": -0.041536,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 19.86,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.2229,
+  "confidence": 0.1444,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }

@@ -3,15 +3,15 @@
   "city_name": "Hong Kong",
   "date": "2026-10-08",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-08T16:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
-  "last_scan": "2026-10-08T02:20:39.442741+00:00",
+  "last_scan": "2026-10-08T18:28:05.856221+00:00",
   "horizon_days": 0,
   "forecast_mean": 25.28,
   "sigma": 0.748,
@@ -296,7 +296,10 @@
       "market_prob": 0.9735,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.961
+      "sell_value": 0.961,
+      "won": true,
+      "pnl_units": 0.82,
+      "user_entered": false
     },
     {
       "market_id": "5363561",
@@ -312,7 +315,10 @@
       "market_prob": 0.0265,
       "role": "scenario_hedge",
       "units": 0.54,
-      "sell_value": 0.014
+      "sell_value": 0.014,
+      "won": false,
+      "pnl_units": -0.54,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.5,
@@ -325,5 +331,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:22:26.998521+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00",
+  "actual_temp": 25.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.28,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5363561",
+      "question": "Will the lowest temperature in Hong Kong be 25°C on October 8?",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "YES",
+      "price": 0.9735,
+      "model_prob": 0.433,
+      "ev": -0.3609,
+      "market_prob": 0.9735,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.961,
+      "won": true,
+      "pnl_units": 0.82,
+      "user_entered": false
+    },
+    {
+      "market_id": "5363561",
+      "question": "Will the lowest temperature in Hong Kong be 25°C on October 8? (NO)",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "side": "NO",
+      "price": 0.0265,
+      "model_prob": 0.567,
+      "ev": 13.2566,
+      "market_prob": 0.0265,
+      "role": "scenario_hedge",
+      "units": 0.54,
+      "sell_value": 0.014,
+      "won": false,
+      "pnl_units": -0.54,
+      "user_entered": false
+    }
+  ]
 }

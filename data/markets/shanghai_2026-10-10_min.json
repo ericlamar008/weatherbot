@@ -1,0 +1,283 @@
+{
+  "city": "shanghai",
+  "city_name": "Shanghai",
+  "date": "2026-10-10",
+  "unit": "C",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-10-08T18:28:05.856221+00:00",
+  "committed_allocation": null,
+  "hours_left": 45.5,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-10T16:00:00+00:00",
+  "event_end_date": "2026-10-10T12:00:00Z",
+  "last_scan": "2026-10-08T18:28:05.856221+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 20.38,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Shanghai be 13°C or below on October 10?",
+      "market_id": "5423032",
+      "range": [
+        -999.0,
+        13.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 53.0,
+      "spread": 0.0,
+      "yes_token_id": "34599920201505120560067692938324697932293733438447913813170332986029594630660",
+      "no_token_id": "74564442518717676635171235282775615832938843778233462576631598456126999003027",
+      "model_prob": 0.0022,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.0104,
+      "ev": -0.5922,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 14°C on October 10?",
+      "market_id": "5423033",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "19485917625836503676748154071371847292137757821724810641895601469950181957942",
+      "no_token_id": "23273733815266350814605700858053784534882743795226060790642195733929260674166",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.0102,
+      "ev": -0.6,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 16°C on October 10?",
+      "market_id": "5423035",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "14908422416824584289684438376441285053240945779433659153118899078328996043695",
+      "no_token_id": "66715878585287570971718346246764510241397605986398382789249291730462034217649",
+      "model_prob": 0.0109,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0333,
+      "ev": -0.556,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 17°C on October 10?",
+      "market_id": "5423036",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "98141308644140227360499600228602022826830814229500188355129615954736875443750",
+      "no_token_id": "76020386691970513656722671231873605515340106261787830031488119819785135097004",
+      "model_prob": 0.0277,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.0565,
+      "ev": -0.4864,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 18°C on October 10?",
+      "market_id": "5423037",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.13,
+      "no_price": 0.87,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "74393627083548894428877458804416375880963961924492673029740990314702777999887",
+      "no_token_id": "7066541502686613347174844521075594096308733634846276245598630992364878855343",
+      "model_prob": 0.0711,
+      "side": "YES",
+      "ask": 0.13,
+      "market_prob": 0.13,
+      "belief_prob": 0.0917,
+      "ev": -0.2946,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 19°C on October 10?",
+      "market_id": "5423038",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.315,
+      "no_price": 0.685,
+      "volume": 55.0,
+      "spread": 0.0,
+      "yes_token_id": "103559312716580422668370564369122518363140274007636925061367655497584223071060",
+      "no_token_id": "39091524118835608372021236786911684609991881215964415348357808238305867156593",
+      "model_prob": 0.1601,
+      "side": "YES",
+      "ask": 0.315,
+      "market_prob": 0.315,
+      "belief_prob": 0.2143,
+      "ev": -0.3197,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 20°C on October 10?",
+      "market_id": "5423039",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.565,
+      "no_price": 0.435,
+      "volume": 405.0,
+      "spread": 0.0,
+      "yes_token_id": "67440647221793848807621383877251362341172545622124427241476209078566846388748",
+      "no_token_id": "50057968925389775876759413546339825771944893953742924121000971782903231182181",
+      "model_prob": 0.2539,
+      "side": "YES",
+      "ask": 0.565,
+      "market_prob": 0.565,
+      "belief_prob": 0.3628,
+      "ev": -0.3579,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 21°C on October 10?",
+      "market_id": "5423040",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0745,
+      "no_price": 0.9255,
+      "volume": 145.0,
+      "spread": 0.0,
+      "yes_token_id": "87650067880884973215409572156060915557753775918573082155763379611382096535505",
+      "no_token_id": "102880127732648727480549811218424291502839451341411114897801309735641062192766",
+      "model_prob": 0.2375,
+      "side": "YES",
+      "ask": 0.0745,
+      "market_prob": 0.0745,
+      "belief_prob": 0.1804,
+      "ev": 1.4215,
+      "kelly": 0.0286,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 22°C on October 10?",
+      "market_id": "5423041",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.0905,
+      "no_price": 0.9095,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "41258883538605654491712750700715128248279973192507739115087363931718084825622",
+      "no_token_id": "27228740757757676772554501717870125310387858248280368604848886453584116209853",
+      "model_prob": 0.1348,
+      "side": "YES",
+      "ask": 0.0905,
+      "market_prob": 0.0905,
+      "belief_prob": 0.1193,
+      "ev": 0.3182,
+      "kelly": 0.0079,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 23°C or higher on October 10?",
+      "market_id": "5423042",
+      "range": [
+        23.0,
+        999.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "17113754769370025837391950499404106897862397468107979791161315103851653931651",
+      "no_token_id": "71369178129504495687275414520215249062595716664236268112829848884671763733482",
+      "model_prob": 0.0952,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0776,
+      "ev": 0.7244,
+      "kelly": 0.0085,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5423039",
+      "question": "Will the lowest temperature in Shanghai be 20°C on October 10?",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "side": "YES",
+      "price": 0.565,
+      "model_prob": 0.2539,
+      "ev": -0.3579,
+      "market_prob": 0.565,
+      "role": "main_signal",
+      "units": 27.7,
+      "sell_value": 0.22
+    },
+    {
+      "market_id": "5423039",
+      "question": "Will the lowest temperature in Shanghai be 20°C on October 10? (NO)",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "side": "NO",
+      "price": 0.435,
+      "model_prob": 0.7461,
+      "ev": 0.4648,
+      "market_prob": 0.435,
+      "role": "scenario_hedge",
+      "units": 13.63,
+      "sell_value": 0.33
+    }
+  ],
+  "total_allocated_units": 41.3,
+  "portfolio_score": -0.047364,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 7.7,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3229,
+  "confidence": 0.1286,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
