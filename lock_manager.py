@@ -51,7 +51,10 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_clob_book_bid, get_gamma_event_prices, get_gamma_event_prices_min
+from clob_utils import (
+    get_clob_book_bid, get_gamma_event_prices, get_gamma_event_prices_min,
+    get_gamma_event_quotes, get_gamma_event_quotes_min, pick_sell_price,
+)
 import history_manager
 
 try:
@@ -131,6 +134,21 @@ def _fetch_live_entry_price(city, date, market_id, side, market_type="max"):
     except Exception:
         return None
 
+
+def _fetch_live_exit_price(city, date, market_id, side, market_type="max", token_id=None):
+    """(تغییر ۴) قیمت فروش (bid) برای خروج دستی. در هر شکستی (None, None)
+    برمی‌گرداند تا فراخواننده به منطق قبلی برگردد؛ هرگز استثنا پرتاب نمی‌کند."""
+    try:
+        dt = datetime.strptime(date, "%Y-%m-%d")
+        month = MONTHS[dt.month - 1]
+        fetch_fn = get_gamma_event_quotes_min if market_type == "min" else get_gamma_event_quotes
+        quotes = fetch_fn(city, month, dt.day, dt.year)
+        quote = quotes.get(str(market_id))
+        if not quote:
+            return None, None
+        return pick_sell_price(side, quote, token_id)
+    except Exception:
+        return None, None
 
 def _close_issue(number, comment=None, extra_label="processed"):
     try:
@@ -288,11 +306,20 @@ def process_unlock_issues():
         # قیمت خروج نادرست/بسیار پایین ثبت کند. اگر Gamma موقتاً در دسترس
         # نبود، فقط به‌عنوان fallback امن به CLOB برمی‌گردیم تا حذف قفل
         # کاملاً مسدود نشود.
-        current_price = _fetch_live_entry_price(
-            city, date, market_id, target.get("side", "YES"), target.get("market_type", "max")
+        # (تغییر ۴) خروج با قیمت فروش (bid). اگر نشد، همان منطق قبلی (قیمت
+        # نمایشی Gamma، بعد bid دفتر سفارش) بدون تغییر اجرا می‌شود.
+        current_price, exit_source = _fetch_live_exit_price(
+            city, date, market_id, target.get("side", "YES"),
+            target.get("market_type", "max"), target.get("token_id")
         )
         if current_price is None:
+            current_price = _fetch_live_entry_price(
+                city, date, market_id, target.get("side", "YES"), target.get("market_type", "max")
+            )
+            exit_source = "last" if current_price is not None else None
+        if current_price is None:
             current_price = get_clob_book_bid(target.get("token_id"))
+            exit_source = "clob_bid" if current_price is not None else None
         if current_price is None:
             _close_issue(
                 number,
@@ -303,6 +330,7 @@ def process_unlock_issues():
 
         target["status"] = "closed_manual"
         target["exit_price"] = current_price
+        target["exit_price_source"] = exit_source
         target["closed_at"] = datetime.now(timezone.utc).isoformat()
         target["close_reason"] = "manual_unlock"
         target["unlock_issue_number"] = number

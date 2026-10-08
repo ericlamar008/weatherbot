@@ -152,3 +152,79 @@ def get_gamma_event_prices_min(city_slug, month, day, year):
         except Exception:
             continue
     return prices
+
+# =============================================================================
+# (تغییر ۴) قیمت فروش (bid) به‌جای قیمت نمایشی -- هیچ‌کدام از توابع بالا تغییر
+# نکرده‌اند. همان یک درخواست Gamma که قیمت را می‌دهد، bestBid/bestAsk را هم
+# در همان پاسخ دارد؛ پس درخواست اضافه‌ای لازم نیست.
+# =============================================================================
+
+def _to_float_or_none(v):
+    try:
+        return float(v)
+    except Exception:
+        return None
+
+def _get_gamma_event_quotes(kind, city_slug, month, day, year):
+    """{ market_id: {"price": قیمت نمایشی YES, "bid": bestBid یا None, "ask": bestAsk یا None} }
+    kind: "highest" یا "lowest". در هر شکستی {} (هرگز exception نمی‌دهد)."""
+    slug = f"{kind}-temperature-in-{city_slug}-on-{month}-{day}-{year}"
+    data = None
+    last_err = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = requests.get(f"https://gamma-api.polymarket.com/events?slug={slug}", timeout=TIMEOUT)
+            data = r.json()
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY_S)
+    if last_err is not None:
+        return {}
+    if not data or not isinstance(data, list) or len(data) == 0:
+        return {}
+    quotes = {}
+    for market in data[0].get("markets", []):
+        mid = str(market.get("id", ""))
+        try:
+            outcome_prices = json.loads(market.get("outcomePrices", "[0.5,0.5]"))
+            price = float(outcome_prices[0])
+        except Exception:
+            continue
+        quotes[mid] = {
+            "price": price,
+            "bid": _to_float_or_none(market.get("bestBid")),
+            "ask": _to_float_or_none(market.get("bestAsk")),
+        }
+    return quotes
+
+def get_gamma_event_quotes(city_slug, month, day, year):
+    return _get_gamma_event_quotes("highest", city_slug, month, day, year)
+
+def get_gamma_event_quotes_min(city_slug, month, day, year):
+    return _get_gamma_event_quotes("lowest", city_slug, month, day, year)
+
+def pick_sell_price(side, quote, token_id=None):
+    """قیمتی که واقعاً با آن می‌شود پوزیشن را فروخت. برمی‌گرداند (قیمت, منبع).
+    YES: بهترین bid. NO: 1 - بهترین ask‌ِ YES.
+    اولویت: bid گاما -> bid دفتر سفارش CLOB (فقط YES) -> قیمت نمایشی (منبع "last").
+    bid صفر/نامعتبر یعنی «داده نداریم» و به گام بعد می‌رود."""
+    side = (side or "YES").upper()
+    quote = quote or {}
+    if side == "NO":
+        ask = quote.get("ask")
+        if ask is not None and 0 < ask < 1:
+            return round(1.0 - ask, 4), "bid"
+    else:
+        bid = quote.get("bid")
+        if bid is not None and 0 < bid <= 1:
+            return round(bid, 4), "bid"
+        clob_bid = get_clob_book_bid(token_id) if token_id else None
+        if clob_bid is not None and 0 < clob_bid <= 1:
+            return round(clob_bid, 4), "clob_bid"
+    price = quote.get("price")
+    if price is None:
+        return None, None
+    return round((1.0 - price) if side == "NO" else price, 4), "last"

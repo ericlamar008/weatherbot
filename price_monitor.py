@@ -48,7 +48,10 @@ from pathlib import Path
 
 import requests
 
-from clob_utils import get_gamma_event_prices, get_gamma_event_prices_min
+from clob_utils import (
+    get_gamma_event_prices, get_gamma_event_prices_min,
+    get_gamma_event_quotes, get_gamma_event_quotes_min, pick_sell_price,
+)
 import history_manager
 from market_time import local_day_status, is_near_local_day_end
 
@@ -193,17 +196,20 @@ def _build_city_blocks(locks_subset, now, is_min):
 
         try:
             dt = datetime.strptime(date, "%Y-%m-%d")
-            fetch_fn = get_gamma_event_prices_min if is_min else get_gamma_event_prices
-            gamma_prices = fetch_fn(city, MONTHS[dt.month - 1], dt.day, dt.year)
+            fetch_fn = get_gamma_event_quotes_min if is_min else get_gamma_event_quotes
+            gamma_quotes = fetch_fn(city, MONTHS[dt.month - 1], dt.day, dt.year)
         except Exception:
-            gamma_prices = {}
+            gamma_quotes = {}
 
         near_resolve = is_near_local_day_end(date, loc, now, hours=NEAR_RESOLVE_HOURS)
         star = False
         lines = []
 
         for l in group:
-            current = gamma_prices.get(str(l["market_id"]))
+            # (تغییر ۴) «قیمت فعلی» از این به بعد قیمت فروش (bid) است، نه قیمت
+            # نمایشی؛ چون پوزیشن با قیمت فروش بسته می‌شود و اسپرد هم لحاظ می‌شود.
+            quote = gamma_quotes.get(str(l["market_id"]))
+            current, price_source = pick_sell_price(l.get("side", "YES"), quote, l.get("token_id"))
             if current is None:
                 lines.append(" \u26AA قیمت فعلی در دسترس نیست")
                 continue
@@ -211,6 +217,8 @@ def _build_city_blocks(locks_subset, now, is_min):
             # فقط وقتی قیمت واقعاً معتبر گرفته شد به‌روزرسانی می‌شود -- آخرین
             # قیمت معتبر قبلی روی یک قطعی لحظه‌ای شبکه پاک نمی‌شود.
             l["last_price"] = current
+            l["last_price_source"] = price_source
+            l["last_mid"] = quote.get("price") if quote else None
             l["last_checked_at"] = now.isoformat()
 
             entry = l["entry_price"]

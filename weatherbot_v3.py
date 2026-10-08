@@ -73,7 +73,6 @@ from market_time import local_day_status
 import forecasting as fc
 import strategy as strat
 import resolution as res
-import dashboard as dash
 from clob_utils import get_clob_book_bid, get_gamma_event_prices, get_gamma_event_prices_min
 import export_accuracy_report as accuracy_report
 
@@ -1380,8 +1379,8 @@ def run_once():
     t_start = time.perf_counter()
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] scanning {len(LOCATIONS)} cities...")
     new_pos, resolved, committed = scan_and_update()
-    state = load_state()
-    dash_path = dash.build_dashboard(state, load_all_markets(), LOCATIONS)
+    # (مرحلهٔ ۱) ساخت داشبورد اصلی (dashboard.html) غیرفعال شد -- فقط داشبورد
+    # تعاملی (simple.html) توسط dashboard_simple.py ساخته می‌شود.
     try:
         n_rows = accuracy_report.build_accuracy_report()
         print(f"  [accuracy-report] {n_rows} رکورد در data/accuracy_report.csv به‌روزرسانی شد")
@@ -1389,7 +1388,6 @@ def run_once():
         print(f"  [accuracy-report] هشدار: گزارش دقت ساخته نشد ({e}) -- بات ادامه می‌دهد")
     _record_scan_timestamp("full")
     print(f"  new signals: {new_pos} | committed: {committed} | resolved: {resolved}")
-    print(f"  dashboard updated: {dash_path}")
     print(f"  mark your real trades in: {ENTRIES_FILE}")
 
 def run_lite_scan():

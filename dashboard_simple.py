@@ -615,7 +615,7 @@ def _locked_signals_section_html(locks):
 
     rows = [
         "<table><tr><th>شهر</th><th>تاریخ</th><th>دمای سیگنال قفل‌شده</th>"
-        "<th>قیمت قفل‌شده</th><th>قیمت فعلی</th><th>درصد تغییر</th>"
+        "<th>قیمت قفل‌شده</th><th>قیمت فروش فعلی</th><th>درصد تغییر</th>"
         "<th>تا پایان روز محلی</th><th>آخرین به‌روزرسانی</th><th>عملیات</th></tr>"
     ] + visible_rows
     rows.append("</table>")

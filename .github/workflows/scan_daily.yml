@@ -56,11 +56,10 @@ jobs:
       - name: ساخت داشبورد سادهٔ تعاملی
         run: python dashboard_simple.py
 
-      - name: انتشار هر دو داشبورد در GitHub Pages
+      - name: انتشار داشبورد تعاملی در GitHub Pages
         run: |
           mkdir -p docs
           DASHBOARD_FILE="simple-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.html"
-          cp dashboard.html docs/dashboard.html
           cp simple.html "docs/${DASHBOARD_FILE}"
           # مسیر ثابت برای bookmarkهای قدیمی نگه داشته می‌شود؛ لینک تلگرام
           # فقط به نسخهٔ یکتای بالا اشاره خواهد کرد.
@@ -107,7 +106,7 @@ jobs:
             echo "stale=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: ارسال لینک هر دو داشبورد در تلگرام
+      - name: ارسال لینک داشبورد تعاملی در تلگرام
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -127,9 +126,8 @@ jobs:
               f"احتمالاً monitor_locks.yml اجرا نشده."
           ) if stale else ""
           text = (
-              "داشبوردهای امروز آماده‌اند:\n"
-              f"داشبورد کامل: {base}/dashboard.html\n"
-              f"داشبورد ساده (قفل تعاملی): {base}/{os.environ.get('DASHBOARD_FILE', 'simple.html')}"
+              "داشبورد امروز آماده است:\n"
+              f"داشبورد تعاملی (قفل): {base}/{os.environ.get('DASHBOARD_FILE', 'simple.html')}"
               f"{warning}"
           )
           if token and chat:
