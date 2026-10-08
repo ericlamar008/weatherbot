@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T21:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -72,7 +72,7 @@
         29.0,
         29.0
       ],
-      "yes_price": 0.5,
+      "yes_price": 0.495,
       "no_price": 0.48,
       "volume": 296.0,
       "spread": 0.0,
@@ -82,7 +82,7 @@
       "side": "YES",
       "ask": 0.52,
       "market_prob": 0.52,
-      "belief_prob": 0.3238,
+      "belief_prob": 0.3221,
       "ev": -0.3638,
       "kelly": 0.0,
       "sell_value": null
@@ -94,7 +94,7 @@
         30.0,
         30.0
       ],
-      "yes_price": 0.425,
+      "yes_price": 0.435,
       "no_price": 0.595,
       "volume": 776.0,
       "spread": 0.0,
@@ -104,7 +104,7 @@
       "side": "YES",
       "ask": 0.405,
       "market_prob": 0.405,
-      "belief_prob": 0.3307,
+      "belief_prob": 0.3342,
       "ev": -0.2007,
       "kelly": 0.0,
       "sell_value": null
@@ -274,5 +274,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-08T08:07:25.346525+00:00"
+  "last_price_refresh": "2026-10-08T08:43:44.072125+00:00",
+  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
 }

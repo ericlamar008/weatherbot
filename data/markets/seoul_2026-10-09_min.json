@@ -7,10 +7,126 @@
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T15:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-08T02:20:39.442741+00:00",
-  "skipped_reason": "event volume 369 < min_volume 500"
+  "skipped_reason": "event volume 369 < min_volume 500",
+  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00",
+  "forecast_mean": 13.29,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 10°C on October 9?",
+      "market_id": "5396525",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.33,
+      "no_price": 0.67,
+      "volume": 99.0,
+      "spread": 0.0,
+      "yes_token_id": "55039117435482497161333490183678042120062790907171692278233676555158971161918",
+      "no_token_id": "36712590286610923004753517757940232937121219870893149991782136706557966189291",
+      "model_prob": 0.1353,
+      "side": "YES",
+      "ask": 0.33,
+      "market_prob": 0.33,
+      "belief_prob": 0.2034,
+      "ev": -0.3836,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 15°C on October 9?",
+      "market_id": "5396535",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "23581656645824528189920525311239768806488370555160385208901427008260872927961",
+      "no_token_id": "84327896262804431002919452314707490308511268853093924664973502148318242280451",
+      "model_prob": 0.5632,
+      "side": "YES",
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.4151,
+      "ev": 1.965,
+      "kelly": 0.08,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 9?",
+      "market_id": "5396537",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.026,
+      "no_price": 0.974,
+      "volume": 116.0,
+      "spread": 0.0,
+      "yes_token_id": "65996379907097251140191407698996687767528376186575177406533503753830561754145",
+      "no_token_id": "9855462567150682028954699257470020162395723012751769432823594826253601929853",
+      "model_prob": 0.2347,
+      "side": "YES",
+      "ask": 0.026,
+      "market_prob": 0.026,
+      "belief_prob": 0.1617,
+      "ev": 5.2192,
+      "kelly": 0.0348,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 18°C on October 9?",
+      "market_id": "5396541",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "19680823597467026913472610005092728081543244839268949665678910374945833369963",
+      "no_token_id": "39834195167588483836430424318492116197117721414295715785401148048838356931853",
+      "model_prob": 0.0362,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1408,
+      "ev": -0.5797,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 19°C or higher on October 9?",
+      "market_id": "5396543",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "65320269103467637073702484706060880087415569285469801820888201578900424234781",
+      "no_token_id": "72960548048192514381689254997433205106927192838632096912276640102921460958980",
+      "model_prob": 0.0306,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1371,
+      "ev": -0.5907,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "last_price_refresh": "2026-10-08T08:43:44.072125+00:00"
 }
