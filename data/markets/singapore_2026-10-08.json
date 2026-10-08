@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 7.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T16:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 32.51,
   "sigma": 0.812,
-  "forecast_mean_shadow": 33.55,
+  "forecast_mean_shadow": 33.51,
   "model_means_raw": {
     "ecmwf": 32.27,
     "gfs": 31.25,
-    "gem": 34.1
+    "gem": 34.01
   },
   "full_distribution": [
     {
@@ -66,7 +66,7 @@
       "ev": 5.6,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 26.8,
       "kelly": 0.0034,
       "sell_value": null,
-      "model_prob_change": -0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 137.6,
       "kelly": 0.0172,
       "sell_value": null,
-      "model_prob_change": -0.005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,22 +124,22 @@
         32.0,
         32.0
       ],
-      "yes_price": 0.9905,
-      "no_price": 0.04,
-      "volume": 6078.0,
+      "yes_price": 0.991,
+      "no_price": 0.009,
+      "volume": 7266.0,
       "spread": 0.0,
       "yes_token_id": "108708721168575940914104943071453672636471942511832336141890636499177271797892",
       "no_token_id": "35670230438309157595027666102551648476549461112904903722527102105374739648008",
       "model_prob": 0.361,
       "side": "YES",
-      "ask": 0.96,
-      "market_prob": 0.96,
-      "belief_prob": 0.5813,
-      "ev": -0.4056,
+      "ask": 0.991,
+      "market_prob": 0.991,
+      "belief_prob": 0.5815,
+      "ev": -0.4132,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0076,
-      "yes_price_change": 0.125
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Singapore be 33°C on October 8?",
@@ -148,22 +148,22 @@
         33.0,
         33.0
       ],
-      "yes_price": 0.0105,
-      "no_price": 0.955,
-      "volume": 5909.0,
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 6557.0,
       "spread": 0.0,
       "yes_token_id": "114810911928663995600149578298208039503067827966508019729345036848396438256830",
       "no_token_id": "85764379916260144079894529121922935686149543731852119382857505480464509355324",
       "model_prob": 0.3661,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
-      "belief_prob": 0.2416,
-      "ev": 4.6378,
-      "kelly": 0.0546,
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.2399,
+      "ev": 42.6182,
+      "kelly": 0.0589,
       "sell_value": null,
-      "model_prob_change": 0.0077,
-      "yes_price_change": -0.085
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Singapore be 34°C on October 8?",
@@ -173,21 +173,21 @@
         34.0
       ],
       "yes_price": 0.001,
-      "no_price": 0.9985,
-      "volume": 5487.0,
+      "no_price": 0.999,
+      "volume": 5708.0,
       "spread": 0.0,
       "yes_token_id": "634826099357019842480475410830529325020384471166504973454984344269047291367",
       "no_token_id": "38595161292298987391588867131223462909780601105810449515667779179154299394013",
       "model_prob": 0.1096,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
+      "ask": 0.001,
+      "market_prob": 0.001,
       "belief_prob": 0.0716,
-      "ev": 46.8667,
-      "kelly": 0.0176,
+      "ev": 70.6,
+      "kelly": 0.0177,
       "sell_value": null,
-      "model_prob_change": 0.005,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 35°C on October 8?",
@@ -210,7 +210,7 @@
       "ev": 27.6,
       "kelly": 0.0035,
       "sell_value": null,
-      "model_prob_change": 0.001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 5.8,
       "kelly": 0.0007,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

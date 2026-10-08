@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 36.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T21:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,12 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 23.47,
   "sigma": 0.564,
-  "forecast_mean_shadow": 23.4,
+  "forecast_mean_shadow": 23.04,
   "model_means_raw": {
     "ecmwf": 23.28,
     "gfs": 22.81,
-    "gem": 21.8,
-    "icon_eu": 24.05
+    "gem": 21.52
   },
   "full_distribution": [
     {
@@ -67,7 +66,7 @@
       "ev": -0.32,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -91,7 +90,7 @@
       "ev": -0.2273,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -115,7 +114,7 @@
       "ev": 0.2778,
       "kelly": 0.0033,
       "sell_value": null,
-      "model_prob_change": 0.021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,7 +124,7 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.23,
+      "yes_price": 0.225,
       "no_price": 0.775,
       "volume": 684.0,
       "spread": 0.0,
@@ -135,12 +134,12 @@
       "side": "YES",
       "ask": 0.225,
       "market_prob": 0.225,
-      "belief_prob": 0.3711,
+      "belief_prob": 0.3694,
       "ev": 0.6418,
       "kelly": 0.0466,
       "sell_value": null,
-      "model_prob_change": 0.0898,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Istanbul be 24°C on October 9?",
@@ -151,7 +150,7 @@
       ],
       "yes_price": 0.565,
       "no_price": 0.435,
-      "volume": 575.0,
+      "volume": 588.0,
       "spread": 0.0,
       "yes_token_id": "60642142125908881992842119367848309168523464791020989733083328284052994857735",
       "no_token_id": "25354603701039896088090590380272262792445178868480043535975030238281798314455",
@@ -163,7 +162,7 @@
       "ev": -0.1713,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0831,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -175,7 +174,7 @@
       ],
       "yes_price": 0.085,
       "no_price": 0.915,
-      "volume": 2075.0,
+      "volume": 2136.0,
       "spread": 0.0,
       "yes_token_id": "114268507976134938767366267449744708123988890733054432422566169705639397106904",
       "no_token_id": "19174753477231457092312197928475781573755394634077630373033802245203162492936",
@@ -187,8 +186,8 @@
       "ev": -0.2224,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0272,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 26°C on October 9?",
@@ -211,7 +210,7 @@
       "ev": -0.4636,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0025,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -235,7 +234,7 @@
       "ev": -0.5789,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -283,7 +282,7 @@
       "ev": -0.64,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -331,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

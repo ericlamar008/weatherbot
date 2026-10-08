@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 45.7,
+  "hours_left": 45.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T06:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 2,
   "forecast_mean": 17.52,
   "sigma": 2.071,
-  "forecast_mean_shadow": 18.7,
+  "forecast_mean_shadow": 18.88,
   "model_means_raw": {
     "ecmwf": 19.2,
     "gfs": 16.58,
-    "gem": 20.8
+    "gem": 21.31
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 2.1286,
       "kelly": 0.0038,
       "sell_value": null,
-      "model_prob_change": -0.0289,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -53,20 +53,20 @@
         13.0
       ],
       "yes_price": 0.006,
-      "no_price": 0.9935,
+      "no_price": 0.994,
       "volume": 71.0,
       "spread": 0.0,
       "yes_token_id": "94991883274738239284621888021148842601635543231216777557182674610262409061445",
       "no_token_id": "16827127265355282505740498824742578334404084224817063913370317133158416737626",
       "model_prob": 0.025,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.006,
+      "market_prob": 0.006,
       "belief_prob": 0.0184,
-      "ev": 1.8462,
-      "kelly": 0.003,
+      "ev": 2.0667,
+      "kelly": 0.0031,
       "sell_value": null,
-      "model_prob_change": -0.0289,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 2.2762,
       "kelly": 0.006,
       "sell_value": null,
-      "model_prob_change": -0.0505,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 2.9032,
       "kelly": 0.0114,
       "sell_value": null,
-      "model_prob_change": -0.068,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,19 +125,21 @@
         16.0
       ],
       "yes_price": 0.0315,
-      "no_price": 0.968,
+      "no_price": 0.9685,
       "volume": 13.0,
       "spread": 0.0,
       "yes_token_id": "114734528753760492586777067103294709689243399337625936451784478606958788847107",
       "no_token_id": "52811745015414050412180287102838144936860745762567546989175730995937523655522",
       "model_prob": 0.1345,
       "side": "YES",
-      "ask": 0.032,
-      "market_prob": 0.032,
+      "ask": 0.0315,
+      "market_prob": 0.0315,
       "belief_prob": 0.0985,
-      "ev": 2.0812,
-      "kelly": 0.0172,
-      "sell_value": null
+      "ev": 2.127,
+      "kelly": 0.0173,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 17°C on October 9?",
@@ -160,7 +162,7 @@
       "ev": 1.4145,
       "kelly": 0.0206,
       "sell_value": null,
-      "model_prob_change": 0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -184,7 +186,7 @@
       "ev": 0.0029,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": 0.0526,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -208,7 +210,7 @@
       "ev": -0.4226,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0646,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -219,21 +221,21 @@
         20.0
       ],
       "yes_price": 0.25,
-      "no_price": 0.74,
+      "no_price": 0.75,
       "volume": 84.0,
       "spread": 0.0,
       "yes_token_id": "115308815541591221666819378630798210304382436573211844005443207753457225734814",
       "no_token_id": "111427001037595473110635035846032867509643310845863358617680959111007778254601",
       "model_prob": 0.0866,
       "side": "YES",
-      "ask": 0.26,
-      "market_prob": 0.26,
+      "ask": 0.25,
+      "market_prob": 0.25,
       "belief_prob": 0.1438,
-      "ev": -0.4335,
+      "ev": -0.4248,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0487,
-      "yes_price_change": 0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 21°C on October 9?",
@@ -256,7 +258,7 @@
       "ev": -0.1646,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0292,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -267,20 +269,20 @@
         999.0
       ],
       "yes_price": 0.032,
-      "no_price": 0.964,
+      "no_price": 0.968,
       "volume": 194.0,
       "spread": 0.0,
       "yes_token_id": "46652212149271382199040837407435501867052406560411216963486450611869535202271",
       "no_token_id": "67684641648053826499551745313210335790534037152696916285663253454304059726187",
       "model_prob": 0.0563,
       "side": "YES",
-      "ask": 0.036,
-      "market_prob": 0.036,
+      "ask": 0.032,
+      "market_prob": 0.032,
       "belief_prob": 0.0478,
-      "ev": 0.3667,
-      "kelly": 0.0034,
+      "ev": 0.4938,
+      "kelly": 0.0041,
       "sell_value": null,
-      "model_prob_change": 0.0341,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -295,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

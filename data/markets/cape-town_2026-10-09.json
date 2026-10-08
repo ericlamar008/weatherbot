@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T22:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,10 +14,10 @@
   "horizon_days": 1,
   "forecast_mean": 19.25,
   "sigma": 1.4,
-  "forecast_mean_shadow": 19.0,
+  "forecast_mean_shadow": 19.07,
   "model_means_raw": {
     "gfs": 19.25,
-    "gem": 18.7
+    "gem": 18.85
   },
   "full_distribution": [
     {
@@ -41,7 +41,7 @@
       "ev": 3.4353,
       "kelly": 0.0074,
       "sell_value": null,
-      "model_prob_change": 0.0309,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -65,7 +65,7 @@
       "ev": 8.0167,
       "kelly": 0.0121,
       "sell_value": null,
-      "model_prob_change": 0.0477,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -89,7 +89,7 @@
       "ev": 6.2182,
       "kelly": 0.0261,
       "sell_value": null,
-      "model_prob_change": 0.0922,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -113,7 +113,7 @@
       "ev": 2.728,
       "kelly": 0.0359,
       "sell_value": null,
-      "model_prob_change": 0.0823,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,20 +124,20 @@
         20.0
       ],
       "yes_price": 0.23,
-      "no_price": 0.765,
+      "no_price": 0.77,
       "volume": 330.0,
       "spread": 0.0,
       "yes_token_id": "14298994624593896251167265098476628802236335680382091882939786626734875719483",
       "no_token_id": "24349672001918024264477528750222280939893545342192514237984194573332316915754",
       "model_prob": 0.2262,
       "side": "YES",
-      "ask": 0.235,
-      "market_prob": 0.235,
+      "ask": 0.23,
+      "market_prob": 0.23,
       "belief_prob": 0.2275,
-      "ev": -0.0243,
+      "ev": -0.0109,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0346,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -161,7 +161,7 @@
       "ev": -0.459,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.1014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -172,20 +172,20 @@
         22.0
       ],
       "yes_price": 0.24,
-      "no_price": 0.765,
+      "no_price": 0.76,
       "volume": 510.0,
       "spread": 0.0,
       "yes_token_id": "917848318588324380192122623870691894343388264795061623747516624722012769942",
       "no_token_id": "40642556230012947323493517185407199494031003004881653569442095923049903597190",
       "model_prob": 0.0505,
       "side": "YES",
-      "ask": 0.235,
-      "market_prob": 0.235,
+      "ask": 0.24,
+      "market_prob": 0.24,
       "belief_prob": 0.1168,
-      "ev": -0.5102,
+      "ev": -0.5133,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0686,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -209,7 +209,7 @@
       "ev": -0.396,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0296,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -233,7 +233,7 @@
       "ev": -0.3226,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0112,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -257,7 +257,7 @@
       "ev": -0.3429,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0043,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -281,7 +281,7 @@
       "ev": 0.2,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0032,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -296,5 +296,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

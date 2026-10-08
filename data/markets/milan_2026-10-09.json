@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T22:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 21.67,
   "sigma": 0.92,
-  "forecast_mean_shadow": 20.39,
+  "forecast_mean_shadow": 20.35,
   "model_means_raw": {
     "ecmwf": 21.21,
     "gfs": 21.44,
-    "gem": 17.0,
+    "gem": 16.87,
     "icon_eu": 21.05
   },
   "full_distribution": [
@@ -115,7 +115,7 @@
       "ev": -0.05,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -139,7 +139,7 @@
       "ev": -0.0857,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -163,7 +163,7 @@
       "ev": 4.4,
       "kelly": 0.0033,
       "sell_value": null,
-      "model_prob_change": -0.0013,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -173,22 +173,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.036,
-      "no_price": 0.964,
+      "yes_price": 0.035,
+      "no_price": 0.965,
       "volume": 524.0,
       "spread": 0.0,
       "yes_token_id": "25260394434105646837047932942336712266785887366214024777293793549174292978256",
       "no_token_id": "74188818087094740893802421731453955059418194012191989766206641079679127924560",
       "model_prob": 0.0973,
       "side": "YES",
-      "ask": 0.036,
-      "market_prob": 0.036,
-      "belief_prob": 0.0758,
-      "ev": 1.1056,
-      "kelly": 0.0103,
+      "ask": 0.035,
+      "market_prob": 0.035,
+      "belief_prob": 0.0755,
+      "ev": 1.1571,
+      "kelly": 0.0105,
       "sell_value": null,
-      "model_prob_change": -0.0055,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Milan be 21°C on October 9?",
@@ -199,7 +199,7 @@
       ],
       "yes_price": 0.2,
       "no_price": 0.8,
-      "volume": 1008.0,
+      "volume": 1023.0,
       "spread": 0.0,
       "yes_token_id": "8558070403241562580923735840964639227521895139517522593335976873449899259361",
       "no_token_id": "55087702073119682292813102450572909830011786716507043734574718108850683074400",
@@ -211,8 +211,8 @@
       "ev": 0.327,
       "kelly": 0.0204,
       "sell_value": null,
-      "model_prob_change": -0.009,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 22°C on October 9?",
@@ -235,7 +235,7 @@
       "ev": -0.0247,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0059,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -247,7 +247,7 @@
       ],
       "yes_price": 0.38,
       "no_price": 0.62,
-      "volume": 2367.0,
+      "volume": 2390.0,
       "spread": 0.0,
       "yes_token_id": "105134340247723956133569120880561609132016436155104459693606194077114796186832",
       "no_token_id": "66263468732637909044816940440861414382981040631349860185850008466058464284283",
@@ -259,7 +259,7 @@
       "ev": -0.3892,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0075,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -269,22 +269,22 @@
         24.0,
         999.0
       ],
-      "yes_price": 0.0275,
-      "no_price": 0.9685,
+      "yes_price": 0.029,
+      "no_price": 0.971,
       "volume": 839.0,
       "spread": 0.0,
       "yes_token_id": "3182975831266333666530993557922385949306083737795354173198695479920041510072",
       "no_token_id": "99725903634859218852021887790424210763217400794439926893894060757533777958364",
       "model_prob": 0.0517,
       "side": "YES",
-      "ask": 0.0315,
-      "market_prob": 0.0315,
-      "belief_prob": 0.0432,
-      "ev": 0.4159,
-      "kelly": 0.0034,
+      "ask": 0.029,
+      "market_prob": 0.029,
+      "belief_prob": 0.0438,
+      "ev": 0.5103,
+      "kelly": 0.0038,
       "sell_value": null,
-      "model_prob_change": 0.0028,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0015
     }
   ],
   "live_allocation": [],
@@ -298,5 +298,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

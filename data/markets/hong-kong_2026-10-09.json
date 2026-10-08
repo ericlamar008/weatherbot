@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 31.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T16:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,11 +14,10 @@
   "horizon_days": 1,
   "forecast_mean": 29.17,
   "sigma": 1.174,
-  "forecast_mean_shadow": 29.64,
+  "forecast_mean_shadow": 29.17,
   "model_means_raw": {
     "ecmwf": 28.72,
-    "gfs": 28.76,
-    "gem": 30.18
+    "gfs": 28.76
   },
   "full_distribution": [
     {
@@ -42,7 +41,7 @@
       "ev": 6.2,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +65,7 @@
       "ev": 9.4,
       "kelly": 0.0012,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +89,7 @@
       "ev": 29.2,
       "kelly": 0.0037,
       "sell_value": null,
-      "model_prob_change": 0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -102,7 +101,7 @@
       ],
       "yes_price": 0.0065,
       "no_price": 0.9935,
-      "volume": 1117.0,
+      "volume": 1271.0,
       "spread": 0.0,
       "yes_token_id": "29350837761082817281318371915616800499645883696614116401685979645741716639884",
       "no_token_id": "110972262711846363855911532789152999349570869983291789355953671723173436056645",
@@ -114,8 +113,8 @@
       "ev": 6.4615,
       "kelly": 0.0106,
       "sell_value": null,
-      "model_prob_change": 0.0024,
-      "yes_price_change": 0.004
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 28°C on October 9?",
@@ -125,21 +124,21 @@
         28.0
       ],
       "yes_price": 0.0705,
-      "no_price": 0.9255,
-      "volume": 333.0,
+      "no_price": 0.9295,
+      "volume": 362.0,
       "spread": 0.0,
       "yes_token_id": "10933699046642423157211538446038867078914184053475802183056940402262030314779",
       "no_token_id": "7060358348634275788862823547960462712472566329082874818469695839137244818425",
       "model_prob": 0.1894,
       "side": "YES",
-      "ask": 0.0745,
-      "market_prob": 0.0745,
+      "ask": 0.0705,
+      "market_prob": 0.0705,
       "belief_prob": 0.1478,
-      "ev": 1.0027,
-      "kelly": 0.0202,
+      "ev": 1.0965,
+      "kelly": 0.0208,
       "sell_value": null,
-      "model_prob_change": 0.0045,
-      "yes_price_change": -0.006
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 29°C on October 9?",
@@ -149,20 +148,20 @@
         29.0
       ],
       "yes_price": 0.465,
-      "no_price": 0.565,
-      "volume": 956.0,
+      "no_price": 0.535,
+      "volume": 1010.0,
       "spread": 0.0,
       "yes_token_id": "74231131948598234679703861174874166167755772463861854473921517008423657407268",
       "no_token_id": "38131920029346960605172345782631373159073017177579162723119943302487992579981",
       "model_prob": 0.3086,
       "side": "YES",
-      "ask": 0.435,
-      "market_prob": 0.435,
+      "ask": 0.465,
+      "market_prob": 0.465,
       "belief_prob": 0.3633,
-      "ev": -0.189,
+      "ev": -0.2187,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0013,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -173,20 +172,20 @@
         30.0
       ],
       "yes_price": 0.43,
-      "no_price": 0.56,
-      "volume": 1540.0,
+      "no_price": 0.57,
+      "volume": 1578.0,
       "spread": 0.0,
       "yes_token_id": "41390291371863400836180205778764572172522266993469580012862134724551205449273",
       "no_token_id": "50026641136549291847864318612872594608020195243004126177992027783830989323978",
       "model_prob": 0.2406,
       "side": "YES",
-      "ask": 0.44,
-      "market_prob": 0.44,
+      "ask": 0.43,
+      "market_prob": 0.43,
       "belief_prob": 0.3069,
-      "ev": -0.2945,
+      "ev": -0.2863,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0044,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -197,21 +196,21 @@
         31.0
       ],
       "yes_price": 0.055,
-      "no_price": 0.925,
-      "volume": 524.0,
+      "no_price": 0.945,
+      "volume": 602.0,
       "spread": 0.0,
       "yes_token_id": "114993191425114357256586673837939065542947062709887388067683443934923234434678",
       "no_token_id": "90720076010018473003728377418095939294906529878877831280787396618577278877071",
       "model_prob": 0.1023,
       "side": "YES",
-      "ask": 0.075,
-      "market_prob": 0.075,
+      "ask": 0.055,
+      "market_prob": 0.055,
       "belief_prob": 0.0857,
-      "ev": 0.236,
-      "kelly": 0.0048,
+      "ev": 0.5582,
+      "kelly": 0.0081,
       "sell_value": null,
-      "model_prob_change": -0.0033,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 32°C on October 9?",
@@ -221,20 +220,20 @@
         32.0
       ],
       "yes_price": 0.0135,
-      "no_price": 0.985,
-      "volume": 304.0,
+      "no_price": 0.9865,
+      "volume": 340.0,
       "spread": 0.0,
       "yes_token_id": "106133267767032837840480758552116243292340427390626409365525790266443650990113",
       "no_token_id": "23185336785048378881802225109726094623918546449820056353928958124669172677002",
       "model_prob": 0.0338,
       "side": "YES",
-      "ask": 0.015,
-      "market_prob": 0.015,
+      "ask": 0.0135,
+      "market_prob": 0.0135,
       "belief_prob": 0.0267,
-      "ev": 0.8133,
-      "kelly": 0.0031,
+      "ev": 0.9778,
+      "kelly": 0.0033,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -245,20 +244,20 @@
         33.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.996,
-      "volume": 600.0,
+      "no_price": 0.9985,
+      "volume": 629.0,
       "spread": 0.0,
       "yes_token_id": "64177132342756304812902437113451032526105962562139774334262275268465829377740",
       "no_token_id": "43226314844470093793482244550279635947614942915777689041176470719802463892519",
       "model_prob": 0.0111,
       "side": "YES",
-      "ask": 0.004,
-      "market_prob": 0.004,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0077,
-      "ev": 1.15,
-      "kelly": 0.0012,
+      "ev": 4.1333,
+      "kelly": 0.0016,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +281,7 @@
       "ev": 8.6,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +296,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

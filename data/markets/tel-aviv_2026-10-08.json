@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 12.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T21:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 0,
   "forecast_mean": 30.6,
   "sigma": 0.702,
-  "forecast_mean_shadow": 30.67,
+  "forecast_mean_shadow": 31.0,
   "model_means_raw": {
     "ecmwf": 31.07,
     "gfs": 29.93,
-    "gem": 31.19
+    "gem": 32.06
   },
   "full_distribution": [
     {
@@ -42,7 +42,7 @@
       "ev": 3.8,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0161,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -53,20 +53,20 @@
         28.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9935,
-      "volume": 1886.0,
+      "no_price": 0.9995,
+      "volume": 2054.0,
       "spread": 0.0,
       "yes_token_id": "73971577509215309366536873991685619142263553872885910145334518144126598335537",
       "no_token_id": "3193013230704659868609955060255261063560566499500794836515282039460208715066",
       "model_prob": 0.0117,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0078,
-      "ev": 0.5231,
-      "kelly": 0.0009,
+      "ev": 14.6,
+      "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": -0.0361,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -77,21 +77,21 @@
         29.0
       ],
       "yes_price": 0.145,
-      "no_price": 0.845,
-      "volume": 9154.0,
+      "no_price": 0.855,
+      "volume": 9172.0,
       "spread": 0.0,
       "yes_token_id": "71381846830413352387578979771071861437658670257048813675939064917958949456415",
       "no_token_id": "13029735292093255356175953276991456019530615420605939042272317737581658034612",
       "model_prob": 0.0738,
       "side": "YES",
-      "ask": 0.155,
-      "market_prob": 0.155,
+      "ask": 0.145,
+      "market_prob": 0.145,
       "belief_prob": 0.0987,
-      "ev": -0.3406,
+      "ev": -0.3193,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0909,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 30°C on October 8?",
@@ -101,21 +101,21 @@
         30.0
       ],
       "yes_price": 0.815,
-      "no_price": 0.205,
-      "volume": 6806.0,
+      "no_price": 0.185,
+      "volume": 6820.0,
       "spread": 0.0,
       "yes_token_id": "30764252548822336916399981133826553486705772129822761457289031808538994232142",
       "no_token_id": "15186065502160605823273356492495220012591678227936265129687750214168301744692",
       "model_prob": 0.3572,
       "side": "YES",
-      "ask": 0.795,
-      "market_prob": 0.795,
+      "ask": 0.815,
+      "market_prob": 0.815,
       "belief_prob": 0.5174,
-      "ev": -0.358,
+      "ev": -0.3652,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0147,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 31°C on October 8?",
@@ -125,21 +125,21 @@
         31.0
       ],
       "yes_price": 0.0535,
-      "no_price": 0.9475,
+      "no_price": 0.9465,
       "volume": 1792.0,
       "spread": 0.0,
       "yes_token_id": "1946598258257942135777388958427777232352278335146260795373067401369079743408",
       "no_token_id": "100120993485992610445967507446072116110528639141998426756761679911224469898518",
       "model_prob": 0.4258,
       "side": "YES",
-      "ask": 0.0525,
-      "market_prob": 0.0525,
+      "ask": 0.0535,
+      "market_prob": 0.0535,
       "belief_prob": 0.2955,
-      "ev": 4.621,
-      "kelly": 0.064,
+      "ev": 4.5234,
+      "kelly": 0.0639,
       "sell_value": null,
-      "model_prob_change": 0.1445,
-      "yes_price_change": -0.0025
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 32°C on October 8?",
@@ -150,7 +150,7 @@
       ],
       "yes_price": 0.0085,
       "no_price": 0.9915,
-      "volume": 999.0,
+      "volume": 1001.0,
       "spread": 0.0,
       "yes_token_id": "17743479270175249148546334614496411816060971968089754053663844777029864256421",
       "no_token_id": "59378793433411849985489908737952182474404760741869482773674825289399225254050",
@@ -162,8 +162,8 @@
       "ev": 7.5176,
       "kelly": 0.0161,
       "sell_value": null,
-      "model_prob_change": 0.0034,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 33°C on October 8?",
@@ -186,7 +186,7 @@
       "ev": 21.0,
       "kelly": 0.0026,
       "sell_value": null,
-      "model_prob_change": -0.0115,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -210,7 +210,7 @@
       "ev": 3.6,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0048,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 0.4,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -330,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }

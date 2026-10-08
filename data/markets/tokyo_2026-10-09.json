@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 30.7,
+  "hours_left": 30.2,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T15:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -14,11 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 25.09,
   "sigma": 1.106,
-  "forecast_mean_shadow": 24.61,
+  "forecast_mean_shadow": 24.69,
   "model_means_raw": {
     "ecmwf": 24.55,
     "gfs": 26.31,
-    "gem": 23.1
+    "gem": 23.41
   },
   "full_distribution": [
     {
@@ -66,7 +66,7 @@
       "ev": 0.6,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 2.6,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 1.6,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,8 +138,8 @@
       "ev": 0.6364,
       "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": -0.004,
-      "yes_price_change": 0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 23°C on October 9?",
@@ -162,7 +162,7 @@
       "ev": 0.0171,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0127,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -186,8 +186,8 @@
       "ev": -0.396,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0238,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 25°C on October 9?",
@@ -210,7 +210,7 @@
       "ev": -0.0394,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 2.39,
       "kelly": 0.0314,
       "sell_value": null,
-      "model_prob_change": 0.0238,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 4.3565,
       "kelly": 0.0127,
       "sell_value": null,
-      "model_prob_change": 0.0132,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 4.1455,
       "kelly": 0.0057,
       "sell_value": null,
-      "model_prob_change": 0.006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T08:47:53.886797+00:00",
-  "last_lite_refresh": "2026-10-08T08:20:42.353065+00:00"
+  "last_lite_refresh": "2026-10-08T08:50:55.268615+00:00"
 }
