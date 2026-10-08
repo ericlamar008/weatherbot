@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 58.5,
+  "hours_left": 58.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-11T05:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0082,
       "ev": -0.0353,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 80-81°F on October 10?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0034,
       "ev": 5.8,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 82-83°F on October 10?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0087,
       "ev": 16.4,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 84-85°F on October 10?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0258,
       "ev": 6.3714,
       "kelly": 0.0056,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 86-87°F on October 10?",
@@ -117,19 +125,21 @@
         87.0
       ],
       "yes_price": 0.0465,
-      "no_price": 0.9695,
+      "no_price": 0.9535,
       "volume": 69.0,
       "spread": 0.0,
       "yes_token_id": "42560521382835465062488122893352214423518248295692934613704152001541716343478",
       "no_token_id": "88118559402033324173504971458962537152934683833965462917521493577675389518027",
       "model_prob": 0.1072,
       "side": "YES",
-      "ask": 0.0305,
-      "market_prob": 0.0305,
+      "ask": 0.0465,
+      "market_prob": 0.0465,
       "belief_prob": 0.086,
-      "ev": 1.6361,
-      "kelly": 0.0129,
-      "sell_value": null
+      "ev": 0.8495,
+      "kelly": 0.0104,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 88-89°F on October 10?",
@@ -139,19 +149,21 @@
         89.0
       ],
       "yes_price": 0.455,
-      "no_price": 0.55,
+      "no_price": 0.545,
       "volume": 3252.0,
       "spread": 0.0,
       "yes_token_id": "48480611804952038575278793755573460918789441653143642609724017162980196791878",
       "no_token_id": "80173485000034315011144465755428149138585227410047005986706642795730456692374",
       "model_prob": 0.2368,
       "side": "YES",
-      "ask": 0.45,
-      "market_prob": 0.45,
+      "ask": 0.455,
+      "market_prob": 0.455,
       "belief_prob": 0.3132,
-      "ev": -0.308,
+      "ev": -0.3116,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 90-91°F on October 10?",
@@ -161,19 +173,21 @@
         91.0
       ],
       "yes_price": 0.435,
-      "no_price": 0.56,
+      "no_price": 0.565,
       "volume": 81.0,
       "spread": 0.0,
       "yes_token_id": "24244847301131197804166148629827637901522088523382426884718193325734325052194",
       "no_token_id": "30806714041046255477953914934421814514920401477945749665548073963053670742849",
       "model_prob": 0.2913,
       "side": "YES",
-      "ask": 0.44,
-      "market_prob": 0.44,
+      "ask": 0.435,
+      "market_prob": 0.435,
       "belief_prob": 0.3416,
-      "ev": -0.2198,
+      "ev": -0.2147,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 92-93°F on October 10?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.1346,
       "ev": 1.4473,
       "kelly": 0.0211,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 94-95°F on October 10?",
@@ -204,20 +220,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.0055,
-      "no_price": 0.9945,
+      "yes_price": 0.005,
+      "no_price": 0.995,
       "volume": 63.0,
       "spread": 0.0,
       "yes_token_id": "115106744654315333085864995282351266076472331751703265034766206027855702797235",
       "no_token_id": "50998667083971276948705701799121137487051271850653252571496782533766821913700",
       "model_prob": 0.0694,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
-      "belief_prob": 0.047,
-      "ev": 7.5455,
-      "kelly": 0.0104,
-      "sell_value": null
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0469,
+      "ev": 8.38,
+      "kelly": 0.0105,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Houston be between 96-97°F on October 10?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0162,
       "ev": 7.1,
       "kelly": 0.0036,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be 98°F or higher on October 10?",
@@ -249,19 +269,21 @@
         999.0
       ],
       "yes_price": 0.0105,
-      "no_price": 0.9865,
+      "no_price": 0.9895,
       "volume": 53.0,
       "spread": 0.0,
       "yes_token_id": "25816522151680317759076489723111256560118802348416539233096605445648321050125",
       "no_token_id": "19823949134501369656003096963917369416024889655511228998846533303357632322133",
       "model_prob": 0.0301,
       "side": "YES",
-      "ask": 0.0135,
-      "market_prob": 0.0135,
+      "ask": 0.0105,
+      "market_prob": 0.0105,
       "belief_prob": 0.0232,
-      "ev": 0.8,
-      "kelly": 0.0027,
-      "sell_value": null
+      "ev": 1.2095,
+      "kelly": 0.0032,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-08T18:37:24.118680+00:00"
+  "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

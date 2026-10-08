@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 50.5,
+  "hours_left": 50.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T21:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
   "last_scan": "2026-10-08T18:28:05.856221+00:00",
-  "skipped_reason": "event volume 53 < min_volume 500"
+  "skipped_reason": "event volume 53 < min_volume 500",
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00",
+  "forecast_mean": 27.21,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 24°C or below on October 10?",
+      "market_id": "5423199",
+      "range": [
+        -999.0,
+        24.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "81826836864742413064262352958635615806310083047184661005381187026112320047258",
+      "no_token_id": "96056411668659597887117986191511886965122765063191934921449044355629529767397",
+      "model_prob": 0.319,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.2163,
+      "ev": 7.4824,
+      "kelly": 0.0489,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 29°C on October 10?",
+      "market_id": "5423204",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.495,
+      "no_price": 0.505,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "41331903627597148444192180418587421375364299610837057450666213419818847640182",
+      "no_token_id": "64568436647344688599280591496973887818256914203302192407183294018737784388723",
+      "model_prob": 0.681,
+      "side": "YES",
+      "ask": 0.495,
+      "market_prob": 0.495,
+      "belief_prob": 0.6159,
+      "ev": 0.2442,
+      "kelly": 0.0599,
+      "sell_value": null
+    }
+  ]
 }

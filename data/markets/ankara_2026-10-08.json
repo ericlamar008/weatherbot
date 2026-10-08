@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 2.5,
+  "hours_left": 2.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T21:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0228,
       "ev": 44.6,
       "kelly": 0.0056,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 19°C on October 8?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0652,
       "ev": 129.4,
       "kelly": 0.0162,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 20°C on October 8?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.1933,
       "ev": 385.6,
       "kelly": 0.0482,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 21°C on October 8?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.2332,
       "ev": 465.4,
       "kelly": 0.0582,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 22°C on October 8?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.1006,
       "ev": 200.2,
       "kelly": 0.025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 23°C on October 8?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.3758,
       "ev": -0.624,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 24°C on October 8?",
@@ -174,7 +186,9 @@
       "belief_prob": 0.0068,
       "ev": 12.6,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 25°C on October 8?",
@@ -196,7 +210,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 26°C on October 8?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 27°C on October 8?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 28°C or higher on October 8?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -293,5 +315,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

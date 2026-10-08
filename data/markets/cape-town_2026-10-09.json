@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 27.5,
+  "hours_left": 27.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T22:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0189,
       "ev": 11.6,
       "kelly": 0.0044,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 17°C on October 9?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0287,
       "ev": 4.74,
       "kelly": 0.006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 18°C on October 9?",
@@ -72,20 +76,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.006,
-      "no_price": 0.994,
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
       "volume": 369.0,
       "spread": 0.0,
       "yes_token_id": "45065137539170176998406532629614719544513350561026291052207598160070353454986",
       "no_token_id": "81216040667141107319026620386186279026908540611760437668599145703909082226506",
       "model_prob": 0.1028,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
-      "belief_prob": 0.0689,
-      "ev": 10.4833,
-      "kelly": 0.0158,
-      "sell_value": null
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0687,
+      "ev": 11.4909,
+      "kelly": 0.0159,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Cape Town be 19°C on October 9?",
@@ -95,19 +101,21 @@
         19.0
       ],
       "yes_price": 0.136,
-      "no_price": 0.844,
-      "volume": 650.0,
+      "no_price": 0.864,
+      "volume": 671.0,
       "spread": 0.0,
       "yes_token_id": "60588301953055528865477957138246480613864725960067714281976819652047436785109",
       "no_token_id": "67783028657628766421569419727236853305093429223670751535223856803613548149139",
       "model_prob": 0.2055,
       "side": "YES",
-      "ask": 0.156,
-      "market_prob": 0.156,
+      "ask": 0.136,
+      "market_prob": 0.136,
       "belief_prob": 0.1812,
-      "ev": 0.2064,
-      "kelly": 0.0095,
-      "sell_value": null
+      "ev": 0.3324,
+      "kelly": 0.0131,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 20°C on October 9?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.31,
       "ev": -0.2152,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 21°C on October 9?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.265,
       "no_price": 0.735,
-      "volume": 709.0,
+      "volume": 797.0,
       "spread": 0.0,
       "yes_token_id": "108377916140817824350527419715057513764842576628212645954082334456860960609512",
       "no_token_id": "41978859394282114945016711434346940980075490369944275261235764465652187541240",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2209,
       "ev": -0.1664,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 22°C on October 9?",
@@ -161,19 +173,21 @@
         22.0
       ],
       "yes_price": 0.11,
-      "no_price": 0.895,
-      "volume": 1431.0,
+      "no_price": 0.89,
+      "volume": 1436.0,
       "spread": 0.0,
       "yes_token_id": "917848318588324380192122623870691894343388264795061623747516624722012769942",
       "no_token_id": "40642556230012947323493517185407199494031003004881653569442095923049903597190",
       "model_prob": 0.096,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.11,
+      "market_prob": 0.11,
       "belief_prob": 0.1009,
-      "ev": -0.0552,
+      "ev": -0.0827,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 23°C on October 9?",
@@ -183,19 +197,21 @@
         23.0
       ],
       "yes_price": 0.014,
-      "no_price": 0.9855,
+      "no_price": 0.986,
       "volume": 509.0,
       "spread": 0.0,
       "yes_token_id": "47176633695800736977574158528613251944196820932112001079122773482529273415196",
       "no_token_id": "22207343189058827659211364157756898992987797517906120047071498933000170496036",
       "model_prob": 0.0384,
       "side": "YES",
-      "ask": 0.0145,
-      "market_prob": 0.0145,
+      "ask": 0.014,
+      "market_prob": 0.014,
       "belief_prob": 0.0299,
-      "ev": 1.069,
-      "kelly": 0.0039,
-      "sell_value": null
+      "ev": 1.1357,
+      "kelly": 0.004,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 24°C on October 9?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0107,
       "ev": 2.5667,
       "kelly": 0.0019,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 25°C on October 9?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0062,
       "ev": -0.0462,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 26°C or higher on October 9?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.004,
       "ev": 1.6667,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

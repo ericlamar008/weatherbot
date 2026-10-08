@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 9.5,
+  "hours_left": 9.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T04:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0009,
       "ev": 0.8,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 78-79°F on October 8?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0007,
       "ev": 0.4,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 80-81°F on October 8?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0018,
       "ev": 2.6,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 82-83°F on October 8?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0065,
       "ev": 12.0,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 84-85°F on October 8?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.031,
       "ev": 61.0,
       "kelly": 0.0076,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 86-87°F on October 8?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1469,
       "ev": 292.8,
       "kelly": 0.0366,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 8?",
@@ -160,20 +172,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.795,
-      "no_price": 0.26,
-      "volume": 11599.0,
+      "yes_price": 0.685,
+      "no_price": 0.315,
+      "volume": 11631.0,
       "spread": 0.0,
       "yes_token_id": "77008180526165734912052916320336251405207906614089404599019266573837184582442",
       "no_token_id": "33652113757983869292697213920855074603246000740095829167799397067719593732800",
       "model_prob": 0.4562,
       "side": "YES",
-      "ask": 0.74,
-      "market_prob": 0.74,
-      "belief_prob": 0.5748,
-      "ev": -0.2493,
+      "ask": 0.685,
+      "market_prob": 0.685,
+      "belief_prob": 0.5363,
+      "ev": -0.2171,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.11
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 8?",
@@ -182,20 +196,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.21,
-      "no_price": 0.76,
-      "volume": 7507.0,
+      "yes_price": 0.315,
+      "no_price": 0.685,
+      "volume": 7512.0,
       "spread": 0.0,
       "yes_token_id": "24473702341357015238641526779721647638239489768450185384862968897150841251461",
       "no_token_id": "59808668209060221468956246512331409073870854849440786224946081007832972661770",
       "model_prob": 0.1998,
       "side": "YES",
-      "ask": 0.24,
-      "market_prob": 0.24,
-      "belief_prob": 0.2034,
-      "ev": -0.1087,
+      "ask": 0.315,
+      "market_prob": 0.315,
+      "belief_prob": 0.2401,
+      "ev": -0.2378,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.105
     },
     {
       "question": "Will the highest temperature in Miami be between 92-93°F on October 8?",
@@ -204,20 +220,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.0055,
-      "no_price": 0.9945,
-      "volume": 2380.0,
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 2385.0,
       "spread": 0.0,
       "yes_token_id": "111500138389451342713533822802247957349755858455730456754007046039378429979760",
       "no_token_id": "18042026505160236659729944047594700408365340559105340072960204133847232146537",
       "model_prob": 0.0409,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
-      "belief_prob": 0.0285,
-      "ev": 4.1818,
-      "kelly": 0.0058,
-      "sell_value": null
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0287,
+      "ev": 3.7833,
+      "kelly": 0.0057,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on October 8?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 1131.0,
+      "volume": 1136.0,
       "spread": 0.0,
       "yes_token_id": "74013260185097026398436048396270186041715693277200772025403724399365267694484",
       "no_token_id": "88775205026664494616570363507383175444726322339675381525763495839813212370433",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0065,
       "ev": 1.6,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 96°F or higher on October 8?",
@@ -250,7 +270,7 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 548.0,
+      "volume": 553.0,
       "spread": 0.0,
       "yes_token_id": "18553888175894403944411865986041436829062078346093174221662692390443380988736",
       "no_token_id": "30537807082912552937363209018183507671515749480695368762256694512707829835074",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0054,
       "ev": 1.7,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

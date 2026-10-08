@@ -6,15 +6,15 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 10.5,
+  "hours_left": 10.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T05:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-08T18:28:05.856221+00:00",
   "horizon_days": 0,
-  "forecast_mean": 90.77,
+  "forecast_mean": 90.78,
   "sigma": 1.761,
-  "forecast_mean_shadow": 90.97,
+  "forecast_mean_shadow": 90.98,
   "model_means_raw": {
     "ecmwf": 89.76,
     "gfs": 91.92,
@@ -41,7 +41,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 80-81°F on October 8?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 82-83°F on October 8?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0019,
       "ev": 2.8,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 84-85°F on October 8?",
@@ -100,14 +106,16 @@
       "spread": 0.0,
       "yes_token_id": "28344039973152454957086067909449233051234029370487018648245953841641324052764",
       "no_token_id": "76078843663208809359879861160444050673620271311837122383038580715602309691259",
-      "model_prob": 0.0099,
+      "model_prob": 0.0098,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0066,
-      "ev": 12.2,
+      "belief_prob": 0.0065,
+      "ev": 12.0,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 86-87°F on October 8?",
@@ -122,14 +130,16 @@
       "spread": 0.0,
       "yes_token_id": "74545492181496066760204391650723928390065888885487040749467760185926313881027",
       "no_token_id": "33654942770746248789669880941032760920295096981076688067150664218266326587997",
-      "model_prob": 0.0426,
+      "model_prob": 0.0422,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0279,
-      "ev": 54.8,
-      "kelly": 0.0069,
-      "sell_value": null
+      "belief_prob": 0.0276,
+      "ev": 54.2,
+      "kelly": 0.0068,
+      "sell_value": null,
+      "model_prob_change": -0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 88-89°F on October 8?",
@@ -140,18 +150,20 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4636.0,
+      "volume": 4662.0,
       "spread": 0.0,
       "yes_token_id": "38656942788234188033734265522580942103015006645969366815581959420878128773286",
       "no_token_id": "88780342569472994694781191008743130304101526867124203399387011990387022975828",
-      "model_prob": 0.1831,
+      "model_prob": 0.1819,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.1192,
-      "ev": 237.4,
-      "kelly": 0.0297,
-      "sell_value": null
+      "belief_prob": 0.1184,
+      "ev": 235.8,
+      "kelly": 0.0295,
+      "sell_value": null,
+      "model_prob_change": -0.0012,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 90-91°F on October 8?",
@@ -160,20 +172,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.55,
-      "no_price": 0.355,
-      "volume": 7044.0,
+      "yes_price": 0.565,
+      "no_price": 0.435,
+      "volume": 7166.0,
       "spread": 0.0,
       "yes_token_id": "53376517381514166221226764671192288025406567294666070843980937523550705675786",
       "no_token_id": "24780818729465566640535012863889589106268643971907807983306360952001748688750",
-      "model_prob": 0.4156,
+      "model_prob": 0.4152,
       "side": "YES",
-      "ask": 0.645,
-      "market_prob": 0.645,
-      "belief_prob": 0.4626,
-      "ev": -0.2312,
+      "ask": 0.565,
+      "market_prob": 0.565,
+      "belief_prob": 0.4676,
+      "ev": -0.1724,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0004,
+      "yes_price_change": 0.015
     },
     {
       "question": "Will the highest temperature in Houston be between 92-93°F on October 8?",
@@ -182,20 +196,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.41,
-      "no_price": 0.675,
-      "volume": 5609.0,
+      "yes_price": 0.395,
+      "no_price": 0.605,
+      "volume": 5693.0,
       "spread": 0.0,
       "yes_token_id": "28589767050755141510466143802266697459490140702869983476614160341764829285233",
       "no_token_id": "1544857974670755404285374359490025279831388095812648482561459769547675074696",
-      "model_prob": 0.253,
+      "model_prob": 0.2543,
       "side": "YES",
-      "ask": 0.325,
-      "market_prob": 0.325,
-      "belief_prob": 0.308,
-      "ev": -0.144,
+      "ask": 0.395,
+      "market_prob": 0.395,
+      "belief_prob": 0.3035,
+      "ev": -0.2316,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0013,
+      "yes_price_change": -0.015
     },
     {
       "question": "Will the highest temperature in Houston be between 94-95°F on October 8?",
@@ -204,20 +220,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.045,
-      "no_price": 0.98,
-      "volume": 2402.0,
+      "yes_price": 0.0405,
+      "no_price": 0.9595,
+      "volume": 2641.0,
       "spread": 0.0,
       "yes_token_id": "62675368884421293692963631222881460472561236746544670182819979725763839925706",
       "no_token_id": "71112843538636206361704159694833112712799175212493362467594945235149977277607",
-      "model_prob": 0.0641,
+      "model_prob": 0.0646,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
-      "belief_prob": 0.0574,
-      "ev": 1.435,
-      "kelly": 0.0073,
-      "sell_value": null
+      "ask": 0.0405,
+      "market_prob": 0.0405,
+      "belief_prob": 0.0562,
+      "ev": 0.3877,
+      "kelly": 0.0041,
+      "sell_value": null,
+      "model_prob_change": 0.0005,
+      "yes_price_change": -0.0045
     },
     {
       "question": "Will the highest temperature in Houston be between 96-97°F on October 8?",
@@ -228,18 +246,20 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 1573.0,
+      "volume": 1593.0,
       "spread": 0.0,
       "yes_token_id": "27246670335092560619775088047879610093893395408314067661116824754727266221049",
       "no_token_id": "111564454700660462687740139468345864734110479953403811523355783885120504423709",
-      "model_prob": 0.0145,
+      "model_prob": 0.0146,
       "side": "YES",
       "ask": 0.002,
       "market_prob": 0.002,
-      "belief_prob": 0.0101,
-      "ev": 4.05,
-      "kelly": 0.002,
-      "sell_value": null
+      "belief_prob": 0.0102,
+      "ev": 4.1,
+      "kelly": 0.0021,
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be 98°F or higher on October 8?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0082,
       "ev": 15.4,
       "kelly": 0.0019,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

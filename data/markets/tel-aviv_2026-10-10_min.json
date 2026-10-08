@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 50.5,
+  "hours_left": 50.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T21:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
   "last_scan": "2026-10-08T18:28:05.856221+00:00",
-  "skipped_reason": "event volume 48 < min_volume 500"
+  "skipped_reason": "event volume 48 < min_volume 500",
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00",
+  "forecast_mean": 20.7,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 17°C or below on October 10?",
+      "market_id": "5422999",
+      "range": [
+        -999.0,
+        17.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "18621427860321642151705359153566532573000095582389078050802058177282093545249",
+      "no_token_id": "114869984412260786122874828593239349419517581432212823659704012418057232450169",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.6589,
+      "ev": 24.8392,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

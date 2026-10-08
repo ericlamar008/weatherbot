@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 9.5,
+  "hours_left": 9.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T04:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 13°C on October 8?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 14°C on October 8?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0045,
       "ev": 8.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 15°C on October 8?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0211,
       "ev": 41.2,
       "kelly": 0.0052,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 16°C on October 8?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.1089,
       "ev": 216.8,
       "kelly": 0.0271,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 17°C on October 8?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2845,
       "ev": 568.0,
       "kelly": 0.071,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 18°C on October 8?",
@@ -160,20 +172,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.9785,
-      "no_price": 0.068,
-      "volume": 5341.0,
+      "yes_price": 0.9845,
+      "no_price": 0.0155,
+      "volume": 5643.0,
       "spread": 0.0,
       "yes_token_id": "14053272852153153609116886385597424704720857704126187916251762722632939251353",
       "no_token_id": "62317601234458029123996104703897327641285544187482787191561352753307596134532",
       "model_prob": 0.2767,
       "side": "YES",
-      "ask": 0.932,
-      "market_prob": 0.932,
-      "belief_prob": 0.5223,
-      "ev": -0.457,
+      "ask": 0.9845,
+      "market_prob": 0.9845,
+      "belief_prob": 0.5244,
+      "ev": -0.4673,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.006
     },
     {
       "question": "Will the highest temperature in Toronto be 19°C on October 8?",
@@ -182,20 +196,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.0175,
-      "no_price": 0.9445,
-      "volume": 4456.0,
+      "yes_price": 0.012,
+      "no_price": 0.988,
+      "volume": 4572.0,
       "spread": 0.0,
       "yes_token_id": "91739175071611974234835059368741550587443804221629103994098087142808976040645",
       "no_token_id": "91690253480348791676112458511583122823357248927029055738941207298508352222629",
       "model_prob": 0.0614,
       "side": "YES",
-      "ask": 0.0555,
-      "market_prob": 0.0555,
-      "belief_prob": 0.046,
-      "ev": 0.0685,
-      "kelly": 0.001,
-      "sell_value": null
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0441,
+      "ev": 2.675,
+      "kelly": 0.0081,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0055
     },
     {
       "question": "Will the highest temperature in Toronto be 20°C on October 8?",
@@ -205,19 +221,21 @@
         20.0
       ],
       "yes_price": 0.003,
-      "no_price": 0.992,
-      "volume": 3452.0,
+      "no_price": 0.997,
+      "volume": 3458.0,
       "spread": 0.0,
       "yes_token_id": "75166923440822479945513190145138187381820450119833016639524897902642914191662",
       "no_token_id": "85983768573799421327999482252861809866161498612552285804494165802094389938762",
       "model_prob": 0.0117,
       "side": "YES",
-      "ask": 0.008,
-      "market_prob": 0.008,
+      "ask": 0.003,
+      "market_prob": 0.003,
       "belief_prob": 0.0087,
-      "ev": 0.3,
-      "kelly": 0.0006,
-      "sell_value": null
+      "ev": 1.9,
+      "kelly": 0.0014,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 21°C on October 8?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 2593.0,
+      "volume": 2599.0,
       "spread": 0.0,
       "yes_token_id": "21360721339948285816677600708430665562000558323039402261628891271383346936739",
       "no_token_id": "50850183149173359583963578127220673637140020097308902892430545472954854765223",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0027,
       "ev": 0.08,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 22°C or higher on October 8?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0014,
       "ev": -0.0667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }

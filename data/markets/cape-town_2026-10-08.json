@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 3.5,
+  "hours_left": 3.3,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-08T22:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0111,
       "ev": 21.2,
       "kelly": 0.0027,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 16°C on October 8?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.021,
       "ev": 41.0,
       "kelly": 0.0051,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 17°C on October 8?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0654,
       "ev": 129.8,
       "kelly": 0.0162,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 18°C on October 8?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.1583,
       "ev": 315.6,
       "kelly": 0.0395,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 19°C on October 8?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.5547,
       "ev": -0.445,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 20°C on October 8?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1235,
       "ev": 246.0,
       "kelly": 0.0308,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 21°C on October 8?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.045,
       "ev": 89.0,
       "kelly": 0.0111,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 22°C on October 8?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0143,
       "ev": 27.6,
       "kelly": 0.0035,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 23°C on October 8?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0049,
       "ev": 8.8,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 24°C on October 8?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0019,
       "ev": 2.8,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 25°C or higher on October 8?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0016,
       "ev": 2.2,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -292,5 +314,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-08T18:37:24.118680+00:00",
-  "last_lite_refresh": "2026-10-08T14:20:39.125133+00:00"
+  "last_lite_refresh": "2026-10-08T18:39:41.445117+00:00"
 }
