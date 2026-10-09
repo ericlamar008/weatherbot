@@ -6,17 +6,17 @@
   "status": "open",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T05:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-09T02:20:39.671735+00:00",
   "horizon_days": 0,
-  "forecast_mean": 90.12,
-  "sigma": 1.537,
-  "forecast_mean_shadow": 91.4,
+  "forecast_mean": 90.66,
+  "sigma": 1.49,
+  "forecast_mean_shadow": 91.63,
   "model_means_raw": {
-    "ecmwf": 88.5,
+    "ecmwf": 89.37,
     "gfs": 91.25,
     "gem": 92.53
   },
@@ -34,14 +34,16 @@
       "spread": 0.0,
       "yes_token_id": "83149296354649809884032822304250328115636781618720398144370931304386964624490",
       "no_token_id": "103654549556049084507919103680031777341004219039583792782141961698842024582881",
-      "model_prob": 0.0002,
+      "model_prob": 0.0001,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0003,
-      "ev": -0.4,
+      "belief_prob": 0.0002,
+      "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 76-77°F on October 8?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0002,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 78-79°F on October 8?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 80-81°F on October 8?",
@@ -100,14 +106,16 @@
       "spread": 0.0,
       "yes_token_id": "30284037633998561560451758533909500047748287477717430063688627883752445680415",
       "no_token_id": "87951330628678980400975167111038873763000892010859088767709330437160269013633",
-      "model_prob": 0.0007,
+      "model_prob": 0.0004,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0006,
-      "ev": 0.2,
+      "belief_prob": 0.0004,
+      "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0003,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 82-83°F on October 8?",
@@ -122,14 +130,16 @@
       "spread": 0.0,
       "yes_token_id": "107153966211856735997979613506685844550342036732893493833651363576473394305645",
       "no_token_id": "86776842587184088183110499970839470396136183106786996762176243037870705329196",
-      "model_prob": 0.0023,
+      "model_prob": 0.0014,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0017,
-      "ev": 2.4,
-      "kelly": 0.0003,
-      "sell_value": null
+      "belief_prob": 0.0011,
+      "ev": 1.2,
+      "kelly": 0.0002,
+      "sell_value": null,
+      "model_prob_change": -0.0009,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 84-85°F on October 8?",
@@ -144,14 +154,16 @@
       "spread": 0.0,
       "yes_token_id": "63462886772589573799338209693506859963240939905678218834115326207927421995314",
       "no_token_id": "111278933103193344441296665030675033014323721719773686517409642023365411108110",
-      "model_prob": 0.0098,
+      "model_prob": 0.0057,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0065,
-      "ev": 12.0,
-      "kelly": 0.0015,
-      "sell_value": null
+      "belief_prob": 0.0039,
+      "ev": 6.8,
+      "kelly": 0.0009,
+      "sell_value": null,
+      "model_prob_change": -0.0041,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 86-87°F on October 8?",
@@ -166,14 +178,16 @@
       "spread": 0.0,
       "yes_token_id": "108043616807334531058524308484053924866473194754197114048709166884782015996873",
       "no_token_id": "39303989888913344154476488638702310426730659158052714119196847159715656119698",
-      "model_prob": 0.0521,
+      "model_prob": 0.0296,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.034,
-      "ev": 67.0,
-      "kelly": 0.0084,
-      "sell_value": null
+      "belief_prob": 0.0194,
+      "ev": 37.8,
+      "kelly": 0.0047,
+      "sell_value": null,
+      "model_prob_change": -0.0225,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 88-89°F on October 8?",
@@ -184,18 +198,20 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 10569.0,
+      "volume": 10589.0,
       "spread": 0.0,
       "yes_token_id": "26490728254379156163555776399096131025134342689814780939292360892884334854057",
       "no_token_id": "73052010756004332392087651921591286120816081796157819775409022405234458394127",
-      "model_prob": 0.2612,
+      "model_prob": 0.1707,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.17,
-      "ev": 339.0,
-      "kelly": 0.0424,
-      "sell_value": null
+      "belief_prob": 0.1111,
+      "ev": 221.2,
+      "kelly": 0.0277,
+      "sell_value": null,
+      "model_prob_change": -0.0905,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 90-91°F on October 8?",
@@ -206,18 +222,20 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 8480.0,
+      "volume": 8486.0,
       "spread": 0.0,
       "yes_token_id": "59406054170673347417294322517702205895868659401909250288024700784619470025145",
       "no_token_id": "87370352425121283289516700823335626946436055349097610721183569958861803826203",
-      "model_prob": 0.448,
+      "model_prob": 0.4653,
       "side": "YES",
       "ask": 0.9995,
       "market_prob": 0.9995,
-      "belief_prob": 0.641,
-      "ev": -0.3587,
+      "belief_prob": 0.6523,
+      "ev": -0.3474,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0173,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 92-93°F on October 8?",
@@ -232,14 +250,16 @@
       "spread": 0.0,
       "yes_token_id": "3710735275410421833539564114671512035574774987437473617721269651402659605770",
       "no_token_id": "75635078375219430929972324182268553480306834179625062200013194587176506885686",
-      "model_prob": 0.1494,
+      "model_prob": 0.2186,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0973,
-      "ev": 193.6,
-      "kelly": 0.0242,
-      "sell_value": null
+      "belief_prob": 0.1423,
+      "ev": 283.6,
+      "kelly": 0.0355,
+      "sell_value": null,
+      "model_prob_change": 0.0692,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be 94°F or higher on October 8?",
@@ -254,14 +274,16 @@
       "spread": 0.0,
       "yes_token_id": "942755763342367388607721895112792549845387877743204243090642840301913158296",
       "no_token_id": "31792129188270372657280906820799266631627406267506323883366013679430883988552",
-      "model_prob": 0.0759,
+      "model_prob": 0.108,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0495,
-      "ev": 98.0,
-      "kelly": 0.0123,
-      "sell_value": null
+      "belief_prob": 0.0704,
+      "ev": 139.8,
+      "kelly": 0.0175,
+      "sell_value": null,
+      "model_prob_change": 0.0321,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-09T02:52:24.180773+00:00",
-  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
+  "last_lite_refresh": "2026-10-09T02:53:06.010596+00:00"
 }

@@ -6,15 +6,15 @@
   "status": "open",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T21:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-09T02:20:39.671735+00:00",
   "horizon_days": 0,
-  "forecast_mean": 23.36,
-  "sigma": 0.48,
-  "forecast_mean_shadow": 23.23,
+  "forecast_mean": 23.37,
+  "sigma": 0.486,
+  "forecast_mean_shadow": 23.28,
   "model_means_raw": {
     "ecmwf": 23.37,
     "gfs": 22.87,
@@ -35,14 +35,16 @@
       "spread": 0.0,
       "yes_token_id": "68329344854871912106649246703329250240635679737077353203249556634441630869413",
       "no_token_id": "98609007085049156574184104696329394184243700212768329892415508259281305624165",
-      "model_prob": 0.0002,
+      "model_prob": 0.0003,
       "side": "YES",
       "ask": 0.0015,
       "market_prob": 0.0015,
       "belief_prob": 0.0007,
       "ev": -0.5333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 20°C on October 9?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0012,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 21°C on October 9?",
@@ -79,14 +83,16 @@
       "spread": 0.0,
       "yes_token_id": "15438522465262604957195635266295994633056540881934968680246342466892024650354",
       "no_token_id": "32829539722106150502000193747203785272917489714687385158362791253925545772833",
-      "model_prob": 0.0049,
+      "model_prob": 0.005,
       "side": "YES",
       "ask": 0.003,
       "market_prob": 0.003,
-      "belief_prob": 0.0042,
-      "ev": 0.4,
+      "belief_prob": 0.0043,
+      "ev": 0.4333,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 22°C on October 9?",
@@ -96,19 +102,21 @@
         22.0
       ],
       "yes_price": 0.046,
-      "no_price": 0.9535,
+      "no_price": 0.954,
       "volume": 641.0,
       "spread": 0.0,
       "yes_token_id": "47660425662452098358094183500985414024490874259872122344760266841800911283430",
       "no_token_id": "104959997271867929494787803354128369193035078339247157234237099009731555078789",
       "model_prob": 0.0607,
       "side": "YES",
-      "ask": 0.0465,
-      "market_prob": 0.0465,
+      "ask": 0.046,
+      "market_prob": 0.046,
       "belief_prob": 0.0556,
-      "ev": 0.1978,
-      "kelly": 0.0024,
-      "sell_value": null
+      "ev": 0.2087,
+      "kelly": 0.0025,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 23°C on October 9?",
@@ -118,19 +126,21 @@
         23.0
       ],
       "yes_price": 0.1,
-      "no_price": 0.84,
-      "volume": 2364.0,
+      "no_price": 0.9,
+      "volume": 2378.0,
       "spread": 0.0,
       "yes_token_id": "47649919261403081152366724010101156602235873204804448014675269695267652385334",
       "no_token_id": "46876875516649261921913261270995789672374939477943288458486516926306577115433",
-      "model_prob": 0.5423,
+      "model_prob": 0.5334,
       "side": "YES",
-      "ask": 0.16,
-      "market_prob": 0.16,
-      "belief_prob": 0.3875,
-      "ev": 1.5531,
-      "kelly": 0.074,
-      "sell_value": null
+      "ask": 0.1,
+      "market_prob": 0.1,
+      "belief_prob": 0.3817,
+      "ev": 2.817,
+      "kelly": 0.0782,
+      "sell_value": null,
+      "model_prob_change": -0.0089,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 24°C on October 9?",
@@ -139,20 +149,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.515,
-      "no_price": 0.465,
-      "volume": 1456.0,
+      "yes_price": 0.51,
+      "no_price": 0.49,
+      "volume": 1463.0,
       "spread": 0.0,
       "yes_token_id": "60642142125908881992842119367848309168523464791020989733083328284052994857735",
       "no_token_id": "25354603701039896088090590380272262792445178868480043535975030238281798314455",
-      "model_prob": 0.3593,
+      "model_prob": 0.3661,
       "side": "YES",
-      "ask": 0.535,
-      "market_prob": 0.535,
-      "belief_prob": 0.4138,
-      "ev": -0.2135,
+      "ask": 0.51,
+      "market_prob": 0.51,
+      "belief_prob": 0.4165,
+      "ev": -0.1833,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0068,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Istanbul be 25°C on October 9?",
@@ -162,19 +174,21 @@
         25.0
       ],
       "yes_price": 0.37,
-      "no_price": 0.75,
-      "volume": 3791.0,
+      "no_price": 0.63,
+      "volume": 5326.0,
       "spread": 0.0,
       "yes_token_id": "114268507976134938767366267449744708123988890733054432422566169705639397106904",
       "no_token_id": "19174753477231457092312197928475781573755394634077630373033802245203162492936",
-      "model_prob": 0.0285,
+      "model_prob": 0.0302,
       "side": "YES",
-      "ask": 0.25,
-      "market_prob": 0.25,
-      "belief_prob": 0.148,
-      "ev": -0.576,
+      "ask": 0.37,
+      "market_prob": 0.37,
+      "belief_prob": 0.1491,
+      "ev": -0.597,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0017,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 26°C on October 9?",
@@ -189,14 +203,16 @@
       "spread": 0.0,
       "yes_token_id": "6052350895499559794952010650726140359871647236968862718954319857883647874852",
       "no_token_id": "64602435239588611310763195020639513385882309859660333165923852445456655971649",
-      "model_prob": 0.0027,
+      "model_prob": 0.0029,
       "side": "YES",
       "ask": 0.0055,
       "market_prob": 0.0055,
-      "belief_prob": 0.0037,
-      "ev": -0.3273,
+      "belief_prob": 0.0038,
+      "ev": -0.3091,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 27°C on October 9?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0019,
       "ev": -0.5778,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 28°C on October 9?",
@@ -228,19 +246,21 @@
         28.0
       ],
       "yes_price": 0.005,
-      "no_price": 0.9945,
+      "no_price": 0.995,
       "volume": 318.0,
       "spread": 0.0,
       "yes_token_id": "18660212146628780063586649427381983396812539331087192291289685652069930625152",
       "no_token_id": "69351492508090891800162192702578623437955774645222659409962228654660740486617",
       "model_prob": 0.0001,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
+      "ask": 0.005,
+      "market_prob": 0.005,
       "belief_prob": 0.0018,
-      "ev": -0.6364,
+      "ev": -0.64,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Istanbul be 29°C or higher on October 9?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0008,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -276,5 +298,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-09T02:52:24.180773+00:00",
-  "last_lite_refresh": "2026-10-08T20:20:44.592781+00:00"
+  "last_lite_refresh": "2026-10-09T02:53:06.010596+00:00"
 }
