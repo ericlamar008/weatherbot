@@ -3,7 +3,7 @@
   "city_name": "Denver",
   "date": "2026-10-08",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-07T02:20:36.665878+00:00",
   "committed_allocation": null,
@@ -12,7 +12,7 @@
   "local_day_end_utc": "2026-10-09T06:00:00+00:00",
   "event_end_date": "2026-10-08T12:00:00Z",
   "last_scan": "2026-10-09T02:20:39.671735+00:00",
-  "last_lite_refresh": "2026-10-09T08:20:42.523523+00:00",
+  "last_lite_refresh": "2026-10-09T14:20:41.822376+00:00",
   "forecast_mean": 55.23,
   "sigma": 2.5,
   "full_distribution": [
@@ -250,7 +250,10 @@
       "market_prob": 0.55,
       "role": "main_signal",
       "units": 28.5,
-      "sell_value": 0.1
+      "sell_value": 0.1,
+      "won": true,
+      "pnl_units": 23.32,
+      "user_entered": false
     },
     {
       "market_id": "5369386",
@@ -266,7 +269,10 @@
       "market_prob": 0.45,
       "role": "scenario_hedge",
       "units": 15.14,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -15.14,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 43.6,
@@ -277,5 +283,50 @@
   "success_probability": 0.3241,
   "confidence": 0.3196,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 54.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 8.18,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5369386",
+      "question": "Will the lowest temperature in Denver be between 54-55°F on October 8?",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "side": "YES",
+      "price": 0.55,
+      "model_prob": 0.2815,
+      "ev": -0.3173,
+      "market_prob": 0.55,
+      "role": "main_signal",
+      "units": 28.5,
+      "sell_value": 0.1,
+      "won": true,
+      "pnl_units": 23.32,
+      "user_entered": false
+    },
+    {
+      "market_id": "5369386",
+      "question": "Will the lowest temperature in Denver be between 54-55°F on October 8? (NO)",
+      "range": [
+        54.0,
+        55.0
+      ],
+      "side": "NO",
+      "price": 0.45,
+      "model_prob": 0.7185,
+      "ev": 0.3878,
+      "market_prob": 0.45,
+      "role": "scenario_hedge",
+      "units": 15.14,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -15.14,
+      "user_entered": false
+    }
+  ]
 }
