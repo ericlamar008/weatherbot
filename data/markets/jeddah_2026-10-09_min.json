@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-09T21:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-09T02:20:39.671735+00:00",
-  "last_lite_refresh": "2026-10-09T14:20:41.822376+00:00",
+  "last_lite_refresh": "2026-10-09T20:20:38.508027+00:00",
   "forecast_mean": 27.93,
   "sigma": 1.4,
   "full_distribution": [
@@ -25,7 +25,7 @@
       ],
       "yes_price": 0.0105,
       "no_price": 0.9895,
-      "volume": 48.0,
+      "volume": 58.0,
       "spread": 0.0,
       "yes_token_id": "74717089774156964660411818556336450118140098348990287266654584764237676902713",
       "no_token_id": "56131918896129600501971809779221031698432403159919710010610997677988489289122",
@@ -37,8 +37,8 @@
       "ev": 1.3524,
       "kelly": 0.0036,
       "sell_value": null,
-      "model_prob_change": 0.0057,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Jeddah be 25°C on October 9?",
@@ -47,22 +47,22 @@
         25.0,
         25.0
       ],
-      "yes_price": 0.4,
-      "no_price": 0.6,
+      "yes_price": 0.39,
+      "no_price": 0.61,
       "volume": 41.0,
       "spread": 0.0,
       "yes_token_id": "13524487549320473384786573417130270628510058082314372302952500105732043889033",
       "no_token_id": "81339391293225538170858021351525702706714036283882985170004045074711315986496",
       "model_prob": 0.0476,
       "side": "YES",
-      "ask": 0.4,
-      "market_prob": 0.4,
-      "belief_prob": 0.1709,
-      "ev": -0.5727,
+      "ask": 0.39,
+      "market_prob": 0.39,
+      "belief_prob": 0.1674,
+      "ev": -0.5708,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.009,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the lowest temperature in Jeddah be 27°C on October 9?",
@@ -85,7 +85,7 @@
       "ev": -0.271,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0276,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -97,7 +97,7 @@
       ],
       "yes_price": 0.4,
       "no_price": 0.6,
-      "volume": 5.0,
+      "volume": 15.0,
       "spread": 0.0,
       "yes_token_id": "59902328808385741609458046409874584215280258919333870672632128477246114529977",
       "no_token_id": "34586167256916362751245294143625789435060498944536879430860843635804391155079",
@@ -109,7 +109,7 @@
       "ev": -0.1703,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0064,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -120,21 +120,21 @@
         29.0
       ],
       "yes_price": 0.4,
-      "no_price": 0.645,
-      "volume": 174.0,
+      "no_price": 0.6,
+      "volume": 184.0,
       "spread": 0.0,
       "yes_token_id": "101836007334094227265220843486991529775608394208520999794094729573090120043228",
       "no_token_id": "107004628695131367023743068826473473843169702651897062032930452017300630016705",
       "model_prob": 0.2167,
       "side": "YES",
-      "ask": 0.355,
-      "market_prob": 0.355,
+      "ask": 0.4,
+      "market_prob": 0.4,
       "belief_prob": 0.2809,
-      "ev": -0.2532,
+      "ev": -0.2978,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0189,
-      "yes_price_change": -0.015
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Jeddah be 30°C on October 9?",
@@ -144,20 +144,20 @@
         30.0
       ],
       "yes_price": 0.95,
-      "no_price": 0.505,
+      "no_price": 0.05,
       "volume": 54.0,
       "spread": 0.0,
       "yes_token_id": "53277610588326041766862667411173199563992859232937504578166597042650075269398",
       "no_token_id": "67582790230965563796921069751964644933119606339743821659855904924314305920662",
       "model_prob": 0.1046,
       "side": "YES",
-      "ask": 0.495,
-      "market_prob": 0.495,
+      "ask": 0.95,
+      "market_prob": 0.95,
       "belief_prob": 0.4005,
-      "ev": -0.5127,
+      "ev": -0.5784,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0169,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -181,7 +181,7 @@
       "ev": 53.6,
       "kelly": 0.0067,
       "sell_value": null,
-      "model_prob_change": -0.0078,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 20.4,
       "kelly": 0.0026,
       "sell_value": null,
-      "model_prob_change": -0.0029,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 8.0,
       "kelly": 0.001,
       "sell_value": null,
-      "model_prob_change": -0.0011,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 7.0,
       "kelly": 0.0009,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
