@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 19.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T22:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
   "skipped_reason": "event volume 35 < min_volume 500",
-  "last_lite_refresh": "2026-10-09T20:20:38.508027+00:00"
+  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "forecast_mean": 8.87,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 12°C on October 10?",
+      "market_id": "5422996",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "97188233196666276039948441638471709439256679961894427239514590705213960565626",
+      "no_token_id": "51713604071002807141092980140029391353649844236145431137934918295003096797156",
+      "model_prob": 0.5913,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3845,
+      "ev": 768.0,
+      "kelly": 0.096,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 13°C on October 10?",
+      "market_id": "5422997",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "5468896215838354701083449667804859669330592634211110778593439853640433984870",
+      "no_token_id": "55719496423969411390636038646144697330458134515651699116955050549953485468074",
+      "model_prob": 0.2297,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1495,
+      "ev": 298.0,
+      "kelly": 0.0373,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 14°C or higher on October 10?",
+      "market_id": "5422998",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "55285225613059592648321337763080572528028675468011139615770448797488840714856",
+      "no_token_id": "41441670170180830626661045287516547702059444558594562112084661516060143156271",
+      "model_prob": 0.1789,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1165,
+      "ev": 232.0,
+      "kelly": 0.029,
+      "sell_value": null
+    }
+  ]
 }

@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-10T02:20:42.362387+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T04:00:00+00:00",
   "event_end_date": "2026-10-11T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
-  "skipped_reason": "event volume 90 < min_volume 500"
+  "skipped_reason": "event volume 90 < min_volume 500",
+  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "forecast_mean": 80.99,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be between 82-83°F on October 11?",
+      "market_id": "5451458",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 90.0,
+      "spread": 0.0,
+      "yes_token_id": "64303952188513131863930811337121232342609740325618391036364976149370381732338",
+      "no_token_id": "1824996804191344081501082639163759199167978551111601578299456213847835063736",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.769,
+      "ev": 1.2618,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

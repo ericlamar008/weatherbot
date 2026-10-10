@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 19.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T22:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
   "skipped_reason": "event volume 60 < min_volume 500",
-  "last_lite_refresh": "2026-10-09T20:20:38.508027+00:00"
+  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "forecast_mean": 13.32,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 15°C on October 10?",
+      "market_id": "5424173",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "41341597399589904501215660182700652558813738544914172945752568272851382604924",
+      "no_token_id": "56521463122622154588139351996555382619971492068982892471420045823280435706642",
+      "model_prob": 0.5884,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3826,
+      "ev": 764.2,
+      "kelly": 0.0956,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 16°C on October 10?",
+      "market_id": "5424174",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "70820820138168909671304268483916175682769309524433779551058580310011884143274",
+      "no_token_id": "22305002679914797988614516583241523226120422761800345651055491720948108802955",
+      "model_prob": 0.2464,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1603,
+      "ev": 319.6,
+      "kelly": 0.04,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 17°C on October 10?",
+      "market_id": "5424175",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "65581488240095696433896198547443734383878880630198960007907009113065831116746",
+      "no_token_id": "67920668107181752581499626773860889737657790535760327524846230909491688748103",
+      "model_prob": 0.0953,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0621,
+      "ev": 123.2,
+      "kelly": 0.0154,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 18°C on October 10?",
+      "market_id": "5424176",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "86924081827891037166111371973356079921914336888462885675967110220886366468123",
+      "no_token_id": "89736125438807005575136199245953458148636936819288870372659707081962813637359",
+      "model_prob": 0.0379,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0248,
+      "ev": 48.6,
+      "kelly": 0.0061,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Cape Town be 19°C or higher on October 10?",
+      "market_id": "5424177",
+      "range": [
+        19.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "36497503935359214628926321525588637385919048947765773437064486550534492175518",
+      "no_token_id": "95687098407680870374131728684101254912129670370662342896354300549558914022307",
+      "model_prob": 0.032,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.021,
+      "ev": 41.0,
+      "kelly": 0.0051,
+      "sell_value": null
+    }
+  ]
 }

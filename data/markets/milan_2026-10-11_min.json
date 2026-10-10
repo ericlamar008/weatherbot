@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-10T02:20:42.362387+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-11T22:00:00+00:00",
   "event_end_date": "2026-10-11T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
-  "skipped_reason": "event volume 116 < min_volume 500"
+  "skipped_reason": "event volume 116 < min_volume 500",
+  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "forecast_mean": 10.91,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 14°C on October 11?",
+      "market_id": "5448732",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 111.0,
+      "spread": 0.0,
+      "yes_token_id": "21258428127725336225747461705465778582708306710772115995958660153377030016627",
+      "no_token_id": "46642216504449861193625050677161505412152526108677774076340830275124489435995",
+      "model_prob": 0.5922,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.4164,
+      "ev": 3.6267,
+      "kelly": 0.0897,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 15°C or higher on October 11?",
+      "market_id": "5448733",
+      "range": [
+        15.0,
+        999.0
+      ],
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "72625184425193352839195943730606583219561524103341456557635509019876347766556",
+      "no_token_id": "87096976347968157886616350152033974418413916177986024177966387197409434312956",
+      "model_prob": 0.4078,
+      "side": "YES",
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.4348,
+      "ev": -0.1035,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }
