@@ -3,16 +3,16 @@
   "city_name": "Dallas",
   "date": "2026-10-09",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 2.1,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-10T05:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
-  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "last_lite_refresh": "2026-10-10T08:20:38.746585+00:00",
   "forecast_mean": 66.4,
   "sigma": 3.677,
   "full_distribution": [
@@ -274,7 +274,10 @@
       "market_prob": 0.95,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.9
+      "sell_value": 0.9,
+      "won": true,
+      "pnl_units": 1.58,
+      "user_entered": false
     },
     {
       "market_id": "5399942",
@@ -290,7 +293,10 @@
       "market_prob": 0.05,
       "role": "scenario_hedge",
       "units": 1.05,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -1.05,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 31.1,
@@ -301,5 +307,50 @@
   "success_probability": 0.3724,
   "confidence": 0.2411,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 66.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.53,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5399942",
+      "question": "Will the lowest temperature in Dallas be between 66-67°F on October 9?",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "side": "YES",
+      "price": 0.95,
+      "model_prob": 0.1942,
+      "ev": -0.5172,
+      "market_prob": 0.95,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.9,
+      "won": true,
+      "pnl_units": 1.58,
+      "user_entered": false
+    },
+    {
+      "market_id": "5399942",
+      "question": "Will the lowest temperature in Dallas be between 66-67°F on October 9? (NO)",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "side": "NO",
+      "price": 0.05,
+      "model_prob": 0.8058,
+      "ev": 9.826,
+      "market_prob": 0.05,
+      "role": "scenario_hedge",
+      "units": 1.05,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -1.05,
+      "user_entered": false
+    }
+  ]
 }

@@ -3,16 +3,16 @@
   "city_name": "Toronto",
   "date": "2026-10-09",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-08T02:20:39.442741+00:00",
   "committed_allocation": null,
-  "hours_left": 1.1,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-10T04:00:00+00:00",
   "event_end_date": "2026-10-09T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
-  "last_lite_refresh": "2026-10-10T02:53:12.189054+00:00",
+  "last_lite_refresh": "2026-10-10T08:20:38.746585+00:00",
   "forecast_mean": 7.2,
   "sigma": 1.4,
   "full_distribution": [
@@ -274,7 +274,10 @@
       "market_prob": 0.335,
       "role": "main_signal",
       "units": 23.0,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -23.0,
+      "user_entered": false
     },
     {
       "market_id": "5404421",
@@ -290,7 +293,10 @@
       "market_prob": 0.665,
       "role": "scenario_hedge",
       "units": 25.81,
-      "sell_value": 0.33
+      "sell_value": 0.33,
+      "won": true,
+      "pnl_units": 13.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 48.8,
@@ -301,5 +307,50 @@
   "success_probability": 0.224,
   "confidence": 0.1463,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 7.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5404421",
+      "question": "Will the lowest temperature in Toronto be 8°C on October 9?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.335,
+      "model_prob": 0.2638,
+      "ev": -0.1382,
+      "market_prob": 0.335,
+      "role": "main_signal",
+      "units": 23.0,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -23.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "5404421",
+      "question": "Will the lowest temperature in Toronto be 8°C on October 9? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.665,
+      "model_prob": 0.7362,
+      "ev": 0.0696,
+      "market_prob": 0.665,
+      "role": "scenario_hedge",
+      "units": 25.81,
+      "sell_value": 0.33,
+      "won": true,
+      "pnl_units": 13.0,
+      "user_entered": false
+    }
+  ]
 }
