@@ -6,11 +6,11 @@
   "status": "open",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 24.7,
+  "hours_left": 18.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-10T21:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
-  "last_scan": "2026-10-09T02:20:39.671735+00:00",
+  "last_scan": "2026-10-10T02:20:42.362387+00:00",
   "horizon_days": 1,
   "forecast_mean": 25.21,
   "sigma": 0.575,
@@ -298,5 +298,6 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-10T02:07:22.968842+00:00",
-  "last_lite_refresh": "2026-10-09T20:20:38.508027+00:00"
+  "last_lite_refresh": "2026-10-09T20:20:38.508027+00:00",
+  "skipped_reason": "ensemble forecast unavailable (mean is None)"
 }
