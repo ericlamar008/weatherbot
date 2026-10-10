@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-10T02:20:42.362387+00:00",
   "committed_allocation": null,
-  "hours_left": 31.7,
+  "hours_left": 25.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-11T16:00:00+00:00",
   "event_end_date": "2026-10-11T12:00:00Z",
@@ -16,8 +16,8 @@
   "sigma": 0.978,
   "forecast_mean_shadow": 25.01,
   "model_means_raw": {
-    "ecmwf": 24.97,
-    "gfs": 24.07,
+    "ecmwf": 24.98,
+    "gfs": 24.05,
     "gem": 23.25
   },
   "full_distribution": [
@@ -43,7 +43,7 @@
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": -0.0005
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 20°C on October 11?",
@@ -66,7 +66,7 @@
       "ev": 1.0,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 3.8,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -101,20 +101,20 @@
         22.0
       ],
       "yes_price": 0.001,
-      "no_price": 0.998,
-      "volume": 345.0,
+      "no_price": 0.999,
+      "volume": 470.0,
       "spread": 0.0,
       "yes_token_id": "81508756506967656486535599925089894705329554999260327423233313332595099234719",
       "no_token_id": "84708427668585265812553482466082796278131161239999933654117479900506194141002",
       "model_prob": 0.0117,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
+      "ask": 0.001,
+      "market_prob": 0.001,
       "belief_prob": 0.008,
-      "ev": 3.15,
-      "kelly": 0.0016,
+      "ev": 7.0,
+      "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": -0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -125,21 +125,21 @@
         23.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.994,
-      "volume": 116.0,
+      "no_price": 0.998,
+      "volume": 649.0,
       "spread": 0.0,
       "yes_token_id": "4022300179462793868052792387947393850993865701500806692081696308616137231946",
       "no_token_id": "74442835715368750659124471316165441515285062534296131983313818736460051750334",
       "model_prob": 0.0443,
       "side": "YES",
-      "ask": 0.006,
-      "market_prob": 0.006,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.0295,
-      "ev": 4.15,
-      "kelly": 0.0063,
+      "ev": 13.75,
+      "kelly": 0.0069,
       "sell_value": null,
-      "model_prob_change": -0.0012,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 24°C on October 11?",
@@ -148,22 +148,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.0195,
-      "no_price": 0.9745,
-      "volume": 492.0,
+      "yes_price": 0.0225,
+      "no_price": 0.9775,
+      "volume": 994.0,
       "spread": 0.0,
       "yes_token_id": "75334915590033394141586027076853144957702632796300193791883379615122136375855",
       "no_token_id": "25139759725754229586239375865047998084458645552707608527528235518178327942439",
       "model_prob": 0.1609,
       "side": "YES",
-      "ask": 0.0255,
-      "market_prob": 0.0255,
-      "belief_prob": 0.1114,
-      "ev": 3.451,
-      "kelly": 0.0226,
+      "ask": 0.0225,
+      "market_prob": 0.0225,
+      "belief_prob": 0.1125,
+      "ev": 4.0,
+      "kelly": 0.023,
       "sell_value": null,
-      "model_prob_change": -0.0037,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.003
     },
     {
       "question": "Will the highest temperature in Shanghai be 25°C on October 11?",
@@ -173,21 +173,21 @@
         25.0
       ],
       "yes_price": 0.395,
-      "no_price": 0.62,
-      "volume": 1397.0,
+      "no_price": 0.605,
+      "volume": 2333.0,
       "spread": 0.0,
       "yes_token_id": "17676177248048023095867845953279677082104233115535669425933777340645869738716",
       "no_token_id": "64194332606552336086351546310175076923032261769064826289737043253486606227617",
       "model_prob": 0.3506,
       "side": "YES",
-      "ask": 0.38,
-      "market_prob": 0.38,
+      "ask": 0.395,
+      "market_prob": 0.395,
       "belief_prob": 0.3661,
-      "ev": -0.0503,
+      "ev": -0.0732,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0022,
-      "yes_price_change": 0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 26°C on October 11?",
@@ -196,22 +196,22 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.535,
-      "no_price": 0.46,
-      "volume": 1305.0,
+      "yes_price": 0.53,
+      "no_price": 0.47,
+      "volume": 1744.0,
       "spread": 0.0,
       "yes_token_id": "50978354524910409933875112395659921128084114162428802397168825165236497300297",
       "no_token_id": "73034137698230013059150048422208430041396090050652938262937468412847872541387",
       "model_prob": 0.2878,
       "side": "YES",
-      "ask": 0.54,
-      "market_prob": 0.54,
-      "belief_prob": 0.3743,
-      "ev": -0.3035,
+      "ask": 0.53,
+      "market_prob": 0.53,
+      "belief_prob": 0.3726,
+      "ev": -0.297,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.004,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Shanghai be 27°C on October 11?",
@@ -221,21 +221,21 @@
         27.0
       ],
       "yes_price": 0.065,
-      "no_price": 0.92,
-      "volume": 793.0,
+      "no_price": 0.935,
+      "volume": 1241.0,
       "spread": 0.0,
       "yes_token_id": "80164153368415791899840052243692417487944103932839901218788274235243693220032",
       "no_token_id": "112436616690057198817344143073484758606605719423217149232901786577641390791181",
       "model_prob": 0.1014,
       "side": "YES",
-      "ask": 0.08,
-      "market_prob": 0.08,
+      "ask": 0.065,
+      "market_prob": 0.065,
       "belief_prob": 0.0887,
-      "ev": 0.1737,
-      "kelly": 0.0038,
+      "ev": 0.3646,
+      "kelly": 0.0063,
       "sell_value": null,
-      "model_prob_change": 0.0026,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 28°C on October 11?",
@@ -246,7 +246,7 @@
       ],
       "yes_price": 0.0115,
       "no_price": 0.9885,
-      "volume": 279.0,
+      "volume": 694.0,
       "spread": 0.0,
       "yes_token_id": "107434926245680926760665322620553227799136380315432960377355448526502895542641",
       "no_token_id": "76058815254287408929006383970820266344310448045796444737704890151881508390438",
@@ -258,7 +258,7 @@
       "ev": 0.8435,
       "kelly": 0.0025,
       "sell_value": null,
-      "model_prob_change": 0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -270,7 +270,7 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 477.0,
+      "volume": 734.0,
       "spread": 0.0,
       "yes_token_id": "35128117347393414152148329944677787591187400684211601144461676036050689347007",
       "no_token_id": "73165883290177917062630042734008120405664879913450240867783742582954276147821",
@@ -282,7 +282,7 @@
       "ev": 3.0,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-10T14:07:21.376517+00:00",
-  "last_lite_refresh": "2026-10-10T08:20:38.746585+00:00"
+  "last_lite_refresh": "2026-10-10T14:20:38.470147+00:00"
 }
