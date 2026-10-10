@@ -3,16 +3,16 @@
   "city_name": "Tokyo",
   "date": "2026-10-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-10T15:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
   "last_scan": "2026-10-10T02:20:42.362387+00:00",
-  "last_lite_refresh": "2026-10-10T14:20:38.470147+00:00",
+  "last_lite_refresh": "2026-10-10T20:20:40.123837+00:00",
   "forecast_mean": 17.66,
   "sigma": 1.685,
   "full_distribution": [
@@ -298,7 +298,10 @@
       "market_prob": 0.935,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.9
+      "sell_value": 0.9,
+      "won": true,
+      "pnl_units": 2.09,
+      "user_entered": false
     },
     {
       "market_id": "5423017",
@@ -314,7 +317,10 @@
       "market_prob": 0.065,
       "role": "scenario_hedge",
       "units": 1.39,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -1.39,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 31.4,
@@ -325,5 +331,50 @@
   "success_probability": 0.5121,
   "confidence": 0.7949,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 19.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.7,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5423017",
+      "question": "Will the lowest temperature in Tokyo be 19°C on October 10?",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "YES",
+      "price": 0.935,
+      "model_prob": 0.1535,
+      "ev": -0.5433,
+      "market_prob": 0.935,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.9,
+      "won": true,
+      "pnl_units": 2.09,
+      "user_entered": false
+    },
+    {
+      "market_id": "5423017",
+      "question": "Will the lowest temperature in Tokyo be 19°C on October 10? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.065,
+      "model_prob": 0.8465,
+      "ev": 7.8154,
+      "market_prob": 0.065,
+      "role": "scenario_hedge",
+      "units": 1.39,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -1.39,
+      "user_entered": false
+    }
+  ]
 }
