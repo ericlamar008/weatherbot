@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 52.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T07:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -29,14 +29,16 @@
       "spread": 0.0,
       "yes_token_id": "84554634224173459955888801423264465596866200123287951642612572014842824862187",
       "no_token_id": "131358476140818347152875053217380426866870704808513693197394746355355886405",
-      "model_prob": 0.0088,
+      "model_prob": 0.0729,
       "side": "YES",
       "ask": 0.0255,
       "market_prob": 0.0255,
-      "belief_prob": 0.0146,
-      "ev": -0.4275,
-      "kelly": 0.0,
-      "sell_value": null
+      "belief_prob": 0.0563,
+      "ev": 1.2078,
+      "kelly": 0.0079,
+      "sell_value": null,
+      "model_prob_change": 0.0641,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 50-51°F on October 12?",
@@ -51,14 +53,16 @@
       "spread": 0.0,
       "yes_token_id": "45282146899197065906855993075708282879659514910173573233316336518849124813220",
       "no_token_id": "85678007160988873668308265800767982368367682351724404127213504679738601755502",
-      "model_prob": 0.0055,
+      "model_prob": 0.0454,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.1208,
-      "ev": -0.6394,
+      "belief_prob": 0.1468,
+      "ev": -0.5618,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0399,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 52-53°F on October 12?",
@@ -73,14 +77,16 @@
       "spread": 0.0,
       "yes_token_id": "3945306886076966077312327164699628515130271529671277033458608988397782928786",
       "no_token_id": "80189517561056048394663942189716800806590042019399840835140648214972178827262",
-      "model_prob": 0.0148,
+      "model_prob": 0.1226,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.1269,
-      "ev": -0.6212,
+      "belief_prob": 0.1969,
+      "ev": -0.4122,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.1078,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 54-55°F on October 12?",
@@ -95,14 +101,16 @@
       "spread": 0.0,
       "yes_token_id": "115695260884179812793738177328812499069920164173975960491894265617615743577866",
       "no_token_id": "71281564631326569017260487921555775717694834061397010607038621089229082149405",
-      "model_prob": 0.0429,
+      "model_prob": 0.3542,
       "side": "YES",
       "ask": 0.335,
       "market_prob": 0.335,
-      "belief_prob": 0.1451,
-      "ev": -0.5669,
-      "kelly": 0.0,
-      "sell_value": null
+      "belief_prob": 0.3475,
+      "ev": 0.0373,
+      "kelly": 0.0047,
+      "sell_value": null,
+      "model_prob_change": 0.3113,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 66-67°F on October 12?",
@@ -117,14 +125,16 @@
       "spread": 0.0,
       "yes_token_id": "100404371063510758908104263080335214291785936012427573090113685822356918011972",
       "no_token_id": "43158526829212378434729987781329659893913245288230687607858252976315690929337",
-      "model_prob": 0.0214,
+      "model_prob": 0.1769,
       "side": "YES",
       "ask": 0.325,
       "market_prob": 0.325,
-      "belief_prob": 0.1277,
-      "ev": -0.6071,
+      "belief_prob": 0.2287,
+      "ev": -0.2963,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.1555,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be 68°F or higher on October 12?",
@@ -139,14 +149,16 @@
       "spread": 0.0,
       "yes_token_id": "16861743548153884280759147957855151016443926892046890617041035081005253891292",
       "no_token_id": "51564602536054806519151707196465248647972984105952279175234830850072765527690",
-      "model_prob": 0.0276,
+      "model_prob": 0.2278,
       "side": "YES",
       "ask": 0.0355,
       "market_prob": 0.0355,
-      "belief_prob": 0.0304,
-      "ev": -0.1437,
-      "kelly": 0.0,
-      "sell_value": null
+      "belief_prob": 0.1605,
+      "ev": 3.5211,
+      "kelly": 0.0324,
+      "sell_value": null,
+      "model_prob_change": 0.2002,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -159,5 +171,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }

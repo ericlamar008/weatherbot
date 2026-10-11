@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T05:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0082,
       "ev": -0.0353,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 80-81°F on October 12?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0083,
       "ev": -0.1263,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 82-83°F on October 12?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0273,
       "ev": 0.1143,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 84-85°F on October 12?",
@@ -95,19 +101,21 @@
         85.0
       ],
       "yes_price": 0.0305,
-      "no_price": 0.97,
+      "no_price": 0.9695,
       "volume": 1.0,
       "spread": 0.0,
       "yes_token_id": "112839426391908440725801794721933822701539406203550585836457245420998688811652",
       "no_token_id": "1398305439471303722288609031953433438146110515570054360743599642774677383682",
       "model_prob": 0.1153,
       "side": "YES",
-      "ask": 0.03,
-      "market_prob": 0.03,
+      "ask": 0.0305,
+      "market_prob": 0.0305,
       "belief_prob": 0.0856,
-      "ev": 1.8467,
-      "kelly": 0.0143,
-      "sell_value": null
+      "ev": 1.8066,
+      "kelly": 0.0142,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 86-87°F on October 12?",
@@ -117,19 +125,21 @@
         87.0
       ],
       "yes_price": 0.13,
-      "no_price": 0.875,
+      "no_price": 0.87,
       "volume": 61.0,
       "spread": 0.0,
       "yes_token_id": "58791146338341058624954356010927763331930599874392999533557417903395012057043",
       "no_token_id": "29582014083784631666493624976559376712108376228445864788119459629116875502267",
       "model_prob": 0.3289,
       "side": "YES",
-      "ask": 0.125,
-      "market_prob": 0.125,
+      "ask": 0.13,
+      "market_prob": 0.13,
       "belief_prob": 0.2593,
-      "ev": 1.06,
-      "kelly": 0.0379,
-      "sell_value": null
+      "ev": 0.9946,
+      "kelly": 0.0372,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 88-89°F on October 12?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.41,
       "no_price": 0.59,
-      "volume": 3488.0,
+      "volume": 3577.0,
       "spread": 0.0,
       "yes_token_id": "51978121654343565318318340164703607318416964115652850230846438791649186652115",
       "no_token_id": "104572902036289817522193018667110934330467304122482547495262812769250118917550",
@@ -151,7 +161,9 @@
       "belief_prob": 0.3652,
       "ev": -0.1093,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 90-91°F on October 12?",
@@ -161,19 +173,21 @@
         91.0
       ],
       "yes_price": 0.295,
-      "no_price": 0.71,
-      "volume": 1551.0,
+      "no_price": 0.705,
+      "volume": 1607.0,
       "spread": 0.0,
       "yes_token_id": "60330765183625629738781843936347308896205106364929548559200371278923481938007",
       "no_token_id": "102958033598309654187936188761648833960125285736101814436836244899699064958901",
       "model_prob": 0.1248,
       "side": "YES",
-      "ask": 0.29,
-      "market_prob": 0.29,
+      "ask": 0.295,
+      "market_prob": 0.295,
       "belief_prob": 0.1844,
-      "ev": -0.3703,
+      "ev": -0.3749,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 92-93°F on October 12?",
@@ -183,19 +197,21 @@
         93.0
       ],
       "yes_price": 0.1,
-      "no_price": 0.895,
+      "no_price": 0.9,
       "volume": 47.0,
       "spread": 0.0,
       "yes_token_id": "48702264079867695665435839607571184943315888686772289955001277585854775271902",
       "no_token_id": "46153418205196429809873911989034453299746884941860930444217328458204972690536",
       "model_prob": 0.0313,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.1,
+      "market_prob": 0.1,
       "belief_prob": 0.0553,
-      "ev": -0.4562,
+      "ev": -0.447,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 94-95°F on October 12?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0078,
       "ev": 0.1143,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 96-97°F on October 12?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0049,
       "ev": -0.4842,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be 98°F or higher on October 12?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0041,
       "ev": -0.2545,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }

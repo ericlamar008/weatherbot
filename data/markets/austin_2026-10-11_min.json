@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-10T02:20:42.362387+00:00",
   "committed_allocation": null,
-  "hours_left": 26.7,
+  "hours_left": 26.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T05:00:00+00:00",
   "event_end_date": "2026-10-11T12:00:00Z",
   "last_scan": "2026-10-11T02:20:38.395540+00:00",
   "skipped_reason": "event volume 252 < min_volume 500",
-  "last_lite_refresh": "2026-10-10T20:20:40.123837+00:00"
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00",
+  "forecast_mean": 68.49,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be between 60-61°F on October 11?",
+      "market_id": "5451475",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 71.0,
+      "spread": 0.0,
+      "yes_token_id": "109392463760652904222188041013677866947070716238610757998624533932297741224104",
+      "no_token_id": "32646577832603908027239526126618614256748927937441910344300337064354328247040",
+      "model_prob": 0.19,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.2373,
+      "ev": -0.2698,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be between 62-63°F on October 11?",
+      "market_id": "5451476",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "27985383193707054779741855730098132320062692887626576937287790500500879072156",
+      "no_token_id": "90923523128401605143762103586560788550535211891470053266287424779471838321005",
+      "model_prob": 0.5403,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.4684,
+      "ev": 0.3982,
+      "kelly": 0.0502,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Austin be 78°F or higher on October 11?",
+      "market_id": "5451484",
+      "range": [
+        78.0,
+        999.0
+      ],
+      "yes_price": 0.49,
+      "no_price": 0.51,
+      "volume": 121.0,
+      "spread": 0.0,
+      "yes_token_id": "10141807625394657268509414175783668592279622498284544652074442263168843205258",
+      "no_token_id": "75840375946367825267506895395730175898531886800398531697100387118246258327293",
+      "model_prob": 0.2697,
+      "side": "YES",
+      "ask": 0.49,
+      "market_prob": 0.49,
+      "belief_prob": 0.3468,
+      "ev": -0.2922,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

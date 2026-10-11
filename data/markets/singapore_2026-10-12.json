@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T16:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0013,
       "ev": -0.35,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 27°C on October 12?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0019,
       "ev": -0.24,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 28°C on October 12?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0064,
       "ev": -0.1467,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 29°C on October 12?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0179,
       "ev": 6.16,
       "kelly": 0.0039,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 30°C on October 12?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.087,
       "ev": 8.1579,
       "kelly": 0.0196,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 31°C on October 12?",
@@ -138,20 +148,22 @@
         31.0,
         31.0
       ],
-      "yes_price": 0.0385,
-      "no_price": 0.962,
-      "volume": 151.0,
+      "yes_price": 0.039,
+      "no_price": 0.961,
+      "volume": 189.0,
       "spread": 0.0,
       "yes_token_id": "25542680353400243752182325702284031671210767929868470531086810462271484484743",
       "no_token_id": "10449199760635550107836690001866520892098444709622679069910691316753088171228",
       "model_prob": 0.3874,
       "side": "YES",
-      "ask": 0.038,
-      "market_prob": 0.038,
-      "belief_prob": 0.2653,
-      "ev": 5.9763,
-      "kelly": 0.059,
-      "sell_value": null
+      "ask": 0.039,
+      "market_prob": 0.039,
+      "belief_prob": 0.2655,
+      "ev": 5.8077,
+      "kelly": 0.0589,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Singapore be 32°C on October 12?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.285,
       "no_price": 0.715,
-      "volume": 161.0,
+      "volume": 167.0,
       "spread": 0.0,
       "yes_token_id": "5242414142338426351126193640857691871240693803656987099533925426743104868475",
       "no_token_id": "40414815134737633486891293141550014267322859276572543876609153343303160078318",
@@ -173,7 +185,9 @@
       "belief_prob": 0.3159,
       "ev": 0.1084,
       "kelly": 0.0108,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 33°C on October 12?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.2732,
       "ev": -0.5521,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 34°C on October 12?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0435,
       "ev": -0.5167,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 35°C on October 12?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0051,
       "ev": -0.2154,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 36°C or higher on October 12?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0029,
       "ev": -0.3556,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }

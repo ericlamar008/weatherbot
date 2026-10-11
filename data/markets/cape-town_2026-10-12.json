@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T22:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0126,
       "ev": 0.9385,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 15°C on October 12?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0165,
       "ev": 1.5385,
       "kelly": 0.0025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 16°C on October 12?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0394,
       "ev": 4.2533,
       "kelly": 0.008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 17°C on October 12?",
@@ -95,19 +101,21 @@
         17.0
       ],
       "yes_price": 0.052,
-      "no_price": 0.9465,
+      "no_price": 0.948,
       "volume": 126.0,
       "spread": 0.0,
       "yes_token_id": "96308833776491188097294834238754516467390328623502573261570553654887092409727",
       "no_token_id": "62819884259461562055982215522985118744194520721642136658999175766364148035282",
       "model_prob": 0.1338,
       "side": "YES",
-      "ask": 0.0535,
-      "market_prob": 0.0535,
+      "ask": 0.052,
+      "market_prob": 0.052,
       "belief_prob": 0.1052,
-      "ev": 0.9757,
-      "kelly": 0.0138,
-      "sell_value": null
+      "ev": 1.0231,
+      "kelly": 0.014,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 18°C on October 12?",
@@ -117,19 +125,21 @@
         18.0
       ],
       "yes_price": 0.185,
-      "no_price": 0.805,
-      "volume": 427.0,
+      "no_price": 0.815,
+      "volume": 473.0,
       "spread": 0.0,
       "yes_token_id": "88851790618900330572707393549487851513620511978349695004152900882794882839362",
       "no_token_id": "105520104121645061633815985229917245611888332799122006925609034387356380292903",
       "model_prob": 0.2367,
       "side": "YES",
-      "ask": 0.195,
-      "market_prob": 0.195,
+      "ask": 0.185,
+      "market_prob": 0.185,
       "belief_prob": 0.2186,
-      "ev": 0.139,
-      "kelly": 0.0084,
-      "sell_value": null
+      "ev": 0.1816,
+      "kelly": 0.0103,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 19°C on October 12?",
@@ -139,19 +149,21 @@
         19.0
       ],
       "yes_price": 0.355,
-      "no_price": 0.65,
+      "no_price": 0.645,
       "volume": 317.0,
       "spread": 0.0,
       "yes_token_id": "15291766640366694773526981164534594388397977765522812682014608558833564378376",
       "no_token_id": "57939046739051413955196763421826154026903242939399539222678951719454750714786",
       "model_prob": 0.2544,
       "side": "YES",
-      "ask": 0.35,
-      "market_prob": 0.35,
+      "ask": 0.355,
+      "market_prob": 0.355,
       "belief_prob": 0.2896,
-      "ev": -0.1774,
+      "ev": -0.1842,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 20°C on October 12?",
@@ -161,19 +173,21 @@
         20.0
       ],
       "yes_price": 0.305,
-      "no_price": 0.7,
+      "no_price": 0.695,
       "volume": 850.0,
       "spread": 0.0,
       "yes_token_id": "7038940698180464818145724298136800673569736160430580394149611363588269233694",
       "no_token_id": "24327784457020436673813921748058245534112625245645165069658952695328213301094",
       "model_prob": 0.1612,
       "side": "YES",
-      "ask": 0.3,
-      "market_prob": 0.3,
+      "ask": 0.305,
+      "market_prob": 0.305,
       "belief_prob": 0.2115,
-      "ev": -0.3007,
+      "ev": -0.3066,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 21°C on October 12?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0782,
       "ev": -0.1311,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 22°C on October 12?",
@@ -205,19 +221,21 @@
         22.0
       ],
       "yes_price": 0.012,
-      "no_price": 0.9875,
+      "no_price": 0.988,
       "volume": 76.0,
       "spread": 0.0,
       "yes_token_id": "97202022075714402675871397967012822499288882545710316358148479703946388520326",
       "no_token_id": "41308438459894638505319616090638071741364543518066746644310238945384747720771",
       "model_prob": 0.028,
       "side": "YES",
-      "ask": 0.0125,
-      "market_prob": 0.0125,
+      "ask": 0.012,
+      "market_prob": 0.012,
       "belief_prob": 0.0224,
-      "ev": 0.808,
+      "ev": 0.8667,
       "kelly": 0.0026,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 23°C on October 12?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0082,
       "ev": 1.7333,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 24°C or higher on October 12?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0087,
       "ev": 0.0235,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }

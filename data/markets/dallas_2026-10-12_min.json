@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T05:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
   "last_scan": "2026-10-11T02:20:38.395540+00:00",
-  "skipped_reason": "event volume 314 < min_volume 500"
+  "skipped_reason": "event volume 314 < min_volume 500",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00",
+  "forecast_mean": 69.21,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be 61°F or below on October 12?",
+      "market_id": "5483062",
+      "range": [
+        -999.0,
+        61.0
+      ],
+      "yes_price": 0.0215,
+      "no_price": 0.9785,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "6833746092124178061269089435704332706964744542128332088743773369399428013568",
+      "no_token_id": "106142384763622895221257556529999215073722309420263508067506318467224799707166",
+      "model_prob": 0.1007,
+      "side": "YES",
+      "ask": 0.0215,
+      "market_prob": 0.0215,
+      "belief_prob": 0.073,
+      "ev": 2.3953,
+      "kelly": 0.0132,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 62-63°F on October 12?",
+      "market_id": "5483063",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 132.0,
+      "spread": 0.0,
+      "yes_token_id": "65804211576847242372716084277046995184498150747194875864568182747432080442535",
+      "no_token_id": "107494807180263830497218294968744992018168930578233029221039676252780963388899",
+      "model_prob": 0.0778,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1678,
+      "ev": -0.4991,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 64-65°F on October 12?",
+      "market_id": "5483064",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 67.0,
+      "spread": 0.0,
+      "yes_token_id": "89494541883907776462670874493464501748178382482292497588758124641261430456635",
+      "no_token_id": "112624182796452972829192901183514225716677036993262691369573204837797813430578",
+      "model_prob": 0.2261,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.2642,
+      "ev": -0.2113,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 66-67°F on October 12?",
+      "market_id": "5483065",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 67.0,
+      "spread": 0.0,
+      "yes_token_id": "5189020409747502227202649546693808980274903353562133803381448137178807858849",
+      "no_token_id": "4645737255012830397325212571317029450832252511489722429952165776429242650738",
+      "model_prob": 0.5955,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.5043,
+      "ev": 0.5054,
+      "kelly": 0.0636,
+      "sell_value": null
+    }
+  ]
 }

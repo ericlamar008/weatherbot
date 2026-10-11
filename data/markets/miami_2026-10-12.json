@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T04:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0066,
       "ev": 12.2,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 80-81°F on October 12?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0045,
       "ev": 8.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 82-83°F on October 12?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0152,
       "ev": 0.9,
       "kelly": 0.0018,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 84-85°F on October 12?",
@@ -96,7 +102,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 217.0,
+      "volume": 230.0,
       "spread": 0.0,
       "yes_token_id": "81004896854495649074104968389177740490424776496829086589349617880167797133453",
       "no_token_id": "51543581177280225549700474260404306514376411610126627943778309972549601257847",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0378,
       "ev": 24.2,
       "kelly": 0.0091,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 86-87°F on October 12?",
@@ -117,19 +125,21 @@
         87.0
       ],
       "yes_price": 0.0295,
-      "no_price": 0.971,
-      "volume": 372.0,
+      "no_price": 0.9705,
+      "volume": 385.0,
       "spread": 0.0,
       "yes_token_id": "48003635769685049650609721495599658915044951999004168141173221868150182446871",
       "no_token_id": "25230157752777960773770155560628980118642464841006461982240642419982019057157",
       "model_prob": 0.1592,
       "side": "YES",
-      "ask": 0.029,
-      "market_prob": 0.029,
+      "ask": 0.0295,
+      "market_prob": 0.0295,
       "belief_prob": 0.1138,
-      "ev": 2.9172,
-      "kelly": 0.0218,
-      "sell_value": null
+      "ev": 2.8576,
+      "kelly": 0.0217,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 12?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.3,
       "no_price": 0.7,
-      "volume": 5033.0,
+      "volume": 5395.0,
       "spread": 0.0,
       "yes_token_id": "62382756406605779129801168332759683208066633844930577267580039407944740241041",
       "no_token_id": "99641366403949705350420316845479020487912247136821275773025108001508772164761",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2958,
       "ev": -0.014,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 12?",
@@ -161,19 +173,21 @@
         91.0
       ],
       "yes_price": 0.59,
-      "no_price": 0.415,
-      "volume": 1201.0,
+      "no_price": 0.41,
+      "volume": 1230.0,
       "spread": 0.0,
       "yes_token_id": "104797885750396515540114677844269406824127800998537019237705121369108189156279",
       "no_token_id": "82743169699468982317080200212603645122242557953725834696232088739321803571628",
       "model_prob": 0.2612,
       "side": "YES",
-      "ask": 0.585,
-      "market_prob": 0.585,
+      "ask": 0.59,
+      "market_prob": 0.59,
       "belief_prob": 0.3763,
-      "ev": -0.3598,
+      "ev": -0.3622,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 92-93°F on October 12?",
@@ -184,7 +198,7 @@
       ],
       "yes_price": 0.095,
       "no_price": 0.905,
-      "volume": 306.0,
+      "volume": 319.0,
       "spread": 0.0,
       "yes_token_id": "89979675258840616428507083428152782511358233241569839396462393578354807455834",
       "no_token_id": "112267214258528970649606703129011173652949001237825132519883331307372780921564",
@@ -195,7 +209,9 @@
       "belief_prob": 0.1114,
       "ev": 0.1726,
       "kelly": 0.0045,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on October 12?",
@@ -206,7 +222,7 @@
       ],
       "yes_price": 0.012,
       "no_price": 0.988,
-      "volume": 176.0,
+      "volume": 189.0,
       "spread": 0.0,
       "yes_token_id": "66386366640301598242209314524535744565570494471737584354713243395860360556987",
       "no_token_id": "17667166108444210068427671030347475204635572000982872820036756927402194413432",
@@ -217,7 +233,9 @@
       "belief_prob": 0.031,
       "ev": 1.5833,
       "kelly": 0.0048,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 96-97°F on October 12?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.005,
       "no_price": 0.995,
-      "volume": 201.0,
+      "volume": 214.0,
       "spread": 0.0,
       "yes_token_id": "33386627870407247883310837007583316557769804245232756019623208044924210263125",
       "no_token_id": "112856724968280095469369434347578712783666531519305346934089774712501706736091",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0107,
       "ev": 1.14,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 98°F or higher on October 12?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0119,
       "ev": 22.8,
       "kelly": 0.0029,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }

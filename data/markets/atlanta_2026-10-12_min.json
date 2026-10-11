@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T04:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
   "last_scan": "2026-10-11T02:20:38.395540+00:00",
-  "skipped_reason": "event volume 48 < min_volume 500"
+  "skipped_reason": "event volume 48 < min_volume 500",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00",
+  "forecast_mean": 60.57,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Atlanta be 74°F or higher on October 12?",
+      "market_id": "5483083",
+      "range": [
+        74.0,
+        999.0
+      ],
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "6109348634307385585808444445312070424682916302159423274911419628720921928794",
+      "no_token_id": "58906011462961384131840941262695745749107457723972180513054385223630300015741",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.657,
+      "ev": 31.85,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

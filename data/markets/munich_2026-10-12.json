@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T22:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0073,
       "ev": 3.8667,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 9°C on October 12?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0064,
       "ev": 1.56,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 10°C on October 12?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0118,
       "ev": 3.72,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 11°C on October 12?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0244,
       "ev": 2.4857,
       "kelly": 0.0044,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 12°C on October 12?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.0445,
       "ev": 8.8889,
       "kelly": 0.01,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 13°C on October 12?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.0888,
       "ev": 1.5371,
       "kelly": 0.0139,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 14°C on October 12?",
@@ -174,7 +186,9 @@
       "belief_prob": 0.2672,
       "ev": -0.3927,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 15°C on October 12?",
@@ -183,20 +197,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.47,
-      "no_price": 0.53,
+      "yes_price": 0.475,
+      "no_price": 0.525,
       "volume": 572.0,
       "spread": 0.0,
       "yes_token_id": "209663584194262201366875002669462910472549610706405442875091670137575850302",
       "no_token_id": "82392550250770260316771472321697384495065594589653247428160362097712120268094",
       "model_prob": 0.1951,
       "side": "YES",
-      "ask": 0.47,
-      "market_prob": 0.47,
-      "belief_prob": 0.2913,
-      "ev": -0.3802,
+      "ask": 0.475,
+      "market_prob": 0.475,
+      "belief_prob": 0.2931,
+      "ev": -0.3829,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Munich be 16°C on October 12?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.1326,
       "ev": 0.6575,
       "kelly": 0.0143,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 17°C on October 12?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0676,
       "ev": 26.04,
       "kelly": 0.0163,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 18°C or higher on October 12?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0758,
       "ev": 14.16,
       "kelly": 0.0178,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00"
+  "last_price_refresh": "2026-10-11T02:52:22.118354+00:00",
+  "last_lite_refresh": "2026-10-11T02:53:01.572228+00:00"
 }
