@@ -3,16 +3,16 @@
   "city_name": "Seoul",
   "date": "2026-10-11",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-10T02:20:42.362387+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-11T15:00:00+00:00",
   "event_end_date": "2026-10-11T12:00:00Z",
   "last_scan": "2026-10-11T02:20:38.395540+00:00",
-  "last_lite_refresh": "2026-10-11T14:20:37.588430+00:00",
+  "last_lite_refresh": "2026-10-11T20:20:38.747504+00:00",
   "forecast_mean": 15.59,
   "sigma": 0.825,
   "full_distribution": [
@@ -298,7 +298,10 @@
       "market_prob": 0.985,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.971
+      "sell_value": 0.971,
+      "won": true,
+      "pnl_units": 0.46,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -309,5 +312,31 @@
   "success_probability": 0.6572,
   "confidence": 0.7786,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 16.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.46,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5448640",
+      "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 11?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.985,
+      "model_prob": 0.3792,
+      "ev": -0.3998,
+      "market_prob": 0.985,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.971,
+      "won": true,
+      "pnl_units": 0.46,
+      "user_entered": false
+    }
+  ]
 }
