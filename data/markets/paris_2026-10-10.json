@@ -3,14 +3,14 @@
   "city_name": "Paris",
   "date": "2026-10-10",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-08T18:28:05.856221+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-10T22:00:00+00:00",
   "event_end_date": "2026-10-10T12:00:00Z",
-  "last_scan": "2026-10-10T02:20:42.362387+00:00",
+  "last_scan": "2026-10-11T02:20:38.395540+00:00",
   "horizon_days": 0,
   "forecast_mean": 17.02,
   "sigma": 0.916,
@@ -302,7 +302,10 @@
       "market_prob": 0.625,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.6
+      "sell_value": 0.6,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "5423650",
@@ -318,7 +321,10 @@
       "market_prob": 0.375,
       "role": "scenario_hedge",
       "units": 12.0,
-      "sell_value": 0.35
+      "sell_value": 0.35,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 42.0,
@@ -331,5 +337,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-11T02:07:20.258804+00:00",
-  "last_lite_refresh": "2026-10-10T20:20:40.123837+00:00"
+  "last_lite_refresh": "2026-10-10T20:20:40.123837+00:00",
+  "actual_temp": 18.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5423650",
+      "question": "Will the highest temperature in Paris be 17°C on October 10?",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "YES",
+      "price": 0.625,
+      "model_prob": 0.3839,
+      "ev": -0.2507,
+      "market_prob": 0.625,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.6,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "5423650",
+      "question": "Will the highest temperature in Paris be 17°C on October 10? (NO)",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "NO",
+      "price": 0.375,
+      "model_prob": 0.6161,
+      "ev": 0.4179,
+      "market_prob": 0.375,
+      "role": "scenario_hedge",
+      "units": 12.0,
+      "sell_value": 0.35,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
+    }
+  ]
 }
