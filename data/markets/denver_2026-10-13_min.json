@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 39.7,
+  "hours_left": 33.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T06:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-12T14:20:41.367532+00:00"
+  "last_lite_refresh": "2026-10-12T20:20:40.384286+00:00",
+  "forecast_mean": 48.94,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be 62°F or higher on October 13?",
+      "market_id": "5540552",
+      "range": [
+        62.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 2.0,
+      "spread": 0.0,
+      "yes_token_id": "75068964703730401176577643373287630710436709402004576969008808206564323215893",
+      "no_token_id": "20630410918975335096132665199899156708409751568253104199723252317694835159875",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.6519,
+      "ev": 117.5273,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
