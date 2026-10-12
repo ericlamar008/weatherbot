@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T04:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
-  "skipped_reason": "event volume 122 < min_volume 500"
+  "skipped_reason": "event volume 122 < min_volume 500",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00",
+  "forecast_mean": 59.33,
+  "sigma": 2.826,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be 51°F or below on October 13?",
+      "market_id": "5540476",
+      "range": [
+        -999.0,
+        51.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 42.0,
+      "spread": 0.0,
+      "yes_token_id": "17577405852552112664329487202954634203347910598482050872159723799091371895470",
+      "no_token_id": "1414370707423732754099884468328225996409102496006548382264770608088910310459",
+      "model_prob": 0.4032,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.271,
+      "ev": 9.6275,
+      "kelly": 0.063,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 64-65°F on October 13?",
+      "market_id": "5540483",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "80672312808684926833403935166765427386498859830167939592815343658207300421522",
+      "no_token_id": "25563346085144022009074640069100162669233665581253778991233577376756948880843",
+      "model_prob": 0.5968,
+      "side": "YES",
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.5069,
+      "ev": 0.4909,
+      "kelly": 0.0632,
+      "sell_value": null
+    }
+  ]
 }

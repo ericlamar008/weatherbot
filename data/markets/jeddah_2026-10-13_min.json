@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 42.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T21:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
-  "skipped_reason": "event volume 90 < min_volume 500"
+  "skipped_reason": "event volume 90 < min_volume 500",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00",
+  "forecast_mean": 27.08,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 28°C on October 13?",
+      "market_id": "5538177",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 90.0,
+      "spread": 0.0,
+      "yes_token_id": "88215225127112626904743681655846910185660663926828888181854215170662336272951",
+      "no_token_id": "71201933412272909025870498201002045592683268130298122287594104713015702652095",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.7638,
+      "ev": 1.3502,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

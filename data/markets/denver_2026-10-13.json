@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 51.7,
+  "hours_left": 51.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T06:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.2682,
       "ev": 0.5326,
       "kelly": 0.0282,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 62-63°F on October 13?",
@@ -51,17 +53,41 @@
         63.0
       ],
       "yes_price": 0.165,
-      "no_price": 0.805,
+      "no_price": 0.835,
       "volume": 36.0,
       "spread": 0.0,
       "yes_token_id": "5279510532374919904387791669826077009628452012277015500543158538606219806552",
       "no_token_id": "91674750498127929437915328867223101267611623535336622866788971334907282142459",
       "model_prob": 0.0849,
       "side": "YES",
-      "ask": 0.195,
-      "market_prob": 0.195,
+      "ask": 0.165,
+      "market_prob": 0.165,
       "belief_prob": 0.1129,
-      "ev": -0.3672,
+      "ev": -0.3158,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Denver be between 64-65°F on October 13?",
+      "market_id": "5540837",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "40149897464869605635612579051596536595315634736954168057942150898688425901451",
+      "no_token_id": "74619732005825983640236617819999907471288759964530324975773525356913865176308",
+      "model_prob": 0.1077,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.1505,
+      "ev": -0.3457,
       "kelly": 0.0,
       "sell_value": null
     },
@@ -73,19 +99,21 @@
         67.0
       ],
       "yes_price": 0.165,
-      "no_price": 0.865,
+      "no_price": 0.835,
       "volume": 981.0,
       "spread": 0.0,
       "yes_token_id": "28099371808559680065756434907218096853685983984807722026948745944465998098382",
       "no_token_id": "11884001364715332844664130223432335384832518660053161542124559937550892091339",
       "model_prob": 0.1169,
       "side": "YES",
-      "ask": 0.135,
-      "market_prob": 0.135,
+      "ask": 0.165,
+      "market_prob": 0.165,
       "belief_prob": 0.1337,
-      "ev": -0.0874,
+      "ev": -0.1897,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 68-69°F on October 13?",
@@ -95,19 +123,21 @@
         69.0
       ],
       "yes_price": 0.155,
-      "no_price": 0.855,
+      "no_price": 0.845,
       "volume": 445.0,
       "spread": 0.0,
       "yes_token_id": "14565448140221334611989154470053526334038887869811598978259088644929838962429",
       "no_token_id": "56181195886309750563977194843954505839577796060379688516294991798815198840590",
       "model_prob": 0.1073,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
+      "ask": 0.155,
+      "market_prob": 0.155,
       "belief_prob": 0.124,
-      "ev": -0.169,
+      "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 70-71°F on October 13?",
@@ -117,19 +147,21 @@
         71.0
       ],
       "yes_price": 0.09,
-      "no_price": 0.895,
-      "volume": 845.0,
+      "no_price": 0.91,
+      "volume": 1037.0,
       "spread": 0.0,
       "yes_token_id": "4497918594670709195104096435462171369697775633716087918596105098845355542913",
       "no_token_id": "50618121163856287575314383705056294861622649010982914795767122180485971447044",
       "model_prob": 0.0844,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.09,
+      "market_prob": 0.09,
       "belief_prob": 0.0864,
-      "ev": -0.1276,
+      "ev": -0.04,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 72-73°F on October 13?",
@@ -151,7 +183,9 @@
       "belief_prob": 0.0485,
       "ev": 0.6441,
       "kelly": 0.0049,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 74-75°F on October 13?",
@@ -173,7 +207,9 @@
       "belief_prob": 0.0386,
       "ev": -0.035,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 76-77°F on October 13?",
@@ -195,7 +231,9 @@
       "belief_prob": 0.0158,
       "ev": 6.9,
       "kelly": 0.0035,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 78-79°F on October 13?",
@@ -217,7 +255,9 @@
       "belief_prob": 0.011,
       "ev": 1.0,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be 80°F or higher on October 13?",
@@ -239,7 +279,9 @@
       "belief_prob": 0.0305,
       "ev": 60.0,
       "kelly": 0.0075,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -285,5 +327,6 @@
   "confidence": 0.4489,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00"
+  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00"
 }

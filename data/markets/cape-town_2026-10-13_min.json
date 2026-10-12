@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T22:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
-  "skipped_reason": "event volume 10 < min_volume 500"
+  "skipped_reason": "event volume 10 < min_volume 500",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00",
+  "forecast_mean": 12.34,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 13°C on October 13?",
+      "market_id": "5538188",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "25042456168051985065353532275064942131664376661339144234974267597644340951386",
+      "no_token_id": "112794594354117914537061249532516862409125775980290531578982069877589536562777",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.7672,
+      "ev": 1.2901,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 42.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T21:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -14,7 +14,7 @@
   "horizon_days": 1,
   "forecast_mean": 36.52,
   "sigma": 1.058,
-  "forecast_mean_shadow": 35.44,
+  "forecast_mean_shadow": 35.47,
   "model_means_raw": {
     "ecmwf": 37.32,
     "gfs": 36.35,
@@ -41,7 +41,9 @@
       "belief_prob": 0.0021,
       "ev": -0.58,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 30°C on October 13?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0009,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 31°C on October 13?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 32°C on October 13?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0058,
       "ev": -0.3895,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 33°C on October 13?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0035,
       "no_price": 0.9965,
-      "volume": 306.0,
+      "volume": 309.0,
       "spread": 0.0,
       "yes_token_id": "68801349504746560385267680990398302907329184487080840972091822656666956121495",
       "no_token_id": "68711618232589760156154822609169214625397231130665402662980609590924416603712",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0087,
       "ev": 1.4857,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 34°C on October 13?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.0449,
       "ev": -0.1836,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 35°C on October 13?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.1771,
       "ev": -0.3188,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 36°C on October 13?",
@@ -183,19 +197,21 @@
         36.0
       ],
       "yes_price": 0.455,
-      "no_price": 0.55,
-      "volume": 127.0,
+      "no_price": 0.545,
+      "volume": 161.0,
       "spread": 0.0,
       "yes_token_id": "9930274470765170260884696859443822829700410961245007692910447987631781578700",
       "no_token_id": "37502894392723532548182316555098267879043305228263080989823571224489316627863",
       "model_prob": 0.3032,
       "side": "YES",
-      "ask": 0.45,
-      "market_prob": 0.45,
+      "ask": 0.455,
+      "market_prob": 0.455,
       "belief_prob": 0.3563,
-      "ev": -0.212,
+      "ev": -0.2169,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 37°C on October 13?",
@@ -204,20 +220,22 @@
         37.0,
         37.0
       ],
-      "yes_price": 0.2,
-      "no_price": 0.8,
+      "yes_price": 0.19,
+      "no_price": 0.81,
       "volume": 143.0,
       "spread": 0.0,
       "yes_token_id": "31305727234776838800187454101319504408864990509047501719455729281657635884713",
       "no_token_id": "1109406344798469431916366755448669938104794678428588453972065060450771019664",
       "model_prob": 0.3088,
       "side": "YES",
-      "ask": 0.2,
-      "market_prob": 0.2,
-      "belief_prob": 0.2707,
-      "ev": 0.3535,
-      "kelly": 0.0221,
-      "sell_value": null
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.2672,
+      "ev": 0.4063,
+      "kelly": 0.0238,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Jeddah be 38°C on October 13?",
@@ -227,19 +245,21 @@
         38.0
       ],
       "yes_price": 0.0375,
-      "no_price": 0.9545,
+      "no_price": 0.9625,
       "volume": 214.0,
       "spread": 0.0,
       "yes_token_id": "20781692544234721179587953786858553901492676858539136733498051047395080368140",
       "no_token_id": "112195018445677706762249908396409775555859829391663299921955336879157903465936",
       "model_prob": 0.1383,
       "side": "YES",
-      "ask": 0.0455,
-      "market_prob": 0.0455,
+      "ask": 0.0375,
+      "market_prob": 0.0375,
       "belief_prob": 0.103,
-      "ev": 1.3253,
-      "kelly": 0.0158,
-      "sell_value": null
+      "ev": 1.7467,
+      "kelly": 0.017,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 39°C or higher on October 13?",
@@ -250,7 +270,7 @@
       ],
       "yes_price": 0.012,
       "no_price": 0.988,
-      "volume": 37.0,
+      "volume": 41.0,
       "spread": 0.0,
       "yes_token_id": "15685968917787969293606549263103884215815818686764656962372492184415295531818",
       "no_token_id": "40903104752360756261473895927105677970582165933946340982786389497495175166544",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0433,
       "ev": 2.6083,
       "kelly": 0.0079,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00"
+  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00"
 }

@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T05:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
-  "skipped_reason": "event volume 30 < min_volume 500"
+  "skipped_reason": "event volume 30 < min_volume 500",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00",
+  "forecast_mean": 78.41,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Houston be 71°F or below on October 13?",
+      "market_id": "5540553",
+      "range": [
+        -999.0,
+        71.0
+      ],
+      "yes_price": 0.495,
+      "no_price": 0.505,
+      "volume": 30.0,
+      "spread": 0.0,
+      "yes_token_id": "69417809474712061971302977450322778842254631870785555243941449324576080729141",
+      "no_token_id": "78214683163346585582937297205331071730974444338236793200160407761269518892560",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.495,
+      "market_prob": 0.495,
+      "belief_prob": 0.8233,
+      "ev": 0.6632,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

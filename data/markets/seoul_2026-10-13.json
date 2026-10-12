@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 36.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T15:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0043,
       "ev": -0.14,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 17°C on October 13?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0028,
       "ev": 4.6,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 18°C on October 13?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0065,
       "ev": 12.0,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 19°C on October 13?",
@@ -95,19 +101,21 @@
         19.0
       ],
       "yes_price": 0.0105,
-      "no_price": 0.988,
+      "no_price": 0.9895,
       "volume": 409.0,
       "spread": 0.0,
       "yes_token_id": "31738159174187317731071191741383038875041027714660213320173948326804937377956",
       "no_token_id": "108490164365611778320935476811970439251534087794431538321308689671599721787077",
       "model_prob": 0.0248,
       "side": "YES",
-      "ask": 0.012,
-      "market_prob": 0.012,
+      "ask": 0.0105,
+      "market_prob": 0.0105,
       "belief_prob": 0.0198,
-      "ev": 0.6917,
-      "kelly": 0.0021,
-      "sell_value": null
+      "ev": 0.8857,
+      "kelly": 0.0023,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 20°C on October 13?",
@@ -117,19 +125,21 @@
         20.0
       ],
       "yes_price": 0.15,
-      "no_price": 0.84,
-      "volume": 2693.0,
+      "no_price": 0.85,
+      "volume": 2704.0,
       "spread": 0.0,
       "yes_token_id": "61692666554958407614219142047512061057207977992265666077619444900634655358541",
       "no_token_id": "25952920900365920202076677706354595622961284279336905078838783630747213364622",
       "model_prob": 0.0636,
       "side": "YES",
-      "ask": 0.16,
-      "market_prob": 0.16,
+      "ask": 0.15,
+      "market_prob": 0.15,
       "belief_prob": 0.0938,
-      "ev": -0.3919,
+      "ev": -0.3747,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 21°C on October 13?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.445,
       "no_price": 0.555,
-      "volume": 830.0,
+      "volume": 837.0,
       "spread": 0.0,
       "yes_token_id": "88158684836616564896644071105073064207592624766419958404511381136674544114928",
       "no_token_id": "31912326125618130102441072132820538941748629934771549954247860143078210263453",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2508,
       "ev": -0.4364,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 22°C on October 13?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.2763,
       "ev": -0.1752,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 23°C on October 13?",
@@ -183,19 +197,21 @@
         23.0
       ],
       "yes_price": 0.05,
-      "no_price": 0.955,
-      "volume": 353.0,
+      "no_price": 0.95,
+      "volume": 373.0,
       "spread": 0.0,
       "yes_token_id": "91168238141643786002802186938786551978105921068716073023518164780922459901978",
       "no_token_id": "5486587545383895132263487684027007929873196271456197697452013071375981847974",
       "model_prob": 0.246,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
+      "ask": 0.05,
+      "market_prob": 0.05,
       "belief_prob": 0.1774,
-      "ev": 2.9044,
-      "kelly": 0.0342,
-      "sell_value": null
+      "ev": 2.548,
+      "kelly": 0.0335,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 24°C on October 13?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0985,
       "ev": 15.4167,
       "kelly": 0.0233,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 25°C on October 13?",
@@ -227,19 +245,21 @@
         25.0
       ],
       "yes_price": 0.004,
-      "no_price": 0.9955,
-      "volume": 252.0,
+      "no_price": 0.996,
+      "volume": 322.0,
       "spread": 0.0,
       "yes_token_id": "42038910782842753044053900649620830300869782979138518845419530248351032477915",
       "no_token_id": "6275659227039817581142955565808170891714572011448619628394839574199928049130",
       "model_prob": 0.0648,
       "side": "YES",
-      "ask": 0.0045,
-      "market_prob": 0.0045,
+      "ask": 0.004,
+      "market_prob": 0.004,
       "belief_prob": 0.0435,
-      "ev": 8.7111,
-      "kelly": 0.0098,
-      "sell_value": null
+      "ev": 9.875,
+      "kelly": 0.0099,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 26°C or higher on October 13?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0301,
       "ev": 5.02,
       "kelly": 0.0063,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00"
+  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00"
 }

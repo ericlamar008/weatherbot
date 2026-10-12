@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 51.7,
+  "hours_left": 51.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T06:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0028,
       "ev": 4.6,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 17°C on October 13?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0042,
       "ev": 1.1,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 18°C on October 13?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0103,
       "ev": 4.15,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 19°C on October 13?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0286,
       "ev": 56.2,
       "kelly": 0.007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 20°C on October 13?",
@@ -117,19 +125,21 @@
         20.0
       ],
       "yes_price": 0.0085,
-      "no_price": 0.9905,
-      "volume": 51.0,
+      "no_price": 0.9915,
+      "volume": 65.0,
       "spread": 0.0,
       "yes_token_id": "37133680525249064212689120524992182623030603252181452611603324607305110522596",
       "no_token_id": "45417973184070519850221105368392577001206855831808889407316538994621206632019",
       "model_prob": 0.1232,
       "side": "YES",
-      "ask": 0.0095,
-      "market_prob": 0.0095,
+      "ask": 0.0085,
+      "market_prob": 0.0085,
       "belief_prob": 0.0831,
-      "ev": 7.7789,
-      "kelly": 0.0187,
-      "sell_value": null
+      "ev": 8.7765,
+      "kelly": 0.0188,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 21°C on October 13?",
@@ -138,20 +148,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.0185,
-      "no_price": 0.98,
-      "volume": 51.0,
+      "yes_price": 0.0165,
+      "no_price": 0.9835,
+      "volume": 75.0,
       "spread": 0.0,
       "yes_token_id": "45904201596902232038943026304140190122346735251761864179499224392476691850163",
       "no_token_id": "22288999492655607172155149293720184948569379686037870171054619915587318401064",
       "model_prob": 0.2561,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
-      "belief_prob": 0.1729,
-      "ev": 7.675,
-      "kelly": 0.0392,
-      "sell_value": null
+      "ask": 0.0165,
+      "market_prob": 0.0165,
+      "belief_prob": 0.1722,
+      "ev": 9.4364,
+      "kelly": 0.0396,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.002
     },
     {
       "question": "Will the highest temperature in Mexico City be 22°C on October 13?",
@@ -161,19 +173,21 @@
         22.0
       ],
       "yes_price": 0.008,
-      "no_price": 0.9915,
-      "volume": 145.0,
+      "no_price": 0.992,
+      "volume": 206.0,
       "spread": 0.0,
       "yes_token_id": "56136137276458673794481545525174303711001177423550766814431298157868028318272",
       "no_token_id": "39078077290328818364653130634620245463240411155525409882393054721616555504305",
       "model_prob": 0.2888,
       "side": "YES",
-      "ask": 0.0085,
-      "market_prob": 0.0085,
+      "ask": 0.008,
+      "market_prob": 0.008,
       "belief_prob": 0.1905,
-      "ev": 21.4353,
-      "kelly": 0.0459,
-      "sell_value": null
+      "ev": 22.8125,
+      "kelly": 0.046,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 23°C on October 13?",
@@ -182,20 +196,22 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.021,
-      "no_price": 0.9665,
-      "volume": 193.0,
+      "yes_price": 0.02,
+      "no_price": 0.98,
+      "volume": 248.0,
       "spread": 0.0,
       "yes_token_id": "110991827498559779614229603743504979298401883896227450149562485126559138453070",
       "no_token_id": "38293956840838119358260451578091000952322746843830918060172610399609445168096",
       "model_prob": 0.1663,
       "side": "YES",
-      "ask": 0.0335,
-      "market_prob": 0.0335,
-      "belief_prob": 0.1154,
-      "ev": 2.5761,
-      "kelly": 0.0223,
-      "sell_value": null
+      "ask": 0.02,
+      "market_prob": 0.02,
+      "belief_prob": 0.1151,
+      "ev": 4.755,
+      "kelly": 0.0243,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Mexico City be 24°C on October 13?",
@@ -205,19 +221,21 @@
         24.0
       ],
       "yes_price": 0.075,
-      "no_price": 0.87,
-      "volume": 289.0,
+      "no_price": 0.925,
+      "volume": 350.0,
       "spread": 0.0,
       "yes_token_id": "49158556451044061477703660386527256250966878309076317071082683970700072994877",
       "no_token_id": "49776316044592422901246568624246446382662304787152559181903605970953324521168",
       "model_prob": 0.0631,
       "side": "YES",
-      "ask": 0.13,
-      "market_prob": 0.13,
+      "ask": 0.075,
+      "market_prob": 0.075,
       "belief_prob": 0.0673,
-      "ev": -0.3346,
+      "ev": -0.1027,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 25°C on October 13?",
@@ -227,19 +245,21 @@
         25.0
       ],
       "yes_price": 0.485,
-      "no_price": 0.465,
-      "volume": 360.0,
+      "no_price": 0.515,
+      "volume": 427.0,
       "spread": 0.0,
       "yes_token_id": "114507352350045633105415510006887609761391264511463561984161580374204212884899",
       "no_token_id": "76360164382047556902653224194408518247818121261646613379078808653230934925466",
       "model_prob": 0.0213,
       "side": "YES",
-      "ask": 0.535,
-      "market_prob": 0.535,
+      "ask": 0.485,
+      "market_prob": 0.485,
       "belief_prob": 0.1836,
-      "ev": -0.6241,
+      "ev": -0.6214,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 26°C or higher on October 13?",
@@ -249,19 +269,21 @@
         999.0
       ],
       "yes_price": 0.445,
-      "no_price": 0.685,
-      "volume": 162.0,
+      "no_price": 0.555,
+      "volume": 436.0,
       "spread": 0.0,
       "yes_token_id": "71465531977594176637817584496411596824219321997995720005704885530406914903452",
       "no_token_id": "41768848291430201309769500035730106224685444988471431248669491497826331667335",
       "model_prob": 0.013,
       "side": "YES",
-      "ask": 0.315,
-      "market_prob": 0.315,
+      "ask": 0.445,
+      "market_prob": 0.445,
       "belief_prob": 0.1642,
-      "ev": -0.6232,
+      "ev": -0.631,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00"
+  "last_price_refresh": "2026-10-12T02:52:29.848717+00:00",
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00"
 }

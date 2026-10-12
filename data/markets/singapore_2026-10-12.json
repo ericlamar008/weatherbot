@@ -6,15 +6,15 @@
   "status": "open",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 13.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-12T16:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
   "last_scan": "2026-10-12T02:20:37.142507+00:00",
   "horizon_days": 0,
-  "forecast_mean": 31.42,
-  "sigma": 0.808,
-  "forecast_mean_shadow": 32.33,
+  "forecast_mean": 31.43,
+  "sigma": 0.809,
+  "forecast_mean_shadow": 32.34,
   "model_means_raw": {
     "ecmwf": 30.77,
     "gfs": 30.9,
@@ -41,7 +41,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 27°C on October 12?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 28°C on October 12?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0036,
       "ev": 6.2,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 29°C on October 12?",
@@ -100,14 +106,16 @@
       "spread": 0.0,
       "yes_token_id": "77739498915152887544827987346026776779938358840373886151467039096646864140270",
       "no_token_id": "27357532285921952004817912903717154434672484202024774801432041884886124320386",
-      "model_prob": 0.0241,
+      "model_prob": 0.0238,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0158,
-      "ev": 30.6,
+      "belief_prob": 0.0156,
+      "ev": 30.2,
       "kelly": 0.0038,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0003,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 30°C on October 12?",
@@ -117,19 +125,21 @@
         30.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9985,
+      "no_price": 0.9995,
       "volume": 600.0,
       "spread": 0.0,
       "yes_token_id": "16602028746946912160056807307037497884058399819373655774119210165990603269032",
       "no_token_id": "12433696300104149216392059358906967451783862393777666492281155320112292107404",
-      "model_prob": 0.1215,
+      "model_prob": 0.1198,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
-      "belief_prob": 0.0791,
-      "ev": 52.0,
-      "kelly": 0.0195,
-      "sell_value": null
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.078,
+      "ev": 155.0,
+      "kelly": 0.0194,
+      "sell_value": null,
+      "model_prob_change": -0.0017,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 31°C on October 12?",
@@ -139,19 +149,21 @@
         31.0
       ],
       "yes_price": 0.016,
-      "no_price": 0.9965,
-      "volume": 907.0,
+      "no_price": 0.984,
+      "volume": 1000.0,
       "spread": 0.0,
       "yes_token_id": "25542680353400243752182325702284031671210767929868470531086810462271484484743",
       "no_token_id": "10449199760635550107836690001866520892098444709622679069910691316753088171228",
-      "model_prob": 0.3843,
+      "model_prob": 0.3816,
       "side": "YES",
-      "ask": 0.0035,
-      "market_prob": 0.0035,
-      "belief_prob": 0.2554,
-      "ev": 70.7143,
-      "kelly": 0.0621,
-      "sell_value": null
+      "ask": 0.016,
+      "market_prob": 0.016,
+      "belief_prob": 0.2536,
+      "ev": 14.85,
+      "kelly": 0.0604,
+      "sell_value": null,
+      "model_prob_change": -0.0027,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 32°C on October 12?",
@@ -161,19 +173,21 @@
         32.0
       ],
       "yes_price": 0.31,
-      "no_price": 0.66,
-      "volume": 3324.0,
+      "no_price": 0.69,
+      "volume": 3369.0,
       "spread": 0.0,
       "yes_token_id": "5242414142338426351126193640857691871240693803656987099533925426743104868475",
       "no_token_id": "40414815134737633486891293141550014267322859276572543876609153343303160078318",
-      "model_prob": 0.343,
+      "model_prob": 0.3456,
       "side": "YES",
-      "ask": 0.34,
-      "market_prob": 0.34,
-      "belief_prob": 0.3315,
-      "ev": 0.0059,
-      "kelly": 0.0008,
-      "sell_value": null
+      "ask": 0.31,
+      "market_prob": 0.31,
+      "belief_prob": 0.3331,
+      "ev": 0.0745,
+      "kelly": 0.0084,
+      "sell_value": null,
+      "model_prob_change": 0.0026,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 33°C on October 12?",
@@ -183,19 +197,21 @@
         33.0
       ],
       "yes_price": 0.615,
-      "no_price": 0.395,
-      "volume": 4064.0,
+      "no_price": 0.385,
+      "volume": 4074.0,
       "spread": 0.0,
       "yes_token_id": "53672762144987296895363454848856460275699600411070834220687576472017919073420",
       "no_token_id": "6400187038849994529065931668580494496959233701844326670768033230978235054253",
-      "model_prob": 0.0946,
+      "model_prob": 0.0962,
       "side": "YES",
-      "ask": 0.605,
-      "market_prob": 0.605,
-      "belief_prob": 0.2767,
-      "ev": -0.5484,
+      "ask": 0.615,
+      "market_prob": 0.615,
+      "belief_prob": 0.2778,
+      "ev": -0.5483,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0016,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 34°C on October 12?",
@@ -206,18 +222,20 @@
       ],
       "yes_price": 0.054,
       "no_price": 0.946,
-      "volume": 3887.0,
+      "volume": 3908.0,
       "spread": 0.0,
       "yes_token_id": "103808862404488385006715003842305595879917238427729971327771917196332389010056",
       "no_token_id": "13435334787020034274914300714929142650407997219212073695963239741701376926132",
-      "model_prob": 0.0187,
+      "model_prob": 0.019,
       "side": "YES",
       "ask": 0.054,
       "market_prob": 0.054,
-      "belief_prob": 0.0311,
-      "ev": -0.4241,
+      "belief_prob": 0.0312,
+      "ev": -0.4222,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0003,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 35°C on October 12?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0037,
       "ev": 0.48,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 36°C or higher on October 12?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0015,
       "ev": 2.0,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-12T02:52:29.848717+00:00",
-  "last_lite_refresh": "2026-10-11T20:20:38.747504+00:00"
+  "last_lite_refresh": "2026-10-12T02:53:11.521573+00:00"
 }
