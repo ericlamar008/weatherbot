@@ -1,0 +1,326 @@
+{
+  "city": "seoul",
+  "city_name": "Seoul",
+  "date": "2026-10-14",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-10-13T02:20:37.024952+00:00",
+  "committed_allocation": null,
+  "hours_left": 36.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-14T15:00:00+00:00",
+  "event_end_date": "2026-10-14T12:00:00Z",
+  "last_scan": "2026-10-13T02:20:37.024952+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 19.46,
+  "sigma": 1.408,
+  "forecast_mean_shadow": 19.75,
+  "model_means_raw": {
+    "ecmwf": 17.84,
+    "gfs": 18.55,
+    "gem": 18.99
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 12°C or below on October 14?",
+      "market_id": "5595722",
+      "range": [
+        -999.0,
+        12.0
+      ],
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 138.0,
+      "spread": 0.0,
+      "yes_token_id": "3503104676742027724259034524590664902373306853300629634031761699831364580526",
+      "no_token_id": "11312183202620624601093806983784688787497129862695635986510757840721415050533",
+      "model_prob": 0.0022,
+      "side": "YES",
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.0018,
+      "ev": 0.8,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 13°C on October 14?",
+      "market_id": "5595723",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 301.0,
+      "spread": 0.0,
+      "yes_token_id": "89584405710081669039306225514944611154059256173741971820665563576497384619482",
+      "no_token_id": "62979047842712364408115050777181794043986383551977492588796591344146157853195",
+      "model_prob": 0.002,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 14°C on October 14?",
+      "market_id": "5595724",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 145.0,
+      "spread": 0.0,
+      "yes_token_id": "76641358273296162605611145428659906563321490206648222866949964073709659421225",
+      "no_token_id": "26832854647382655445557635131891694543371358902203482725882800164004681964058",
+      "model_prob": 0.0043,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.003,
+      "ev": 5.0,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 15°C on October 14?",
+      "market_id": "5595725",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 224.0,
+      "spread": 0.0,
+      "yes_token_id": "61907618874559612075462124196865079936100361868427109575502270174713603628570",
+      "no_token_id": "63446676141577168738617245712499954752571423974294981973688425501769119672854",
+      "model_prob": 0.0103,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0084,
+      "ev": 0.68,
+      "kelly": 0.0009,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 16°C on October 14?",
+      "market_id": "5595726",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.012,
+      "no_price": 0.988,
+      "volume": 631.0,
+      "spread": 0.0,
+      "yes_token_id": "45515169408419400009093647573112295390388850697796584884890890058467827779819",
+      "no_token_id": "1521463912863219576120591914571672094023306830291480850676146708018832941076",
+      "model_prob": 0.026,
+      "side": "YES",
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0211,
+      "ev": 0.7583,
+      "kelly": 0.0023,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 17°C on October 14?",
+      "market_id": "5595727",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0185,
+      "no_price": 0.9815,
+      "volume": 602.0,
+      "spread": 0.0,
+      "yes_token_id": "23081682940447045062603927427891097348240650920583426699432882086218147076745",
+      "no_token_id": "58246063225934287138731849652403737446635566719152768351197741292054547973937",
+      "model_prob": 0.0666,
+      "side": "YES",
+      "ask": 0.0185,
+      "market_prob": 0.0185,
+      "belief_prob": 0.0498,
+      "ev": 1.6919,
+      "kelly": 0.008,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 18°C on October 14?",
+      "market_id": "5595728",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.165,
+      "no_price": 0.835,
+      "volume": 3981.0,
+      "spread": 0.0,
+      "yes_token_id": "99251896179520095381804158530204720783889075402390044184850022565181845630722",
+      "no_token_id": "3953558061053266526252949852707537756360230694686810506480901108388702912527",
+      "model_prob": 0.1515,
+      "side": "YES",
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.1562,
+      "ev": -0.0533,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 19°C on October 14?",
+      "market_id": "5595729",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.615,
+      "no_price": 0.385,
+      "volume": 4417.0,
+      "spread": 0.0,
+      "yes_token_id": "26872295352376460176785936106576343294175264885312690256492591517037973899711",
+      "no_token_id": "49395871574479149045381435742338673569507449729734679091831955353725903873058",
+      "model_prob": 0.248,
+      "side": "YES",
+      "ask": 0.615,
+      "market_prob": 0.615,
+      "belief_prob": 0.3765,
+      "ev": -0.3878,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 20°C on October 14?",
+      "market_id": "5595730",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.195,
+      "no_price": 0.805,
+      "volume": 952.0,
+      "spread": 0.0,
+      "yes_token_id": "4966181045495092942650222312544806365620541632978619947287788797945112212354",
+      "no_token_id": "85347186088476670233747022257510292745927025881034399644674954055085959340644",
+      "model_prob": 0.2426,
+      "side": "YES",
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.2259,
+      "ev": 0.1585,
+      "kelly": 0.0096,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 21°C on October 14?",
+      "market_id": "5595731",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0175,
+      "no_price": 0.9825,
+      "volume": 468.0,
+      "spread": 0.0,
+      "yes_token_id": "16782080916755074190799608796130043435578530438362899417527546460427621823495",
+      "no_token_id": "101954299934996880715127092517434667358522947222241002866411151852052713908836",
+      "model_prob": 0.1431,
+      "side": "YES",
+      "ask": 0.0175,
+      "market_prob": 0.0175,
+      "belief_prob": 0.0991,
+      "ev": 4.6629,
+      "kelly": 0.0208,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Seoul (Incheon) be 22°C or higher on October 14?",
+      "market_id": "5595732",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 346.0,
+      "spread": 0.0,
+      "yes_token_id": "92716925163707994375594038015454535537366823324695618015398462114587295251849",
+      "no_token_id": "69367816138426750492067987912025986235759229258076029380349258223825817307875",
+      "model_prob": 0.1035,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0694,
+      "ev": 10.5667,
+      "kelly": 0.0159,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5595729",
+      "question": "Will the highest temperature in Seoul (Incheon) be 19°C on October 14?",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "YES",
+      "price": 0.615,
+      "model_prob": 0.248,
+      "ev": -0.3878,
+      "market_prob": 0.615,
+      "role": "main_signal",
+      "units": 28.5,
+      "sell_value": 0.6
+    },
+    {
+      "market_id": "5595729",
+      "question": "Will the highest temperature in Seoul (Incheon) be 19°C on October 14? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.385,
+      "model_prob": 0.752,
+      "ev": 0.6195,
+      "market_prob": 0.385,
+      "role": "scenario_hedge",
+      "units": 11.58,
+      "sell_value": 0.37
+    },
+    {
+      "market_id": "5595722",
+      "question": "Will the highest temperature in Seoul (Incheon) be 12°C or below on October 14? (NO)",
+      "range": [
+        -999.0,
+        12.0
+      ],
+      "side": "NO",
+      "price": 0.999,
+      "model_prob": 0.9978,
+      "ev": -0.0008,
+      "market_prob": 0.999,
+      "role": "scenario_hedge",
+      "units": 2.08,
+      "sell_value": 0.998
+    }
+  ],
+  "total_allocated_units": 42.2,
+  "portfolio_score": -0.034925,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 6.26,
+  "worst_case_pnl_units": -12.08,
+  "success_probability": 0.4241,
+  "confidence": 0.1111,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}

@@ -3,14 +3,14 @@
   "city_name": "Istanbul",
   "date": "2026-10-12",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-11T02:20:38.395540+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-12T21:00:00+00:00",
   "event_end_date": "2026-10-12T12:00:00Z",
-  "last_scan": "2026-10-12T02:20:37.142507+00:00",
+  "last_scan": "2026-10-13T02:20:37.024952+00:00",
   "horizon_days": 0,
   "forecast_mean": 23.85,
   "sigma": 1.477,
@@ -302,7 +302,10 @@
       "market_prob": 0.525,
       "role": "main_signal",
       "units": 24.6,
-      "sell_value": 0.52
+      "sell_value": 0.52,
+      "won": true,
+      "pnl_units": 22.26,
+      "user_entered": false
     },
     {
       "market_id": "5480749",
@@ -318,7 +321,10 @@
       "market_prob": 0.475,
       "role": "scenario_hedge",
       "units": 13.21,
-      "sell_value": 0.47
+      "sell_value": 0.47,
+      "won": false,
+      "pnl_units": -13.21,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 37.8,
@@ -331,5 +337,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-13T02:07:21.406433+00:00",
-  "last_lite_refresh": "2026-10-12T20:20:40.384286+00:00"
+  "last_lite_refresh": "2026-10-12T20:20:40.384286+00:00",
+  "actual_temp": 23.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 9.05,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5480749",
+      "question": "Will the highest temperature in Istanbul be 23°C on October 12?",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "YES",
+      "price": 0.525,
+      "model_prob": 0.2005,
+      "ev": -0.4017,
+      "market_prob": 0.525,
+      "role": "main_signal",
+      "units": 24.6,
+      "sell_value": 0.52,
+      "won": true,
+      "pnl_units": 22.26,
+      "user_entered": false
+    },
+    {
+      "market_id": "5480749",
+      "question": "Will the highest temperature in Istanbul be 23°C on October 12? (NO)",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "side": "NO",
+      "price": 0.475,
+      "model_prob": 0.7995,
+      "ev": 0.444,
+      "market_prob": 0.475,
+      "role": "scenario_hedge",
+      "units": 13.21,
+      "sell_value": 0.47,
+      "won": false,
+      "pnl_units": -13.21,
+      "user_entered": false
+    }
+  ]
 }
