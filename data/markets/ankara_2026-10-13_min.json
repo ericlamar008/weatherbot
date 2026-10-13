@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T21:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-13T02:20:37.024952+00:00",
-  "last_lite_refresh": "2026-10-13T14:20:43.265756+00:00",
+  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00",
   "forecast_mean": 11.52,
   "sigma": 1.4,
   "full_distribution": [
@@ -36,7 +36,9 @@
       "belief_prob": 0.0444,
       "ev": -0.103,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Ankara be 9°C on October 13?",
@@ -46,19 +48,21 @@
         9.0
       ],
       "yes_price": 0.03,
-      "no_price": 0.9695,
+      "no_price": 0.97,
       "volume": 35.0,
       "spread": 0.0,
       "yes_token_id": "1624397656469565446538897735081193994485149352952762913911919721342522905810",
       "no_token_id": "109791735495426067859024279274785578240835883462999808115537599676495812104219",
       "model_prob": 0.0626,
       "side": "YES",
-      "ask": 0.0305,
-      "market_prob": 0.0305,
+      "ask": 0.03,
+      "market_prob": 0.03,
       "belief_prob": 0.0512,
-      "ev": 0.6852,
-      "kelly": 0.0054,
-      "sell_value": null
+      "ev": 0.7067,
+      "kelly": 0.0055,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Ankara be 10°C on October 13?",
@@ -68,21 +72,21 @@
         10.0
       ],
       "yes_price": 0.17,
-      "no_price": 0.885,
+      "no_price": 0.83,
       "volume": 15.0,
       "spread": 0.0,
       "yes_token_id": "96146358105837214489339825795066512749825019508350871705553280311247514723948",
       "no_token_id": "78460913352803060985652914702073444217730204155342833503120002891049808448416",
       "model_prob": 0.1451,
       "side": "YES",
-      "ask": 0.115,
-      "market_prob": 0.115,
+      "ask": 0.17,
+      "market_prob": 0.17,
       "belief_prob": 0.1538,
-      "ev": 0.1704,
-      "kelly": 0.0055,
+      "ev": -0.0953,
+      "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.017,
-      "yes_price_change": -0.055
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Ankara be 11°C on October 13?",
@@ -92,20 +96,20 @@
         11.0
       ],
       "yes_price": 0.975,
-      "no_price": 0.0255,
-      "volume": 5.0,
+      "no_price": 0.025,
+      "volume": 25.0,
       "spread": 0.0,
       "yes_token_id": "72657597766384110568127169086443320107476576854446316438707433459391324630816",
       "no_token_id": "78724684426982916438025832220587004852626418148394888846568407345408900374418",
       "model_prob": 0.2451,
       "side": "YES",
-      "ask": 0.9745,
-      "market_prob": 0.9745,
+      "ask": 0.975,
+      "market_prob": 0.975,
       "belief_prob": 0.5006,
-      "ev": -0.4865,
+      "ev": -0.4866,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0286,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -117,7 +121,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 60.0,
+      "volume": 90.0,
       "spread": 0.0,
       "yes_token_id": "20664622467926838450303012341518929416086198541237274780402114464770281855240",
       "no_token_id": "20698930902228000485688704447666029946731356504958473226213630709599836609866",
@@ -129,7 +133,7 @@
       "ev": 321.4,
       "kelly": 0.0402,
       "sell_value": null,
-      "model_prob_change": -0.0289,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -141,7 +145,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 15.0,
+      "volume": 30.0,
       "spread": 0.0,
       "yes_token_id": "105034768124182926496328065685972897601236104846592386225384216719607305531986",
       "no_token_id": "7367497584198003066501361018534257079018773907930645340798811978749421378882",
@@ -153,7 +157,7 @@
       "ev": 193.6,
       "kelly": 0.0242,
       "sell_value": null,
-      "model_prob_change": -0.0174,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -177,7 +181,7 @@
       "ev": 83.8,
       "kelly": 0.0105,
       "sell_value": null,
-      "model_prob_change": -0.0076,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -201,7 +205,7 @@
       "ev": 32.2,
       "kelly": 0.004,
       "sell_value": null,
-      "model_prob_change": -0.003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -213,7 +217,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 820.0,
+      "volume": 1020.0,
       "spread": 0.0,
       "yes_token_id": "98164224330719471408883188453434886839567359623087876905393754075340137811361",
       "no_token_id": "88454381048222654710502621881900893380675840668719178937322265950933018917324",
@@ -225,7 +229,7 @@
       "ev": 12.2,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": -0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -237,7 +241,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 815.0,
+      "volume": 1015.0,
       "spread": 0.0,
       "yes_token_id": "86678288747763226194048077397406764224232238530131624950817119744707713098904",
       "no_token_id": "94049894208944874027791309081555625854898198618910932704487466988903514096134",
@@ -249,7 +253,7 @@
       "ev": 4.8,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": -0.0005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -261,7 +265,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 820.0,
+      "volume": 1020.0,
       "spread": 0.0,
       "yes_token_id": "25519608503634559971689032548001905751216920757178183276518870540263153644927",
       "no_token_id": "67410797549840125826071085888052782123022816224719706057663857292405814731568",
@@ -273,7 +277,7 @@
       "ev": 4.6,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
