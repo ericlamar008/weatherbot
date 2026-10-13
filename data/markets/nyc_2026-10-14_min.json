@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T04:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
   "last_scan": "2026-10-13T02:20:37.024952+00:00",
-  "skipped_reason": "event volume 296 < min_volume 500"
+  "skipped_reason": "event volume 296 < min_volume 500",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00",
+  "forecast_mean": 63.94,
+  "sigma": 4.139,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be 57°F or below on October 14?",
+      "market_id": "5600053",
+      "range": [
+        -999.0,
+        57.0
+      ],
+      "yes_price": 0.024,
+      "no_price": 0.976,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "115475220242446714245261782825257485488298588282298558796830231032920301241126",
+      "no_token_id": "11150201328672100747697753114196473015941712000080850038959105612583009974140",
+      "model_prob": 0.2742,
+      "side": "YES",
+      "ask": 0.024,
+      "market_prob": 0.024,
+      "belief_prob": 0.1866,
+      "ev": 6.775,
+      "kelly": 0.0416,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 64-65°F on October 14?",
+      "market_id": "5600057",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "38903064469248794889307584007798373820369673718988087539522473499417636242254",
+      "no_token_id": "75157643656824415101394245442727149177831701155011379034773333638933074836605",
+      "model_prob": 0.2749,
+      "side": "YES",
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.2504,
+      "ev": 0.2215,
+      "kelly": 0.0143,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 66-67°F on October 14?",
+      "market_id": "5600058",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.435,
+      "no_price": 0.565,
+      "volume": 83.0,
+      "spread": 0.0,
+      "yes_token_id": "52400128208295115079963511054929218482090361669680448727262742603266397958336",
+      "no_token_id": "103544916886745362483603777291986685289570177348647113092547745529179261680006",
+      "model_prob": 0.2231,
+      "side": "YES",
+      "ask": 0.435,
+      "market_prob": 0.435,
+      "belief_prob": 0.2973,
+      "ev": -0.3166,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 68-69°F on October 14?",
+      "market_id": "5600059",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.38,
+      "no_price": 0.62,
+      "volume": 103.0,
+      "spread": 0.0,
+      "yes_token_id": "52690510323534894932430077228042335033510625116338735556200465426537070402841",
+      "no_token_id": "48854138796330175485980607196720299379878412645290238026257177040099766906252",
+      "model_prob": 0.1454,
+      "side": "YES",
+      "ask": 0.38,
+      "market_prob": 0.38,
+      "belief_prob": 0.2275,
+      "ev": -0.4013,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 70-71°F on October 14?",
+      "market_id": "5600060",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 22.0,
+      "spread": 0.0,
+      "yes_token_id": "86829751875141135111938577967362652187201128838436352191910663685049297491084",
+      "no_token_id": "55569671641033024116130899810284529820151766722028448522072773095798760749259",
+      "model_prob": 0.0824,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.1183,
+      "ev": -0.3605,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

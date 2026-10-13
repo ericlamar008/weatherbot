@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T04:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
   "last_scan": "2026-10-13T02:20:37.024952+00:00",
-  "skipped_reason": "event volume 262 < min_volume 500"
+  "skipped_reason": "event volume 262 < min_volume 500",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00",
+  "forecast_mean": 76.98,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be 67°F or below on October 14?",
+      "market_id": "5600087",
+      "range": [
+        -999.0,
+        67.0
+      ],
+      "yes_price": 0.0245,
+      "no_price": 0.9755,
+      "volume": 53.0,
+      "spread": 0.0,
+      "yes_token_id": "90230470436089727423587961710190859814874970095977988822708573788458718744480",
+      "no_token_id": "110943400607588331174792378432897853518871267790310796388856492501226700603507",
+      "model_prob": 0.0159,
+      "side": "YES",
+      "ask": 0.0245,
+      "market_prob": 0.0245,
+      "belief_prob": 0.0189,
+      "ev": -0.2286,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 72-73°F on October 14?",
+      "market_id": "5600093",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.145,
+      "no_price": 0.855,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "81556247672026226106634330080926761902481718087601191220690863057872045500710",
+      "no_token_id": "7910507804473954321482191046121760217548381809804514541011678443701268050025",
+      "model_prob": 0.0867,
+      "side": "YES",
+      "ask": 0.145,
+      "market_prob": 0.145,
+      "belief_prob": 0.1071,
+      "ev": -0.2614,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 74-75°F on October 14?",
+      "market_id": "5600095",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.3,
+      "no_price": 0.7,
+      "volume": 109.0,
+      "spread": 0.0,
+      "yes_token_id": "63102961551440182315142984617003264606405452985419005190744506781550360548787",
+      "no_token_id": "74555307118997326062155877240874380857598337031071615184138314244873709224595",
+      "model_prob": 0.2222,
+      "side": "YES",
+      "ask": 0.3,
+      "market_prob": 0.3,
+      "belief_prob": 0.2494,
+      "ev": -0.1687,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 76-77°F on October 14?",
+      "market_id": "5600097",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.375,
+      "no_price": 0.625,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "80935762812480623735449493364263035346228942879434744621705670695865245198699",
+      "no_token_id": "26013172278194431550727874699818304324483899656962197648485514353441066490079",
+      "model_prob": 0.3692,
+      "side": "YES",
+      "ask": 0.375,
+      "market_prob": 0.375,
+      "belief_prob": 0.3712,
+      "ev": -0.0101,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 78-79°F on October 14?",
+      "market_id": "5600099",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 35.0,
+      "spread": 0.0,
+      "yes_token_id": "39324892882310483530602245268764782931083344783796267193672928129460158296993",
+      "no_token_id": "110191453205504720452983535487220740546577350152688799528602603766771122377903",
+      "model_prob": 0.3059,
+      "side": "YES",
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.3213,
+      "ev": -0.082,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

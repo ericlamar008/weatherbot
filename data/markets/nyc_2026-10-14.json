@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T04:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0261,
       "ev": 4.22,
       "kelly": 0.0053,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 14?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0099,
       "ev": 18.8,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 14?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.019,
       "ev": 11.6667,
       "kelly": 0.0044,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 72-73°F on October 14?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0364,
       "ev": 6.28,
       "kelly": 0.0079,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 74-75°F on October 14?",
@@ -117,19 +125,21 @@
         75.0
       ],
       "yes_price": 0.0115,
-      "no_price": 0.989,
+      "no_price": 0.9885,
       "volume": 47.0,
       "spread": 0.0,
       "yes_token_id": "94357507572920916674511519329189062731412437473256909637718330209090453079033",
       "no_token_id": "15203318900719946486794944780432712946064423432411469722429988725802164990937",
       "model_prob": 0.0927,
       "side": "YES",
-      "ask": 0.011,
-      "market_prob": 0.011,
+      "ask": 0.0115,
+      "market_prob": 0.0115,
       "belief_prob": 0.0643,
-      "ev": 4.8273,
+      "ev": 4.5913,
       "kelly": 0.0134,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 76-77°F on October 14?",
@@ -139,19 +149,21 @@
         77.0
       ],
       "yes_price": 0.17,
-      "no_price": 0.9155,
-      "volume": 80.0,
+      "no_price": 0.83,
+      "volume": 91.0,
       "spread": 0.0,
       "yes_token_id": "65785037188522499662052587969035912677866218694860663215184489160834950266474",
       "no_token_id": "82698115969763038729890980912381871204982169970069129703890793362638906002468",
       "model_prob": 0.1388,
       "side": "YES",
-      "ask": 0.0845,
-      "market_prob": 0.0845,
+      "ask": 0.17,
+      "market_prob": 0.17,
       "belief_prob": 0.1497,
-      "ev": 0.4178,
-      "kelly": 0.0096,
-      "sell_value": null
+      "ev": -0.1194,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 78-79°F on October 14?",
@@ -161,19 +173,21 @@
         79.0
       ],
       "yes_price": 0.44,
-      "no_price": 0.61,
-      "volume": 546.0,
+      "no_price": 0.56,
+      "volume": 1014.0,
       "spread": 0.0,
       "yes_token_id": "106441322899098956392972451037800471761209156545865112976901174830939767671694",
       "no_token_id": "3822907598597887726280909020224199440624408506448929901011825944949295376024",
       "model_prob": 0.1652,
       "side": "YES",
-      "ask": 0.39,
-      "market_prob": 0.39,
+      "ask": 0.44,
+      "market_prob": 0.44,
       "belief_prob": 0.2614,
-      "ev": -0.3746,
+      "ev": -0.4059,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 80-81°F on October 14?",
@@ -183,19 +197,21 @@
         81.0
       ],
       "yes_price": 0.28,
-      "no_price": 0.635,
-      "volume": 284.0,
+      "no_price": 0.72,
+      "volume": 292.0,
       "spread": 0.0,
       "yes_token_id": "68615554731051466166826378314573151933736269250905236071496211757709115877623",
       "no_token_id": "64625992798410503046789405529691039569326199049436418224728170878210495296770",
       "model_prob": 0.1499,
       "side": "YES",
-      "ask": 0.365,
-      "market_prob": 0.365,
+      "ask": 0.28,
+      "market_prob": 0.28,
       "belief_prob": 0.1954,
-      "ev": -0.383,
+      "ev": -0.3021,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 82-83°F on October 14?",
@@ -205,19 +221,21 @@
         83.0
       ],
       "yes_price": 0.105,
-      "no_price": 0.875,
-      "volume": 77.0,
+      "no_price": 0.895,
+      "volume": 79.0,
       "spread": 0.0,
       "yes_token_id": "37740576509913833031858199306822376113806690732055303952021006417703943712828",
       "no_token_id": "109256318646306246378196774415642549556877892080957395915640873203851667298996",
       "model_prob": 0.1062,
       "side": "YES",
-      "ask": 0.125,
-      "market_prob": 0.125,
+      "ask": 0.105,
+      "market_prob": 0.105,
       "belief_prob": 0.1058,
-      "ev": -0.0976,
-      "kelly": 0.0,
-      "sell_value": null
+      "ev": 0.0076,
+      "kelly": 0.0002,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 84-85°F on October 14?",
@@ -227,19 +245,21 @@
         85.0
       ],
       "yes_price": 0.024,
-      "no_price": 0.975,
+      "no_price": 0.976,
       "volume": 144.0,
       "spread": 0.0,
       "yes_token_id": "56696770847730275205384947859224544762118403652950340640578008023692380662376",
       "no_token_id": "57174301760073067447334746653843267191504242480864769129853466799376306421786",
       "model_prob": 0.0632,
       "side": "YES",
-      "ask": 0.025,
-      "market_prob": 0.025,
+      "ask": 0.024,
+      "market_prob": 0.024,
       "belief_prob": 0.0495,
-      "ev": 0.992,
-      "kelly": 0.0064,
-      "sell_value": null
+      "ev": 1.0625,
+      "kelly": 0.0065,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 86°F or higher on October 14?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0984,
       "ev": 38.36,
       "kelly": 0.024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00"
+  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00"
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 19.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-13T22:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -40,7 +40,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 14°C on October 13?",
@@ -62,7 +64,9 @@
       "belief_prob": 0.0014,
       "ev": 1.8,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 15°C on October 13?",
@@ -84,7 +88,9 @@
       "belief_prob": 0.0034,
       "ev": 5.8,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 16°C on October 13?",
@@ -106,7 +112,9 @@
       "belief_prob": 0.0101,
       "ev": 19.2,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 17°C on October 13?",
@@ -128,7 +136,9 @@
       "belief_prob": 0.0334,
       "ev": 21.2667,
       "kelly": 0.008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 18°C on October 13?",
@@ -137,20 +147,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.02,
-      "no_price": 0.986,
+      "yes_price": 0.019,
+      "no_price": 0.981,
       "volume": 853.0,
       "spread": 0.0,
       "yes_token_id": "54524067483584187935232481012463746503511374111226453784830770696492266878483",
       "no_token_id": "21044496246005919432579185320090082324605364632243808895125760880992836799302",
       "model_prob": 0.156,
       "side": "YES",
-      "ask": 0.014,
-      "market_prob": 0.014,
-      "belief_prob": 0.1084,
-      "ev": 6.5929,
-      "kelly": 0.0234,
-      "sell_value": null
+      "ask": 0.019,
+      "market_prob": 0.019,
+      "belief_prob": 0.1081,
+      "ev": 4.6895,
+      "kelly": 0.0227,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Milan be 19°C on October 13?",
@@ -159,9 +171,9 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.12,
+      "yes_price": 0.115,
       "no_price": 0.885,
-      "volume": 1783.0,
+      "volume": 1795.0,
       "spread": 0.0,
       "yes_token_id": "101549251794603107668408829354570196716529092563248161912502744213958255324467",
       "no_token_id": "114415606822514817769579546645310243005855141303181959628776442730887316999386",
@@ -169,10 +181,12 @@
       "side": "YES",
       "ask": 0.115,
       "market_prob": 0.115,
-      "belief_prob": 0.244,
+      "belief_prob": 0.2423,
       "ev": 1.107,
       "kelly": 0.036,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Milan be 20°C on October 13?",
@@ -182,19 +196,21 @@
         20.0
       ],
       "yes_price": 0.625,
-      "no_price": 0.345,
-      "volume": 2879.0,
+      "no_price": 0.375,
+      "volume": 2884.0,
       "spread": 0.0,
       "yes_token_id": "34409480803240468829648518158646407264616516259128816919258658910633479214124",
       "no_token_id": "15732170033536879138929747752587754436577060303257608227655423181498115610353",
       "model_prob": 0.2807,
       "side": "YES",
-      "ask": 0.655,
-      "market_prob": 0.655,
+      "ask": 0.625,
+      "market_prob": 0.625,
       "belief_prob": 0.4012,
-      "ev": -0.3715,
+      "ev": -0.3581,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 21°C on October 13?",
@@ -203,20 +219,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.24,
-      "no_price": 0.755,
-      "volume": 6750.0,
+      "yes_price": 0.235,
+      "no_price": 0.765,
+      "volume": 6755.0,
       "spread": 0.0,
       "yes_token_id": "109263035532790525816435946256911249041736180342656833909672813303244773488142",
       "no_token_id": "83616040308387901943288520395332740405408723243299984421283070470030182058365",
       "model_prob": 0.1219,
       "side": "YES",
-      "ask": 0.245,
-      "market_prob": 0.245,
-      "belief_prob": 0.1632,
-      "ev": -0.3265,
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.1615,
+      "ev": -0.3128,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Milan be 22°C on October 13?",
@@ -238,7 +256,9 @@
       "belief_prob": 0.0274,
       "ev": 2.425,
       "kelly": 0.0049,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 23°C or higher on October 13?",
@@ -260,7 +280,9 @@
       "belief_prob": 0.0133,
       "ev": 2.325,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -323,5 +345,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-13T02:52:26.404110+00:00",
-  "last_lite_refresh": "2026-10-12T20:20:40.384286+00:00"
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00"
 }

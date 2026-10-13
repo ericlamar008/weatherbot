@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T22:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -30,19 +30,21 @@
         11.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.9975,
+      "no_price": 0.9985,
       "volume": 58.0,
       "spread": 0.0,
       "yes_token_id": "40199715335294023848020363956277172847551188483165303262228002802302280421850",
       "no_token_id": "114852325167572871004151746508739893338994629143610929192975071611589978765355",
       "model_prob": 0.0102,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0072,
-      "ev": 2.0,
-      "kelly": 0.0013,
-      "sell_value": null
+      "ev": 3.8,
+      "kelly": 0.0014,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 12°C on October 14?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0059,
       "ev": 2.9333,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 13°C on October 14?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0135,
       "ev": 0.6875,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 14°C on October 14?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0244,
       "ev": 1.8706,
       "kelly": 0.004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 15°C on October 14?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.0463,
       "ev": 2.8583,
       "kelly": 0.0087,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 16°C on October 14?",
@@ -140,19 +150,21 @@
         16.0
       ],
       "yes_price": 0.07,
-      "no_price": 0.935,
+      "no_price": 0.93,
       "volume": 338.0,
       "spread": 0.0,
       "yes_token_id": "26678816868471321011451808338106018281567799514493385075708531798102651424025",
       "no_token_id": "96719836863565601857096468306128958497108267783504129762950404431924234611212",
       "model_prob": 0.116,
       "side": "YES",
-      "ask": 0.065,
-      "market_prob": 0.065,
+      "ask": 0.07,
+      "market_prob": 0.07,
       "belief_prob": 0.0999,
-      "ev": 0.5108,
-      "kelly": 0.0089,
-      "sell_value": null
+      "ev": 0.4271,
+      "kelly": 0.008,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 17°C on October 14?",
@@ -163,7 +175,7 @@
       ],
       "yes_price": 0.345,
       "no_price": 0.655,
-      "volume": 981.0,
+      "volume": 989.0,
       "spread": 0.0,
       "yes_token_id": "21297519959948953012493200955182171818607839510155107473803608634174100442926",
       "no_token_id": "113502254567434822745561312180642497606653110574557887339702782444670911864534",
@@ -174,7 +186,9 @@
       "belief_prob": 0.233,
       "ev": -0.3246,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 18°C on October 14?",
@@ -184,19 +198,21 @@
         18.0
       ],
       "yes_price": 0.435,
-      "no_price": 0.555,
-      "volume": 213.0,
+      "no_price": 0.565,
+      "volume": 220.0,
       "spread": 0.0,
       "yes_token_id": "110600086679416056553889913134495231408431326853656535474751002508299192633472",
       "no_token_id": "64304491958529231057718813999734596314323663854247642235794611774660753531805",
       "model_prob": 0.1954,
       "side": "YES",
-      "ask": 0.445,
-      "market_prob": 0.445,
+      "ask": 0.435,
+      "market_prob": 0.435,
       "belief_prob": 0.2793,
-      "ev": -0.3645,
+      "ev": -0.3579,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 19°C on October 14?",
@@ -206,19 +222,21 @@
         19.0
       ],
       "yes_price": 0.1,
-      "no_price": 0.895,
+      "no_price": 0.9,
       "volume": 151.0,
       "spread": 0.0,
       "yes_token_id": "74350001913693148619832562424144198009212637005433088922108619112300440662521",
       "no_token_id": "58215183113865411063910019806133242434136954457295910064766610312748753783572",
       "model_prob": 0.1626,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.1,
+      "market_prob": 0.1,
       "belief_prob": 0.1407,
-      "ev": 0.3562,
-      "kelly": 0.0104,
-      "sell_value": null
+      "ev": 0.407,
+      "kelly": 0.0113,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 20°C on October 14?",
@@ -228,19 +246,21 @@
         20.0
       ],
       "yes_price": 0.0175,
-      "no_price": 0.9815,
+      "no_price": 0.9825,
       "volume": 199.0,
       "spread": 0.0,
       "yes_token_id": "6408898703077041270351299688725158899173953956671676433864235648140528365183",
       "no_token_id": "82152427933358689866699911629172351744041083674986344119180663321105523538241",
       "model_prob": 0.1044,
       "side": "YES",
-      "ask": 0.0185,
-      "market_prob": 0.0185,
+      "ask": 0.0175,
+      "market_prob": 0.0175,
       "belief_prob": 0.074,
-      "ev": 3.0162,
-      "kelly": 0.0142,
-      "sell_value": null
+      "ev": 3.2286,
+      "kelly": 0.0144,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 21°C or higher on October 14?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0794,
       "ev": 6.2182,
       "kelly": 0.0173,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00"
+  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00"
 }

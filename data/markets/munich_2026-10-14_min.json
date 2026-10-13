@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T22:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
   "last_scan": "2026-10-13T02:20:37.024952+00:00",
-  "skipped_reason": "event volume 48 < min_volume 500"
+  "skipped_reason": "event volume 48 < min_volume 500",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00",
+  "forecast_mean": 9.76,
+  "sigma": 1.921,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 14°C or higher on October 14?",
+      "market_id": "5594814",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.4555,
+      "no_price": 0.5445,
+      "volume": 48.0,
+      "spread": 0.0,
+      "yes_token_id": "10486799217181250287685246013682894757995771204894557174276835898692796261533",
+      "no_token_id": "33385065570167143700752958323242622316976681792977879224648530720832470718617",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.4555,
+      "market_prob": 0.4555,
+      "belief_prob": 0.8094,
+      "ev": 0.7769,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

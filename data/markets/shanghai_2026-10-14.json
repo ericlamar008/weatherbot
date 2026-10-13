@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T16:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0012,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 18°C on October 14?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 19°C on October 14?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0024,
       "ev": 3.8,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 20°C on October 14?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0079,
       "ev": 4.2667,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 21°C on October 14?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.005,
       "no_price": 0.995,
-      "volume": 121.0,
+      "volume": 166.0,
       "spread": 0.0,
       "yes_token_id": "85981564450604693781662301475586589232069825983768466735435398011378404596378",
       "no_token_id": "88169749217709719060685759421965543300123425845558613331153256455307405263344",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0289,
       "ev": 4.78,
       "kelly": 0.006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 22°C on October 14?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.031,
       "no_price": 0.969,
-      "volume": 197.0,
+      "volume": 208.0,
       "spread": 0.0,
       "yes_token_id": "42566403487871940071531294198581975660904162459551275294696479725494157882382",
       "no_token_id": "115014897998398951685402855679428098766987016896755961864486758205576748991664",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1074,
       "ev": 2.4645,
       "kelly": 0.0197,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 23°C on October 14?",
@@ -161,19 +173,21 @@
         23.0
       ],
       "yes_price": 0.295,
-      "no_price": 0.695,
+      "no_price": 0.705,
       "volume": 2434.0,
       "spread": 0.0,
       "yes_token_id": "79872482742152962562850058198323842562577115855356101197992902923059844309703",
       "no_token_id": "4877651999019440538440282001749018982688378386128938925340067108479084174019",
       "model_prob": 0.3343,
       "side": "YES",
-      "ask": 0.305,
-      "market_prob": 0.305,
+      "ask": 0.295,
+      "market_prob": 0.295,
       "belief_prob": 0.3205,
-      "ev": 0.0623,
-      "kelly": 0.0068,
-      "sell_value": null
+      "ev": 0.0864,
+      "kelly": 0.009,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 24°C on October 14?",
@@ -183,19 +197,21 @@
         24.0
       ],
       "yes_price": 0.56,
-      "no_price": 0.445,
+      "no_price": 0.44,
       "volume": 707.0,
       "spread": 0.0,
       "yes_token_id": "23342845923467544341522615848522152742582862981104837562601847585419649152753",
       "no_token_id": "47075360345214727428748546346825082252971567941382363929273151233719349308639",
       "model_prob": 0.2994,
       "side": "YES",
-      "ask": 0.555,
-      "market_prob": 0.555,
+      "ask": 0.56,
+      "market_prob": 0.56,
       "belief_prob": 0.3906,
-      "ev": -0.2993,
+      "ev": -0.3025,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 25°C on October 14?",
@@ -205,19 +221,21 @@
         25.0
       ],
       "yes_price": 0.1,
-      "no_price": 0.915,
-      "volume": 139.0,
+      "no_price": 0.9,
+      "volume": 148.0,
       "spread": 0.0,
       "yes_token_id": "105786861854393048573615932208349582990213299576910040949815087895521307897535",
       "no_token_id": "90288719451420201942610430591578840272998340517556041367763514599132175030312",
       "model_prob": 0.1145,
       "side": "YES",
-      "ask": 0.085,
-      "market_prob": 0.085,
+      "ask": 0.1,
+      "market_prob": 0.1,
       "belief_prob": 0.1094,
-      "ev": 0.2259,
-      "kelly": 0.0052,
-      "sell_value": null
+      "ev": 0.094,
+      "kelly": 0.0026,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 26°C on October 14?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0248,
       "ev": 0.9077,
       "kelly": 0.003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Shanghai be 27°C or higher on October 14?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0093,
       "ev": 3.65,
       "kelly": 0.0018,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00"
+  "last_price_refresh": "2026-10-13T02:52:26.404110+00:00",
+  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00"
 }
