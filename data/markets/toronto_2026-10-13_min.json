@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 25.1,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T04:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
   "last_scan": "2026-10-13T02:20:37.024952+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-13T02:53:11.114635+00:00"
+  "last_lite_refresh": "2026-10-13T08:20:38.139862+00:00",
+  "forecast_mean": 16.74,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 18°C on October 13?",
+      "market_id": "5555073",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "54275478833244392346903698497167214323537223784672283055740180534165253672219",
+      "no_token_id": "42093676086879676302626092099054490712763288497351235994675640158554804931094",
+      "model_prob": 0.5672,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3689,
+      "ev": 736.8,
+      "kelly": 0.0921,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 19°C on October 13?",
+      "market_id": "5555074",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 965.0,
+      "spread": 0.0,
+      "yes_token_id": "77347664429687171984002010537203498526642965096250294556144399382180759549106",
+      "no_token_id": "83059334546712744622711462231936699041289559348501537328679220165779833976531",
+      "model_prob": 0.2596,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1689,
+      "ev": 336.8,
+      "kelly": 0.0421,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 20°C on October 13?",
+      "market_id": "5555075",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 960.0,
+      "spread": 0.0,
+      "yes_token_id": "14060380989622860235770835465205293322910455704845186249247293382878223177656",
+      "no_token_id": "19166958888478355402620913824149778483833681493538794532228928866218256381530",
+      "model_prob": 0.1019,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0664,
+      "ev": 131.8,
+      "kelly": 0.0165,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 21°C on October 13?",
+      "market_id": "5555076",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 965.0,
+      "spread": 0.0,
+      "yes_token_id": "90293295532031586465143303481606737954156156358630655149624407185459263819134",
+      "no_token_id": "74210568875512116640874827209799307779390080996518542850607827079148762463059",
+      "model_prob": 0.0398,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.026,
+      "ev": 51.0,
+      "kelly": 0.0064,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 22°C or higher on October 13?",
+      "market_id": "5555077",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 960.0,
+      "spread": 0.0,
+      "yes_token_id": "101872481539221725567325791506060673046072753898876714279460824347508887319635",
+      "no_token_id": "93565706212021321856982901989400775604622065948357318900334097834768916988044",
+      "model_prob": 0.0315,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0207,
+      "ev": 40.4,
+      "kelly": 0.0051,
+      "sell_value": null
+    }
+  ]
 }
