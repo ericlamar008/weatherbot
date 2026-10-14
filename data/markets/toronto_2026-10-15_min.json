@@ -7,10 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T04:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
-  "skipped_reason": "event volume 136 < min_volume 500"
+  "skipped_reason": "event volume 136 < min_volume 500",
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00",
+  "forecast_mean": 7.05,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 3°C or below on October 15?",
+      "market_id": "5647823",
+      "range": [
+        -999.0,
+        3.0
+      ],
+      "yes_price": 0.44,
+      "no_price": 0.56,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "112695884987654742672208922659192555002842901718946332253182197635291602734107",
+      "no_token_id": "87909560438282948295340654011463021091025519861672823407206952914549965548162",
+      "model_prob": 0.0748,
+      "side": "YES",
+      "ask": 0.44,
+      "market_prob": 0.44,
+      "belief_prob": 0.2026,
+      "ev": -0.5395,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 8°C on October 15?",
+      "market_id": "5647828",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 70.0,
+      "spread": 0.0,
+      "yes_token_id": "33702359373839132502100222949163636220774794148994130521731189210099393684786",
+      "no_token_id": "48911438587080748001348701544822520548624986831331288864540213600573819714650",
+      "model_prob": 0.5926,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.5024,
+      "ev": 0.4997,
+      "kelly": 0.0629,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 9°C on October 15?",
+      "market_id": "5647829",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.13,
+      "no_price": 0.87,
+      "volume": 35.0,
+      "spread": 0.0,
+      "yes_token_id": "91061965888901130214121665875642089093374821683993854615646164339654068539127",
+      "no_token_id": "105339455899264470239811035462681602440460436681945287446763619531913644286571",
+      "model_prob": 0.2973,
+      "side": "YES",
+      "ask": 0.13,
+      "market_prob": 0.13,
+      "belief_prob": 0.2387,
+      "ev": 0.8362,
+      "kelly": 0.0312,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 12°C on October 15?",
+      "market_id": "5647832",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "47360920760510347399218808784965547168858275921250482382644473004968664995254",
+      "no_token_id": "33538107549123467205631952803389893131931208177586010442175382577157209081187",
+      "model_prob": 0.0188,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1295,
+      "ev": -0.6134,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 13°C or higher on October 15?",
+      "market_id": "5647833",
+      "range": [
+        13.0,
+        999.0
+      ],
+      "yes_price": 0.405,
+      "no_price": 0.595,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "15385807128266465277124183413690905370463442222826101939511366653319842992938",
+      "no_token_id": "104534698906399628903073110125061847354015820420289409460286369525667226582106",
+      "model_prob": 0.0165,
+      "side": "YES",
+      "ask": 0.405,
+      "market_prob": 0.405,
+      "belief_prob": 0.1525,
+      "ev": -0.6235,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

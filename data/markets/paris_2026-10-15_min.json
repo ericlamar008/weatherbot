@@ -7,10 +7,191 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T22:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
-  "skipped_reason": "event volume 314 < min_volume 500"
+  "skipped_reason": "event volume 314 < min_volume 500",
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00",
+  "forecast_mean": 10.32,
+  "sigma": 1.656,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Paris be 3°C or below on October 15?",
+      "market_id": "5641274",
+      "range": [
+        -999.0,
+        3.0
+      ],
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "53705110176822316402497664691100273077388219058583932573075905720164465138642",
+      "no_token_id": "83962721071552692747815029146371982295339591680025244237418876624128638128035",
+      "model_prob": 0.0091,
+      "side": "YES",
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.0087,
+      "ev": 0.0875,
+      "kelly": 0.0002,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 4°C on October 15?",
+      "market_id": "5641275",
+      "range": [
+        4.0,
+        4.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "1371021768616735257957969281814186876581637224573817382838073868771244958685",
+      "no_token_id": "67100523552252251151070825169669558761372879563053515307302492732912574265359",
+      "model_prob": 0.0078,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0087,
+      "ev": -0.1714,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 5°C on October 15?",
+      "market_id": "5641276",
+      "range": [
+        5.0,
+        5.0
+      ],
+      "yes_price": 0.047,
+      "no_price": 0.953,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "75838012779810326298351586473176353848468538925440496602889578245664712679329",
+      "no_token_id": "115163313333185778357459413127255503548695510625770820099479607821407565189646",
+      "model_prob": 0.0162,
+      "side": "YES",
+      "ask": 0.047,
+      "market_prob": 0.047,
+      "belief_prob": 0.027,
+      "ev": -0.4255,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 6°C on October 15?",
+      "market_id": "5641277",
+      "range": [
+        6.0,
+        6.0
+      ],
+      "yes_price": 0.0535,
+      "no_price": 0.9465,
+      "volume": 23.0,
+      "spread": 0.0,
+      "yes_token_id": "78898111636888907755330790490128542181427172448265597233732333321426600030506",
+      "no_token_id": "111937508108656001946994367737325809815558363810292841169388468396325472366339",
+      "model_prob": 0.0355,
+      "side": "YES",
+      "ask": 0.0535,
+      "market_prob": 0.0535,
+      "belief_prob": 0.0418,
+      "ev": -0.2187,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 7°C on October 15?",
+      "market_id": "5641278",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.105,
+      "no_price": 0.895,
+      "volume": 117.0,
+      "spread": 0.0,
+      "yes_token_id": "93257905849517354959873725722590302883151001732316724701294324652243468846211",
+      "no_token_id": "86775245853747712377258836520272212008318808544072238913541899684564722458655",
+      "model_prob": 0.0795,
+      "side": "YES",
+      "ask": 0.105,
+      "market_prob": 0.105,
+      "belief_prob": 0.0884,
+      "ev": -0.1581,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 8°C on October 15?",
+      "market_id": "5641279",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.165,
+      "no_price": 0.835,
+      "volume": 109.0,
+      "spread": 0.0,
+      "yes_token_id": "64647021744332710303094591969782217303995427975984261438178302183158463113625",
+      "no_token_id": "112992364052009168682173318780959034450729747231356525000061649159126875072819",
+      "model_prob": 0.1712,
+      "side": "YES",
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.169,
+      "ev": 0.0242,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 10°C on October 15?",
+      "market_id": "5641281",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.275,
+      "no_price": 0.725,
+      "volume": 2.0,
+      "spread": 0.0,
+      "yes_token_id": "68800085870154083525751049971667279161308449567161960295501162363389143152857",
+      "no_token_id": "111238524092264326236800324156046868807247283371631491145979659298454305851272",
+      "model_prob": 0.4374,
+      "side": "YES",
+      "ask": 0.275,
+      "market_prob": 0.275,
+      "belief_prob": 0.3806,
+      "ev": 0.384,
+      "kelly": 0.0364,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Paris be 13°C or higher on October 15?",
+      "market_id": "5641284",
+      "range": [
+        13.0,
+        999.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 21.0,
+      "spread": 0.0,
+      "yes_token_id": "103048741098218176639223708257834703025553030326348788178484861431605692443544",
+      "no_token_id": "114601008853088046210551550556196579675494642073347959556786557549724309171010",
+      "model_prob": 0.2432,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.1602,
+      "ev": 25.7,
+      "kelly": 0.0388,
+      "sell_value": null
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 13.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T16:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0076,
       "ev": 14.2,
       "kelly": 0.0018,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 30°C on October 14?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0179,
       "ev": 34.8,
       "kelly": 0.0044,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 31°C on October 14?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0691,
       "ev": 26.64,
       "kelly": 0.0167,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 32°C on October 14?",
@@ -95,19 +101,21 @@
         32.0
       ],
       "yes_price": 0.0575,
-      "no_price": 0.9365,
+      "no_price": 0.9425,
       "volume": 426.0,
       "spread": 0.0,
       "yes_token_id": "76635773600803442756345658029880113663521967018482016418108777561657180858057",
       "no_token_id": "79348309756914508290452784108460137141424923039766330149611562976941433246879",
       "model_prob": 0.2944,
       "side": "YES",
-      "ask": 0.0635,
-      "market_prob": 0.0635,
+      "ask": 0.0575,
+      "market_prob": 0.0575,
       "belief_prob": 0.2115,
-      "ev": 2.3638,
-      "kelly": 0.0401,
-      "sell_value": null
+      "ev": 2.6783,
+      "kelly": 0.0408,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 33°C on October 14?",
@@ -117,19 +125,21 @@
         33.0
       ],
       "yes_price": 0.5,
-      "no_price": 0.495,
+      "no_price": 0.5,
       "volume": 2881.0,
       "spread": 0.0,
       "yes_token_id": "24550293798649049473548506510312580458357477186589951600431974846761150687597",
       "no_token_id": "56763108927950306353494156086284702497895112126245054065512311071993822360672",
       "model_prob": 0.3481,
       "side": "YES",
-      "ask": 0.505,
-      "market_prob": 0.505,
+      "ask": 0.5,
+      "market_prob": 0.5,
       "belief_prob": 0.4013,
-      "ev": -0.202,
+      "ev": -0.1974,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 34°C on October 14?",
@@ -139,19 +149,21 @@
         34.0
       ],
       "yes_price": 0.375,
-      "no_price": 0.635,
-      "volume": 5565.0,
+      "no_price": 0.625,
+      "volume": 5607.0,
       "spread": 0.0,
       "yes_token_id": "69025122529557075051215164655037931847274299773884330917422051382097002553447",
       "no_token_id": "34441534750361158768116412518633882699870310660773456437429861020821125200956",
       "model_prob": 0.1552,
       "side": "YES",
-      "ask": 0.365,
-      "market_prob": 0.365,
+      "ask": 0.375,
+      "market_prob": 0.375,
       "belief_prob": 0.2321,
-      "ev": -0.3737,
+      "ev": -0.3811,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 35°C on October 14?",
@@ -161,19 +173,21 @@
         35.0
       ],
       "yes_price": 0.045,
-      "no_price": 0.96,
+      "no_price": 0.955,
       "volume": 1182.0,
       "spread": 0.0,
       "yes_token_id": "107776244590933893129601108813742996593615811732153635533829712946804696250808",
       "no_token_id": "70916995683548423386702704980740559705902885959479465830221781316144331415836",
       "model_prob": 0.0422,
       "side": "YES",
-      "ask": 0.04,
-      "market_prob": 0.04,
+      "ask": 0.045,
+      "market_prob": 0.045,
       "belief_prob": 0.0432,
-      "ev": 0.035,
-      "kelly": 0.0004,
-      "sell_value": null
+      "ev": -0.04,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 36°C on October 14?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0081,
       "ev": 2.24,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 37°C on October 14?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0024,
       "ev": 3.8,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 38°C on October 14?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 39°C or higher on October 14?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -324,5 +346,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-14T02:52:26.511110+00:00",
-  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00"
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00"
 }

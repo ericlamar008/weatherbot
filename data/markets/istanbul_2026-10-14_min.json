@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T21:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
   "skipped_reason": "event volume 57 < min_volume 500",
-  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00"
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00",
+  "forecast_mean": 15.61,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 15°C on October 14?",
+      "market_id": "5595207",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.51,
+      "no_price": 0.49,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "111967544237411156912392478220764491005850851633464842570174229408633921303102",
+      "no_token_id": "11224041736272646515317875319842262952082022591057506736672891485371932688065",
+      "model_prob": 0.4629,
+      "side": "YES",
+      "ask": 0.51,
+      "market_prob": 0.51,
+      "belief_prob": 0.4794,
+      "ev": -0.06,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 17°C on October 14?",
+      "market_id": "5595209",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "4647264279982227431349824729523075411503430000130315812899307175793046162362",
+      "no_token_id": "106516759266108784697326168615958896637810473377891694737045660122909354904814",
+      "model_prob": 0.3089,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.201,
+      "ev": 401.0,
+      "kelly": 0.0502,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 18°C on October 14?",
+      "market_id": "5595210",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "68424584274981733897576523884333584788063720960979868072640011458594617187717",
+      "no_token_id": "93487583639646476056676628213029864220504138586828335366450488832507082047461",
+      "model_prob": 0.1369,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0892,
+      "ev": 177.4,
+      "kelly": 0.0222,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 19°C on October 14?",
+      "market_id": "5595211",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "99363895834239740941541025186424042683646709537942796513172444195188417336624",
+      "no_token_id": "35904660539326184443732046908250252384203028336720656029921842583157687305792",
+      "model_prob": 0.0534,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0349,
+      "ev": 68.8,
+      "kelly": 0.0086,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 20°C or higher on October 14?",
+      "market_id": "5595212",
+      "range": [
+        20.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "51435303353223496995973068155835973663390992486462612464570774876359909711738",
+      "no_token_id": "24400037010531181512899500732519371378794811438200792507142832262718577698610",
+      "model_prob": 0.0379,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0248,
+      "ev": 48.6,
+      "kelly": 0.0061,
+      "sell_value": null
+    }
+  ]
 }

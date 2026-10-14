@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T04:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0022,
       "ev": 1.2,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 14?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0015,
       "ev": 2.0,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 14?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0048,
       "ev": 8.6,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 72-73°F on October 14?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0187,
       "ev": 11.4667,
       "kelly": 0.0043,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 74-75°F on October 14?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0776,
       "ev": 50.7333,
       "kelly": 0.0191,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 76-77°F on October 14?",
@@ -139,19 +149,21 @@
         77.0
       ],
       "yes_price": 0.156,
-      "no_price": 0.8255,
-      "volume": 1911.0,
+      "no_price": 0.844,
+      "volume": 1957.0,
       "spread": 0.0,
       "yes_token_id": "65785037188522499662052587969035912677866218694860663215184489160834950266474",
       "no_token_id": "82698115969763038729890980912381871204982169970069129703890793362638906002468",
       "model_prob": 0.3491,
       "side": "YES",
-      "ask": 0.1745,
-      "market_prob": 0.1745,
+      "ask": 0.156,
+      "market_prob": 0.156,
       "belief_prob": 0.2815,
-      "ev": 0.6504,
-      "kelly": 0.0344,
-      "sell_value": null
+      "ev": 0.8045,
+      "kelly": 0.0372,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 78-79°F on October 14?",
@@ -161,19 +173,21 @@
         79.0
       ],
       "yes_price": 0.365,
-      "no_price": 0.64,
-      "volume": 5839.0,
+      "no_price": 0.635,
+      "volume": 6255.0,
       "spread": 0.0,
       "yes_token_id": "106441322899098956392972451037800471761209156545865112976901174830939767671694",
       "no_token_id": "3822907598597887726280909020224199440624408506448929901011825944949295376024",
       "model_prob": 0.3401,
       "side": "YES",
-      "ask": 0.36,
-      "market_prob": 0.36,
+      "ask": 0.365,
+      "market_prob": 0.365,
       "belief_prob": 0.3488,
-      "ev": -0.0358,
+      "ev": -0.0444,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 80-81°F on October 14?",
@@ -183,19 +197,21 @@
         81.0
       ],
       "yes_price": 0.345,
-      "no_price": 0.675,
-      "volume": 2978.0,
+      "no_price": 0.655,
+      "volume": 3077.0,
       "spread": 0.0,
       "yes_token_id": "68615554731051466166826378314573151933736269250905236071496211757709115877623",
       "no_token_id": "64625992798410503046789405529691039569326199049436418224728170878210495296770",
       "model_prob": 0.1122,
       "side": "YES",
-      "ask": 0.325,
-      "market_prob": 0.325,
+      "ask": 0.345,
+      "market_prob": 0.345,
       "belief_prob": 0.1937,
-      "ev": -0.4255,
+      "ev": -0.4386,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 82-83°F on October 14?",
@@ -205,19 +221,21 @@
         83.0
       ],
       "yes_price": 0.13,
-      "no_price": 0.88,
-      "volume": 1172.0,
+      "no_price": 0.87,
+      "volume": 1234.0,
       "spread": 0.0,
       "yes_token_id": "37740576509913833031858199306822376113806690732055303952021006417703943712828",
       "no_token_id": "109256318646306246378196774415642549556877892080957395915640873203851667298996",
       "model_prob": 0.0264,
       "side": "YES",
-      "ask": 0.12,
-      "market_prob": 0.12,
+      "ask": 0.13,
+      "market_prob": 0.13,
       "belief_prob": 0.0627,
-      "ev": -0.5067,
+      "ev": -0.5177,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 84-85°F on October 14?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0072,
       "ev": -0.1,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 86°F or higher on October 14?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0049,
       "ev": 3.9,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-14T02:52:26.511110+00:00",
-  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00"
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00"
 }

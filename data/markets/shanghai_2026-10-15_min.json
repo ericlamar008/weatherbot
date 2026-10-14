@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T16:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
-  "skipped_reason": "event volume 54 < min_volume 500"
+  "skipped_reason": "event volume 54 < min_volume 500",
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00",
+  "forecast_mean": 18.58,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Shanghai be 17°C on October 15?",
+      "market_id": "5641377",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "45200081130452840952342020898030796274935635514387040480401332879343680043527",
+      "no_token_id": "87117701529695801174315361061546772820246075148656481933472268799930663564691",
+      "model_prob": 0.2201,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.2288,
+      "ev": -0.0661,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 18°C on October 15?",
+      "market_id": "5641378",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.425,
+      "no_price": 0.575,
+      "volume": 34.0,
+      "spread": 0.0,
+      "yes_token_id": "18360368938440937476266484806200284528118040069584154521008181258131694990522",
+      "no_token_id": "33088982299770509298690512510748292127404161296198396543177917639056635096834",
+      "model_prob": 0.3813,
+      "side": "YES",
+      "ask": 0.425,
+      "market_prob": 0.425,
+      "belief_prob": 0.3966,
+      "ev": -0.0668,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Shanghai be 19°C on October 15?",
+      "market_id": "5641379",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.17,
+      "no_price": 0.83,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "34595370943590367568825030587537841703972771982413525821519285323789856596860",
+      "no_token_id": "85128696361461433858505185601820226725259186913921655921766608488816918799513",
+      "model_prob": 0.3986,
+      "side": "YES",
+      "ask": 0.17,
+      "market_prob": 0.17,
+      "belief_prob": 0.3186,
+      "ev": 0.8741,
+      "kelly": 0.0448,
+      "sell_value": null
+    }
+  ]
 }

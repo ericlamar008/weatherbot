@@ -7,10 +7,169 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 51.7,
+  "hours_left": 51.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T06:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
-  "skipped_reason": "event volume 131 < min_volume 500"
+  "skipped_reason": "event volume 131 < min_volume 500",
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00",
+  "forecast_mean": 12.54,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 7°C or below on October 15?",
+      "market_id": "5647834",
+      "range": [
+        -999.0,
+        7.0
+      ],
+      "yes_price": 0.385,
+      "no_price": 0.615,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "26836462679406450009368332314278322153746542487495069513386104983260115752932",
+      "no_token_id": "55139101362088129651198899664147116571450370555750761639332436509579347041914",
+      "model_prob": 0.016,
+      "side": "YES",
+      "ask": 0.385,
+      "market_prob": 0.385,
+      "belief_prob": 0.1451,
+      "ev": -0.6231,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 8°C on October 15?",
+      "market_id": "5647835",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "50099469202578833922329226153684621475336185570595658984146324045852267545300",
+      "no_token_id": "78623518590801921648196207723440966281461810407924913953454831202795646096487",
+      "model_prob": 0.0194,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1299,
+      "ev": -0.6122,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 9°C on October 15?",
+      "market_id": "5647836",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.31,
+      "no_price": 0.69,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "96615883037640830172847302161218592135712658025131596874131464114913315572587",
+      "no_token_id": "115742693171060175970520508221378766588415306024114961606476589639448900160453",
+      "model_prob": 0.049,
+      "side": "YES",
+      "ask": 0.31,
+      "market_prob": 0.31,
+      "belief_prob": 0.1404,
+      "ev": -0.5471,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 13°C on October 15?",
+      "market_id": "5647840",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.305,
+      "no_price": 0.695,
+      "volume": 71.0,
+      "spread": 0.0,
+      "yes_token_id": "31221894531153487689150854127795621081323031469786802251912557100657890096374",
+      "no_token_id": "114626509906309178569129405968736079871288225866395738697093954668028402913034",
+      "model_prob": 0.513,
+      "side": "YES",
+      "ask": 0.305,
+      "market_prob": 0.305,
+      "belief_prob": 0.4402,
+      "ev": 0.4433,
+      "kelly": 0.0486,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 14°C on October 15?",
+      "market_id": "5647841",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.38,
+      "no_price": 0.62,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "94779404317284101542735976537921756222813816757534954673032463108973284131188",
+      "no_token_id": "86665861287726859570762267189699423934416456636330990535807755333150477023687",
+      "model_prob": 0.3119,
+      "side": "YES",
+      "ask": 0.38,
+      "market_prob": 0.38,
+      "belief_prob": 0.3357,
+      "ev": -0.1166,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 16°C on October 15?",
+      "market_id": "5647843",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "86434237185069746729920406809122151448209483007485947759235291084537650243928",
+      "no_token_id": "3158855963252308143406933014288651058084526273089953935637387485403770366810",
+      "model_prob": 0.0529,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.1516,
+      "ev": -0.5475,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 17°C or higher on October 15?",
+      "market_id": "5647844",
+      "range": [
+        17.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "10408027304693914826843517188410979904107272237231360167331184150503901041378",
+      "no_token_id": "29949799885443617501898470237259861223100591882983140251367918846715830331944",
+      "model_prob": 0.0378,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0265,
+      "ev": 3.8182,
+      "kelly": 0.0053,
+      "sell_value": null
+    }
+  ]
 }

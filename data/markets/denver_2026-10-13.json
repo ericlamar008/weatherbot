@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-12T02:20:37.142507+00:00",
   "committed_allocation": null,
-  "hours_left": 3.7,
+  "hours_left": 3.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T06:00:00+00:00",
   "event_end_date": "2026-10-13T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0535,
       "ev": 106.0,
       "kelly": 0.0133,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 62-63°F on October 13?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0732,
       "ev": 145.4,
       "kelly": 0.0182,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 64-65°F on October 13?",
@@ -74,7 +78,7 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 5463.0,
+      "volume": 5556.0,
       "spread": 0.0,
       "yes_token_id": "40149897464869605635612579051596536595315634736954168057942150898688425901451",
       "no_token_id": "74619732005825983640236617819999907471288759964530324975773525356913865176308",
@@ -85,7 +89,9 @@
       "belief_prob": 0.5585,
       "ev": -0.4412,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 66-67°F on October 13?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.2128,
       "ev": 424.6,
       "kelly": 0.0531,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 68-69°F on October 13?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4672.0,
+      "volume": 4687.0,
       "spread": 0.0,
       "yes_token_id": "14565448140221334611989154470053526334038887869811598978259088644929838962429",
       "no_token_id": "56181195886309750563977194843954505839577796060379688516294991798815198840590",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0761,
       "ev": 151.2,
       "kelly": 0.0189,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 70-71°F on October 13?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.019,
       "ev": 37.0,
       "kelly": 0.0046,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 72-73°F on October 13?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0051,
       "ev": 9.2,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 74-75°F on October 13?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0017,
       "ev": 2.4,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 76-77°F on October 13?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0007,
       "ev": 0.4,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be between 78-79°F on October 13?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Denver be 80°F or higher on October 13?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0006,
       "ev": 0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -292,5 +314,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-14T02:52:26.511110+00:00",
-  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00"
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00"
 }

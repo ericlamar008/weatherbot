@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T05:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0654,
       "ev": 64.4,
       "kelly": 0.0161,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 56-57°F on October 15?",
@@ -51,19 +53,21 @@
         57.0
       ],
       "yes_price": 0.0335,
-      "no_price": 0.9645,
+      "no_price": 0.9665,
       "volume": 221.0,
       "spread": 0.0,
       "yes_token_id": "102939264979423029606572817350934221283674716114302819970119876363502910275349",
       "no_token_id": "11171328561786504108466597075407846940327919833680883860203609564908110369027",
       "model_prob": 0.0454,
       "side": "YES",
-      "ask": 0.0355,
-      "market_prob": 0.0355,
+      "ask": 0.0335,
+      "market_prob": 0.0335,
       "belief_prob": 0.0412,
-      "ev": 0.1803,
-      "kelly": 0.0017,
-      "sell_value": null
+      "ev": 0.2299,
+      "kelly": 0.002,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 58-59°F on October 15?",
@@ -73,19 +77,21 @@
         59.0
       ],
       "yes_price": 0.135,
-      "no_price": 0.87,
+      "no_price": 0.865,
       "volume": 1198.0,
       "spread": 0.0,
       "yes_token_id": "62523544243110994762654488033857036966783227709002513366306439121923657100901",
       "no_token_id": "15724792408630055640928329841458310726271506751430098244286824045802934298281",
       "model_prob": 0.084,
       "side": "YES",
-      "ask": 0.13,
-      "market_prob": 0.13,
+      "ask": 0.135,
+      "market_prob": 0.135,
       "belief_prob": 0.1018,
-      "ev": -0.23,
+      "ev": -0.2459,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 60-61°F on October 15?",
@@ -96,7 +102,7 @@
       ],
       "yes_price": 0.285,
       "no_price": 0.715,
-      "volume": 1406.0,
+      "volume": 1409.0,
       "spread": 0.0,
       "yes_token_id": "111894523781314856399864372393564304378107386579716583955390934891687991896621",
       "no_token_id": "9427572258747323360619580082878328516605492430954126584186395666087173554043",
@@ -107,7 +113,9 @@
       "belief_prob": 0.1879,
       "ev": -0.3407,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 62-63°F on October 15?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.2217,
       "ev": -0.2848,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 64-65°F on October 15?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1698,
       "ev": -0.0297,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 66-67°F on October 15?",
@@ -161,19 +173,21 @@
         67.0
       ],
       "yes_price": 0.101,
-      "no_price": 0.9115,
+      "no_price": 0.899,
       "volume": 424.0,
       "spread": 0.0,
       "yes_token_id": "6133355974401430717028149559435032398745808669336058411441978419129987138954",
       "no_token_id": "69727786446867408177356303349267564708418914985794212072148111444646198395279",
       "model_prob": 0.1209,
       "side": "YES",
-      "ask": 0.0885,
-      "market_prob": 0.0885,
+      "ask": 0.101,
+      "market_prob": 0.101,
       "belief_prob": 0.1139,
-      "ev": 0.2384,
-      "kelly": 0.0058,
-      "sell_value": null
+      "ev": 0.1277,
+      "kelly": 0.0036,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 68-69°F on October 15?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0469,
       "ev": 30.2667,
       "kelly": 0.0114,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 70-71°F on October 15?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0275,
       "ev": 2.2353,
       "kelly": 0.0048,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 72-73°F on October 15?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0127,
       "ev": 24.4,
       "kelly": 0.0031,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be 74°F or higher on October 15?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0291,
       "ev": 57.2,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-14T02:52:26.511110+00:00"
+  "last_price_refresh": "2026-10-14T02:52:26.511110+00:00",
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00"
 }

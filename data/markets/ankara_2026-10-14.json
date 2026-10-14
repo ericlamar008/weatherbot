@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-14T21:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -29,20 +29,22 @@
         -999.0,
         16.0
       ],
-      "yes_price": 0.3905,
-      "no_price": 0.67,
-      "volume": 4355.0,
+      "yes_price": 0.381,
+      "no_price": 0.619,
+      "volume": 4540.0,
       "spread": 0.0,
       "yes_token_id": "106100920661875261384789113315671731327900365238076583149240588477239261992643",
       "no_token_id": "54410900535226085458322637582101603716219848888667430895024376752293133250740",
       "model_prob": 0.0908,
       "side": "YES",
-      "ask": 0.33,
-      "market_prob": 0.33,
-      "belief_prob": 0.1957,
-      "ev": -0.4712,
+      "ask": 0.381,
+      "market_prob": 0.381,
+      "belief_prob": 0.1924,
+      "ev": -0.495,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0095
     },
     {
       "question": "Will the highest temperature in Ankara be 17°C on October 14?",
@@ -52,19 +54,21 @@
         17.0
       ],
       "yes_price": 0.305,
-      "no_price": 0.685,
-      "volume": 2254.0,
+      "no_price": 0.695,
+      "volume": 2274.0,
       "spread": 0.0,
       "yes_token_id": "92559508381509701832865064016084605941230380753991044872103030392413945461589",
       "no_token_id": "65734469319298624679885514408388773365306882007385089996035752079950438863595",
       "model_prob": 0.1154,
       "side": "YES",
-      "ask": 0.315,
-      "market_prob": 0.315,
+      "ask": 0.305,
+      "market_prob": 0.305,
       "belief_prob": 0.1818,
-      "ev": -0.4117,
+      "ev": -0.4039,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 18°C on October 14?",
@@ -74,19 +78,21 @@
         18.0
       ],
       "yes_price": 0.21,
-      "no_price": 0.785,
-      "volume": 2854.0,
+      "no_price": 0.79,
+      "volume": 2862.0,
       "spread": 0.0,
       "yes_token_id": "53385292096943403966363012754211210887774648800282659497965789946834082791862",
       "no_token_id": "35783587816476707340395168781737555406864652316474736036917826895731462888308",
       "model_prob": 0.205,
       "side": "YES",
-      "ask": 0.215,
-      "market_prob": 0.215,
+      "ask": 0.21,
+      "market_prob": 0.21,
       "belief_prob": 0.2067,
-      "ev": -0.0302,
+      "ev": -0.0157,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 19°C on October 14?",
@@ -96,19 +102,21 @@
         19.0
       ],
       "yes_price": 0.095,
-      "no_price": 0.895,
+      "no_price": 0.905,
       "volume": 1320.0,
       "spread": 0.0,
       "yes_token_id": "105783871269242600368377191365921320366011287129102314094184771665962527057144",
       "no_token_id": "45030403869443104374269869176999262692452998661318088700440662792744200966456",
       "model_prob": 0.243,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.095,
+      "market_prob": 0.095,
       "belief_prob": 0.1912,
-      "ev": 0.8543,
-      "kelly": 0.0251,
-      "sell_value": null
+      "ev": 1.0126,
+      "kelly": 0.0266,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 20°C on October 14?",
@@ -118,19 +126,21 @@
         20.0
       ],
       "yes_price": 0.0295,
-      "no_price": 0.9695,
+      "no_price": 0.9705,
       "volume": 1040.0,
       "spread": 0.0,
       "yes_token_id": "41106551564020482185322933656129242542399255278977766248861852671533443862687",
       "no_token_id": "3436468946908955625027047137945033828905499420148997116453547706924762453452",
       "model_prob": 0.1806,
       "side": "YES",
-      "ask": 0.0305,
-      "market_prob": 0.0305,
+      "ask": 0.0295,
+      "market_prob": 0.0295,
       "belief_prob": 0.1277,
-      "ev": 3.2,
-      "kelly": 0.0252,
-      "sell_value": null
+      "ev": 3.3288,
+      "kelly": 0.0253,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 21°C on October 14?",
@@ -140,19 +150,21 @@
         21.0
       ],
       "yes_price": 0.0025,
-      "no_price": 0.997,
-      "volume": 1007.0,
+      "no_price": 0.9975,
+      "volume": 1067.0,
       "spread": 0.0,
       "yes_token_id": "52436254857957349442940802361623967021526721026387065996528130390417659677300",
       "no_token_id": "17735402285862359549149073376136310290423728722168215553673046892332551892514",
       "model_prob": 0.0936,
       "side": "YES",
-      "ask": 0.003,
-      "market_prob": 0.003,
+      "ask": 0.0025,
+      "market_prob": 0.0025,
       "belief_prob": 0.0617,
-      "ev": 19.6333,
+      "ev": 23.68,
       "kelly": 0.0148,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 22°C on October 14?",
@@ -174,7 +186,9 @@
       "belief_prob": 0.0267,
       "ev": 25.7,
       "kelly": 0.0064,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 23°C on October 14?",
@@ -196,7 +210,9 @@
       "belief_prob": 0.0113,
       "ev": 10.3,
       "kelly": 0.0026,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 24°C on October 14?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0049,
       "ev": 8.8,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 25°C on October 14?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0023,
       "ev": 3.6,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 26°C or higher on October 14?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0025,
       "ev": 4.0,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -276,5 +298,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-14T02:52:26.511110+00:00",
-  "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00"
+  "last_lite_refresh": "2026-10-14T02:53:05.211325+00:00"
 }
