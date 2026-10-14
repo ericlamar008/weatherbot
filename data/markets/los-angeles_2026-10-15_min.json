@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 40.7,
+  "hours_left": 34.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T07:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-14T14:20:42.297022+00:00"
+  "last_lite_refresh": "2026-10-14T20:20:41.793911+00:00",
+  "forecast_mean": 62.99,
+  "sigma": 5.45,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 60-61°F on October 15?",
+      "market_id": "5646273",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "37076781926850013243321714674150219515566996279464534922217638764364392846424",
+      "no_token_id": "24447746150109906293280331002258905266255625658457389530616007478263679401860",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.7672,
+      "ev": 1.2901,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
