@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 32.7,
+  "hours_left": 26.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T05:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
-  "last_scan": "2026-10-13T02:20:37.024952+00:00",
-  "skipped_reason": "event volume 445 < min_volume 500",
+  "last_scan": "2026-10-14T02:20:39.694050+00:00",
   "last_lite_refresh": "2026-10-13T20:20:40.999559+00:00",
-  "forecast_mean": 77.83,
+  "forecast_mean": 77.78,
   "sigma": 2.5,
   "full_distribution": [
     {
@@ -24,23 +23,87 @@
         80.0,
         81.0
       ],
-      "yes_price": 0.277,
-      "no_price": 0.7145,
+      "yes_price": 0.2755,
+      "no_price": 0.7245,
       "volume": 445.0,
       "spread": 0.0,
       "yes_token_id": "13541810150322876176805465879817602177872437973155454541855218301575435772404",
       "no_token_id": "21010838354437726183677818157083889355446490812846855985586153037172127881194",
-      "model_prob": 1.0,
+      "model_prob": 0.1581,
       "side": "YES",
-      "ask": 0.2855,
-      "market_prob": 0.2855,
-      "belief_prob": 0.747,
-      "ev": 1.6266,
-      "kelly": 0.1625,
-      "sell_value": null,
-      "model_prob_change": 0.0,
-      "yes_price_change": -0.003
+      "ask": 0.2755,
+      "market_prob": 0.2755,
+      "belief_prob": 0.1992,
+      "ev": -0.277,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 82-83°F on October 14?",
+      "market_id": "5600072",
+      "range": [
+        82.0,
+        83.0
+      ],
+      "yes_price": 0.1615,
+      "no_price": 0.8385,
+      "volume": 102.0,
+      "spread": 0.0,
+      "yes_token_id": "102815798323050314801864220621022034921851772301488068914982456185163776029693",
+      "no_token_id": "48679503929493444244154048516794070594912989064471441370116372805073131667814",
+      "model_prob": 0.06,
+      "side": "YES",
+      "ask": 0.1615,
+      "market_prob": 0.1615,
+      "belief_prob": 0.0955,
+      "ev": -0.4087,
+      "kelly": 0.0,
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-14T02:07:20.348659+00:00"
+  "last_price_refresh": "2026-10-14T02:07:20.348659+00:00",
+  "horizon_days": 1,
+  "live_allocation": [
+    {
+      "market_id": "5600071",
+      "question": "Will the lowest temperature in Dallas be between 80-81°F on October 14?",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "YES",
+      "price": 0.2755,
+      "model_prob": 0.1581,
+      "ev": -0.277,
+      "market_prob": 0.2755,
+      "role": "main_signal",
+      "units": 17.4,
+      "sell_value": 0.03
+    },
+    {
+      "market_id": "5600071",
+      "question": "Will the lowest temperature in Dallas be between 80-81°F on October 14? (NO)",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "side": "NO",
+      "price": 0.7245,
+      "model_prob": 0.8419,
+      "ev": 0.1053,
+      "market_prob": 0.7245,
+      "role": "scenario_hedge",
+      "units": 19.46,
+      "sell_value": 0.488
+    }
+  ],
+  "total_allocated_units": 36.9,
+  "portfolio_score": 0.015047,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 26.3,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3554,
+  "confidence": 0.3906,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
