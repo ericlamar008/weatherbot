@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 38.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T05:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-14T08:20:39.100666+00:00"
+  "last_lite_refresh": "2026-10-14T14:20:42.297022+00:00",
+  "forecast_mean": 72.19,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be between 70-71°F on October 15?",
+      "market_id": "5644514",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "29407926791380770813846027103484678253836103065903834646499424363471920000039",
+      "no_token_id": "76439013328863345764969805010013104580168664320329810390196744609503631104433",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.8075,
+      "ev": 0.7944,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

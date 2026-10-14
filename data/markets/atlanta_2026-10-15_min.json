@@ -7,15 +7,15 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 37.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T04:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-14T02:20:39.694050+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-14T08:20:39.100666+00:00",
-  "forecast_mean": 63.09,
-  "sigma": 2.75,
+  "last_lite_refresh": "2026-10-14T14:20:42.297022+00:00",
+  "forecast_mean": 63.08,
+  "sigma": 2.74,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Atlanta be 55°F or below on October 15?",
@@ -25,19 +25,21 @@
         55.0
       ],
       "yes_price": 0.0145,
-      "no_price": 0.965,
+      "no_price": 0.9855,
       "volume": 48.0,
       "spread": 0.0,
       "yes_token_id": "109055484644830606204583617356168800179753251826740428867804224292688595341042",
       "no_token_id": "89958605513939112226139900929603547782620688870252280412242005531691536979391",
       "model_prob": 1.0,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
+      "ask": 0.0145,
+      "market_prob": 0.0145,
       "belief_prob": 0.6551,
-      "ev": 17.9229,
+      "ev": 44.1793,
       "kelly": 0.1625,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-14T14:07:23.866520+00:00"
