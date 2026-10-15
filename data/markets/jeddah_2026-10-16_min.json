@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 30.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T21:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
   "last_scan": "2026-10-15T02:20:37.043761+00:00",
   "skipped_reason": "event volume 110 < min_volume 500",
-  "last_lite_refresh": "2026-10-15T08:20:38.833138+00:00",
-  "forecast_mean": 26.67,
+  "last_lite_refresh": "2026-10-15T14:20:40.227989+00:00",
+  "forecast_mean": 26.64,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -25,19 +25,21 @@
         28.0
       ],
       "yes_price": 0.39,
-      "no_price": 0.47,
+      "no_price": 0.61,
       "volume": 105.0,
       "spread": 0.0,
       "yes_token_id": "40617335537993185180997616565410189398273497269780461987821664584250943533723",
       "no_token_id": "22303238329020528369078626003302413312740542287894094628276960058066847293631",
-      "model_prob": 0.6774,
+      "model_prob": 0.6789,
       "side": "YES",
-      "ask": 0.53,
-      "market_prob": 0.53,
-      "belief_prob": 0.5768,
-      "ev": 0.1808,
-      "kelly": 0.051,
-      "sell_value": null
+      "ask": 0.39,
+      "market_prob": 0.39,
+      "belief_prob": 0.5778,
+      "ev": 0.4815,
+      "kelly": 0.077,
+      "sell_value": null,
+      "model_prob_change": 0.0015,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Jeddah be 29°C on October 16?",
@@ -47,19 +49,21 @@
         29.0
       ],
       "yes_price": 0.355,
-      "no_price": 0.6,
+      "no_price": 0.645,
       "volume": 5.0,
       "spread": 0.0,
       "yes_token_id": "8426662728943563196742563067726686289039677176082573237198251146225670464640",
       "no_token_id": "94813553636419405623126106982548311957329311356493270656195500973888236637010",
-      "model_prob": 0.3046,
+      "model_prob": 0.3031,
       "side": "YES",
-      "ask": 0.4,
-      "market_prob": 0.4,
-      "belief_prob": 0.3222,
-      "ev": -0.155,
+      "ask": 0.355,
+      "market_prob": 0.355,
+      "belief_prob": 0.3213,
+      "ev": -0.0949,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0015,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Jeddah be 33°C or higher on October 16?",
@@ -81,7 +85,9 @@
       "belief_prob": 0.0136,
       "ev": 1.4727,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-15T14:07:22.890508+00:00"
