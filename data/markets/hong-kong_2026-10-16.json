@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T16:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0024,
       "ev": 0.2,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 24°C on October 16?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0023,
       "ev": 3.6,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 25°C on October 16?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.006,
       "ev": 11.0,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 26°C on October 16?",
@@ -95,19 +101,21 @@
         26.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.9975,
+      "no_price": 0.9985,
       "volume": 157.0,
       "spread": 0.0,
       "yes_token_id": "105308312078117150347270581415800484186212304900721021772514395403098695525002",
       "no_token_id": "74738803304487042330898155802366151821245778697997790733684956605098605749988",
       "model_prob": 0.0269,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.018,
-      "ev": 6.36,
-      "kelly": 0.004,
-      "sell_value": null
+      "ev": 11.0,
+      "kelly": 0.0041,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 27°C on October 16?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0552,
       "ev": 12.8,
       "kelly": 0.0129,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 28°C on October 16?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1476,
       "ev": 3.8393,
       "kelly": 0.0302,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 29°C on October 16?",
@@ -161,19 +173,21 @@
         29.0
       ],
       "yes_price": 0.24,
-      "no_price": 0.815,
-      "volume": 343.0,
+      "no_price": 0.76,
+      "volume": 348.0,
       "spread": 0.0,
       "yes_token_id": "57645712954128999957558307485513768265823960347470430319917953265866166212297",
       "no_token_id": "103538140747515532044839931396636016583583267786723655771283485563136578196573",
       "model_prob": 0.312,
       "side": "YES",
-      "ask": 0.185,
-      "market_prob": 0.185,
+      "ask": 0.24,
+      "market_prob": 0.24,
       "belief_prob": 0.2868,
-      "ev": 0.4465,
-      "kelly": 0.0253,
-      "sell_value": null
+      "ev": 0.195,
+      "kelly": 0.0154,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 30°C on October 16?",
@@ -183,19 +197,21 @@
         30.0
       ],
       "yes_price": 0.465,
-      "no_price": 0.515,
+      "no_price": 0.535,
       "volume": 405.0,
       "spread": 0.0,
       "yes_token_id": "51921971022475778659407559146681714893762460258009617401957611384606601615641",
       "no_token_id": "10905536922289241576119541695113843143142811929024236175074282413994625950483",
       "model_prob": 0.2198,
       "side": "YES",
-      "ask": 0.485,
-      "market_prob": 0.485,
+      "ask": 0.465,
+      "market_prob": 0.465,
       "belief_prob": 0.3056,
-      "ev": -0.3555,
+      "ev": -0.3428,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 31°C on October 16?",
@@ -205,19 +221,21 @@
         31.0
       ],
       "yes_price": 0.25,
-      "no_price": 0.745,
+      "no_price": 0.75,
       "volume": 623.0,
       "spread": 0.0,
       "yes_token_id": "1777052089249703939853974162524146339516629683380545277590781591837271035851",
       "no_token_id": "43506836209613018444206589381965876937569748896715390878750972994427433008267",
       "model_prob": 0.0883,
       "side": "YES",
-      "ask": 0.255,
-      "market_prob": 0.255,
+      "ask": 0.25,
+      "market_prob": 0.25,
       "belief_prob": 0.1449,
-      "ev": -0.4251,
+      "ev": -0.4204,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 32°C on October 16?",
@@ -227,19 +245,21 @@
         32.0
       ],
       "yes_price": 0.035,
-      "no_price": 0.955,
+      "no_price": 0.965,
       "volume": 40.0,
       "spread": 0.0,
       "yes_token_id": "112794973655388791099413057532412942420031235751979759000100920335350326967849",
       "no_token_id": "33800904220109549364807444341867629980847454292640191921777888051169306744543",
       "model_prob": 0.0288,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
+      "ask": 0.035,
+      "market_prob": 0.035,
       "belief_prob": 0.031,
-      "ev": -0.2333,
+      "ev": -0.1143,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 33°C or higher on October 16?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0127,
       "ev": 0.8143,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00"
+  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00",
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00"
 }

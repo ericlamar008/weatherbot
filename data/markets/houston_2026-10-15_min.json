@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 26.7,
+  "hours_left": 26.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T05:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-15T02:20:37.043761+00:00",
   "skipped_reason": "event volume 265 < min_volume 500",
-  "last_lite_refresh": "2026-10-14T20:20:41.793911+00:00"
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00",
+  "forecast_mean": 75.08,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Houston be 65°F or below on October 15?",
+      "market_id": "5644531",
+      "range": [
+        -999.0,
+        65.0
+      ],
+      "yes_price": 0.4995,
+      "no_price": 0.5005,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "57019193748473139175560298960084133333369778936698321461292120740058387911836",
+      "no_token_id": "85299142204563335409994862204924224228174042875160068527368744678763242812830",
+      "model_prob": 0.3801,
+      "side": "YES",
+      "ask": 0.4995,
+      "market_prob": 0.4995,
+      "belief_prob": 0.4219,
+      "ev": -0.1554,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be 84°F or higher on October 15?",
+      "market_id": "5644541",
+      "range": [
+        84.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 250.0,
+      "spread": 0.0,
+      "yes_token_id": "4477967099248029698568643490714797295645090448617217601091508018848557413520",
+      "no_token_id": "52249287339014616485270955730071478692431880457959153086670476784134531873653",
+      "model_prob": 0.6199,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.4049,
+      "ev": 72.6182,
+      "kelly": 0.1004,
+      "sell_value": null
+    }
+  ]
 }

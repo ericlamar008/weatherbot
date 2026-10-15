@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T22:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0036,
       "ev": 1.4,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 23°C on October 16?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0049,
       "ev": 8.8,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 24°C on October 16?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0157,
       "ev": 2.14,
       "kelly": 0.0027,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 25°C on October 16?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0456,
       "ev": 12.0286,
       "kelly": 0.0106,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 26°C on October 16?",
@@ -117,20 +125,22 @@
         26.0,
         26.0
       ],
-      "yes_price": 0.085,
-      "no_price": 0.95,
-      "volume": 1029.0,
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 1035.0,
       "spread": 0.0,
       "yes_token_id": "86072875732502566840032441443050763670172430473507717948860651892041729876750",
       "no_token_id": "101927362410158297350393673211059747773595580293389364181835363048455148989445",
       "model_prob": 0.1881,
       "side": "YES",
-      "ask": 0.05,
-      "market_prob": 0.05,
-      "belief_prob": 0.152,
-      "ev": 1.796,
-      "kelly": 0.0236,
-      "sell_value": null
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.1555,
+      "ev": 0.6368,
+      "kelly": 0.0167,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.01
     },
     {
       "question": "Will the highest temperature in Madrid be 27°C on October 16?",
@@ -140,19 +150,21 @@
         27.0
       ],
       "yes_price": 0.525,
-      "no_price": 0.47,
+      "no_price": 0.475,
       "volume": 827.0,
       "spread": 0.0,
       "yes_token_id": "84809934954362515710829562595324545341109515561474364123516362051328884476607",
       "no_token_id": "66540586622544581180465912561777680813805439145693377297891466558767056954849",
       "model_prob": 0.3143,
       "side": "YES",
-      "ask": 0.53,
-      "market_prob": 0.53,
+      "ask": 0.525,
+      "market_prob": 0.525,
       "belief_prob": 0.388,
-      "ev": -0.2645,
+      "ev": -0.261,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 28°C on October 16?",
@@ -161,20 +173,22 @@
         28.0,
         28.0
       ],
-      "yes_price": 0.375,
-      "no_price": 0.62,
+      "yes_price": 0.37,
+      "no_price": 0.63,
       "volume": 1136.0,
       "spread": 0.0,
       "yes_token_id": "79275506115576563363254388189727104333137665598176730712599702340189707046891",
       "no_token_id": "53788117885020884561606629967824879333230777870037488819274495847226862006183",
       "model_prob": 0.2446,
       "side": "YES",
-      "ask": 0.38,
-      "market_prob": 0.38,
-      "belief_prob": 0.2902,
-      "ev": -0.2316,
+      "ask": 0.37,
+      "market_prob": 0.37,
+      "belief_prob": 0.2885,
+      "ev": -0.2203,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Madrid be 29°C on October 16?",
@@ -184,19 +198,21 @@
         29.0
       ],
       "yes_price": 0.0275,
-      "no_price": 0.9715,
+      "no_price": 0.9725,
       "volume": 330.0,
       "spread": 0.0,
       "yes_token_id": "10881525086264892307802781994439410439894699796322045609778159703316346952573",
       "no_token_id": "5222373844423992575251992733222356073532601860698661587304210085882252689647",
       "model_prob": 0.1016,
       "side": "YES",
-      "ask": 0.0285,
-      "market_prob": 0.0285,
+      "ask": 0.0275,
+      "market_prob": 0.0275,
       "belief_prob": 0.0757,
-      "ev": 1.6667,
-      "kelly": 0.0122,
-      "sell_value": null
+      "ev": 1.7527,
+      "kelly": 0.0124,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 30°C on October 16?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0224,
       "ev": 5.4,
       "kelly": 0.0047,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 31°C on October 16?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0086,
       "ev": 0.72,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 32°C or higher on October 16?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0045,
       "ev": 8.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00"
+  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00",
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00"
 }

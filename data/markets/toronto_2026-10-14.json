@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-13T02:20:37.024952+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
+  "hours_left": 1.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-15T04:00:00+00:00",
   "event_end_date": "2026-10-14T12:00:00Z",
@@ -17,7 +17,7 @@
   "forecast_mean_shadow": 17.66,
   "model_means_raw": {
     "ecmwf": 16.74,
-    "gfs": 17.24,
+    "gfs": 17.25,
     "gem": 18.3
   },
   "full_distribution": [
@@ -90,7 +90,7 @@
       "ev": 0.0,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -114,7 +114,7 @@
       "ev": 2.2,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -138,7 +138,7 @@
       "ev": 16.2,
       "kelly": 0.002,
       "sell_value": null,
-      "model_prob_change": -0.0014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -162,7 +162,7 @@
       "ev": 134.2,
       "kelly": 0.0168,
       "sell_value": null,
-      "model_prob_change": -0.0113,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -186,8 +186,8 @@
       "ev": 626.4,
       "kelly": 0.0783,
       "sell_value": null,
-      "model_prob_change": -0.016,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 18°C on October 14?",
@@ -197,20 +197,20 @@
         18.0
       ],
       "yes_price": 0.9995,
-      "no_price": 0.0025,
-      "volume": 8606.0,
+      "no_price": 0.0005,
+      "volume": 10753.0,
       "spread": 0.0,
       "yes_token_id": "14193009093505968028060909737382422762901108409916436990871583006275153097602",
       "no_token_id": "69345136882518025506841886197034907242844422922807712357804597620779115962060",
       "model_prob": 0.3384,
       "side": "YES",
-      "ask": 0.9975,
-      "market_prob": 0.9975,
+      "ask": 0.9995,
+      "market_prob": 0.9995,
       "belief_prob": 0.5698,
-      "ev": -0.4295,
+      "ev": -0.4299,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.023,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -221,20 +221,20 @@
         19.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9975,
-      "volume": 3622.0,
+      "no_price": 0.9995,
+      "volume": 3792.0,
       "spread": 0.0,
       "yes_token_id": "76775017508252067859099657890442284606346238108172193909455176387709421276655",
       "no_token_id": "12590152418457700795898204835677804385830333719409496940988380178043667414314",
       "model_prob": 0.0506,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0331,
-      "ev": 12.52,
-      "kelly": 0.0078,
+      "ev": 65.2,
+      "kelly": 0.0082,
       "sell_value": null,
-      "model_prob_change": 0.0051,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -246,7 +246,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4709.0,
+      "volume": 4714.0,
       "spread": 0.0,
       "yes_token_id": "33405157444121796080735410168599149903797436882518874367893658311514187460624",
       "no_token_id": "1641037134903904225629535847467084839404243418373355830724350438406301675187",
@@ -258,7 +258,7 @@
       "ev": 8.4,
       "kelly": 0.0011,
       "sell_value": null,
-      "model_prob_change": 0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 1.8,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-15T02:52:23.077690+00:00",
-  "last_lite_refresh": "2026-10-14T20:20:41.793911+00:00"
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00"
 }

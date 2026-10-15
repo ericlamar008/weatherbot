@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-17T04:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.014,
       "ev": 1.5455,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 80-81°F on October 16?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0096,
       "ev": 8.6,
       "kelly": 0.0022,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 82-83°F on October 16?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0296,
       "ev": 4.92,
       "kelly": 0.0062,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 84-85°F on October 16?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0819,
       "ev": 26.3,
       "kelly": 0.0198,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 86-87°F on October 16?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.2006,
       "ev": 1.5075,
       "kelly": 0.0328,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 16?",
@@ -138,20 +148,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.52,
-      "no_price": 0.48,
+      "yes_price": 0.515,
+      "no_price": 0.485,
       "volume": 2886.0,
       "spread": 0.0,
       "yes_token_id": "30907252533046618233389069474275621183361804848321214702863191032593847448021",
       "no_token_id": "41965913532960064123524996130908921922610676603716434701402918839807975815003",
       "model_prob": 0.2906,
       "side": "YES",
-      "ask": 0.52,
-      "market_prob": 0.52,
-      "belief_prob": 0.3709,
-      "ev": -0.2867,
+      "ask": 0.515,
+      "market_prob": 0.515,
+      "belief_prob": 0.3691,
+      "ev": -0.2833,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 16?",
@@ -160,20 +172,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.355,
-      "no_price": 0.66,
-      "volume": 1585.0,
+      "yes_price": 0.35,
+      "no_price": 0.65,
+      "volume": 1590.0,
       "spread": 0.0,
       "yes_token_id": "8405706876596713120083545367241668315580362056213198253135932599061623198565",
       "no_token_id": "7500257887076968205297705652212057587485588456204305287527438041741685723600",
       "model_prob": 0.1543,
       "side": "YES",
-      "ask": 0.34,
-      "market_prob": 0.34,
-      "belief_prob": 0.2245,
-      "ev": -0.355,
+      "ask": 0.35,
+      "market_prob": 0.35,
+      "belief_prob": 0.2228,
+      "ev": -0.3634,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 92-93°F on October 16?",
@@ -183,19 +197,21 @@
         93.0
       ],
       "yes_price": 0.037,
-      "no_price": 0.9635,
+      "no_price": 0.963,
       "volume": 219.0,
       "spread": 0.0,
       "yes_token_id": "14483367316581127038657271077330683938106015034267246887506725336800386450097",
       "no_token_id": "17365377052272888543089791799500361550655810813493423230442790458794618188199",
       "model_prob": 0.0552,
       "side": "YES",
-      "ask": 0.0365,
-      "market_prob": 0.0365,
+      "ask": 0.037,
+      "market_prob": 0.037,
       "belief_prob": 0.0488,
-      "ev": 0.3342,
-      "kelly": 0.0032,
-      "sell_value": null
+      "ev": 0.3189,
+      "kelly": 0.0031,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on October 16?",
@@ -205,19 +221,21 @@
         95.0
       ],
       "yes_price": 0.006,
-      "no_price": 0.9935,
+      "no_price": 0.994,
       "volume": 56.0,
       "spread": 0.0,
       "yes_token_id": "51768599547397920721115736876241737260266666960896275767182708648353790939434",
       "no_token_id": "35630190830843326831754586946932365694876379778357252740592816640871768846700",
       "model_prob": 0.0183,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.006,
+      "market_prob": 0.006,
       "belief_prob": 0.014,
-      "ev": 1.1846,
-      "kelly": 0.0019,
-      "sell_value": null
+      "ev": 1.3333,
+      "kelly": 0.002,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 96-97°F on October 16?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0061,
       "ev": 0.1091,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 98°F or higher on October 16?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0064,
       "ev": 11.8,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -307,5 +329,6 @@
   "confidence": 0.1275,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00"
+  "last_price_refresh": "2026-10-15T02:52:23.077690+00:00",
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00"
 }

@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T22:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
   "last_scan": "2026-10-15T02:20:37.043761+00:00",
-  "skipped_reason": "event volume 251 < min_volume 500"
+  "skipped_reason": "event volume 251 < min_volume 500",
+  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00",
+  "forecast_mean": 7.15,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 0°C or below on October 16?",
+      "market_id": "5678414",
+      "range": [
+        -999.0,
+        0.0
+      ],
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "85884669494871194445428382768759945827270983812869281026628597346492992226878",
+      "no_token_id": "46902229028190883593951178889137213567691775693349431541704916885326779593169",
+      "model_prob": 0.0311,
+      "side": "YES",
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.1637,
+      "ev": -0.6007,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 1°C on October 16?",
+      "market_id": "5678415",
+      "range": [
+        1.0,
+        1.0
+      ],
+      "yes_price": 0.065,
+      "no_price": 0.935,
+      "volume": 36.0,
+      "spread": 0.0,
+      "yes_token_id": "6804651674778839120270105507722994129084036966115180297896497219434413472097",
+      "no_token_id": "97752565407284074465023982469196986587818718917410801824914822318206593768382",
+      "model_prob": 0.0296,
+      "side": "YES",
+      "ask": 0.065,
+      "market_prob": 0.065,
+      "belief_prob": 0.042,
+      "ev": -0.3538,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 10°C or higher on October 16?",
+      "market_id": "5678424",
+      "range": [
+        10.0,
+        999.0
+      ],
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 195.0,
+      "spread": 0.0,
+      "yes_token_id": "10227759788302496039211297280086670444616530158271501270679601907952577070710",
+      "no_token_id": "55781531309756265623727880553213057232977095007568930841923332472700312659514",
+      "model_prob": 0.9393,
+      "side": "YES",
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.621,
+      "ev": 19.7,
+      "kelly": 0.1523,
+      "sell_value": null
+    }
+  ]
 }
