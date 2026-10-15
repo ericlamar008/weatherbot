@@ -4717,16 +4717,17 @@
     "side": "YES",
     "entry_price": 0.555,
     "locked_at": "2026-10-14T03:43:14.409188+00:00",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.941,
     "last_pct": 69.5,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
-    "actual_temp": null,
+    "exit_price": 1.0,
+    "closed_at": "2026-10-15T05:22:22.745421+00:00",
+    "close_reason": "auto_resolved",
+    "actual_temp": 24.0,
     "last_price_source": "bid",
     "last_mid": 0.9605,
-    "last_checked_at": "2026-10-15T05:07:20.733450+00:00"
+    "last_checked_at": "2026-10-15T05:07:20.733450+00:00",
+    "notified_close": true
   },
   {
     "issue_number": 418,
