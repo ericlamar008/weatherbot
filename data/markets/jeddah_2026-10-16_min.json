@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 42.1,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T21:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
   "last_scan": "2026-10-15T02:20:37.043761+00:00",
   "skipped_reason": "event volume 110 < min_volume 500",
-  "last_lite_refresh": "2026-10-15T02:53:17.743127+00:00"
+  "last_lite_refresh": "2026-10-15T08:20:38.833138+00:00",
+  "forecast_mean": 26.67,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Jeddah be 28°C on October 16?",
+      "market_id": "5678630",
+      "range": [
+        28.0,
+        28.0
+      ],
+      "yes_price": 0.53,
+      "no_price": 0.47,
+      "volume": 105.0,
+      "spread": 0.0,
+      "yes_token_id": "40617335537993185180997616565410189398273497269780461987821664584250943533723",
+      "no_token_id": "22303238329020528369078626003302413312740542287894094628276960058066847293631",
+      "model_prob": 0.6774,
+      "side": "YES",
+      "ask": 0.53,
+      "market_prob": 0.53,
+      "belief_prob": 0.6258,
+      "ev": 0.1808,
+      "kelly": 0.051,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 29°C on October 16?",
+      "market_id": "5678631",
+      "range": [
+        29.0,
+        29.0
+      ],
+      "yes_price": 0.4,
+      "no_price": 0.6,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "8426662728943563196742563067726686289039677176082573237198251146225670464640",
+      "no_token_id": "94813553636419405623126106982548311957329311356493270656195500973888236637010",
+      "model_prob": 0.3046,
+      "side": "YES",
+      "ask": 0.4,
+      "market_prob": 0.4,
+      "belief_prob": 0.338,
+      "ev": -0.155,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 33°C or higher on October 16?",
+      "market_id": "5678635",
+      "range": [
+        33.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "104343979994299231607248877354608020800356932946532714832824809367287693118203",
+      "no_token_id": "91750096913289454762669331234739541076724143970472110440350009961817101089489",
+      "model_prob": 0.018,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0136,
+      "ev": 1.4727,
+      "kelly": 0.002,
+      "sell_value": null
+    }
+  ]
 }
