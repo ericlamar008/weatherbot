@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 13.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-17T04:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -14,10 +14,10 @@
   "horizon_days": 1,
   "forecast_mean": 88.4,
   "sigma": 1.622,
-  "forecast_mean_shadow": 90.01,
+  "forecast_mean_shadow": 90.02,
   "model_means_raw": {
     "ecmwf": 86.6,
-    "gfs": 87.14,
+    "gfs": 87.12,
     "gem": 91.27
   },
   "full_distribution": [
@@ -42,7 +42,7 @@
       "ev": 2.8,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": 0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -66,7 +66,7 @@
       "ev": 2.6,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -90,7 +90,7 @@
       "ev": 12.2,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -101,20 +101,20 @@
         85.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9985,
+      "no_price": 0.9995,
       "volume": 778.0,
       "spread": 0.0,
       "yes_token_id": "25297412970436468769778085253421469544625652805588535556414824396433905107087",
       "no_token_id": "13223758352739954796912071506203894708424965551610388504461360980004999870930",
       "model_prob": 0.0479,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0313,
-      "ev": 20.1333,
-      "kelly": 0.0076,
+      "ev": 61.6,
+      "kelly": 0.0077,
       "sell_value": null,
-      "model_prob_change": -0.0123,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -124,22 +124,22 @@
         86.0,
         87.0
       ],
-      "yes_price": 0.041,
-      "no_price": 0.9845,
-      "volume": 1860.0,
+      "yes_price": 0.03,
+      "no_price": 0.97,
+      "volume": 2195.0,
       "spread": 0.0,
       "yes_token_id": "89496715980040619299529064896278980732986120296860357308801259795955506942912",
       "no_token_id": "41512773864334920541170340773767779144750385565390775941759956724868046285000",
       "model_prob": 0.2277,
       "side": "YES",
-      "ask": 0.0155,
-      "market_prob": 0.0155,
-      "belief_prob": 0.1624,
-      "ev": 8.8968,
-      "kelly": 0.035,
+      "ask": 0.03,
+      "market_prob": 0.03,
+      "belief_prob": 0.1585,
+      "ev": 4.2833,
+      "kelly": 0.0331,
       "sell_value": null,
-      "model_prob_change": -0.1098,
-      "yes_price_change": -0.0015
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.011
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 16?",
@@ -148,22 +148,22 @@
         88.0,
         89.0
       ],
-      "yes_price": 0.54,
-      "no_price": 0.45,
-      "volume": 6457.0,
+      "yes_price": 0.525,
+      "no_price": 0.475,
+      "volume": 8644.0,
       "spread": 0.0,
       "yes_token_id": "30907252533046618233389069474275621183361804848321214702863191032593847448021",
       "no_token_id": "41965913532960064123524996130908921922610676603716434701402918839807975815003",
       "model_prob": 0.4568,
       "side": "YES",
-      "ask": 0.55,
-      "market_prob": 0.55,
-      "belief_prob": 0.4859,
-      "ev": -0.1102,
+      "ask": 0.525,
+      "market_prob": 0.525,
+      "belief_prob": 0.4807,
+      "ev": -0.0844,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0038,
-      "yes_price_change": 0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.015
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 16?",
@@ -172,22 +172,22 @@
         90.0,
         91.0
       ],
-      "yes_price": 0.42,
-      "no_price": 0.6,
-      "volume": 8107.0,
+      "yes_price": 0.415,
+      "no_price": 0.585,
+      "volume": 8945.0,
       "spread": 0.0,
       "yes_token_id": "8405706876596713120083545367241668315580362056213198253135932599061623198565",
       "no_token_id": "7500257887076968205297705652212057587485588456204305287527438041741685723600",
       "model_prob": 0.1987,
       "side": "YES",
-      "ask": 0.4,
-      "market_prob": 0.4,
-      "belief_prob": 0.2762,
-      "ev": -0.327,
+      "ask": 0.415,
+      "market_prob": 0.415,
+      "belief_prob": 0.2744,
+      "ev": -0.3388,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0924,
-      "yes_price_change": -0.01
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 92-93°F on October 16?",
@@ -196,22 +196,22 @@
         92.0,
         93.0
       ],
-      "yes_price": 0.0045,
-      "no_price": 0.986,
-      "volume": 2272.0,
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 2468.0,
       "spread": 0.0,
       "yes_token_id": "14483367316581127038657271077330683938106015034267246887506725336800386450097",
       "no_token_id": "17365377052272888543089791799500361550655810813493423230442790458794618188199",
       "model_prob": 0.0406,
       "side": "YES",
-      "ask": 0.014,
-      "market_prob": 0.014,
-      "belief_prob": 0.028,
-      "ev": 1.2357,
-      "kelly": 0.0044,
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0281,
+      "ev": 4.62,
+      "kelly": 0.0058,
       "sell_value": null,
-      "model_prob_change": 0.0241,
-      "yes_price_change": 0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Miami be between 94-95°F on October 16?",
@@ -221,20 +221,20 @@
         95.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.998,
-      "volume": 1101.0,
+      "no_price": 0.9985,
+      "volume": 1114.0,
       "spread": 0.0,
       "yes_token_id": "51768599547397920721115736876241737260266666960896275767182708648353790939434",
       "no_token_id": "35630190830843326831754586946932365694876379778357252740592816640871768846700",
       "model_prob": 0.0085,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0061,
-      "ev": 2.1,
-      "kelly": 0.0011,
+      "ev": 3.0667,
+      "kelly": 0.0012,
       "sell_value": null,
-      "model_prob_change": 0.0053,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -258,7 +258,7 @@
       "ev": 2.2,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0014,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 2.6,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -346,5 +346,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-16T14:07:21.897852+00:00",
-  "last_lite_refresh": "2026-10-16T08:20:40.809526+00:00"
+  "last_lite_refresh": "2026-10-16T14:20:40.110809+00:00"
 }
