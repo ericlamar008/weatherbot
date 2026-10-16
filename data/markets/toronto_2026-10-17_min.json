@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 49.1,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T04:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
   "last_scan": "2026-10-16T02:20:37.822996+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
+  "last_lite_refresh": "2026-10-16T08:20:40.809526+00:00",
+  "forecast_mean": 1.58,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be -2°C on October 17?",
+      "market_id": "5728452",
+      "range": [
+        -2.0,
+        -2.0
+      ],
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 24.0,
+      "spread": 0.0,
+      "yes_token_id": "45634654463208263959418731916732709329982900819215990244357900812566356396692",
+      "no_token_id": "62137356968960534867755019218132578431077640740442704305032262281771443373133",
+      "model_prob": 0.1037,
+      "side": "YES",
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.1864,
+      "ev": -0.4518,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be -1°C on October 17?",
+      "market_id": "5728453",
+      "range": [
+        -1.0,
+        -1.0
+      ],
+      "yes_price": 0.29,
+      "no_price": 0.71,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "33752539337009739212367310731457495428980341501948653802901460077822660944410",
+      "no_token_id": "11598895196097457229192226232264240886725293759455053284493047756948967977874",
+      "model_prob": 0.2678,
+      "side": "YES",
+      "ask": 0.29,
+      "market_prob": 0.29,
+      "belief_prob": 0.2756,
+      "ev": -0.0497,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 0°C on October 17?",
+      "market_id": "5728454",
+      "range": [
+        0.0,
+        0.0
+      ],
+      "yes_price": 0.34,
+      "no_price": 0.66,
+      "volume": 49.0,
+      "spread": 0.0,
+      "yes_token_id": "90043862511279532447883759659821471820223396746339599407640331325689784480489",
+      "no_token_id": "46088569874062056232120223785413302085715457375205222171498378186923014501593",
+      "model_prob": 0.6284,
+      "side": "YES",
+      "ask": 0.34,
+      "market_prob": 0.34,
+      "belief_prob": 0.5275,
+      "ev": 0.5515,
+      "kelly": 0.071,
+      "sell_value": null
+    }
+  ]
 }

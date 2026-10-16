@@ -3,16 +3,16 @@
   "city_name": "Austin",
   "date": "2026-10-15",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 2.1,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-16T05:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-16T02:20:37.822996+00:00",
-  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00",
+  "last_lite_refresh": "2026-10-16T08:20:40.809526+00:00",
   "forecast_mean": 68.89,
   "sigma": 3.469,
   "full_distribution": [
@@ -250,7 +250,10 @@
       "market_prob": 0.975,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.95
+      "sell_value": 0.95,
+      "won": true,
+      "pnl_units": 0.77,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -261,5 +264,31 @@
   "success_probability": 0.5243,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 64.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.77,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5644511",
+      "question": "Will the lowest temperature in Austin be between 64-65°F on October 15?",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "side": "YES",
+      "price": 0.975,
+      "model_prob": 0.0913,
+      "ev": -0.5891,
+      "market_prob": 0.975,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.95,
+      "won": true,
+      "pnl_units": 0.77,
+      "user_entered": false
+    }
+  ]
 }
