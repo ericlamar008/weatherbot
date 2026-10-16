@@ -1,0 +1,129 @@
+{
+  "city": "miami",
+  "city_name": "Miami",
+  "date": "2026-10-17",
+  "unit": "F",
+  "status": "open",
+  "market_type": "min",
+  "created_at": "2026-10-16T02:20:37.822996+00:00",
+  "committed_allocation": null,
+  "hours_left": 49.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-18T04:00:00+00:00",
+  "event_end_date": "2026-10-17T12:00:00Z",
+  "last_scan": "2026-10-16T02:20:37.822996+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 76.28,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be between 76-77°F on October 17?",
+      "market_id": "5723787",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.36,
+      "no_price": 0.64,
+      "volume": 306.0,
+      "spread": 0.0,
+      "yes_token_id": "99208284893702110883451209862783351836035855074743781725651552374424424662092",
+      "no_token_id": "3056944324861896758744000543392482273916807329235369459747682814716411430500",
+      "model_prob": 0.2926,
+      "side": "YES",
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.3162,
+      "ev": -0.1217,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 78-79°F on October 17?",
+      "market_id": "5723788",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 205.0,
+      "spread": 0.0,
+      "yes_token_id": "30653806281585723135719060634085092950374050427501235553975986084508691145011",
+      "no_token_id": "24570736682748368472125075359981813934277688383009436213694731510704017112600",
+      "model_prob": 0.191,
+      "side": "YES",
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.1959,
+      "ev": -0.0444,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 80-81°F on October 17?",
+      "market_id": "5723789",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.16,
+      "no_price": 0.84,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "31039534242298394065330123607361421819421647945505655555127319890296147229522",
+      "no_token_id": "53894390506709484320286197984218590528696938233539983244108741677849336254966",
+      "model_prob": 0.0773,
+      "side": "YES",
+      "ask": 0.16,
+      "market_prob": 0.16,
+      "belief_prob": 0.1062,
+      "ev": -0.3363,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5723787",
+      "question": "Will the lowest temperature in Miami be between 76-77°F on October 17?",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "side": "YES",
+      "price": 0.36,
+      "model_prob": 0.2926,
+      "ev": -0.1217,
+      "market_prob": 0.36,
+      "role": "main_signal",
+      "units": 24.8,
+      "sell_value": 0.35
+    },
+    {
+      "market_id": "5723787",
+      "question": "Will the lowest temperature in Miami be between 76-77°F on October 17? (NO)",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "side": "NO",
+      "price": 0.64,
+      "model_prob": 0.7074,
+      "ev": 0.0684,
+      "market_prob": 0.64,
+      "role": "scenario_hedge",
+      "units": 26.31,
+      "sell_value": 0.63
+    }
+  ],
+  "total_allocated_units": 51.1,
+  "portfolio_score": -0.018246,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 17.78,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3239,
+  "confidence": 0.0761,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
