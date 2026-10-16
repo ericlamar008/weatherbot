@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 27.7,
+  "hours_left": 27.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-17T06:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -29,14 +29,16 @@
       "spread": 0.0,
       "yes_token_id": "62629694901331479877017445801200512843497732779655619453343576383592789398010",
       "no_token_id": "22242769322615936642186927140764549840503313757192300244015146020784648392342",
-      "model_prob": 0.0068,
+      "model_prob": 0.0783,
       "side": "YES",
       "ask": 0.46,
       "market_prob": 0.46,
-      "belief_prob": 0.1654,
-      "ev": -0.6404,
+      "belief_prob": 0.2119,
+      "ev": -0.5393,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0715,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Mexico City be 8°C on October 16?",
@@ -51,14 +53,16 @@
       "spread": 0.0,
       "yes_token_id": "51825037470313803434649179536699878023457010087145413961844638153808968449088",
       "no_token_id": "18883252125750784995875931783561686777558315473396219165217729203952521299339",
-      "model_prob": 0.008,
+      "model_prob": 0.0922,
       "side": "YES",
       "ask": 0.34,
       "market_prob": 0.34,
-      "belief_prob": 0.1242,
-      "ev": -0.6347,
+      "belief_prob": 0.1789,
+      "ev": -0.4738,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0842,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Mexico City be 9°C on October 16?",
@@ -73,14 +77,16 @@
       "spread": 0.0,
       "yes_token_id": "92191631633053394421141035050730694359641836711422427906409211703187605521458",
       "no_token_id": "38594874898592495049808220551638201827288063710984463031945576744776959586054",
-      "model_prob": 0.0201,
+      "model_prob": 0.2313,
       "side": "YES",
       "ask": 0.34,
       "market_prob": 0.34,
-      "belief_prob": 0.1321,
-      "ev": -0.6115,
+      "belief_prob": 0.2693,
+      "ev": -0.2079,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.2112,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Mexico City be 10°C on October 16?",
@@ -95,14 +101,16 @@
       "spread": 0.0,
       "yes_token_id": "89640195822336547248074893491715859618197563792048494591603654192605505768344",
       "no_token_id": "106604923752128934661638022878743138422604886742316093114012528576161103236044",
-      "model_prob": 0.0519,
+      "model_prob": 0.5982,
       "side": "YES",
       "ask": 0.08,
       "market_prob": 0.08,
-      "belief_prob": 0.0617,
-      "ev": -0.2288,
-      "kelly": 0.0,
-      "sell_value": null
+      "belief_prob": 0.4168,
+      "ev": 4.21,
+      "kelly": 0.0915,
+      "sell_value": null,
+      "model_prob_change": 0.5463,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -116,5 +124,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-16T02:52:26.830908+00:00",
-  "last_lite_refresh": "2026-10-15T20:20:44.054507+00:00"
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
 }

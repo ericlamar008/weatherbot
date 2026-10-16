@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 52.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T07:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.2657,
       "ev": 176.1333,
       "kelly": 0.0661,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 78-79°F on October 17?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0272,
       "ev": 53.4,
       "kelly": 0.0067,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 80-81°F on October 17?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0294,
       "ev": 57.8,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 82-83°F on October 17?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0326,
       "ev": 4.4333,
       "kelly": 0.0067,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 84-85°F on October 17?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0324,
       "ev": 5.48,
       "kelly": 0.0069,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 86-87°F on October 17?",
@@ -139,19 +149,21 @@
         87.0
       ],
       "yes_price": 0.027,
-      "no_price": 0.971,
+      "no_price": 0.973,
       "volume": 67.0,
       "spread": 0.0,
       "yes_token_id": "111930267309958188994246707006088246761073901180294237003238279682931493774533",
       "no_token_id": "14263310398561444391116427508226087909583109473253035011332023216690044825844",
       "model_prob": 0.0454,
       "side": "YES",
-      "ask": 0.029,
-      "market_prob": 0.029,
+      "ask": 0.027,
+      "market_prob": 0.027,
       "belief_prob": 0.039,
-      "ev": 0.369,
-      "kelly": 0.0028,
-      "sell_value": null
+      "ev": 0.4444,
+      "kelly": 0.0031,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 88-89°F on October 17?",
@@ -161,19 +173,21 @@
         89.0
       ],
       "yes_price": 0.05,
-      "no_price": 0.925,
-      "volume": 233.0,
+      "no_price": 0.95,
+      "volume": 262.0,
       "spread": 0.0,
       "yes_token_id": "102217788911486927900658292223052764247595752582427310983976205436773435099816",
       "no_token_id": "48749064275858924935735512887219293077520616780020481271243903036810671408097",
       "model_prob": 0.0422,
       "side": "YES",
-      "ask": 0.075,
-      "market_prob": 0.075,
+      "ask": 0.05,
+      "market_prob": 0.05,
       "belief_prob": 0.0449,
-      "ev": -0.284,
+      "ev": -0.102,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 90-91°F on October 17?",
@@ -183,19 +197,21 @@
         91.0
       ],
       "yes_price": 0.16,
-      "no_price": 0.815,
-      "volume": 981.0,
+      "no_price": 0.84,
+      "volume": 1001.0,
       "spread": 0.0,
       "yes_token_id": "95181439530597957702063433419435467477941178669520973925592713583799178524636",
       "no_token_id": "53074999840492374998322328903840414393370942342072623850364733561213111625779",
       "model_prob": 0.0378,
       "side": "YES",
-      "ask": 0.185,
-      "market_prob": 0.185,
+      "ask": 0.16,
+      "market_prob": 0.16,
       "belief_prob": 0.0806,
-      "ev": -0.5173,
+      "ev": -0.4962,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 92-93°F on October 17?",
@@ -206,7 +222,7 @@
       ],
       "yes_price": 0.325,
       "no_price": 0.675,
-      "volume": 975.0,
+      "volume": 989.0,
       "spread": 0.0,
       "yes_token_id": "23145832011298278347819418005899106694360496420375648386864736916575811712324",
       "no_token_id": "113423583619056967666163205178322669930826344001439551662466871387522262298471",
@@ -217,7 +233,9 @@
       "belief_prob": 0.1351,
       "ev": -0.5843,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 94-95°F on October 17?",
@@ -226,20 +244,22 @@
         94.0,
         95.0
       ],
-      "yes_price": 0.315,
-      "no_price": 0.715,
+      "yes_price": 0.305,
+      "no_price": 0.695,
       "volume": 1749.0,
       "spread": 0.0,
       "yes_token_id": "42398153706804014522556674034854421785716584383192176542282778999635146755719",
       "no_token_id": "7862814597033915216966162731908859935793511222371353354200431648907192347021",
       "model_prob": 0.0277,
       "side": "YES",
-      "ask": 0.285,
-      "market_prob": 0.285,
-      "belief_prob": 0.1283,
-      "ev": -0.5867,
+      "ask": 0.305,
+      "market_prob": 0.305,
+      "belief_prob": 0.1248,
+      "ev": -0.5908,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Los Angeles be 96°F or higher on October 17?",
@@ -250,7 +270,7 @@
       ],
       "yes_price": 0.115,
       "no_price": 0.885,
-      "volume": 124.0,
+      "volume": 137.0,
       "spread": 0.0,
       "yes_token_id": "66682716172566789340866932890336662771752979729607399987237820352846082189111",
       "no_token_id": "48919237533171439746612555419161806215981512559960519607726056694935634276499",
@@ -261,7 +281,9 @@
       "belief_prob": 0.1869,
       "ev": 0.6252,
       "kelly": 0.0203,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-16T02:52:26.830908+00:00"
+  "last_price_refresh": "2026-10-16T02:52:26.830908+00:00",
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
 }

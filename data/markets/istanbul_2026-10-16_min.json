@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T21:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
   "last_scan": "2026-10-16T02:20:37.822996+00:00",
   "skipped_reason": "event volume 60 < min_volume 500",
-  "last_lite_refresh": "2026-10-15T20:20:44.054507+00:00"
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00",
+  "forecast_mean": 11.65,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 12°C on October 16?",
+      "market_id": "5678584",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 65.0,
+      "spread": 0.0,
+      "yes_token_id": "86635923316459690488796026871675686445641866692424039758624342825535916013281",
+      "no_token_id": "31454455974260842552757876844678306086437714003780030865124285040792000967647",
+      "model_prob": 0.4725,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3073,
+      "ev": 613.6,
+      "kelly": 0.0767,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 13°C on October 16?",
+      "market_id": "5678585",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "17015849641375228826886008728516756696579938107999011733288514278998195135698",
+      "no_token_id": "10715127457495219273228731764694268631605510305078869318679169458893367249195",
+      "model_prob": 0.3022,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1966,
+      "ev": 392.2,
+      "kelly": 0.049,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 14°C on October 16?",
+      "market_id": "5678586",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "108854568038112311118178852415037965341042676602096275015284084384595292584487",
+      "no_token_id": "80035481311718785500794494643620393444274562455630022185843807513799801963576",
+      "model_prob": 0.1352,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0881,
+      "ev": 175.2,
+      "kelly": 0.0219,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 15°C on October 16?",
+      "market_id": "5678587",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "16479920014218375736988149545289765575108007517598470133288372524932098462400",
+      "no_token_id": "89020977630110356454135773726814340917915781245966544788518948426237048202035",
+      "model_prob": 0.0528,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0345,
+      "ev": 68.0,
+      "kelly": 0.0085,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 16°C on October 16?",
+      "market_id": "5678588",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "110448466359572454400661178612802838366474938667533472774563153082005521695500",
+      "no_token_id": "64518179245632858416987345108890801924313678391576378252819194845462906763590",
+      "model_prob": 0.0207,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0136,
+      "ev": 26.2,
+      "kelly": 0.0033,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 17°C or higher on October 16?",
+      "market_id": "5678589",
+      "range": [
+        17.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "106217780916890075508504742216503463354377383228393561072659102447811058571556",
+      "no_token_id": "54768433091764723493419094818652879209286175014338364390156918732837614889163",
+      "model_prob": 0.0166,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.011,
+      "ev": 21.0,
+      "kelly": 0.0026,
+      "sell_value": null
+    }
+  ]
 }

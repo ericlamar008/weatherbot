@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 36.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-17T15:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0024,
       "ev": -0.04,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 20°C on October 17?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0036,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 21°C on October 17?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0065,
       "ev": 1.6,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 22°C on October 17?",
@@ -94,20 +100,22 @@
         22.0,
         22.0
       ],
-      "yes_price": 0.035,
-      "no_price": 0.965,
-      "volume": 675.0,
+      "yes_price": 0.0355,
+      "no_price": 0.9645,
+      "volume": 780.0,
       "spread": 0.0,
       "yes_token_id": "17904009743199709012609670874034170873971127360046114766562496226740421965118",
       "no_token_id": "90231289022591724469951964743286249098287096735899555803926330992477899929840",
       "model_prob": 0.0279,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
-      "belief_prob": 0.0304,
-      "ev": -0.1314,
+      "ask": 0.0355,
+      "market_prob": 0.0355,
+      "belief_prob": 0.0306,
+      "ev": -0.138,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Tokyo be 23°C on October 17?",
@@ -116,20 +124,22 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.355,
-      "no_price": 0.645,
+      "yes_price": 0.36,
+      "no_price": 0.64,
       "volume": 1773.0,
       "spread": 0.0,
       "yes_token_id": "104541709068453991181616032176825131252908043475517694105051768878606529452232",
       "no_token_id": "76835373540289123389972429732501892002055796737139132671069597998077827517981",
       "model_prob": 0.0917,
       "side": "YES",
-      "ask": 0.355,
-      "market_prob": 0.355,
-      "belief_prob": 0.1839,
-      "ev": -0.482,
+      "ask": 0.36,
+      "market_prob": 0.36,
+      "belief_prob": 0.1856,
+      "ev": -0.4844,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Tokyo be 24°C on October 17?",
@@ -138,20 +148,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.55,
-      "no_price": 0.455,
-      "volume": 3628.0,
+      "yes_price": 0.54,
+      "no_price": 0.46,
+      "volume": 3638.0,
       "spread": 0.0,
       "yes_token_id": "102987081930001818339745411494284919295732174674732096325794257764972126537848",
       "no_token_id": "109871431735396843608883281945942346769826826897177755532258012316847391567352",
       "model_prob": 0.2389,
       "side": "YES",
-      "ask": 0.545,
-      "market_prob": 0.545,
-      "belief_prob": 0.3478,
-      "ev": -0.3651,
+      "ask": 0.54,
+      "market_prob": 0.54,
+      "belief_prob": 0.3443,
+      "ev": -0.3624,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Tokyo be 25°C on October 17?",
@@ -161,19 +173,21 @@
         25.0
       ],
       "yes_price": 0.075,
-      "no_price": 0.92,
-      "volume": 878.0,
+      "no_price": 0.925,
+      "volume": 903.0,
       "spread": 0.0,
       "yes_token_id": "47398440227407036211252456925834793231504535808549934771599644761223466264672",
       "no_token_id": "6879348980350625812527103986427090493773092909450281945902644381894453918171",
       "model_prob": 0.3278,
       "side": "YES",
-      "ask": 0.08,
-      "market_prob": 0.08,
+      "ask": 0.075,
+      "market_prob": 0.075,
       "belief_prob": 0.2393,
-      "ev": 2.0137,
-      "kelly": 0.0438,
-      "sell_value": null
+      "ev": 2.1907,
+      "kelly": 0.0444,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 26°C on October 17?",
@@ -183,19 +197,21 @@
         26.0
       ],
       "yes_price": 0.013,
-      "no_price": 0.9865,
+      "no_price": 0.987,
       "volume": 590.0,
       "spread": 0.0,
       "yes_token_id": "80089871497531030683347231652669380665997340160807711345054758447559134051774",
       "no_token_id": "102767634486690973488979183050560619415386138625234855196357651658553796031390",
       "model_prob": 0.1982,
       "side": "YES",
-      "ask": 0.0135,
-      "market_prob": 0.0135,
+      "ask": 0.013,
+      "market_prob": 0.013,
       "belief_prob": 0.1334,
-      "ev": 8.8963,
-      "kelly": 0.0304,
-      "sell_value": null
+      "ev": 9.2615,
+      "kelly": 0.0305,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 27°C on October 17?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0456,
       "ev": 29.4,
       "kelly": 0.011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 28°C on October 17?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0142,
       "ev": 8.4667,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tokyo be 29°C or higher on October 17?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0074,
       "ev": 13.8,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-16T02:52:26.830908+00:00"
+  "last_price_refresh": "2026-10-16T02:52:26.830908+00:00",
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
 }

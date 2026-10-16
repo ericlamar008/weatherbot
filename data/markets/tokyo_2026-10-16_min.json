@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-15T02:20:37.043761+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 12.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T15:00:00+00:00",
   "event_end_date": "2026-10-16T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0061,
       "ev": 1.44,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 13°C on October 16?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.006,
       "ev": 2.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 14°C on October 16?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.014,
       "ev": 1.5455,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 15°C on October 16?",
@@ -102,7 +108,9 @@
       "belief_prob": 0.031,
       "ev": 2.875,
       "kelly": 0.0058,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 16°C on October 16?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.0688,
       "ev": 3.0471,
       "kelly": 0.0132,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 17°C on October 16?",
@@ -146,7 +156,9 @@
       "belief_prob": 0.1202,
       "ev": 11.6526,
       "kelly": 0.0279,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 18°C on October 16?",
@@ -155,20 +167,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.0275,
-      "no_price": 0.971,
+      "yes_price": 0.042,
+      "no_price": 0.958,
       "volume": 971.0,
       "spread": 0.0,
       "yes_token_id": "100292692074614810157239984433614709654700854869100148082632701231101474501651",
       "no_token_id": "96302312941258747899521885896656210089390942898647471125577887782328540684920",
       "model_prob": 0.2361,
       "side": "YES",
-      "ask": 0.029,
-      "market_prob": 0.029,
-      "belief_prob": 0.1631,
-      "ev": 4.6414,
-      "kelly": 0.0347,
-      "sell_value": null
+      "ask": 0.042,
+      "market_prob": 0.042,
+      "belief_prob": 0.1682,
+      "ev": 3.0048,
+      "kelly": 0.0329,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0145
     },
     {
       "question": "Will the lowest temperature in Tokyo be 19°C on October 16?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.4708,
       "ev": -0.5171,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 20°C on October 16?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0749,
       "ev": 148.8,
       "kelly": 0.0186,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 21°C on October 16?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0347,
       "ev": 68.4,
       "kelly": 0.0086,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 22°C or higher on October 16?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0275,
       "ev": 54.0,
       "kelly": 0.0068,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-16T02:52:26.830908+00:00",
-  "last_lite_refresh": "2026-10-15T20:20:44.054507+00:00"
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
 }

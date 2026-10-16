@@ -6,14 +6,14 @@
   "status": "open",
   "created_at": "2026-10-14T02:20:39.694050+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-16T05:00:00+00:00",
   "event_end_date": "2026-10-15T12:00:00Z",
   "last_scan": "2026-10-16T02:20:37.822996+00:00",
   "horizon_days": 0,
   "forecast_mean": 90.17,
-  "sigma": 1.44,
+  "sigma": 1.442,
   "forecast_mean_shadow": 89.66,
   "model_means_raw": {
     "ecmwf": 88.85,
@@ -41,7 +41,9 @@
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 82-83°F on October 15?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 84-85°F on October 15?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0053,
       "ev": 9.6,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 86-87°F on October 15?",
@@ -100,14 +106,16 @@
       "spread": 0.0,
       "yes_token_id": "66902397998258299841562287046617763806155899892024613045342525659682841062935",
       "no_token_id": "115562310167052632353156108541900638271083741577082402588345541533037411155419",
-      "model_prob": 0.0449,
+      "model_prob": 0.045,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.0294,
       "ev": 57.8,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 88-89°F on October 15?",
@@ -122,14 +130,16 @@
       "spread": 0.0,
       "yes_token_id": "60656975280986922995068893814913861041824844346126517830395795374139002545771",
       "no_token_id": "25126052421893500963537562740078803036962970563924063609539340863358825810484",
-      "model_prob": 0.2605,
+      "model_prob": 0.2606,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.1695,
-      "ev": 338.0,
+      "belief_prob": 0.1696,
+      "ev": 338.2,
       "kelly": 0.0423,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 90-91°F on October 15?",
@@ -140,18 +150,20 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 9653.0,
+      "volume": 9673.0,
       "spread": 0.0,
       "yes_token_id": "114100438976440626003790203377429781649572365105448078409337847239042863462929",
       "no_token_id": "5972508225780058279497856264426809104630240421228483905811842866174446440704",
-      "model_prob": 0.4987,
+      "model_prob": 0.498,
       "side": "YES",
       "ask": 0.9995,
       "market_prob": 0.9995,
-      "belief_prob": 0.674,
-      "ev": -0.3257,
+      "belief_prob": 0.6735,
+      "ev": -0.3262,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0007,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 92-93°F on October 15?",
@@ -166,14 +178,16 @@
       "spread": 0.0,
       "yes_token_id": "56178674994500400398117881769550459407112570706662080201385947711225160052162",
       "no_token_id": "97051006333942749645412807998800093349067137990090246809844089619911917830438",
-      "model_prob": 0.1527,
+      "model_prob": 0.1529,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0994,
-      "ev": 197.8,
-      "kelly": 0.0247,
-      "sell_value": null
+      "belief_prob": 0.0996,
+      "ev": 198.2,
+      "kelly": 0.0248,
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 94-95°F on October 15?",
@@ -188,14 +202,16 @@
       "spread": 0.0,
       "yes_token_id": "68582529145046132182386379111525996658383370889358342684940824703890620393005",
       "no_token_id": "78882885833214413712664861211854539479010523636702406140264911440685349278221",
-      "model_prob": 0.0246,
+      "model_prob": 0.0247,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.0162,
       "ev": 31.4,
       "kelly": 0.0039,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 96-97°F on October 15?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0032,
       "ev": 5.4,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be between 98-99°F on October 15?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Austin be 100°F or higher on October 15?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-16T02:52:26.830908+00:00",
-  "last_lite_refresh": "2026-10-15T20:20:44.054507+00:00"
+  "last_lite_refresh": "2026-10-16T02:53:15.988926+00:00"
 }
