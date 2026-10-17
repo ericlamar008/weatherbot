@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 45.7,
+  "hours_left": 39.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T06:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
   "last_scan": "2026-10-17T02:20:36.799809+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-17T08:20:38.227111+00:00"
+  "last_lite_refresh": "2026-10-17T14:20:45.083657+00:00",
+  "forecast_mean": 10.24,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 15°C or higher on October 18?",
+      "market_id": "5773680",
+      "range": [
+        15.0,
+        999.0
+      ],
+      "yes_price": 0.2075,
+      "no_price": 0.7925,
+      "volume": 264.0,
+      "spread": 0.0,
+      "yes_token_id": "16182925387532137398416506779743483075382411624871683796199147065955119303838",
+      "no_token_id": "1358717398508237846613065812750198665483441438784989448670055643689037157161",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.2075,
+      "market_prob": 0.2075,
+      "belief_prob": 0.7226,
+      "ev": 2.4824,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
