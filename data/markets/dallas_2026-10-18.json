@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T05:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
@@ -30,7 +30,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 82.0,
+      "volume": 87.0,
       "spread": 0.0,
       "yes_token_id": "65857838283685748663480572153199515592383938163127824247994518224106639523674",
       "no_token_id": "70830495023688055285348357724235596585120980469747874104100378469022956301547",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0016,
       "ev": 0.0667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 60-61°F on October 18?",
@@ -51,19 +53,21 @@
         61.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.998,
-      "volume": 72.0,
+      "no_price": 0.9985,
+      "volume": 77.0,
       "spread": 0.0,
       "yes_token_id": "47973743735359456030838801209531731615362201168389314990320231373972303693009",
       "no_token_id": "40826590086805934685106454214106467316349554788688737200307930877220099809073",
       "model_prob": 0.0012,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0013,
-      "ev": -0.25,
+      "ev": -0.1333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 62-63°F on October 18?",
@@ -73,19 +77,21 @@
         63.0
       ],
       "yes_price": 0.004,
-      "no_price": 0.9955,
-      "volume": 42.0,
+      "no_price": 0.996,
+      "volume": 47.0,
       "spread": 0.0,
       "yes_token_id": "69481815659764874765432185348510400475015282050451309416957617550331952863746",
       "no_token_id": "70047795743653663862048565935866383176995158381984850985686796152726091251041",
       "model_prob": 0.0036,
       "side": "YES",
-      "ask": 0.0045,
-      "market_prob": 0.0045,
+      "ask": 0.004,
+      "market_prob": 0.004,
       "belief_prob": 0.0037,
-      "ev": -0.1333,
+      "ev": -0.075,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 64-65°F on October 18?",
@@ -96,7 +102,7 @@
       ],
       "yes_price": 0.003,
       "no_price": 0.997,
-      "volume": 52.0,
+      "volume": 57.0,
       "spread": 0.0,
       "yes_token_id": "35296619424133423084400247260867415422289195479733564544713814455478504628031",
       "no_token_id": "47052223460531931216218762798126381725228231964279814120029102268447408960762",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0094,
       "ev": 2.1333,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 66-67°F on October 18?",
@@ -117,19 +125,21 @@
         67.0
       ],
       "yes_price": 0.0135,
-      "no_price": 0.982,
-      "volume": 115.0,
+      "no_price": 0.9865,
+      "volume": 120.0,
       "spread": 0.0,
       "yes_token_id": "9165999292285708717150408415560743274720238504171274710554516795042939038804",
       "no_token_id": "4161803712504568325449852098906066688475845749187791236421348820331980757685",
       "model_prob": 0.054,
       "side": "YES",
-      "ask": 0.018,
-      "market_prob": 0.018,
+      "ask": 0.0135,
+      "market_prob": 0.0135,
       "belief_prob": 0.0398,
-      "ev": 1.3,
-      "kelly": 0.006,
-      "sell_value": null
+      "ev": 1.9481,
+      "kelly": 0.0067,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 68-69°F on October 18?",
@@ -139,19 +149,21 @@
         69.0
       ],
       "yes_price": 0.165,
-      "no_price": 0.82,
-      "volume": 2578.0,
+      "no_price": 0.835,
+      "volume": 2588.0,
       "spread": 0.0,
       "yes_token_id": "41583092514079312512290368086372522924271810368370582157886557420183969661618",
       "no_token_id": "6666866587813958615826075089281578276369709248716614681165317391798652084377",
       "model_prob": 0.2128,
       "side": "YES",
-      "ask": 0.18,
-      "market_prob": 0.18,
+      "ask": 0.165,
+      "market_prob": 0.165,
       "belief_prob": 0.1961,
-      "ev": 0.1183,
-      "kelly": 0.0065,
-      "sell_value": null
+      "ev": 0.1885,
+      "kelly": 0.0093,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 70-71°F on October 18?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.625,
       "no_price": 0.375,
-      "volume": 812.0,
+      "volume": 956.0,
       "spread": 0.0,
       "yes_token_id": "114852499030460976237860473593241876749608538407449267558044393680324267365029",
       "no_token_id": "91928817117192054556397653076764848747730878957745672865016186541367690593107",
@@ -173,7 +185,9 @@
       "belief_prob": 0.4841,
       "ev": -0.2254,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 72-73°F on October 18?",
@@ -183,19 +197,21 @@
         73.0
       ],
       "yes_price": 0.215,
-      "no_price": 0.795,
-      "volume": 787.0,
+      "no_price": 0.785,
+      "volume": 792.0,
       "spread": 0.0,
       "yes_token_id": "60335396365859200107019848902222400105000243137509206722140732683130197266000",
       "no_token_id": "28961012321667969218664447655231866152283307095859808144701728803956475682598",
       "model_prob": 0.2227,
       "side": "YES",
-      "ask": 0.205,
-      "market_prob": 0.205,
+      "ask": 0.215,
+      "market_prob": 0.215,
       "belief_prob": 0.22,
-      "ev": 0.0561,
-      "kelly": 0.0036,
-      "sell_value": null
+      "ev": 0.0233,
+      "kelly": 0.0016,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 74-75°F on October 18?",
@@ -205,19 +221,21 @@
         75.0
       ],
       "yes_price": 0.011,
-      "no_price": 0.9875,
-      "volume": 58.0,
+      "no_price": 0.989,
+      "volume": 63.0,
       "spread": 0.0,
       "yes_token_id": "109625796176768607916901344033870974635646938127296956421857482034299682860200",
       "no_token_id": "20296581837610398965965658710498461922555085707713783264471827727403648523998",
       "model_prob": 0.0573,
       "side": "YES",
-      "ask": 0.0125,
-      "market_prob": 0.0125,
+      "ask": 0.011,
+      "market_prob": 0.011,
       "belief_prob": 0.0411,
-      "ev": 2.328,
-      "kelly": 0.0074,
-      "sell_value": null
+      "ev": 2.7364,
+      "kelly": 0.0076,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 76-77°F on October 18?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 52.0,
+      "volume": 57.0,
       "spread": 0.0,
       "yes_token_id": "11712696198606096991441095522867540893702917550913402622707224622772893106535",
       "no_token_id": "54819728112933848064108305316257685012314695960382849950495458802329725993306",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0094,
       "ev": 5.2667,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be 78°F or higher on October 18?",
@@ -250,7 +270,7 @@
       ],
       "yes_price": 0.0055,
       "no_price": 0.9945,
-      "volume": 92.0,
+      "volume": 97.0,
       "spread": 0.0,
       "yes_token_id": "17620490024937504199852968837847792608489474035347566148280201607875643157636",
       "no_token_id": "30204023184954264625175600531088804581268588564478917838847682751923521772842",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0099,
       "ev": 0.8,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -307,5 +329,6 @@
   "confidence": 0.4907,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00"
+  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00",
+  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00"
 }

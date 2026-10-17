@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T22:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
@@ -14,10 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 17.2,
   "sigma": 1.067,
-  "forecast_mean_shadow": 17.06,
+  "forecast_mean_shadow": 16.99,
   "model_means_raw": {
     "ecmwf": 16.77,
     "gfs": 16.9,
+    "gem": 16.39,
     "icon_eu": 16.22
   },
   "full_distribution": [
@@ -41,7 +42,9 @@
       "belief_prob": 0.0015,
       "ev": -0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 12°C on October 18?",
@@ -51,19 +54,21 @@
         12.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9975,
+      "no_price": 0.998,
       "volume": 373.0,
       "spread": 0.0,
       "yes_token_id": "98102207346678772669870482744890930843340428004177040682933262364678286037303",
       "no_token_id": "58586172065471650089984306215329069965945136014256720123078152045981520315157",
       "model_prob": 0.002,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.002,
-      "ev": -0.12,
+      "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 13°C on October 18?",
@@ -85,7 +90,9 @@
       "belief_prob": 0.0066,
       "ev": -0.2235,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 14°C on October 18?",
@@ -107,7 +114,9 @@
       "belief_prob": 0.0121,
       "ev": 3.84,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 15°C on October 18?",
@@ -129,7 +138,9 @@
       "belief_prob": 0.0579,
       "ev": 0.0624,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 16°C on October 18?",
@@ -140,7 +151,7 @@
       ],
       "yes_price": 0.295,
       "no_price": 0.705,
-      "volume": 1685.0,
+      "volume": 1690.0,
       "spread": 0.0,
       "yes_token_id": "51094882658445654147301773583796489526145259563323471561976397960806463388070",
       "no_token_id": "12332307303649240721452063869031348681509395787150992560340375875873983106007",
@@ -151,7 +162,9 @@
       "belief_prob": 0.2231,
       "ev": -0.2437,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 17°C on October 18?",
@@ -173,7 +186,9 @@
       "belief_prob": 0.3628,
       "ev": -0.1258,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 18°C on October 18?",
@@ -195,7 +210,9 @@
       "belief_prob": 0.2418,
       "ev": 0.1247,
       "kelly": 0.0085,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 19°C on October 18?",
@@ -217,7 +234,9 @@
       "belief_prob": 0.0723,
       "ev": 1.7283,
       "kelly": 0.0118,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 20°C on October 18?",
@@ -239,7 +258,9 @@
       "belief_prob": 0.0198,
       "ev": 3.95,
       "kelly": 0.004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 21°C or higher on October 18?",
@@ -261,7 +282,9 @@
       "belief_prob": 0.0118,
       "ev": 0.3882,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -323,5 +346,6 @@
   "confidence": 0.0003,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00"
+  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00",
+  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00"
 }

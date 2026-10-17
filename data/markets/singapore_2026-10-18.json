@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T16:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
@@ -30,7 +30,7 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 211.0,
+      "volume": 223.0,
       "spread": 0.0,
       "yes_token_id": "84908898793115494820977722870967096637702903709248921889977856555927455769258",
       "no_token_id": "17821459125050858343916324846917790708179391579980531190561171917535054537698",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0008,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 26°C on October 18?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 27°C on October 18?",
@@ -74,7 +78,7 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 332.0,
+      "volume": 334.0,
       "spread": 0.0,
       "yes_token_id": "75603992503162032201318680942321275663929673703453070020129616169985868416122",
       "no_token_id": "115491707437280146707876809938778261037975529065144816162814702946199913286630",
@@ -85,7 +89,9 @@
       "belief_prob": 0.001,
       "ev": -0.5,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 28°C on October 18?",
@@ -96,7 +102,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 145.0,
+      "volume": 146.0,
       "spread": 0.0,
       "yes_token_id": "90014798294870090165801143021661801612428733031532086286460539400679820810641",
       "no_token_id": "39790150847538186187809712749479937024195807507685754175651254284703045575258",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0018,
       "ev": -0.28,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 29°C on October 18?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 298.0,
+      "volume": 299.0,
       "spread": 0.0,
       "yes_token_id": "98784252749282915593282695350962884579235181326662937593959849218774610287741",
       "no_token_id": "9811658267231284596931146231039907063293871392796010849387527278312862370373",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0045,
       "ev": 0.8,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 30°C on October 18?",
@@ -139,19 +149,21 @@
         30.0
       ],
       "yes_price": 0.0305,
-      "no_price": 0.969,
-      "volume": 87.0,
+      "no_price": 0.9695,
+      "volume": 88.0,
       "spread": 0.0,
       "yes_token_id": "2208737823857362103121192236351702647192402366075247821115164220637152300125",
       "no_token_id": "47433547910753341940926097531535499910390800322424829817946922556607530963204",
       "model_prob": 0.0286,
       "side": "YES",
-      "ask": 0.031,
-      "market_prob": 0.031,
+      "ask": 0.0305,
+      "market_prob": 0.0305,
       "belief_prob": 0.0293,
-      "ev": -0.0516,
+      "ev": -0.0393,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 31°C on October 18?",
@@ -161,19 +173,21 @@
         31.0
       ],
       "yes_price": 0.065,
-      "no_price": 0.94,
+      "no_price": 0.935,
       "volume": 443.0,
       "spread": 0.0,
       "yes_token_id": "96226036644327982882382697271149513405461330287772898397416432901217583825786",
       "no_token_id": "1703899010804369410835609526848899881519468845728389929093316887822652308237",
       "model_prob": 0.1586,
       "side": "YES",
-      "ask": 0.06,
-      "market_prob": 0.06,
+      "ask": 0.065,
+      "market_prob": 0.065,
       "belief_prob": 0.1258,
-      "ev": 1.0683,
-      "kelly": 0.017,
-      "sell_value": null
+      "ev": 0.9354,
+      "kelly": 0.0163,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 32°C on October 18?",
@@ -184,7 +198,7 @@
       ],
       "yes_price": 0.285,
       "no_price": 0.715,
-      "volume": 1356.0,
+      "volume": 1357.0,
       "spread": 0.0,
       "yes_token_id": "53143459883730611998262455197956369609329093995136562366642749597237514083175",
       "no_token_id": "95237717973703325759431847129836250331504726114624563235139315251666273503832",
@@ -195,7 +209,9 @@
       "belief_prob": 0.39,
       "ev": 0.3684,
       "kelly": 0.0367,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 33°C on October 18?",
@@ -205,19 +221,21 @@
         33.0
       ],
       "yes_price": 0.495,
-      "no_price": 0.49,
-      "volume": 1581.0,
+      "no_price": 0.505,
+      "volume": 1668.0,
       "spread": 0.0,
       "yes_token_id": "78261445985732656647435412963750920751014746271179421434903021765948479452386",
       "no_token_id": "70323237851438604440572526363894131464009234835399805312847344299061187186914",
       "model_prob": 0.2842,
       "side": "YES",
-      "ask": 0.51,
-      "market_prob": 0.51,
+      "ask": 0.495,
+      "market_prob": 0.495,
       "belief_prob": 0.358,
-      "ev": -0.2878,
+      "ev": -0.2768,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Singapore be 34°C on October 18?",
@@ -226,20 +244,22 @@
         34.0,
         34.0
       ],
-      "yes_price": 0.0745,
-      "no_price": 0.9255,
+      "yes_price": 0.0805,
+      "no_price": 0.9195,
       "volume": 43.0,
       "spread": 0.0,
       "yes_token_id": "57926503729064973473339396794367606106076876669942581512816611366494073025462",
       "no_token_id": "68308607357780977807828060343216469880341980172919774816683826367862747906778",
       "model_prob": 0.0596,
       "side": "YES",
-      "ask": 0.0745,
-      "market_prob": 0.0745,
-      "belief_prob": 0.0648,
-      "ev": -0.1302,
+      "ask": 0.0805,
+      "market_prob": 0.0805,
+      "belief_prob": 0.0669,
+      "ev": -0.1689,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.006
     },
     {
       "question": "Will the highest temperature in Singapore be 35°C or higher on October 18?",
@@ -249,19 +269,21 @@
         999.0
       ],
       "yes_price": 0.006,
-      "no_price": 0.9935,
-      "volume": 14.0,
+      "no_price": 0.994,
+      "volume": 19.0,
       "spread": 0.0,
       "yes_token_id": "39742607085497954938005545851732485933361210334700551686234763211194296077230",
       "no_token_id": "59747400173200062336817977785308077926824916369354629953121388394523960073164",
       "model_prob": 0.0145,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.006,
+      "market_prob": 0.006,
       "belief_prob": 0.0115,
-      "ev": 0.8,
-      "kelly": 0.0013,
-      "sell_value": null
+      "ev": 0.9167,
+      "kelly": 0.0014,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00"
+  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00",
+  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00"
 }

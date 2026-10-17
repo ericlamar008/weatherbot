@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 36.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T15:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
   "last_scan": "2026-10-17T02:20:36.799809+00:00",
-  "skipped_reason": "event volume 162 < min_volume 500"
+  "skipped_reason": "event volume 162 < min_volume 500",
+  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00",
+  "forecast_mean": 15.53,
+  "sigma": 2.156,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tokyo be 14°C on October 18?",
+      "market_id": "5766468",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.06,
+      "no_price": 0.94,
+      "volume": 82.0,
+      "spread": 0.0,
+      "yes_token_id": "27226890514307584511227118505287710315763823230141458100802779086628451825346",
+      "no_token_id": "55877038881565864282010349357203229746326106283496369635184405010112907885165",
+      "model_prob": 0.2805,
+      "side": "YES",
+      "ask": 0.06,
+      "market_prob": 0.06,
+      "belief_prob": 0.2033,
+      "ev": 2.3883,
+      "kelly": 0.0381,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 15°C on October 18?",
+      "market_id": "5766469",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.115,
+      "no_price": 0.885,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "99234096192443337137771167015606786648812261361610918624179648264124765855521",
+      "no_token_id": "66222732022484652384697015339823841319214024142650279791939970296252083323165",
+      "model_prob": 0.3584,
+      "side": "YES",
+      "ask": 0.115,
+      "market_prob": 0.115,
+      "belief_prob": 0.2732,
+      "ev": 1.3757,
+      "kelly": 0.0447,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tokyo be 16°C on October 18?",
+      "market_id": "5766470",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.345,
+      "no_price": 0.655,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "9702048454684794191717413723338415988503272441075049075371011634120474990330",
+      "no_token_id": "26387500287973677743732066381535113052228606613361527479192701087662235192561",
+      "model_prob": 0.3611,
+      "side": "YES",
+      "ask": 0.345,
+      "market_prob": 0.345,
+      "belief_prob": 0.3555,
+      "ev": 0.0304,
+      "kelly": 0.004,
+      "sell_value": null
+    }
+  ]
 }

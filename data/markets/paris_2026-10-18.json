@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T22:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0007,
       "ev": -0.3,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 8°C on October 18?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0005,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 9°C on October 18?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 10°C on October 18?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0037,
       "ev": -0.1778,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 11°C on October 18?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.007,
       "ev": 3.6667,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 12°C on October 18?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.026,
       "ev": 0.9259,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 13°C on October 18?",
@@ -162,19 +174,21 @@
         13.0
       ],
       "yes_price": 0.085,
-      "no_price": 0.895,
-      "volume": 2841.0,
+      "no_price": 0.915,
+      "volume": 2951.0,
       "spread": 0.0,
       "yes_token_id": "24319197153442288018841438494832280275765005737208887826017170712177160263241",
       "no_token_id": "58198390476676628189661818627863831982449362063556518271398440776165397309573",
       "model_prob": 0.1098,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.085,
+      "market_prob": 0.085,
       "belief_prob": 0.1011,
-      "ev": 0.0295,
-      "kelly": 0.0009,
-      "sell_value": null
+      "ev": 0.1894,
+      "kelly": 0.0044,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 14°C on October 18?",
@@ -184,19 +198,21 @@
         14.0
       ],
       "yes_price": 0.535,
-      "no_price": 0.475,
+      "no_price": 0.465,
       "volume": 845.0,
       "spread": 0.0,
       "yes_token_id": "113656630036774643568112067142770055601325807301337674416551121693945063567046",
       "no_token_id": "49865232594175608332148060207205482310642249449817071624890517069436338741994",
       "model_prob": 0.2718,
       "side": "YES",
-      "ask": 0.525,
-      "market_prob": 0.525,
+      "ask": 0.535,
+      "market_prob": 0.535,
       "belief_prob": 0.3639,
-      "ev": -0.3135,
+      "ev": -0.3198,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 15°C on October 18?",
@@ -206,19 +222,21 @@
         15.0
       ],
       "yes_price": 0.34,
-      "no_price": 0.665,
-      "volume": 3149.0,
+      "no_price": 0.66,
+      "volume": 3159.0,
       "spread": 0.0,
       "yes_token_id": "74143811308355651189793888448410204519514682798271868294650374802782046115256",
       "no_token_id": "70692816912063598915752682388769397142150414037136956481134831535124455033088",
       "model_prob": 0.324,
       "side": "YES",
-      "ask": 0.335,
-      "market_prob": 0.335,
+      "ask": 0.34,
+      "market_prob": 0.34,
       "belief_prob": 0.3296,
-      "ev": -0.0215,
+      "ev": -0.0306,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 16°C on October 18?",
@@ -228,19 +246,21 @@
         16.0
       ],
       "yes_price": 0.0285,
-      "no_price": 0.9725,
+      "no_price": 0.9715,
       "volume": 317.0,
       "spread": 0.0,
       "yes_token_id": "973092322335284430271473095595822195562321796827158866141517499173427195067",
       "no_token_id": "111740309204725513995305084229241205165982979682860187066346762262943895538597",
       "model_prob": 0.1678,
       "side": "YES",
-      "ask": 0.0275,
-      "market_prob": 0.0275,
+      "ask": 0.0285,
+      "market_prob": 0.0285,
       "belief_prob": 0.119,
-      "ev": 3.3164,
-      "kelly": 0.0234,
-      "sell_value": null
+      "ev": 3.1754,
+      "kelly": 0.0233,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 17°C or higher on October 18?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0532,
       "ev": 6.6,
       "kelly": 0.0116,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00"
+  "last_price_refresh": "2026-10-17T02:52:24.470456+00:00",
+  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00"
 }
