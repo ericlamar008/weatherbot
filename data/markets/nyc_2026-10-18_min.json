@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 49.1,
+  "hours_left": 43.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T04:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
   "last_scan": "2026-10-17T02:20:36.799809+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-17T02:53:05.408054+00:00"
+  "last_lite_refresh": "2026-10-17T08:20:38.227111+00:00",
+  "forecast_mean": 42.47,
+  "sigma": 2.435,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in New York City be between 42-43°F on October 18?",
+      "market_id": "5769428",
+      "range": [
+        42.0,
+        43.0
+      ],
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 34.0,
+      "spread": 0.0,
+      "yes_token_id": "34228213075806278100171998861373163859063907866138947369080172772405549170649",
+      "no_token_id": "41875214906067537570020093866863819065330241380137791355433021555689650799526",
+      "model_prob": 0.7845,
+      "side": "YES",
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.6797,
+      "ev": 0.4014,
+      "kelly": 0.0945,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in New York City be between 46-47°F on October 18?",
+      "market_id": "5769430",
+      "range": [
+        46.0,
+        47.0
+      ],
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "92714416218993007189058901915994590610612909493496165714905743592830244209819",
+      "no_token_id": "72959962496123596432939378346445726230512483478001800010839934159963397763186",
+      "model_prob": 0.2155,
+      "side": "YES",
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.1891,
+      "ev": 0.3507,
+      "kelly": 0.0143,
+      "sell_value": null
+    }
+  ]
 }
