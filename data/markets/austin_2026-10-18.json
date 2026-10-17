@@ -1,0 +1,326 @@
+{
+  "city": "austin",
+  "city_name": "Austin",
+  "date": "2026-10-18",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-10-17T02:20:36.799809+00:00",
+  "committed_allocation": null,
+  "hours_left": 50.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-19T05:00:00+00:00",
+  "event_end_date": "2026-10-18T12:00:00Z",
+  "last_scan": "2026-10-17T02:20:36.799809+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 72.5,
+  "sigma": 1.822,
+  "forecast_mean_shadow": 72.22,
+  "model_means_raw": {
+    "ecmwf": 72.12,
+    "gfs": 72.44,
+    "gem": 70.84
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Austin be 63°F or below on October 18?",
+      "market_id": "5769299",
+      "range": [
+        -999.0,
+        63.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 141.0,
+      "spread": 0.0,
+      "yes_token_id": "8235333910267364895290053716318044667684345230817089320806454128385366636482",
+      "no_token_id": "82733732316604934763889913879007768999655001438457455257281158844657744074168",
+      "model_prob": 0.0043,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0037,
+      "ev": 0.48,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 64-65°F on October 18?",
+      "market_id": "5769300",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "28616082438183785530104689037419607524439830746541252281017884405573126945050",
+      "no_token_id": "68700118556953986762979727522548950854333556783911869345666669211649627281474",
+      "model_prob": 0.0037,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0042,
+      "ev": -0.16,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 66-67°F on October 18?",
+      "market_id": "5769301",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "49565710369934781493739125651184684377914895752645391754449703692433205751606",
+      "no_token_id": "14491621037514961372185672089567909894347436341463933254778056158686104300151",
+      "model_prob": 0.0133,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0104,
+      "ev": 1.08,
+      "kelly": 0.0014,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 68-69°F on October 18?",
+      "market_id": "5769302",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "74777080365198724670278105755178999422066667403775207741838339232519190247687",
+      "no_token_id": "11047425025352915964000651553235816814569766915327526391147187092345195386268",
+      "model_prob": 0.056,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0371,
+      "ev": 17.55,
+      "kelly": 0.0088,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 70-71°F on October 18?",
+      "market_id": "5769303",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 192.0,
+      "spread": 0.0,
+      "yes_token_id": "28186839537814803431849219390829886850052128547621475226115116766541440972139",
+      "no_token_id": "45956945159862570082383574208270592266328179752535978463075369614597851620581",
+      "model_prob": 0.2184,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.1805,
+      "ev": 0.6409,
+      "kelly": 0.0198,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 72-73°F on October 18?",
+      "market_id": "5769304",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.52,
+      "no_price": 0.48,
+      "volume": 2701.0,
+      "spread": 0.0,
+      "yes_token_id": "20683498974323778603217629191237746730007181096347793842525770889570370860856",
+      "no_token_id": "115774997696545426336353964371230019173686179267333646999626230042749819014820",
+      "model_prob": 0.4086,
+      "side": "YES",
+      "ask": 0.52,
+      "market_prob": 0.52,
+      "belief_prob": 0.4476,
+      "ev": -0.1392,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 74-75°F on October 18?",
+      "market_id": "5769305",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 1084.0,
+      "spread": 0.0,
+      "yes_token_id": "96648685849902837647149806607537568474914375998848238743651462954563852808295",
+      "no_token_id": "63189626804322325344601853277440134281769250912895237422101229956438582672187",
+      "model_prob": 0.2184,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.2592,
+      "ev": -0.2263,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 76-77°F on October 18?",
+      "market_id": "5769306",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.058,
+      "no_price": 0.942,
+      "volume": 120.0,
+      "spread": 0.0,
+      "yes_token_id": "80583016699339099517969618007013707361525220150132394970387889191561106429555",
+      "no_token_id": "74255197656363506245812872791198450744180563517765156909982896182412227278842",
+      "model_prob": 0.056,
+      "side": "YES",
+      "ask": 0.058,
+      "market_prob": 0.058,
+      "belief_prob": 0.0567,
+      "ev": -0.0224,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 78-79°F on October 18?",
+      "market_id": "5769307",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 170.0,
+      "spread": 0.0,
+      "yes_token_id": "82733704451214429647965926894730563955162145029266555673340360988486530417744",
+      "no_token_id": "40761378200483365830790921677441950978519555910745207511357596153645350905704",
+      "model_prob": 0.0133,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0099,
+      "ev": 1.8286,
+      "kelly": 0.0016,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 80-81°F on October 18?",
+      "market_id": "5769308",
+      "range": [
+        80.0,
+        81.0
+      ],
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 309.0,
+      "spread": 0.0,
+      "yes_token_id": "9406412137709911638571483179257122649541647191670230468499162320748375539255",
+      "no_token_id": "40900041344243348416567122198785601609809143262943041224280978593984178278477",
+      "model_prob": 0.0037,
+      "side": "YES",
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0029,
+      "ev": 0.9333,
+      "kelly": 0.0004,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be 82°F or higher on October 18?",
+      "market_id": "5769309",
+      "range": [
+        82.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 145.0,
+      "spread": 0.0,
+      "yes_token_id": "4109056413391547676630396796506065214186830292914336312189601830314702749354",
+      "no_token_id": "79118400727710759989715071995447790560472587300988828281022786232541293641813",
+      "model_prob": 0.0043,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.003,
+      "ev": 5.0,
+      "kelly": 0.0006,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "5769304",
+      "question": "Will the highest temperature in Austin be between 72-73°F on October 18?",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "side": "YES",
+      "price": 0.52,
+      "model_prob": 0.4086,
+      "ev": -0.1392,
+      "market_prob": 0.52,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.5
+    },
+    {
+      "market_id": "5769304",
+      "question": "Will the highest temperature in Austin be between 72-73°F on October 18? (NO)",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "side": "NO",
+      "price": 0.48,
+      "model_prob": 0.5914,
+      "ev": 0.1508,
+      "market_prob": 0.48,
+      "role": "scenario_hedge",
+      "units": 18.46,
+      "sell_value": 0.47
+    },
+    {
+      "market_id": "5769300",
+      "question": "Will the highest temperature in Austin be between 64-65°F on October 18? (NO)",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "side": "NO",
+      "price": 0.995,
+      "model_prob": 0.9963,
+      "ev": 0.0008,
+      "market_prob": 0.995,
+      "role": "scenario_hedge",
+      "units": 0.33,
+      "sell_value": 0.991
+    }
+  ],
+  "total_allocated_units": 48.8,
+  "portfolio_score": -0.03703,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 9.23,
+  "worst_case_pnl_units": -10.33,
+  "success_probability": 0.3528,
+  "confidence": 0.1512,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
