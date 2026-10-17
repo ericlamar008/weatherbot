@@ -4998,16 +4998,18 @@
     "side": "YES",
     "entry_price": 0.475,
     "locked_at": "2026-10-17T03:46:00.720406+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.9,
     "last_pct": 89.5,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.9,
+    "closed_at": "2026-10-17T09:42:08.740277+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
     "last_price_source": "bid",
     "last_mid": 0.93,
-    "last_checked_at": "2026-10-17T09:37:20.413699+00:00"
+    "last_checked_at": "2026-10-17T09:37:20.413699+00:00",
+    "exit_price_source": "bid",
+    "unlock_issue_number": 439
   },
   {
     "issue_number": 433,
