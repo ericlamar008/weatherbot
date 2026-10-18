@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T04:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0038,
       "ev": 1.5333,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 60-61°F on October 19?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0029,
       "ev": 0.9333,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 62-63°F on October 19?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0076,
       "ev": 4.0667,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 64-65°F on October 19?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0325,
       "ev": 0.413,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 66-67°F on October 19?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.1141,
       "ev": 0.3424,
       "kelly": 0.008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 68-69°F on October 19?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.495,
       "no_price": 0.505,
-      "volume": 1613.0,
+      "volume": 1649.0,
       "spread": 0.0,
       "yes_token_id": "4915407436747825593492198301709352721289222032935820304237062184141630887485",
       "no_token_id": "1264593316352571397288122310508948362070240740165177349616103220909094104461",
@@ -151,7 +161,9 @@
       "belief_prob": 0.3756,
       "ev": -0.2412,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 70-71°F on October 19?",
@@ -160,9 +172,9 @@
         70.0,
         71.0
       ],
-      "yes_price": 0.375,
+      "yes_price": 0.38,
       "no_price": 0.62,
-      "volume": 2223.0,
+      "volume": 2311.0,
       "spread": 0.0,
       "yes_token_id": "97773181655413596742294530291954847559508143155767411922947555726193263152845",
       "no_token_id": "84360902236436794525289538483320090321614150921057885836407621513215869202463",
@@ -170,10 +182,12 @@
       "side": "YES",
       "ask": 0.38,
       "market_prob": 0.38,
-      "belief_prob": 0.3336,
+      "belief_prob": 0.3353,
       "ev": -0.1176,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Atlanta be between 72-73°F on October 19?",
@@ -183,19 +197,21 @@
         73.0
       ],
       "yes_price": 0.03,
-      "no_price": 0.9655,
+      "no_price": 0.97,
       "volume": 345.0,
       "spread": 0.0,
       "yes_token_id": "52308909319264784069277232765522478214702602047940217426989245580920013551045",
       "no_token_id": "91850478024155695881335525938875264189880009359134989119833428932883062701942",
       "model_prob": 0.1297,
       "side": "YES",
-      "ask": 0.0345,
-      "market_prob": 0.0345,
+      "ask": 0.03,
+      "market_prob": 0.03,
       "belief_prob": 0.0948,
-      "ev": 1.7942,
-      "kelly": 0.016,
-      "sell_value": null
+      "ev": 2.16,
+      "kelly": 0.0167,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 74-75°F on October 19?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0253,
       "ev": 9.12,
       "kelly": 0.0057,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 76-77°F on October 19?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0078,
       "ev": 2.9,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be 78°F or higher on October 19?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0082,
       "ev": 15.4,
       "kelly": 0.0019,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-18T02:52:28.566207+00:00"
+  "last_price_refresh": "2026-10-18T02:52:28.566207+00:00",
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00"
 }

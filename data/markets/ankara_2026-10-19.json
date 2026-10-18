@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 42.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T21:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 9°C on October 19?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0007,
       "ev": -0.5333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 10°C on October 19?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0037,
       "ev": -0.5647,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 11°C on October 19?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0034,
       "ev": 1.2667,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 12°C on October 19?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.0172,
       "ev": 2.8222,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 13°C on October 19?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.1195,
       "ev": 0.8385,
       "kelly": 0.0146,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 14°C on October 19?",
@@ -174,7 +186,9 @@
       "belief_prob": 0.448,
       "ev": 0.0795,
       "kelly": 0.0141,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 15°C on October 19?",
@@ -196,7 +210,9 @@
       "belief_prob": 0.3402,
       "ev": -0.2179,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 16°C on October 19?",
@@ -205,20 +221,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.062,
-      "no_price": 0.941,
+      "yes_price": 0.06,
+      "no_price": 0.94,
       "volume": 833.0,
       "spread": 0.0,
       "yes_token_id": "18409920782713174784046899018705225215329547935799271718133479022964986606598",
       "no_token_id": "53741832252123217699203932296219866178823703550695573810564186848453708397314",
       "model_prob": 0.0541,
       "side": "YES",
-      "ask": 0.059,
-      "market_prob": 0.059,
-      "belief_prob": 0.0569,
-      "ev": -0.0542,
+      "ask": 0.06,
+      "market_prob": 0.06,
+      "belief_prob": 0.0562,
+      "ev": -0.0633,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.002
     },
     {
       "question": "Will the highest temperature in Ankara be 17°C on October 19?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.008,
       "ev": 0.3333,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 18°C or higher on October 19?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-18T02:52:28.566207+00:00"
+  "last_price_refresh": "2026-10-18T02:52:28.566207+00:00",
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00"
 }

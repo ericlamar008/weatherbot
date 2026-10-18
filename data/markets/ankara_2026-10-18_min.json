@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T21:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
   "last_scan": "2026-10-18T02:20:41.809634+00:00",
   "skipped_reason": "event volume 60 < min_volume 500",
-  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00"
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00",
+  "forecast_mean": 4.34,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 5°C on October 18?",
+      "market_id": "5766426",
+      "range": [
+        5.0,
+        5.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 145.0,
+      "spread": 0.0,
+      "yes_token_id": "29233078138243006791833088225053567084194689058962713994325965429915672574449",
+      "no_token_id": "6063940599952655276574811753194651400039524500968052457919295841406690247199",
+      "model_prob": 0.5127,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3334,
+      "ev": 665.8,
+      "kelly": 0.0833,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 6°C on October 18?",
+      "market_id": "5766427",
+      "range": [
+        6.0,
+        6.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "96015328853701673962238482256013890126597656735189335074888126453789396655852",
+      "no_token_id": "23926779517224454556003652505456427807451802065787307669890238526053634992686",
+      "model_prob": 0.2864,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1863,
+      "ev": 371.6,
+      "kelly": 0.0465,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 7°C on October 18?",
+      "market_id": "5766428",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "83804208604337543296512898350239323592705533528930219730137146011769380108955",
+      "no_token_id": "95703126493118952706788346608184180052665615425580900635181165147306571203409",
+      "model_prob": 0.1203,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0784,
+      "ev": 155.8,
+      "kelly": 0.0195,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 8°C on October 18?",
+      "market_id": "5766429",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "68689004236353385118636796123006100193010889345416880268231986377157151686952",
+      "no_token_id": "54145263326771116302123244576698413278376341307440511270621892087134781493134",
+      "model_prob": 0.0465,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0304,
+      "ev": 59.8,
+      "kelly": 0.0075,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 9°C on October 18?",
+      "market_id": "5766430",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "47731708971387878946949063005034011335588907799547032697463441128565157715210",
+      "no_token_id": "44330276630340300107318736542462192194065775715046024840739444920090449196114",
+      "model_prob": 0.0185,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0122,
+      "ev": 23.4,
+      "kelly": 0.0029,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 10°C or higher on October 18?",
+      "market_id": "5766431",
+      "range": [
+        10.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "104998183224911401479309479925232855665254722477421905430012430153418381931921",
+      "no_token_id": "86622916726915222097058384176346705858526611919910824113254839544016126908160",
+      "model_prob": 0.0156,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0103,
+      "ev": 19.6,
+      "kelly": 0.0025,
+      "sell_value": null
+    }
+  ]
 }

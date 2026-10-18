@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T05:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
   "last_scan": "2026-10-18T02:20:41.809634+00:00",
-  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00",
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00",
   "forecast_mean": 55.32,
-  "sigma": 1.383,
+  "sigma": 1.379,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Houston be between 50-51°F on October 17?",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0372,
       "ev": -0.535,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 52-53°F on October 17?",
@@ -51,14 +53,16 @@
       "spread": 0.0,
       "yes_token_id": "40336967427366353397406432040731852125529726252098326349052740237573913127006",
       "no_token_id": "34610851701228851186102433295434204636417646181845696438136688130898861619403",
-      "model_prob": 0.0925,
+      "model_prob": 0.0929,
       "side": "YES",
       "ask": 0.05,
       "market_prob": 0.05,
-      "belief_prob": 0.0776,
-      "ev": 0.552,
+      "belief_prob": 0.0779,
+      "ev": 0.558,
       "kelly": 0.0073,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0004,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 54-55°F on October 17?",
@@ -67,20 +71,22 @@
         54.0,
         55.0
       ],
-      "yes_price": 0.485,
-      "no_price": 0.515,
+      "yes_price": 0.49,
+      "no_price": 0.51,
       "volume": 35.0,
       "spread": 0.0,
       "yes_token_id": "72711631380562399176221408403210597319931506780525506037901624122618489506111",
       "no_token_id": "40151213300164239020442919498961036362221087515018307646036175357918569469986",
-      "model_prob": 0.4417,
+      "model_prob": 0.4462,
       "side": "YES",
-      "ask": 0.485,
-      "market_prob": 0.485,
-      "belief_prob": 0.4569,
-      "ev": -0.0579,
+      "ask": 0.49,
+      "market_prob": 0.49,
+      "belief_prob": 0.4615,
+      "ev": -0.0582,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0045,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the lowest temperature in Houston be between 56-57°F on October 17?",
@@ -90,19 +96,21 @@
         57.0
       ],
       "yes_price": 0.925,
-      "no_price": 0.035,
+      "no_price": 0.075,
       "volume": 35.0,
       "spread": 0.0,
       "yes_token_id": "89707049128194337291278069491586574536565452989043905695058326620586186813728",
       "no_token_id": "58824495231514667054974559029585050166904033157903499684053612668814282892466",
-      "model_prob": 0.3644,
+      "model_prob": 0.3678,
       "side": "YES",
-      "ask": 0.965,
-      "market_prob": 0.965,
-      "belief_prob": 0.5606,
-      "ev": -0.4046,
+      "ask": 0.925,
+      "market_prob": 0.925,
+      "belief_prob": 0.5628,
+      "ev": -0.3916,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0034,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 58-59°F on October 17?",
@@ -117,14 +125,16 @@
       "spread": 0.0,
       "yes_token_id": "4682367863903999700272923647783537446491464518978731794814651259778976650823",
       "no_token_id": "80610189313532729039416213848769853818287118293056887054985366054952492308148",
-      "model_prob": 0.0654,
+      "model_prob": 0.0656,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0427,
-      "ev": 84.4,
+      "belief_prob": 0.0428,
+      "ev": 84.6,
       "kelly": 0.0106,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 60-61°F on October 17?",
@@ -146,7 +156,9 @@
       "belief_prob": 0.0069,
       "ev": 12.8,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 62-63°F on October 17?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.0015,
       "ev": 2.0,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 64-65°F on October 17?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.0006,
       "ev": 0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be between 66-67°F on October 17?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Houston be 68°F or higher on October 17?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-18T02:52:28.566207+00:00",

@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T21:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
   "last_scan": "2026-10-18T02:20:41.809634+00:00",
   "skipped_reason": "event volume 235 < min_volume 500",
-  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00"
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00",
+  "forecast_mean": 10.44,
+  "sigma": 1.446,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 10°C on October 18?",
+      "market_id": "5766616",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 150.0,
+      "spread": 0.0,
+      "yes_token_id": "59015058045997513997059846362544310827673099026177700137251037235562648062797",
+      "no_token_id": "41806244185766081572072301256333337300499500040469591578272717113062178651030",
+      "model_prob": 0.3347,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2177,
+      "ev": 434.4,
+      "kelly": 0.0543,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 11°C on October 18?",
+      "market_id": "5766617",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 195.0,
+      "spread": 0.0,
+      "yes_token_id": "55763951735231658858568381022383684900920870571936450094524280961675163039259",
+      "no_token_id": "35088425295820858491611113536960538933870683318918491557955804273618997065485",
+      "model_prob": 0.3243,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.211,
+      "ev": 421.0,
+      "kelly": 0.0527,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 12°C on October 18?",
+      "market_id": "5766618",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "42120445773652309303867349733076167650347611867187140319404954107528986555840",
+      "no_token_id": "41096387749915717470840351771271872723702874324312482704430093845698621351814",
+      "model_prob": 0.1943,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1265,
+      "ev": 252.0,
+      "kelly": 0.0315,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 13°C on October 18?",
+      "market_id": "5766619",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "72095924438018496304685774095041666909003767354177582910079521510216773515566",
+      "no_token_id": "103301619067220719996427060105447002329151317491286675313184472668079462439050",
+      "model_prob": 0.0863,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0563,
+      "ev": 111.6,
+      "kelly": 0.014,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 14°C or higher on October 18?",
+      "market_id": "5766620",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "101133365136574160758098720835659158288585636023769075745692714149260650661603",
+      "no_token_id": "52592027138866624263472852915659214855540888049416957839781021226213494442876",
+      "model_prob": 0.0604,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0394,
+      "ev": 77.8,
+      "kelly": 0.0097,
+      "sell_value": null
+    }
+  ]
 }

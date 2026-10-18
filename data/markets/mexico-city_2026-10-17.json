@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 3.7,
+  "hours_left": 3.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-18T06:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0066,
       "ev": 12.2,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 10°C on October 17?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0043,
       "ev": 7.6,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 11°C on October 17?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0073,
       "ev": 13.6,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 12°C on October 17?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0129,
       "ev": 24.8,
       "kelly": 0.0031,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 13°C on October 17?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0229,
       "ev": 44.8,
       "kelly": 0.0056,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 14°C on October 17?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.0395,
       "ev": 78.0,
       "kelly": 0.0098,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 15°C on October 17?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0635,
       "ev": 126.0,
       "kelly": 0.0158,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 16°C on October 17?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0898,
       "ev": 178.6,
       "kelly": 0.0223,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 17°C on October 17?",
@@ -206,7 +222,7 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 3267.0,
+      "volume": 3310.0,
       "spread": 0.0,
       "yes_token_id": "91545475791753129084800530623765463286386184771295084610051155344956099140065",
       "no_token_id": "91491147661997417855944325718715636180755808163280581590774245719545198958617",
@@ -217,7 +233,9 @@
       "belief_prob": 0.4553,
       "ev": -0.5445,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 18°C on October 17?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 5392.0,
+      "volume": 5731.0,
       "spread": 0.0,
       "yes_token_id": "66150808939399257640931539144152782843712611713124087343006495648970155924245",
       "no_token_id": "59805326836879477916281132359064228413371403114849691062478207771870004940283",
@@ -239,7 +257,9 @@
       "belief_prob": 0.1003,
       "ev": 199.6,
       "kelly": 0.025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Mexico City be 19°C or higher on October 17?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.1994,
       "ev": 397.8,
       "kelly": 0.0497,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -292,5 +314,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-18T02:52:28.566207+00:00",
-  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00"
+  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00"
 }
