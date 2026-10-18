@@ -3,14 +3,14 @@
   "city_name": "Tel Aviv",
   "date": "2026-10-17",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-17T21:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
-  "last_scan": "2026-10-17T02:20:36.799809+00:00",
+  "last_scan": "2026-10-18T02:20:41.809634+00:00",
   "horizon_days": 0,
   "forecast_mean": 25.97,
   "sigma": 0.722,
@@ -301,7 +301,10 @@
       "market_prob": 0.42,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.4
+      "sell_value": 0.4,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
     },
     {
       "market_id": "5720745",
@@ -317,7 +320,10 @@
       "market_prob": 0.58,
       "role": "scenario_hedge",
       "units": 27.62,
-      "sell_value": 0.57
+      "sell_value": 0.57,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 57.6,
@@ -330,5 +336,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-18T02:07:23.024478+00:00",
-  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00"
+  "last_lite_refresh": "2026-10-17T20:20:40.008554+00:00",
+  "actual_temp": 27.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "loss",
+  "pnl_units": -10.0,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5720745",
+      "question": "Will the highest temperature in Tel Aviv be 26°C on October 17?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.42,
+      "model_prob": 0.4529,
+      "ev": 0.051,
+      "market_prob": 0.42,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.4,
+      "won": false,
+      "pnl_units": -30.0,
+      "user_entered": false
+    },
+    {
+      "market_id": "5720745",
+      "question": "Will the highest temperature in Tel Aviv be 26°C on October 17? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.58,
+      "model_prob": 0.5471,
+      "ev": -0.0369,
+      "market_prob": 0.58,
+      "role": "scenario_hedge",
+      "units": 27.62,
+      "sell_value": 0.57,
+      "won": true,
+      "pnl_units": 20.0,
+      "user_entered": false
+    }
+  ]
 }
