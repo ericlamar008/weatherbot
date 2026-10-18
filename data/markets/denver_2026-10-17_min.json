@@ -3,7 +3,7 @@
   "city_name": "Denver",
   "date": "2026-10-17",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
@@ -12,7 +12,7 @@
   "local_day_end_utc": "2026-10-18T06:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
   "last_scan": "2026-10-18T02:20:41.809634+00:00",
-  "last_lite_refresh": "2026-10-18T08:20:38.203621+00:00",
+  "last_lite_refresh": "2026-10-18T14:20:39.366311+00:00",
   "forecast_mean": 42.79,
   "sigma": 2.5,
   "full_distribution": [
@@ -274,7 +274,10 @@
       "market_prob": 0.955,
       "role": "main_signal",
       "units": 29.3,
-      "sell_value": 0.91
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.38,
+      "user_entered": false
     },
     {
       "market_id": "5723818",
@@ -290,7 +293,10 @@
       "market_prob": 0.045,
       "role": "scenario_hedge",
       "units": 0.91,
-      "sell_value": null
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.91,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.2,
@@ -301,5 +307,50 @@
   "success_probability": 0.5188,
   "confidence": 0.6997,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 34.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.47,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5723818",
+      "question": "Will the lowest temperature in Denver be between 34-35°F on October 17?",
+      "range": [
+        34.0,
+        35.0
+      ],
+      "side": "YES",
+      "price": 0.955,
+      "model_prob": 0.084,
+      "ev": -0.5929,
+      "market_prob": 0.955,
+      "role": "main_signal",
+      "units": 29.3,
+      "sell_value": 0.91,
+      "won": true,
+      "pnl_units": 1.38,
+      "user_entered": false
+    },
+    {
+      "market_id": "5723818",
+      "question": "Will the lowest temperature in Denver be between 34-35°F on October 17? (NO)",
+      "range": [
+        34.0,
+        35.0
+      ],
+      "side": "NO",
+      "price": 0.045,
+      "model_prob": 0.916,
+      "ev": 12.5822,
+      "market_prob": 0.045,
+      "role": "scenario_hedge",
+      "units": 0.91,
+      "sell_value": null,
+      "won": false,
+      "pnl_units": -0.91,
+      "user_entered": false
+    }
+  ]
 }
