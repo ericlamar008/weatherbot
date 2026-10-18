@@ -5298,16 +5298,17 @@
     "side": "YES",
     "entry_price": 0.5,
     "locked_at": "2026-10-18T14:53:56.311896+00:00",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.83,
     "last_pct": 66.0,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
-    "actual_temp": null,
+    "exit_price": 1.0,
+    "closed_at": "2026-10-18T22:07:20.242360+00:00",
+    "close_reason": "auto_resolved",
+    "actual_temp": 70.5,
     "last_price_source": "bid",
     "last_mid": 0.87,
-    "last_checked_at": "2026-10-18T21:52:24.650397+00:00"
+    "last_checked_at": "2026-10-18T21:52:24.650397+00:00",
+    "notified_close": true
   },
   {
     "issue_number": 453,
@@ -5371,7 +5372,7 @@
     "close_reason": null,
     "actual_temp": null,
     "last_price_source": "bid",
-    "last_mid": 0.155,
-    "last_checked_at": "2026-10-18T21:52:24.650397+00:00"
+    "last_mid": 0.16,
+    "last_checked_at": "2026-10-18T22:07:20.242360+00:00"
   }
 ]
