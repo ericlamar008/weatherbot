@@ -3,16 +3,16 @@
   "city_name": "Chicago",
   "date": "2026-10-17",
   "unit": "F",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-16T02:20:37.822996+00:00",
   "committed_allocation": null,
-  "hours_left": 2.1,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-18T05:00:00+00:00",
   "event_end_date": "2026-10-17T12:00:00Z",
   "last_scan": "2026-10-18T02:20:41.809634+00:00",
-  "last_lite_refresh": "2026-10-18T02:53:13.302990+00:00",
+  "last_lite_refresh": "2026-10-18T08:20:38.203621+00:00",
   "forecast_mean": 38.11,
   "sigma": 2.003,
   "full_distribution": [
@@ -250,7 +250,10 @@
       "market_prob": 0.9805,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.962
+      "sell_value": 0.962,
+      "won": true,
+      "pnl_units": 0.6,
+      "user_entered": false
     },
     {
       "market_id": "5723798",
@@ -266,7 +269,10 @@
       "market_prob": 0.0195,
       "role": "scenario_hedge",
       "units": 0.4,
-      "sell_value": 0.001
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.4,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.4,
@@ -277,5 +283,50 @@
   "success_probability": 0.5825,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 38.5,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.2,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5723798",
+      "question": "Will the lowest temperature in Chicago be between 38-39°F on October 17?",
+      "range": [
+        38.0,
+        39.0
+      ],
+      "side": "YES",
+      "price": 0.9805,
+      "model_prob": 0.3618,
+      "ev": -0.4102,
+      "market_prob": 0.9805,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.962,
+      "won": true,
+      "pnl_units": 0.6,
+      "user_entered": false
+    },
+    {
+      "market_id": "5723798",
+      "question": "Will the lowest temperature in Chicago be between 38-39°F on October 17? (NO)",
+      "range": [
+        38.0,
+        39.0
+      ],
+      "side": "NO",
+      "price": 0.0195,
+      "model_prob": 0.6382,
+      "ev": 20.6256,
+      "market_prob": 0.0195,
+      "role": "scenario_hedge",
+      "units": 0.4,
+      "sell_value": 0.001,
+      "won": false,
+      "pnl_units": -0.4,
+      "user_entered": false
+    }
+  ]
 }
