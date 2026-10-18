@@ -5028,16 +5028,18 @@
     "side": "YES",
     "entry_price": 0.295,
     "locked_at": "2026-10-17T03:46:34.194242+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.15,
     "last_pct": -49.2,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.13,
+    "closed_at": "2026-10-18T03:50:38.870426+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
     "last_price_source": "bid",
     "last_mid": 0.16,
-    "last_checked_at": "2026-10-18T03:37:28.163256+00:00"
+    "last_checked_at": "2026-10-18T03:37:28.163256+00:00",
+    "exit_price_source": "bid",
+    "unlock_issue_number": 446
   },
   {
     "issue_number": 435,
@@ -5193,5 +5195,23 @@
     "last_mid": 0.05,
     "last_checked_at": "2026-10-17T22:07:20.900010+00:00",
     "notified_close": true
+  },
+  {
+    "issue_number": 445,
+    "city": "jeddah",
+    "date": "2026-10-18",
+    "market_id": "5767144",
+    "market_type": "max",
+    "token_id": "11872060921664542715935630045280141034799053371572354437111282411792665198656",
+    "side": "YES",
+    "entry_price": 0.495,
+    "locked_at": "2026-10-18T03:50:35.576625+00:00",
+    "status": "open",
+    "last_price": null,
+    "last_pct": null,
+    "exit_price": null,
+    "closed_at": null,
+    "close_reason": null,
+    "actual_temp": null
   }
 ]
