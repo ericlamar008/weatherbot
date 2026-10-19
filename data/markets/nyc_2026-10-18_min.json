@@ -7,12 +7,11 @@
   "market_type": "min",
   "created_at": "2026-10-17T02:20:36.799809+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T04:00:00+00:00",
   "event_end_date": "2026-10-18T12:00:00Z",
-  "last_scan": "2026-10-18T02:20:41.809634+00:00",
-  "skipped_reason": "event volume 300 < min_volume 500",
+  "last_scan": "2026-10-19T02:20:38.433897+00:00",
   "last_lite_refresh": "2026-10-18T20:20:39.380668+00:00",
   "forecast_mean": 41.27,
   "sigma": 3.062,
@@ -24,22 +23,20 @@
         -999.0,
         33.0
       ],
-      "yes_price": 0.018,
-      "no_price": 0.9815,
+      "yes_price": 0.019,
+      "no_price": 0.981,
       "volume": 30.0,
       "spread": 0.0,
       "yes_token_id": "30017437879490040691902378906969172290087511060439680067282062975793877994079",
       "no_token_id": "28932986524651001644499786768015516472973529953976741610279005419402076574894",
       "model_prob": 0.0502,
       "side": "YES",
-      "ask": 0.0185,
-      "market_prob": 0.0185,
-      "belief_prob": 0.0389,
-      "ev": 1.1135,
+      "ask": 0.019,
+      "market_prob": 0.019,
+      "belief_prob": 0.0393,
+      "ev": 1.0684,
       "kelly": 0.0052,
-      "sell_value": null,
-      "model_prob_change": 0.0193,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 34-35°F on October 18?",
@@ -48,7 +45,7 @@
         34.0,
         35.0
       ],
-      "yes_price": 0.018,
+      "yes_price": 0.0195,
       "no_price": 0.9805,
       "volume": 272.0,
       "spread": 0.0,
@@ -58,12 +55,10 @@
       "side": "YES",
       "ask": 0.0195,
       "market_prob": 0.0195,
-      "belief_prob": 0.0266,
+      "belief_prob": 0.0271,
       "ev": 0.3897,
       "kelly": 0.0019,
-      "sell_value": null,
-      "model_prob_change": 0.0119,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 36-37°F on October 18?",
@@ -72,7 +67,7 @@
         36.0,
         37.0
       ],
-      "yes_price": 0.0335,
+      "yes_price": 0.0345,
       "no_price": 0.9655,
       "volume": 145.0,
       "spread": 0.0,
@@ -82,12 +77,10 @@
       "side": "YES",
       "ask": 0.0345,
       "market_prob": 0.0345,
-      "belief_prob": 0.0594,
+      "belief_prob": 0.0598,
       "ev": 0.7333,
       "kelly": 0.0066,
-      "sell_value": null,
-      "model_prob_change": 0.0254,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 38-39°F on October 18?",
@@ -97,21 +90,19 @@
         39.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.941,
-      "volume": 170.0,
+      "no_price": 0.9995,
+      "volume": 190.0,
       "spread": 0.0,
       "yes_token_id": "1569612195963049556607830001712271584698912875807002918446689758293343550015",
       "no_token_id": "17714734196317365255764682665186248775386762042299010571839933647112476809846",
       "model_prob": 0.1518,
       "side": "YES",
-      "ask": 0.059,
-      "market_prob": 0.059,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0988,
-      "ev": 1.022,
-      "kelly": 0.016,
-      "sell_value": null,
-      "model_prob_change": 0.039,
-      "yes_price_change": 0.0
+      "ev": 196.6,
+      "kelly": 0.0246,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 40-41°F on October 18?",
@@ -120,22 +111,20 @@
         40.0,
         41.0
       ],
-      "yes_price": 0.0125,
-      "no_price": 0.99,
-      "volume": 208.0,
+      "yes_price": 0.012,
+      "no_price": 0.988,
+      "volume": 273.0,
       "spread": 0.0,
       "yes_token_id": "76693020740713115982169733282289452467375316802634676242679900226290756311426",
       "no_token_id": "77185215065997165578184714455224849136762894695322652260101052442128756904181",
       "model_prob": 0.2292,
       "side": "YES",
-      "ask": 0.01,
-      "market_prob": 0.01,
-      "belief_prob": 0.1534,
-      "ev": 14.25,
-      "kelly": 0.036,
-      "sell_value": null,
-      "model_prob_change": 0.0197,
-      "yes_price_change": 0.0
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.1532,
+      "ev": 11.7667,
+      "kelly": 0.0357,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 42-43°F on October 18?",
@@ -145,21 +134,19 @@
         43.0
       ],
       "yes_price": 0.98,
-      "no_price": 0.041,
-      "volume": 154.0,
+      "no_price": 0.02,
+      "volume": 179.0,
       "spread": 0.0,
       "yes_token_id": "34228213075806278100171998861373163859063907866138947369080172772405549170649",
       "no_token_id": "41875214906067537570020093866863819065330241380137791355433021555689650799526",
       "model_prob": 0.2165,
       "side": "YES",
-      "ask": 0.959,
-      "market_prob": 0.959,
+      "ask": 0.98,
+      "market_prob": 0.98,
       "belief_prob": 0.4837,
-      "ev": -0.5032,
+      "ev": -0.5064,
       "kelly": 0.0,
-      "sell_value": null,
-      "model_prob_change": -0.0321,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 44-45°F on October 18?",
@@ -170,7 +157,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 343.0,
+      "volume": 356.0,
       "spread": 0.0,
       "yes_token_id": "8702788188549152539505059433506474831308837625854717385645804621391579277757",
       "no_token_id": "22474451841449450897295918027618270493655311506158351622206169559865572350817",
@@ -181,9 +168,7 @@
       "belief_prob": 0.0854,
       "ev": 169.8,
       "kelly": 0.0212,
-      "sell_value": null,
-      "model_prob_change": -0.0436,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 46-47°F on October 18?",
@@ -205,9 +190,7 @@
       "belief_prob": 0.0396,
       "ev": 78.2,
       "kelly": 0.0098,
-      "sell_value": null,
-      "model_prob_change": -0.0237,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 48-49°F on October 18?",
@@ -229,9 +212,7 @@
       "belief_prob": 0.0168,
       "ev": 32.6,
       "kelly": 0.0041,
-      "sell_value": null,
-      "model_prob_change": -0.0091,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be between 50-51°F on October 18?",
@@ -253,9 +234,7 @@
       "belief_prob": 0.0072,
       "ev": 13.4,
       "kelly": 0.0017,
-      "sell_value": null,
-      "model_prob_change": -0.0031,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in New York City be 52°F or higher on October 18?",
@@ -277,10 +256,52 @@
       "belief_prob": 0.013,
       "ev": 25.0,
       "kelly": 0.0031,
-      "sell_value": null,
-      "model_prob_change": -0.0036,
-      "yes_price_change": 0.0
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-19T02:07:25.663165+00:00"
+  "last_price_refresh": "2026-10-19T02:07:25.663165+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "5769428",
+      "question": "Will the lowest temperature in New York City be between 42-43°F on October 18?",
+      "range": [
+        42.0,
+        43.0
+      ],
+      "side": "YES",
+      "price": 0.98,
+      "model_prob": 0.2165,
+      "ev": -0.5064,
+      "market_prob": 0.98,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.96
+    },
+    {
+      "market_id": "5769428",
+      "question": "Will the lowest temperature in New York City be between 42-43°F on October 18? (NO)",
+      "range": [
+        42.0,
+        43.0
+      ],
+      "side": "NO",
+      "price": 0.02,
+      "model_prob": 0.7835,
+      "ev": 24.815,
+      "market_prob": 0.02,
+      "role": "scenario_hedge",
+      "units": 0.41,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 30.4,
+  "portfolio_score": -0.049333,
+  "worst_case_loss_frac": 0.0991,
+  "best_case_pnl_units": 0.2,
+  "worst_case_pnl_units": -9.91,
+  "success_probability": 0.5173,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
