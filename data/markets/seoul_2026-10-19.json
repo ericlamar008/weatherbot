@@ -3,11 +3,11 @@
   "city_name": "Seoul",
   "date": "2026-10-19",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-19T15:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
@@ -301,7 +301,10 @@
       "market_prob": 0.515,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.48
+      "sell_value": 0.48,
+      "won": true,
+      "pnl_units": 28.25,
+      "user_entered": false
     },
     {
       "market_id": "5795633",
@@ -317,7 +320,10 @@
       "market_prob": 0.485,
       "role": "scenario_hedge",
       "units": 18.83,
-      "sell_value": 0.46
+      "sell_value": 0.46,
+      "won": false,
+      "pnl_units": -18.83,
+      "user_entered": false
     },
     {
       "market_id": "5795638",
@@ -333,7 +339,10 @@
       "market_prob": 0.999,
       "role": "scenario_hedge",
       "units": 5.25,
-      "sell_value": 0.998
+      "sell_value": 0.998,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 54.1,
@@ -346,5 +355,69 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-19T20:07:21.725600+00:00",
-  "last_lite_refresh": "2026-10-19T14:20:45.441837+00:00"
+  "last_lite_refresh": "2026-10-19T20:20:44.990456+00:00",
+  "actual_temp": 17.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 9.43,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5795633",
+      "question": "Will the highest temperature in Seoul (Incheon) be 17°C on October 19?",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "YES",
+      "price": 0.515,
+      "model_prob": 0.4168,
+      "ev": -0.1239,
+      "market_prob": 0.515,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.48,
+      "won": true,
+      "pnl_units": 28.25,
+      "user_entered": false
+    },
+    {
+      "market_id": "5795633",
+      "question": "Will the highest temperature in Seoul (Incheon) be 17°C on October 19? (NO)",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "side": "NO",
+      "price": 0.485,
+      "model_prob": 0.5832,
+      "ev": 0.1315,
+      "market_prob": 0.485,
+      "role": "scenario_hedge",
+      "units": 18.83,
+      "sell_value": 0.46,
+      "won": false,
+      "pnl_units": -18.83,
+      "user_entered": false
+    },
+    {
+      "market_id": "5795638",
+      "question": "Will the highest temperature in Seoul (Incheon) be 22°C or higher on October 19? (NO)",
+      "range": [
+        22.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.999,
+      "model_prob": 0.9983,
+      "ev": -0.0005,
+      "market_prob": 0.999,
+      "role": "scenario_hedge",
+      "units": 5.25,
+      "sell_value": 0.998,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
+    }
+  ]
 }
