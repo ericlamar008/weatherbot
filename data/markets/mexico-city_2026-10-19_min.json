@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 27.1,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T06:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00"
+  "last_lite_refresh": "2026-10-19T08:20:42.912780+00:00",
+  "forecast_mean": 10.78,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Mexico City be 14°C on October 19?",
+      "market_id": "5807092",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 98.0,
+      "spread": 0.0,
+      "yes_token_id": "110050130708621954730231502930103370408905646847576088334349884775559094554662",
+      "no_token_id": "104549381135499610332410477987990653855399117848092337335545959896021158180267",
+      "model_prob": 0.5893,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3832,
+      "ev": 765.4,
+      "kelly": 0.0957,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 15°C on October 19?",
+      "market_id": "5807093",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "47445948033710527904787751967051797025238744011623932408534270783484342839395",
+      "no_token_id": "54578177937731768836355068235864246580550923439171495373982015634208633550891",
+      "model_prob": 0.2296,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1494,
+      "ev": 297.8,
+      "kelly": 0.0372,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Mexico City be 16°C or higher on October 19?",
+      "market_id": "5807094",
+      "range": [
+        16.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "50391800700253574503705695744614407241674065582377849856096653800223989461416",
+      "no_token_id": "82108575461084156788091107511161156241193623956663638076826754393153175929452",
+      "model_prob": 0.1811,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1179,
+      "ev": 234.8,
+      "kelly": 0.0294,
+      "sell_value": null
+    }
+  ]
 }
