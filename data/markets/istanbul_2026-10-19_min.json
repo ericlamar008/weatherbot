@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T21:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
   "skipped_reason": "event volume 118 < min_volume 500",
-  "last_lite_refresh": "2026-10-18T20:20:39.380668+00:00"
+  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00",
+  "forecast_mean": 11.84,
+  "sigma": 1.604,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 12°C on October 19?",
+      "market_id": "5795341",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 93.0,
+      "spread": 0.0,
+      "yes_token_id": "33938993726482584029986602231339197733764993317450442542984876954146083122963",
+      "no_token_id": "110914624068115660324930878493027720520526896225922861323417223391583435659891",
+      "model_prob": 0.3982,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.259,
+      "ev": 517.0,
+      "kelly": 0.0647,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 13°C on October 19?",
+      "market_id": "5795342",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "31428787337753546782435396789570694782199469879691701825280614493121635512409",
+      "no_token_id": "98493206611158842392080288453542299210884716148216464252623480895415956729903",
+      "model_prob": 0.3015,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1962,
+      "ev": 391.4,
+      "kelly": 0.0489,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Istanbul be 14°C or higher on October 19?",
+      "market_id": "5795343",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "20634056145265378147873973975999912609631726944198398433362630485993675016343",
+      "no_token_id": "32842463611580482959246450332256591564219416407341078268624977013240708483415",
+      "model_prob": 0.3003,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1954,
+      "ev": 389.8,
+      "kelly": 0.0487,
+      "sell_value": null
+    }
+  ]
 }

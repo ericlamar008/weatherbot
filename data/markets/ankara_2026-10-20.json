@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 42.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T21:00:00+00:00",
   "event_end_date": "2026-10-20T12:00:00Z",
@@ -14,7 +14,7 @@
   "horizon_days": 1,
   "forecast_mean": 16.19,
   "sigma": 0.712,
-  "forecast_mean_shadow": 15.75,
+  "forecast_mean_shadow": 15.76,
   "model_means_raw": {
     "ecmwf": 16.04,
     "gfs": 15.29,
@@ -42,7 +42,9 @@
       "belief_prob": 0.0003,
       "ev": -0.4,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 11°C on October 20?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 12°C on October 20?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0015,
       "ev": -0.25,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 13°C on October 20?",
@@ -97,7 +103,7 @@
       ],
       "yes_price": 0.0045,
       "no_price": 0.9955,
-      "volume": 152.0,
+      "volume": 218.0,
       "spread": 0.0,
       "yes_token_id": "107144490635650616985783614928186674771443949590949372717422096631430420067877",
       "no_token_id": "113741622334699569914887367528519253447861687433091410976310941416376231003811",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0046,
       "ev": 0.0222,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 14°C on October 20?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.0177,
       "ev": 4.0571,
       "kelly": 0.0036,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 15°C on October 20?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.1101,
       "ev": 3.6851,
       "kelly": 0.0222,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 16°C on October 20?",
@@ -161,20 +173,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.135,
-      "no_price": 0.875,
-      "volume": 2017.0,
+      "yes_price": 0.14,
+      "no_price": 0.86,
+      "volume": 2060.0,
       "spread": 0.0,
       "yes_token_id": "86298586281037996552899109616883834824566300641782826585288717205537598595685",
       "no_token_id": "16934843661333752059020552459412991499416396616394572935912556490522896517350",
       "model_prob": 0.4708,
       "side": "YES",
-      "ask": 0.125,
-      "market_prob": 0.125,
-      "belief_prob": 0.3533,
-      "ev": 1.7984,
-      "kelly": 0.0642,
-      "sell_value": null
+      "ask": 0.14,
+      "market_prob": 0.14,
+      "belief_prob": 0.355,
+      "ev": 1.5357,
+      "kelly": 0.0625,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Ankara be 17°C on October 20?",
@@ -183,20 +197,22 @@
         17.0,
         17.0
       ],
-      "yes_price": 0.525,
-      "no_price": 0.475,
+      "yes_price": 0.52,
+      "no_price": 0.48,
       "volume": 1512.0,
       "spread": 0.0,
       "yes_token_id": "113254961849899034716628517375823996350725129745467341057020677523358921042798",
       "no_token_id": "82942451272859405849225570514767686552928230565028911507230402830652927660038",
       "model_prob": 0.2781,
       "side": "YES",
-      "ask": 0.525,
-      "market_prob": 0.525,
-      "belief_prob": 0.3645,
-      "ev": -0.3057,
+      "ask": 0.52,
+      "market_prob": 0.52,
+      "belief_prob": 0.3628,
+      "ev": -0.3023,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Ankara be 18°C on October 20?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.1313,
       "ev": -0.5311,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 19°C on October 20?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0152,
       "ev": -0.4473,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Ankara be 20°C or higher on October 20?",
@@ -249,20 +269,22 @@
         20.0,
         999.0
       ],
-      "yes_price": 0.003,
-      "no_price": 0.997,
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
       "volume": 748.0,
       "spread": 0.0,
       "yes_token_id": "51648189753547259219505250771208366500026107400631117629213900085162726419461",
       "no_token_id": "52960901032814822923998868268838703342164310244042167119665992876383845084852",
       "model_prob": 0.0028,
       "side": "YES",
-      "ask": 0.003,
-      "market_prob": 0.003,
-      "belief_prob": 0.0029,
-      "ev": -0.0333,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0027,
+      "ev": 0.08,
+      "kelly": 0.0001,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-19T02:52:26.237055+00:00"
+  "last_price_refresh": "2026-10-19T02:52:26.237055+00:00",
+  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00"
 }

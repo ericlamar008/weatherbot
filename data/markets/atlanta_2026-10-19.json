@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T04:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0132,
       "ev": 25.4,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 60-61°F on October 19?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0132,
       "ev": 5.6,
       "kelly": 0.0028,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 62-63°F on October 19?",
@@ -72,20 +76,22 @@
         62.0,
         63.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.9975,
+      "yes_price": 0.005,
+      "no_price": 0.995,
       "volume": 345.0,
       "spread": 0.0,
       "yes_token_id": "1561863622402920042602110132597961239451076939258953756782873791331282492375",
       "no_token_id": "104110405380392552125553152687346625206129609321762917103502665986051222064601",
       "model_prob": 0.0674,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.0447,
-      "ev": 16.88,
-      "kelly": 0.0106,
-      "sell_value": null
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0456,
+      "ev": 8.12,
+      "kelly": 0.0102,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0025
     },
     {
       "question": "Will the highest temperature in Atlanta be between 64-65°F on October 19?",
@@ -94,20 +100,22 @@
         64.0,
         65.0
       ],
-      "yes_price": 0.009,
-      "no_price": 0.991,
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
       "volume": 880.0,
       "spread": 0.0,
       "yes_token_id": "109663290491172259366847114225089177006879845082518518740843577911886366391583",
       "no_token_id": "24036675178366693001939262430810811745733358115015886543697740743565816279862",
       "model_prob": 0.2082,
       "side": "YES",
-      "ask": 0.009,
-      "market_prob": 0.009,
-      "belief_prob": 0.1385,
-      "ev": 14.3889,
-      "kelly": 0.0327,
-      "sell_value": null
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.1376,
+      "ev": 20.1692,
+      "kelly": 0.033,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0025
     },
     {
       "question": "Will the highest temperature in Atlanta be between 66-67°F on October 19?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.2576,
       "ev": 2.0306,
       "kelly": 0.0472,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 68-69°F on October 19?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.445,
       "no_price": 0.555,
-      "volume": 2610.0,
+      "volume": 2646.0,
       "spread": 0.0,
       "yes_token_id": "4915407436747825593492198301709352721289222032935820304237062184141630887485",
       "no_token_id": "1264593316352571397288122310508948362070240740165177349616103220909094104461",
@@ -151,7 +161,9 @@
       "belief_prob": 0.3024,
       "ev": -0.3204,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 70-71°F on October 19?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.425,
       "no_price": 0.575,
-      "volume": 3050.0,
+      "volume": 3094.0,
       "spread": 0.0,
       "yes_token_id": "97773181655413596742294530291954847559508143155767411922947555726193263152845",
       "no_token_id": "84360902236436794525289538483320090321614150921057885836407621513215869202463",
@@ -173,7 +185,9 @@
       "belief_prob": 0.1978,
       "ev": -0.5346,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 72-73°F on October 19?",
@@ -182,20 +196,22 @@
         72.0,
         73.0
       ],
-      "yes_price": 0.048,
-      "no_price": 0.9515,
-      "volume": 781.0,
+      "yes_price": 0.047,
+      "no_price": 0.953,
+      "volume": 813.0,
       "spread": 0.0,
       "yes_token_id": "52308909319264784069277232765522478214702602047940217426989245580920013551045",
       "no_token_id": "91850478024155695881335525938875264189880009359134989119833428932883062701942",
       "model_prob": 0.0214,
       "side": "YES",
-      "ask": 0.0485,
-      "market_prob": 0.0485,
-      "belief_prob": 0.0307,
-      "ev": -0.3629,
+      "ask": 0.047,
+      "market_prob": 0.047,
+      "belief_prob": 0.0304,
+      "ev": -0.3532,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Atlanta be between 74-75°F on October 19?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0052,
       "ev": 1.08,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 76-77°F on October 19?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0017,
       "ev": 2.4,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be 78°F or higher on October 19?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0024,
       "ev": 3.8,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-19T02:52:26.237055+00:00",
-  "last_lite_refresh": "2026-10-18T20:20:39.380668+00:00"
+  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00"
 }

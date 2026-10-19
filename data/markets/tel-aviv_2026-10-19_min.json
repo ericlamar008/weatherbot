@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T21:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
   "skipped_reason": "event volume 371 < min_volume 500",
-  "last_lite_refresh": "2026-10-18T20:20:39.380668+00:00"
+  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00",
+  "forecast_mean": 17.82,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 19°C on October 19?",
+      "market_id": "5795181",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 7.0,
+      "spread": 0.0,
+      "yes_token_id": "81875042487959216268707147808874142450399128033329695193871129215246569993666",
+      "no_token_id": "99638485631057101224344243035590068991150073066053275651640455585763831844079",
+      "model_prob": 0.7618,
+      "side": "YES",
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.6527,
+      "ev": 0.4504,
+      "kelly": 0.0921,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 21°C on October 19?",
+      "market_id": "5795183",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 167.0,
+      "spread": 0.0,
+      "yes_token_id": "69294365111785379846230076144277279210127978617660191489086207539211439715288",
+      "no_token_id": "65388734893922082307614115338577589116735971679787879917434170171173728080230",
+      "model_prob": 0.1406,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0916,
+      "ev": 182.2,
+      "kelly": 0.0228,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 22°C on October 19?",
+      "market_id": "5795184",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.004,
+      "no_price": 0.996,
+      "volume": 167.0,
+      "spread": 0.0,
+      "yes_token_id": "39246004821846900359934635502201325030001635165455442368683387881288756073777",
+      "no_token_id": "79835698156761659373067333372478466461519788866513033150069570437500720505780",
+      "model_prob": 0.0547,
+      "side": "YES",
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.037,
+      "ev": 8.25,
+      "kelly": 0.0083,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 23°C on October 19?",
+      "market_id": "5795185",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "98610714372450893039381408756188825185993605053111261876692050674036498083947",
+      "no_token_id": "18013711802585215031053835062545661064557186437445815124639012021658080559751",
+      "model_prob": 0.0225,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0148,
+      "ev": 28.6,
+      "kelly": 0.0036,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 24°C on October 19?",
+      "market_id": "5795186",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "96848130695188448544588660681908672848694678493696269959288497803714961411414",
+      "no_token_id": "80569916468049294460390200371143463229052162654056263753974364091443039183041",
+      "model_prob": 0.0099,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0066,
+      "ev": 12.2,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 25°C or higher on October 19?",
+      "market_id": "5795187",
+      "range": [
+        25.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "8006238411061870702718143038170485381412963658475485424285071917367659079932",
+      "no_token_id": "74144350847491027875255092147830954440432688217922230344630439448282833448099",
+      "model_prob": 0.0105,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.007,
+      "ev": 13.0,
+      "kelly": 0.0016,
+      "sell_value": null
+    }
+  ]
 }

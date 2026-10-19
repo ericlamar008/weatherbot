@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-21T05:00:00+00:00",
   "event_end_date": "2026-10-20T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
-  "skipped_reason": "event volume 36 < min_volume 500"
+  "skipped_reason": "event volume 36 < min_volume 500",
+  "last_lite_refresh": "2026-10-19T02:53:16.084580+00:00",
+  "forecast_mean": 60.12,
+  "sigma": 2.681,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Houston be between 68-69°F on October 20?",
+      "market_id": "5863522",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.025,
+      "no_price": 0.975,
+      "volume": 24.0,
+      "spread": 0.0,
+      "yes_token_id": "60029511550559976713860475126703209573495279597899499327928623852077010231462",
+      "no_token_id": "31788679146188114499834901645663678486370512829985740699867670636850681269309",
+      "model_prob": 0.7129,
+      "side": "YES",
+      "ask": 0.025,
+      "market_prob": 0.025,
+      "belief_prob": 0.4721,
+      "ev": 17.884,
+      "kelly": 0.1146,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 70-71°F on October 20?",
+      "market_id": "5863523",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "84946997341154331332345361242101324357112910033202068596436853068749919844479",
+      "no_token_id": "57721822519939783709375950907482373623361153516111664985141648453127797170474",
+      "model_prob": 0.2871,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.1955,
+      "ev": 6.6667,
+      "kelly": 0.0436,
+      "sell_value": null
+    }
+  ]
 }
