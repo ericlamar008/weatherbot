@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-19T16:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-19T02:20:38.433897+00:00",
-  "last_lite_refresh": "2026-10-19T08:20:42.912780+00:00",
+  "last_lite_refresh": "2026-10-19T14:20:45.441837+00:00",
   "forecast_mean": 20.71,
   "sigma": 0.697,
   "full_distribution": [
@@ -24,20 +24,20 @@
         16.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.998,
+      "no_price": 0.9985,
       "volume": 10.0,
       "spread": 0.0,
       "yes_token_id": "27038129013538541278262154528603320112803424957966351744083465800384701076901",
       "no_token_id": "67648669650035406550169017151918063692999863743476176682081238626177089921006",
       "model_prob": 0.0009,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0011,
-      "ev": -0.35,
+      "ev": -0.2667,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -61,8 +61,8 @@
       "ev": 0.0,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0003,
-      "yes_price_change": -0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Shanghai be 18°C on October 19?",
@@ -85,7 +85,7 @@
       "ev": 11.6,
       "kelly": 0.0015,
       "sell_value": null,
-      "model_prob_change": 0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -95,22 +95,22 @@
         19.0,
         19.0
       ],
-      "yes_price": 0.0045,
-      "no_price": 0.985,
+      "yes_price": 0.004,
+      "no_price": 0.996,
       "volume": 83.0,
       "spread": 0.0,
       "yes_token_id": "103049669012314561902164175695178062534165435817853371723010145362646308786212",
       "no_token_id": "64255659755490058936454820988567302938874434884645848407432942543481822159882",
       "model_prob": 0.0591,
       "side": "YES",
-      "ask": 0.015,
-      "market_prob": 0.015,
-      "belief_prob": 0.04,
-      "ev": 1.9133,
-      "kelly": 0.0073,
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0398,
+      "ev": 8.95,
+      "kelly": 0.009,
       "sell_value": null,
-      "model_prob_change": 0.0128,
-      "yes_price_change": -0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the lowest temperature in Shanghai be 20°C on October 19?",
@@ -120,21 +120,21 @@
         20.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9775,
-      "volume": 779.0,
+      "no_price": 0.9995,
+      "volume": 878.0,
       "spread": 0.0,
       "yes_token_id": "90908864108109219560238964522851037476671516312190101224646643804529154496111",
       "no_token_id": "75849116246918465040222140390663306717650724464462382763306108479979173665583",
       "model_prob": 0.3161,
       "side": "YES",
-      "ask": 0.0225,
-      "market_prob": 0.0225,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.2056,
-      "ev": 8.48,
-      "kelly": 0.0488,
+      "ev": 410.2,
+      "kelly": 0.0513,
       "sell_value": null,
-      "model_prob_change": 0.0492,
-      "yes_price_change": 0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Shanghai be 21°C on October 19?",
@@ -144,21 +144,21 @@
         21.0
       ],
       "yes_price": 0.985,
-      "no_price": 0.024,
-      "volume": 1038.0,
+      "no_price": 0.015,
+      "volume": 1178.0,
       "spread": 0.0,
       "yes_token_id": "81766678453813697832595987811929932366822567003094981633230534372640070924326",
       "no_token_id": "52174887620977213488657667749705829922838160765509041235865778945489944166355",
       "model_prob": 0.4581,
       "side": "YES",
-      "ask": 0.976,
-      "market_prob": 0.976,
+      "ask": 0.985,
+      "market_prob": 0.985,
       "belief_prob": 0.6425,
-      "ev": -0.3449,
+      "ev": -0.3477,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0246,
-      "yes_price_change": 0.006
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Shanghai be 22°C on October 19?",
@@ -181,7 +181,7 @@
       "ev": 167.2,
       "kelly": 0.0209,
       "sell_value": null,
-      "model_prob_change": -0.0331,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 25.2,
       "kelly": 0.0032,
       "sell_value": null,
-      "model_prob_change": -0.0055,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 4.2,
       "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 0.6,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 0.0,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
