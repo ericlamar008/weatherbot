@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-21T22:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0077,
       "ev": -0.2667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 3°C on October 21?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0071,
       "ev": 0.0143,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 4°C on October 21?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0152,
       "ev": 0.4476,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 5°C on October 21?",
@@ -90,19 +96,21 @@
         5.0
       ],
       "yes_price": 0.04,
-      "no_price": 0.955,
+      "no_price": 0.96,
       "volume": 33.0,
       "spread": 0.0,
       "yes_token_id": "95327558223257735050770198426278992269792847957589893682526969620554747110856",
       "no_token_id": "65708390251371917202812980234561710364507463927699145723783237473727880095639",
       "model_prob": 0.046,
       "side": "YES",
-      "ask": 0.045,
-      "market_prob": 0.045,
+      "ask": 0.04,
+      "market_prob": 0.04,
       "belief_prob": 0.0439,
-      "ev": 0.0133,
-      "kelly": 0.0002,
-      "sell_value": null
+      "ev": 0.0975,
+      "kelly": 0.001,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 6°C on October 21?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.1082,
       "ev": 0.082,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 7°C on October 21?",
@@ -146,7 +156,9 @@
       "belief_prob": 0.2529,
       "ev": -0.2097,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 8°C on October 21?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.3143,
       "ev": -0.2334,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Paris be 9°C on October 21?",
@@ -177,20 +191,22 @@
         9.0,
         9.0
       ],
-      "yes_price": 0.215,
-      "no_price": 0.805,
-      "volume": 38.0,
+      "yes_price": 0.21,
+      "no_price": 0.79,
+      "volume": 48.0,
       "spread": 0.0,
       "yes_token_id": "24014696500196729824297497001363790612397777847749243900674739364017946732498",
       "no_token_id": "5031055711225708204026817336020284285057772828949417390050429377553030480672",
       "model_prob": 0.1852,
       "side": "YES",
-      "ask": 0.195,
-      "market_prob": 0.195,
-      "belief_prob": 0.1956,
-      "ev": -0.0328,
+      "ask": 0.21,
+      "market_prob": 0.21,
+      "belief_prob": 0.1939,
+      "ev": -0.0767,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the lowest temperature in Paris be 10°C on October 21?",
@@ -199,7 +215,7 @@
         10.0,
         10.0
       ],
-      "yes_price": 0.026,
+      "yes_price": 0.025,
       "no_price": 0.975,
       "volume": 74.0,
       "spread": 0.0,
@@ -209,10 +225,12 @@
       "side": "YES",
       "ask": 0.025,
       "market_prob": 0.025,
-      "belief_prob": 0.0658,
+      "belief_prob": 0.0655,
       "ev": 1.62,
       "kelly": 0.0104,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the lowest temperature in Paris be 11°C on October 21?",
@@ -221,20 +239,22 @@
         11.0,
         11.0
       ],
-      "yes_price": 0.0175,
-      "no_price": 0.9825,
+      "yes_price": 0.012,
+      "no_price": 0.988,
       "volume": 128.0,
       "spread": 0.0,
       "yes_token_id": "83837210638614914515265097238506791828786422757079406223959974582675795587724",
       "no_token_id": "93138717273685323791007910274662565339322318136272329366061444135152541048356",
       "model_prob": 0.0345,
       "side": "YES",
-      "ask": 0.0175,
-      "market_prob": 0.0175,
-      "belief_prob": 0.0286,
-      "ev": 0.6343,
-      "kelly": 0.0028,
-      "sell_value": null
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0266,
+      "ev": 1.2167,
+      "kelly": 0.0037,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0055
     },
     {
       "question": "Will the lowest temperature in Paris be 12°C or higher on October 21?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0192,
       "ev": 0.8286,
       "kelly": 0.0022,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -269,5 +291,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00"
+  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00",
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00"
 }

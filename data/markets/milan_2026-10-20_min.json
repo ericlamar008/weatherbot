@@ -7,11 +7,147 @@
   "market_type": "min",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
-  "hours_left": 19.7,
+  "hours_left": 19.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T22:00:00+00:00",
   "event_end_date": "2026-10-20T12:00:00Z",
   "last_scan": "2026-10-20T02:20:39.609795+00:00",
   "skipped_reason": "event volume 202 < min_volume 500",
-  "last_lite_refresh": "2026-10-19T20:20:44.990456+00:00"
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00",
+  "forecast_mean": 13.63,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 12°C on October 20?",
+      "market_id": "5853603",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.5,
+      "no_price": 0.5,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "107275277490303026140390458011871727461338693118652404005285403755637339488308",
+      "no_token_id": "102271837312669390498768183303980531734512773481812516600559596714479237665071",
+      "model_prob": 0.1477,
+      "side": "YES",
+      "ask": 0.5,
+      "market_prob": 0.5,
+      "belief_prob": 0.271,
+      "ev": -0.458,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 13°C on October 20?",
+      "market_id": "5853604",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 76.0,
+      "spread": 0.0,
+      "yes_token_id": "97459147512795801295513025547768510305275582249704004618795671606699690409457",
+      "no_token_id": "53700021760826641476329485171165719017933458974325655792730667531871201003422",
+      "model_prob": 0.2613,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.17,
+      "ev": 339.0,
+      "kelly": 0.0424,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 14°C on October 20?",
+      "market_id": "5853605",
+      "range": [
+        14.0,
+        14.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 76.0,
+      "spread": 0.0,
+      "yes_token_id": "52414569145393056997576694160807408902067607203819332317518199143325568304294",
+      "no_token_id": "29017836155221688580073799097181604039381047047346593607195530887896280343750",
+      "model_prob": 0.2809,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1828,
+      "ev": 364.6,
+      "kelly": 0.0456,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 15°C on October 20?",
+      "market_id": "5853606",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "54977064721185743305047707770494882720890407257162624453841903351669639800916",
+      "no_token_id": "88966642830547620661735548913525408929744089021402908592724266374990529984442",
+      "model_prob": 0.178,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1159,
+      "ev": 230.8,
+      "kelly": 0.0289,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 16°C on October 20?",
+      "market_id": "5853607",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "28438838871086342628381938413654595355762768801683339296042344367742651139253",
+      "no_token_id": "104293998845719688655507774835399789399406493855675492318438812107811926641873",
+      "model_prob": 0.0793,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0517,
+      "ev": 102.4,
+      "kelly": 0.0128,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 17°C or higher on October 20?",
+      "market_id": "5853608",
+      "range": [
+        17.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "9026708859771728291874729173442748031504186503276526713071871312081510732735",
+      "no_token_id": "25197030902002170471545791825793775207269756799734439283816955731237138355298",
+      "model_prob": 0.0528,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0345,
+      "ev": 68.0,
+      "kelly": 0.0085,
+      "sell_value": null
+    }
+  ]
 }

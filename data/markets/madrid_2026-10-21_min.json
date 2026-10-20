@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-21T22:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
   "last_scan": "2026-10-20T02:20:39.609795+00:00",
-  "skipped_reason": "event volume 331 < min_volume 500"
+  "skipped_reason": "event volume 331 < min_volume 500",
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00",
+  "forecast_mean": 7.67,
+  "sigma": 2.001,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Madrid be 2°C or below on October 21?",
+      "market_id": "5913471",
+      "range": [
+        -999.0,
+        2.0
+      ],
+      "yes_price": 0.2,
+      "no_price": 0.8,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "93999944205680404143154730141105345772462634503327990050505366905913330209024",
+      "no_token_id": "34095991875285000494040122326723892806780831038644658207759923326612653679489",
+      "model_prob": 0.1598,
+      "side": "YES",
+      "ask": 0.2,
+      "market_prob": 0.2,
+      "belief_prob": 0.1739,
+      "ev": -0.1305,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 3°C on October 21?",
+      "market_id": "5913472",
+      "range": [
+        3.0,
+        3.0
+      ],
+      "yes_price": 0.07,
+      "no_price": 0.93,
+      "volume": 31.0,
+      "spread": 0.0,
+      "yes_token_id": "78149671728497442854206465289349869763384696800485610516973817641324968184769",
+      "no_token_id": "104588476362043503181460684513834109494163935111219410487080594597015398864135",
+      "model_prob": 0.1376,
+      "side": "YES",
+      "ask": 0.07,
+      "market_prob": 0.07,
+      "belief_prob": 0.1139,
+      "ev": 0.6271,
+      "kelly": 0.0118,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 11°C on October 21?",
+      "market_id": "5913480",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "20265326047197441099643357080903282969022772091698068168453778339509276748614",
+      "no_token_id": "6133636693702993789968901236809104980786575092030477453409128879211913847764",
+      "model_prob": 0.3332,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.2971,
+      "ev": 0.2917,
+      "kelly": 0.0218,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Madrid be 12°C or higher on October 21?",
+      "market_id": "5913481",
+      "range": [
+        12.0,
+        999.0
+      ],
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 100.0,
+      "spread": 0.0,
+      "yes_token_id": "86981839626473019101018978588784056366996410965497898374793253137610849021310",
+      "no_token_id": "46769589781151901162023800006256179566147881879632460120972194505557414686695",
+      "model_prob": 0.3694,
+      "side": "YES",
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.3259,
+      "ev": 0.3302,
+      "kelly": 0.0268,
+      "sell_value": null
+    }
+  ]
 }

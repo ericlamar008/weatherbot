@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-22T04:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0309,
       "ev": 19.6,
       "kelly": 0.0074,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 54-55°F on October 21?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0284,
       "ev": 4.68,
       "kelly": 0.0059,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 56-57°F on October 21?",
@@ -74,7 +78,7 @@
       ],
       "yes_price": 0.012,
       "no_price": 0.988,
-      "volume": 65.0,
+      "volume": 151.0,
       "spread": 0.0,
       "yes_token_id": "93460907539011567929694722510842724919558055737044719342579652788661331717889",
       "no_token_id": "100857885302097565748633368296893179416642667113735874125758641595881972361758",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0813,
       "ev": 5.775,
       "kelly": 0.0175,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 58-59°F on October 21?",
@@ -95,19 +101,21 @@
         59.0
       ],
       "yes_price": 0.0405,
-      "no_price": 0.95,
+      "no_price": 0.9595,
       "volume": 317.0,
       "spread": 0.0,
       "yes_token_id": "97014120761060751911617906692680255824968797987307379684293435686421886026740",
       "no_token_id": "73670747912826151586602750644494906349572629472759409531276260230058079185269",
       "model_prob": 0.2562,
       "side": "YES",
-      "ask": 0.05,
-      "market_prob": 0.05,
+      "ask": 0.0405,
+      "market_prob": 0.0405,
       "belief_prob": 0.1807,
-      "ev": 2.68,
-      "kelly": 0.0353,
-      "sell_value": null
+      "ev": 3.4617,
+      "kelly": 0.0365,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 60-61°F on October 21?",
@@ -117,19 +125,21 @@
         61.0
       ],
       "yes_price": 0.325,
-      "no_price": 0.685,
+      "no_price": 0.675,
       "volume": 6382.0,
       "spread": 0.0,
       "yes_token_id": "113341542709541580019352373678329786958475203935423627885483736959748520522094",
       "no_token_id": "89887485544302700316947379557822264657952589985338257629420519313659384083079",
       "model_prob": 0.2887,
       "side": "YES",
-      "ask": 0.315,
-      "market_prob": 0.315,
+      "ask": 0.325,
+      "market_prob": 0.325,
       "belief_prob": 0.3014,
-      "ev": -0.0543,
+      "ev": -0.0726,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 62-63°F on October 21?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.47,
       "no_price": 0.53,
-      "volume": 771.0,
+      "volume": 987.0,
       "spread": 0.0,
       "yes_token_id": "46515294969605984613983514023452857821223789367513801238776431463033582204215",
       "no_token_id": "55545690582003611825077363225700605945585566638070111710447111624597046821533",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2673,
       "ev": -0.4313,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 64-65°F on October 21?",
@@ -161,19 +173,21 @@
         65.0
       ],
       "yes_price": 0.14,
-      "no_price": 0.855,
+      "no_price": 0.86,
       "volume": 519.0,
       "spread": 0.0,
       "yes_token_id": "56704840399688187121893759218970528232519258261054997747406940620515766527933",
       "no_token_id": "68363220708907444704120177351801959321514963871046066691114923567757291189906",
       "model_prob": 0.0576,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
+      "ask": 0.14,
+      "market_prob": 0.14,
       "belief_prob": 0.0864,
-      "ev": -0.3917,
+      "ev": -0.3829,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 66-67°F on October 21?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0139,
       "ev": 2.475,
       "kelly": 0.0025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 21?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0049,
       "ev": 2.2667,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 21?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0019,
       "ev": 2.8,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 72°F or higher on October 21?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0032,
       "ev": 5.4,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00"
+  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00",
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00"
 }

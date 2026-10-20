@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-21T22:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
@@ -29,20 +29,22 @@
         -999.0,
         11.0
       ],
-      "yes_price": 0.0025,
-      "no_price": 0.9975,
-      "volume": 151.0,
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "volume": 165.0,
       "spread": 0.0,
       "yes_token_id": "1409618519140460983083226371848675232785153354052444875508003127492288060032",
       "no_token_id": "97169616626673584386887126787741476925056672919641698325477126456687531581958",
       "model_prob": 0.0017,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
-      "belief_prob": 0.002,
-      "ev": -0.2,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0016,
+      "ev": 0.0667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.001
     },
     {
       "question": "Will the highest temperature in Milan be 12°C on October 21?",
@@ -53,7 +55,7 @@
       ],
       "yes_price": 0.002,
       "no_price": 0.998,
-      "volume": 337.0,
+      "volume": 350.0,
       "spread": 0.0,
       "yes_token_id": "3231649451039257764640864088866282707466356389610985590615301416398108472093",
       "no_token_id": "13909160644344522123693222857290314309508270895775256311088122836370944523787",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0022,
       "ev": 0.1,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 13°C on October 21?",
@@ -75,7 +79,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 300.0,
+      "volume": 313.0,
       "spread": 0.0,
       "yes_token_id": "20072891306789389989436700745989548047311909992270805171761869676577925869332",
       "no_token_id": "22894679537395096903054120707079984857144283210616265709600859080759629539764",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0052,
       "ev": 1.08,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 14°C on October 21?",
@@ -95,20 +101,22 @@
         14.0,
         14.0
       ],
-      "yes_price": 0.007,
-      "no_price": 0.993,
-      "volume": 9.0,
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "volume": 67.0,
       "spread": 0.0,
       "yes_token_id": "71102052453820173093480175572499587173773724219016823806273243001155248186676",
       "no_token_id": "26221520177721466657738532748953231742952153268605267414542237844661332792324",
       "model_prob": 0.0219,
       "side": "YES",
-      "ask": 0.007,
-      "market_prob": 0.007,
-      "belief_prob": 0.0167,
-      "ev": 1.3857,
-      "kelly": 0.0024,
-      "sell_value": null
+      "ask": 0.0085,
+      "market_prob": 0.0085,
+      "belief_prob": 0.0172,
+      "ev": 1.0235,
+      "kelly": 0.0022,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0015
     },
     {
       "question": "Will the highest temperature in Milan be 15°C on October 21?",
@@ -117,20 +125,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.09,
-      "no_price": 0.91,
-      "volume": 256.0,
+      "yes_price": 0.085,
+      "no_price": 0.915,
+      "volume": 310.0,
       "spread": 0.0,
       "yes_token_id": "76191819911735123835040125480820290074607329783563330931437470917890849046460",
       "no_token_id": "86767266781473179943256912297048571032579362761375788075309276333494351242956",
       "model_prob": 0.077,
       "side": "YES",
-      "ask": 0.09,
-      "market_prob": 0.09,
-      "belief_prob": 0.0816,
-      "ev": -0.0933,
+      "ask": 0.085,
+      "market_prob": 0.085,
+      "belief_prob": 0.0798,
+      "ev": -0.0612,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Milan be 16°C on October 21?",
@@ -141,7 +151,7 @@
       ],
       "yes_price": 0.355,
       "no_price": 0.645,
-      "volume": 2088.0,
+      "volume": 2123.0,
       "spread": 0.0,
       "yes_token_id": "35648496998901983403340751078012030837434741099820342785160802050894830062737",
       "no_token_id": "77553890787897984858628019431294624198612491546506439132202214502137468744191",
@@ -152,7 +162,9 @@
       "belief_prob": 0.27,
       "ev": -0.2394,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 17°C on October 21?",
@@ -162,19 +174,21 @@
         17.0
       ],
       "yes_price": 0.415,
-      "no_price": 0.58,
-      "volume": 766.0,
+      "no_price": 0.585,
+      "volume": 1234.0,
       "spread": 0.0,
       "yes_token_id": "1153452871576846456666869641520509841157381504509386322488459916248989017465",
       "no_token_id": "80507528826442182219523042792686758149872165169096775387006880225673326586309",
       "model_prob": 0.3447,
       "side": "YES",
-      "ask": 0.42,
-      "market_prob": 0.42,
+      "ask": 0.415,
+      "market_prob": 0.415,
       "belief_prob": 0.3693,
-      "ev": -0.1164,
+      "ev": -0.1101,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 18°C on October 21?",
@@ -185,7 +199,7 @@
       ],
       "yes_price": 0.105,
       "no_price": 0.895,
-      "volume": 592.0,
+      "volume": 677.0,
       "spread": 0.0,
       "yes_token_id": "29844893444573627405898291991017589455595366028416259309148484873903770548084",
       "no_token_id": "80631418241779426713340619326201653220904824344485098492331411914949663091989",
@@ -196,7 +210,9 @@
       "belief_prob": 0.1777,
       "ev": 0.6924,
       "kelly": 0.0203,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 19°C on October 21?",
@@ -207,7 +223,7 @@
       ],
       "yes_price": 0.0155,
       "no_price": 0.9845,
-      "volume": 186.0,
+      "volume": 210.0,
       "spread": 0.0,
       "yes_token_id": "15031650942050217899604237760475243731665490343310513773765082288250366727547",
       "no_token_id": "87483530578656217829591652856999709119168467798604139140897974539155124309251",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0531,
       "ev": 2.4258,
       "kelly": 0.0095,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Milan be 20°C on October 21?",
@@ -227,20 +245,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.011,
-      "no_price": 0.9905,
-      "volume": 45.0,
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 354.0,
       "spread": 0.0,
       "yes_token_id": "16861904077369885403955031097524983510853742585838837439312474238452066044103",
       "no_token_id": "6201740465146166233918258923075457110253520430324745620760155133248778786642",
       "model_prob": 0.0209,
       "side": "YES",
-      "ask": 0.0095,
-      "market_prob": 0.0095,
-      "belief_prob": 0.0174,
-      "ev": 0.7789,
-      "kelly": 0.0019,
-      "sell_value": null
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0173,
+      "ev": 0.6476,
+      "kelly": 0.0017,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Milan be 21°C or higher on October 21?",
@@ -251,7 +271,7 @@
       ],
       "yes_price": 0.0035,
       "no_price": 0.9965,
-      "volume": 10.0,
+      "volume": 23.0,
       "spread": 0.0,
       "yes_token_id": "95655108851883204148781301599804465997668382913201466710561692776913895506312",
       "no_token_id": "79139685907678692184597943039319024736586202334030979674429517033858889318388",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0079,
       "ev": 1.2571,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00"
+  "last_price_refresh": "2026-10-20T02:52:27.087324+00:00",
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00"
 }

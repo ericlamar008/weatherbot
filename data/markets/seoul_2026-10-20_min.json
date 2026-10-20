@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 12.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-20T15:00:00+00:00",
   "event_end_date": "2026-10-20T12:00:00Z",
   "last_scan": "2026-10-20T02:20:39.609795+00:00",
-  "last_lite_refresh": "2026-10-19T20:20:44.990456+00:00",
-  "forecast_mean": 12.37,
-  "sigma": 0.737,
+  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00",
+  "forecast_mean": 12.36,
+  "sigma": 0.735,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 8°C or below on October 20?",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0062,
       "ev": -0.5724,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 9°C on October 20?",
@@ -46,19 +48,21 @@
         9.0
       ],
       "yes_price": 0.0195,
-      "no_price": 0.98,
+      "no_price": 0.9805,
       "volume": 10.0,
       "spread": 0.0,
       "yes_token_id": "25192171383182482984822845507855403798488356256277615245809471977124000389561",
       "no_token_id": "25929620288817764668711921355545907289938689634579529366887098984146409498490",
       "model_prob": 0.0041,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
+      "ask": 0.0195,
+      "market_prob": 0.0195,
       "belief_prob": 0.0095,
-      "ev": -0.515,
+      "ev": -0.5128,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 10°C on October 20?",
@@ -73,14 +77,16 @@
       "spread": 0.0,
       "yes_token_id": "76540010208680944874834845214343505925403329662374205963146567125822040735365",
       "no_token_id": "34821820378084172542748858389272831104821387611835778461795906105307552582460",
-      "model_prob": 0.0203,
+      "model_prob": 0.0205,
       "side": "YES",
       "ask": 0.024,
       "market_prob": 0.024,
-      "belief_prob": 0.0216,
-      "ev": -0.1,
+      "belief_prob": 0.0217,
+      "ev": -0.0958,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 11°C on October 20?",
@@ -90,19 +96,21 @@
         11.0
       ],
       "yes_price": 0.017,
-      "no_price": 0.963,
+      "no_price": 0.983,
       "volume": 501.0,
       "spread": 0.0,
       "yes_token_id": "67567350898325100711064493674163240673974834282553641313532353683698318905808",
       "no_token_id": "41913552668840250983668706274129224373374220602413686237593984382169762385362",
-      "model_prob": 0.1194,
+      "model_prob": 0.1211,
       "side": "YES",
-      "ask": 0.037,
-      "market_prob": 0.037,
-      "belief_prob": 0.0836,
-      "ev": 1.4486,
-      "kelly": 0.0139,
-      "sell_value": null
+      "ask": 0.017,
+      "market_prob": 0.017,
+      "belief_prob": 0.0847,
+      "ev": 3.9824,
+      "kelly": 0.0172,
+      "sell_value": null,
+      "model_prob_change": 0.0017,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 12°C on October 20?",
@@ -111,20 +119,22 @@
         12.0,
         12.0
       ],
-      "yes_price": 0.0285,
-      "no_price": 0.9725,
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
       "volume": 451.0,
       "spread": 0.0,
       "yes_token_id": "33339917461350884158854978005780576904378166112783367781448786946754564574207",
       "no_token_id": "71464961637512223589510774247119602519249955598686075012390434771770818515612",
-      "model_prob": 0.4211,
+      "model_prob": 0.4244,
       "side": "YES",
-      "ask": 0.0275,
-      "market_prob": 0.0275,
-      "belief_prob": 0.2837,
-      "ev": 9.3018,
-      "kelly": 0.0658,
-      "sell_value": null
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.2848,
+      "ev": 10.1686,
+      "kelly": 0.0665,
+      "sell_value": null,
+      "model_prob_change": 0.0033,
+      "yes_price_change": -0.003
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 13°C on October 20?",
@@ -133,20 +143,22 @@
         13.0,
         13.0
       ],
-      "yes_price": 0.979,
-      "no_price": 0.026,
+      "yes_price": 0.9795,
+      "no_price": 0.0205,
       "volume": 820.0,
       "spread": 0.0,
       "yes_token_id": "47468855916844441045090198013398765243617221420724996127400427454871604795032",
       "no_token_id": "42805684160220519470405272445178148969297489699468481602382571720775986675331",
-      "model_prob": 0.3406,
+      "model_prob": 0.3374,
       "side": "YES",
-      "ask": 0.974,
-      "market_prob": 0.974,
-      "belief_prob": 0.564,
-      "ev": -0.4227,
+      "ask": 0.9795,
+      "market_prob": 0.9795,
+      "belief_prob": 0.5621,
+      "ev": -0.4261,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0032,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 14°C on October 20?",
@@ -161,14 +173,16 @@
       "spread": 0.0,
       "yes_token_id": "56950735070894763435671971337190074487014528754977154257089848907650132454638",
       "no_token_id": "81071977841323245112940980155864598414823346214730700660830154808548274436184",
-      "model_prob": 0.0758,
+      "model_prob": 0.0741,
       "side": "YES",
       "ask": 0.003,
       "market_prob": 0.003,
-      "belief_prob": 0.0503,
-      "ev": 15.7667,
-      "kelly": 0.0119,
-      "sell_value": null
+      "belief_prob": 0.0492,
+      "ev": 15.4,
+      "kelly": 0.0116,
+      "sell_value": null,
+      "model_prob_change": -0.0017,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 15°C on October 20?",
@@ -183,14 +197,16 @@
       "spread": 0.0,
       "yes_token_id": "6192092687708590063568193913424586004190848013218212858769941010702107155312",
       "no_token_id": "87091904709777680614106804549050877539666098017522747137017113572615871323984",
-      "model_prob": 0.013,
+      "model_prob": 0.0127,
       "side": "YES",
       "ask": 0.003,
       "market_prob": 0.003,
-      "belief_prob": 0.0095,
-      "ev": 2.1667,
+      "belief_prob": 0.0093,
+      "ev": 2.1,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0003,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 20?",
@@ -205,14 +221,16 @@
       "spread": 0.0,
       "yes_token_id": "81459874056933367085490919820795937535708004690658620951953404026306690980301",
       "no_token_id": "104960640621506641572608214498418969168490109435031110868075019678131312854877",
-      "model_prob": 0.0028,
+      "model_prob": 0.0027,
       "side": "YES",
       "ask": 0.003,
       "market_prob": 0.003,
-      "belief_prob": 0.0029,
-      "ev": -0.0333,
+      "belief_prob": 0.0028,
+      "ev": -0.0667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 17°C on October 20?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0007,
       "ev": 0.4,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 18°C or higher on October 20?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0005,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-20T02:52:27.087324+00:00",
