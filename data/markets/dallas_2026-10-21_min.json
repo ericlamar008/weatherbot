@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 50.1,
+  "hours_left": 44.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-22T05:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
   "last_scan": "2026-10-20T02:20:39.609795+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-20T02:53:19.280228+00:00"
+  "last_lite_refresh": "2026-10-20T08:20:41.418360+00:00",
+  "forecast_mean": 58.11,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be 68°F or higher on October 21?",
+      "market_id": "5917273",
+      "range": [
+        68.0,
+        999.0
+      ],
+      "yes_price": 0.0255,
+      "no_price": 0.9745,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "50649133555565390172517767089131462110331057071746395654828166324980337386846",
+      "no_token_id": "53264104420037526760728325017858096012919294396959163203831914072217071732555",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0255,
+      "market_prob": 0.0255,
+      "belief_prob": 0.6589,
+      "ev": 24.8392,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
