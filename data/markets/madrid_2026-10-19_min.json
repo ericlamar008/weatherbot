@@ -3,7 +3,7 @@
   "city_name": "Madrid",
   "date": "2026-10-19",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
@@ -12,7 +12,7 @@
   "local_day_end_utc": "2026-10-19T22:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-21T02:20:37.642029+00:00",
-  "last_lite_refresh": "2026-10-21T02:53:16.946205+00:00",
+  "last_lite_refresh": "2026-10-21T08:20:38.787089+00:00",
   "forecast_mean": 8.19,
   "sigma": 1.347,
   "full_distribution": [
@@ -274,7 +274,10 @@
       "market_prob": 0.485,
       "role": "main_signal",
       "units": 26.1,
-      "sell_value": null
+      "sell_value": null,
+      "won": true,
+      "pnl_units": 27.71,
+      "user_entered": false
     },
     {
       "market_id": "5795236",
@@ -290,7 +293,10 @@
       "market_prob": 0.515,
       "role": "scenario_hedge",
       "units": 17.1,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -17.1,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 43.2,
@@ -301,5 +307,50 @@
   "success_probability": 0.369,
   "confidence": 0.0651,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 8.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 10.61,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5795236",
+      "question": "Will the lowest temperature in Madrid be 8°C on October 19?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.485,
+      "model_prob": 0.2587,
+      "ev": -0.3033,
+      "market_prob": 0.485,
+      "role": "main_signal",
+      "units": 26.1,
+      "sell_value": null,
+      "won": true,
+      "pnl_units": 27.71,
+      "user_entered": false
+    },
+    {
+      "market_id": "5795236",
+      "question": "Will the lowest temperature in Madrid be 8°C on October 19? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.515,
+      "model_prob": 0.7413,
+      "ev": 0.2856,
+      "market_prob": 0.515,
+      "role": "scenario_hedge",
+      "units": 17.1,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -17.1,
+      "user_entered": false
+    }
+  ]
 }
