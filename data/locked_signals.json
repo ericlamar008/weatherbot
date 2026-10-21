@@ -5674,16 +5674,18 @@
     "side": "YES",
     "entry_price": 0.475,
     "locked_at": "2026-10-20T16:11:56.200293+00:00",
-    "status": "open",
+    "status": "closed_manual",
     "last_price": 0.93,
     "last_pct": 95.8,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
+    "exit_price": 0.93,
+    "closed_at": "2026-10-21T05:10:28.937838+00:00",
+    "close_reason": "manual_unlock",
     "actual_temp": null,
     "last_price_source": "bid",
     "last_mid": 0.96,
-    "last_checked_at": "2026-10-21T05:07:21.757696+00:00"
+    "last_checked_at": "2026-10-21T05:07:21.757696+00:00",
+    "exit_price_source": "bid",
+    "unlock_issue_number": 478
   },
   {
     "issue_number": 474,
