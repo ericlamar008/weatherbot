@@ -3,7 +3,7 @@
   "city_name": "Mexico City",
   "date": "2026-10-19",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-18T02:20:41.809634+00:00",
   "committed_allocation": null,
@@ -12,7 +12,7 @@
   "local_day_end_utc": "2026-10-20T06:00:00+00:00",
   "event_end_date": "2026-10-19T12:00:00Z",
   "last_scan": "2026-10-21T02:20:37.642029+00:00",
-  "last_lite_refresh": "2026-10-21T08:20:38.787089+00:00",
+  "last_lite_refresh": "2026-10-21T14:20:50.233481+00:00",
   "forecast_mean": 10.71,
   "sigma": 1.4,
   "full_distribution": [
@@ -154,7 +154,10 @@
       "market_prob": 0.9615,
       "role": "main_signal",
       "units": 29.2,
-      "sell_value": 0.935
+      "sell_value": 0.935,
+      "won": true,
+      "pnl_units": 1.17,
+      "user_entered": false
     },
     {
       "market_id": "5807091",
@@ -170,7 +173,10 @@
       "market_prob": 0.0385,
       "role": "scenario_hedge",
       "units": 0.77,
-      "sell_value": 0.012
+      "sell_value": 0.012,
+      "won": false,
+      "pnl_units": -0.77,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.0,
@@ -181,5 +187,50 @@
   "success_probability": 0.451,
   "confidence": 0.4149,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 13.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.4,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5807091",
+      "question": "Will the lowest temperature in Mexico City be 13°C on October 19?",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "YES",
+      "price": 0.9615,
+      "model_prob": 0.0772,
+      "ev": -0.5978,
+      "market_prob": 0.9615,
+      "role": "main_signal",
+      "units": 29.2,
+      "sell_value": 0.935,
+      "won": true,
+      "pnl_units": 1.17,
+      "user_entered": false
+    },
+    {
+      "market_id": "5807091",
+      "question": "Will the lowest temperature in Mexico City be 13°C on October 19? (NO)",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "side": "NO",
+      "price": 0.0385,
+      "model_prob": 0.9228,
+      "ev": 14.9299,
+      "market_prob": 0.0385,
+      "role": "scenario_hedge",
+      "units": 0.77,
+      "sell_value": 0.012,
+      "won": false,
+      "pnl_units": -0.77,
+      "user_entered": false
+    }
+  ]
 }
