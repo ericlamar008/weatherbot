@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T04:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
   "last_scan": "2026-10-21T02:20:37.642029+00:00",
-  "skipped_reason": "event volume 119 < min_volume 500"
+  "skipped_reason": "event volume 119 < min_volume 500",
+  "last_lite_refresh": "2026-10-21T02:53:16.946205+00:00",
+  "forecast_mean": 70.55,
+  "sigma": 2.531,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Miami be between 72-73°F on October 22?",
+      "market_id": "5964795",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.445,
+      "no_price": 0.555,
+      "volume": 107.0,
+      "spread": 0.0,
+      "yes_token_id": "114150204886665762801857294590086123886632129966571466996520594084932152171765",
+      "no_token_id": "58766375818144044171552227119661651014876258939135731429700596897619619071804",
+      "model_prob": 0.6994,
+      "side": "YES",
+      "ask": 0.445,
+      "market_prob": 0.445,
+      "belief_prob": 0.6104,
+      "ev": 0.3717,
+      "kelly": 0.0745,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Miami be between 74-75°F on October 22?",
+      "market_id": "5964796",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.13,
+      "no_price": 0.87,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "86467700731852558713468865588456990381102371232236599181238449394049631916889",
+      "no_token_id": "11216250872314560786163005022829631285213914510682588575546521808056896056362",
+      "model_prob": 0.3006,
+      "side": "YES",
+      "ask": 0.13,
+      "market_prob": 0.13,
+      "belief_prob": 0.2409,
+      "ev": 0.8531,
+      "kelly": 0.0319,
+      "sell_value": null
+    }
+  ]
 }
