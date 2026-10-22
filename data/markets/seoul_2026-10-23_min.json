@@ -7,10 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 36.7,
+  "hours_left": 36.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T15:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-22T02:20:39.650370+00:00",
-  "skipped_reason": "event volume 297 < min_volume 500"
+  "skipped_reason": "event volume 297 < min_volume 500",
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00",
+  "forecast_mean": 8.12,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 10°C on October 23?",
+      "market_id": "6003039",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.23,
+      "no_price": 0.77,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "35848297651886312355473941127405087780331757615487820244824582655003824209075",
+      "no_token_id": "106555830501571375815876070346472733113518179609584095470038299050257832268815",
+      "model_prob": 0.6145,
+      "side": "YES",
+      "ask": 0.23,
+      "market_prob": 0.23,
+      "belief_prob": 0.4799,
+      "ev": 1.0865,
+      "kelly": 0.0811,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 11°C on October 23?",
+      "market_id": "6003040",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.11,
+      "no_price": 0.89,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "53047918668548532458417029118603475177265566449618232041787750950836535172721",
+      "no_token_id": "56543281735485403944695459007198074476537335509548834121101155032593278787695",
+      "model_prob": 0.2499,
+      "side": "YES",
+      "ask": 0.11,
+      "market_prob": 0.11,
+      "belief_prob": 0.2009,
+      "ev": 0.8264,
+      "kelly": 0.0255,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 12°C on October 23?",
+      "market_id": "6003041",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 130.0,
+      "spread": 0.0,
+      "yes_token_id": "86128872877383463011397372854840896071081756045387328150903205404850351658506",
+      "no_token_id": "72618410777124494044301841378014696206229415786062998214807803280102576115222",
+      "model_prob": 0.0966,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0647,
+      "ev": 10.7636,
+      "kelly": 0.0149,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Seoul (Incheon) be 13°C on October 23?",
+      "market_id": "6003042",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.26,
+      "no_price": 0.74,
+      "volume": 110.0,
+      "spread": 0.0,
+      "yes_token_id": "92911346761986926252431549573538605894694066223745313854542192992309055418594",
+      "no_token_id": "6960406503337387057006059433821769138934483055303877964083020189600062921781",
+      "model_prob": 0.0389,
+      "side": "YES",
+      "ask": 0.26,
+      "market_prob": 0.26,
+      "belief_prob": 0.1163,
+      "ev": -0.5527,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

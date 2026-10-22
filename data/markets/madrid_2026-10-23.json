@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T22:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0086,
       "ev": 0.3231,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 16°C on October 23?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0176,
       "ev": 0.9556,
       "kelly": 0.0022,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 17°C on October 23?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0598,
       "ev": 3.6,
       "kelly": 0.0119,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 18°C on October 23?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.1872,
       "ev": 2.4036,
       "kelly": 0.035,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 19°C on October 23?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.3611,
       "ev": 0.0031,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 20°C on October 23?",
@@ -141,7 +151,7 @@
       ],
       "yes_price": 0.455,
       "no_price": 0.545,
-      "volume": 255.0,
+      "volume": 326.0,
       "spread": 0.0,
       "yes_token_id": "53613388952429505817370004668832239018625982533706434796196115772132582277267",
       "no_token_id": "95872030840343738352541890488044553456694576124547286093573128295604338489089",
@@ -152,7 +162,9 @@
       "belief_prob": 0.2813,
       "ev": -0.3818,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 21°C on October 23?",
@@ -161,20 +173,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.123,
-      "no_price": 0.874,
-      "volume": 596.0,
+      "yes_price": 0.121,
+      "no_price": 0.879,
+      "volume": 607.0,
       "spread": 0.0,
       "yes_token_id": "105548332922290531732880231875310115178328916902812967758227115778489528420998",
       "no_token_id": "12651427292853413697380238026340758468312293108821312072145292197817565907584",
       "model_prob": 0.0541,
       "side": "YES",
-      "ask": 0.126,
-      "market_prob": 0.126,
-      "belief_prob": 0.0782,
-      "ev": -0.3706,
+      "ask": 0.121,
+      "market_prob": 0.121,
+      "belief_prob": 0.0775,
+      "ev": -0.3595,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.002
     },
     {
       "question": "Will the highest temperature in Madrid be 22°C on October 23?",
@@ -196,7 +210,9 @@
       "belief_prob": 0.0126,
       "ev": 0.3263,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 23°C on October 23?",
@@ -218,7 +234,9 @@
       "belief_prob": 0.0055,
       "ev": -0.3125,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 24°C on October 23?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0027,
       "ev": -0.46,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 25°C or higher on October 23?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0009,
       "ev": 0.8,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-22T02:52:28.439639+00:00"
+  "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
 }

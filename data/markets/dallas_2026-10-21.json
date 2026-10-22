@@ -6,14 +6,14 @@
   "status": "open",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-22T05:00:00+00:00",
   "event_end_date": "2026-10-21T12:00:00Z",
   "last_scan": "2026-10-22T02:20:39.650370+00:00",
   "horizon_days": 0,
   "forecast_mean": 81.05,
-  "sigma": 1.574,
+  "sigma": 1.573,
   "forecast_mean_shadow": 80.96,
   "model_means_raw": {
     "ecmwf": 80.35,
@@ -34,14 +34,16 @@
       "spread": 0.0,
       "yes_token_id": "56740921712447786379479392491911026649920569234758008016577060200963120238489",
       "no_token_id": "47681823735731361135082652075160034897078689289588217160787436448970166662422",
-      "model_prob": 0.0018,
+      "model_prob": 0.0017,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 72-73°F on October 21?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 74-75°F on October 21?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0037,
       "ev": 6.4,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 76-77°F on October 21?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0171,
       "ev": 33.2,
       "kelly": 0.0042,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 78-79°F on October 21?",
@@ -122,14 +130,16 @@
       "spread": 0.0,
       "yes_token_id": "30985584491361885854815664488607837893423969693300658732864548874340555322758",
       "no_token_id": "16360086920644583994329953089919394614499027553800682992054647856872163469722",
-      "model_prob": 0.1388,
+      "model_prob": 0.1387,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0904,
-      "ev": 179.8,
+      "belief_prob": 0.0903,
+      "ev": 179.6,
       "kelly": 0.0225,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 80-81°F on October 21?",
@@ -144,14 +154,16 @@
       "spread": 0.0,
       "yes_token_id": "26734476087205494097208736068205851852385171398057043810848074505395271870313",
       "no_token_id": "28287106294924527994987238950253521689931783013554351760754184875370381967498",
-      "model_prob": 0.4406,
+      "model_prob": 0.4408,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.2866,
-      "ev": 572.2,
+      "belief_prob": 0.2867,
+      "ev": 572.4,
       "kelly": 0.0716,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0002,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 82-83°F on October 21?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.9995,
       "no_price": 0.0005,
-      "volume": 9764.0,
+      "volume": 9767.0,
       "spread": 0.0,
       "yes_token_id": "26270769687312784604036937019848298807493847539675832188821262027213670538106",
       "no_token_id": "4395292855431506777852860292249979416846663551284706700110391965268502908026",
@@ -173,7 +185,9 @@
       "belief_prob": 0.5457,
       "ev": -0.454,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 84-85°F on October 21?",
@@ -188,14 +202,16 @@
       "spread": 0.0,
       "yes_token_id": "62211107131714346432846363196244199482747452258453815835512802173158790164709",
       "no_token_id": "95416083298839117544562784126293463283921783784178406307075726926748190936288",
-      "model_prob": 0.0658,
+      "model_prob": 0.0657,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
       "belief_prob": 0.0429,
       "ev": 84.8,
       "kelly": 0.0106,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 86-87°F on October 21?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0084,
       "ev": 15.8,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 88-89°F on October 21?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be 90°F or higher on October 21?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -292,5 +314,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
-  "last_lite_refresh": "2026-10-21T20:20:40.214828+00:00"
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
 }

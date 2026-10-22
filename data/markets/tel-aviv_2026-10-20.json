@@ -3,7 +3,7 @@
   "city_name": "Tel Aviv",
   "date": "2026-10-20",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
   "hours_left": 0.0,
@@ -301,7 +301,10 @@
       "market_prob": 0.685,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.66
+      "sell_value": 0.66,
+      "won": true,
+      "pnl_units": 13.8,
+      "user_entered": false
     },
     {
       "market_id": "5855334",
@@ -317,7 +320,10 @@
       "market_prob": 0.315,
       "role": "scenario_hedge",
       "units": 9.2,
-      "sell_value": 0.29
+      "sell_value": 0.29,
+      "won": false,
+      "pnl_units": -9.2,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 39.2,
@@ -330,5 +336,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
-  "last_lite_refresh": "2026-10-21T20:20:40.214828+00:00"
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00",
+  "actual_temp": 26.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 4.6,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5855334",
+      "question": "Will the highest temperature in Tel Aviv be 26°C on October 20?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.685,
+      "model_prob": 0.3428,
+      "ev": -0.3247,
+      "market_prob": 0.685,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.66,
+      "won": true,
+      "pnl_units": 13.8,
+      "user_entered": false
+    },
+    {
+      "market_id": "5855334",
+      "question": "Will the highest temperature in Tel Aviv be 26°C on October 20? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.315,
+      "model_prob": 0.6572,
+      "ev": 0.706,
+      "market_prob": 0.315,
+      "role": "scenario_hedge",
+      "units": 9.2,
+      "sell_value": 0.29,
+      "won": false,
+      "pnl_units": -9.2,
+      "user_entered": false
+    }
+  ]
 }

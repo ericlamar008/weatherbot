@@ -7,10 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T22:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-22T02:20:39.650370+00:00",
-  "skipped_reason": "event volume 190 < min_volume 500"
+  "skipped_reason": "event volume 190 < min_volume 500",
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00",
+  "forecast_mean": 8.7,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Milan be 4°C or below on October 23?",
+      "market_id": "6003121",
+      "range": [
+        -999.0,
+        4.0
+      ],
+      "yes_price": 0.475,
+      "no_price": 0.525,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "74210707707643149940728994550145910858168615717373985060711060289092324666716",
+      "no_token_id": "15540891257697622005089037660253725537935490252683270971358110830593631912573",
+      "model_prob": 0.277,
+      "side": "YES",
+      "ask": 0.475,
+      "market_prob": 0.475,
+      "belief_prob": 0.3463,
+      "ev": -0.2709,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 12°C on October 23?",
+      "market_id": "6003129",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 110.0,
+      "spread": 0.0,
+      "yes_token_id": "111173244942338555129897925840384223777302027364086889458155253040690531271255",
+      "no_token_id": "103311239794319325533275937104707919458814231022507884769494701945845598268524",
+      "model_prob": 0.5512,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.472,
+      "ev": 0.4523,
+      "kelly": 0.0544,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Milan be 14°C or higher on October 23?",
+      "market_id": "6003131",
+      "range": [
+        14.0,
+        999.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "55441271108531099085607551542547777394161817020385136026097031882498218514802",
+      "no_token_id": "22842927412839147492145451116267514591558737848802423330017866923077899988205",
+      "model_prob": 0.1718,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.1992,
+      "ev": -0.2032,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ]
 }

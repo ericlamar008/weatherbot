@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-22T21:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
@@ -28,20 +28,22 @@
         -999.0,
         25.0
       ],
-      "yes_price": 0.0065,
-      "no_price": 0.993,
-      "volume": 3585.0,
+      "yes_price": 0.008,
+      "no_price": 0.992,
+      "volume": 3615.0,
       "spread": 0.0,
       "yes_token_id": "4101359224012342341838691117065405145999627223535616474083288875771653921401",
       "no_token_id": "62712063523884156149737431378242707626683247594773772906411559806836219389553",
       "model_prob": 0.0002,
       "side": "YES",
-      "ask": 0.007,
-      "market_prob": 0.007,
-      "belief_prob": 0.0024,
-      "ev": -0.6286,
+      "ask": 0.008,
+      "market_prob": 0.008,
+      "belief_prob": 0.0029,
+      "ev": -0.6375,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0015
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 26°C on October 22?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0014,
       "ev": -0.6,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 27°C on October 22?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0023,
       "ev": -0.54,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 28°C on October 22?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0043,
       "ev": -0.3857,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 29°C on October 22?",
@@ -116,20 +124,22 @@
         29.0,
         29.0
       ],
-      "yes_price": 0.03,
-      "no_price": 0.969,
+      "yes_price": 0.0355,
+      "no_price": 0.9645,
       "volume": 4317.0,
       "spread": 0.0,
       "yes_token_id": "88528311170857270398090461406901760025874010170440877210256106175378809392052",
       "no_token_id": "27939298719633044769265895253265876368967653099636306177889358161930954644955",
       "model_prob": 0.0135,
       "side": "YES",
-      "ask": 0.031,
-      "market_prob": 0.031,
-      "belief_prob": 0.0193,
-      "ev": -0.3677,
+      "ask": 0.0355,
+      "market_prob": 0.0355,
+      "belief_prob": 0.0212,
+      "ev": -0.4028,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0055
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 30°C on October 22?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.355,
       "no_price": 0.645,
-      "volume": 5449.0,
+      "volume": 5463.0,
       "spread": 0.0,
       "yes_token_id": "99636934380063884075617242384648995608214946706072949549698411429172228734512",
       "no_token_id": "82419709466256473471690692564454324981452909424557401056916354247900174130307",
@@ -151,7 +161,9 @@
       "belief_prob": 0.1762,
       "ev": -0.5037,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 31°C on October 22?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.585,
       "no_price": 0.415,
-      "volume": 5203.0,
+      "volume": 5210.0,
       "spread": 0.0,
       "yes_token_id": "105930604711090279096127604967569260476149791001045273560837118928854575108210",
       "no_token_id": "85370210552659938328466961973246931278234923424875556368164113208053563210824",
@@ -173,7 +185,9 @@
       "belief_prob": 0.436,
       "ev": -0.2547,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 32°C on October 22?",
@@ -183,19 +197,21 @@
         32.0
       ],
       "yes_price": 0.024,
-      "no_price": 0.9765,
+      "no_price": 0.976,
       "volume": 1216.0,
       "spread": 0.0,
       "yes_token_id": "105939388832422179795204464453152616691181912012188918084605195168873760062408",
       "no_token_id": "96743740035113286048714684165168680297337277331081881729659252395967387947289",
       "model_prob": 0.4131,
       "side": "YES",
-      "ask": 0.0235,
-      "market_prob": 0.0235,
+      "ask": 0.024,
+      "market_prob": 0.024,
       "belief_prob": 0.2769,
-      "ev": 10.7745,
+      "ev": 10.5375,
       "kelly": 0.0648,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 33°C on October 22?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0724,
       "ev": 27.96,
       "kelly": 0.0175,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 34°C on October 22?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0121,
       "ev": 23.2,
       "kelly": 0.0029,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Tel Aviv be 35°C or higher on October 22?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0036,
       "ev": 6.2,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
-  "last_lite_refresh": "2026-10-21T20:20:40.214828+00:00"
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
 }

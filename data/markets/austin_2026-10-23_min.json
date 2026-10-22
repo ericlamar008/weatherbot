@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T05:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-22T02:20:39.650370+00:00",
-  "skipped_reason": "event volume 65 < min_volume 500"
+  "skipped_reason": "event volume 65 < min_volume 500",
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00",
+  "forecast_mean": 62.12,
+  "sigma": 3.052,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Austin be 66°F or higher on October 23?",
+      "market_id": "6004934",
+      "range": [
+        66.0,
+        999.0
+      ],
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 65.0,
+      "spread": 0.0,
+      "yes_token_id": "2411027086573181711077155303246503555251224396028757263897345865465435577726",
+      "no_token_id": "35360013154953723752533911204726780926481144556222630856212001653361698298738",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.8197,
+      "ev": 0.6901,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

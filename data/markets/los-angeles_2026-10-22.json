@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 28.7,
+  "hours_left": 28.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T07:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0131,
       "ev": 25.2,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 56-57°F on October 22?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0054,
       "ev": 9.8,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 58-59°F on October 22?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0105,
       "ev": 20.0,
       "kelly": 0.0025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 60-61°F on October 22?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.022,
       "ev": 5.2857,
       "kelly": 0.0046,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 62-63°F on October 22?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0415,
       "ev": 15.6,
       "kelly": 0.0098,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 64-65°F on October 22?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.0749,
       "ev": 7.8118,
       "kelly": 0.0167,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 66-67°F on October 22?",
@@ -161,19 +173,21 @@
         67.0
       ],
       "yes_price": 0.085,
-      "no_price": 0.91,
+      "no_price": 0.915,
       "volume": 721.0,
       "spread": 0.0,
       "yes_token_id": "60960313740265008155059296534482745723746720129123756542036803283787181738182",
       "no_token_id": "53445681494522652086771317020829491506951337550759680988524388603506142121118",
       "model_prob": 0.1607,
       "side": "YES",
-      "ask": 0.09,
-      "market_prob": 0.09,
+      "ask": 0.085,
+      "market_prob": 0.085,
       "belief_prob": 0.1342,
-      "ev": 0.5111,
-      "kelly": 0.0126,
-      "sell_value": null
+      "ev": 0.5788,
+      "kelly": 0.0134,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 68-69°F on October 22?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.2606,
       "ev": -0.3795,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 70-71°F on October 22?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.2304,
       "ev": -0.424,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 72-73°F on October 22?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0844,
       "ev": 0.042,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be 74°F or higher on October 22?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.1247,
       "ev": 40.5667,
       "kelly": 0.0305,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
-  "last_lite_refresh": "2026-10-21T20:20:40.214828+00:00"
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
 }

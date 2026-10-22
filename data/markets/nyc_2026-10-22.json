@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T04:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
@@ -29,19 +29,21 @@
         55.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9995,
-      "volume": 100.0,
+      "no_price": 0.998,
+      "volume": 930.0,
       "spread": 0.0,
       "yes_token_id": "56205104733403625833765741480083788805685559563894476134121686176334502081013",
       "no_token_id": "60425777232529172526879425156594688002427822276832891873397449747856024031858",
       "model_prob": 0.0075,
       "side": "YES",
-      "ask": 0.0005,
-      "market_prob": 0.0005,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.0056,
-      "ev": 9.0,
-      "kelly": 0.0011,
-      "sell_value": null
+      "ev": 1.8,
+      "kelly": 0.0009,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 56-57°F on October 22?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0056,
       "ev": 10.2,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 58-59°F on October 22?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0242,
       "ev": 47.4,
       "kelly": 0.0059,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 60-61°F on October 22?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.1123,
       "ev": 19.4182,
       "kelly": 0.0268,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 62-63°F on October 22?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.2778,
       "ev": 68.45,
       "kelly": 0.0687,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 64-65°F on October 22?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2083,
       "ev": 1.104,
       "kelly": 0.0303,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 66-67°F on October 22?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.2452,
       "ev": -0.5772,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 22?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.1246,
       "ev": -0.6224,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 22?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.005,
       "ev": -0.3333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 72-73°F on October 22?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0012,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 74°F or higher on October 22?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0011,
       "ev": 1.2,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T02:52:28.439639+00:00",
-  "last_lite_refresh": "2026-10-21T20:20:40.214828+00:00"
+  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
 }
