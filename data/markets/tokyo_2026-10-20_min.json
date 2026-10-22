@@ -3,7 +3,7 @@
   "city_name": "Tokyo",
   "date": "2026-10-20",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-19T02:20:38.433897+00:00",
   "committed_allocation": null,
@@ -296,7 +296,10 @@
       "market_prob": 0.955,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.94
+      "sell_value": 0.94,
+      "won": true,
+      "pnl_units": 1.41,
+      "user_entered": false
     },
     {
       "market_id": "5853569",
@@ -312,7 +315,10 @@
       "market_prob": 0.045,
       "role": "scenario_hedge",
       "units": 0.94,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -0.94,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.9,
@@ -325,5 +331,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-22T08:07:22.128968+00:00",
-  "last_lite_refresh": "2026-10-22T02:53:21.612965+00:00"
+  "last_lite_refresh": "2026-10-22T08:20:43.529573+00:00",
+  "actual_temp": 21.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.47,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5853569",
+      "question": "Will the lowest temperature in Tokyo be 21°C on October 20?",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "YES",
+      "price": 0.955,
+      "model_prob": 0.2354,
+      "ev": -0.4897,
+      "market_prob": 0.955,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.94,
+      "won": true,
+      "pnl_units": 1.41,
+      "user_entered": false
+    },
+    {
+      "market_id": "5853569",
+      "question": "Will the lowest temperature in Tokyo be 21°C on October 20? (NO)",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.045,
+      "model_prob": 0.7646,
+      "ev": 10.3933,
+      "market_prob": 0.045,
+      "role": "scenario_hedge",
+      "units": 0.94,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -0.94,
+      "user_entered": false
+    }
+  ]
 }
