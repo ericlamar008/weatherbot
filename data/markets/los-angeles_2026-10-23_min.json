@@ -7,11 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 40.7,
+  "hours_left": 34.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T07:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-22T02:20:39.650370+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-22T14:20:43.118047+00:00"
+  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00",
+  "forecast_mean": 59.81,
+  "sigma": 3.146,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 58-59°F on October 23?",
+      "market_id": "6007587",
+      "range": [
+        58.0,
+        59.0
+      ],
+      "yes_price": 0.095,
+      "no_price": 0.905,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "11448618376389050369310662573712717558653230747944510421696249740886144620791",
+      "no_token_id": "37567962720927141476503297800623563445011231754852019215035137321726150019766",
+      "model_prob": 0.3141,
+      "side": "YES",
+      "ask": 0.095,
+      "market_prob": 0.095,
+      "belief_prob": 0.2374,
+      "ev": 1.4989,
+      "kelly": 0.0393,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 60-61°F on October 23?",
+      "market_id": "6007588",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.43,
+      "no_price": 0.57,
+      "volume": 347.0,
+      "spread": 0.0,
+      "yes_token_id": "46001971110384827979612218331779232843427530359859123386545742966743064100710",
+      "no_token_id": "94845972908160006723720960815452102388804978226682342263902613538437835354434",
+      "model_prob": 0.3377,
+      "side": "YES",
+      "ask": 0.43,
+      "market_prob": 0.43,
+      "belief_prob": 0.37,
+      "ev": -0.1395,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 62-63°F on October 23?",
+      "market_id": "6007589",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.395,
+      "no_price": 0.605,
+      "volume": 201.0,
+      "spread": 0.0,
+      "yes_token_id": "5859776068030214674251287453004086053796802540310034725019519681405776525425",
+      "no_token_id": "92400415451497296712130455513094170651009222068669109172639495670105432337072",
+      "model_prob": 0.2318,
+      "side": "YES",
+      "ask": 0.395,
+      "market_prob": 0.395,
+      "belief_prob": 0.2889,
+      "ev": -0.2686,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Los Angeles be between 64-65°F on October 23?",
+      "market_id": "6007590",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.045,
+      "no_price": 0.955,
+      "volume": 78.0,
+      "spread": 0.0,
+      "yes_token_id": "4910274308743634598964294101253801465671615865431072379987026301193818709998",
+      "no_token_id": "68056447730320872006292596063765776596882241286995149259489569374313927492057",
+      "model_prob": 0.1164,
+      "side": "YES",
+      "ask": 0.045,
+      "market_prob": 0.045,
+      "belief_prob": 0.0914,
+      "ev": 1.0311,
+      "kelly": 0.0121,
+      "sell_value": null
+    }
+  ]
 }
