@@ -1,0 +1,222 @@
+{
+  "city": "austin",
+  "city_name": "Austin",
+  "date": "2026-10-23",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-10-22T02:20:39.650370+00:00",
+  "committed_allocation": null,
+  "hours_left": 50.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-24T05:00:00+00:00",
+  "event_end_date": "2026-10-23T12:00:00Z",
+  "last_scan": "2026-10-22T02:20:39.650370+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 83.61,
+  "sigma": 1.394,
+  "forecast_mean_shadow": 84.26,
+  "model_means_raw": {
+    "ecmwf": 82.92,
+    "gfs": 84.04,
+    "gem": 84.9
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Austin be 75°F or below on October 23?",
+      "market_id": "6005180",
+      "range": [
+        -999.0,
+        75.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 50.0,
+      "spread": 0.0,
+      "yes_token_id": "88009572816276787525331024628598435187929992795959089364865783657330215165457",
+      "no_token_id": "61871285142151718533072050694454982162125643660044213079072507534573166890761",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0031,
+      "ev": -0.38,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 76-77°F on October 23?",
+      "market_id": "6005181",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 185.0,
+      "spread": 0.0,
+      "yes_token_id": "14139096269366192876820679661663937055687430224638749366657429298371254711160",
+      "no_token_id": "68922109234939576719740085252836093999680442261803839221170263518198019359310",
+      "model_prob": 0.0023,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0017,
+      "ev": 2.4,
+      "kelly": 0.0003,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 84-85°F on October 23?",
+      "market_id": "6005185",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "yes_price": 0.42,
+      "no_price": 0.58,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "24341919143749277939305470730591660505319504383175426133561000152209428239717",
+      "no_token_id": "66884219151367977199718970776349740481240052419003057138946222636441635664397",
+      "model_prob": 0.4269,
+      "side": "YES",
+      "ask": 0.42,
+      "market_prob": 0.42,
+      "belief_prob": 0.4245,
+      "ev": 0.0107,
+      "kelly": 0.0019,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 86-87°F on October 23?",
+      "market_id": "6005186",
+      "range": [
+        86.0,
+        87.0
+      ],
+      "yes_price": 0.49,
+      "no_price": 0.51,
+      "volume": 229.0,
+      "spread": 0.0,
+      "yes_token_id": "94690860282905457117279927295550682736641278205901954861680053752654388381365",
+      "no_token_id": "58220086847707351255733590689325014468151311232593519335986510752744168063931",
+      "model_prob": 0.088,
+      "side": "YES",
+      "ask": 0.49,
+      "market_prob": 0.49,
+      "belief_prob": 0.2287,
+      "ev": -0.5333,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 88-89°F on October 23?",
+      "market_id": "6005187",
+      "range": [
+        88.0,
+        89.0
+      ],
+      "yes_price": 0.075,
+      "no_price": 0.925,
+      "volume": 18.0,
+      "spread": 0.0,
+      "yes_token_id": "29827715865415775945355642117072326483394754355007281657109530731250925542316",
+      "no_token_id": "105150621371863038314762863126364744503702775689510919632410914119997033762578",
+      "model_prob": 0.0136,
+      "side": "YES",
+      "ask": 0.075,
+      "market_prob": 0.075,
+      "belief_prob": 0.0351,
+      "ev": -0.532,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be between 92-93°F on October 23?",
+      "market_id": "6005189",
+      "range": [
+        92.0,
+        93.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "40545038170002114039925410675430318647295813632595274350925245141208232102861",
+      "no_token_id": "80183364026349196801366824739744522452478892810200324505947154461467841457871",
+      "model_prob": 0.0007,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0041,
+      "ev": -0.6095,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Austin be 94°F or higher on October 23?",
+      "market_id": "6005190",
+      "range": [
+        94.0,
+        999.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "10236527371501365678073868466040103541465361588318286406394934728681070321919",
+      "no_token_id": "70368291379447210460176996090130081592001621861861074051798335135873518724019",
+      "model_prob": 0.0009,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0023,
+      "ev": -0.54,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "6005185",
+      "question": "Will the highest temperature in Austin be between 84-85°F on October 23?",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "side": "YES",
+      "price": 0.42,
+      "model_prob": 0.4269,
+      "ev": 0.0107,
+      "market_prob": 0.42,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.4
+    },
+    {
+      "market_id": "6005185",
+      "question": "Will the highest temperature in Austin be between 84-85°F on October 23? (NO)",
+      "range": [
+        84.0,
+        85.0
+      ],
+      "side": "NO",
+      "price": 0.58,
+      "model_prob": 0.5731,
+      "ev": -0.0078,
+      "market_prob": 0.58,
+      "role": "scenario_hedge",
+      "units": 27.62,
+      "sell_value": 0.56
+    }
+  ],
+  "total_allocated_units": 57.6,
+  "portfolio_score": -0.02868,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 13.81,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.3267,
+  "confidence": 0.2374,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
