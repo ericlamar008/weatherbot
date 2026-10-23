@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 12.7,
+  "hours_left": 12.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T15:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0154,
       "ev": 0.8118,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 11°C on October 23?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.017,
       "ev": 1.125,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 12°C on October 23?",
@@ -67,20 +71,22 @@
         12.0,
         12.0
       ],
-      "yes_price": 0.0295,
-      "no_price": 0.9645,
+      "yes_price": 0.019,
+      "no_price": 0.981,
       "volume": 132.0,
       "spread": 0.0,
       "yes_token_id": "111815025821818608622953481689022747885197591213888718857872303951334361163471",
       "no_token_id": "68429272243002556309312558713601938138792358288284079570946575298625707091099",
       "model_prob": 0.0497,
       "side": "YES",
-      "ask": 0.0355,
-      "market_prob": 0.0355,
-      "belief_prob": 0.0426,
-      "ev": 0.2592,
-      "kelly": 0.0024,
-      "sell_value": null
+      "ask": 0.019,
+      "market_prob": 0.019,
+      "belief_prob": 0.039,
+      "ev": 1.0526,
+      "kelly": 0.0051,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0105
     },
     {
       "question": "Will the lowest temperature in Tokyo be 13°C on October 23?",
@@ -102,7 +108,9 @@
       "belief_prob": 0.0711,
       "ev": 11.9273,
       "kelly": 0.0165,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 14°C on October 23?",
@@ -112,19 +120,21 @@
         14.0
       ],
       "yes_price": 0.0205,
-      "no_price": 0.98,
+      "no_price": 0.9795,
       "volume": 332.0,
       "spread": 0.0,
       "yes_token_id": "80502385557225325864234459764593636555977047500047344790387942834385674196998",
       "no_token_id": "21026340594929021214316093035071460612573073295108252762849201736880465707040",
       "model_prob": 0.1872,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
+      "ask": 0.0205,
+      "market_prob": 0.0205,
       "belief_prob": 0.1289,
-      "ev": 5.435,
+      "ev": 5.2878,
       "kelly": 0.0277,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 15°C on October 23?",
@@ -133,20 +143,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.2145,
-      "no_price": 0.7315,
+      "yes_price": 0.186,
+      "no_price": 0.814,
       "volume": 1391.0,
       "spread": 0.0,
       "yes_token_id": "38665872586836467230294278134634773242546113252093515115168287542263352426579",
       "no_token_id": "83447170894168785781505703211902847187116342999923441310609080966416730928667",
       "model_prob": 0.2313,
       "side": "YES",
-      "ask": 0.2685,
-      "market_prob": 0.2685,
-      "belief_prob": 0.2254,
-      "ev": -0.0901,
-      "kelly": 0.0,
-      "sell_value": null
+      "ask": 0.186,
+      "market_prob": 0.186,
+      "belief_prob": 0.2154,
+      "ev": 0.1581,
+      "kelly": 0.009,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0285
     },
     {
       "question": "Will the lowest temperature in Tokyo be 16°C on October 23?",
@@ -156,19 +168,21 @@
         16.0
       ],
       "yes_price": 0.811,
-      "no_price": 0.1725,
+      "no_price": 0.189,
       "volume": 1017.0,
       "spread": 0.0,
       "yes_token_id": "55378095965314242797201667645576105180810845198513615194758978624231043537736",
       "no_token_id": "21936588543445543907504543786639465142642632720444118603509635422548487918511",
       "model_prob": 0.1872,
       "side": "YES",
-      "ask": 0.8275,
-      "market_prob": 0.8275,
+      "ask": 0.811,
+      "market_prob": 0.811,
       "belief_prob": 0.4055,
-      "ev": -0.503,
+      "ev": -0.5,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 17°C on October 23?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.0711,
       "ev": 11.9273,
       "kelly": 0.0165,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 18°C on October 23?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0339,
       "ev": 6.5333,
       "kelly": 0.0074,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 19°C on October 23?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0145,
       "ev": 13.5,
       "kelly": 0.0034,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 20°C or higher on October 23?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0126,
       "ev": 24.2,
       "kelly": 0.003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-23T02:52:24.075094+00:00",
-  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00"
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
 }

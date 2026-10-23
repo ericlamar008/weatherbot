@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T04:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0068,
       "ev": -0.0286,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 60-61°F on October 24?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0058,
       "ev": -0.2267,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 62-63°F on October 24?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0132,
       "ev": 0.4667,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 64-65°F on October 24?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0369,
       "ev": 3.92,
       "kelly": 0.0074,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 66-67°F on October 24?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.1184,
       "ev": 3.8327,
       "kelly": 0.0241,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 68-69°F on October 24?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2841,
       "ev": 0.4953,
       "kelly": 0.029,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 70-71°F on October 24?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.625,
       "no_price": 0.375,
-      "volume": 3050.0,
+      "volume": 3056.0,
       "spread": 0.0,
       "yes_token_id": "74484204591664062240629788152828602610492896334359491448287631524686835662992",
       "no_token_id": "55895786314846269434952550930048108073644814735704960530208913548717316456538",
@@ -173,7 +185,9 @@
       "belief_prob": 0.3923,
       "ev": -0.3723,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 72-73°F on October 24?",
@@ -183,19 +197,21 @@
         73.0
       ],
       "yes_price": 0.12,
-      "no_price": 0.91,
-      "volume": 287.0,
+      "no_price": 0.88,
+      "volume": 354.0,
       "spread": 0.0,
       "yes_token_id": "13321494188686739242247396604368087834648652138291996299916452765668176834381",
       "no_token_id": "63882250001915728637248345780837370591059227292252462494924545026786814957254",
       "model_prob": 0.1005,
       "side": "YES",
-      "ask": 0.09,
-      "market_prob": 0.09,
+      "ask": 0.12,
+      "market_prob": 0.12,
       "belief_prob": 0.1073,
-      "ev": 0.0756,
-      "kelly": 0.0019,
-      "sell_value": null
+      "ev": -0.1058,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 74-75°F on October 24?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0203,
       "ev": 4.8,
       "kelly": 0.0042,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 76-77°F on October 24?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0088,
       "ev": 0.0353,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be 78°F or higher on October 24?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0096,
       "ev": 0.28,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-23T02:52:24.075094+00:00"
+  "last_price_refresh": "2026-10-23T02:52:24.075094+00:00",
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
 }

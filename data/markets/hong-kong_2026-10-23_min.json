@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 13.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T16:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 20°C on October 23?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0028,
       "ev": 4.6,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 21°C on October 23?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0145,
       "ev": 2.625,
       "kelly": 0.0026,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 22°C on October 23?",
@@ -90,19 +96,21 @@
         22.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.996,
+      "no_price": 0.9955,
       "volume": 817.0,
       "spread": 0.0,
       "yes_token_id": "102712175010810544048004463023731520279825042190322405192132705053683071915596",
       "no_token_id": "81985914590497790652843337650739837851156482912813848346240971241559260219955",
       "model_prob": 0.1169,
       "side": "YES",
-      "ask": 0.004,
-      "market_prob": 0.004,
+      "ask": 0.0045,
+      "market_prob": 0.0045,
       "belief_prob": 0.0776,
-      "ev": 18.35,
+      "ev": 16.2444,
       "kelly": 0.0184,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 23°C on October 23?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.6165,
       "ev": -0.3801,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 24°C on October 23?",
@@ -133,20 +143,22 @@
         24.0,
         24.0
       ],
-      "yes_price": 0.0035,
-      "no_price": 0.9965,
+      "yes_price": 0.002,
+      "no_price": 0.998,
       "volume": 5208.0,
       "spread": 0.0,
       "yes_token_id": "55417400917026478935481883052442621971598338251524152194134736094782290820974",
       "no_token_id": "55547247247604797107792663780758803872622907654680501444041834230338129525825",
       "model_prob": 0.346,
       "side": "YES",
-      "ask": 0.0035,
-      "market_prob": 0.0035,
-      "belief_prob": 0.2261,
-      "ev": 63.6,
-      "kelly": 0.0558,
-      "sell_value": null
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.2256,
+      "ev": 111.8,
+      "kelly": 0.056,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0015
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 25°C on October 23?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.0521,
       "ev": 103.2,
       "kelly": 0.0129,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 26°C on October 23?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.0092,
       "ev": 17.4,
       "kelly": 0.0022,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 27°C on October 23?",
@@ -199,20 +215,22 @@
         27.0,
         27.0
       ],
-      "yes_price": 0.002,
-      "no_price": 0.998,
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
       "volume": 650.0,
       "spread": 0.0,
       "yes_token_id": "35636678312156243722092115679162116312931329888606309666119050102557223643053",
       "no_token_id": "40356446697715358942871189377117420523089005326990256821213108222657784019349",
       "model_prob": 0.003,
       "side": "YES",
-      "ask": 0.002,
-      "market_prob": 0.002,
-      "belief_prob": 0.0027,
-      "ev": 0.35,
-      "kelly": 0.0002,
-      "sell_value": null
+      "ask": 0.0015,
+      "market_prob": 0.0015,
+      "belief_prob": 0.0025,
+      "ev": 0.6667,
+      "kelly": 0.0003,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 28°C on October 23?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0007,
       "ev": 0.4,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 29°C or higher on October 23?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0005,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-23T02:52:24.075094+00:00",
-  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00"
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
 }

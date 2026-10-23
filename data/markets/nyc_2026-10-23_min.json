@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T04:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
-  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00",
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00",
   "forecast_mean": 47.91,
   "sigma": 2.773,
   "full_distribution": [
@@ -36,7 +36,9 @@
       "belief_prob": 0.0114,
       "ev": 0.3412,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 38-39°F on October 23?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.008,
       "ev": -0.1111,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 40-41°F on October 23?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0154,
       "ev": 0.7111,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 42-43°F on October 23?",
@@ -102,7 +108,9 @@
       "belief_prob": 0.0351,
       "ev": 2.9,
       "kelly": 0.0066,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 44-45°F on October 23?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.0826,
       "ev": 6.5091,
       "kelly": 0.0181,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 46-47°F on October 23?",
@@ -133,20 +143,22 @@
         46.0,
         47.0
       ],
-      "yes_price": 0.06,
-      "no_price": 0.91,
-      "volume": 824.0,
+      "yes_price": 0.085,
+      "no_price": 0.915,
+      "volume": 903.0,
       "spread": 0.0,
       "yes_token_id": "65076998342680980124739256649619863859494244035878929581423417435330367225890",
       "no_token_id": "80095266270675898673990139109074964775441404439182852591779398428047135395072",
       "model_prob": 0.2282,
       "side": "YES",
-      "ask": 0.09,
-      "market_prob": 0.09,
-      "belief_prob": 0.1693,
-      "ev": 0.9978,
-      "kelly": 0.0247,
-      "sell_value": null
+      "ask": 0.085,
+      "market_prob": 0.085,
+      "belief_prob": 0.1781,
+      "ev": 1.0953,
+      "kelly": 0.0254,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the lowest temperature in New York City be between 48-49°F on October 23?",
@@ -155,20 +167,22 @@
         48.0,
         49.0
       ],
-      "yes_price": 0.265,
-      "no_price": 0.745,
-      "volume": 1529.0,
+      "yes_price": 0.33,
+      "no_price": 0.67,
+      "volume": 1537.0,
       "spread": 0.0,
       "yes_token_id": "60572830495131941555806218166011905532444179964807732026922273603682126642528",
       "no_token_id": "11853127340521521793079472943901205849422548988952371600447466372717737403035",
       "model_prob": 0.2578,
       "side": "YES",
-      "ask": 0.255,
-      "market_prob": 0.255,
-      "belief_prob": 0.2603,
-      "ev": 0.0071,
-      "kelly": 0.0006,
-      "sell_value": null
+      "ask": 0.33,
+      "market_prob": 0.33,
+      "belief_prob": 0.2831,
+      "ev": -0.1421,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.065
     },
     {
       "question": "Will the lowest temperature in New York City be between 50-51°F on October 23?",
@@ -177,20 +191,22 @@
         50.0,
         51.0
       ],
-      "yes_price": 0.555,
-      "no_price": 0.445,
-      "volume": 1204.0,
+      "yes_price": 0.485,
+      "no_price": 0.515,
+      "volume": 1288.0,
       "spread": 0.0,
       "yes_token_id": "69848054536237690309695284209108607650020341858252227851411865419208113263090",
       "no_token_id": "65377546691025036674330915546918320452377804701217898387721252033240333331170",
       "model_prob": 0.1646,
       "side": "YES",
-      "ask": 0.555,
-      "market_prob": 0.555,
-      "belief_prob": 0.3012,
-      "ev": -0.4573,
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.2767,
+      "ev": -0.4295,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.07
     },
     {
       "question": "Will the lowest temperature in New York City be between 52-53°F on October 23?",
@@ -199,20 +215,22 @@
         52.0,
         53.0
       ],
-      "yes_price": 0.127,
-      "no_price": 0.8575,
-      "volume": 593.0,
+      "yes_price": 0.1725,
+      "no_price": 0.8275,
+      "volume": 620.0,
       "spread": 0.0,
       "yes_token_id": "62282703686367186195182444399876700658502727857313925209368559206251017554291",
       "no_token_id": "4893424832103918685971833708432629437940350340924739335887219027120424534648",
       "model_prob": 0.0724,
       "side": "YES",
-      "ask": 0.1425,
-      "market_prob": 0.1425,
-      "belief_prob": 0.0915,
-      "ev": -0.32,
+      "ask": 0.1725,
+      "market_prob": 0.1725,
+      "belief_prob": 0.1074,
+      "ev": -0.3774,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0455
     },
     {
       "question": "Will the lowest temperature in New York City be between 54-55°F on October 23?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0213,
       "ev": 1.3667,
       "kelly": 0.0031,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be 56°F or higher on October 23?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0288,
       "ev": 2.3882,
       "kelly": 0.0051,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-23T02:52:24.075094+00:00",

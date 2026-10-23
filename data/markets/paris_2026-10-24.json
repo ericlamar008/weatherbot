@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T22:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
@@ -14,12 +14,11 @@
   "horizon_days": 1,
   "forecast_mean": 13.66,
   "sigma": 1.079,
-  "forecast_mean_shadow": 14.03,
+  "forecast_mean_shadow": 13.81,
   "model_means_raw": {
     "ecmwf": 12.13,
     "gfs": 13.44,
-    "gem": 12.55,
-    "icon_eu": 13.81
+    "gem": 12.55
   },
   "full_distribution": [
     {
@@ -42,7 +41,9 @@
       "belief_prob": 0.0015,
       "ev": -0.25,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 8°C on October 24?",
@@ -64,7 +65,9 @@
       "belief_prob": 0.0015,
       "ev": -0.25,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 9°C on October 24?",
@@ -86,7 +89,9 @@
       "belief_prob": 0.0039,
       "ev": -0.1333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 10°C on October 24?",
@@ -108,7 +113,9 @@
       "belief_prob": 0.0083,
       "ev": 0.8444,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 11°C on October 24?",
@@ -130,7 +137,9 @@
       "belief_prob": 0.0233,
       "ev": 8.32,
       "kelly": 0.0052,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 12°C on October 24?",
@@ -140,19 +149,21 @@
         12.0
       ],
       "yes_price": 0.1075,
-      "no_price": 0.8965,
-      "volume": 426.0,
+      "no_price": 0.8925,
+      "volume": 439.0,
       "spread": 0.0,
       "yes_token_id": "34046721592545768991652245606753081008548878318471012674336668834237733546358",
       "no_token_id": "23888891910024879025254928349380457751324630755499364618968919326195120528875",
       "model_prob": 0.1149,
       "side": "YES",
-      "ask": 0.1035,
-      "market_prob": 0.1035,
+      "ask": 0.1075,
+      "market_prob": 0.1075,
       "belief_prob": 0.1123,
-      "ev": 0.0715,
-      "kelly": 0.0021,
-      "sell_value": null
+      "ev": 0.0447,
+      "kelly": 0.0013,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 13°C on October 24?",
@@ -162,19 +173,21 @@
         13.0
       ],
       "yes_price": 0.33,
-      "no_price": 0.65,
-      "volume": 2543.0,
+      "no_price": 0.67,
+      "volume": 2550.0,
       "spread": 0.0,
       "yes_token_id": "39415866659715348654995803834548294983834157878143258796374255598390594718340",
       "no_token_id": "80732987718624142743890979266012657366609145391592223328848616684614381105724",
       "model_prob": 0.2782,
       "side": "YES",
-      "ask": 0.35,
-      "market_prob": 0.35,
+      "ask": 0.33,
+      "market_prob": 0.33,
       "belief_prob": 0.2963,
-      "ev": -0.1334,
+      "ev": -0.1021,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 14°C on October 24?",
@@ -185,7 +198,7 @@
       ],
       "yes_price": 0.375,
       "no_price": 0.625,
-      "volume": 4999.0,
+      "volume": 5022.0,
       "spread": 0.0,
       "yes_token_id": "102032143571447480404016311895165545571313192449589423665428045106444104226945",
       "no_token_id": "97580581114913421309528445445269740182627782702955795918792598232535518537017",
@@ -196,7 +209,9 @@
       "belief_prob": 0.3394,
       "ev": -0.0949,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 15°C on October 24?",
@@ -206,19 +221,21 @@
         15.0
       ],
       "yes_price": 0.15,
-      "no_price": 0.865,
-      "volume": 4029.0,
+      "no_price": 0.85,
+      "volume": 4203.0,
       "spread": 0.0,
       "yes_token_id": "41257472445685550990589352201613528346059990345002429754742157732635520906241",
       "no_token_id": "40316561252003840646236575629435966999161468901874977822669737735879411655639",
       "model_prob": 0.1613,
       "side": "YES",
-      "ask": 0.135,
-      "market_prob": 0.135,
+      "ask": 0.15,
+      "market_prob": 0.15,
       "belief_prob": 0.1573,
-      "ev": 0.1267,
-      "kelly": 0.0049,
-      "sell_value": null
+      "ev": 0.0487,
+      "kelly": 0.0021,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 16°C on October 24?",
@@ -228,19 +245,21 @@
         16.0
       ],
       "yes_price": 0.0205,
-      "no_price": 0.9805,
-      "volume": 396.0,
+      "no_price": 0.9795,
+      "volume": 397.0,
       "spread": 0.0,
       "yes_token_id": "104775477207962992297076062185455320725261089551707504061383796976984857933503",
       "no_token_id": "80498288806398679501106489359445618762298333855054982392484072972271690761013",
       "model_prob": 0.0512,
       "side": "YES",
-      "ask": 0.0195,
-      "market_prob": 0.0195,
+      "ask": 0.0205,
+      "market_prob": 0.0205,
       "belief_prob": 0.0405,
-      "ev": 1.0564,
-      "kelly": 0.0053,
-      "sell_value": null
+      "ev": 0.9756,
+      "kelly": 0.0051,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Paris be 17°C or higher on October 24?",
@@ -262,7 +281,9 @@
       "belief_prob": 0.0174,
       "ev": 1.6769,
       "kelly": 0.0027,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-23T02:52:24.075094+00:00"
+  "last_price_refresh": "2026-10-23T02:52:24.075094+00:00",
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
 }

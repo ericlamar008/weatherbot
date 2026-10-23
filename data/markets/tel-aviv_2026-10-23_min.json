@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-23T21:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
   "skipped_reason": "event volume 85 < min_volume 500",
-  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00"
+  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00",
+  "forecast_mean": 22.93,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 20°C on October 23?",
+      "market_id": "6003082",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 40.0,
+      "spread": 0.0,
+      "yes_token_id": "89578634676176181744387689023607102355928221610328305680200324649095299586233",
+      "no_token_id": "82467421531384739572706859829824625948922537984397826439607628912918465428401",
+      "model_prob": 0.1246,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.0847,
+      "ev": 7.0667,
+      "kelly": 0.0187,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 21°C on October 23?",
+      "market_id": "6003083",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.006,
+      "no_price": 0.994,
+      "volume": 35.0,
+      "spread": 0.0,
+      "yes_token_id": "89811973560617251961760896928406739331536469971697709306150813917254130852766",
+      "no_token_id": "57934718775452328284047132585523809398029369861739997711057216824164932858265",
+      "model_prob": 0.3083,
+      "side": "YES",
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.2025,
+      "ev": 32.75,
+      "kelly": 0.0494,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Tel Aviv be 24°C on October 23?",
+      "market_id": "6003086",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 10.0,
+      "spread": 0.0,
+      "yes_token_id": "111761404347711634966665945675751097722032028292410494209371984242247169089701",
+      "no_token_id": "35748741639074958276152479721424987446049890632034007788142818453863292377149",
+      "model_prob": 0.5671,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.3705,
+      "ev": 66.3636,
+      "kelly": 0.0918,
+      "sell_value": null
+    }
+  ]
 }
