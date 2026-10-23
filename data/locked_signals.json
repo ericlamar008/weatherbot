@@ -6036,15 +6036,16 @@
     "side": "YES",
     "entry_price": 0.44,
     "locked_at": "2026-10-23T14:40:46.425192+00:00",
-    "status": "open",
+    "status": "closed_resolved",
     "last_price": 0.51,
     "last_pct": 15.9,
-    "exit_price": null,
-    "closed_at": null,
-    "close_reason": null,
-    "actual_temp": null,
+    "exit_price": 1.0,
+    "closed_at": "2026-10-23T21:07:23.758291+00:00",
+    "close_reason": "auto_resolved",
+    "actual_temp": 86.5,
     "last_price_source": "bid",
     "last_mid": 0.74,
-    "last_checked_at": "2026-10-23T20:52:28.983387+00:00"
+    "last_checked_at": "2026-10-23T20:52:28.983387+00:00",
+    "notified_close": true
   }
 ]
