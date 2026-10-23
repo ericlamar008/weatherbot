@@ -3,15 +3,15 @@
   "city_name": "Paris",
   "date": "2026-10-22",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 1.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-22T22:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
-  "last_scan": "2026-10-22T02:20:39.650370+00:00",
+  "last_scan": "2026-10-23T02:20:39.499469+00:00",
   "horizon_days": 0,
   "forecast_mean": 8.26,
   "sigma": 1.01,
@@ -296,7 +296,10 @@
       "market_prob": 0.715,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.54
+      "sell_value": 0.54,
+      "won": true,
+      "pnl_units": 11.96,
+      "user_entered": false
     },
     {
       "market_id": "5957817",
@@ -312,7 +315,10 @@
       "market_prob": 0.285,
       "role": "scenario_hedge",
       "units": 7.97,
-      "sell_value": 0.11
+      "sell_value": 0.11,
+      "won": false,
+      "pnl_units": -7.97,
+      "user_entered": false
     },
     {
       "market_id": "5957811",
@@ -328,7 +334,10 @@
       "market_prob": 0.992,
       "role": "scenario_hedge",
       "units": 0.63,
-      "sell_value": 0.985
+      "sell_value": 0.985,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 38.6,
@@ -341,5 +350,69 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-23T02:07:20.037614+00:00",
-  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00"
+  "last_lite_refresh": "2026-10-22T20:20:43.151476+00:00",
+  "actual_temp": 9.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 3.99,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5957817",
+      "question": "Will the lowest temperature in Paris be 9°C on October 22?",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "side": "YES",
+      "price": 0.715,
+      "model_prob": 0.3237,
+      "ev": -0.3557,
+      "market_prob": 0.715,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.54,
+      "won": true,
+      "pnl_units": 11.96,
+      "user_entered": false
+    },
+    {
+      "market_id": "5957817",
+      "question": "Will the lowest temperature in Paris be 9°C on October 22? (NO)",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "side": "NO",
+      "price": 0.285,
+      "model_prob": 0.6763,
+      "ev": 0.8923,
+      "market_prob": 0.285,
+      "role": "scenario_hedge",
+      "units": 7.97,
+      "sell_value": 0.11,
+      "won": false,
+      "pnl_units": -7.97,
+      "user_entered": false
+    },
+    {
+      "market_id": "5957811",
+      "question": "Will the lowest temperature in Paris be 3°C or below on October 22? (NO)",
+      "range": [
+        -999.0,
+        3.0
+      ],
+      "side": "NO",
+      "price": 0.992,
+      "model_prob": 0.9979,
+      "ev": 0.0038,
+      "market_prob": 0.992,
+      "role": "scenario_hedge",
+      "units": 0.63,
+      "sell_value": 0.985,
+      "won": true,
+      "pnl_units": 0.01,
+      "user_entered": false
+    }
+  ]
 }

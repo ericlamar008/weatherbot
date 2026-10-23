@@ -1,0 +1,206 @@
+{
+  "city": "los-angeles",
+  "city_name": "Los Angeles",
+  "date": "2026-10-24",
+  "unit": "F",
+  "status": "open",
+  "created_at": "2026-10-23T02:20:39.499469+00:00",
+  "committed_allocation": null,
+  "hours_left": 52.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-25T07:00:00+00:00",
+  "event_end_date": "2026-10-24T12:00:00Z",
+  "last_scan": "2026-10-23T02:20:39.499469+00:00",
+  "horizon_days": 2,
+  "forecast_mean": 68.12,
+  "sigma": 10.967,
+  "forecast_mean_shadow": 68.61,
+  "model_means_raw": {
+    "ecmwf": 75.73,
+    "gfs": 75.12,
+    "gem": 77.03
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Los Angeles be 63°F or below on October 24?",
+      "market_id": "6038969",
+      "range": [
+        -999.0,
+        63.0
+      ],
+      "yes_price": 0.0075,
+      "no_price": 0.9925,
+      "volume": 117.0,
+      "spread": 0.0,
+      "yes_token_id": "102501651629752391737841497500116095396963337471288829379806656440117073173556",
+      "no_token_id": "31700929807015115620782618228935533017991099153938714929916978167498430928025",
+      "model_prob": 0.4656,
+      "side": "YES",
+      "ask": 0.0075,
+      "market_prob": 0.0075,
+      "belief_prob": 0.3053,
+      "ev": 39.7067,
+      "kelly": 0.075,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 64-65°F on October 24?",
+      "market_id": "6038970",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 95.0,
+      "spread": 0.0,
+      "yes_token_id": "52384483529860629219039700323796351035254685623240597869965134413367081583769",
+      "no_token_id": "90608834683187051109436941534404957268236703499441437528579149626884834452970",
+      "model_prob": 0.0437,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0286,
+      "ev": 56.2,
+      "kelly": 0.007,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 66-67°F on October 24?",
+      "market_id": "6038971",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 80.0,
+      "spread": 0.0,
+      "yes_token_id": "795863401690175861106133499222923814541323365725853555950690922155628221743",
+      "no_token_id": "72000228173244420405067931440308955542335496743190635226037253489235965662813",
+      "model_prob": 0.046,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.0316,
+      "ev": 5.32,
+      "kelly": 0.0067,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 68-69°F on October 24?",
+      "market_id": "6038972",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.005,
+      "no_price": 0.995,
+      "volume": 20.0,
+      "spread": 0.0,
+      "yes_token_id": "55746853844687155041559860326327923777415929120753177601258435597497111794120",
+      "no_token_id": "107665743781210641579539864236294259827443846579405675985417970248426807573103",
+      "model_prob": 0.0466,
+      "side": "YES",
+      "ask": 0.005,
+      "market_prob": 0.005,
+      "belief_prob": 0.032,
+      "ev": 5.4,
+      "kelly": 0.0068,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 74-75°F on October 24?",
+      "market_id": "6038975",
+      "range": [
+        74.0,
+        75.0
+      ],
+      "yes_price": 0.345,
+      "no_price": 0.655,
+      "volume": 4612.0,
+      "spread": 0.0,
+      "yes_token_id": "94120473997172668479814961607406157515546182768816141808891222928070083746229",
+      "no_token_id": "79625244171333820351021734832382178283108965882146268900349832430762204108655",
+      "model_prob": 0.0383,
+      "side": "YES",
+      "ask": 0.345,
+      "market_prob": 0.345,
+      "belief_prob": 0.1456,
+      "ev": -0.578,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 76-77°F on October 24?",
+      "market_id": "6038976",
+      "range": [
+        76.0,
+        77.0
+      ],
+      "yes_price": 0.445,
+      "no_price": 0.555,
+      "volume": 27.0,
+      "spread": 0.0,
+      "yes_token_id": "86719578215253403000505419225909072170364077801872283372782270011013932739661",
+      "no_token_id": "88729915858035920870097676521249658005840263982761919660833793035029217619564",
+      "model_prob": 0.0335,
+      "side": "YES",
+      "ask": 0.445,
+      "market_prob": 0.445,
+      "belief_prob": 0.1775,
+      "ev": -0.6011,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Los Angeles be between 78-79°F on October 24?",
+      "market_id": "6038977",
+      "range": [
+        78.0,
+        79.0
+      ],
+      "yes_price": 0.09,
+      "no_price": 0.91,
+      "volume": 12.0,
+      "spread": 0.0,
+      "yes_token_id": "86062708884036380960041853286684378653039097434083588343585883625262558328853",
+      "no_token_id": "84690462914601304821673903570289777545926041028607471965593477611723729210306",
+      "model_prob": 0.0284,
+      "side": "YES",
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.05,
+      "ev": -0.4444,
+      "kelly": 0.0,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "6038969",
+      "question": "Will the highest temperature in Los Angeles be 63°F or below on October 24?",
+      "range": [
+        -999.0,
+        63.0
+      ],
+      "side": "YES",
+      "price": 0.0075,
+      "model_prob": 0.4656,
+      "ev": 39.7067,
+      "market_prob": 0.0075,
+      "role": "main_signal",
+      "units": 24.1,
+      "sell_value": 0.001
+    }
+  ],
+  "total_allocated_units": 24.1,
+  "portfolio_score": 0.388356,
+  "worst_case_loss_frac": 0.241,
+  "best_case_pnl_units": 3189.23,
+  "worst_case_pnl_units": -24.1,
+  "success_probability": 0.1762,
+  "confidence": 0.1467,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
