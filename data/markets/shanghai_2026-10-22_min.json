@@ -3,7 +3,7 @@
   "city_name": "Shanghai",
   "date": "2026-10-22",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
@@ -12,7 +12,7 @@
   "local_day_end_utc": "2026-10-22T16:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
-  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00",
+  "last_lite_refresh": "2026-10-23T08:20:42.778476+00:00",
   "forecast_mean": 16.13,
   "sigma": 0.685,
   "full_distribution": [
@@ -298,7 +298,10 @@
       "market_prob": 0.9605,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.951
+      "sell_value": 0.951,
+      "won": true,
+      "pnl_units": 1.23,
+      "user_entered": false
     },
     {
       "market_id": "5957913",
@@ -314,7 +317,10 @@
       "market_prob": 0.0395,
       "role": "scenario_hedge",
       "units": 0.82,
-      "sell_value": 0.03
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -0.82,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 30.8,
@@ -325,5 +331,50 @@
   "success_probability": 0.7174,
   "confidence": 1.0,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 16.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 0.41,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5957913",
+      "question": "Will the lowest temperature in Shanghai be 16°C on October 22?",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "YES",
+      "price": 0.9605,
+      "model_prob": 0.5006,
+      "ev": -0.3112,
+      "market_prob": 0.9605,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.951,
+      "won": true,
+      "pnl_units": 1.23,
+      "user_entered": false
+    },
+    {
+      "market_id": "5957913",
+      "question": "Will the lowest temperature in Shanghai be 16°C on October 22? (NO)",
+      "range": [
+        16.0,
+        16.0
+      ],
+      "side": "NO",
+      "price": 0.0395,
+      "model_prob": 0.4994,
+      "ev": 7.5671,
+      "market_prob": 0.0395,
+      "role": "scenario_hedge",
+      "units": 0.82,
+      "sell_value": 0.03,
+      "won": false,
+      "pnl_units": -0.82,
+      "user_entered": false
+    }
+  ]
 }

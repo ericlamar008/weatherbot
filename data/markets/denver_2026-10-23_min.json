@@ -7,11 +7,125 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 27.1,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T06:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
+  "last_lite_refresh": "2026-10-23T08:20:42.778476+00:00",
+  "forecast_mean": 56.92,
+  "sigma": 2.5,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 64-65°F on October 23?",
+      "market_id": "6004941",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "20626783514100712829175936304486851973538605679566815474093281091473346668245",
+      "no_token_id": "80049471502763949329642868046203585833910389784894714774759099205119499391210",
+      "model_prob": 0.5703,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.3726,
+      "ev": 66.7455,
+      "kelly": 0.0923,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 66-67°F on October 23?",
+      "market_id": "6004942",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "12428100163108024042245880171694662207043608737526447591887502228499111456057",
+      "no_token_id": "34191969482099605319867400567667312860237217834227894795486367313287290858278",
+      "model_prob": 0.2134,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.1406,
+      "ev": 24.5636,
+      "kelly": 0.034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 68-69°F on October 23?",
+      "market_id": "6004943",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "33937362666337540912572725702282286538323529305022462895262472319321420075268",
+      "no_token_id": "5302374421610358566998380016562052142132972383178182743517564518708724190363",
+      "model_prob": 0.0878,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.059,
+      "ev": 9.7273,
+      "kelly": 0.0134,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 70-71°F on October 23?",
+      "market_id": "6004944",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "8675499689951782129763845924536804752469891347154055626430103208845259991360",
+      "no_token_id": "519275407093061895012675520849733690002841235956125506493178556459736735078",
+      "model_prob": 0.0395,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0276,
+      "ev": 4.0182,
+      "kelly": 0.0056,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be 72°F or higher on October 23?",
+      "market_id": "6004945",
+      "range": [
+        72.0,
+        999.0
+      ],
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 4.0,
+      "spread": 0.0,
+      "yes_token_id": "94822959806216509345587083622835587716147656432178803613994013877168991301605",
+      "no_token_id": "31087640007663155168659174587462035405819067293737680758714850682766910536371",
+      "model_prob": 0.089,
+      "side": "YES",
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.0598,
+      "ev": 9.8727,
+      "kelly": 0.0137,
+      "sell_value": null
+    }
+  ]
 }

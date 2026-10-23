@@ -3,7 +3,7 @@
   "city_name": "Paris",
   "date": "2026-10-21",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "market_type": "min",
   "created_at": "2026-10-20T02:20:39.609795+00:00",
   "committed_allocation": null,
@@ -296,7 +296,10 @@
       "market_prob": 0.535,
       "role": "main_signal",
       "units": 30.0,
-      "sell_value": 0.4
+      "sell_value": 0.4,
+      "won": true,
+      "pnl_units": 26.07,
+      "user_entered": false
     },
     {
       "market_id": "5913355",
@@ -312,7 +315,10 @@
       "market_prob": 0.465,
       "role": "scenario_hedge",
       "units": 17.38,
-      "sell_value": 0.2
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -17.38,
+      "user_entered": false
     },
     {
       "market_id": "5913349",
@@ -328,7 +334,10 @@
       "market_prob": 0.9935,
       "role": "scenario_hedge",
       "units": 0.56,
-      "sell_value": 0.988
+      "sell_value": 0.988,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 47.9,
@@ -341,5 +350,69 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-23T08:07:20.891523+00:00",
-  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
+  "last_lite_refresh": "2026-10-23T08:20:42.778476+00:00",
+  "actual_temp": 8.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 8.7,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "5913355",
+      "question": "Will the lowest temperature in Paris be 8°C on October 21?",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "YES",
+      "price": 0.535,
+      "model_prob": 0.3532,
+      "ev": -0.2209,
+      "market_prob": 0.535,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.4,
+      "won": true,
+      "pnl_units": 26.07,
+      "user_entered": false
+    },
+    {
+      "market_id": "5913355",
+      "question": "Will the lowest temperature in Paris be 8°C on October 21? (NO)",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "side": "NO",
+      "price": 0.465,
+      "model_prob": 0.6468,
+      "ev": 0.2542,
+      "market_prob": 0.465,
+      "role": "scenario_hedge",
+      "units": 17.38,
+      "sell_value": 0.2,
+      "won": false,
+      "pnl_units": -17.38,
+      "user_entered": false
+    },
+    {
+      "market_id": "5913349",
+      "question": "Will the lowest temperature in Paris be 2°C or below on October 21? (NO)",
+      "range": [
+        -999.0,
+        2.0
+      ],
+      "side": "NO",
+      "price": 0.9935,
+      "model_prob": 0.9988,
+      "ev": 0.0034,
+      "market_prob": 0.9935,
+      "role": "scenario_hedge",
+      "units": 0.56,
+      "sell_value": 0.988,
+      "won": true,
+      "pnl_units": 0.0,
+      "user_entered": false
+    }
+  ]
 }

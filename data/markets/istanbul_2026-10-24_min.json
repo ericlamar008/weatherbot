@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 42.1,
+  "hours_left": 36.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T21:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00"
+  "last_lite_refresh": "2026-10-23T08:20:42.778476+00:00",
+  "forecast_mean": 13.45,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Istanbul be 18°C or higher on October 24?",
+      "market_id": "6035527",
+      "range": [
+        18.0,
+        999.0
+      ],
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "36584116643218980242257073673349290478884363362108622671648028219306247895531",
+      "no_token_id": "13521871867944675927885914647768935475311429037267396121491712394606508090404",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0105,
+      "market_prob": 0.0105,
+      "belief_prob": 0.6537,
+      "ev": 61.2571,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

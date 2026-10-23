@@ -3,16 +3,16 @@
   "city_name": "New York",
   "date": "2026-10-22",
   "unit": "F",
-  "status": "open",
+  "status": "resolved_no_signal",
   "market_type": "min",
   "created_at": "2026-10-21T02:20:37.642029+00:00",
   "committed_allocation": null,
-  "hours_left": 1.1,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-23T04:00:00+00:00",
   "event_end_date": "2026-10-22T12:00:00Z",
   "last_scan": "2026-10-23T02:20:39.499469+00:00",
-  "last_lite_refresh": "2026-10-23T02:53:16.376124+00:00",
+  "last_lite_refresh": "2026-10-23T08:20:42.778476+00:00",
   "forecast_mean": 47.85,
   "sigma": 2.641,
   "full_distribution": [
@@ -292,5 +292,8 @@
   "success_probability": null,
   "confidence": null,
   "balance_units": 100,
-  "strategy_version": "auto-a3881f500456e540"
+  "strategy_version": "auto-a3881f500456e540",
+  "actual_temp": 50.5,
+  "pnl_units": null,
+  "my_pnl_units": null
 }
