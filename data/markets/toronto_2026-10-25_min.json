@@ -7,10 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T04:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
-  "skipped_reason": "event volume 123 < min_volume 500"
+  "skipped_reason": "event volume 123 < min_volume 500",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00",
+  "forecast_mean": 5.33,
+  "sigma": 1.553,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 9°C on October 25?",
+      "market_id": "6080326",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.325,
+      "no_price": 0.675,
+      "volume": 123.0,
+      "spread": 0.0,
+      "yes_token_id": "4488238348490162115362670800379643748277075627223005141271800741341353591449",
+      "no_token_id": "33181379829749965942606816924151387026787515525649000049471539542278790225840",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.325,
+      "market_prob": 0.325,
+      "belief_prob": 0.7638,
+      "ev": 1.3502,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }

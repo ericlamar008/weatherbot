@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T05:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0042,
       "ev": 7.4,
       "kelly": 0.0009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 64-65°F on October 25?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0066,
       "ev": 12.2,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 66-67°F on October 25?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0453,
       "ev": 5.04,
       "kelly": 0.0095,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 68-69°F on October 25?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.2473,
       "ev": 97.92,
       "kelly": 0.0614,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 70-71°F on October 25?",
@@ -116,7 +124,7 @@
         70.0,
         71.0
       ],
-      "yes_price": 0.027,
+      "yes_price": 0.0265,
       "no_price": 0.9735,
       "volume": 601.0,
       "spread": 0.0,
@@ -126,10 +134,12 @@
       "side": "YES",
       "ask": 0.0265,
       "market_prob": 0.0265,
-      "belief_prob": 0.2942,
+      "belief_prob": 0.294,
       "ev": 10.0943,
       "kelly": 0.0687,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0005
     },
     {
       "question": "Will the highest temperature in Chicago be between 72-73°F on October 25?",
@@ -138,20 +148,22 @@
         72.0,
         73.0
       ],
-      "yes_price": 0.195,
-      "no_price": 0.81,
+      "yes_price": 0.165,
+      "no_price": 0.835,
       "volume": 1128.0,
       "spread": 0.0,
       "yes_token_id": "74561451666426074141691304925136733866249636099039245006809191673463248993376",
       "no_token_id": "104529831270588981396539436229222021112865523105993896823146413586238677046038",
       "model_prob": 0.0849,
       "side": "YES",
-      "ask": 0.19,
-      "market_prob": 0.19,
-      "belief_prob": 0.1234,
-      "ev": -0.3595,
+      "ask": 0.165,
+      "market_prob": 0.165,
+      "belief_prob": 0.1129,
+      "ev": -0.3158,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.03
     },
     {
       "question": "Will the highest temperature in Chicago be between 74-75°F on October 25?",
@@ -161,19 +173,21 @@
         75.0
       ],
       "yes_price": 0.385,
-      "no_price": 0.62,
+      "no_price": 0.615,
       "volume": 2232.0,
       "spread": 0.0,
       "yes_token_id": "52651927311464047016018268514884542769176287835003811609352632944780032530902",
       "no_token_id": "46028881115870527395367148710095000312286100329912871257138972057396892282851",
       "model_prob": 0.0125,
       "side": "YES",
-      "ask": 0.38,
-      "market_prob": 0.38,
+      "ask": 0.385,
+      "market_prob": 0.385,
       "belief_prob": 0.1429,
-      "ev": -0.6287,
+      "ev": -0.6288,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 76-77°F on October 25?",
@@ -183,19 +197,21 @@
         77.0
       ],
       "yes_price": 0.385,
-      "no_price": 0.6,
-      "volume": 1665.0,
+      "no_price": 0.615,
+      "volume": 1695.0,
       "spread": 0.0,
       "yes_token_id": "46136933489189786158853881747489739216429590544020931179271323200148089240494",
       "no_token_id": "83275664368923822120825114553081029064902835211981729939981776133350336977047",
       "model_prob": 0.0025,
       "side": "YES",
-      "ask": 0.4,
-      "market_prob": 0.4,
+      "ask": 0.385,
+      "market_prob": 0.385,
       "belief_prob": 0.1364,
-      "ev": -0.646,
+      "ev": -0.6457,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 78-79°F on October 25?",
@@ -205,19 +221,21 @@
         79.0
       ],
       "yes_price": 0.03,
-      "no_price": 0.9645,
+      "no_price": 0.97,
       "volume": 710.0,
       "spread": 0.0,
       "yes_token_id": "51692725457354535717997055330406146663159604891493801476919028965938163386638",
       "no_token_id": "88090988741610290470553688600389509207051869419676683814693712537515039107326",
       "model_prob": 0.0006,
       "side": "YES",
-      "ask": 0.0355,
-      "market_prob": 0.0355,
+      "ask": 0.03,
+      "market_prob": 0.03,
       "belief_prob": 0.0109,
-      "ev": -0.6394,
+      "ev": -0.6367,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 80-81°F on October 25?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0005,
       "ev": -0.5,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be 82°F or higher on October 25?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0007,
       "ev": -0.5333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00"
+  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 44.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T23:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0017,
       "ev": 2.4,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 17°C on October 25?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0027,
       "ev": 1.7,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 18°C on October 25?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0095,
       "ev": 0.9,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 19°C on October 25?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0327,
       "ev": 2.1143,
       "kelly": 0.0056,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 20°C on October 25?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.1115,
       "ev": 4.8684,
       "kelly": 0.0236,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 21°C on October 25?",
@@ -139,20 +149,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.845,
+      "yes_price": 0.15,
+      "no_price": 0.85,
       "volume": 803.0,
       "spread": 0.0,
       "yes_token_id": "72109952763063267236980343226196995076505779923610366013551191787851717742484",
       "no_token_id": "79597439596246470110213855723002979746284791967812753510126721768640953909457",
       "model_prob": 0.3491,
       "side": "YES",
-      "ask": 0.155,
-      "market_prob": 0.155,
-      "belief_prob": 0.2812,
-      "ev": 0.8142,
-      "kelly": 0.0373,
-      "sell_value": null
+      "ask": 0.15,
+      "market_prob": 0.15,
+      "belief_prob": 0.2794,
+      "ev": 0.8627,
+      "kelly": 0.0381,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Madrid be 22°C on October 25?",
@@ -163,7 +175,7 @@
       ],
       "yes_price": 0.465,
       "no_price": 0.535,
-      "volume": 913.0,
+      "volume": 918.0,
       "spread": 0.0,
       "yes_token_id": "96257054001416997333289399152059037058146040128977414355835662293451430176014",
       "no_token_id": "26176778978105649416570268834165027031115832888579930416068475975908088517745",
@@ -174,7 +186,9 @@
       "belief_prob": 0.3494,
       "ev": -0.2486,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 23°C on October 25?",
@@ -183,20 +197,22 @@
         23.0,
         23.0
       ],
-      "yes_price": 0.325,
-      "no_price": 0.68,
+      "yes_price": 0.33,
+      "no_price": 0.67,
       "volume": 701.0,
       "spread": 0.0,
       "yes_token_id": "87796397998115624610969144358120583607862260733442097119120356142224330553003",
       "no_token_id": "89276041414594130274798458528288507962686041172274564171506918268030883118419",
       "model_prob": 0.1019,
       "side": "YES",
-      "ask": 0.32,
-      "market_prob": 0.32,
-      "belief_prob": 0.18,
-      "ev": -0.4431,
+      "ask": 0.33,
+      "market_prob": 0.33,
+      "belief_prob": 0.1817,
+      "ev": -0.4494,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Madrid be 24°C on October 25?",
@@ -206,19 +222,21 @@
         24.0
       ],
       "yes_price": 0.036,
-      "no_price": 0.9645,
+      "no_price": 0.964,
       "volume": 290.0,
       "spread": 0.0,
       "yes_token_id": "2235434914430967025400313979666524312446794443189291652539679997106245836041",
       "no_token_id": "23814293901106060561367285130597187279623660611204284183657871341919458908437",
       "model_prob": 0.0268,
       "side": "YES",
-      "ask": 0.0355,
-      "market_prob": 0.0355,
+      "ask": 0.036,
+      "market_prob": 0.036,
       "belief_prob": 0.03,
-      "ev": -0.1606,
+      "ev": -0.1667,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 25°C on October 25?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0067,
       "ev": 0.2182,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Madrid be 26°C or higher on October 25?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.0033,
       "ev": 0.65,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00"
+  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
 }

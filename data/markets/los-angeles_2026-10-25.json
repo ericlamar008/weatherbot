@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 52.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T07:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.3287,
       "ev": 656.4,
       "kelly": 0.0821,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 68-69°F on October 25?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0292,
       "ev": 57.4,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 70-71°F on October 25?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0316,
       "ev": 5.32,
       "kelly": 0.0067,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 72-73°F on October 25?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0312,
       "ev": 5.9333,
       "kelly": 0.0067,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 74-75°F on October 25?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0667,
       "ev": -0.3936,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 76-77°F on October 25?",
@@ -139,19 +149,21 @@
         77.0
       ],
       "yes_price": 0.415,
-      "no_price": 0.58,
+      "no_price": 0.585,
       "volume": 398.0,
       "spread": 0.0,
       "yes_token_id": "93676597043260055260077790672088841261716256191764999345807387674435366758447",
       "no_token_id": "48949057879599431606026456777202545252695856631543212537088476960529664796306",
       "model_prob": 0.0399,
       "side": "YES",
-      "ask": 0.42,
-      "market_prob": 0.42,
+      "ask": 0.415,
+      "market_prob": 0.415,
       "belief_prob": 0.1712,
-      "ev": -0.5883,
+      "ev": -0.5875,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 78-79°F on October 25?",
@@ -160,7 +172,7 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.32,
+      "yes_price": 0.325,
       "no_price": 0.675,
       "volume": 59.0,
       "spread": 0.0,
@@ -170,10 +182,12 @@
       "side": "YES",
       "ask": 0.325,
       "market_prob": 0.325,
-      "belief_prob": 0.135,
+      "belief_prob": 0.1368,
       "ev": -0.5791,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 80-81°F on October 25?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0688,
       "ev": -0.5086,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 82-83°F on October 25?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0218,
       "ev": 0.4533,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 84-85°F on October 25?",
@@ -227,19 +245,21 @@
         85.0
       ],
       "yes_price": 0.01,
-      "no_price": 0.9895,
+      "no_price": 0.99,
       "volume": 5.0,
       "spread": 0.0,
       "yes_token_id": "102558451414282570924125627597132418691097943826507296966976794984547457717223",
       "no_token_id": "106500167932064796528269137829336361901090399910019195028602130346697523210826",
       "model_prob": 0.0209,
       "side": "YES",
-      "ask": 0.0105,
-      "market_prob": 0.0105,
+      "ask": 0.01,
+      "market_prob": 0.01,
       "belief_prob": 0.0171,
-      "ev": 0.6476,
-      "kelly": 0.0017,
-      "sell_value": null
+      "ev": 0.71,
+      "kelly": 0.0018,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be 86°F or higher on October 25?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.1076,
       "ev": 20.52,
       "kelly": 0.0258,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -291,5 +313,6 @@
   "confidence": 0.2674,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00"
+  "last_price_refresh": "2026-10-24T02:52:26.114947+00:00",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
 }

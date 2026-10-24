@@ -7,12 +7,12 @@
   "market_type": "min",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T04:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
-  "last_lite_refresh": "2026-10-23T20:20:40.283735+00:00",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00",
   "forecast_mean": 71.42,
   "sigma": 2.903,
   "full_distribution": [
@@ -23,7 +23,7 @@
         -999.0,
         63.0
       ],
-      "yes_price": 0.0295,
+      "yes_price": 0.03,
       "no_price": 0.97,
       "volume": 10.0,
       "spread": 0.0,
@@ -33,10 +33,12 @@
       "side": "YES",
       "ask": 0.03,
       "market_prob": 0.03,
-      "belief_prob": 0.0365,
+      "belief_prob": 0.0366,
       "ev": 0.22,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the lowest temperature in Miami be between 64-65°F on October 24?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0199,
       "ev": 1.4875,
       "kelly": 0.003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Miami be between 66-67°F on October 24?",
@@ -67,20 +71,22 @@
         66.0,
         67.0
       ],
-      "yes_price": 0.105,
-      "no_price": 0.8955,
+      "yes_price": 0.1,
+      "no_price": 0.9,
       "volume": 60.0,
       "spread": 0.0,
       "yes_token_id": "62788277192257756361517422837864273319656216069955751304714319545904774669080",
       "no_token_id": "42207018639001882138356955012474294493504381005531758933083250942344616963343",
       "model_prob": 0.0655,
       "side": "YES",
-      "ask": 0.1045,
-      "market_prob": 0.1045,
-      "belief_prob": 0.0793,
-      "ev": -0.2431,
+      "ask": 0.1,
+      "market_prob": 0.1,
+      "belief_prob": 0.0776,
+      "ev": -0.224,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the lowest temperature in Miami be between 68-69°F on October 24?",
@@ -89,20 +95,22 @@
         68.0,
         69.0
       ],
-      "yes_price": 0.2,
-      "no_price": 0.8,
+      "yes_price": 0.195,
+      "no_price": 0.805,
       "volume": 502.0,
       "spread": 0.0,
       "yes_token_id": "16924032643439300027490818897862958660165584318233636188387301577052398191656",
       "no_token_id": "8147559382751442009816277729662295757641869458542938116432119366094401636478",
       "model_prob": 0.1463,
       "side": "YES",
-      "ask": 0.2,
-      "market_prob": 0.2,
-      "belief_prob": 0.1651,
-      "ev": -0.1745,
+      "ask": 0.195,
+      "market_prob": 0.195,
+      "belief_prob": 0.1633,
+      "ev": -0.1626,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the lowest temperature in Miami be between 70-71°F on October 24?",
@@ -111,20 +119,22 @@
         70.0,
         71.0
       ],
-      "yes_price": 0.265,
-      "no_price": 0.745,
-      "volume": 654.0,
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 664.0,
       "spread": 0.0,
       "yes_token_id": "35034263261185568768794567021681785197908136433833876230519303025301852695540",
       "no_token_id": "38147937289612960658632187434536014743136972995132183753699695577068253175598",
       "model_prob": 0.238,
       "side": "YES",
-      "ask": 0.255,
-      "market_prob": 0.255,
-      "belief_prob": 0.2475,
-      "ev": -0.0431,
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.2545,
+      "ev": -0.107,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.02
     },
     {
       "question": "Will the lowest temperature in Miami be between 72-73°F on October 24?",
@@ -133,20 +143,22 @@
         72.0,
         73.0
       ],
-      "yes_price": 0.455,
-      "no_price": 0.505,
+      "yes_price": 0.485,
+      "no_price": 0.515,
       "volume": 1004.0,
       "spread": 0.0,
       "yes_token_id": "69054498464541653546089278585451330185741392633389249716660716604123988991703",
       "no_token_id": "45054524784217725124853578626212358616639662822413120326983283724253051094801",
       "model_prob": 0.2328,
       "side": "YES",
-      "ask": 0.495,
-      "market_prob": 0.495,
-      "belief_prob": 0.3106,
-      "ev": -0.3442,
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.3211,
+      "ev": -0.3379,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.03
     },
     {
       "question": "Will the lowest temperature in Miami be between 74-75°F on October 24?",
@@ -155,20 +167,22 @@
         74.0,
         75.0
       ],
-      "yes_price": 0.215,
-      "no_price": 0.82,
+      "yes_price": 0.17,
+      "no_price": 0.83,
       "volume": 602.0,
       "spread": 0.0,
       "yes_token_id": "29105773468076354967000328014819265153519082320825524024669854050510237296007",
       "no_token_id": "38101172145118437933505921384711350229823913423186932722310172529479027559870",
       "model_prob": 0.1384,
       "side": "YES",
-      "ask": 0.18,
-      "market_prob": 0.18,
-      "belief_prob": 0.1652,
-      "ev": -0.15,
+      "ask": 0.17,
+      "market_prob": 0.17,
+      "belief_prob": 0.1495,
+      "ev": -0.1206,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.045
     },
     {
       "question": "Will the lowest temperature in Miami be between 76-77°F on October 24?",
@@ -177,20 +191,22 @@
         76.0,
         77.0
       ],
-      "yes_price": 0.0285,
-      "no_price": 0.9715,
+      "yes_price": 0.2375,
+      "no_price": 0.7625,
       "volume": 10.0,
       "spread": 0.0,
       "yes_token_id": "39360970051160344785935967052961564078292779323614016444064244258960908950046",
       "no_token_id": "42982545846002609619486840523764161368675030765039452847446088911367865561921",
       "model_prob": 0.061,
       "side": "YES",
-      "ask": 0.0285,
-      "market_prob": 0.0285,
-      "belief_prob": 0.0496,
-      "ev": 0.7404,
-      "kelly": 0.0054,
-      "sell_value": null
+      "ask": 0.2375,
+      "market_prob": 0.2375,
+      "belief_prob": 0.1228,
+      "ev": -0.4829,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.209
     },
     {
       "question": "Will the lowest temperature in Miami be between 78-79°F on October 24?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0279,
       "ev": -0.1913,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Miami be between 80-81°F on October 24?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0096,
       "ev": 0.0667,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Miami be 82°F or higher on October 24?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0146,
       "ev": 0.5368,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "last_price_refresh": "2026-10-24T02:52:26.114947+00:00",

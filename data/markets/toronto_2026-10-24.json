@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T04:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0012,
       "ev": 1.4,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 10°C on October 24?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.003,
       "ev": -0.25,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 11°C on October 24?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0059,
       "ev": 4.9,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 12°C on October 24?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.022,
       "ev": 13.6667,
       "kelly": 0.0051,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 13°C on October 24?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0873,
       "ev": 23.9429,
       "kelly": 0.021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 14°C on October 24?",
@@ -138,7 +148,7 @@
         14.0,
         14.0
       ],
-      "yes_price": 0.105,
+      "yes_price": 0.11,
       "no_price": 0.89,
       "volume": 6818.0,
       "spread": 0.0,
@@ -148,10 +158,12 @@
       "side": "YES",
       "ask": 0.11,
       "market_prob": 0.11,
-      "belief_prob": 0.2592,
+      "belief_prob": 0.2609,
       "ev": 1.3718,
       "kelly": 0.0424,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 15°C on October 24?",
@@ -160,20 +172,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.62,
-      "no_price": 0.395,
+      "yes_price": 0.625,
+      "no_price": 0.375,
       "volume": 2107.0,
       "spread": 0.0,
       "yes_token_id": "41190840177242990105480104412301556334475746105787355567057802200641816486099",
       "no_token_id": "80261202856442848289182754369364659459743342761206242529038872167292180831794",
       "model_prob": 0.3235,
       "side": "YES",
-      "ask": 0.605,
-      "market_prob": 0.605,
-      "belief_prob": 0.4273,
-      "ev": -0.3025,
+      "ask": 0.625,
+      "market_prob": 0.625,
+      "belief_prob": 0.429,
+      "ev": -0.3136,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 16°C on October 24?",
@@ -182,20 +196,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.23,
-      "no_price": 0.795,
+      "yes_price": 0.235,
+      "no_price": 0.765,
       "volume": 4793.0,
       "spread": 0.0,
       "yes_token_id": "38085163706776651275076093282078905038889082981243878691229361132438748770634",
       "no_token_id": "114866959579080915101268557397769248636536372695840478285172337062570076807258",
       "model_prob": 0.1163,
       "side": "YES",
-      "ask": 0.205,
-      "market_prob": 0.205,
-      "belief_prob": 0.1561,
-      "ev": -0.2815,
+      "ask": 0.235,
+      "market_prob": 0.235,
+      "belief_prob": 0.1578,
+      "ev": -0.3285,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Toronto be 17°C on October 24?",
@@ -204,20 +220,22 @@
         17.0,
         17.0
       ],
-      "yes_price": 0.0085,
-      "no_price": 0.9965,
+      "yes_price": 0.0095,
+      "no_price": 0.9905,
       "volume": 1480.0,
       "spread": 0.0,
       "yes_token_id": "35220122830979443036365755968479017112239459405594445143612600772753657932799",
       "no_token_id": "68060929218905720025697111855261895325889797521322829184075132065731333058028",
       "model_prob": 0.0287,
       "side": "YES",
-      "ask": 0.0035,
-      "market_prob": 0.0035,
-      "belief_prob": 0.0216,
-      "ev": 4.6857,
-      "kelly": 0.0041,
-      "sell_value": null
+      "ask": 0.0095,
+      "market_prob": 0.0095,
+      "belief_prob": 0.022,
+      "ev": 1.3158,
+      "kelly": 0.0032,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.001
     },
     {
       "question": "Will the highest temperature in Toronto be 18°C on October 24?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0052,
       "ev": 4.2,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 19°C or higher on October 24?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0026,
       "ev": 4.2,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-24T02:52:26.114947+00:00",
-  "last_lite_refresh": "2026-10-23T20:20:40.283735+00:00"
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
 }

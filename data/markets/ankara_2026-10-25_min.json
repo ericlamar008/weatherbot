@@ -7,10 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 42.7,
+  "hours_left": 42.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T21:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
-  "skipped_reason": "event volume 117 < min_volume 500"
+  "skipped_reason": "event volume 117 < min_volume 500",
+  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00",
+  "forecast_mean": 8.95,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Ankara be 10°C on October 25?",
+      "market_id": "6072968",
+      "range": [
+        10.0,
+        10.0
+      ],
+      "yes_price": 0.335,
+      "no_price": 0.665,
+      "volume": 112.0,
+      "spread": 0.0,
+      "yes_token_id": "102570139458511753328245157002486382367615944165007073032610259519415562952236",
+      "no_token_id": "56490442144318988867666124286072613811005491819368955655121704897242995739895",
+      "model_prob": 0.5516,
+      "side": "YES",
+      "ask": 0.335,
+      "market_prob": 0.335,
+      "belief_prob": 0.4758,
+      "ev": 0.4203,
+      "kelly": 0.0529,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Ankara be 11°C or higher on October 25?",
+      "market_id": "6072969",
+      "range": [
+        11.0,
+        999.0
+      ],
+      "yes_price": 0.25,
+      "no_price": 0.75,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "47578443881636311349034972808118686373678650231583874082797011984045031154131",
+      "no_token_id": "111054975022970314296587069640669974010619941910904389749542823124321210883023",
+      "model_prob": 0.4484,
+      "side": "YES",
+      "ask": 0.25,
+      "market_prob": 0.25,
+      "belief_prob": 0.379,
+      "ev": 0.516,
+      "kelly": 0.043,
+      "sell_value": null
+    }
+  ]
 }
