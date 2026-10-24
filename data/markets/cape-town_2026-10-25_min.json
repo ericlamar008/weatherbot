@@ -7,11 +7,37 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 31.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T22:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-24T08:20:40.455776+00:00"
+  "last_lite_refresh": "2026-10-24T14:20:37.279814+00:00",
+  "forecast_mean": 15.3,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Cape Town be 18°C on October 25?",
+      "market_id": "6073360",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 1.0,
+      "spread": 0.0,
+      "yes_token_id": "53811640269151352078088619768995753187313730195016701417206525264705778269762",
+      "no_token_id": "6191060176962705758830695545702355494031063318142848952375193576218292400882",
+      "model_prob": 1.0,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.6554,
+      "ev": 41.2839,
+      "kelly": 0.1625,
+      "sell_value": null
+    }
+  ]
 }
