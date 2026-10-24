@@ -7,14 +7,13 @@
   "market_type": "min",
   "created_at": "2026-10-22T02:20:39.650370+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-24T04:00:00+00:00",
   "event_end_date": "2026-10-23T12:00:00Z",
-  "last_scan": "2026-10-23T02:20:39.499469+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_scan": "2026-10-24T02:20:45.376763+00:00",
   "last_lite_refresh": "2026-10-23T20:20:40.283735+00:00",
-  "forecast_mean": 3.87,
+  "forecast_mean": 4.5,
   "sigma": 1.4,
   "full_distribution": [
     {
@@ -25,17 +24,17 @@
         4.0
       ],
       "yes_price": 0.955,
-      "no_price": 0.205,
-      "volume": 5.0,
+      "no_price": 0.045,
+      "volume": 10.0,
       "spread": 0.0,
       "yes_token_id": "59698157232821585706644538435951115325107307889504084849269666943989709168776",
       "no_token_id": "79578336227797104966592604895719297572929511270666022732951761912027144964766",
-      "model_prob": 0.4394,
+      "model_prob": 0.2465,
       "side": "YES",
-      "ask": 0.795,
-      "market_prob": 0.795,
-      "belief_prob": 0.6199,
-      "ev": -0.2907,
+      "ask": 0.955,
+      "market_prob": 0.955,
+      "belief_prob": 0.4945,
+      "ev": -0.4822,
       "kelly": 0.0,
       "sell_value": null
     },
@@ -47,21 +46,19 @@
         5.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.995,
+      "no_price": 0.9955,
       "volume": 75.0,
       "spread": 0.0,
       "yes_token_id": "280396431725713551706483029161640084116195017525983843902072942822178253025",
       "no_token_id": "8050567997153051670666715322475238232423195720769901723644954864534213870686",
-      "model_prob": 0.3128,
+      "model_prob": 0.2465,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
-      "belief_prob": 0.2049,
-      "ev": 40.02,
-      "kelly": 0.0503,
-      "sell_value": null,
-      "model_prob_change": -0.1511,
-      "yes_price_change": 0.0
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.1618,
+      "ev": 34.9556,
+      "kelly": 0.0395,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 6°C on October 23?",
@@ -71,21 +68,19 @@
         6.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.995,
+      "no_price": 0.9955,
       "volume": 184.0,
       "spread": 0.0,
       "yes_token_id": "86458750551674859702016255384175851449896569800159761716273197947105391221735",
       "no_token_id": "89919246184408199062685300187314192696832853122260952403394002308127022519989",
-      "model_prob": 0.1484,
+      "model_prob": 0.1473,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
-      "belief_prob": 0.098,
-      "ev": 18.64,
-      "kelly": 0.0234,
-      "sell_value": null,
-      "model_prob_change": -0.1568,
-      "yes_price_change": 0.0
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.0973,
+      "ev": 20.6222,
+      "kelly": 0.0233,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 7°C on October 23?",
@@ -95,21 +90,19 @@
         7.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.995,
+      "no_price": 0.9955,
       "volume": 173.0,
       "spread": 0.0,
       "yes_token_id": "28643132403508709385725750204981572365229788203618159591383361713120085546335",
       "no_token_id": "40141994997970936099144043899306850089263217298932522950089628154286825812720",
-      "model_prob": 0.0588,
+      "model_prob": 0.0637,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
-      "belief_prob": 0.0398,
-      "ev": 7.0,
-      "kelly": 0.0088,
-      "sell_value": null,
-      "model_prob_change": -0.0798,
-      "yes_price_change": 0.0
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.043,
+      "ev": 8.5556,
+      "kelly": 0.0097,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 8°C on October 23?",
@@ -124,16 +117,14 @@
       "spread": 0.0,
       "yes_token_id": "107740643295984506514315190603229892313982569062023894611824263977462316384185",
       "no_token_id": "72521363538267569159013163893049904921534281129961323699148336100169614160586",
-      "model_prob": 0.0228,
+      "model_prob": 0.0247,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.015,
-      "ev": 29.0,
-      "kelly": 0.0036,
-      "sell_value": null,
-      "model_prob_change": -0.0315,
-      "yes_price_change": 0.0
+      "belief_prob": 0.0162,
+      "ev": 31.4,
+      "kelly": 0.0039,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 9°C on October 23?",
@@ -148,16 +139,14 @@
       "spread": 0.0,
       "yes_token_id": "34391892905753471272431126081968333305527149511278615812794116010275130407873",
       "no_token_id": "60769906545308168277775462730692315018064121101577246959191746432934934311542",
-      "model_prob": 0.0094,
+      "model_prob": 0.0098,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.0063,
-      "ev": 11.6,
+      "belief_prob": 0.0065,
+      "ev": 12.0,
       "kelly": 0.0015,
-      "sell_value": null,
-      "model_prob_change": -0.0118,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 10°C on October 23?",
@@ -179,9 +168,7 @@
       "belief_prob": 0.0028,
       "ev": 4.6,
       "kelly": 0.0006,
-      "sell_value": null,
-      "model_prob_change": -0.0047,
-      "yes_price_change": 0.0
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Toronto be 11°C or higher on October 23?",
@@ -196,17 +183,59 @@
       "spread": 0.0,
       "yes_token_id": "112215315408159141621551519558203896048665552102115858644844261819029609623157",
       "no_token_id": "82196528591939206191554896864646439743076457608191413803332852968550331386136",
-      "model_prob": 0.0043,
+      "model_prob": 0.0039,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
-      "belief_prob": 0.003,
-      "ev": 5.0,
+      "belief_prob": 0.0027,
+      "ev": 4.4,
       "kelly": 0.0006,
-      "sell_value": null,
-      "model_prob_change": -0.0038,
-      "yes_price_change": 0.0
+      "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-24T02:07:22.523580+00:00"
+  "last_price_refresh": "2026-10-24T02:07:22.523580+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "6009705",
+      "question": "Will the lowest temperature in Toronto be 4°C on October 23?",
+      "range": [
+        4.0,
+        4.0
+      ],
+      "side": "YES",
+      "price": 0.955,
+      "model_prob": 0.2465,
+      "ev": -0.4822,
+      "market_prob": 0.955,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.91
+    },
+    {
+      "market_id": "6009705",
+      "question": "Will the lowest temperature in Toronto be 4°C on October 23? (NO)",
+      "range": [
+        4.0,
+        4.0
+      ],
+      "side": "NO",
+      "price": 0.045,
+      "model_prob": 0.7535,
+      "ev": 10.2333,
+      "market_prob": 0.045,
+      "role": "scenario_hedge",
+      "units": 0.94,
+      "sell_value": null
+    }
+  ],
+  "total_allocated_units": 30.9,
+  "portfolio_score": -0.03722,
+  "worst_case_loss_frac": 0.1005,
+  "best_case_pnl_units": 0.47,
+  "worst_case_pnl_units": -10.05,
+  "success_probability": 0.6209,
+  "confidence": 1.0,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
