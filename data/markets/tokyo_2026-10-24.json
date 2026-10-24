@@ -3,11 +3,11 @@
   "city_name": "Tokyo",
   "date": "2026-10-24",
   "unit": "C",
-  "status": "open",
+  "status": "resolved",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 0.7,
-  "time_status": "local_day_open",
+  "hours_left": 0.0,
+  "time_status": "awaiting_settlement",
   "local_day_end_utc": "2026-10-24T15:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
@@ -301,7 +301,10 @@
       "market_prob": 0.845,
       "role": "main_signal",
       "units": 29.1,
-      "sell_value": 0.81
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 5.34,
+      "user_entered": false
     },
     {
       "market_id": "6035951",
@@ -317,7 +320,10 @@
       "market_prob": 0.155,
       "role": "scenario_hedge",
       "units": 3.5,
-      "sell_value": 0.12
+      "sell_value": 0.12,
+      "won": false,
+      "pnl_units": -3.5,
+      "user_entered": false
     }
   ],
   "total_allocated_units": 32.6,
@@ -330,5 +336,50 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-24T20:07:21.736810+00:00",
-  "last_lite_refresh": "2026-10-24T14:20:37.279814+00:00"
+  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00",
+  "actual_temp": 19.0,
+  "graded_against": "live_fallback",
+  "resolved_outcome": "win",
+  "pnl_units": 1.84,
+  "my_pnl_units": null,
+  "graded_allocation": [
+    {
+      "market_id": "6035951",
+      "question": "Will the highest temperature in Tokyo be 19°C on October 24?",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "YES",
+      "price": 0.845,
+      "model_prob": 0.139,
+      "ev": -0.5431,
+      "market_prob": 0.845,
+      "role": "main_signal",
+      "units": 29.1,
+      "sell_value": 0.81,
+      "won": true,
+      "pnl_units": 5.34,
+      "user_entered": false
+    },
+    {
+      "market_id": "6035951",
+      "question": "Will the highest temperature in Tokyo be 19°C on October 24? (NO)",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "side": "NO",
+      "price": 0.155,
+      "model_prob": 0.861,
+      "ev": 2.9606,
+      "market_prob": 0.155,
+      "role": "scenario_hedge",
+      "units": 3.5,
+      "sell_value": 0.12,
+      "won": false,
+      "pnl_units": -3.5,
+      "user_entered": false
+    }
+  ]
 }
