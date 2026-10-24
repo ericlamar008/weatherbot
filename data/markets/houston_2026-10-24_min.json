@@ -7,11 +7,169 @@
   "market_type": "min",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 26.1,
+  "hours_left": 20.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T05:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
+  "last_lite_refresh": "2026-10-24T08:20:40.455776+00:00",
+  "forecast_mean": 66.28,
+  "sigma": 2.572,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Houston be between 62-63°F on October 24?",
+      "market_id": "6037525",
+      "range": [
+        62.0,
+        63.0
+      ],
+      "yes_price": 0.465,
+      "no_price": 0.535,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "16616805250204776939998589562079172118815284152088749809715148604161422857266",
+      "no_token_id": "110918347576515910476817866623179363538839456357530422872612359215067211464234",
+      "model_prob": 0.1055,
+      "side": "YES",
+      "ask": 0.465,
+      "market_prob": 0.465,
+      "belief_prob": 0.2313,
+      "ev": -0.5026,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 64-65°F on October 24?",
+      "market_id": "6037526",
+      "range": [
+        64.0,
+        65.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 60.0,
+      "spread": 0.0,
+      "yes_token_id": "110792886011559128443754265956734206477613934116325326946835305459160335487849",
+      "no_token_id": "60163043490234546125869479885569346550091139311883331918988286434510409038215",
+      "model_prob": 0.2332,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.1525,
+      "ev": 60.0,
+      "kelly": 0.0376,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 66-67°F on October 24?",
+      "market_id": "6037527",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 45.0,
+      "spread": 0.0,
+      "yes_token_id": "83812822212785311315063942860149663569633546623635284120219706291834676883003",
+      "no_token_id": "81924913364734897430239434491076387993828249717975403310405558961613375300617",
+      "model_prob": 0.3038,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1976,
+      "ev": 394.2,
+      "kelly": 0.0493,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 68-69°F on October 24?",
+      "market_id": "6037528",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "34126219924372998040393128903017041727774524231924936023141505520038413400124",
+      "no_token_id": "54625543798033781534702932552014970160183464225442580062360915431022429242912",
+      "model_prob": 0.2027,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1319,
+      "ev": 262.8,
+      "kelly": 0.0329,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 70-71°F on October 24?",
+      "market_id": "6037529",
+      "range": [
+        70.0,
+        71.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "72449793221464872569038468037557301245183297691857920872420370608463345319645",
+      "no_token_id": "62579957105003943153267969179484530324674653629133603657219022684578027918770",
+      "model_prob": 0.0852,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0556,
+      "ev": 110.2,
+      "kelly": 0.0138,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be between 72-73°F on October 24?",
+      "market_id": "6037530",
+      "range": [
+        72.0,
+        73.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "6018510275691696273098939599382083225679777385938647367194406880478666284497",
+      "no_token_id": "20439383617673082138868065513435590471294819871347406134234283352679930036981",
+      "model_prob": 0.0304,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0199,
+      "ev": 38.8,
+      "kelly": 0.0049,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Houston be 74°F or higher on October 24?",
+      "market_id": "6037531",
+      "range": [
+        74.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "17965644435666836118042912273997336935928644682721515714958284308068001074254",
+      "no_token_id": "112607644974002693655496010465409685841812672881658604680109168293536916676489",
+      "model_prob": 0.0392,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0257,
+      "ev": 50.4,
+      "kelly": 0.0063,
+      "sell_value": null
+    }
+  ]
 }

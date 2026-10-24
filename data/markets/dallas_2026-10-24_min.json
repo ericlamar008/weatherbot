@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 26.1,
+  "hours_left": 20.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T05:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
   "last_scan": "2026-10-24T02:20:45.376763+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-24T02:53:08.805821+00:00"
+  "last_lite_refresh": "2026-10-24T08:20:40.455776+00:00",
+  "forecast_mean": 61.59,
+  "sigma": 2.458,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Dallas be between 66-67°F on October 24?",
+      "market_id": "6037463",
+      "range": [
+        66.0,
+        67.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "66528088659394552447236092356733143795962752920314920337362728122410193202987",
+      "no_token_id": "74743182414194608451064591992833640663955256110797298057181952932739191371311",
+      "model_prob": 0.5631,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3662,
+      "ev": 731.4,
+      "kelly": 0.0915,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be between 68-69°F on October 24?",
+      "market_id": "6037464",
+      "range": [
+        68.0,
+        69.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "110848540991925767434626788370645950965800570328524469003317913498475899401259",
+      "no_token_id": "91232445149041421967351364108727619691556246598602883010624656578960072653591",
+      "model_prob": 0.1906,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1241,
+      "ev": 247.2,
+      "kelly": 0.0309,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Dallas be 70°F or higher on October 24?",
+      "market_id": "6037465",
+      "range": [
+        70.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "20590796487288204247830206711450263609701521896826526751787264777837716248662",
+      "no_token_id": "96975885196579949965270491696511194432451591814875517548406602052863283766216",
+      "model_prob": 0.2463,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1603,
+      "ev": 319.6,
+      "kelly": 0.04,
+      "sell_value": null
+    }
+  ]
 }
