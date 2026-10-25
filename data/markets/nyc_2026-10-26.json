@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T04:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0064,
       "ev": 11.8,
       "kelly": 0.0015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 60-61°F on October 26?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0043,
       "ev": 7.6,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 62-63°F on October 26?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0118,
       "ev": 22.6,
       "kelly": 0.0028,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 64-65°F on October 26?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0354,
       "ev": 22.6,
       "kelly": 0.0085,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 66-67°F on October 26?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 407.0,
+      "volume": 410.0,
       "spread": 0.0,
       "yes_token_id": "13238975464743877252739360644506834307324902918139227174328918549308751944418",
       "no_token_id": "25739217938949710485580678555009296310405752385847772321008665772710454086082",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0978,
       "ev": 64.2,
       "kelly": 0.0241,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 26?",
@@ -139,19 +149,21 @@
         69.0
       ],
       "yes_price": 0.185,
-      "no_price": 0.84,
-      "volume": 2439.0,
+      "no_price": 0.815,
+      "volume": 2442.0,
       "spread": 0.0,
       "yes_token_id": "9530731965049788044152986596993349542748325260472911556016627869680378218900",
       "no_token_id": "20626015812295156093753393750816525220717190439492829012476565212875290605293",
       "model_prob": 0.2856,
       "side": "YES",
-      "ask": 0.16,
-      "market_prob": 0.16,
+      "ask": 0.185,
+      "market_prob": 0.185,
       "belief_prob": 0.2504,
-      "ev": 0.51,
-      "kelly": 0.0243,
-      "sell_value": null
+      "ev": 0.3535,
+      "kelly": 0.0201,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 26?",
@@ -161,19 +173,21 @@
         71.0
       ],
       "yes_price": 0.5,
-      "no_price": 0.495,
-      "volume": 1198.0,
+      "no_price": 0.5,
+      "volume": 1221.0,
       "spread": 0.0,
       "yes_token_id": "92853183186653439059415651135457262438633963160339668054554231126323990294483",
       "no_token_id": "39077530910461397525188066619671630757145352874413517692394552821056810664203",
       "model_prob": 0.2685,
       "side": "YES",
-      "ask": 0.505,
-      "market_prob": 0.505,
+      "ask": 0.5,
+      "market_prob": 0.5,
       "belief_prob": 0.3495,
-      "ev": -0.3044,
+      "ev": -0.301,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 72-73°F on October 26?",
@@ -183,19 +197,21 @@
         73.0
       ],
       "yes_price": 0.32,
-      "no_price": 0.655,
-      "volume": 1193.0,
+      "no_price": 0.68,
+      "volume": 1200.0,
       "spread": 0.0,
       "yes_token_id": "16291155914394843869117222786752188618825926492562579437391856983146554668400",
       "no_token_id": "45081954883713544757680336229255965183323911888083369282574527503526192408954",
       "model_prob": 0.129,
       "side": "YES",
-      "ask": 0.345,
-      "market_prob": 0.345,
+      "ask": 0.32,
+      "market_prob": 0.32,
       "belief_prob": 0.1958,
-      "ev": -0.407,
+      "ev": -0.3881,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 74-75°F on October 26?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0312,
       "ev": 4.6727,
       "kelly": 0.0065,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 76-77°F on October 26?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0114,
       "ev": 1.5333,
       "kelly": 0.0017,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 78°F or higher on October 26?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0129,
       "ev": 24.8,
       "kelly": 0.0031,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-25T02:52:23.132906+00:00"
+  "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

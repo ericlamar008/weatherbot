@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 44.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T23:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
@@ -14,7 +14,7 @@
   "horizon_days": 1,
   "forecast_mean": 12.71,
   "sigma": 1.857,
-  "forecast_mean_shadow": 11.84,
+  "forecast_mean_shadow": 11.85,
   "model_means_raw": {
     "ecmwf": 11.83,
     "gfs": 11.45,
@@ -42,7 +42,9 @@
       "belief_prob": 0.0068,
       "ev": 12.6,
       "kelly": 0.0016,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 7°C on October 26?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0058,
       "ev": 10.6,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 8°C on October 26?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.013,
       "ev": 1.8889,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 9°C on October 26?",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0239,
       "ev": 14.9333,
       "kelly": 0.0056,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 10°C on October 26?",
@@ -130,7 +138,9 @@
       "belief_prob": 0.0477,
       "ev": 12.6286,
       "kelly": 0.0111,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 11°C on October 26?",
@@ -152,7 +162,9 @@
       "belief_prob": 0.106,
       "ev": 0.6308,
       "kelly": 0.011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 12°C on October 26?",
@@ -174,7 +186,9 @@
       "belief_prob": 0.2851,
       "ev": -0.3934,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 13°C on October 26?",
@@ -185,7 +199,7 @@
       ],
       "yes_price": 0.45,
       "no_price": 0.55,
-      "volume": 2083.0,
+      "volume": 2085.0,
       "spread": 0.0,
       "yes_token_id": "60253237120812258077938161702630109620061604392920041527301744689788980644790",
       "no_token_id": "105477606279633681459567164557849118369047389892404354903540715924997199029232",
@@ -196,7 +210,9 @@
       "belief_prob": 0.2867,
       "ev": -0.3629,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 14°C on October 26?",
@@ -205,20 +221,22 @@
         14.0,
         14.0
       ],
-      "yes_price": 0.021,
-      "no_price": 0.9745,
+      "yes_price": 0.0245,
+      "no_price": 0.9755,
       "volume": 890.0,
       "spread": 0.0,
       "yes_token_id": "33598210943875243867603073202696489950617418700867354818328562883375120280575",
       "no_token_id": "110095307581607822606112706927026760149883060121530038592990394562625210818341",
       "model_prob": 0.1544,
       "side": "YES",
-      "ask": 0.0255,
-      "market_prob": 0.0255,
-      "belief_prob": 0.1077,
-      "ev": 3.2863,
-      "kelly": 0.0215,
-      "sell_value": null
+      "ask": 0.0245,
+      "market_prob": 0.0245,
+      "belief_prob": 0.1089,
+      "ev": 3.4449,
+      "kelly": 0.0216,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0035
     },
     {
       "question": "Will the highest temperature in Munich be 15°C on October 26?",
@@ -240,7 +258,9 @@
       "belief_prob": 0.0606,
       "ev": 120.2,
       "kelly": 0.015,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 16°C or higher on October 26?",
@@ -262,7 +282,9 @@
       "belief_prob": 0.063,
       "ev": 125.0,
       "kelly": 0.0156,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-25T02:52:23.132906+00:00"
+  "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T05:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0019,
       "ev": 2.8,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 76-77°F on October 24?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0023,
       "ev": 3.6,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 78-79°F on October 24?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0114,
       "ev": 21.8,
       "kelly": 0.0027,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 80-81°F on October 24?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0749,
       "ev": 148.8,
       "kelly": 0.0186,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 82-83°F on October 24?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 11940.0,
+      "volume": 11945.0,
       "spread": 0.0,
       "yes_token_id": "42099109163179823284888656961261076862420644842522929133456021874860162159282",
       "no_token_id": "85511670072688497017044393381301095702507903509898400203123488376426021012077",
@@ -129,7 +137,9 @@
       "belief_prob": 0.3152,
       "ev": 629.4,
       "kelly": 0.0787,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 84-85°F on October 24?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.5537,
       "ev": -0.446,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 86-87°F on October 24?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0341,
       "ev": 67.2,
       "kelly": 0.0084,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 88-89°F on October 24?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0056,
       "ev": 10.2,
       "kelly": 0.0013,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 90-91°F on October 24?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0013,
       "ev": 1.6,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be between 92-93°F on October 24?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0005,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Houston be 94°F or higher on October 24?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0006,
       "ev": 0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -292,5 +314,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

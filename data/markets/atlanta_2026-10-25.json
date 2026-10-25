@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 25.7,
+  "hours_left": 25.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T04:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0108,
       "ev": 20.6,
       "kelly": 0.0026,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 60-61°F on October 25?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0095,
       "ev": 18.0,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 62-63°F on October 25?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0313,
       "ev": 61.6,
       "kelly": 0.0077,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 64-65°F on October 25?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0993,
       "ev": 197.6,
       "kelly": 0.0247,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 66-67°F on October 25?",
@@ -116,20 +124,22 @@
         66.0,
         67.0
       ],
-      "yes_price": 0.021,
-      "no_price": 0.973,
+      "yes_price": 0.0235,
+      "no_price": 0.9765,
       "volume": 1442.0,
       "spread": 0.0,
       "yes_token_id": "21792575919434933346073339856801948294814726997451987764887328804125371871711",
       "no_token_id": "85446595745177097435425929629510274137348694712512005249264735980758069714215",
       "model_prob": 0.3178,
       "side": "YES",
-      "ask": 0.027,
-      "market_prob": 0.027,
-      "belief_prob": 0.2139,
-      "ev": 7.0,
-      "kelly": 0.0486,
-      "sell_value": null
+      "ask": 0.0235,
+      "market_prob": 0.0235,
+      "belief_prob": 0.2148,
+      "ev": 8.1404,
+      "kelly": 0.049,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0025
     },
     {
       "question": "Will the highest temperature in Atlanta be between 68-69°F on October 25?",
@@ -139,19 +149,21 @@
         69.0
       ],
       "yes_price": 0.36,
-      "no_price": 0.615,
+      "no_price": 0.64,
       "volume": 5033.0,
       "spread": 0.0,
       "yes_token_id": "102167545015852792195528240726941247012472512959979664893974541848761469427814",
       "no_token_id": "61208235287339163433913690111207847869916154677735349858766047985838088278982",
       "model_prob": 0.2815,
       "side": "YES",
-      "ask": 0.385,
-      "market_prob": 0.385,
+      "ask": 0.36,
+      "market_prob": 0.36,
       "belief_prob": 0.309,
-      "ev": -0.1748,
+      "ev": -0.1417,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 70-71°F on October 25?",
@@ -160,20 +172,22 @@
         70.0,
         71.0
       ],
-      "yes_price": 0.605,
-      "no_price": 0.455,
-      "volume": 4178.0,
+      "yes_price": 0.6,
+      "no_price": 0.4,
+      "volume": 4209.0,
       "spread": 0.0,
       "yes_token_id": "70422462377599353123026583332960125407214934686386632227067037762053629584307",
       "no_token_id": "39952859175229588885996484182501931846582741955627612688873746450187180568065",
       "model_prob": 0.1152,
       "side": "YES",
-      "ask": 0.545,
-      "market_prob": 0.545,
-      "belief_prob": 0.2866,
-      "ev": -0.5127,
+      "ask": 0.6,
+      "market_prob": 0.6,
+      "belief_prob": 0.2849,
+      "ev": -0.5252,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Atlanta be between 72-73°F on October 25?",
@@ -182,20 +196,22 @@
         72.0,
         73.0
       ],
-      "yes_price": 0.038,
-      "no_price": 0.9535,
+      "yes_price": 0.044,
+      "no_price": 0.956,
       "volume": 1879.0,
       "spread": 0.0,
       "yes_token_id": "77485121828370206996224872613979334519058150533482245835672993000017564754133",
       "no_token_id": "112436415277083367017421936051331683239125107857211419877719011687215735741302",
       "model_prob": 0.0348,
       "side": "YES",
-      "ask": 0.0465,
-      "market_prob": 0.0465,
-      "belief_prob": 0.0359,
-      "ev": -0.1634,
+      "ask": 0.044,
+      "market_prob": 0.044,
+      "belief_prob": 0.038,
+      "ev": -0.1364,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.006
     },
     {
       "question": "Will the highest temperature in Atlanta be between 74-75°F on October 25?",
@@ -205,19 +221,21 @@
         75.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9975,
+      "no_price": 0.998,
       "volume": 702.0,
       "spread": 0.0,
       "yes_token_id": "13105032693179924095562844110561995707022390687344302164520327094770007353347",
       "no_token_id": "37621801066964170682832115781818908527105558574868391885968044014339631357472",
       "model_prob": 0.0106,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.0076,
-      "ev": 2.12,
-      "kelly": 0.0013,
-      "sell_value": null
+      "ev": 2.8,
+      "kelly": 0.0014,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be between 76-77°F on October 25?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0025,
       "ev": 4.0,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Atlanta be 78°F or higher on October 25?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0036,
       "ev": 6.2,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

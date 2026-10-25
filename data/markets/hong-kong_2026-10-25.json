@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 13.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T16:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0031,
       "ev": 5.2,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 27°C on October 25?",
@@ -51,19 +53,21 @@
         27.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9945,
+      "no_price": 0.9995,
       "volume": 508.0,
       "spread": 0.0,
       "yes_token_id": "5418215374226119939252678727675638223954937054641472486483808625088869829038",
       "no_token_id": "19255331765562259350757903862948138317259183619161681948240539336622669751165",
       "model_prob": 0.011,
       "side": "YES",
-      "ask": 0.0055,
-      "market_prob": 0.0055,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0073,
-      "ev": 0.6545,
-      "kelly": 0.0009,
-      "sell_value": null
+      "ev": 13.6,
+      "kelly": 0.0017,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 28°C on October 25?",
@@ -72,20 +76,22 @@
         28.0,
         28.0
       ],
-      "yes_price": 0.0115,
-      "no_price": 0.992,
-      "volume": 2117.0,
+      "yes_price": 0.0145,
+      "no_price": 0.9855,
+      "volume": 2349.0,
       "spread": 0.0,
       "yes_token_id": "111944808917177376460315090859933747707726751415228826250145064597035886989659",
       "no_token_id": "14093591954966399524553371878933702961519364743255734526831064725986589948400",
       "model_prob": 0.0501,
       "side": "YES",
-      "ask": 0.008,
-      "market_prob": 0.008,
-      "belief_prob": 0.0366,
-      "ev": 3.425,
-      "kelly": 0.0069,
-      "sell_value": null
+      "ask": 0.0145,
+      "market_prob": 0.0145,
+      "belief_prob": 0.0376,
+      "ev": 1.5931,
+      "kelly": 0.0059,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.003
     },
     {
       "question": "Will the highest temperature in Hong Kong be 29°C on October 25?",
@@ -94,20 +100,22 @@
         29.0,
         29.0
       ],
-      "yes_price": 0.13,
-      "no_price": 0.81,
-      "volume": 3895.0,
+      "yes_price": 0.085,
+      "no_price": 0.915,
+      "volume": 4420.0,
       "spread": 0.0,
       "yes_token_id": "54655340475571173799892159906398258584249111847149790145782712580363134314729",
       "no_token_id": "90978134980906198056049396849400559094385799650927768356915874451408549309342",
       "model_prob": 0.2119,
       "side": "YES",
-      "ask": 0.19,
-      "market_prob": 0.19,
-      "belief_prob": 0.1832,
-      "ev": 0.0747,
-      "kelly": 0.0044,
-      "sell_value": null
+      "ask": 0.085,
+      "market_prob": 0.085,
+      "belief_prob": 0.1675,
+      "ev": 0.9706,
+      "kelly": 0.0225,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.045
     },
     {
       "question": "Will the highest temperature in Hong Kong be 30°C on October 25?",
@@ -116,20 +124,22 @@
         30.0,
         30.0
       ],
-      "yes_price": 0.445,
-      "no_price": 0.54,
-      "volume": 2450.0,
+      "yes_price": 0.45,
+      "no_price": 0.55,
+      "volume": 2589.0,
       "spread": 0.0,
       "yes_token_id": "82541117348985835224028956342641577328179805738952312986822329588539571726432",
       "no_token_id": "18125331230082136328225135988074711605715653947732507493838298482572933748774",
       "model_prob": 0.4159,
       "side": "YES",
-      "ask": 0.46,
-      "market_prob": 0.46,
-      "belief_prob": 0.4261,
-      "ev": -0.0624,
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.4278,
+      "ev": -0.0493,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Hong Kong be 31°C on October 25?",
@@ -138,20 +148,22 @@
         31.0,
         31.0
       ],
-      "yes_price": 0.42,
-      "no_price": 0.67,
-      "volume": 3346.0,
+      "yes_price": 0.41,
+      "no_price": 0.59,
+      "volume": 3648.0,
       "spread": 0.0,
       "yes_token_id": "15641870131306349174732018620711565272459037797039081154901134158326983368600",
       "no_token_id": "108904451622844787656599023282124289412323266143337065240322064636318823797173",
       "model_prob": 0.2326,
       "side": "YES",
-      "ask": 0.33,
-      "market_prob": 0.33,
-      "belief_prob": 0.2982,
-      "ev": -0.1918,
+      "ask": 0.41,
+      "market_prob": 0.41,
+      "belief_prob": 0.2947,
+      "ev": -0.2812,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the highest temperature in Hong Kong be 32°C on October 25?",
@@ -160,20 +172,22 @@
         32.0,
         32.0
       ],
-      "yes_price": 0.048,
-      "no_price": 0.974,
-      "volume": 2414.0,
+      "yes_price": 0.0435,
+      "no_price": 0.9565,
+      "volume": 2661.0,
       "spread": 0.0,
       "yes_token_id": "87847484334681344720046109454706625654180895506630547412872818348306817271054",
       "no_token_id": "77323655026318999488948482816401848672656516430656819674756680646998526488456",
       "model_prob": 0.0567,
       "side": "YES",
-      "ask": 0.026,
-      "market_prob": 0.026,
-      "belief_prob": 0.0537,
-      "ev": 0.7692,
-      "kelly": 0.0051,
-      "sell_value": null
+      "ask": 0.0435,
+      "market_prob": 0.0435,
+      "belief_prob": 0.0521,
+      "ev": 0.1977,
+      "kelly": 0.0022,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0045
     },
     {
       "question": "Will the highest temperature in Hong Kong be 33°C on October 25?",
@@ -183,19 +197,21 @@
         33.0
       ],
       "yes_price": 0.005,
-      "no_price": 0.9985,
+      "no_price": 0.995,
       "volume": 1409.0,
       "spread": 0.0,
       "yes_token_id": "44548036773658789332243427875322122589545829831778300382618925251765462163979",
       "no_token_id": "9770061092418353672752718309670442809233409682114821235593397257899636070090",
       "model_prob": 0.0124,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
+      "ask": 0.005,
+      "market_prob": 0.005,
       "belief_prob": 0.0098,
-      "ev": 4.7333,
-      "kelly": 0.0018,
-      "sell_value": null
+      "ev": 0.96,
+      "kelly": 0.0012,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 34°C on October 25?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0023,
       "ev": 3.6,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 35°C on October 25?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.001,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Hong Kong be 36°C or higher on October 25?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0006,
       "ev": 0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -308,5 +330,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

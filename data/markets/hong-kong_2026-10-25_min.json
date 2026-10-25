@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 13.7,
+  "hours_left": 13.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T16:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.005,
       "ev": 0.4286,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 21°C on October 25?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0137,
       "ev": 2.425,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 22°C on October 25?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0691,
       "ev": 16.275,
       "kelly": 0.0163,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 23°C on October 25?",
@@ -90,19 +96,21 @@
         23.0
       ],
       "yes_price": 0.0055,
-      "no_price": 0.9935,
+      "no_price": 0.9945,
       "volume": 4374.0,
       "spread": 0.0,
       "yes_token_id": "86751126059263794774003129332074135920739528485539261156153709912883644089491",
       "no_token_id": "22480621154772118677664465114933174765468310315326227323344533267343557972013",
       "model_prob": 0.3812,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.0055,
+      "market_prob": 0.0055,
       "belief_prob": 0.2497,
-      "ev": 37.4769,
-      "kelly": 0.0613,
-      "sell_value": null
+      "ev": 44.4,
+      "kelly": 0.0614,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 24°C on October 25?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.5876,
       "ev": -0.408,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 25°C on October 25?",
@@ -146,7 +156,9 @@
       "belief_prob": 0.0634,
       "ev": 125.8,
       "kelly": 0.0157,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 26°C on October 25?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.0117,
       "ev": 22.4,
       "kelly": 0.0028,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 27°C on October 25?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.0026,
       "ev": 4.2,
       "kelly": 0.0005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 28°C on October 25?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0009,
       "ev": 0.8,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 29°C on October 25?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 30°C or higher on October 25?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

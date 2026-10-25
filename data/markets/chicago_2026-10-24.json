@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-23T02:20:39.499469+00:00",
   "committed_allocation": null,
-  "hours_left": 2.7,
+  "hours_left": 2.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T05:00:00+00:00",
   "event_end_date": "2026-10-24T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0045,
       "ev": 8.0,
       "kelly": 0.001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 62-63°F on October 24?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.006,
       "ev": 11.0,
       "kelly": 0.0014,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 64-65°F on October 24?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0325,
       "ev": 64.0,
       "kelly": 0.008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 66-67°F on October 24?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.175,
       "ev": 349.0,
       "kelly": 0.0436,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 68-69°F on October 24?",
@@ -118,7 +126,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 5486.0,
+      "volume": 5488.0,
       "spread": 0.0,
       "yes_token_id": "87650809730809126704401537866809774814758417668420609821195878601338660789655",
       "no_token_id": "46052692140960511409531394949295281420462111412706759504855103043026285889092",
@@ -129,7 +137,9 @@
       "belief_prob": 0.3127,
       "ev": 624.4,
       "kelly": 0.0781,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 70-71°F on October 24?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.4484,
       "ev": -0.5514,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 72-73°F on October 24?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 3335.0,
+      "volume": 3336.0,
       "spread": 0.0,
       "yes_token_id": "78962325049546210375408733899250698130943546168368165530414308344055449217247",
       "no_token_id": "34583681031297378728964690789369200836981226197304966110053030175768629539694",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0169,
       "ev": 32.8,
       "kelly": 0.0041,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 74-75°F on October 24?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0035,
       "ev": 6.0,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 76-77°F on October 24?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.001,
       "ev": 1.0,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be between 78-79°F on October 24?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0004,
       "ev": -0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Chicago be 80°F or higher on October 24?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0006,
       "ev": 0.2,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -275,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }

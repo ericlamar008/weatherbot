@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 20.7,
+  "hours_left": 20.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T23:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -42,7 +42,9 @@
       "belief_prob": 0.0099,
       "ev": 18.8,
       "kelly": 0.0024,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 8°C on October 25?",
@@ -64,7 +66,9 @@
       "belief_prob": 0.0138,
       "ev": 26.6,
       "kelly": 0.0033,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 9°C on October 25?",
@@ -86,7 +90,9 @@
       "belief_prob": 0.0361,
       "ev": 71.2,
       "kelly": 0.0089,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 10°C on October 25?",
@@ -97,7 +103,7 @@
       ],
       "yes_price": 0.0065,
       "no_price": 0.9935,
-      "volume": 1523.0,
+      "volume": 1533.0,
       "spread": 0.0,
       "yes_token_id": "88707168400757001977472513183805533148132539887141489973652386163645538773671",
       "no_token_id": "3836978127522191764035821821464471465451906717243581633572992007891014563308",
@@ -108,7 +114,9 @@
       "belief_prob": 0.0895,
       "ev": 12.7692,
       "kelly": 0.0209,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 11°C on October 25?",
@@ -117,20 +125,22 @@
         11.0,
         11.0
       ],
-      "yes_price": 0.0325,
-      "no_price": 0.965,
-      "volume": 2551.0,
+      "yes_price": 0.038,
+      "no_price": 0.962,
+      "volume": 2612.0,
       "spread": 0.0,
       "yes_token_id": "59581800089294200662422230391664646272474327914314744027046932023403720801259",
       "no_token_id": "104920881437344131178392113909396095504277725426379314079360168560788579301686",
       "model_prob": 0.2415,
       "side": "YES",
-      "ask": 0.035,
-      "market_prob": 0.035,
-      "belief_prob": 0.1683,
-      "ev": 3.8343,
-      "kelly": 0.0348,
-      "sell_value": null
+      "ask": 0.038,
+      "market_prob": 0.038,
+      "belief_prob": 0.1703,
+      "ev": 3.4816,
+      "kelly": 0.0344,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0055
     },
     {
       "question": "Will the highest temperature in Munich be 12°C on October 25?",
@@ -139,20 +149,22 @@
         12.0,
         12.0
       ],
-      "yes_price": 0.155,
-      "no_price": 0.845,
-      "volume": 4458.0,
+      "yes_price": 0.205,
+      "no_price": 0.795,
+      "volume": 4535.0,
       "spread": 0.0,
       "yes_token_id": "87919576516859832531862726125201658720410572713011775328853365399087997526711",
       "no_token_id": "62716554428722236589684839373239890533984606868353549826216186231065410433718",
       "model_prob": 0.2589,
       "side": "YES",
-      "ask": 0.155,
-      "market_prob": 0.155,
-      "belief_prob": 0.2225,
-      "ev": 0.4355,
-      "kelly": 0.02,
-      "sell_value": null
+      "ask": 0.205,
+      "market_prob": 0.205,
+      "belief_prob": 0.24,
+      "ev": 0.1707,
+      "kelly": 0.011,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.05
     },
     {
       "question": "Will the highest temperature in Munich be 13°C on October 25?",
@@ -161,20 +173,22 @@
         13.0,
         13.0
       ],
-      "yes_price": 0.46,
-      "no_price": 0.535,
-      "volume": 4907.0,
+      "yes_price": 0.455,
+      "no_price": 0.545,
+      "volume": 5014.0,
       "spread": 0.0,
       "yes_token_id": "24344309859635714418280202759519027270593233913108070778615077293491361739718",
       "no_token_id": "39130500498133570654798725435547172885395947253962321260656481620530570519022",
       "model_prob": 0.1603,
       "side": "YES",
-      "ask": 0.465,
-      "market_prob": 0.465,
-      "belief_prob": 0.2652,
-      "ev": -0.426,
+      "ask": 0.455,
+      "market_prob": 0.455,
+      "belief_prob": 0.2634,
+      "ev": -0.4211,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Munich be 14°C on October 25?",
@@ -183,20 +197,22 @@
         14.0,
         14.0
       ],
-      "yes_price": 0.31,
-      "no_price": 0.705,
-      "volume": 4767.0,
+      "yes_price": 0.245,
+      "no_price": 0.755,
+      "volume": 4943.0,
       "spread": 0.0,
       "yes_token_id": "68209263932229435403399097972979426323657931184908687016584421939029174523075",
       "no_token_id": "102129935638499608812073707261825396464044317625342216809154318854462889994123",
       "model_prob": 0.0694,
       "side": "YES",
-      "ask": 0.295,
-      "market_prob": 0.295,
-      "belief_prob": 0.1536,
-      "ev": -0.4969,
+      "ask": 0.245,
+      "market_prob": 0.245,
+      "belief_prob": 0.1309,
+      "ev": -0.4657,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.065
     },
     {
       "question": "Will the highest temperature in Munich be 15°C on October 25?",
@@ -205,20 +221,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.074,
-      "no_price": 0.939,
-      "volume": 3002.0,
+      "yes_price": 0.052,
+      "no_price": 0.948,
+      "volume": 3347.0,
       "spread": 0.0,
       "yes_token_id": "28098722728198605899786497555883714971889922503482569487516290907196287366284",
       "no_token_id": "89384267808250764315588757089873955838735465314550967457860067557515741723192",
       "model_prob": 0.0264,
       "side": "YES",
-      "ask": 0.061,
-      "market_prob": 0.061,
-      "belief_prob": 0.0431,
-      "ev": -0.3689,
+      "ask": 0.052,
+      "market_prob": 0.052,
+      "belief_prob": 0.0354,
+      "ev": -0.3192,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.022
     },
     {
       "question": "Will the highest temperature in Munich be 16°C on October 25?",
@@ -228,19 +246,21 @@
         16.0
       ],
       "yes_price": 0.007,
-      "no_price": 0.9935,
-      "volume": 2245.0,
+      "no_price": 0.993,
+      "volume": 2254.0,
       "spread": 0.0,
       "yes_token_id": "2023957758258088628273919778188621539729994726341458178676727761937807809434",
       "no_token_id": "47115942518214824105353261658564953297631479528835075050397160861523947929545",
       "model_prob": 0.0102,
       "side": "YES",
-      "ask": 0.0065,
-      "market_prob": 0.0065,
+      "ask": 0.007,
+      "market_prob": 0.007,
       "belief_prob": 0.0091,
-      "ev": 0.3692,
-      "kelly": 0.0006,
-      "sell_value": null
+      "ev": 0.3,
+      "kelly": 0.0005,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Munich be 17°C or higher on October 25?",
@@ -250,19 +270,21 @@
         999.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9995,
-      "volume": 365.0,
+      "no_price": 0.998,
+      "volume": 611.0,
       "spread": 0.0,
       "yes_token_id": "27437435987332090955824613178765785898527179985569337064843854964154887188176",
       "no_token_id": "91540013825718965044282127854116463839185889907816815118210780145742302404455",
       "model_prob": 0.0081,
       "side": "YES",
-      "ask": 0.0005,
-      "market_prob": 0.0005,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.006,
-      "ev": 9.8,
-      "kelly": 0.0012,
-      "sell_value": null
+      "ev": 2.0,
+      "kelly": 0.001,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -276,5 +298,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T02:52:23.132906+00:00",
-  "last_lite_refresh": "2026-10-24T20:20:37.574561+00:00"
+  "last_lite_refresh": "2026-10-25T02:53:04.364686+00:00"
 }
