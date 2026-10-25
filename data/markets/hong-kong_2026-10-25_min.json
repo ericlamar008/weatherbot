@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T16:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -24,20 +24,20 @@
         20.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9965,
+      "no_price": 0.998,
       "volume": 146.0,
       "spread": 0.0,
       "yes_token_id": "81185304869327630746945695643368632994296986592462682583947031280375988673830",
       "no_token_id": "86405095274815596997455938328963946516299859066041689520863399624638006682714",
       "model_prob": 0.005,
       "side": "YES",
-      "ask": 0.0035,
-      "market_prob": 0.0035,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.004,
-      "ev": 0.2857,
-      "kelly": 0.0003,
+      "ev": 1.0,
+      "kelly": 0.0005,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -48,20 +48,20 @@
         21.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.996,
+      "no_price": 0.998,
       "volume": 629.0,
       "spread": 0.0,
       "yes_token_id": "60830477308817787494913013928325692304293168441739671937744165614797662539307",
       "no_token_id": "63146861113483900227815551781009285862848357244063200356623124443269865905523",
       "model_prob": 0.0184,
       "side": "YES",
-      "ask": 0.004,
-      "market_prob": 0.004,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.0127,
-      "ev": 2.35,
-      "kelly": 0.0024,
+      "ev": 5.35,
+      "kelly": 0.0027,
       "sell_value": null,
-      "model_prob_change": -0.0005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -72,20 +72,20 @@
         22.0
       ],
       "yes_price": 0.0015,
-      "no_price": 0.996,
+      "no_price": 0.9985,
       "volume": 1776.0,
       "spread": 0.0,
       "yes_token_id": "85959246474188782520510040961795235291250853025624561906550639994372751330211",
       "no_token_id": "40293200884038465797622622557470968075386440252592618285412673662776542664707",
       "model_prob": 0.1147,
       "side": "YES",
-      "ask": 0.004,
-      "market_prob": 0.004,
+      "ask": 0.0015,
+      "market_prob": 0.0015,
       "belief_prob": 0.0751,
-      "ev": 18.0,
-      "kelly": 0.0181,
+      "ev": 49.0667,
+      "kelly": 0.0184,
       "sell_value": null,
-      "model_prob_change": 0.0106,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -96,20 +96,20 @@
         23.0
       ],
       "yes_price": 0.003,
-      "no_price": 0.9955,
-      "volume": 4435.0,
+      "no_price": 0.997,
+      "volume": 4495.0,
       "spread": 0.0,
       "yes_token_id": "86751126059263794774003129332074135920739528485539261156153709912883644089491",
       "no_token_id": "22480621154772118677664465114933174765468310315326227323344533267343557972013",
       "model_prob": 0.4308,
       "side": "YES",
-      "ask": 0.0045,
-      "market_prob": 0.0045,
+      "ask": 0.003,
+      "market_prob": 0.003,
       "belief_prob": 0.2811,
-      "ev": 61.5778,
-      "kelly": 0.0696,
+      "ev": 92.7,
+      "kelly": 0.0697,
       "sell_value": null,
-      "model_prob_change": 0.0496,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -120,21 +120,21 @@
         24.0
       ],
       "yes_price": 0.9975,
-      "no_price": 0.0055,
-      "volume": 5472.0,
+      "no_price": 0.0025,
+      "volume": 5544.0,
       "spread": 0.0,
       "yes_token_id": "75552854287006779626237415494105130038680520299629768014548801040901923302207",
       "no_token_id": "69323493056033727284897090352266767572061345824849906934643576372249383920499",
       "model_prob": 0.3445,
       "side": "YES",
-      "ask": 0.9945,
-      "market_prob": 0.9945,
+      "ask": 0.9975,
+      "market_prob": 0.9975,
       "belief_prob": 0.5731,
-      "ev": -0.4248,
+      "ev": -0.4255,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0251,
-      "yes_price_change": 0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Hong Kong be 25°C on October 25?",
@@ -157,7 +157,7 @@
       "ev": 92.2,
       "kelly": 0.0115,
       "sell_value": null,
-      "model_prob_change": -0.0258,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -181,7 +181,7 @@
       "ev": 14.6,
       "kelly": 0.0018,
       "sell_value": null,
-      "model_prob_change": -0.006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 2.6,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": -0.0013,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": -0.4,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -325,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T14:07:25.571247+00:00",
-  "last_lite_refresh": "2026-10-25T08:20:39.379686+00:00"
+  "last_lite_refresh": "2026-10-25T14:20:40.892932+00:00"
 }

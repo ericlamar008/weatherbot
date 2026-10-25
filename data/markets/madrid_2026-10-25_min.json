@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 14.7,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T23:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -24,21 +24,21 @@
         3.0
       ],
       "yes_price": 0.008,
-      "no_price": 0.995,
-      "volume": 670.0,
+      "no_price": 0.992,
+      "volume": 758.0,
       "spread": 0.0,
       "yes_token_id": "6842327929180451231690190137222932261510606878409971864491666948345880689818",
       "no_token_id": "4509037108125880249725899343188612446312047160640547050863932466526582195595",
       "model_prob": 0.0879,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
+      "ask": 0.008,
+      "market_prob": 0.008,
       "belief_prob": 0.0599,
-      "ev": 10.78,
-      "kelly": 0.0135,
+      "ev": 6.4875,
+      "kelly": 0.0131,
       "sell_value": null,
-      "model_prob_change": 0.0189,
-      "yes_price_change": -0.0025
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 4°C on October 25?",
@@ -49,7 +49,7 @@
       ],
       "yes_price": 0.005,
       "no_price": 0.995,
-      "volume": 1921.0,
+      "volume": 1927.0,
       "spread": 0.0,
       "yes_token_id": "43200702825693533898020385709673241540907379426063112357305205627893770751902",
       "no_token_id": "18816168887192797331001575353682176614972185267124223658417973697145955447320",
@@ -61,8 +61,8 @@
       "ev": 9.72,
       "kelly": 0.0122,
       "sell_value": null,
-      "model_prob_change": 0.0084,
-      "yes_price_change": -0.011
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 5°C on October 25?",
@@ -72,21 +72,21 @@
         5.0
       ],
       "yes_price": 0.9915,
-      "no_price": 0.009,
-      "volume": 2303.0,
+      "no_price": 0.0085,
+      "volume": 2407.0,
       "spread": 0.0,
       "yes_token_id": "39486041911292323104080098958266330046862295603660005893883415063952788688355",
       "no_token_id": "56535528986985823048187411549153088751652986152742768163804753310346045362219",
       "model_prob": 0.1335,
       "side": "YES",
-      "ask": 0.991,
-      "market_prob": 0.991,
+      "ask": 0.9915,
+      "market_prob": 0.9915,
       "belief_prob": 0.4338,
       "ev": -0.5625,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.003,
-      "yes_price_change": 0.0055
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 6°C on October 25?",
@@ -96,20 +96,20 @@
         6.0
       ],
       "yes_price": 0.0045,
-      "no_price": 0.9975,
-      "volume": 2316.0,
+      "no_price": 0.9955,
+      "volume": 2513.0,
       "spread": 0.0,
       "yes_token_id": "105976291454586411017879388473620575869533842350254526597694943512254195099398",
       "no_token_id": "101779049792804050840237134000952129424569125665905923361916972618096703695378",
       "model_prob": 0.1815,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.0045,
+      "market_prob": 0.0045,
       "belief_prob": 0.1195,
-      "ev": 46.52,
-      "kelly": 0.0291,
+      "ev": 25.5556,
+      "kelly": 0.0289,
       "sell_value": null,
-      "model_prob_change": -0.0098,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -121,7 +121,7 @@
       ],
       "yes_price": 0.0025,
       "no_price": 0.9975,
-      "volume": 2352.0,
+      "volume": 2392.0,
       "spread": 0.0,
       "yes_token_id": "24234857253775027198181115471141352749201199590789237812533642043463122887455",
       "no_token_id": "109187444773928211831833650945113656512505806027204715497310514310064276004725",
@@ -133,7 +133,7 @@
       "ev": 47.8,
       "kelly": 0.0299,
       "sell_value": null,
-      "model_prob_change": -0.0173,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -157,7 +157,7 @@
       "ev": 186.2,
       "kelly": 0.0233,
       "sell_value": null,
-      "model_prob_change": -0.0109,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -181,7 +181,7 @@
       "ev": 114.2,
       "kelly": 0.0143,
       "sell_value": null,
-      "model_prob_change": -0.0019,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 61.2,
       "kelly": 0.0077,
       "sell_value": null,
-      "model_prob_change": 0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 30.8,
       "kelly": 0.0039,
       "sell_value": null,
-      "model_prob_change": 0.0025,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 15.4,
       "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": 0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 18.6,
       "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": 0.0032,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -292,5 +292,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T14:07:25.571247+00:00",
-  "last_lite_refresh": "2026-10-25T08:20:39.379686+00:00"
+  "last_lite_refresh": "2026-10-25T14:20:40.892932+00:00"
 }

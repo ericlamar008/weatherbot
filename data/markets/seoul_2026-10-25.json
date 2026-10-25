@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T15:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -30,7 +30,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 2326.0,
+      "volume": 4326.0,
       "spread": 0.0,
       "yes_token_id": "19881906161471964944072268978295262104424329538034338888595182346776903248135",
       "no_token_id": "99606289198434289395312321043094770179875810109858457987094323944704349764675",
@@ -42,7 +42,7 @@
       "ev": 1.2,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -54,7 +54,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4365.0,
+      "volume": 6365.0,
       "spread": 0.0,
       "yes_token_id": "67541248572383485242500965749622942304999036228972135593717899519693139252366",
       "no_token_id": "12209074665900754408092558453380609011430548165256649426841579749066849500694",
@@ -66,7 +66,7 @@
       "ev": 3.2,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.0004,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -78,7 +78,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 5005.0,
+      "volume": 5141.0,
       "spread": 0.0,
       "yes_token_id": "36549409704286959596255230004239467672257429689485666924466274229354645688177",
       "no_token_id": "3004917598661831635542144148299625883394848688431230051789204931675442727207",
@@ -90,7 +90,7 @@
       "ev": 15.4,
       "kelly": 0.0019,
       "sell_value": null,
-      "model_prob_change": -0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -100,22 +100,22 @@
         21.0,
         21.0
       ],
-      "yes_price": 0.995,
-      "no_price": 0.005,
-      "volume": 11141.0,
+      "yes_price": 0.9955,
+      "no_price": 0.0045,
+      "volume": 18685.0,
       "spread": 0.0,
       "yes_token_id": "45316179763671016729237717123789374853492352751615974757107545541736929893133",
       "no_token_id": "38950453977619466450462127879088368277658276935236202450354522293186562838885",
       "model_prob": 0.0602,
       "side": "YES",
-      "ask": 0.995,
-      "market_prob": 0.995,
-      "belief_prob": 0.3874,
-      "ev": -0.6107,
+      "ask": 0.9955,
+      "market_prob": 0.9955,
+      "belief_prob": 0.3876,
+      "ev": -0.6106,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0094,
-      "yes_price_change": 0.03
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 22°C on October 25?",
@@ -125,21 +125,21 @@
         22.0
       ],
       "yes_price": 0.0025,
-      "no_price": 0.9965,
-      "volume": 6797.0,
+      "no_price": 0.9975,
+      "volume": 10190.0,
       "spread": 0.0,
       "yes_token_id": "53373950173343957394301525064910985579155019731368847012122893632241483258498",
       "no_token_id": "51590846341744524995917124256875384801603551566287253699099389036811055772889",
       "model_prob": 0.2576,
       "side": "YES",
-      "ask": 0.0035,
-      "market_prob": 0.0035,
+      "ask": 0.0025,
+      "market_prob": 0.0025,
       "belief_prob": 0.1683,
-      "ev": 47.2,
-      "kelly": 0.0414,
+      "ev": 66.32,
+      "kelly": 0.0416,
       "sell_value": null,
-      "model_prob_change": -0.0264,
-      "yes_price_change": -0.021
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 23°C on October 25?",
@@ -149,21 +149,21 @@
         23.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.997,
-      "volume": 11189.0,
+      "no_price": 0.9995,
+      "volume": 13203.0,
       "spread": 0.0,
       "yes_token_id": "112190106201408830121434755816262782322517028544878324586323693449610650064443",
       "no_token_id": "54239122314322992842086488276479684000794621291543476025544879902420403888159",
       "model_prob": 0.4279,
       "side": "YES",
-      "ask": 0.003,
-      "market_prob": 0.003,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.2783,
-      "ev": 92.0667,
-      "kelly": 0.0693,
+      "ev": 555.6,
+      "kelly": 0.0695,
       "sell_value": null,
-      "model_prob_change": 0.0096,
-      "yes_price_change": -0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Seoul (Incheon) be 24°C on October 25?",
@@ -174,7 +174,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 8650.0,
+      "volume": 10931.0,
       "spread": 0.0,
       "yes_token_id": "47839371680956451557690036041232666285720330595178692225917067677918133938875",
       "no_token_id": "12538003064843969314374129103684907572573511327272728830705889426096158858189",
@@ -186,7 +186,7 @@
       "ev": 241.6,
       "kelly": 0.0302,
       "sell_value": null,
-      "model_prob_change": 0.0218,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -197,20 +197,20 @@
         25.0
       ],
       "yes_price": 0.004,
-      "no_price": 0.9995,
-      "volume": 4731.0,
+      "no_price": 0.996,
+      "volume": 4982.0,
       "spread": 0.0,
       "yes_token_id": "70743995317439103667063126476629101442576632868602591398731143385725444300717",
       "no_token_id": "95594710862073854201687549746359034218211914843517357912439619587267023139058",
       "model_prob": 0.0394,
       "side": "YES",
-      "ask": 0.0005,
-      "market_prob": 0.0005,
+      "ask": 0.004,
+      "market_prob": 0.004,
       "belief_prob": 0.027,
-      "ev": 50.6,
-      "kelly": 0.0063,
+      "ev": 5.75,
+      "kelly": 0.0058,
       "sell_value": null,
-      "model_prob_change": 0.0053,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -234,7 +234,7 @@
       "ev": 10.2,
       "kelly": 0.0013,
       "sell_value": null,
-      "model_prob_change": 0.001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -246,7 +246,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1101.0,
+      "volume": 1743.0,
       "spread": 0.0,
       "yes_token_id": "62273150993786485406924905515376617485664777635617543206586412445305058445877",
       "no_token_id": "105960114789604490929873650899476366888787718993191300424666451292342874812344",
@@ -258,7 +258,7 @@
       "ev": 2.2,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -282,7 +282,7 @@
       "ev": 1.0,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -297,5 +297,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T14:07:25.571247+00:00",
-  "last_lite_refresh": "2026-10-25T08:20:39.379686+00:00"
+  "last_lite_refresh": "2026-10-25T14:20:40.892932+00:00"
 }

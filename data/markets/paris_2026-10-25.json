@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 14.7,
+  "hours_left": 8.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T23:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -43,7 +43,7 @@
       "ev": 2.6,
       "kelly": 0.0003,
       "sell_value": null,
-      "model_prob_change": 0.0007,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -67,7 +67,7 @@
       "ev": 5.0,
       "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.0009,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -91,7 +91,7 @@
       "ev": 18.8,
       "kelly": 0.0024,
       "sell_value": null,
-      "model_prob_change": 0.0018,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -115,7 +115,7 @@
       "ev": 75.4,
       "kelly": 0.0094,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -139,7 +139,7 @@
       "ev": 266.8,
       "kelly": 0.0334,
       "sell_value": null,
-      "model_prob_change": -0.027,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -149,22 +149,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.977,
-      "no_price": 0.04,
-      "volume": 5729.0,
+      "yes_price": 0.994,
+      "no_price": 0.006,
+      "volume": 6787.0,
       "spread": 0.0,
       "yes_token_id": "56189430559763054196021425910915046457291462379524961374149108499306960440233",
       "no_token_id": "86189660818444890996195990942963069343211292582672750901767146970460285236886",
       "model_prob": 0.3743,
       "side": "YES",
-      "ask": 0.96,
-      "market_prob": 0.96,
-      "belief_prob": 0.5852,
-      "ev": -0.3966,
+      "ask": 0.994,
+      "market_prob": 0.994,
+      "belief_prob": 0.5912,
+      "ev": -0.4052,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0353,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.017
     },
     {
       "question": "Will the highest temperature in Paris be 17°C on October 25?",
@@ -173,22 +173,22 @@
         17.0,
         17.0
       ],
-      "yes_price": 0.0125,
-      "no_price": 0.96,
-      "volume": 9016.0,
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 10057.0,
       "spread": 0.0,
       "yes_token_id": "7076977775919140278330892268980561328683736761130985356354768841222362372327",
       "no_token_id": "32533425027240209799828600442002997413071251374015225655961416084870839283741",
       "model_prob": 0.2405,
       "side": "YES",
-      "ask": 0.04,
-      "market_prob": 0.04,
-      "belief_prob": 0.1607,
-      "ev": 3.2575,
-      "kelly": 0.0339,
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.1586,
+      "ev": 23.4,
+      "kelly": 0.0383,
       "sell_value": null,
-      "model_prob_change": 0.028,
-      "yes_price_change": -0.005
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.006
     },
     {
       "question": "Will the highest temperature in Paris be 18°C on October 25?",
@@ -197,22 +197,22 @@
         18.0,
         18.0
       ],
-      "yes_price": 0.0045,
-      "no_price": 0.9985,
-      "volume": 3588.0,
+      "yes_price": 0.001,
+      "no_price": 0.999,
+      "volume": 4374.0,
       "spread": 0.0,
       "yes_token_id": "25029037472582209728735542834063141047580598442109525347108142374094953965598",
       "no_token_id": "90878091465238324137545522190911740655456732777615493090943688292491497270553",
       "model_prob": 0.0729,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
-      "belief_prob": 0.049,
-      "ev": 30.9333,
-      "kelly": 0.0116,
+      "ask": 0.001,
+      "market_prob": 0.001,
+      "belief_prob": 0.0477,
+      "ev": 46.7,
+      "kelly": 0.0117,
       "sell_value": null,
-      "model_prob_change": 0.0211,
-      "yes_price_change": -0.001
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0035
     },
     {
       "question": "Will the highest temperature in Paris be 19°C on October 25?",
@@ -223,7 +223,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1674.0,
+      "volume": 2488.0,
       "spread": 0.0,
       "yes_token_id": "104412731141914207997387977266692565444368522579284782644474249207765289268068",
       "no_token_id": "68071559494872501232390398259463576003444282301558608987015299691858998738882",
@@ -235,7 +235,7 @@
       "ev": 23.2,
       "kelly": 0.0029,
       "sell_value": null,
-      "model_prob_change": 0.0067,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -259,7 +259,7 @@
       "ev": 6.2,
       "kelly": 0.0008,
       "sell_value": null,
-      "model_prob_change": 0.0021,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -283,7 +283,7 @@
       "ev": 3.2,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": 0.0012,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -331,5 +331,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T14:07:25.571247+00:00",
-  "last_lite_refresh": "2026-10-25T08:20:39.379686+00:00"
+  "last_lite_refresh": "2026-10-25T14:20:40.892932+00:00"
 }

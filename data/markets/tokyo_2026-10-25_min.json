@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-25T15:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -37,7 +37,7 @@
       "ev": 25.8,
       "kelly": 0.0032,
       "sell_value": null,
-      "model_prob_change": 0.0015,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -48,21 +48,21 @@
         14.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.93,
-      "volume": 75.0,
+      "no_price": 0.9995,
+      "volume": 155.0,
       "spread": 0.0,
       "yes_token_id": "49215897151435991067342609138391747273882467354304488229686871447296199233117",
       "no_token_id": "16344178553022035371061163209349359665963423297797316928938545566058899668095",
       "model_prob": 0.0276,
       "side": "YES",
-      "ask": 0.07,
-      "market_prob": 0.07,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0181,
-      "ev": -0.3943,
-      "kelly": 0.0,
+      "ev": 35.2,
+      "kelly": 0.0044,
       "sell_value": null,
-      "model_prob_change": 0.0019,
-      "yes_price_change": 0.0695
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 15°C on October 25?",
@@ -85,8 +85,8 @@
       "ev": 0.5595,
       "kelly": 0.0054,
       "sell_value": null,
-      "model_prob_change": 0.0039,
-      "yes_price_change": 0.0365
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 16°C on October 25?",
@@ -109,7 +109,7 @@
       "ev": 3.3959,
       "kelly": 0.0213,
       "sell_value": null,
-      "model_prob_change": 0.0051,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -120,21 +120,21 @@
         17.0
       ],
       "yes_price": 0.003,
-      "no_price": 0.7825,
-      "volume": 1727.0,
+      "no_price": 0.997,
+      "volume": 2072.0,
       "spread": 0.0,
       "yes_token_id": "39962847412561343333115816167165264933053444953953809920508450030397978892669",
       "no_token_id": "44526626521348166675313717317980551960512654350722029978935763440150501887309",
       "model_prob": 0.2439,
       "side": "YES",
-      "ask": 0.2175,
-      "market_prob": 0.2175,
+      "ask": 0.003,
+      "market_prob": 0.003,
       "belief_prob": 0.1596,
-      "ev": 0.0791,
-      "kelly": 0.0055,
+      "ev": 52.2,
+      "kelly": 0.0393,
       "sell_value": null,
-      "model_prob_change": 0.0007,
-      "yes_price_change": -0.0875
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 18°C on October 25?",
@@ -144,21 +144,21 @@
         18.0
       ],
       "yes_price": 0.997,
-      "no_price": 0.0425,
-      "volume": 2052.0,
+      "no_price": 0.003,
+      "volume": 2207.0,
       "spread": 0.0,
       "yes_token_id": "97528946993406350815078901264196790637398366049463823785362138137949848013870",
       "no_token_id": "80645680450061962462208793523716389535497500616338486358897929238613497969892",
       "model_prob": 0.2375,
       "side": "YES",
-      "ask": 0.9575,
-      "market_prob": 0.9575,
+      "ask": 0.997,
+      "market_prob": 0.997,
       "belief_prob": 0.5033,
-      "ev": -0.4888,
+      "ev": -0.4952,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0057,
-      "yes_price_change": 0.0005
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Tokyo be 19°C on October 25?",
@@ -181,7 +181,7 @@
       "ev": 184.4,
       "kelly": 0.0231,
       "sell_value": null,
-      "model_prob_change": -0.005,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 81.4,
       "kelly": 0.0102,
       "sell_value": null,
-      "model_prob_change": -0.0019,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 32.0,
       "kelly": 0.004,
       "sell_value": null,
-      "model_prob_change": -0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 12.4,
       "kelly": 0.0016,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 10.6,
       "kelly": 0.0013,
       "sell_value": null,
-      "model_prob_change": 0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -325,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-25T14:07:25.571247+00:00",
-  "last_lite_refresh": "2026-10-25T08:20:39.379686+00:00"
+  "last_lite_refresh": "2026-10-25T14:20:40.892932+00:00"
 }
