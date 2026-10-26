@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 8.7,
+  "hours_left": 2.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T23:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
@@ -24,20 +24,20 @@
         3.0
       ],
       "yes_price": 0.003,
-      "no_price": 0.991,
+      "no_price": 0.997,
       "volume": 44.0,
       "spread": 0.0,
       "yes_token_id": "107580662870231321864142050922372602042695440197155365345960712321754951438106",
       "no_token_id": "74853508472061700145989768887852945555546719452400798336917913631784719865186",
       "model_prob": 0.004,
       "side": "YES",
-      "ask": 0.009,
-      "market_prob": 0.009,
+      "ask": 0.003,
+      "market_prob": 0.003,
       "belief_prob": 0.0037,
-      "ev": -0.3667,
-      "kelly": 0.0,
+      "ev": 0.2333,
+      "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": 0.0017,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -47,22 +47,22 @@
         4.0,
         4.0
       ],
-      "yes_price": 0.0035,
-      "no_price": 0.999,
+      "yes_price": 0.004,
+      "no_price": 0.996,
       "volume": 137.0,
       "spread": 0.0,
       "yes_token_id": "74391967385684361842414627160887796777636509990796206496415560820610019246666",
       "no_token_id": "80677521588993242469567658107353947884839561223243484574901819959800428010733",
       "model_prob": 0.0078,
       "side": "YES",
-      "ask": 0.001,
-      "market_prob": 0.001,
-      "belief_prob": 0.0063,
-      "ev": 4.4,
-      "kelly": 0.0011,
+      "ask": 0.004,
+      "market_prob": 0.004,
+      "belief_prob": 0.0065,
+      "ev": 0.625,
+      "kelly": 0.0006,
       "sell_value": null,
-      "model_prob_change": 0.0038,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0005
     },
     {
       "question": "Will the lowest temperature in Paris be 5°C on October 26?",
@@ -85,7 +85,7 @@
       "ev": 9.0,
       "kelly": 0.0045,
       "sell_value": null,
-      "model_prob_change": 0.0156,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -95,22 +95,22 @@
         6.0,
         6.0
       ],
-      "yes_price": 0.0005,
-      "no_price": 0.9985,
-      "volume": 312.0,
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 348.0,
       "spread": 0.0,
       "yes_token_id": "108227571253090754149015863767118395426038186265730903154744613148360084527559",
       "no_token_id": "14662843033241085444129344796292702943603042715374825647308548312404840946804",
       "model_prob": 0.1168,
       "side": "YES",
-      "ask": 0.0015,
-      "market_prob": 0.0015,
-      "belief_prob": 0.0761,
-      "ev": 49.9333,
-      "kelly": 0.0188,
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.0768,
+      "ev": 29.72,
+      "kelly": 0.0186,
       "sell_value": null,
-      "model_prob_change": 0.0597,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.002
     },
     {
       "question": "Will the lowest temperature in Paris be 7°C on October 26?",
@@ -120,20 +120,20 @@
         7.0
       ],
       "yes_price": 0.997,
-      "no_price": 0.013,
-      "volume": 1972.0,
+      "no_price": 0.003,
+      "volume": 2366.0,
       "spread": 0.0,
       "yes_token_id": "92655162808205960431837483311220438682498430863657010946915927322113574394415",
       "no_token_id": "111943446322568974402926322410778266032304743705339198704436952036223385349579",
       "model_prob": 0.3178,
       "side": "YES",
-      "ask": 0.987,
-      "market_prob": 0.987,
+      "ask": 0.997,
+      "market_prob": 0.997,
       "belief_prob": 0.5555,
-      "ev": -0.4407,
+      "ev": -0.4428,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.1103,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -157,7 +157,7 @@
       "ev": 440.4,
       "kelly": 0.0551,
       "sell_value": null,
-      "model_prob_change": -0.0428,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -181,7 +181,7 @@
       "ev": 176.0,
       "kelly": 0.022,
       "sell_value": null,
-      "model_prob_change": -0.1031,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -205,7 +205,7 @@
       "ev": 44.8,
       "kelly": 0.0056,
       "sell_value": null,
-      "model_prob_change": -0.0345,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -229,7 +229,7 @@
       "ev": 11.2,
       "kelly": 0.0014,
       "sell_value": null,
-      "model_prob_change": -0.008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 3.0,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.0019,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 1.6,
       "kelly": 0.0002,
       "sell_value": null,
-      "model_prob_change": -0.0008,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -325,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-26T20:07:24.692135+00:00",
-  "last_lite_refresh": "2026-10-26T14:20:42.752928+00:00"
+  "last_lite_refresh": "2026-10-26T20:20:39.093911+00:00"
 }
