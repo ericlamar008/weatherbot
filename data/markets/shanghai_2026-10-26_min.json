@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 7.7,
+  "hours_left": 1.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T16:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
@@ -23,22 +23,22 @@
         -999.0,
         14.0
       ],
-      "yes_price": 0.02,
-      "no_price": 0.975,
+      "yes_price": 0.0135,
+      "no_price": 0.9865,
       "volume": 366.0,
       "spread": 0.0,
       "yes_token_id": "72724700970241629186549649688188119128606964472635278068546621930564681176905",
       "no_token_id": "79224038152588568897859970606690981136983836913652091540176220548630963298293",
       "model_prob": 0.0059,
       "side": "YES",
-      "ask": 0.025,
-      "market_prob": 0.025,
-      "belief_prob": 0.0108,
-      "ev": -0.496,
+      "ask": 0.0135,
+      "market_prob": 0.0135,
+      "belief_prob": 0.0086,
+      "ev": -0.363,
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": 0.0
+      "yes_price_change": -0.0065
     },
     {
       "question": "Will the lowest temperature in Shanghai be 15°C on October 26?",
@@ -47,22 +47,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.0185,
-      "no_price": 0.98,
-      "volume": 463.0,
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 468.0,
       "spread": 0.0,
       "yes_token_id": "115612829419948378896785397137087994435983523950649521129925059224502351722639",
       "no_token_id": "54313883414722824270368144851237771247397389416429768985023555697459369075940",
       "model_prob": 0.0272,
       "side": "YES",
-      "ask": 0.02,
-      "market_prob": 0.02,
-      "belief_prob": 0.0242,
-      "ev": 0.235,
-      "kelly": 0.0012,
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0231,
+      "ev": 0.4903,
+      "kelly": 0.0019,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": -0.0005
+      "yes_price_change": -0.003
     },
     {
       "question": "Will the lowest temperature in Shanghai be 16°C on October 26?",
@@ -71,22 +71,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.97,
-      "no_price": 0.0455,
-      "volume": 3571.0,
+      "yes_price": 0.9645,
+      "no_price": 0.0355,
+      "volume": 3586.0,
       "spread": 0.0,
       "yes_token_id": "90486528143507286706748752606116578640762292880889240568468738615114692845948",
       "no_token_id": "108194412753990658092636832466134585106849006338516017477964159199763493717518",
       "model_prob": 0.1914,
       "side": "YES",
-      "ask": 0.9545,
-      "market_prob": 0.9545,
-      "belief_prob": 0.4639,
-      "ev": -0.5196,
+      "ask": 0.9645,
+      "market_prob": 0.9645,
+      "belief_prob": 0.462,
+      "ev": -0.521,
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": 0.002
+      "yes_price_change": -0.0055
     },
     {
       "question": "Will the lowest temperature in Shanghai be 17°C on October 26?",
@@ -110,7 +110,7 @@
       "kelly": 0.0841,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": -0.0005
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Shanghai be 18°C on October 26?",
@@ -254,7 +254,7 @@
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": -0.001
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Shanghai be 24°C or higher on October 26?",
@@ -264,21 +264,21 @@
         999.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.999,
-      "volume": 3086.0,
+      "no_price": 0.9995,
+      "volume": 3143.0,
       "spread": 0.0,
       "yes_token_id": "64618023532574194876715335424469610998013967641158777483280875363263521737073",
       "no_token_id": "40934879437563283454676572587597763560332139138851702540533752289170649188629",
       "model_prob": 0.0001,
       "side": "YES",
-      "ask": 0.001,
-      "market_prob": 0.001,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0002,
       "ev": -0.6,
       "kelly": 0.0,
       "sell_value": null,
       "model_prob_change": 0.0,
-      "yes_price_change": -0.001
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -292,5 +292,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-26T14:07:25.376184+00:00",
-  "last_lite_refresh": "2026-10-26T08:20:39.641292+00:00"
+  "last_lite_refresh": "2026-10-26T14:20:42.752928+00:00"
 }

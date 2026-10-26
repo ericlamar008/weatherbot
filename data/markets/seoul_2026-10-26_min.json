@@ -7,14 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T15:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
   "last_scan": "2026-10-26T02:20:37.517435+00:00",
   "horizon_days": 0,
   "forecast_mean": 14.49,
-  "sigma": 0.71,
+  "sigma": 0.709,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 9°C or below on October 26?",
@@ -37,7 +37,7 @@
       "ev": -0.2,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -61,7 +61,7 @@
       "ev": 0.4,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": -0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -77,7 +77,7 @@
       "spread": 0.0,
       "yes_token_id": "74976778772795198787928802523598329787721731519909480406018066137940041638943",
       "no_token_id": "28197403683928926068303207976343622721628886850021413195038845704476475066220",
-      "model_prob": 0.003,
+      "model_prob": 0.0029,
       "side": "YES",
       "ask": 0.0005,
       "market_prob": 0.0005,
@@ -85,8 +85,8 @@
       "ev": 3.2,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": -0.0007,
-      "yes_price_change": -0.0215
+      "model_prob_change": -0.0001,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 12°C on October 26?",
@@ -96,20 +96,20 @@
         12.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9925,
-      "volume": 221.0,
+      "no_price": 0.9995,
+      "volume": 263.0,
       "spread": 0.0,
       "yes_token_id": "61505601684944921329956389779593969297505665365645457060694830753999137460481",
       "no_token_id": "1845488061900078665241402633527904988219358866579191779941863258179819700122",
       "model_prob": 0.0147,
       "side": "YES",
-      "ask": 0.0075,
-      "market_prob": 0.0075,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.0097,
-      "ev": 0.6267,
-      "kelly": 0.0012,
+      "ev": 18.4,
+      "kelly": 0.0023,
       "sell_value": null,
-      "model_prob_change": -0.0047,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -120,20 +120,20 @@
         13.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9725,
-      "volume": 303.0,
+      "no_price": 0.9995,
+      "volume": 447.0,
       "spread": 0.0,
       "yes_token_id": "106567882820971277713166908895510454338316484395835649421010456475622948186229",
       "no_token_id": "79717374005365397192446475065455141200195328569782268711887198035961087273788",
-      "model_prob": 0.0921,
+      "model_prob": 0.0919,
       "side": "YES",
-      "ask": 0.0275,
-      "market_prob": 0.0275,
-      "belief_prob": 0.06,
-      "ev": 1.5273,
-      "kelly": 0.0108,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0599,
+      "ev": 118.8,
+      "kelly": 0.0149,
       "sell_value": null,
-      "model_prob_change": -0.0289,
+      "model_prob_change": -0.0002,
       "yes_price_change": 0.0
     },
     {
@@ -144,20 +144,20 @@
         14.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.93,
-      "volume": 2669.0,
+      "no_price": 0.9995,
+      "volume": 3023.0,
       "spread": 0.0,
       "yes_token_id": "55754531472159992582942581109524406049999283838696311144134890141821825277896",
       "no_token_id": "61770645802574499463811222495115018847883295304359939740636303600798697741188",
-      "model_prob": 0.3943,
+      "model_prob": 0.3946,
       "side": "YES",
-      "ask": 0.07,
-      "market_prob": 0.07,
-      "belief_prob": 0.2565,
-      "ev": 3.0114,
-      "kelly": 0.0567,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2567,
+      "ev": 512.4,
+      "kelly": 0.0641,
       "sell_value": null,
-      "model_prob_change": -0.0446,
+      "model_prob_change": 0.0003,
       "yes_price_change": 0.0
     },
     {
@@ -167,22 +167,22 @@
         15.0,
         15.0
       ],
-      "yes_price": 0.0275,
-      "no_price": 0.655,
-      "volume": 3782.0,
+      "yes_price": 0.0055,
+      "no_price": 0.9945,
+      "volume": 3892.0,
       "spread": 0.0,
       "yes_token_id": "52933151360642462163967722803458250930537114763960887248797806749713002677471",
       "no_token_id": "108184139645677694105743973327882243816746648122236938477721315745426146735622",
-      "model_prob": 0.3876,
+      "model_prob": 0.3878,
       "side": "YES",
-      "ask": 0.345,
-      "market_prob": 0.345,
-      "belief_prob": 0.2616,
-      "ev": 0.0803,
-      "kelly": 0.0106,
+      "ask": 0.0055,
+      "market_prob": 0.0055,
+      "belief_prob": 0.254,
+      "ev": 45.1818,
+      "kelly": 0.0625,
       "sell_value": null,
-      "model_prob_change": 0.0542,
-      "yes_price_change": 0.0
+      "model_prob_change": 0.0002,
+      "yes_price_change": -0.022
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 16°C on October 26?",
@@ -191,22 +191,22 @@
         16.0,
         16.0
       ],
-      "yes_price": 0.973,
-      "no_price": 0.595,
-      "volume": 2415.0,
+      "yes_price": 0.9895,
+      "no_price": 0.0105,
+      "volume": 2791.0,
       "spread": 0.0,
       "yes_token_id": "88174847851415236093732677192367362075350361013395860387554163317952561676004",
       "no_token_id": "97373570531811422546209777684093369082453849216396003745484030680739577974041",
-      "model_prob": 0.0888,
+      "model_prob": 0.0886,
       "side": "YES",
-      "ask": 0.405,
-      "market_prob": 0.405,
-      "belief_prob": 0.3983,
-      "ev": -0.5074,
+      "ask": 0.9895,
+      "market_prob": 0.9895,
+      "belief_prob": 0.4039,
+      "ev": -0.5918,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0212,
-      "yes_price_change": 0.0
+      "model_prob_change": -0.0002,
+      "yes_price_change": 0.0165
     },
     {
       "question": "Will the lowest temperature in Seoul (Incheon) be 17°C on October 26?",
@@ -229,7 +229,7 @@
       "ev": 17.8,
       "kelly": 0.0022,
       "sell_value": null,
-      "model_prob_change": 0.0031,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -253,7 +253,7 @@
       "ev": 3.2,
       "kelly": 0.0004,
       "sell_value": null,
-      "model_prob_change": 0.0006,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -277,7 +277,7 @@
       "ev": 1.0,
       "kelly": 0.0001,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     }
   ],
@@ -292,5 +292,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-26T14:07:25.376184+00:00",
-  "last_lite_refresh": "2026-10-26T08:20:39.641292+00:00"
+  "last_lite_refresh": "2026-10-26T14:20:42.752928+00:00"
 }
