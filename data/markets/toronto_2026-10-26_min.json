@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 25.1,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T04:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
   "last_scan": "2026-10-26T02:20:37.517435+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
+  "last_lite_refresh": "2026-10-26T08:20:39.641292+00:00",
+  "forecast_mean": 7.42,
+  "sigma": 1.4,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Toronto be 12°C on October 26?",
+      "market_id": "6120372",
+      "range": [
+        12.0,
+        12.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "38023293468767508504265804680920621795963224398715938529152024665587849973970",
+      "no_token_id": "37604543565299533708554035849707728162129808056672361379392863008204534309946",
+      "model_prob": 0.5461,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.3551,
+      "ev": 709.2,
+      "kelly": 0.0887,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Toronto be 13°C or higher on October 26?",
+      "market_id": "6120373",
+      "range": [
+        13.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "61430078883157096437160718459382054294140287270574646008347941564496301911523",
+      "no_token_id": "17231112389872839346756563818565999689462055375144656013182291352019497257859",
+      "model_prob": 0.4539,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2952,
+      "ev": 589.4,
+      "kelly": 0.0737,
+      "sell_value": null
+    }
+  ]
 }
