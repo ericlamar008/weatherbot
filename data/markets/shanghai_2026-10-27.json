@@ -1,0 +1,326 @@
+{
+  "city": "shanghai",
+  "city_name": "Shanghai",
+  "date": "2026-10-27",
+  "unit": "C",
+  "status": "open",
+  "created_at": "2026-10-26T02:20:37.517435+00:00",
+  "committed_allocation": null,
+  "hours_left": 37.7,
+  "time_status": "local_day_open",
+  "local_day_end_utc": "2026-10-27T16:00:00+00:00",
+  "event_end_date": "2026-10-27T12:00:00Z",
+  "last_scan": "2026-10-26T02:20:37.517435+00:00",
+  "horizon_days": 1,
+  "forecast_mean": 20.64,
+  "sigma": 0.978,
+  "forecast_mean_shadow": 20.87,
+  "model_means_raw": {
+    "ecmwf": 20.33,
+    "gfs": 19.35,
+    "gem": 20.9
+  },
+  "full_distribution": [
+    {
+      "question": "Will the highest temperature in Shanghai be 16°C or below on October 27?",
+      "market_id": "6175168",
+      "range": [
+        -999.0,
+        16.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "54520971255637804375642542250274812594017016962636964149623980931297482247377",
+      "no_token_id": "17192347305402708631845450773768645464589298733310058241771839321664922160406",
+      "model_prob": 0.0041,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0028,
+      "ev": 4.6,
+      "kelly": 0.0006,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 17°C on October 27?",
+      "market_id": "6175169",
+      "range": [
+        17.0,
+        17.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "65763125605349505117345101408231004916302793948985552589644127382474084166531",
+      "no_token_id": "91608190284996063628768217489480445514633477853078940424349613141540224719985",
+      "model_prob": 0.0077,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0052,
+      "ev": 9.4,
+      "kelly": 0.0012,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 18°C on October 27?",
+      "market_id": "6175170",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 332.0,
+      "spread": 0.0,
+      "yes_token_id": "14699348388737954844864392899696246122196604356207433077678868514092750064528",
+      "no_token_id": "41657898272244947407665464798682263522799181625229318275471896588063414463554",
+      "model_prob": 0.0283,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0186,
+      "ev": 36.2,
+      "kelly": 0.0045,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 19°C on October 27?",
+      "market_id": "6175171",
+      "range": [
+        19.0,
+        19.0
+      ],
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "volume": 406.0,
+      "spread": 0.0,
+      "yes_token_id": "69874593928090784818513368010688209875489809110858011810001942918770398640667",
+      "no_token_id": "86911522242862054552059925404682888219440054702491989309881639174196718278038",
+      "model_prob": 0.108,
+      "side": "YES",
+      "ask": 0.0065,
+      "market_prob": 0.0065,
+      "belief_prob": 0.0725,
+      "ev": 10.1538,
+      "kelly": 0.0166,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 20°C on October 27?",
+      "market_id": "6175172",
+      "range": [
+        20.0,
+        20.0
+      ],
+      "yes_price": 0.19,
+      "no_price": 0.81,
+      "volume": 947.0,
+      "spread": 0.0,
+      "yes_token_id": "83287646560311836205567396697093290951117767529149942084129684338756680177357",
+      "no_token_id": "80053010390008667608806077830623929827967366792470937023363098822787203798109",
+      "model_prob": 0.2977,
+      "side": "YES",
+      "ask": 0.19,
+      "market_prob": 0.19,
+      "belief_prob": 0.26,
+      "ev": 0.3684,
+      "kelly": 0.0216,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 21°C on October 27?",
+      "market_id": "6175173",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "yes_price": 0.6,
+      "no_price": 0.4,
+      "volume": 1427.0,
+      "spread": 0.0,
+      "yes_token_id": "4146768744828544524917572068280301807566690121894899418875241131471953498942",
+      "no_token_id": "59872501648301996845115413975205390282226103457948136827696740905466747059802",
+      "model_prob": 0.3444,
+      "side": "YES",
+      "ask": 0.6,
+      "market_prob": 0.6,
+      "belief_prob": 0.4339,
+      "ev": -0.2768,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 22°C on October 27?",
+      "market_id": "6175174",
+      "range": [
+        22.0,
+        22.0
+      ],
+      "yes_price": 0.185,
+      "no_price": 0.815,
+      "volume": 1771.0,
+      "spread": 0.0,
+      "yes_token_id": "47993840068582527510506358351257689738824837775085708525542980313943219043730",
+      "no_token_id": "68267407595551904082752817807004261913598791481707196551188775787716478882848",
+      "model_prob": 0.1519,
+      "side": "YES",
+      "ask": 0.185,
+      "market_prob": 0.185,
+      "belief_prob": 0.1635,
+      "ev": -0.1162,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 23°C on October 27?",
+      "market_id": "6175175",
+      "range": [
+        23.0,
+        23.0
+      ],
+      "yes_price": 0.0155,
+      "no_price": 0.9845,
+      "volume": 479.0,
+      "spread": 0.0,
+      "yes_token_id": "103362818543572490038322693437553344999942793656534924437722207048876449524440",
+      "no_token_id": "111870548067671904057749000301572467861071178861473570028193696632722942515599",
+      "model_prob": 0.0414,
+      "side": "YES",
+      "ask": 0.0155,
+      "market_prob": 0.0155,
+      "belief_prob": 0.0323,
+      "ev": 1.0839,
+      "kelly": 0.0043,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 24°C on October 27?",
+      "market_id": "6175176",
+      "range": [
+        24.0,
+        24.0
+      ],
+      "yes_price": 0.002,
+      "no_price": 0.998,
+      "volume": 434.0,
+      "spread": 0.0,
+      "yes_token_id": "73155075706146300883243706814071029321731116782934146969228692303012474178153",
+      "no_token_id": "74064183514461050572335504262326667090674065099536588542946961086303661067049",
+      "model_prob": 0.011,
+      "side": "YES",
+      "ask": 0.002,
+      "market_prob": 0.002,
+      "belief_prob": 0.0078,
+      "ev": 2.9,
+      "kelly": 0.0015,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 25°C on October 27?",
+      "market_id": "6175177",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 160.0,
+      "spread": 0.0,
+      "yes_token_id": "55596986269435195196793395348544022049744117025910498716809765228766884190413",
+      "no_token_id": "41087226416370339691633382786562055625252089150721664695449311710012283344001",
+      "model_prob": 0.0033,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0023,
+      "ev": 3.6,
+      "kelly": 0.0005,
+      "sell_value": null
+    },
+    {
+      "question": "Will the highest temperature in Shanghai be 26°C or higher on October 27?",
+      "market_id": "6175178",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 30.0,
+      "spread": 0.0,
+      "yes_token_id": "27822691340782682585402923166547908549063086041151149168963474401805521543713",
+      "no_token_id": "102093230750317332645744583677592420674046519661806768739227277550941547296744",
+      "model_prob": 0.0021,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0015,
+      "ev": 2.0,
+      "kelly": 0.0003,
+      "sell_value": null
+    }
+  ],
+  "live_allocation": [
+    {
+      "market_id": "6175173",
+      "question": "Will the highest temperature in Shanghai be 21°C on October 27?",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "YES",
+      "price": 0.6,
+      "model_prob": 0.3444,
+      "ev": -0.2768,
+      "market_prob": 0.6,
+      "role": "main_signal",
+      "units": 30.0,
+      "sell_value": 0.59
+    },
+    {
+      "market_id": "6175173",
+      "question": "Will the highest temperature in Shanghai be 21°C on October 27? (NO)",
+      "range": [
+        21.0,
+        21.0
+      ],
+      "side": "NO",
+      "price": 0.4,
+      "model_prob": 0.6556,
+      "ev": 0.4153,
+      "market_prob": 0.4,
+      "role": "scenario_hedge",
+      "units": 13.33,
+      "sell_value": 0.39
+    },
+    {
+      "market_id": "6175178",
+      "question": "Will the highest temperature in Shanghai be 26°C or higher on October 27? (NO)",
+      "range": [
+        26.0,
+        999.0
+      ],
+      "side": "NO",
+      "price": 0.9995,
+      "model_prob": 0.9979,
+      "ev": -0.001,
+      "market_prob": 0.9995,
+      "role": "scenario_hedge",
+      "units": 10.0,
+      "sell_value": 0.999
+    }
+  ],
+  "total_allocated_units": 53.3,
+  "portfolio_score": -0.024744,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 6.68,
+  "worst_case_pnl_units": -20.0,
+  "success_probability": 0.4744,
+  "confidence": 0.1126,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
+}
