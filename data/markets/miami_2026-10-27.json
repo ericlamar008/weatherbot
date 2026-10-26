@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T04:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0035,
       "ev": 6.0,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 72-73°F on October 27?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 74-75°F on October 27?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0052,
       "ev": 9.4,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 76-77°F on October 27?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0155,
       "ev": 5.2,
       "kelly": 0.0033,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 78-79°F on October 27?",
@@ -116,20 +124,22 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.0135,
-      "no_price": 0.976,
-      "volume": 418.0,
+      "yes_price": 0.012,
+      "no_price": 0.988,
+      "volume": 446.0,
       "spread": 0.0,
       "yes_token_id": "107096064458868497163728543635331682055673055387669559998876815642868035425999",
       "no_token_id": "183685892552119530161275952167919215824088020898145395369708083780976934813",
       "model_prob": 0.0682,
       "side": "YES",
-      "ask": 0.024,
-      "market_prob": 0.024,
-      "belief_prob": 0.0491,
-      "ev": 1.1958,
-      "kelly": 0.0074,
-      "sell_value": null
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0485,
+      "ev": 3.0417,
+      "kelly": 0.0092,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.0015
     },
     {
       "question": "Will the highest temperature in Miami be between 80-81°F on October 27?",
@@ -138,20 +148,22 @@
         80.0,
         81.0
       ],
-      "yes_price": 0.15,
-      "no_price": 0.82,
-      "volume": 509.0,
+      "yes_price": 0.155,
+      "no_price": 0.845,
+      "volume": 537.0,
       "spread": 0.0,
       "yes_token_id": "65352808979492807600167299802704798289083977700946263184304154931729848197151",
       "no_token_id": "43423149878619789753081685744307612013348542743934151624881267017314513315367",
       "model_prob": 0.1815,
       "side": "YES",
-      "ask": 0.18,
-      "market_prob": 0.18,
-      "belief_prob": 0.1705,
-      "ev": 0.0056,
-      "kelly": 0.0003,
-      "sell_value": null
+      "ask": 0.155,
+      "market_prob": 0.155,
+      "belief_prob": 0.1722,
+      "ev": 0.111,
+      "kelly": 0.0051,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 82-83°F on October 27?",
@@ -160,20 +172,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.59,
-      "no_price": 0.475,
-      "volume": 1470.0,
+      "yes_price": 0.585,
+      "no_price": 0.415,
+      "volume": 1511.0,
       "spread": 0.0,
       "yes_token_id": "25699511757402858934336985180295677080226619442580465753390641313669238126639",
       "no_token_id": "94801772386245602327590309028536872256903829693780126639844082954297334707131",
       "model_prob": 0.3015,
       "side": "YES",
-      "ask": 0.525,
-      "market_prob": 0.525,
-      "belief_prob": 0.4025,
-      "ev": -0.2768,
+      "ask": 0.585,
+      "market_prob": 0.585,
+      "belief_prob": 0.4007,
+      "ev": -0.315,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 84-85°F on October 27?",
@@ -183,19 +197,21 @@
         85.0
       ],
       "yes_price": 0.255,
-      "no_price": 0.72,
-      "volume": 996.0,
+      "no_price": 0.745,
+      "volume": 1118.0,
       "spread": 0.0,
       "yes_token_id": "49858354551591851390628674855510898719330389534224434352683479675438835564113",
       "no_token_id": "59050165665235132667922493428965649595658033622702769538355047816025522834083",
       "model_prob": 0.2363,
       "side": "YES",
-      "ask": 0.28,
-      "market_prob": 0.28,
+      "ask": 0.255,
+      "market_prob": 0.255,
       "belief_prob": 0.2428,
-      "ev": -0.1014,
+      "ev": -0.0478,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 86-87°F on October 27?",
@@ -205,19 +221,21 @@
         87.0
       ],
       "yes_price": 0.007,
-      "no_price": 0.9925,
-      "volume": 224.0,
+      "no_price": 0.993,
+      "volume": 252.0,
       "spread": 0.0,
       "yes_token_id": "83461473515876995550043026573162713520788072326250670495329671222152579357101",
       "no_token_id": "110457544973394591047912519470811190679623715716471443256528769256483922457884",
       "model_prob": 0.1009,
       "side": "YES",
-      "ask": 0.0075,
-      "market_prob": 0.0075,
+      "ask": 0.007,
+      "market_prob": 0.007,
       "belief_prob": 0.068,
-      "ev": 8.0933,
-      "kelly": 0.0153,
-      "sell_value": null
+      "ev": 8.7143,
+      "kelly": 0.0154,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 27?",
@@ -228,7 +246,7 @@
       ],
       "yes_price": 0.0015,
       "no_price": 0.9985,
-      "volume": 350.0,
+      "volume": 358.0,
       "spread": 0.0,
       "yes_token_id": "1285125391408604633629487044071730598378636885005657856239816091263164989679",
       "no_token_id": "67997323190850786215014482454418058291464774572181743458679780704612461966273",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0226,
       "ev": 14.0667,
       "kelly": 0.0053,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 90°F or higher on October 27?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0256,
       "ev": 50.2,
       "kelly": 0.0063,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -307,5 +329,6 @@
   "confidence": 0.0061,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00"
+  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

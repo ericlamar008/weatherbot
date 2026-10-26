@@ -7,11 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 20.7,
+  "hours_left": 20.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T23:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
   "last_scan": "2026-10-26T02:20:37.517435+00:00",
   "skipped_reason": "event volume 60 < min_volume 500",
-  "last_lite_refresh": "2026-10-25T20:20:40.695126+00:00"
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00",
+  "forecast_mean": 1.67,
+  "sigma": 3.649,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Munich be 7°C on October 26?",
+      "market_id": "6106536",
+      "range": [
+        7.0,
+        7.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "93632722897772120486451930510369781258816400996489531945056785183145367714421",
+      "no_token_id": "110504079255878140944769984651731128997100577124002731854129228286927593833297",
+      "model_prob": 0.296,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1926,
+      "ev": 384.2,
+      "kelly": 0.048,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 8°C on October 26?",
+      "market_id": "6106537",
+      "range": [
+        8.0,
+        8.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "42544997735845414089002976390268930600594971619529526932428321313821048221007",
+      "no_token_id": "43522779849262503018736010902492781110618417275023436266479064581350944712206",
+      "model_prob": 0.2094,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.1363,
+      "ev": 271.6,
+      "kelly": 0.034,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 9°C on October 26?",
+      "market_id": "6106538",
+      "range": [
+        9.0,
+        9.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "22809205921652083611881645223823619552639488958130223025690103808223989139644",
+      "no_token_id": "474098817504849798483169652256799580103869300020252829289252860202229156810",
+      "model_prob": 0.1459,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.095,
+      "ev": 189.0,
+      "kelly": 0.0236,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Munich be 10°C or higher on October 26?",
+      "market_id": "6106539",
+      "range": [
+        10.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "105543844581937323184345801731016521001906337660762611418800074359153791244507",
+      "no_token_id": "61261885022238696939190229431167707715901077747997130648796222446359115574424",
+      "model_prob": 0.3487,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.2268,
+      "ev": 452.6,
+      "kelly": 0.0566,
+      "sell_value": null
+    }
+  ]
 }

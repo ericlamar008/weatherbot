@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-24T02:20:45.376763+00:00",
   "committed_allocation": null,
-  "hours_left": 4.7,
+  "hours_left": 4.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T07:00:00+00:00",
   "event_end_date": "2026-10-25T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0259,
       "ev": 50.8,
       "kelly": 0.0064,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 52-53°F on October 25?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0137,
       "ev": 1.1077,
       "kelly": 0.0018,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 54-55°F on October 25?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0232,
       "ev": 45.4,
       "kelly": 0.0057,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 56-57°F on October 25?",
@@ -102,7 +108,9 @@
       "belief_prob": 0.0515,
       "ev": 1.7838,
       "kelly": 0.0084,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 58-59°F on October 25?",
@@ -124,7 +132,9 @@
       "belief_prob": 0.085,
       "ev": 3.8571,
       "kelly": 0.0172,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 60-61°F on October 25?",
@@ -146,7 +156,9 @@
       "belief_prob": 0.114,
       "ev": 18.0,
       "kelly": 0.0272,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 62-63°F on October 25?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.4619,
       "ev": -0.5299,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 64-65°F on October 25?",
@@ -190,7 +204,9 @@
       "belief_prob": 0.0912,
       "ev": 181.4,
       "kelly": 0.0227,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 66-67°F on October 25?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0552,
       "ev": 109.4,
       "kelly": 0.0137,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 68-69°F on October 25?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0291,
       "ev": 57.2,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be 70°F or higher on October 25?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0611,
       "ev": 121.2,
       "kelly": 0.0152,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -303,5 +325,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
-  "last_lite_refresh": "2026-10-25T20:20:40.695126+00:00"
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

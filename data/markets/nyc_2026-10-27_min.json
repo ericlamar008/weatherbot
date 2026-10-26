@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T04:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0182,
       "ev": 0.82,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 42-43°F on October 27?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0187,
       "ev": -0.15,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 44-45°F on October 27?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0396,
       "ev": 0.8,
       "kelly": 0.0045,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 46-47°F on October 27?",
@@ -90,19 +96,21 @@
         47.0
       ],
       "yes_price": 0.015,
-      "no_price": 0.9805,
+      "no_price": 0.985,
       "volume": 44.0,
       "spread": 0.0,
       "yes_token_id": "103460169462352444601211303704577266061459685739646935068655044413988236071260",
       "no_token_id": "106500007688655811303562072124158936210107776459824556267195924208558768157291",
       "model_prob": 0.1343,
       "side": "YES",
-      "ask": 0.0195,
-      "market_prob": 0.0195,
+      "ask": 0.015,
+      "market_prob": 0.015,
       "belief_prob": 0.0925,
-      "ev": 3.8256,
-      "kelly": 0.019,
-      "sell_value": null
+      "ev": 5.1667,
+      "kelly": 0.0197,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 48-49°F on October 27?",
@@ -112,19 +120,21 @@
         49.0
       ],
       "yes_price": 0.14,
-      "no_price": 0.85,
+      "no_price": 0.86,
       "volume": 337.0,
       "spread": 0.0,
       "yes_token_id": "78841761407580555744035756536180591842887300558504943429309607684627827644928",
       "no_token_id": "39702488008090322098412527949927042981941704526911472416046019261389654418498",
       "model_prob": 0.2649,
       "side": "YES",
-      "ask": 0.15,
-      "market_prob": 0.15,
+      "ask": 0.14,
+      "market_prob": 0.14,
       "belief_prob": 0.2212,
-      "ev": 0.498,
-      "kelly": 0.022,
-      "sell_value": null
+      "ev": 0.58,
+      "kelly": 0.0236,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 50-51°F on October 27?",
@@ -134,19 +144,21 @@
         51.0
       ],
       "yes_price": 0.355,
-      "no_price": 0.685,
-      "volume": 409.0,
+      "no_price": 0.645,
+      "volume": 593.0,
       "spread": 0.0,
       "yes_token_id": "15463504084729296321540586093624597744514530988241663320398163760736278976218",
       "no_token_id": "1928087863409610921408656591673577387820761686144081316335902394827038173779",
       "model_prob": 0.2748,
       "side": "YES",
-      "ask": 0.315,
-      "market_prob": 0.315,
+      "ask": 0.355,
+      "market_prob": 0.355,
       "belief_prob": 0.3029,
-      "ev": -0.0829,
+      "ev": -0.1468,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 52-53°F on October 27?",
@@ -168,7 +180,9 @@
       "belief_prob": 0.2336,
       "ev": -0.4086,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 54-55°F on October 27?",
@@ -178,19 +192,21 @@
         55.0
       ],
       "yes_price": 0.12,
-      "no_price": 0.85,
-      "volume": 133.0,
+      "no_price": 0.88,
+      "volume": 200.0,
       "spread": 0.0,
       "yes_token_id": "71294487466057571077915052469663029583705707172827994387955288024205503184404",
       "no_token_id": "43731057690434818053717033584807048007917019291791398865160485317908200197184",
       "model_prob": 0.0546,
       "side": "YES",
-      "ask": 0.15,
-      "market_prob": 0.15,
+      "ask": 0.12,
+      "market_prob": 0.12,
       "belief_prob": 0.0775,
-      "ev": -0.4133,
+      "ev": -0.3542,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 56-57°F on October 27?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.021,
       "ev": -0.16,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be between 58-59°F on October 27?",
@@ -222,19 +240,21 @@
         59.0
       ],
       "yes_price": 0.0165,
-      "no_price": 0.983,
+      "no_price": 0.9835,
       "volume": 44.0,
       "spread": 0.0,
       "yes_token_id": "20641707855511010961603474171348908249872719516145303725051977041054054743689",
       "no_token_id": "36026731058449145217584912311859797203443768969262035256155757802271323487312",
       "model_prob": 0.0068,
       "side": "YES",
-      "ask": 0.017,
-      "market_prob": 0.017,
+      "ask": 0.0165,
+      "market_prob": 0.0165,
       "belief_prob": 0.0102,
-      "ev": -0.3882,
+      "ev": -0.3818,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in New York City be 60°F or higher on October 27?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.013,
       "ev": -0.2571,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -269,5 +291,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00"
+  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

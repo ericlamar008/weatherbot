@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-25T02:20:38.057151+00:00",
   "committed_allocation": null,
-  "hours_left": 18.7,
+  "hours_left": 18.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-26T21:00:00+00:00",
   "event_end_date": "2026-10-26T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0014,
       "ev": 1.8,
       "kelly": 0.0002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 31°C on October 26?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0015,
       "ev": 2.0,
       "kelly": 0.0003,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 32°C on October 26?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0032,
       "ev": 5.4,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 33°C on October 26?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0084,
       "ev": 15.8,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 34°C on October 26?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0235,
       "ev": 46.0,
       "kelly": 0.0058,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 35°C on October 26?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.0714,
       "ev": 3.2,
       "kelly": 0.0138,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 36°C on October 26?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.245,
       "no_price": 0.755,
-      "volume": 4532.0,
+      "volume": 4569.0,
       "spread": 0.0,
       "yes_token_id": "59393922708270634810638615095099651089592025334473328751486457980011802418298",
       "no_token_id": "88671119337337180662056496565914808480530452767634432885340287112728819638823",
@@ -173,7 +185,9 @@
       "belief_prob": 0.2312,
       "ev": -0.0563,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 37°C on October 26?",
@@ -183,19 +197,21 @@
         37.0
       ],
       "yes_price": 0.48,
-      "no_price": 0.525,
-      "volume": 3206.0,
+      "no_price": 0.52,
+      "volume": 3209.0,
       "spread": 0.0,
       "yes_token_id": "23256105507018456217139603097298065215338546336269529917633067866418773272011",
       "no_token_id": "103271111821749208760672573951946082157227587492800621885150525977047599717865",
       "model_prob": 0.2922,
       "side": "YES",
-      "ask": 0.475,
-      "market_prob": 0.475,
+      "ask": 0.48,
+      "market_prob": 0.48,
       "belief_prob": 0.3579,
-      "ev": -0.2501,
+      "ev": -0.2544,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 38°C on October 26?",
@@ -206,7 +222,7 @@
       ],
       "yes_price": 0.235,
       "no_price": 0.765,
-      "volume": 1498.0,
+      "volume": 1504.0,
       "spread": 0.0,
       "yes_token_id": "42991766153973210476952897766057380328182187043133900791414587092914000440980",
       "no_token_id": "38227730255655998383125949812377020830275978249451700935699528399118750086523",
@@ -217,7 +233,9 @@
       "belief_prob": 0.2104,
       "ev": -0.1047,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 39°C on October 26?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0571,
       "ev": 5.0105,
       "kelly": 0.012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Jeddah be 40°C or higher on October 26?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0304,
       "ev": 59.8,
       "kelly": 0.0075,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -324,5 +346,5 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
-  "last_lite_refresh": "2026-10-25T20:20:40.695126+00:00"
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

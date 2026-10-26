@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 52.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T07:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.3551,
       "ev": 709.2,
       "kelly": 0.0887,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 66-67°F on October 27?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0294,
       "ev": 57.8,
       "kelly": 0.0072,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 68-69°F on October 27?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0296,
       "ev": 58.2,
       "kelly": 0.0073,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 70-71°F on October 27?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0293,
       "ev": 13.65,
       "kelly": 0.0068,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 72-73°F on October 27?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.1106,
       "ev": -0.5392,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 74-75°F on October 27?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2235,
       "ev": -0.6079,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 76-77°F on October 27?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.185,
       "no_price": 0.815,
-      "volume": 933.0,
+      "volume": 955.0,
       "spread": 0.0,
       "yes_token_id": "99103779795567835441800137285085363474251918276223030834895755287831966318920",
       "no_token_id": "6442969874749997984822898629167377798674320568237412425633536667033088657686",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0857,
       "ev": -0.5368,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 78-79°F on October 27?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0225,
       "ev": 0.6667,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 80-81°F on October 27?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0149,
       "ev": 28.8,
       "kelly": 0.0036,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be between 82-83°F on October 27?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0125,
       "ev": 7.3333,
       "kelly": 0.0028,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Los Angeles be 84°F or higher on October 27?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0921,
       "ev": 183.2,
       "kelly": 0.0229,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [
@@ -291,5 +313,6 @@
   "confidence": 0.0592,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00"
+  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

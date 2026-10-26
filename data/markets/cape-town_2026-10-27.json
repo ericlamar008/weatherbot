@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 43.7,
+  "hours_left": 43.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T22:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -14,7 +14,7 @@
   "horizon_days": 1,
   "forecast_mean": 23.08,
   "sigma": 1.4,
-  "forecast_mean_shadow": 22.74,
+  "forecast_mean_shadow": 22.75,
   "model_means_raw": {
     "ecmwf": 23.59,
     "gfs": 22.23,
@@ -41,7 +41,9 @@
       "belief_prob": 0.0097,
       "ev": 0.3857,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 19°C on October 27?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0117,
       "ev": 0.6714,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 20°C on October 27?",
@@ -72,20 +76,22 @@
         20.0,
         20.0
       ],
-      "yes_price": 0.011,
-      "no_price": 0.9895,
+      "yes_price": 0.012,
+      "no_price": 0.988,
       "volume": 347.0,
       "spread": 0.0,
       "yes_token_id": "110844803169031882742245317819371518175090023213861104874908614262305029006712",
       "no_token_id": "1522300817118531224090292795939235418161934849794601108593268613849671966397",
       "model_prob": 0.0369,
       "side": "YES",
-      "ask": 0.0105,
-      "market_prob": 0.0105,
-      "belief_prob": 0.0278,
-      "ev": 1.6381,
-      "kelly": 0.0043,
-      "sell_value": null
+      "ask": 0.012,
+      "market_prob": 0.012,
+      "belief_prob": 0.0282,
+      "ev": 1.35,
+      "kelly": 0.0041,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.001
     },
     {
       "question": "Will the highest temperature in Cape Town be 21°C on October 27?",
@@ -95,19 +101,21 @@
         21.0
       ],
       "yes_price": 0.025,
-      "no_price": 0.977,
+      "no_price": 0.975,
       "volume": 444.0,
       "spread": 0.0,
       "yes_token_id": "67209023312635845679377872107890132111357214391966768459284505995528833805993",
       "no_token_id": "21091927336895267794326095334173057943634852585648862508850379836665666738281",
       "model_prob": 0.0928,
       "side": "YES",
-      "ask": 0.023,
-      "market_prob": 0.023,
+      "ask": 0.025,
+      "market_prob": 0.025,
       "belief_prob": 0.0691,
-      "ev": 1.9739,
-      "kelly": 0.0116,
-      "sell_value": null
+      "ev": 1.764,
+      "kelly": 0.0113,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 22°C on October 27?",
@@ -117,19 +125,21 @@
         22.0
       ],
       "yes_price": 0.13,
-      "no_price": 0.855,
+      "no_price": 0.87,
       "volume": 492.0,
       "spread": 0.0,
       "yes_token_id": "17169338710576577098087945856994952264776371478524267830839099464922170102149",
       "no_token_id": "19102436847398459224914529691788153698777742842242788554294024626159447084795",
       "model_prob": 0.1928,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
+      "ask": 0.13,
+      "market_prob": 0.13,
       "belief_prob": 0.1708,
-      "ev": 0.2145,
-      "kelly": 0.0091,
-      "sell_value": null
+      "ev": 0.3138,
+      "kelly": 0.0117,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 23°C on October 27?",
@@ -139,19 +149,21 @@
         23.0
       ],
       "yes_price": 0.365,
-      "no_price": 0.625,
+      "no_price": 0.635,
       "volume": 654.0,
       "spread": 0.0,
       "yes_token_id": "107062235732036093726167606917501504420679444040603034725784598211748961908638",
       "no_token_id": "55328649806982101023480030656597255228896563477410927098357656443066108914913",
       "model_prob": 0.264,
       "side": "YES",
-      "ask": 0.375,
-      "market_prob": 0.375,
+      "ask": 0.365,
+      "market_prob": 0.365,
       "belief_prob": 0.2994,
-      "ev": -0.1925,
+      "ev": -0.1797,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 24°C on October 27?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.2587,
       "ev": -0.2609,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 25°C on October 27?",
@@ -183,19 +197,21 @@
         25.0
       ],
       "yes_price": 0.115,
-      "no_price": 0.895,
+      "no_price": 0.885,
       "volume": 302.0,
       "spread": 0.0,
       "yes_token_id": "38129962338419471936479060954630158620229948383809076422318434375465198191477",
       "no_token_id": "23609960661502006597400613795679404954843757497161068134770024922569790812167",
       "model_prob": 0.1063,
       "side": "YES",
-      "ask": 0.105,
-      "market_prob": 0.105,
+      "ask": 0.115,
+      "market_prob": 0.115,
       "belief_prob": 0.1093,
-      "ev": 0.0076,
-      "kelly": 0.0002,
-      "sell_value": null
+      "ev": -0.0496,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 26°C on October 27?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0295,
       "ev": 5.5556,
       "kelly": 0.0063,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 27°C on October 27?",
@@ -227,19 +245,21 @@
         27.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.9975,
+      "no_price": 0.998,
       "volume": 245.0,
       "spread": 0.0,
       "yes_token_id": "110648047025645281472420503923854044148969705278552538920879111999448906090969",
       "no_token_id": "80994101661353510162673038997810411053429653679056217623149109888167811970653",
       "model_prob": 0.0166,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.0115,
-      "ev": 3.68,
-      "kelly": 0.0023,
-      "sell_value": null
+      "ev": 4.75,
+      "kelly": 0.0024,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Cape Town be 28°C or higher on October 27?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0084,
       "ev": 15.8,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00"
+  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }

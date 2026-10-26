@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 37.7,
+  "hours_left": 37.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T16:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0097,
       "ev": 18.4,
       "kelly": 0.0023,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 27°C on October 27?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0086,
       "ev": 16.2,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 28°C on October 27?",
@@ -73,19 +77,21 @@
         28.0
       ],
       "yes_price": 0.0175,
-      "no_price": 0.986,
-      "volume": 505.0,
+      "no_price": 0.9825,
+      "volume": 528.0,
       "spread": 0.0,
       "yes_token_id": "104251029485762331622641373910404649047589563967356488900333242698960356246294",
       "no_token_id": "50709760172888584364819824509701351712313211527325453874972479359860564959552",
       "model_prob": 0.0265,
       "side": "YES",
-      "ask": 0.014,
-      "market_prob": 0.014,
+      "ask": 0.0175,
+      "market_prob": 0.0175,
       "belief_prob": 0.0234,
-      "ev": 0.5786,
-      "kelly": 0.0021,
-      "sell_value": null
+      "ev": 0.3371,
+      "kelly": 0.0015,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 29°C on October 27?",
@@ -95,19 +101,21 @@
         29.0
       ],
       "yes_price": 0.091,
-      "no_price": 0.908,
-      "volume": 122.0,
+      "no_price": 0.909,
+      "volume": 142.0,
       "spread": 0.0,
       "yes_token_id": "42152027680230637040514134630974980556252562715123220155039411572291406293575",
       "no_token_id": "106371712424970675711845567012919544032457170138572487524947467308501463462290",
       "model_prob": 0.0538,
       "side": "YES",
-      "ask": 0.092,
-      "market_prob": 0.092,
+      "ask": 0.091,
+      "market_prob": 0.091,
       "belief_prob": 0.0668,
-      "ev": -0.2696,
+      "ev": -0.2659,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 30°C on October 27?",
@@ -117,19 +125,21 @@
         30.0
       ],
       "yes_price": 0.265,
-      "no_price": 0.805,
-      "volume": 300.0,
+      "no_price": 0.735,
+      "volume": 674.0,
       "spread": 0.0,
       "yes_token_id": "39679491315340566002855268546633312862605663525385908653282599780697428842050",
       "no_token_id": "40668620784547893089768911394406075950973540005655416002277603411367046153287",
       "model_prob": 0.1017,
       "side": "YES",
-      "ask": 0.195,
-      "market_prob": 0.195,
+      "ask": 0.265,
+      "market_prob": 0.265,
       "belief_prob": 0.1589,
-      "ev": -0.3108,
+      "ev": -0.4004,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 31°C on October 27?",
@@ -140,7 +150,7 @@
       ],
       "yes_price": 0.33,
       "no_price": 0.67,
-      "volume": 687.0,
+      "volume": 754.0,
       "spread": 0.0,
       "yes_token_id": "76060934883612270421541766040380970971560322216075301192028437976789490224290",
       "no_token_id": "27763841505021305985526460740012324147496462284727663299693165373257433309699",
@@ -151,7 +161,9 @@
       "belief_prob": 0.2214,
       "ev": -0.3291,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 32°C on October 27?",
@@ -161,19 +173,21 @@
         32.0
       ],
       "yes_price": 0.23,
-      "no_price": 0.75,
-      "volume": 350.0,
+      "no_price": 0.77,
+      "volume": 426.0,
       "spread": 0.0,
       "yes_token_id": "44980597039082551639646774823709267817857640293476091643699087967594108312036",
       "no_token_id": "26275501404464515249180332757187153160618093432734609087724172438582061203417",
       "model_prob": 0.2001,
       "side": "YES",
-      "ask": 0.25,
-      "market_prob": 0.25,
+      "ask": 0.23,
+      "market_prob": 0.23,
       "belief_prob": 0.2106,
-      "ev": -0.1296,
+      "ev": -0.0843,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 33°C on October 27?",
@@ -183,19 +197,21 @@
         33.0
       ],
       "yes_price": 0.07,
-      "no_price": 0.915,
-      "volume": 267.0,
+      "no_price": 0.93,
+      "volume": 346.0,
       "spread": 0.0,
       "yes_token_id": "110715057409393757138559789891090536003268995476594796657972562493553613679523",
       "no_token_id": "8514038828212587449284001202556028902213776519372279841502179368300487961606",
       "model_prob": 0.178,
       "side": "YES",
-      "ask": 0.085,
-      "market_prob": 0.085,
+      "ask": 0.07,
+      "market_prob": 0.07,
       "belief_prob": 0.1402,
-      "ev": 0.7106,
-      "kelly": 0.0165,
-      "sell_value": null
+      "ev": 1.0029,
+      "kelly": 0.0189,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 34°C on October 27?",
@@ -205,19 +221,21 @@
         34.0
       ],
       "yes_price": 0.018,
-      "no_price": 0.9815,
-      "volume": 78.0,
+      "no_price": 0.982,
+      "volume": 98.0,
       "spread": 0.0,
       "yes_token_id": "54747970148255456997068532623297689097988060270915463417429425454483121189832",
       "no_token_id": "42542243025744223082632848710496581958292584147543341302251373924505300872104",
       "model_prob": 0.1185,
       "side": "YES",
-      "ask": 0.0185,
-      "market_prob": 0.0185,
+      "ask": 0.018,
+      "market_prob": 0.018,
       "belief_prob": 0.0833,
-      "ev": 3.5135,
+      "ev": 3.6278,
       "kelly": 0.0166,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 35°C on October 27?",
@@ -227,19 +245,21 @@
         35.0
       ],
       "yes_price": 0.002,
-      "no_price": 0.996,
-      "volume": 525.0,
+      "no_price": 0.998,
+      "volume": 545.0,
       "spread": 0.0,
       "yes_token_id": "51020597557592962167821445356092336909804243285158273685086886803126800075013",
       "no_token_id": "5895756300834828718468511202500195910512697515099993654330871443469998662346",
       "model_prob": 0.065,
       "side": "YES",
-      "ask": 0.004,
-      "market_prob": 0.004,
+      "ask": 0.002,
+      "market_prob": 0.002,
       "belief_prob": 0.043,
-      "ev": 9.925,
-      "kelly": 0.01,
-      "sell_value": null
+      "ev": 20.5,
+      "kelly": 0.0103,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Kuala Lumpur be 36°C or higher on October 27?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0434,
       "ev": 20.7,
       "kelly": 0.0104,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00"
+  "last_price_refresh": "2026-10-26T02:52:25.388816+00:00",
+  "last_lite_refresh": "2026-10-26T02:53:10.635562+00:00"
 }
