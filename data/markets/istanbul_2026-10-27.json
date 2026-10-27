@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 6.7,
+  "hours_left": 0.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T21:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
@@ -91,7 +91,7 @@
       "ev": 39.8,
       "kelly": 0.005,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -103,7 +103,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1951.0,
+      "volume": 1976.0,
       "spread": 0.0,
       "yes_token_id": "111650153140413757085186824843985957746091457191928736053611734160921664651202",
       "no_token_id": "104903460256989712657976519146477641331787851251781745234726095513627997850648",
@@ -115,7 +115,7 @@
       "ev": 151.6,
       "kelly": 0.019,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -126,20 +126,20 @@
         15.0
       ],
       "yes_price": 0.9995,
-      "no_price": 0.003,
-      "volume": 14031.0,
+      "no_price": 0.0005,
+      "volume": 18157.0,
       "spread": 0.0,
       "yes_token_id": "108582350880722603016102787558136877467707832886194569623158380398780965131826",
       "no_token_id": "70104057947927775780570670238824879792987146708964543805566278640648924616043",
       "model_prob": 0.308,
       "side": "YES",
-      "ask": 0.997,
-      "market_prob": 0.997,
+      "ask": 0.9995,
+      "market_prob": 0.9995,
       "belief_prob": 0.55,
-      "ev": -0.4491,
+      "ev": -0.4497,
       "kelly": 0.0,
       "sell_value": null,
-      "model_prob_change": 0.0002,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -150,20 +150,20 @@
         16.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.9975,
-      "volume": 7533.0,
+      "no_price": 0.9995,
+      "volume": 7845.0,
       "spread": 0.0,
       "yes_token_id": "84680973067267206139040620140038164373896070194596980264876947610894778978353",
       "no_token_id": "2072839444319520654095653570719589186784660161413583840158887439912803215795",
       "model_prob": 0.3345,
       "side": "YES",
-      "ask": 0.0025,
-      "market_prob": 0.0025,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
       "belief_prob": 0.2176,
-      "ev": 86.32,
-      "kelly": 0.0541,
+      "ev": 434.2,
+      "kelly": 0.0543,
       "sell_value": null,
-      "model_prob_change": 0.0003,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -175,7 +175,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 4344.0,
+      "volume": 4364.0,
       "spread": 0.0,
       "yes_token_id": "112868618659326288533511828057129007604729457358077650644989577423140733971860",
       "no_token_id": "64047346935069761241656666004745175401656401332845547472084679457613390027073",
@@ -187,7 +187,7 @@
       "ev": 184.0,
       "kelly": 0.023,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -199,7 +199,7 @@
       ],
       "yes_price": 0.0005,
       "no_price": 0.9995,
-      "volume": 1858.0,
+      "volume": 1863.0,
       "spread": 0.0,
       "yes_token_id": "17856374231159375481234694174392952605564938732820407234160682984949854652722",
       "no_token_id": "15203922084204113824144054390479381848818904119003099339415182941717024370868",
@@ -211,7 +211,7 @@
       "ev": 49.6,
       "kelly": 0.0062,
       "sell_value": null,
-      "model_prob_change": -0.0001,
+      "model_prob_change": 0.0,
       "yes_price_change": 0.0
     },
     {
@@ -298,6 +298,6 @@
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
   "last_price_refresh": "2026-10-27T20:08:24.322832+00:00",
-  "last_lite_refresh": "2026-10-27T14:20:42.201456+00:00",
+  "last_lite_refresh": "2026-10-27T20:20:42.324382+00:00",
   "skipped_reason": "ensemble forecast unavailable (mean is None)"
 }
