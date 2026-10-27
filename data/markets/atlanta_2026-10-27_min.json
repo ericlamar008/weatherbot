@@ -7,11 +7,59 @@
   "market_type": "min",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 25.1,
+  "hours_left": 19.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T04:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
   "last_scan": "2026-10-27T02:20:36.758060+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
+  "last_lite_refresh": "2026-10-27T08:20:40.169133+00:00",
+  "forecast_mean": 51.11,
+  "sigma": 2.006,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Atlanta be between 50-51°F on October 27?",
+      "market_id": "6181172",
+      "range": [
+        50.0,
+        51.0
+      ],
+      "yes_price": 0.38,
+      "no_price": 0.62,
+      "volume": 6.0,
+      "spread": 0.0,
+      "yes_token_id": "78902409192809583974235045369717405744877369707001970567543242035669253696225",
+      "no_token_id": "30168717207819361069219133123512517449649387781008838689305215671909810446155",
+      "model_prob": 0.9356,
+      "side": "YES",
+      "ask": 0.38,
+      "market_prob": 0.38,
+      "belief_prob": 0.7411,
+      "ev": 0.9503,
+      "kelly": 0.1456,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Atlanta be 58°F or higher on October 27?",
+      "market_id": "6181176",
+      "range": [
+        58.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "46689250301116826177558439810872839654572985259964369484444232726500371729413",
+      "no_token_id": "94794861535101261439481272599862686538003705909261937294817932458603098154539",
+      "model_prob": 0.0644,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.042,
+      "ev": 83.0,
+      "kelly": 0.0104,
+      "sell_value": null
+    }
+  ]
 }

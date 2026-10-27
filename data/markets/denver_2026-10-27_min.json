@@ -7,11 +7,81 @@
   "market_type": "min",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 27.1,
+  "hours_left": 21.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T06:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
   "last_scan": "2026-10-27T02:20:36.758060+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
+  "last_lite_refresh": "2026-10-27T08:20:40.169133+00:00",
+  "forecast_mean": 39.83,
+  "sigma": 2.082,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Denver be between 42-43°F on October 27?",
+      "market_id": "6181215",
+      "range": [
+        42.0,
+        43.0
+      ],
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "30745296472457834041986420010183962274809375594893316008757819480001036533800",
+      "no_token_id": "102151009807054011349023116548428871454690644322191780780031188772356582756272",
+      "model_prob": 0.7265,
+      "side": "YES",
+      "ask": 0.0045,
+      "market_prob": 0.0045,
+      "belief_prob": 0.4738,
+      "ev": 104.2889,
+      "kelly": 0.1179,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 44-45°F on October 27?",
+      "market_id": "6181216",
+      "range": [
+        44.0,
+        45.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 5.0,
+      "spread": 0.0,
+      "yes_token_id": "92023930263039701595299599020544989028089094001030601829593107315526960944028",
+      "no_token_id": "28886083338327663295497136601156756000181043970026486363444298493246715997285",
+      "model_prob": 0.213,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.1397,
+      "ev": 38.9143,
+      "kelly": 0.0342,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Denver be between 46-47°F on October 27?",
+      "market_id": "6181217",
+      "range": [
+        46.0,
+        47.0
+      ],
+      "yes_price": 0.0035,
+      "no_price": 0.9965,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "65921413234108225489978823362853554548567118209097383153707331438316096646838",
+      "no_token_id": "18023916090635483323651971321800821049820663906157399127491523580451042191303",
+      "model_prob": 0.0604,
+      "side": "YES",
+      "ask": 0.0035,
+      "market_prob": 0.0035,
+      "belief_prob": 0.0405,
+      "ev": 10.5714,
+      "kelly": 0.0093,
+      "sell_value": null
+    }
+  ]
 }

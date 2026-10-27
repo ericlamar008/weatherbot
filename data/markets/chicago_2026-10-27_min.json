@@ -7,11 +7,103 @@
   "market_type": "min",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 26.1,
+  "hours_left": 20.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T05:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
   "last_scan": "2026-10-27T02:20:36.758060+00:00",
   "skipped_reason": "event volume 0 < min_volume 500",
-  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
+  "last_lite_refresh": "2026-10-27T08:20:40.169133+00:00",
+  "forecast_mean": 52.73,
+  "sigma": 2.198,
+  "full_distribution": [
+    {
+      "question": "Will the lowest temperature in Chicago be between 56-57°F on October 27?",
+      "market_id": "6181195",
+      "range": [
+        56.0,
+        57.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 25.0,
+      "spread": 0.0,
+      "yes_token_id": "55510692122913727745619590099254274089282255308250511546319615665370238081435",
+      "no_token_id": "112961149225650203087472028877707805267992006269046074705770378507070424216553",
+      "model_prob": 0.6614,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.4301,
+      "ev": 859.2,
+      "kelly": 0.1075,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be between 58-59°F on October 27?",
+      "market_id": "6181196",
+      "range": [
+        58.0,
+        59.0
+      ],
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "volume": 370.0,
+      "spread": 0.0,
+      "yes_token_id": "92205568066681193465352032127627685698978131035498996056262829603656003775381",
+      "no_token_id": "98771525590106308093817141706855847056000419353972670539108404471579332726295",
+      "model_prob": 0.1977,
+      "side": "YES",
+      "ask": 0.0025,
+      "market_prob": 0.0025,
+      "belief_prob": 0.1294,
+      "ev": 50.76,
+      "kelly": 0.0318,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be between 60-61°F on October 27?",
+      "market_id": "6181197",
+      "range": [
+        60.0,
+        61.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "49376487530098886099670597416580830678015119595327878225874739279935131544255",
+      "no_token_id": "54428564394204883483813534602642277125976164255523494311375580101039889633971",
+      "model_prob": 0.0619,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0404,
+      "ev": 79.8,
+      "kelly": 0.01,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Chicago be 62°F or higher on October 27?",
+      "market_id": "6181198",
+      "range": [
+        62.0,
+        999.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "25167932156030388062790958731879762090330409201908494597479065474385688262900",
+      "no_token_id": "75900164972133666815378581907306768244594365817771655331216787704894886364579",
+      "model_prob": 0.079,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0515,
+      "ev": 102.0,
+      "kelly": 0.0128,
+      "sell_value": null
+    }
+  ]
 }
