@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-29T04:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0036,
       "ev": 6.2,
       "kelly": 0.0008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 74-75°F on October 28?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 76-77°F on October 28?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.008,
       "ev": 0.0,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 78-79°F on October 28?",
@@ -107,7 +113,9 @@
       "belief_prob": 0.0178,
       "ev": 1.225,
       "kelly": 0.0025,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 80-81°F on October 28?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.0472,
       "ev": 7.5818,
       "kelly": 0.0105,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 82-83°F on October 28?",
@@ -138,20 +148,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.0455,
-      "no_price": 0.9545,
+      "yes_price": 0.0405,
+      "no_price": 0.9595,
       "volume": 96.0,
       "spread": 0.0,
       "yes_token_id": "110497131863631530714944191671245374518276448701612676156672446100619543369477",
       "no_token_id": "49965593866047666652676875829461792211033900524700634260020421154343768888005",
       "model_prob": 0.1845,
       "side": "YES",
-      "ask": 0.0455,
-      "market_prob": 0.0455,
-      "belief_prob": 0.1358,
-      "ev": 1.9846,
-      "kelly": 0.0237,
-      "sell_value": null
+      "ask": 0.0405,
+      "market_prob": 0.0405,
+      "belief_prob": 0.1341,
+      "ev": 2.3111,
+      "kelly": 0.0244,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Miami be between 84-85°F on October 28?",
@@ -162,7 +174,7 @@
       ],
       "yes_price": 0.285,
       "no_price": 0.715,
-      "volume": 899.0,
+      "volume": 903.0,
       "spread": 0.0,
       "yes_token_id": "108164702596986016476205793398180158046249616805109965280899706862333041983038",
       "no_token_id": "80713354245601797666786606404847135029377607759231568243792960226415900018276",
@@ -173,7 +185,9 @@
       "belief_prob": 0.2964,
       "ev": 0.04,
       "kelly": 0.004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 86-87°F on October 28?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.3635,
       "ev": -0.3992,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 88-89°F on October 28?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0905,
       "ev": 0.2067,
       "kelly": 0.0042,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be between 90-91°F on October 28?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0228,
       "ev": 5.5143,
       "kelly": 0.0048,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Miami be 92°F or higher on October 28?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0278,
       "ev": 2.475,
       "kelly": 0.005,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }

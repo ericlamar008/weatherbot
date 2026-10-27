@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-29T04:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 9°C on October 28?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0008,
       "ev": 0.6,
       "kelly": 0.0001,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 10°C on October 28?",
@@ -85,6 +89,30 @@
       "belief_prob": 0.0016,
       "ev": 2.2,
       "kelly": 0.0003,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 11°C on October 28?",
+      "market_id": "6250917",
+      "range": [
+        11.0,
+        11.0
+      ],
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "volume": 38.0,
+      "spread": 0.0,
+      "yes_token_id": "52343867711161244079102793440533928949226507733077479936348954090634506688799",
+      "no_token_id": "107904253710450529438824461182578565174901390330627940434559194399884378616285",
+      "model_prob": 0.0058,
+      "side": "YES",
+      "ask": 0.0085,
+      "market_prob": 0.0085,
+      "belief_prob": 0.0067,
+      "ev": -0.2118,
+      "kelly": 0.0,
       "sell_value": null
     },
     {
@@ -95,18 +123,42 @@
         12.0
       ],
       "yes_price": 0.0105,
-      "no_price": 0.989,
-      "volume": 8.0,
+      "no_price": 0.9895,
+      "volume": 47.0,
       "spread": 0.0,
       "yes_token_id": "11961439472021465877760373079108423991196894956027872350646572358307592414536",
       "no_token_id": "85930875176834534902118082752192200795076013025331635464515179464794788599453",
       "model_prob": 0.0171,
       "side": "YES",
-      "ask": 0.011,
-      "market_prob": 0.011,
+      "ask": 0.0105,
+      "market_prob": 0.0105,
       "belief_prob": 0.0148,
-      "ev": 0.3636,
-      "kelly": 0.001,
+      "ev": 0.4095,
+      "kelly": 0.0011,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 13°C on October 28?",
+      "market_id": "6250919",
+      "range": [
+        13.0,
+        13.0
+      ],
+      "yes_price": 0.0245,
+      "no_price": 0.9755,
+      "volume": 38.0,
+      "spread": 0.0,
+      "yes_token_id": "76332472828139857974924338386011722431300636258703457029975894836369815590442",
+      "no_token_id": "2134335256675958799026968106536554828269672752497619181394183584562579321080",
+      "model_prob": 0.0539,
+      "side": "YES",
+      "ask": 0.0245,
+      "market_prob": 0.0245,
+      "belief_prob": 0.0436,
+      "ev": 0.7796,
+      "kelly": 0.0049,
       "sell_value": null
     },
     {
@@ -117,19 +169,21 @@
         14.0
       ],
       "yes_price": 0.1,
-      "no_price": 0.89,
-      "volume": 106.0,
+      "no_price": 0.9,
+      "volume": 145.0,
       "spread": 0.0,
       "yes_token_id": "97221585999036202688626435990544198981437458589666936652464543250730799556145",
       "no_token_id": "49915423673629656263450740443577126102337646614695086845689064021137141906834",
       "model_prob": 0.1564,
       "side": "YES",
-      "ask": 0.11,
-      "market_prob": 0.11,
+      "ask": 0.1,
+      "market_prob": 0.1,
       "belief_prob": 0.1367,
-      "ev": 0.2745,
-      "kelly": 0.0085,
-      "sell_value": null
+      "ev": 0.367,
+      "kelly": 0.0102,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 15°C on October 28?",
@@ -139,19 +193,21 @@
         15.0
       ],
       "yes_price": 0.395,
-      "no_price": 0.67,
-      "volume": 166.0,
+      "no_price": 0.605,
+      "volume": 509.0,
       "spread": 0.0,
       "yes_token_id": "81989891123346794018563496153292235481386795463535691413926806323346449225752",
       "no_token_id": "47075196524460262368777866844564636999669677545910222106131952597938071989208",
       "model_prob": 0.2988,
       "side": "YES",
-      "ask": 0.33,
-      "market_prob": 0.33,
+      "ask": 0.395,
+      "market_prob": 0.395,
       "belief_prob": 0.3325,
-      "ev": -0.0615,
+      "ev": -0.1582,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 16°C on October 28?",
@@ -161,19 +217,21 @@
         16.0
       ],
       "yes_price": 0.365,
-      "no_price": 0.675,
-      "volume": 502.0,
+      "no_price": 0.635,
+      "volume": 540.0,
       "spread": 0.0,
       "yes_token_id": "111884582789738565622027805272695830016132553359202430710258067497666013912200",
       "no_token_id": "42493399470480319376867610461136930209992463819276729862079310886747809643434",
       "model_prob": 0.2741,
       "side": "YES",
-      "ask": 0.325,
-      "market_prob": 0.325,
+      "ask": 0.365,
+      "market_prob": 0.365,
       "belief_prob": 0.3059,
-      "ev": -0.1018,
+      "ev": -0.1619,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 17°C on October 28?",
@@ -183,19 +241,21 @@
         17.0
       ],
       "yes_price": 0.115,
-      "no_price": 0.87,
-      "volume": 140.0,
+      "no_price": 0.885,
+      "volume": 177.0,
       "spread": 0.0,
       "yes_token_id": "25767036399828715685061039218144691419011453608531450535915913336334848699801",
       "no_token_id": "85666955487510501511162537205164643156315006058557182087724867312432103308803",
       "model_prob": 0.1265,
       "side": "YES",
-      "ask": 0.13,
-      "market_prob": 0.13,
+      "ask": 0.115,
+      "market_prob": 0.115,
       "belief_prob": 0.1225,
-      "ev": -0.0177,
-      "kelly": 0.0,
-      "sell_value": null
+      "ev": 0.0652,
+      "kelly": 0.0021,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Toronto be 18°C or higher on October 28?",
@@ -205,19 +265,21 @@
         999.0
       ],
       "yes_price": 0.034,
-      "no_price": 0.9645,
-      "volume": 195.0,
+      "no_price": 0.966,
+      "volume": 213.0,
       "spread": 0.0,
       "yes_token_id": "73956232537168339336648451574362677770444740806325520972599528822643817246342",
       "no_token_id": "59494843800475521076799503925532758575285491424249552249274162815293930966669",
       "model_prob": 0.0633,
       "side": "YES",
-      "ask": 0.0355,
-      "market_prob": 0.0355,
+      "ask": 0.034,
+      "market_prob": 0.034,
       "belief_prob": 0.053,
-      "ev": 0.5099,
-      "kelly": 0.0047,
-      "sell_value": null
+      "ev": 0.5588,
+      "kelly": 0.0049,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -230,5 +292,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }

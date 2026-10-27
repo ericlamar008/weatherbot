@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 52.7,
+  "hours_left": 52.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-29T07:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0409,
       "ev": 80.8,
       "kelly": 0.0101,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 52-53°F on October 28?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0188,
       "ev": 36.6,
       "kelly": 0.0046,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 54-55°F on October 28?",
@@ -80,7 +84,9 @@
       "belief_prob": 0.0368,
       "ev": 35.8,
       "kelly": 0.009,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 56-57°F on October 28?",
@@ -90,19 +96,21 @@
         57.0
       ],
       "yes_price": 0.035,
-      "no_price": 0.9655,
+      "no_price": 0.965,
       "volume": 124.0,
       "spread": 0.0,
       "yes_token_id": "39736095445355916851553699360846107794059935493137267570361668799237071248185",
       "no_token_id": "54374919192499340330681561104556491517795491788224700890729602614870381717173",
       "model_prob": 0.1017,
       "side": "YES",
-      "ask": 0.0345,
-      "market_prob": 0.0345,
+      "ask": 0.035,
+      "market_prob": 0.035,
       "belief_prob": 0.0784,
-      "ev": 1.2667,
-      "kelly": 0.0113,
-      "sell_value": null
+      "ev": 1.24,
+      "kelly": 0.0112,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 58-59°F on October 28?",
@@ -111,20 +119,22 @@
         58.0,
         59.0
       ],
-      "yes_price": 0.095,
-      "no_price": 0.9,
+      "yes_price": 0.09,
+      "no_price": 0.91,
       "volume": 496.0,
       "spread": 0.0,
       "yes_token_id": "99558842747355857708431428420913162175206441489203876226660507718395434872338",
       "no_token_id": "43144288456445525513801883588342188888855060226246451748630153863224878005180",
       "model_prob": 0.1557,
       "side": "YES",
-      "ask": 0.1,
-      "market_prob": 0.1,
-      "belief_prob": 0.1345,
-      "ev": 0.362,
-      "kelly": 0.0101,
-      "sell_value": null
+      "ask": 0.09,
+      "market_prob": 0.09,
+      "belief_prob": 0.1327,
+      "ev": 0.4744,
+      "kelly": 0.0117,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 60-61°F on October 28?",
@@ -133,20 +143,22 @@
         60.0,
         61.0
       ],
-      "yes_price": 0.45,
-      "no_price": 0.545,
-      "volume": 244.0,
+      "yes_price": 0.43,
+      "no_price": 0.57,
+      "volume": 259.0,
       "spread": 0.0,
       "yes_token_id": "99928561074596363619243346609181019466948517860636042020007241418485378567273",
       "no_token_id": "66062370502326811175462769979801857081799846284841981385878614962309364792973",
       "model_prob": 0.1828,
       "side": "YES",
-      "ask": 0.455,
-      "market_prob": 0.455,
-      "belief_prob": 0.2763,
-      "ev": -0.3888,
+      "ask": 0.43,
+      "market_prob": 0.43,
+      "belief_prob": 0.2693,
+      "ev": -0.3737,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.02
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 62-63°F on October 28?",
@@ -156,19 +168,21 @@
         63.0
       ],
       "yes_price": 0.52,
-      "no_price": 0.54,
-      "volume": 419.0,
+      "no_price": 0.48,
+      "volume": 422.0,
       "spread": 0.0,
       "yes_token_id": "89600603195213564713031132807998608856084936384950922714633448182062447609463",
       "no_token_id": "103975537019698767811679861416026722074916975011475342377252465611077447449217",
       "model_prob": 0.1576,
       "side": "YES",
-      "ask": 0.46,
-      "market_prob": 0.46,
+      "ask": 0.52,
+      "market_prob": 0.52,
       "belief_prob": 0.2844,
-      "ev": -0.4274,
+      "ev": -0.4531,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 64-65°F on October 28?",
@@ -178,19 +192,21 @@
         65.0
       ],
       "yes_price": 0.015,
-      "no_price": 0.981,
+      "no_price": 0.985,
       "volume": 283.0,
       "spread": 0.0,
       "yes_token_id": "1309966160312473222682806048773376641680677836832488750703757735078433196254",
       "no_token_id": "38457223737356645805574214297332797244013275323121207797844368609939121762395",
       "model_prob": 0.1039,
       "side": "YES",
-      "ask": 0.019,
-      "market_prob": 0.019,
+      "ask": 0.015,
+      "market_prob": 0.015,
       "belief_prob": 0.0728,
-      "ev": 2.9053,
-      "kelly": 0.0141,
-      "sell_value": null
+      "ev": 3.8533,
+      "kelly": 0.0147,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 66-67°F on October 28?",
@@ -212,7 +228,9 @@
       "belief_prob": 0.0404,
       "ev": 3.7529,
       "kelly": 0.008,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be between 68-69°F on October 28?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0221,
       "ev": 1.6,
       "kelly": 0.0034,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Los Angeles be 70°F or higher on October 28?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0447,
       "ev": 4.2588,
       "kelly": 0.0091,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -269,5 +291,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }

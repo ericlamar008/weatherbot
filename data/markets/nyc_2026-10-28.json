@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 49.7,
+  "hours_left": 49.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-29T04:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0167,
       "ev": 32.4,
       "kelly": 0.0041,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 54-55°F on October 28?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.0136,
       "ev": 12.6,
       "kelly": 0.0032,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 56-57°F on October 28?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.041,
       "ev": 12.6667,
       "kelly": 0.0095,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 58-59°F on October 28?",
@@ -94,20 +100,22 @@
         58.0,
         59.0
       ],
-      "yes_price": 0.031,
-      "no_price": 0.969,
+      "yes_price": 0.0345,
+      "no_price": 0.9655,
       "volume": 521.0,
       "spread": 0.0,
       "yes_token_id": "41669365870789388174808997291562308611934861263015839110875238714373787165505",
       "no_token_id": "92801046535656271080854200439442627882122646317540802357312206200759495563554",
       "model_prob": 0.1667,
       "side": "YES",
-      "ask": 0.031,
-      "market_prob": 0.031,
-      "belief_prob": 0.1192,
-      "ev": 2.8452,
-      "kelly": 0.0228,
-      "sell_value": null
+      "ask": 0.0345,
+      "market_prob": 0.0345,
+      "belief_prob": 0.1204,
+      "ev": 2.4899,
+      "kelly": 0.0222,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0035
     },
     {
       "question": "Will the highest temperature in New York City be between 60-61°F on October 28?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.3739,
       "ev": -0.281,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 62-63°F on October 28?",
@@ -151,7 +161,9 @@
       "belief_prob": 0.3161,
       "ev": -0.2733,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 64-65°F on October 28?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.0828,
       "ev": 2.312,
       "kelly": 0.0148,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 66-67°F on October 28?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.0259,
       "ev": 16.2667,
       "kelly": 0.0061,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 68-69°F on October 28?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.0088,
       "ev": 16.6,
       "kelly": 0.0021,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be between 70-71°F on October 28?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0033,
       "ev": 5.6,
       "kelly": 0.0007,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in New York City be 72°F or higher on October 28?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0051,
       "ev": 9.2,
       "kelly": 0.0012,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }

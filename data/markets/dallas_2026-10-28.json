@@ -6,7 +6,7 @@
   "status": "open",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 50.7,
+  "hours_left": 50.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-29T05:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -41,7 +41,9 @@
       "belief_prob": 0.0035,
       "ev": 2.5,
       "kelly": 0.0006,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 74-75°F on October 28?",
@@ -63,7 +65,9 @@
       "belief_prob": 0.006,
       "ev": -0.3333,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 76-77°F on October 28?",
@@ -85,7 +89,9 @@
       "belief_prob": 0.0149,
       "ev": 0.419,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 78-79°F on October 28?",
@@ -94,20 +100,22 @@
         78.0,
         79.0
       ],
-      "yes_price": 0.065,
-      "no_price": 0.935,
+      "yes_price": 0.06,
+      "no_price": 0.94,
       "volume": 97.0,
       "spread": 0.0,
       "yes_token_id": "5158496422867839983473710513768957694343448492923182623540286318808035840927",
       "no_token_id": "22843146557124103931050924995009004190740801465329078914028014564744132509584",
       "model_prob": 0.077,
       "side": "YES",
-      "ask": 0.065,
-      "market_prob": 0.065,
-      "belief_prob": 0.0728,
-      "ev": 0.12,
-      "kelly": 0.0021,
-      "sell_value": null
+      "ask": 0.06,
+      "market_prob": 0.06,
+      "belief_prob": 0.0711,
+      "ev": 0.185,
+      "kelly": 0.003,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 80-81°F on October 28?",
@@ -129,7 +137,9 @@
       "belief_prob": 0.2989,
       "ev": -0.0659,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 82-83°F on October 28?",
@@ -138,20 +148,22 @@
         82.0,
         83.0
       ],
-      "yes_price": 0.445,
-      "no_price": 0.555,
+      "yes_price": 0.45,
+      "no_price": 0.55,
       "volume": 1367.0,
       "spread": 0.0,
       "yes_token_id": "31043383187957888671645065485652242894656378496240575215181068426894205328352",
       "no_token_id": "24081537029933115552520610902006142024610345452481235171749021502072531235128",
       "model_prob": 0.4034,
       "side": "YES",
-      "ask": 0.445,
-      "market_prob": 0.445,
-      "belief_prob": 0.418,
-      "ev": -0.0607,
+      "ask": 0.45,
+      "market_prob": 0.45,
+      "belief_prob": 0.4197,
+      "ev": -0.0673,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.005
     },
     {
       "question": "Will the highest temperature in Dallas be between 84-85°F on October 28?",
@@ -173,7 +185,9 @@
       "belief_prob": 0.1578,
       "ev": -0.0138,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 86-87°F on October 28?",
@@ -195,7 +209,9 @@
       "belief_prob": 0.028,
       "ev": 1.0,
       "kelly": 0.0035,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 88-89°F on October 28?",
@@ -217,7 +233,9 @@
       "belief_prob": 0.006,
       "ev": 3.0,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be between 90-91°F on October 28?",
@@ -239,7 +257,9 @@
       "belief_prob": 0.0045,
       "ev": -0.4706,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the highest temperature in Dallas be 92°F or higher on October 28?",
@@ -261,7 +281,9 @@
       "belief_prob": 0.0021,
       "ev": 3.2,
       "kelly": 0.0004,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -274,5 +296,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }

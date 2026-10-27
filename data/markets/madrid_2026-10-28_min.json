@@ -7,7 +7,7 @@
   "market_type": "min",
   "created_at": "2026-10-27T02:20:36.758060+00:00",
   "committed_allocation": null,
-  "hours_left": 44.7,
+  "hours_left": 44.1,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-28T23:00:00+00:00",
   "event_end_date": "2026-10-28T12:00:00Z",
@@ -36,7 +36,9 @@
       "belief_prob": 0.0092,
       "ev": -0.0316,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 6°C on October 28?",
@@ -58,7 +60,9 @@
       "belief_prob": 0.0512,
       "ev": -0.5904,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 7°C on October 28?",
@@ -67,20 +71,22 @@
         7.0,
         7.0
       ],
-      "yes_price": 0.295,
-      "no_price": 0.655,
-      "volume": 1018.0,
+      "yes_price": 0.285,
+      "no_price": 0.715,
+      "volume": 1201.0,
       "spread": 0.0,
       "yes_token_id": "23890647845864802621646541795484486611688689301352804930696228605180391228648",
       "no_token_id": "89598235094414911494938481824650029033648960122617147597899405295425634733850",
       "model_prob": 0.0291,
       "side": "YES",
-      "ask": 0.345,
-      "market_prob": 0.345,
-      "belief_prob": 0.1222,
-      "ev": -0.5951,
+      "ask": 0.285,
+      "market_prob": 0.285,
+      "belief_prob": 0.1187,
+      "ev": -0.5835,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.01
     },
     {
       "question": "Will the lowest temperature in Madrid be 8°C on October 28?",
@@ -90,19 +96,21 @@
         8.0
       ],
       "yes_price": 0.365,
-      "no_price": 0.64,
+      "no_price": 0.635,
       "volume": 783.0,
       "spread": 0.0,
       "yes_token_id": "74158170241194299822288570218508145523908306427535514184807330320724611054361",
       "no_token_id": "48636761546639311494482331086933572844886034835440416504607509423396886224380",
       "model_prob": 0.0744,
       "side": "YES",
-      "ask": 0.36,
-      "market_prob": 0.36,
+      "ask": 0.365,
+      "market_prob": 0.365,
       "belief_prob": 0.1761,
-      "ev": -0.5156,
+      "ev": -0.5175,
       "kelly": 0.0,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 9°C on October 28?",
@@ -111,20 +119,22 @@
         9.0,
         9.0
       ],
-      "yes_price": 0.145,
-      "no_price": 0.855,
-      "volume": 684.0,
+      "yes_price": 0.17,
+      "no_price": 0.83,
+      "volume": 720.0,
       "spread": 0.0,
       "yes_token_id": "66883594829466212446691209078123918886865141152044830430642341100945825950745",
       "no_token_id": "13599880306251589991689109413047229925055502246446056350665048345726584255266",
       "model_prob": 0.1655,
       "side": "YES",
-      "ask": 0.145,
-      "market_prob": 0.145,
-      "belief_prob": 0.1583,
-      "ev": 0.0917,
-      "kelly": 0.0039,
-      "sell_value": null
+      "ask": 0.17,
+      "market_prob": 0.17,
+      "belief_prob": 0.1671,
+      "ev": -0.0171,
+      "kelly": 0.0,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.025
     },
     {
       "question": "Will the lowest temperature in Madrid be 10°C on October 28?",
@@ -133,20 +143,22 @@
         10.0,
         10.0
       ],
-      "yes_price": 0.031,
-      "no_price": 0.972,
+      "yes_price": 0.032,
+      "no_price": 0.968,
       "volume": 56.0,
       "spread": 0.0,
       "yes_token_id": "77530883426742259085096791251323083243202079254752230132377303378641416366707",
       "no_token_id": "30095263841435350724122056728589691870279805484005000319212985785138547803451",
       "model_prob": 0.2564,
       "side": "YES",
-      "ask": 0.028,
-      "market_prob": 0.028,
-      "belief_prob": 0.1775,
-      "ev": 5.3036,
-      "kelly": 0.0382,
-      "sell_value": null
+      "ask": 0.032,
+      "market_prob": 0.032,
+      "belief_prob": 0.1779,
+      "ev": 4.5594,
+      "kelly": 0.0377,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.001
     },
     {
       "question": "Will the lowest temperature in Madrid be 11°C on October 28?",
@@ -156,19 +168,21 @@
         11.0
       ],
       "yes_price": 0.038,
-      "no_price": 0.9725,
+      "no_price": 0.962,
       "volume": 38.0,
       "spread": 0.0,
       "yes_token_id": "35895035586505274602013640129826315920451361603810075572028009764808874881606",
       "no_token_id": "99707172843213421056417948412512995106427315648100913574719952704322765589659",
       "model_prob": 0.2333,
       "side": "YES",
-      "ask": 0.0275,
-      "market_prob": 0.0275,
+      "ask": 0.038,
+      "market_prob": 0.038,
       "belief_prob": 0.1649,
-      "ev": 4.8655,
-      "kelly": 0.0344,
-      "sell_value": null
+      "ev": 3.3395,
+      "kelly": 0.033,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 12°C on October 28?",
@@ -177,20 +191,22 @@
         12.0,
         12.0
       ],
-      "yes_price": 0.01,
-      "no_price": 0.986,
+      "yes_price": 0.006,
+      "no_price": 0.994,
       "volume": 173.0,
       "spread": 0.0,
       "yes_token_id": "107206301796174733094177923112562068009256181595982161132874008845700629274602",
       "no_token_id": "8400436946955116994088634229176355258849006128871408911699786722633114134741",
       "model_prob": 0.1298,
       "side": "YES",
-      "ask": 0.014,
-      "market_prob": 0.014,
-      "belief_prob": 0.0879,
-      "ev": 5.3786,
-      "kelly": 0.0191,
-      "sell_value": null
+      "ask": 0.006,
+      "market_prob": 0.006,
+      "belief_prob": 0.0865,
+      "ev": 13.4167,
+      "kelly": 0.0202,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": -0.004
     },
     {
       "question": "Will the lowest temperature in Madrid be 13°C on October 28?",
@@ -200,19 +216,21 @@
         13.0
       ],
       "yes_price": 0.038,
-      "no_price": 0.9755,
+      "no_price": 0.962,
       "volume": 38.0,
       "spread": 0.0,
       "yes_token_id": "99584313333305335634483432476966817082199980453757733901995061415361308917702",
       "no_token_id": "97185727762112181198148322582811805224007222137235842557133491172793287496984",
       "model_prob": 0.0544,
       "side": "YES",
-      "ask": 0.0245,
-      "market_prob": 0.0245,
+      "ask": 0.038,
+      "market_prob": 0.038,
       "belief_prob": 0.0487,
-      "ev": 0.7918,
-      "kelly": 0.005,
-      "sell_value": null
+      "ev": 0.2816,
+      "kelly": 0.0028,
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 14°C on October 28?",
@@ -234,7 +252,9 @@
       "belief_prob": 0.0169,
       "ev": 0.8778,
       "kelly": 0.002,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     },
     {
       "question": "Will the lowest temperature in Madrid be 15°C or higher on October 28?",
@@ -256,7 +276,9 @@
       "belief_prob": 0.0132,
       "ev": 0.4667,
       "kelly": 0.0011,
-      "sell_value": null
+      "sell_value": null,
+      "model_prob_change": 0.0,
+      "yes_price_change": 0.0
     }
   ],
   "live_allocation": [],
@@ -269,5 +291,6 @@
   "confidence": null,
   "balance_units": 100,
   "strategy_version": "auto-a3881f500456e540",
-  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00"
+  "last_price_refresh": "2026-10-27T02:52:26.109780+00:00",
+  "last_lite_refresh": "2026-10-27T02:53:09.550103+00:00"
 }
