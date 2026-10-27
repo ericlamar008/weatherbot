@@ -7,15 +7,14 @@
   "market_type": "min",
   "created_at": "2026-10-26T02:20:37.517435+00:00",
   "committed_allocation": null,
-  "hours_left": 24.7,
+  "hours_left": 18.7,
   "time_status": "local_day_open",
   "local_day_end_utc": "2026-10-27T21:00:00+00:00",
   "event_end_date": "2026-10-27T12:00:00Z",
-  "last_scan": "2026-10-26T02:20:37.517435+00:00",
-  "skipped_reason": "event volume 0 < min_volume 500",
+  "last_scan": "2026-10-27T02:20:36.758060+00:00",
   "last_lite_refresh": "2026-10-26T20:20:39.093911+00:00",
-  "forecast_mean": 27.82,
-  "sigma": 1.4,
+  "forecast_mean": 29.47,
+  "sigma": 1.32,
   "full_distribution": [
     {
       "question": "Will the lowest temperature in Jeddah be 26°C on October 27?",
@@ -25,21 +24,85 @@
         26.0
       ],
       "yes_price": 0.485,
-      "no_price": 0.52,
+      "no_price": 0.515,
       "volume": 5757.0,
       "spread": 0.0,
       "yes_token_id": "63832285457943168765044569057824049666285467929278040829944263321370170729494",
       "no_token_id": "80123272334892049019433995849836889963915016436686108081638684790423449232090",
-      "model_prob": 0.9787,
+      "model_prob": 0.0222,
       "side": "YES",
-      "ask": 0.48,
-      "market_prob": 0.48,
-      "belief_prob": 0.8059,
-      "ev": 0.6754,
-      "kelly": 0.1559,
-      "sell_value": null,
-      "model_prob_change": -0.0213,
-      "yes_price_change": 0.0
+      "ask": 0.485,
+      "market_prob": 0.485,
+      "belief_prob": 0.1842,
+      "ev": -0.6202,
+      "kelly": 0.0,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 31°C on October 27?",
+      "market_id": "6173481",
+      "range": [
+        31.0,
+        31.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 43.0,
+      "spread": 0.0,
+      "yes_token_id": "82168964452705791507930190883100820509117249307714190105687119119071978418308",
+      "no_token_id": "23033809421762148096875232863036662614931844003250693057061168446581845984751",
+      "model_prob": 0.1429,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0931,
+      "ev": 185.2,
+      "kelly": 0.0232,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 32°C on October 27?",
+      "market_id": "6173482",
+      "range": [
+        32.0,
+        32.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "49008686862630262213157999883979167021873746263716837556106580052671313404244",
+      "no_token_id": "20551527737806043154204964741459641052610401533484346151698523291198583525177",
+      "model_prob": 0.0573,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0374,
+      "ev": 73.8,
+      "kelly": 0.0092,
+      "sell_value": null
+    },
+    {
+      "question": "Will the lowest temperature in Jeddah be 33°C on October 27?",
+      "market_id": "6173483",
+      "range": [
+        33.0,
+        33.0
+      ],
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "volume": 15.0,
+      "spread": 0.0,
+      "yes_token_id": "62705163144789507712870152026673929716489044488423360291803371444027209226875",
+      "no_token_id": "41526752464097079477676879953339271249395113253942393263618970001885209043647",
+      "model_prob": 0.0209,
+      "side": "YES",
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0138,
+      "ev": 26.6,
+      "kelly": 0.0033,
+      "sell_value": null
     },
     {
       "question": "Will the lowest temperature in Jeddah be 35°C or higher on October 27?",
@@ -49,20 +112,64 @@
         999.0
       ],
       "yes_price": 0.0005,
-      "no_price": 0.995,
+      "no_price": 0.9995,
       "volume": 30.0,
       "spread": 0.0,
       "yes_token_id": "75975082946177937325602298826596728177521705779074964505925620421379808276468",
       "no_token_id": "72748126145099552220158562326220870068031464448328670355970716736103602697404",
-      "model_prob": 0.0213,
+      "model_prob": 0.0062,
       "side": "YES",
-      "ask": 0.005,
-      "market_prob": 0.005,
-      "belief_prob": 0.014,
-      "ev": 2.12,
-      "kelly": 0.0027,
+      "ask": 0.0005,
+      "market_prob": 0.0005,
+      "belief_prob": 0.0042,
+      "ev": 7.4,
+      "kelly": 0.0009,
       "sell_value": null
     }
   ],
-  "last_price_refresh": "2026-10-27T02:07:21.545370+00:00"
+  "last_price_refresh": "2026-10-27T02:07:21.545370+00:00",
+  "horizon_days": 0,
+  "live_allocation": [
+    {
+      "market_id": "6173476",
+      "question": "Will the lowest temperature in Jeddah be 26°C on October 27?",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "YES",
+      "price": 0.485,
+      "model_prob": 0.0222,
+      "ev": -0.6202,
+      "market_prob": 0.485,
+      "role": "main_signal",
+      "units": 16.5,
+      "sell_value": null
+    },
+    {
+      "market_id": "6173476",
+      "question": "Will the lowest temperature in Jeddah be 26°C on October 27? (NO)",
+      "range": [
+        26.0,
+        26.0
+      ],
+      "side": "NO",
+      "price": 0.515,
+      "model_prob": 0.9778,
+      "ev": 0.5841,
+      "market_prob": 0.515,
+      "role": "scenario_hedge",
+      "units": 6.9,
+      "sell_value": 0.03
+    }
+  ],
+  "total_allocated_units": 23.4,
+  "portfolio_score": -0.000469,
+  "worst_case_loss_frac": 0.1,
+  "best_case_pnl_units": 10.62,
+  "worst_case_pnl_units": -10.0,
+  "success_probability": 0.5085,
+  "confidence": 0.319,
+  "balance_units": 100,
+  "strategy_version": "auto-a3881f500456e540"
 }
